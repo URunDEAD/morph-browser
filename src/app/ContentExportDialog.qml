@@ -39,8 +39,8 @@ QQC2.Dialog {
     property real maximumWidth: units.gu(90)
     property real preferredWidth: parent.width
 
-    property real maximumHeight: units.gu(80)
-    property real preferredHeight: parent.height > maximumHeight ? parent.height * 0.7 : parent.height
+    property real maximumHeight: units.gu(90)
+    property real preferredHeight: parent.height
 
     signal preview(string url)
 
@@ -66,7 +66,7 @@ QQC2.Dialog {
         mimeType = _mimeType
         downloadUrl = _downloadURL
         fileName = _fileName
-        y = Qt.binding(function(){return parent.width >= units.gu(90) ? (parent.height - height) / 2 : (parent.height - height)})
+        y = Qt.binding(function(){ return (parent.height - height) / 2 })
         open()
     }
 

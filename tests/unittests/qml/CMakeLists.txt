@@ -19,6 +19,7 @@ set(SOURCES
     ${morph-browser_SOURCE_DIR}/bookmarks-folder-model.cpp
     ${morph-browser_SOURCE_DIR}/bookmarks-folderlist-model.cpp
     ${webbrowser-common_SOURCE_DIR}/file-operations.cpp
+    ${webbrowser-common_SOURCE_DIR}/url-utils.cpp
     ${morph-browser_SOURCE_DIR}/history-domain-model.cpp
     ${morph-browser_SOURCE_DIR}/history-domainlist-model.cpp
     ${morph-browser_SOURCE_DIR}/history-model.cpp

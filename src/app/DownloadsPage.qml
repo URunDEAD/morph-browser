@@ -24,7 +24,6 @@ import Lomiri.Content 1.3
 import webbrowsercommon.private 0.1
 
 import "MimeTypeMapper.js" as MimeTypeMapper
-import "UrlUtils.js" as UrlUtils
 import "FileUtils.js" as FileUtils
 
 BrowserPage {

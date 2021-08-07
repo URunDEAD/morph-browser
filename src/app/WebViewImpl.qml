@@ -24,7 +24,6 @@ import QtWebEngine 1.10
 import Morph.Web 0.1
 import webbrowsercommon.private 0.1
 import "actions" as Actions
-import "UrlUtils.js" as UrlUtils
 
 WebView {
     id: webview

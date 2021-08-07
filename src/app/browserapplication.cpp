@@ -47,6 +47,7 @@
 #include "meminfo.h"
 #include "mime-database.h"
 #include "session-storage.h"
+#include "url-utils.h"
 
 BrowserApplication::BrowserApplication(int& argc, char** argv)
     : QApplication(argc, argv)
@@ -108,6 +109,7 @@ MAKE_SINGLETON_FACTORY(DownloadsModel)
 MAKE_SINGLETON_FACTORY(FileOperations)
 MAKE_SINGLETON_FACTORY(MemInfo)
 MAKE_SINGLETON_FACTORY(MimeDatabase)
+MAKE_SINGLETON_FACTORY(UrlUtils)
 MAKE_SINGLETON_FACTORY(UserAgentsModel)
 
 bool BrowserApplication::initialize(const QString& qmlFileSubPath
@@ -202,6 +204,7 @@ bool BrowserApplication::initialize(const QString& qmlFileSubPath
     qmlRegisterSingletonType<MimeDatabase>(uri, 0, 1, "MimeDatabase", MimeDatabase_singleton_factory);
     qmlRegisterType<SessionStorage>(uri, 0, 1, "SessionStorage");
     qmlRegisterSingletonType<UserAgentsModel>(uri, 0, 1, "UserAgentsModel", UserAgentsModel_singleton_factory);
+    qmlRegisterSingletonType<UrlUtils>(uri, 0, 1, "UrlUtils", UrlUtils_singleton_factory);
 
     m_engine = new QQmlEngine;
     connect(m_engine, SIGNAL(quit()), SLOT(quit()));

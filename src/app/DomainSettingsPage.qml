@@ -23,7 +23,6 @@ import Lomiri.Components 1.3
 import Lomiri.Components.Popups 1.3
 import Lomiri.Content 1.3
 import webbrowsercommon.private 0.1
-import "UrlUtils.js" as UrlUtils
 
 FocusScope {
     id: domainSettingsItem

@@ -88,7 +88,7 @@ bool UrlUtils::looksLikeAUrl(const QString& urlString) const
     }
 
     // it can still be, that the string is rather a search string, than a URL, e.g. a single word.
-    if (!urlString.startsWith(url.scheme()))
+    if (!urlString.startsWith(url.scheme(), Qt::CaseInsensitive))
     {
         // check if there are dots in the host (IPv4 address or domain)
         if (url.host().contains("."))

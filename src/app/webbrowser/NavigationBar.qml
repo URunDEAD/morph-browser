@@ -166,7 +166,8 @@ FocusScope {
             fgColor: root.fgColor
 
             focus: true
-
+            isReaderable: tab && tab.isReaderable
+            readerMode: tab && tab.readerMode
             findInPageMode: findInPageMode
             findController: internal.webview ? internal.webview.findController : null
             certificateErrorsMap: internal.webview ? internal.webview.profile.certificateErrorsMap : ({})
@@ -198,6 +199,9 @@ FocusScope {
             }
             onRequestStop: internal.webview.stop()
             onToggleBookmark: root.toggleBookmark()
+            onToggleReaderMode: {
+                tab.toggleReaderMode()
+            }
 
             Connections {
                 target: tab

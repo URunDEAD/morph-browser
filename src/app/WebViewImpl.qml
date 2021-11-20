@@ -175,7 +175,8 @@ WebView {
             var authDialog = PopupUtils.open(Qt.resolvedUrl("HttpAuthenticationDialog.qml"), this);
             authDialog.host = UrlUtils.extractHost(request.url);
             authDialog.realm = request.realm;
-            authDialog.accept.connect(request.dialogAccept);
+            // for webapps the page did not load after entering the credentials when we directly connect to request.dialogAccept
+            authDialog.accept.connect(function(username, password) {request.dialogAccept(username, password);});
             authDialog.reject.connect(request.dialogReject);
 
             break;

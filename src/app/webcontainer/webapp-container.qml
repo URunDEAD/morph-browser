@@ -39,6 +39,7 @@ BrowserWindow {
     property string webappName: ""
     property string webappModelSearchPath: ""
     property var webappUrlPatterns
+    property var userScripts
     property string accountProvider: ""
     property bool accountSwitcher: false
     property string popupRedirectionUrlPrefixPattern: ""
@@ -194,8 +195,7 @@ BrowserWindow {
 
             var scripts = [];
 
-            // app specific user scripts
-            var customScripts = []
+            var customScripts = root.userScripts;
 
             if ((typeof customScripts === "undefined") || (customScripts.length === 0))
             {

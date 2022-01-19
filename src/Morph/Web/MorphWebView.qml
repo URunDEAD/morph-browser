@@ -19,8 +19,8 @@
 import QtQuick 2.4
 import QtQuick.Window 2.2
 import QtWebEngine 1.10
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 import "." // QTBUG-34418
 
 WebEngineView {
@@ -156,7 +156,7 @@ WebEngineView {
     }
 
     /* TODO check how copy&paste works in QtWebEngine
-    UbuntuShape {
+    LomiriShape {
         id: quickMenu
         objectName: "touchSelectionActions"
         visible: false
@@ -164,7 +164,7 @@ WebEngineView {
                   && (_webview.touchSelectionController.status != Oxide.TouchSelectionController.StatusInactive)
                   && !_webview.touchSelectionController.handleDragInProgress
                   && !selectionOutOfSight) ? 1.0 : 0.0
-        aspect: UbuntuShape.DropShadow
+        aspect: LomiriShape.DropShadow
         backgroundColor: "white"
         readonly property int padding: units.gu(1)
         width: touchSelectionActionsRow.width + padding * 2

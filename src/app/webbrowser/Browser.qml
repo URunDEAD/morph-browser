@@ -23,9 +23,9 @@ import QtSystemInfo 5.5
 import QtWebEngine 1.10
 import Qt.labs.settings 1.0
 import Morph.Web 0.1
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
-import Ubuntu.Content 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
+import Lomiri.Content 1.3
 import QtQuick.Controls 2.2 as QQC2
 import webbrowserapp.private 0.1
 import webbrowsercommon.private 0.1
@@ -928,7 +928,7 @@ Common.BrowserView {
         opacity: ((chrome.state === "shown") && (activeFocus || chrome.activeFocus) &&
                   (count > 0) && !chrome.drawerOpen && !chrome.findInPageMode && !chrome.contextMenuVisible) ? 1.0 : 0.0
         Behavior on opacity {
-            UbuntuNumberAnimation {}
+            LomiriNumberAnimation {}
         }
         enabled: opacity > 0
         anchors {
@@ -1056,13 +1056,13 @@ Common.BrowserView {
             bottom: parent.bottom
             bottomMargin: (((chrome.state == "shown") && browser.currentWebview && !browser.currentWebview.fullscreen) || forceShow) ? -height / 2 : -height
             Behavior on bottomMargin {
-                UbuntuNumberAnimation {}
+                LomiriNumberAnimation {}
             }
         }
         visible: bottomEdgeHandle.enabled && !internal.hasMouse
         opacity: recentView.visible ? 0 : 1
         Behavior on opacity {
-            UbuntuNumberAnimation {}
+            LomiriNumberAnimation {}
         }
         Label {
             anchors {

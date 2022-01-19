@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 Action {
     text: i18n.tr("Erase")

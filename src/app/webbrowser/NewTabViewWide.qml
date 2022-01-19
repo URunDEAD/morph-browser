@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import webbrowserapp.private 0.1
 import "."
 
@@ -141,7 +141,7 @@ FocusScope {
         }
 
         Rectangle {
-            // Divider, see Ubuntu/Components/Themes/Ambiance/1.3/PageHeaderStyle.qml
+            // Divider, see Lomiri.Components/Themes/Ambiance/1.3/PageHeaderStyle.qml
             anchors {
                 left: parent.left
                 right: parent.right

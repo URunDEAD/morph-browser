@@ -19,7 +19,7 @@
 import QtQuick 2.5
 import QtQuick.Window 2.2
 import Qt.labs.settings 1.0
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import "."
 import ".."
 import webbrowsercommon.private 0.1

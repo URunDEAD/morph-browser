@@ -18,8 +18,8 @@
 
 import QtQuick 2.4
 import Qt.labs.settings 1.0
-import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItems
+import Lomiri.Components 1.3
+import Lomiri.Components.ListItems 1.3 as ListItems
 import webbrowserapp.private 0.1
 import "."
 
@@ -77,7 +77,7 @@ FocusScope {
         contentHeight: contentScope.height
 
         Behavior on contentY {
-            UbuntuNumberAnimation {}
+            LomiriNumberAnimation {}
         }
 
         FocusScope {
@@ -321,7 +321,7 @@ FocusScope {
                     }
 
                     opacity: internal.seeMoreBookmarksView ? 0.0 : 1.0
-                    Behavior on opacity { UbuntuNumberAnimation {} }
+                    Behavior on opacity { LomiriNumberAnimation {} }
 
                     text: i18n.tr("Top sites")
                     fontSize: "small"
@@ -387,7 +387,7 @@ FocusScope {
                     verticalMargin: units.gu(1)
 
                     opacity: internal.seeMoreBookmarksView ? 0.0 : 1.0
-                    Behavior on opacity { UbuntuNumberAnimation {} }
+                    Behavior on opacity { LomiriNumberAnimation {} }
                     visible: opacity > 0
                     interactive: false
 

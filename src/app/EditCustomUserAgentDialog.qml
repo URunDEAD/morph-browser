@@ -17,9 +17,9 @@
  */
 
 import QtQuick 2.9
-import Ubuntu.Components 1.3 as UITK
-import Ubuntu.Components.Popups 1.3 as Popups
-import Ubuntu.Content 1.3
+import Lomiri.Components 1.3 as UITK
+import Lomiri.Components.Popups 1.3 as Popups
+import Lomiri.Content 1.3
 import webbrowsercommon.private 0.1
 
 Popups.Dialog {

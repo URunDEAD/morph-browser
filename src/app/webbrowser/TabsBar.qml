@@ -17,9 +17,9 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Extras 0.3 as Extras
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Extras 0.3 as Extras
+import Lomiri.Components.Popups 1.3
 import "."
 import ".."
 

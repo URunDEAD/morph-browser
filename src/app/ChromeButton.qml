@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 AbstractButton {
     property real iconSize: width
@@ -53,7 +53,7 @@ AbstractButton {
     opacity: enabled ? 1.0 : 0.3
 
     Behavior on width {
-        UbuntuNumberAnimation {}
+        LomiriNumberAnimation {}
     }
 
     MouseArea {

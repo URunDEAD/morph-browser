@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3                  // For UbuntuShape.
-import Ubuntu.Components.Popups 1.3 as Popups // For saveDialog.
+import Lomiri.Components 1.3                  // For LomiriShape.
+import Lomiri.Components.Popups 1.3 as Popups // For saveDialog.
 import QtWebEngine 1.7
 import webbrowsercommon.private 0.1           // For DomainSettingsModel singleton.
 import "UrlUtils.js" as UrlUtils
@@ -9,12 +9,12 @@ import "UrlUtils.js" as UrlUtils
 // Scope requirements:
 //     webview:             An WebViewImpl object for zoomFactor manipulation and signal bindings.
 //     browser (or webapp): An Browser (or WebApp) object for settings operations.
-UbuntuShape {
+LomiriShape {
     z:3
     id: menu
     objectName: "zoomActions"
     visible: false
-    aspect: UbuntuShape.DropShadow
+    aspect: LomiriShape.DropShadow
     backgroundColor: theme.palette.normal.background
     width: zoomActionsRow.width + padding * 2
     height: zoomActionsRow.height + currentZoomText.height + padding * 2

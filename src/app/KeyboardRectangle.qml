@@ -21,7 +21,7 @@
 // until the shell/WM takes care of that on behalf of the applications.
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 Item {
     id: keyboardRect
@@ -36,7 +36,7 @@ Item {
             Qt.inputMethod.keyboardRectangle.height / (units.gridUnit / 8) : 0
 
     Behavior on height {
-        UbuntuNumberAnimation {}
+        LomiriNumberAnimation {}
     }
 
     states: [

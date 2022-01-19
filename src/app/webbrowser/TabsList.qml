@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 Item {
     id: tabslist
@@ -85,14 +85,14 @@ Item {
                 y: Math.max(flickable.contentY, index * delegateHeight)
                 Behavior on y {
                     enabled: !flickable.moving && !selectedAnimation.running
-                    UbuntuNumberAnimation {
+                    LomiriNumberAnimation {
                         duration: UbuntuAnimation.BriskDuration
                     }
                 }
 
                 opacity: selectedAnimation.running && (index > selectedAnimation.index) ? 0 : 1
                 Behavior on opacity {
-                    UbuntuNumberAnimation {
+                    LomiriNumberAnimation {
                         duration: UbuntuAnimation.FastDuration
                     }
                 }

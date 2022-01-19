@@ -18,7 +18,7 @@
 
 import QtQuick 2.4
 import QtTest 1.0
-import Ubuntu.Test 1.0
+import Lomiri.Test 1.0
 import "../../../src/app/webbrowser"
 
 Item {
@@ -55,7 +55,7 @@ Item {
         signalName: "activated"
     }
 
-    UbuntuTestCase {
+    LomiriTestCase {
         name: "Suggestions"
         when: windowShown
 

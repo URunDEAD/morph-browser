@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.7
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import QtWebEngine 1.10
 import ".."
 
@@ -432,7 +432,7 @@ FocusScope {
                 onContentHeightChanged: _contentHeight = contentHeight
 
                 y: drawer.opened ? 0 : -height
-                Behavior on y { UbuntuNumberAnimation {} }
+                Behavior on y { LomiriNumberAnimation {} }
                 onYChanged: {
                     if (drawer.closing && (y == -height)) {
                         drawer.destroy()

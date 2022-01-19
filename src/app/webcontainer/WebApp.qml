@@ -21,8 +21,8 @@ import QtWebEngine 1.10
 import Qt.labs.settings 1.0
 import webbrowsercommon.private 0.1
 import Morph.Web 0.1
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 import Ubuntu.Unity.Action 1.1 as UnityActions
 import "../actions" as Actions
 import ".." as Common

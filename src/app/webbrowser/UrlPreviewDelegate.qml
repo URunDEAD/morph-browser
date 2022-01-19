@@ -17,8 +17,8 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 import webbrowserapp.private 0.1
 import webbrowsercommon.private 0.1
 import ".."
@@ -75,7 +75,7 @@ AbstractButton {
             }
         }
 
-        UbuntuShape {
+        LomiriShape {
             id: previewShape
             anchors.left: parent.left
             width: units.gu(26)
@@ -92,9 +92,9 @@ AbstractButton {
                 cache: false
                 asynchronous: true
             }
-            sourceFillMode: UbuntuShape.PreserveAspectCrop
-            sourceHorizontalAlignment: UbuntuShape.AlignLeft
-            sourceVerticalAlignment: UbuntuShape.AlignTop
+            sourceFillMode: LomiriShape.PreserveAspectCrop
+            sourceHorizontalAlignment: LomiriShape.AlignLeft
+            sourceVerticalAlignment: LomiriShape.AlignTop
 
             Connections {
                 target: PreviewManager

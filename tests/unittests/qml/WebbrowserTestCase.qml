@@ -17,9 +17,9 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Test 1.0
+import Lomiri.Test 1.0
 
-UbuntuTestCase {
+LomiriTestCase {
     function clickItem(item, button) {
         if (button === undefined) button = Qt.LeftButton
         var center = centerOf(item)

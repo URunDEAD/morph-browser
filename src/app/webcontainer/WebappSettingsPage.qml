@@ -18,8 +18,8 @@
 
 import QtQuick 2.4
 import QtQuick.Controls 2.2
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 import QtWebEngine 1.5
 import Morph.Web 0.1
 import ".." as Common

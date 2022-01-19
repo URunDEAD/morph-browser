@@ -18,8 +18,8 @@
 
 import QtQuick 2.4
 import QtQuick.Window 2.2
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 import QtWebEngine 1.10
 import Morph.Web 0.1
 import webbrowsercommon.private 0.1
@@ -415,7 +415,7 @@ WebView {
         quickMenu.visible = false
     }
 
-    UbuntuShape {
+    LomiriShape {
             z:3
             id: quickMenu
             objectName: "touchSelectionActions"
@@ -424,7 +424,7 @@ WebView {
             //          && (_webview.touchSelectionController.status != Oxide.TouchSelectionController.StatusInactive)
             //          && !_webview.touchSelectionController.handleDragInProgress
             //          && !selectionOutOfSight) ? 1.0 : 0.0
-            aspect: UbuntuShape.DropShadow
+            aspect: LomiriShape.DropShadow
             backgroundColor: theme.palette.normal.background
             readonly property int padding: units.gu(1)
             width: touchSelectionActionsRow.width + padding * 2

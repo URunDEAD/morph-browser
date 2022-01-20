@@ -383,7 +383,7 @@ window.setInterval(function() {
             try:
                 p = p.strip('/')
                 next = str(int(p) + 1)
-            except:
+            except Exception:
                 pass
             self.send_response(200)
             color_url = ''

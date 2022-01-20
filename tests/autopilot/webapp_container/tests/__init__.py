@@ -72,7 +72,7 @@ class WebappContainerTestCaseBase(AutopilotTestCase):
                 self.get_webcontainer_app_path(),
                 *args,
                 emulator_base=uitk.UbuntuUIToolkitCustomProxyObjectBase)
-        except:
+        except Exception:
             self.app = None
 
         if not is_local_app and not ignore_focus:

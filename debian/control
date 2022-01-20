@@ -54,7 +54,7 @@ Depends: ${misc:Depends},
          qml-module-lomiri-content,
          qml-module-lomiri-components-extras,
          qml-module-lomiri-components,
-         qtdeclarative5-unity-action-plugin,
+         qml-module-lomiri-action,
 Replaces: morph-browser-assets,
           qtdeclarative5-ubuntu-ui-extras-browser-plugin (<< 0.22),
 Conflicts: morph-browser-assets, webbrowser-app
@@ -78,7 +78,7 @@ Depends: ${misc:Depends},
          qml-module-morph-web (= ${binary:Version}),
          qml-module-lomiri-content,
          qml-module-lomiri-components,
-         qtdeclarative5-unity-action-plugin,
+         qml-module-lomiri-action,
          morph-browser (= ${binary:Version}),
 Conflicts: ubuntu-html5-container, webapp-container
 Replaces: ubuntu-html5-container, webapp-container

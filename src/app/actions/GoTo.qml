@@ -17,12 +17,12 @@
  */
 
 import Lomiri.Components 1.3
-import Ubuntu.Unity.Action 1.1 as UnityActions
+import Lomiri.Action 1.1 as LomiriActions
 
-UnityActions.Action {
+LomiriActions.Action {
     text: i18n.tr("Goto")
     // TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
     // Keywords may actually be sentences, and must be separated by semi-colons.
     keywords: i18n.tr("Address;URL;www")
-    parameterType: UnityActions.Action.String
+    parameterType: LomiriActions.Action.String
 }

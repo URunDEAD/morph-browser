@@ -17,7 +17,7 @@
  */
 
 import QtQml 2.2
-import Ubuntu.Thumbnailer 0.1
+import Lomiri.Thumbnailer 0.1
 
 /* Because Thumbnailer isn't in the main repository the webbrowser can't
  depend on it. We use this file to dynamically load the thumbnailer image

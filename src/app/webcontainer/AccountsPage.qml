@@ -18,7 +18,7 @@
 
 import QtQuick 2.4
 import Lomiri.Components 1.3
-import Ubuntu.OnlineAccounts 0.1
+import Lomiri.OnlineAccounts 0.1
 import webcontainer.private 0.1
 
 Item {

@@ -86,14 +86,14 @@ Item {
                 Behavior on y {
                     enabled: !flickable.moving && !selectedAnimation.running
                     LomiriNumberAnimation {
-                        duration: UbuntuAnimation.BriskDuration
+                        duration: LomiriAnimation.BriskDuration
                     }
                 }
 
                 opacity: selectedAnimation.running && (index > selectedAnimation.index) ? 0 : 1
                 Behavior on opacity {
                     LomiriNumberAnimation {
-                        duration: UbuntuAnimation.FastDuration
+                        duration: LomiriAnimation.FastDuration
                     }
                 }
 
@@ -132,7 +132,7 @@ Item {
             target: flickable
             property: "contentY"
             to: index * delegateHeight
-            duration: UbuntuAnimation.FastDuration
+            duration: LomiriAnimation.FastDuration
             onStopped: {
                 // Delay switching the tab until after the animation has completed.
                 delayedTabSelection.index = index

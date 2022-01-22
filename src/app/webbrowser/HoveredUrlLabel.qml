@@ -44,7 +44,7 @@ Item {
                : collapsedWidth
     Behavior on width {
         LomiriNumberAnimation {
-            duration: UbuntuAnimation.SnapDuration
+            duration: LomiriAnimation.SnapDuration
         }
     }
 

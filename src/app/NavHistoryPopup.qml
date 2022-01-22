@@ -75,7 +75,7 @@ QQC2.Popup {
 
         height: Math.min(preferredHeight, maximumHeight)
 
-        UbuntuListView {
+        LomiriListView {
             id: historyListView
 
             anchors.fill: parent

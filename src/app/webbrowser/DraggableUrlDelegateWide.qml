@@ -61,8 +61,8 @@ UrlDelegateWide {
         opacity: item.draggable && hoverArea.containsMouse ? 1.0 : 0.0
         Behavior on opacity {
             NumberAnimation {
-                duration: UbuntuAnimation.SnapDuration
-                easing: UbuntuAnimation.StandardEasing
+                duration: LomiriAnimation.SnapDuration
+                easing: LomiriAnimation.StandardEasing
             }
         }
 

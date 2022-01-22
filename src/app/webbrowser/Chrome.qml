@@ -59,7 +59,7 @@ ChromeBase {
     signal requestNewTab(int index, bool makeCurrent)
     signal tabClosed(int index, bool moving)
 
-    backgroundColor: incognito ? UbuntuColors.darkGrey : theme.palette.normal.background
+    backgroundColor: incognito ? LomiriColors.darkGrey : theme.palette.normal.background
 
     implicitHeight: tabsBar.height + navigationBar.height + content.anchors.topMargin
 

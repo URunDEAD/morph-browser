@@ -729,9 +729,17 @@ WebView {
         }
 
         if (loadRequest.status === WebEngineLoadRequest.LoadFailedStatus) {
-            // ToDo: Is there a way to not load the "blink error message" in the first place ?
-            // we cannot change the url to "about:blank", because this would change the addressbar and remove the error state
-            webview.runJavaScript("if (document.documentElement) {document.removeChild(document.documentElement);}")
+            if (loadRequest.errorCode < 0) { // Positive errorCode means HTTP error
+                /*
+                 * This intends to remove Chromium's error page. Ideally, we could set
+                 * webView.settings.errorPageEnabled = false and we wouldn't have to do
+                 * this. However, we can't do that since we need Chromium's error page for
+                 * HTTP error, where we can't detect ourselve if the server has served
+                 * a custom error page or not. That means we have to leave errorPageEnabled
+                 * as true (the default), and instead do this only when we need.
+                 */
+                webview.runJavaScript("if (document.documentElement) {document.removeChild(document.documentElement);}")
+            }
         }
 
         if ((loadRequest.status === WebEngineLoadRequest.LoadSucceededStatus) && ! UrlUtils.isPdfViewerExtensionUrl(webview.url)) {

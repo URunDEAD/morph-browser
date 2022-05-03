@@ -1,3 +1,9 @@
+morph-browser (0.25) UNRELEASED; urgency=medium
+
+  * Switch from url-dispatcher to lomiri-url-dispatcher
+
+ -- Guido Berhoerster <guido+gitlab.com@berhoerster.name>  Tue, 03 May 2022 11:51:04 +0200
+
 morph-browser (0.24+ubports) xenial; urgency=medium
 
   * Imported to UBports

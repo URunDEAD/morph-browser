@@ -73,7 +73,7 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${DESKTOP_FILE}
         DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
 
 install(FILES "morph-browser.url-dispatcher"
-        DESTINATION ${CMAKE_INSTALL_DATADIR}/url-dispatcher/urls)
+        DESTINATION ${CMAKE_INSTALL_DATADIR}/lomiri-url-dispatcher/urls)
 
 install(FILES "morph-browser-content-hub.json"
     DESTINATION ${CMAKE_INSTALL_DATADIR}/content-hub/peers

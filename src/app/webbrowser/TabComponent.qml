@@ -232,7 +232,7 @@ Component {
 
                     Behavior on opacity {
                         LomiriNumberAnimation {
-                            duration: UbuntuAnimation.SlowDuration
+                            duration: LomiriAnimation.SlowDuration
                         }
                     }
                     onOpacityChanged: {

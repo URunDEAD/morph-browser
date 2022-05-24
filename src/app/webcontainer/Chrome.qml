@@ -208,7 +208,7 @@ ChromeBase {
             }
 
             Behavior on iconColor {
-                ColorAnimation { duration: UbuntuAnimation.BriskDuration  }
+                ColorAnimation { duration: LomiriAnimation.BriskDuration  }
             }
 
             SequentialAnimation {

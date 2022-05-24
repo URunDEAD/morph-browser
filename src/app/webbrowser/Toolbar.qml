@@ -59,7 +59,7 @@ Rectangle {
 
     Behavior on y {
         LomiriNumberAnimation {
-            duration: UbuntuAnimation.BriskDuration
+            duration: LomiriAnimation.BriskDuration
         }
     }
 

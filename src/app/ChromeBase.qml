@@ -47,7 +47,7 @@ StyledItem {
     y: (state == "shown") ? 0 : -height
     Behavior on y {
         SmoothedAnimation {
-            duration: UbuntuAnimation.BriskDuration
+            duration: LomiriAnimation.BriskDuration
         }
     }
 

@@ -743,7 +743,7 @@ Common.BrowserView {
         Behavior on y {
             NumberAnimation {
                 from: -chrome.height + invisibleTabChrome.height
-                duration: UbuntuAnimation.FastDuration
+                duration: LomiriAnimation.FastDuration
             }
         }
 

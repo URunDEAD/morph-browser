@@ -145,7 +145,7 @@ bool WebappContainer::initialize()
                 QQmlProperty::write(m_object, QStringLiteral("webappModelSearchPath"), searchDir.path());
             }
         }
-        if ( ! m_localCookieStoreDbPath.isEmpty()) {
+        if (!m_localCookieStoreDbPath.isEmpty()) {
             QQmlProperty::write(m_object, QStringLiteral("localCookieStoreDbPath"), m_localCookieStoreDbPath);
         }
 
@@ -174,7 +174,7 @@ bool WebappContainer::initialize()
 
         context->setContextProperty("webappContainerHelper", m_webappContainerHelper.data());
 
-        if ( ! m_popupRedirectionUrlPrefixPattern.isEmpty()) {
+        if (!m_popupRedirectionUrlPrefixPattern.isEmpty()) {
             const QString WEBAPP_CONTAINER_DO_NOT_FILTER_PATTERN_URL_ENV_VAR =
                 qgetenv("WEBAPP_CONTAINER_DO_NOT_FILTER_PATTERN_URL");
             QQmlProperty::write(
@@ -389,7 +389,7 @@ void WebappContainer::parseCommandLine()
 
             Q_FOREACH(const QString& userScriptFile, userScriptFiles)
             {
-                if (! isValidLocalResource(userScriptFile))
+                if (!isValidLocalResource(userScriptFile))
                 {
                     continue;
                 }
@@ -466,7 +466,7 @@ QString WebappContainer::getExtraWebappUrlPatterns() const
         else
             extraPatterns = patternsValue.toString();
 
-        if ( ! extraPatterns.isEmpty())
+        if (!extraPatterns.isEmpty())
         {
             qDebug() << "Found extra url patterns to be added to the list of allowed urls: "
                      << extraPatterns;

@@ -277,8 +277,6 @@ void WebappContainer::setupLocalSchemeFilterIfAny(QQmlContext* context, const QS
 bool WebappContainer::isValidLocalApplicationRunningContext() const
 {
     return m_webappModelSearchPath.isEmpty() &&
-        m_popupRedirectionUrlPrefixPattern.isEmpty() &&
-        m_webappUrlPatterns.isEmpty() &&
         m_webappName.isEmpty();
 }
 

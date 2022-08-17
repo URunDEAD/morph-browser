@@ -181,6 +181,10 @@ WebappWebview {
 
     function shouldAllowNavigationTo(url) {
         // Check if URL requested matches against provided patterns
+        if (runningLocalApplication && url.startsWith('file://')) {
+            return true;
+        }
+
         if (haveValidUrlPatterns()) {
             for (var i = 0; i < webappUrlPatterns.length; ++i) {
                 var pattern = webappUrlPatterns[i]
@@ -359,7 +363,7 @@ WebappWebview {
           }
         }
 
-        if (runningLocalApplication && url.indexOf("file://") !== 0) {
+        if (runningLocalApplication && !url.startsWith("file://") && !webview.haveValidUrlPatterns) {
             request.action = WebEngineNavigationRequest.IgnoreRequest;
             openUrlExternally(url, true);
             return;
@@ -377,7 +381,7 @@ WebappWebview {
         // Pass-through if we are not running as a named webapp (--webapp='Gmail')
         // or if we dont have a list of url patterns specified to filter the
         // browsing actions
-        if ( ! webview.haveValidUrlPatterns() && ! webview.isRunningAsANamedWebapp()) {
+        if (!webview.haveValidUrlPatterns() && !webview.isRunningAsANamedWebapp()) {
             request.action = WebEngineNavigationRequest.AcceptRequest;
             return;
         }
@@ -409,14 +413,14 @@ WebappWebview {
 
       if (request.action === WebEngineNavigationRequest.IgnoreRequest) {
 
-            if (isMainFrame)
+            if (isMainFrame && request.navigationType === WebEngineNavigationRequest.LinkClickedNavigation)
             {
                 console.debug('Opening: %1 in the browser window.'.arg(url));
                 openUrlExternally(url, true);
             }
             else
             {
-                console.debug('ignored request of current page to %1.'.arg(url));
+                console.debug('ignored request of type %1 of current page to %2.'.arg(request.navigationType).arg(url));
             }
       }
     }

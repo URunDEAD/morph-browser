@@ -10,4 +10,3 @@ usr/share/locale/*/LC_MESSAGES/morph-browser.mo
 usr/share/lomiri-url-dispatcher/
 usr/share/content-hub/peers/morph-browser
 debian/usr.bin.morph-browser etc/apparmor.d
-debian/copy-browser-files.conf usr/share/upstart/sessions/

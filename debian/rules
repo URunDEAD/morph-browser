@@ -9,7 +9,7 @@ export DPKG_GENSYMBOLS_CHECK_LEVEL=4
 BUILDHOME=/tmp/home
 
 %:
-	dh $@ --parallel --with translations
+	dh $@ --parallel --with translations,migrations
 
 apparmor:
 	aa-easyprof -m ./debian/morph-browser-apparmor.manifest --no-verify | \

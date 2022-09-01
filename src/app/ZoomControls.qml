@@ -189,13 +189,18 @@ LomiriShape {
         parent: webview
         objectName: "saveZoomFactorDialog"
         title: i18n.tr("Save Zoom")
-        readonly property string saveDomainText: saveDomainButton.enabled ? i18n.tr("domain zoom (currently %1 and can be removed with reset button or from domain specific settings in privacy settings)".arg(isNaN(internal.currentDomainZoomFactor) ? i18n.tr("none") : Math.round(internal.currentDomainZoomFactor * 100) + "%")) : ""
-        readonly property string saveDefaultText: saveDefaultButton.enabled ? i18n.tr("default zoom (currently %1%, can be changed from settings menu%2)".arg(Math.round(controller.defaultZoomFactor * 100)).arg(controller.viewSpecificZoom ? i18n.tr(" and resets domain zoom") : "")) : ""
-        text: i18n.tr("Current zoom (%1%) can be saved for %2 as ".arg(Math.round(controller.currentZoomFactor * 100)).arg(isWebApp ? i18n.tr("the current web app") : "morph-browser")) + "\n\n"
-        + saveDomainText
-        + (saveDomainButton.enabled && saveDefaultButton.enabled ? "\n\n" + i18n.tr("or") + "\n\n": "")
-        + saveDefaultText
-        + "."
+        text: {
+            var currentApp = isWebApp ? i18n.tr("the current web app") : "Morph Browser";
+            var zoomLevel = Math.round(controller.currentZoomFactor * 100);
+            if (saveDomainButton.enabled && saveDefaultButton.enabled) {
+                return i18n.tr("The current zoom level (%1%) can be saved in %2 either for the current domain or as the default zoom level.").arg(zoomLevel).arg(currentApp);
+            } else if (saveDomainButton.enabled) {
+                return i18n.tr("The current zoom level (%1%) can be saved in %2 for the current domain.").arg(zoomLevel).arg(currentApp)
+            } else if (saveDefaultButton.enabled) {
+                return i18n.tr("The current zoom level (%1%) can be saved in %2 as the default zoom level.").arg(zoomLevel).arg(currentApp);
+            }
+            return "";
+        }
 
         Button {
             id: saveDomainButton

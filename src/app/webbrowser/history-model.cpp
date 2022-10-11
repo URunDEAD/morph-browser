@@ -20,12 +20,13 @@
 #include "history-model.h"
 
 // Qt
+#include <QtCore/QRandomGenerator>
 #include <QtCore/QTimer>
 #include <QtCore/QWriteLocker>
 #include <QtSql/QSqlQuery>
 
 #define SQL_DRIVER QStringLiteral("QSQLITE")
-#define CONNECTION_NAME QStringLiteral("morph-browser-history")
+#define CONNECTION_NAME QStringLiteral("morph-browser-history-%1")
 
 /*!
     \class HistoryModel
@@ -507,6 +508,7 @@ QVariantMap HistoryModel::get(int i) const
 
 DbWorker::DbWorker()
     : QObject()
+    , m_dbName(CONNECTION_NAME.arg(QRandomGenerator::global()->generate()))
     , m_flush(nullptr)
 {
     // Ensure all database operations are performed on the same thread
@@ -531,7 +533,7 @@ DbWorker::~DbWorker()
         m_database.close();
     }
     m_database = QSqlDatabase();
-    QSqlDatabase::removeDatabase(CONNECTION_NAME);
+    QSqlDatabase::removeDatabase(m_dbName);
 }
 
 void DbWorker::doResetDatabase(const QString& databaseName)
@@ -546,7 +548,7 @@ void DbWorker::doResetDatabase(const QString& databaseName)
         m_database.close();
     }
     if (!m_database.isValid()) {
-         m_database = QSqlDatabase::addDatabase(SQL_DRIVER, CONNECTION_NAME);
+         m_database = QSqlDatabase::addDatabase(SQL_DRIVER, m_dbName);
     }
     m_database.setDatabaseName(databaseName);
     m_database.open();

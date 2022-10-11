@@ -159,6 +159,7 @@ private Q_SLOTS:
     void doFlush();
 
 private:
+    QString m_dbName;
     QSqlDatabase m_database;
     QReadWriteLock m_lock;
     QQueue<QPair<Operation, QVariantList>> m_pending;

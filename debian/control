@@ -75,7 +75,7 @@ Depends: ${misc:Depends},
          libqt5webengine5,
          qml-module-qtquick2 (>= 5.5),
          qml-module-qtquick-window2 (>= 5.3),
-         qml-module-ubuntu-onlineaccounts,
+         qml-module-sso-onlineaccounts,
          qml-module-morph-web (= ${binary:Version}),
          qml-module-lomiri-content,
          qml-module-lomiri-components,
@@ -83,7 +83,6 @@ Depends: ${misc:Depends},
          morph-browser (= ${binary:Version}),
 Conflicts: ubuntu-html5-container, webapp-container
 Replaces: ubuntu-html5-container, webapp-container
-Suggests: qml-module-ubuntu-onlineaccounts-client (>= 0.3),
 Description: Morph web applications container
  A lightweight webapp container tailored for Morph, based on the QtWebEngine browser
  engine and using the Suru UI components.

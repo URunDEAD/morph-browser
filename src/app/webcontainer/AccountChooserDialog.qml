@@ -20,7 +20,7 @@ import QtQuick 2.4
 import Qt.labs.settings 1.0
 import Lomiri.Components 1.3
 import Lomiri.Components.ListItems 1.3 as ListItem
-import Lomiri.OnlineAccounts 0.1
+import SSO.OnlineAccounts 0.1
 import Lomiri.OnlineAccounts.Client 0.1
 
 SplashScreen {

@@ -26,6 +26,7 @@ Build-Depends: apparmor:native,
                qml-module-qtwebengine,
                qml-module-lomiri-components,
                qml-module-lomiri-test,
+               qml-module-lomiri-components-extras,
                qtbase5-dev (>= 5.4),
                qtbase5-dev-tools,
                qtdeclarative5-dev,
@@ -51,8 +52,8 @@ Depends: ${misc:Depends},
          qml-module-qtquick-window2 (>= 5.3),
          qml-module-qtsysteminfo,
          qml-module-morph-web (= ${binary:Version}),
-         qml-module-morph-tabsbar (= ${binary:Version}),
          qml-module-lomiri-content,
+         qml-module-lomiri-components-extras,
          qml-module-lomiri-components,
          qml-module-lomiri-action,
 Replaces: morph-browser-assets,
@@ -148,21 +149,6 @@ Description: transitional dummy package for the morph web QML module HTML docume
  A standalone QML module that contains the WebView component,
  in the morph.Web namespace. This package contains the public
  HTML documentation.
-
-Package: qml-module-morph-tabsbar
-Architecture: any
-Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends},
-         ${shlibs:Depends},
-         qml-module-qtwebengine,
-         qml-module-qtquick2 (>= 5.4),
-         qml-module-qtquick-window2 (>= 5.3),
-         qml-module-qtqml-models2 (>=5.2),
-         qml-module-lomiri-components,
-Description: Morph TabsBar QML module
- A standalone QML module that contains the TabsBar component,
- in the Morph namespace.
 
 # Package: morph-browser-autopilot
 # Architecture: all

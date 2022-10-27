@@ -18,12 +18,12 @@
 
 import QtQuick 2.4
 import Lomiri.Components 1.3
+import Lomiri.Components.Extras 0.3 as Extras
 import Lomiri.Components.Popups 1.3
-import Morph.TabsBar 0.1
 import "."
 import ".."
 
-TabsBar {
+Extras.TabsBar {
     id: tabsBar
     actionColor: incognito ? theme.palette.normal.background : theme.palette.normal.backgroundText
     color: incognito ? theme.palette.normal.backgroundSecondaryText : theme.palette.normal.base  // FIXME: not in palette hardcode for now

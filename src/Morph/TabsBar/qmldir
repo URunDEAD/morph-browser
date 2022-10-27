@@ -1,3 +1,0 @@
-module Morph.TabsBar
-plugin morph-tabsbar
-TabsBar 0.1 TabsBar.qml

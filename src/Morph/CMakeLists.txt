@@ -5,4 +5,3 @@ execute_process(COMMAND lsb_release --short --release
 add_definitions(-DUBUNTU_VERSION="${UBUNTU_VERSION}")
 
 add_subdirectory(Web)
-add_subdirectory(TabsBar)

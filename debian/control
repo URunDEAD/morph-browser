@@ -80,6 +80,7 @@ Depends: ${misc:Depends},
          qml-module-lomiri-content,
          qml-module-lomiri-components,
          qml-module-lomiri-action,
+         qml-module-lomiri-onlineaccounts-client,
          morph-browser (= ${binary:Version}),
 Conflicts: ubuntu-html5-container, webapp-container
 Replaces: ubuntu-html5-container, webapp-container

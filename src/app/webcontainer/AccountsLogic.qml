@@ -18,7 +18,7 @@
 
 import QtQuick 2.4
 import Qt.labs.settings 1.0
-import Lomiri.OnlineAccounts 0.1
+import SSO.OnlineAccounts 0.1
 import Lomiri.OnlineAccounts.Client 0.1
 import webcontainer.private 0.1
 

@@ -1,0 +1,14 @@
+clickable_minimum_required: 7.7.1
+
+builder: cmake
+build_args: -DCLICK_MODE=ON
+
+dependencies_target:
+- qtwebengine5-dev
+- libapparmor-dev
+
+dependencies_host:
+- xvfb
+
+kill: morph-browser
+framework: ubuntu-sdk-20.04

@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-18 19:58+0000\n"
+"POT-Creation-Date: 2022-08-30 07:09+0000\n"
 "PO-Revision-Date: 2021-05-22 21:42+0000\n"
 "Last-Translator: dano6 <dano.kutka@gmail.com>\n"
-"Language-Team: Slovak <https://translate.ubports.com/projects/ubports/"
-"morph-browser/sk/>\n"
+"Language-Team: Slovak <https://translate.ubports.com/projects/ubports/morph-"
+"browser/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,6 +26,7 @@ msgstr "Upozornenie JavaScriptu"
 
 #: src/app/AlertDialog.qml:31 src/app/AuthenticationDialog.qml:47
 #: src/app/ColorSelectDialog.qml:73 src/app/ConfirmDialog.qml:33
+#: src/app/EditCustomUserAgentDialog.qml:62
 #: src/app/HttpAuthenticationDialog.qml:70 src/app/PromptDialog.qml:50
 #: src/app/webbrowser/BookmarkOptions.qml:122
 msgid "OK"
@@ -50,12 +51,12 @@ msgstr ""
 "si pokračovať?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
-#: src/app/GeolocationPermissionRequest.qml:42
+#: src/app/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
 msgstr "Pamätať si voľbu"
 
 #: src/app/AllowCustomSchemesDialog.qml:50
-#: src/app/GeolocationPermissionRequest.qml:49
+#: src/app/GeolocationPermissionRequest.qml:51
 msgid "Allow"
 msgstr "Povoliť"
 
@@ -63,9 +64,10 @@ msgstr "Povoliť"
 #: src/app/AllowOrBlockDomainDialog.qml:53 src/app/AuthenticationDialog.qml:53
 #: src/app/CertificateVerificationDialog.qml:46
 #: src/app/ColorSelectDialog.qml:84 src/app/ConfirmDialog.qml:41
-#: src/app/DownloadDelegate.qml:159 src/app/HttpAuthenticationDialog.qml:80
-#: src/app/PromptDialog.qml:61 src/app/SavePageDialog.qml:73
-#: src/app/ZoomControls.qml:229 src/app/webbrowser/BookmarkOptions.qml:164
+#: src/app/DownloadDelegate.qml:271 src/app/EditCustomUserAgentDialog.qml:69
+#: src/app/HttpAuthenticationDialog.qml:80 src/app/PromptDialog.qml:61
+#: src/app/SavePageDialog.qml:73 src/app/SimpleDownloadDelegate.qml:136
+#: src/app/ZoomControls.qml:238 src/app/webbrowser/BookmarkOptions.qml:182
 #: src/app/webbrowser/ContentDownloadDialog.qml:114
 #: src/app/webbrowser/ContextMenuMobile.qml:143
 #: src/app/webbrowser/SettingsPage.qml:438
@@ -168,30 +170,28 @@ msgstr "Potvrdenie JavaScriptu"
 msgid "Custom User Agents"
 msgstr "Vlastný užívateľský agent"
 
-#: src/app/CustomUserAgentsPage.qml:57 src/app/DomainPermissionsPage.qml:69
-#: src/app/DomainSettingsPage.qml:66 src/app/DownloadsPage.qml:85
+#: src/app/CustomUserAgentsPage.qml:47 src/app/DomainPermissionsPage.qml:69
+#: src/app/DomainSettingsPage.qml:67 src/app/DownloadsPage.qml:87
 #: src/app/actions/SelectAll.qml:22
 msgid "Select all"
 msgstr "Vybrať všetko"
 
-#: src/app/CustomUserAgentsPage.qml:73 src/app/DomainPermissionsPage.qml:85
-#: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
+#: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:85
+#: src/app/DomainSettingsPage.qml:83 src/app/DownloadsPage.qml:103
 msgid "Delete"
 msgstr "Vymazať"
 
-#: src/app/CustomUserAgentsPage.qml:104
+#: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
 msgstr "Nový užívateľský agent"
 
-#: src/app/CustomUserAgentsPage.qml:105
-msgid "Add the name for the new user agent"
-msgstr "Pridať názov novému užívateľskému agentovi"
+#: src/app/CustomUserAgentsPage.qml:161
+#, fuzzy
+#| msgid "New User Agent"
+msgid "Edit User Agent"
+msgstr "Nový užívateľský agent"
 
-#: src/app/CustomUserAgentsPage.qml:207
-msgid "enter user agent string..."
-msgstr "vložte reťazec užívateľského agenta..."
-
-#: src/app/CustomUserAgentsPage.qml:248
+#: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
 msgstr "Žiadny vlastní užívateľský agenti"
 
@@ -199,7 +199,7 @@ msgstr "Žiadny vlastní užívateľský agenti"
 msgid "Domain blacklist/whitelist"
 msgstr "Zoznam blokovaných/povolených domén"
 
-#: src/app/DomainPermissionsPage.qml:114 src/app/DomainSettingsPage.qml:113
+#: src/app/DomainPermissionsPage.qml:114 src/app/DomainSettingsPage.qml:114
 msgid "Add domain"
 msgstr "Pridať doménu"
 
@@ -225,68 +225,149 @@ msgstr "Vždy povoliť prístup"
 msgid "No sites have been granted special permissions"
 msgstr "Žiadnym stránkam neboli udelené zvláštne oprávnenia"
 
-#: src/app/DomainSettingsPage.qml:52
+#: src/app/DomainSettingsPage.qml:53
 msgid "Domain specific settings"
 msgstr "Špecifické nastavenia domény"
 
-#: src/app/DomainSettingsPage.qml:114
+#: src/app/DomainSettingsPage.qml:115
 msgid "Enter the name of the domain, e.g. m.example.com"
 msgstr "Vložte nazov domény, napr. <<m.example.com>>"
 
-#: src/app/DomainSettingsPage.qml:206
+#: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
 msgstr "spustenie ďalších aplikácií je povolené"
 
-#: src/app/DomainSettingsPage.qml:223
-msgid "allowed to access your location"
+#: src/app/DomainSettingsPage.qml:226
+#, fuzzy
+#| msgid "allowed to access your location"
+msgid "access your location"
 msgstr "prístup k vašej polohe je povolený"
 
-#: src/app/DomainSettingsPage.qml:239
+#: src/app/DomainSettingsPage.qml:231
+msgid "Ask each time"
+msgstr ""
+
+#: src/app/DomainSettingsPage.qml:231
+#, fuzzy
+#| msgid "Allow"
+msgid "Allowed"
+msgstr "Povoliť"
+
+#: src/app/DomainSettingsPage.qml:231
+msgid "Denied"
+msgstr ""
+
+#: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
 msgstr "vlastný užívateľský agent"
 
-#: src/app/DomainSettingsPage.qml:315 src/app/DomainSettingsPage.qml:320
+#: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
 msgstr "Priblížiť: "
 
-#: src/app/DomainSettingsPage.qml:320
+#: src/app/DomainSettingsPage.qml:325
 msgid "not set"
 msgstr "bez nastavenia"
 
-#: src/app/DomainSettingsPage.qml:354
+#: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
 msgstr "Pre doménu nie je dostupné žiadne špecifické nastavenie"
 
-#: src/app/DownloadDelegate.qml:131
-msgid "Download failed"
-msgstr "Sťahovanie zlyhalo"
-
 #. TRANSLATORS: %1 is the percentage of the download completed so far
-#: src/app/DownloadDelegate.qml:174
+#: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/app/DownloadDelegate.qml:180
-msgid "Pause"
-msgstr "Prerušiť"
+#: src/app/DownloadDelegate.qml:170
+msgid "Download failed"
+msgstr "Sťahovanie zlyhalo"
 
-#: src/app/DownloadDelegate.qml:191
-msgid "Resume"
-msgstr "Pokračovať"
+#: src/app/DownloadDelegate.qml:199
+msgid "Unknown"
+msgstr ""
 
-#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:768
+#. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
+#: src/app/DownloadDelegate.qml:207
+#, qt-format
+msgid "%1/s"
+msgstr ""
+
+#: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
+#, fuzzy
+#| msgid "Delete"
+msgid "Delete File"
+msgstr "Vymazať"
+
+#: src/app/DownloadDelegate.qml:261
+#, fuzzy
+#| msgid "Clear History"
+msgid "Remove from History"
+msgstr "Vymazať históriu"
+
+#: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
+#, fuzzy
+#| msgid "Copy link"
+msgid "Copy Download Link"
+msgstr "Kopírovať odkaz"
+
+#: src/app/DownloadsDialog.qml:68
+#, fuzzy
+#| msgid "Downloads"
+msgid "Recent Downloads"
+msgstr "Stiahnuté"
+
+#: src/app/DownloadsDialog.qml:83
+#, fuzzy
+#| msgid "Downloads"
+msgid "No Recent Downloads"
+msgstr "Stiahnuté"
+
+#: src/app/DownloadsDialog.qml:106
+#, fuzzy
+#| msgid "Cancel"
+msgid "Cancelled"
+msgstr "Zrušiť"
+
+#: src/app/DownloadsDialog.qml:109
+msgid "Completed"
+msgstr ""
+
+#: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
+#: src/app/webcontainer/WebappSettingsPage.qml:273
+msgid "Clear"
+msgstr "Vyčistiť"
+
+#: src/app/DownloadsDialog.qml:182
+msgid "View All"
+msgstr ""
+
+#: src/app/DownloadsPage.qml:48 src/app/webbrowser/Browser.qml:829
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Downloads"
 msgstr "Stiahnuté"
 
-#: src/app/DownloadsPage.qml:60
+#: src/app/DownloadsPage.qml:62
 msgid "Confirm selection"
 msgstr "Potvrdiť výber"
 
-#: src/app/DownloadsPage.qml:297
+#: src/app/DownloadsPage.qml:311
 msgid "No downloads available"
 msgstr "Žiadne stiahnuté súbory"
+
+#: src/app/EditCustomUserAgentDialog.qml:42
+msgid "this user agent name is already taken"
+msgstr ""
+
+#: src/app/EditCustomUserAgentDialog.qml:48
+#, fuzzy
+#| msgid "Add the name for the new user agent"
+msgid "Add the name for the user agent"
+msgstr "Pridať názov novému užívateľskému agentovi"
+
+#: src/app/EditCustomUserAgentDialog.qml:54
+msgid "enter user agent string..."
+msgstr "vložte reťazec užívateľského agenta..."
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
@@ -327,7 +408,7 @@ msgstr "Žiadosť o povolenie"
 msgid "This page wants to know your device’s location."
 msgstr "Táto stránka chce poznať polohu zariadenia."
 
-#: src/app/GeolocationPermissionRequest.qml:55
+#: src/app/GeolocationPermissionRequest.qml:57
 msgid "Deny"
 msgstr "Zakázať"
 
@@ -492,7 +573,11 @@ msgstr "Stiahnuť"
 msgid "Save as PDF"
 msgstr "Uložiť ako PDF"
 
-#: src/app/WebViewImpl.qml:667 src/app/webbrowser/Browser.qml:815
+#: src/app/SimpleDownloadDelegate.qml:128
+msgid "Remove from List"
+msgstr ""
+
+#: src/app/WebViewImpl.qml:680 src/app/webbrowser/Browser.qml:876
 msgid "Zoom"
 msgstr "Priblíženie"
 
@@ -512,7 +597,7 @@ msgstr "prispôsobiť"
 msgid "Zoom In"
 msgstr "Priblížiť"
 
-#: src/app/ZoomControls.qml:83 src/app/webbrowser/BookmarkOptions.qml:174
+#: src/app/ZoomControls.qml:83 src/app/webbrowser/BookmarkOptions.qml:164
 #: src/app/webbrowser/SettingsPage.qml:530
 msgid "Save"
 msgstr "Uložiť"
@@ -533,50 +618,39 @@ msgstr "predvolený"
 msgid "auto-fit"
 msgstr "autom. prizp."
 
-#: src/app/ZoomControls.qml:187
+#: src/app/ZoomControls.qml:191
 msgid "Save Zoom"
 msgstr "Uložiť veľkosť"
 
-#: src/app/ZoomControls.qml:188
-msgid "none"
-msgstr "žiadne"
-
-#: src/app/ZoomControls.qml:188
-#, qt-format
-msgid ""
-"domain zoom (currently %1 and can be removed with reset button or from "
-"domain specific settings in privacy settings)"
-msgstr ""
-"pre doménu (aktuálne %1, môže byť zrušená tlačidlom Obnoviť alebo v "
-"Špecifických nastaveniach domény v ponuke Súkromie a oprávnenia)"
-
-#: src/app/ZoomControls.qml:189
-msgid " and resets domain zoom"
-msgstr " a zruší uloženie pre doménu"
-
-#: src/app/ZoomControls.qml:189
-#, qt-format
-msgid "default zoom (currently %1%, can be changed from settings menu%2)"
-msgstr "ako predvolený (aktuálne %1%, môže byť zmenená v ponuke Nastavenia%2)"
-
-#: src/app/ZoomControls.qml:190
+#: src/app/ZoomControls.qml:193
 msgid "the current web app"
 msgstr "aktuálna web app"
 
-#: src/app/ZoomControls.qml:190
+#: src/app/ZoomControls.qml:196
 #, qt-format
-msgid "Current zoom (%1%) can be saved for %2 as "
-msgstr "Súčasná veľkosť stránky (%1%) môže byť pre %2 uložená "
-
-#: src/app/ZoomControls.qml:192
-msgid "or"
-msgstr "alebo"
+msgid ""
+"The current zoom level (%1%) can be saved in %2 either for the current "
+"domain or as the default zoom level."
+msgstr ""
 
 #: src/app/ZoomControls.qml:198
+#, fuzzy, qt-format
+#| msgid "Current zoom (%1%) can be saved for %2 as "
+msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
+msgstr "Súčasná veľkosť stránky (%1%) môže byť pre %2 uložená "
+
+#: src/app/ZoomControls.qml:200
+#, fuzzy, qt-format
+#| msgid "Current zoom (%1%) can be saved for %2 as "
+msgid ""
+"The current zoom level (%1%) can be saved in %2 as the default zoom level."
+msgstr "Súčasná veľkosť stránky (%1%) môže byť pre %2 uložená "
+
+#: src/app/ZoomControls.qml:207
 msgid "Save for domain"
 msgstr "Uložiť pre doménu"
 
-#: src/app/ZoomControls.qml:211
+#: src/app/ZoomControls.qml:220
 msgid "Save as default"
 msgstr "Uložiť ako predvolené"
 
@@ -634,7 +708,7 @@ msgstr "Vystrihnúť"
 msgid "Erase"
 msgstr "Vymazať"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:761
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:822
 msgid "Find in page"
 msgstr "Nájsť na stránke"
 
@@ -664,7 +738,7 @@ msgstr "Prejsť na"
 msgid "Address;URL;www"
 msgstr "Adresa;URL;www"
 
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:635
+#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:692
 #: src/app/webbrowser/TabsBar.qml:88
 msgid "New Tab"
 msgstr "Nová karta"
@@ -734,7 +808,7 @@ msgstr "Uložiť odkaz"
 msgid "Save video"
 msgstr "Uložiť video"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:741
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
 msgid "Share"
 msgstr "Zdieľať"
 
@@ -785,88 +859,83 @@ msgstr "Vytvoriť nový priečinok"
 
 #: src/app/webbrowser/BookmarksFoldersView.qml:191
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
-#: src/app/webbrowser/NewTabView.qml:253 src/app/webbrowser/SettingsPage.qml:90
+#: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
 #: src/app/webbrowser/SettingsPage.qml:466
 msgid "Homepage"
 msgstr "Domovská stránka"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:749 src/app/webbrowser/NewTabView.qml:130
+#: src/app/webbrowser/Browser.qml:810 src/app/webbrowser/NewTabView.qml:130
 #: src/app/webbrowser/NewTabViewWide.qml:139
 msgid "Bookmarks"
 msgstr "Záložky"
 
-#: src/app/webbrowser/BookmarksView.qml:77
-#: src/app/webbrowser/BookmarksViewWide.qml:76
-#: src/app/webbrowser/Browser.qml:621 src/app/webbrowser/HistoryView.qml:123
-#: src/app/webbrowser/HistoryViewWide.qml:408
-msgid "Done"
-msgstr "Hotovo"
-
-#: src/app/webbrowser/BookmarksView.qml:91
-#: src/app/webbrowser/BookmarksViewWide.qml:90
-#: src/app/webbrowser/HistoryView.qml:137
-#: src/app/webbrowser/HistoryViewWide.qml:422 src/app/webbrowser/TabsBar.qml:64
-#: src/app/webbrowser/TabsList.qml:99
-msgid "New tab"
-msgstr "Nová karta"
-
-#: src/app/webbrowser/Browser.qml:222
-#: src/app/webcontainer/WebViewImplOxide.qml:310
+#: src/app/webbrowser/Browser.qml:231
+#: src/app/webcontainer/WebViewImplOxide.qml:299
 msgid "Blocked domain"
 msgstr "Blokovaná doména"
 
-#: src/app/webbrowser/Browser.qml:223
-#: src/app/webcontainer/WebViewImplOxide.qml:311
+#: src/app/webbrowser/Browser.qml:232
+#: src/app/webcontainer/WebViewImplOxide.qml:300
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr "Požiadavka navigácie na doménu %1 zablokovaná."
 
-#: src/app/webbrowser/Browser.qml:249
-#: src/app/webcontainer/WebViewImplOxide.qml:337
+#: src/app/webbrowser/Browser.qml:258
+#: src/app/webcontainer/WebViewImplOxide.qml:326
 msgid "Whitelisted domain"
 msgstr "Doména na zozname povolených"
 
-#: src/app/webbrowser/Browser.qml:250
+#: src/app/webbrowser/Browser.qml:259
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
 msgstr ""
 "doména %1 je teraz medzi povolenými, a bude aktívna po obnovení stránky."
 
-#: src/app/webbrowser/Browser.qml:729
+#: src/app/webbrowser/Browser.qml:649
+msgid "Done"
+msgstr "Hotovo"
+
+#: src/app/webbrowser/Browser.qml:674
+#, fuzzy
+#| msgid "Close Tab"
+msgid "Reopen Tab"
+msgstr "Zavrieť kartu"
+
+#: src/app/webbrowser/Browser.qml:790
 msgid "New window"
 msgstr "Nové okno"
 
-#: src/app/webbrowser/Browser.qml:735
+#: src/app/webbrowser/Browser.qml:796
 msgid "New private window"
 msgstr "Nové súkromné okno"
 
-#: src/app/webbrowser/Browser.qml:755 src/app/webbrowser/HistoryView.qml:31
+#: src/app/webbrowser/Browser.qml:816 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
 msgstr "História"
 
-#: src/app/webbrowser/Browser.qml:775 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/Browser.qml:836 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
 msgstr "Nastavenia"
 
-#: src/app/webbrowser/Browser.qml:781
+#: src/app/webbrowser/Browser.qml:842
 msgid "View source"
 msgstr "Ukázať zdrojový kód"
 
-#: src/app/webbrowser/Browser.qml:794
+#: src/app/webbrowser/Browser.qml:855
 msgid "Save / Print to PDF"
 msgstr "Uložiť/ Vytlačiť ako PDF"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1014 src/app/webbrowser/Browser.qml:1052
+#: src/app/webbrowser/Browser.qml:1075 src/app/webbrowser/Browser.qml:1113
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1830
+#: src/app/webbrowser/Browser.qml:1947
 msgid "the file is already in the downloads folder."
 msgstr "súbor je už v zložke na sťahovanie."
 
@@ -881,18 +950,13 @@ msgstr ""
 msgid "Choose an application"
 msgstr "Vyberte aplikáciu"
 
-#: src/app/webbrowser/ExpandedHistoryView.qml:117
+#: src/app/webbrowser/ExpandedHistoryView.qml:135
 #, qt-format
 msgid "%1 page"
 msgid_plural "%1 pages"
 msgstr[0] "%1 stránok"
 msgstr[1] "%1 stránka"
 msgstr[2] "%1 stránky"
-
-#: src/app/webbrowser/ExpandedHistoryView.qml:132
-#: src/app/webbrowser/NewTabView.qml:143
-msgid "Less"
-msgstr "Menej"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:26
 msgid "Last Visited"
@@ -929,16 +993,20 @@ msgstr ""
 "prehliadania.\n"
 "Záložky, ktoré vytvoríte budú zachované."
 
-#: src/app/webbrowser/NewTabView.qml:143
+#: src/app/webbrowser/NewTabView.qml:142
+msgid "Less"
+msgstr "Menej"
+
+#: src/app/webbrowser/NewTabView.qml:142
 msgid "More"
 msgstr "Viac"
 
-#: src/app/webbrowser/NewTabView.qml:327
+#: src/app/webbrowser/NewTabView.qml:326
 #: src/app/webbrowser/NewTabViewWide.qml:138
 msgid "Top sites"
 msgstr "Top stránky"
 
-#: src/app/webbrowser/NewTabView.qml:358
+#: src/app/webbrowser/NewTabView.qml:357
 msgid "You haven't visited any site yet"
 msgstr "Nenavštívili ste ešte žiadnu stránku"
 
@@ -1066,11 +1134,6 @@ msgstr "Zmazať všetky cookies"
 msgid "Clear all Cookies?"
 msgstr "Zmazať všetky cookies?"
 
-#: src/app/webbrowser/SettingsPage.qml:445
-#: src/app/webcontainer/WebappSettingsPage.qml:273
-msgid "Clear"
-msgstr "Vyčistiť"
-
 #: src/app/webbrowser/SettingsPage.qml:496
 msgid "Custom hompage"
 msgstr "Vlastná domovská stránka"
@@ -1091,9 +1154,13 @@ msgstr "Prejdite prstom hore pre ukončenie režimu celej obrazovky"
 msgid "Press ESC To Exit Full Screen"
 msgstr "Stlačte ESC pre ukončenie režimu celej obrazovky"
 
-#: src/app/webbrowser/TabPreview.qml:97
+#: src/app/webbrowser/TabPreview.qml:113
 msgid "Tap to view"
 msgstr "Kliknutím zobrazíte"
+
+#: src/app/webbrowser/TabsBar.qml:64 src/app/webbrowser/TabsList.qml:100
+msgid "New tab"
+msgstr "Nová karta"
 
 #: src/app/webbrowser/TabsBar.qml:99
 msgid "Move to New Window"
@@ -1108,14 +1175,14 @@ msgid "Remove"
 msgstr "Odstrániť"
 
 #. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:108
-#: src/app/webcontainer/webapp-container.qml:76
+#: src/app/webbrowser/morph-browser.qml:110
+#: src/app/webcontainer/webapp-container.qml:75
 #, qt-format
 msgid "%1 - Morph Web Browser"
 msgstr "%1 - Webový prehliadač Morph"
 
-#: src/app/webbrowser/morph-browser.qml:110
-#: src/app/webcontainer/webapp-container.qml:78
+#: src/app/webbrowser/morph-browser.qml:112
+#: src/app/webcontainer/webapp-container.qml:77
 #: po/src/app/webbrowser/morph-browser.desktop.in.in.h:2
 msgid "Morph Web Browser"
 msgstr "Webový prehliadač Morph"
@@ -1189,7 +1256,7 @@ msgstr "Vyberte účet"
 msgid "Oops, something went wrong."
 msgstr "Ups, niečo sa pokazilo."
 
-#: src/app/webcontainer/WebViewImplOxide.qml:338
+#: src/app/webcontainer/WebViewImplOxide.qml:327
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
 msgstr "doména %1 je teraz medzi povolenými, prosím obnovte stránku."
@@ -1221,6 +1288,34 @@ msgstr "Nové okno"
 #: po/src/app/webbrowser/morph-browser.desktop.in.in.h:6
 msgid "New Private Window"
 msgstr "Nové súkromné okno"
+
+#~ msgid "Pause"
+#~ msgstr "Prerušiť"
+
+#~ msgid "Resume"
+#~ msgstr "Pokračovať"
+
+#~ msgid "none"
+#~ msgstr "žiadne"
+
+#, qt-format
+#~ msgid ""
+#~ "domain zoom (currently %1 and can be removed with reset button or from "
+#~ "domain specific settings in privacy settings)"
+#~ msgstr ""
+#~ "pre doménu (aktuálne %1, môže byť zrušená tlačidlom Obnoviť alebo v "
+#~ "Špecifických nastaveniach domény v ponuke Súkromie a oprávnenia)"
+
+#~ msgid " and resets domain zoom"
+#~ msgstr " a zruší uloženie pre doménu"
+
+#, qt-format
+#~ msgid "default zoom (currently %1%, can be changed from settings menu%2)"
+#~ msgstr ""
+#~ "ako predvolený (aktuálne %1%, môže byť zmenená v ponuke Nastavenia%2)"
+
+#~ msgid "or"
+#~ msgstr "alebo"
 
 #~ msgid "Save as HTML / PDF"
 #~ msgstr "Uložiť ako HTML / PDF"

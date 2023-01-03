@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-18 19:58+0000\n"
+"POT-Creation-Date: 2022-08-30 07:09+0000\n"
 "PO-Revision-Date: 2021-06-22 20:16+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
@@ -26,6 +26,7 @@ msgstr "JavaScript 警示"
 
 #: src/app/AlertDialog.qml:31 src/app/AuthenticationDialog.qml:47
 #: src/app/ColorSelectDialog.qml:73 src/app/ConfirmDialog.qml:33
+#: src/app/EditCustomUserAgentDialog.qml:62
 #: src/app/HttpAuthenticationDialog.qml:70 src/app/PromptDialog.qml:50
 #: src/app/webbrowser/BookmarkOptions.qml:122
 msgid "OK"
@@ -47,12 +48,12 @@ msgid ""
 msgstr "如果可能的話，這將嘗試該網址分發給系統應用程式。 您要繼續嗎？"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
-#: src/app/GeolocationPermissionRequest.qml:42
+#: src/app/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
 msgstr "記住我的決定"
 
 #: src/app/AllowCustomSchemesDialog.qml:50
-#: src/app/GeolocationPermissionRequest.qml:49
+#: src/app/GeolocationPermissionRequest.qml:51
 msgid "Allow"
 msgstr "同意"
 
@@ -60,9 +61,10 @@ msgstr "同意"
 #: src/app/AllowOrBlockDomainDialog.qml:53 src/app/AuthenticationDialog.qml:53
 #: src/app/CertificateVerificationDialog.qml:46
 #: src/app/ColorSelectDialog.qml:84 src/app/ConfirmDialog.qml:41
-#: src/app/DownloadDelegate.qml:159 src/app/HttpAuthenticationDialog.qml:80
-#: src/app/PromptDialog.qml:61 src/app/SavePageDialog.qml:73
-#: src/app/ZoomControls.qml:229 src/app/webbrowser/BookmarkOptions.qml:164
+#: src/app/DownloadDelegate.qml:271 src/app/EditCustomUserAgentDialog.qml:69
+#: src/app/HttpAuthenticationDialog.qml:80 src/app/PromptDialog.qml:61
+#: src/app/SavePageDialog.qml:73 src/app/SimpleDownloadDelegate.qml:136
+#: src/app/ZoomControls.qml:238 src/app/webbrowser/BookmarkOptions.qml:182
 #: src/app/webbrowser/ContentDownloadDialog.qml:114
 #: src/app/webbrowser/ContextMenuMobile.qml:143
 #: src/app/webbrowser/SettingsPage.qml:438
@@ -84,7 +86,9 @@ msgid ""
 "You're trying to access %1 but it is not on your approved domain whitelist. "
 "Would you like to continue to block the domain, allow browsing to the "
 "domain, or go back?"
-msgstr "您試著存取 %1，但它不在您批准的網域白名單中。是否繼續阻止該網域、允許瀏覽網域或返回網域？"
+msgstr ""
+"您試著存取 %1，但它不在您批准的網域白名單中。是否繼續阻止該網域、允許瀏覽網域"
+"或返回網域？"
 
 #: src/app/AllowOrBlockDomainDialog.qml:31
 #, qt-format
@@ -92,7 +96,9 @@ msgid ""
 "%1 is trying to access %2 but it is not on your approved domain whitelist. "
 "Would you like to continue to block the domain, allow loading data from the "
 "domain, or just ignore this request ?"
-msgstr "%1 試著存取 %2，但它不在您批准的網域白名單中。是否繼續阻止該網域、允許瀏覽網域或返回網域？"
+msgstr ""
+"%1 試著存取 %2，但它不在您批准的網域白名單中。是否繼續阻止該網域、允許瀏覽網"
+"域或返回網域？"
 
 #: src/app/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
@@ -157,30 +163,28 @@ msgstr "JavaScript 確認"
 msgid "Custom User Agents"
 msgstr "自訂使用者代理"
 
-#: src/app/CustomUserAgentsPage.qml:57 src/app/DomainPermissionsPage.qml:69
-#: src/app/DomainSettingsPage.qml:66 src/app/DownloadsPage.qml:85
+#: src/app/CustomUserAgentsPage.qml:47 src/app/DomainPermissionsPage.qml:69
+#: src/app/DomainSettingsPage.qml:67 src/app/DownloadsPage.qml:87
 #: src/app/actions/SelectAll.qml:22
 msgid "Select all"
 msgstr "全選"
 
-#: src/app/CustomUserAgentsPage.qml:73 src/app/DomainPermissionsPage.qml:85
-#: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
+#: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:85
+#: src/app/DomainSettingsPage.qml:83 src/app/DownloadsPage.qml:103
 msgid "Delete"
 msgstr "刪除"
 
-#: src/app/CustomUserAgentsPage.qml:104
+#: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
 msgstr "新使用者代理"
 
-#: src/app/CustomUserAgentsPage.qml:105
-msgid "Add the name for the new user agent"
-msgstr "新增新使用者代理的名稱"
+#: src/app/CustomUserAgentsPage.qml:161
+#, fuzzy
+#| msgid "New User Agent"
+msgid "Edit User Agent"
+msgstr "新使用者代理"
 
-#: src/app/CustomUserAgentsPage.qml:207
-msgid "enter user agent string..."
-msgstr "輸入使用者代理字串..."
-
-#: src/app/CustomUserAgentsPage.qml:248
+#: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
 msgstr "沒有可用的自訂使用者代理"
 
@@ -188,7 +192,7 @@ msgstr "沒有可用的自訂使用者代理"
 msgid "Domain blacklist/whitelist"
 msgstr "網域黑名單/白名單"
 
-#: src/app/DomainPermissionsPage.qml:114 src/app/DomainSettingsPage.qml:113
+#: src/app/DomainPermissionsPage.qml:114 src/app/DomainSettingsPage.qml:114
 msgid "Add domain"
 msgstr "新增網域"
 
@@ -213,68 +217,149 @@ msgstr "允許訪問"
 msgid "No sites have been granted special permissions"
 msgstr "沒有網站被授予特殊權限"
 
-#: src/app/DomainSettingsPage.qml:52
+#: src/app/DomainSettingsPage.qml:53
 msgid "Domain specific settings"
 msgstr "特定網域設定"
 
-#: src/app/DomainSettingsPage.qml:114
+#: src/app/DomainSettingsPage.qml:115
 msgid "Enter the name of the domain, e.g. m.example.com"
 msgstr "輸入網域名稱，例如： example.com"
 
-#: src/app/DomainSettingsPage.qml:206
+#: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
 msgstr "允許啟動其他的應用程式"
 
-#: src/app/DomainSettingsPage.qml:223
-msgid "allowed to access your location"
+#: src/app/DomainSettingsPage.qml:226
+#, fuzzy
+#| msgid "allowed to access your location"
+msgid "access your location"
 msgstr "是否允許存取您的位置"
 
-#: src/app/DomainSettingsPage.qml:239
+#: src/app/DomainSettingsPage.qml:231
+msgid "Ask each time"
+msgstr ""
+
+#: src/app/DomainSettingsPage.qml:231
+#, fuzzy
+#| msgid "Allow"
+msgid "Allowed"
+msgstr "同意"
+
+#: src/app/DomainSettingsPage.qml:231
+msgid "Denied"
+msgstr ""
+
+#: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
 msgstr "制訂使用者代理"
 
-#: src/app/DomainSettingsPage.qml:315 src/app/DomainSettingsPage.qml:320
+#: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
 msgstr "縮放： "
 
-#: src/app/DomainSettingsPage.qml:320
+#: src/app/DomainSettingsPage.qml:325
 msgid "not set"
 msgstr "沒有設置"
 
-#: src/app/DomainSettingsPage.qml:354
+#: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
 msgstr "沒有可用的網域特定設定"
 
-#: src/app/DownloadDelegate.qml:131
-msgid "Download failed"
-msgstr "下載失敗"
-
 #. TRANSLATORS: %1 is the percentage of the download completed so far
-#: src/app/DownloadDelegate.qml:174
+#: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/app/DownloadDelegate.qml:180
-msgid "Pause"
-msgstr "暫停"
+#: src/app/DownloadDelegate.qml:170
+msgid "Download failed"
+msgstr "下載失敗"
 
-#: src/app/DownloadDelegate.qml:191
-msgid "Resume"
-msgstr "恢復"
+#: src/app/DownloadDelegate.qml:199
+msgid "Unknown"
+msgstr ""
 
-#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:768
+#. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
+#: src/app/DownloadDelegate.qml:207
+#, qt-format
+msgid "%1/s"
+msgstr ""
+
+#: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
+#, fuzzy
+#| msgid "Delete"
+msgid "Delete File"
+msgstr "刪除"
+
+#: src/app/DownloadDelegate.qml:261
+#, fuzzy
+#| msgid "Clear History"
+msgid "Remove from History"
+msgstr "清除歷史"
+
+#: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
+#, fuzzy
+#| msgid "Copy link"
+msgid "Copy Download Link"
+msgstr "複製連結"
+
+#: src/app/DownloadsDialog.qml:68
+#, fuzzy
+#| msgid "Downloads"
+msgid "Recent Downloads"
+msgstr "下載"
+
+#: src/app/DownloadsDialog.qml:83
+#, fuzzy
+#| msgid "Downloads"
+msgid "No Recent Downloads"
+msgstr "下載"
+
+#: src/app/DownloadsDialog.qml:106
+#, fuzzy
+#| msgid "Cancel"
+msgid "Cancelled"
+msgstr "取消"
+
+#: src/app/DownloadsDialog.qml:109
+msgid "Completed"
+msgstr ""
+
+#: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
+#: src/app/webcontainer/WebappSettingsPage.qml:273
+msgid "Clear"
+msgstr "清除"
+
+#: src/app/DownloadsDialog.qml:182
+msgid "View All"
+msgstr ""
+
+#: src/app/DownloadsPage.qml:48 src/app/webbrowser/Browser.qml:829
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Downloads"
 msgstr "下載"
 
-#: src/app/DownloadsPage.qml:60
+#: src/app/DownloadsPage.qml:62
 msgid "Confirm selection"
 msgstr "確認選擇"
 
-#: src/app/DownloadsPage.qml:297
+#: src/app/DownloadsPage.qml:311
 msgid "No downloads available"
 msgstr "沒有下載可以提供"
+
+#: src/app/EditCustomUserAgentDialog.qml:42
+msgid "this user agent name is already taken"
+msgstr ""
+
+#: src/app/EditCustomUserAgentDialog.qml:48
+#, fuzzy
+#| msgid "Add the name for the new user agent"
+msgid "Add the name for the user agent"
+msgstr "新增新使用者代理的名稱"
+
+#: src/app/EditCustomUserAgentDialog.qml:54
+msgid "enter user agent string..."
+msgstr "輸入使用者代理字串..."
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
@@ -315,7 +400,7 @@ msgstr "請求許可"
 msgid "This page wants to know your device’s location."
 msgstr "此頁面想要知道您的位置。"
 
-#: src/app/GeolocationPermissionRequest.qml:55
+#: src/app/GeolocationPermissionRequest.qml:57
 msgid "Deny"
 msgstr "拒絕"
 
@@ -478,7 +563,11 @@ msgstr "下載"
 msgid "Save as PDF"
 msgstr "另存為 PDF"
 
-#: src/app/WebViewImpl.qml:667 src/app/webbrowser/Browser.qml:815
+#: src/app/SimpleDownloadDelegate.qml:128
+msgid "Remove from List"
+msgstr ""
+
+#: src/app/WebViewImpl.qml:680 src/app/webbrowser/Browser.qml:876
 msgid "Zoom"
 msgstr "縮放"
 
@@ -498,7 +587,7 @@ msgstr "重置縮放"
 msgid "Zoom In"
 msgstr "放大"
 
-#: src/app/ZoomControls.qml:83 src/app/webbrowser/BookmarkOptions.qml:174
+#: src/app/ZoomControls.qml:83 src/app/webbrowser/BookmarkOptions.qml:164
 #: src/app/webbrowser/SettingsPage.qml:530
 msgid "Save"
 msgstr "儲存"
@@ -519,48 +608,39 @@ msgstr "預設"
 msgid "auto-fit"
 msgstr "自動符合大小"
 
-#: src/app/ZoomControls.qml:187
+#: src/app/ZoomControls.qml:191
 msgid "Save Zoom"
 msgstr "儲存縮放"
 
-#: src/app/ZoomControls.qml:188
-msgid "none"
-msgstr "無"
-
-#: src/app/ZoomControls.qml:188
-#, qt-format
-msgid ""
-"domain zoom (currently %1 and can be removed with reset button or from "
-"domain specific settings in privacy settings)"
-msgstr "‎網域縮放（目前 %1 ‎可以使用重置按鈕或從隱私設置裡的網域特定設定中移除）‎"
-
-#: src/app/ZoomControls.qml:189
-msgid " and resets domain zoom"
-msgstr " 並重置網域縮放"
-
-#: src/app/ZoomControls.qml:189
-#, qt-format
-msgid "default zoom (currently %1%, can be changed from settings menu%2)"
-msgstr "預設縮放（目前 %1， 可從設定選單%2 裡變更 ）"
-
-#: src/app/ZoomControls.qml:190
+#: src/app/ZoomControls.qml:193
 msgid "the current web app"
 msgstr "目前的網頁應用程式"
 
-#: src/app/ZoomControls.qml:190
+#: src/app/ZoomControls.qml:196
 #, qt-format
-msgid "Current zoom (%1%) can be saved for %2 as "
-msgstr "目前縮放 (%1%) 可保存為 %2 "
-
-#: src/app/ZoomControls.qml:192
-msgid "or"
-msgstr "或者"
+msgid ""
+"The current zoom level (%1%) can be saved in %2 either for the current "
+"domain or as the default zoom level."
+msgstr ""
 
 #: src/app/ZoomControls.qml:198
+#, fuzzy, qt-format
+#| msgid "Current zoom (%1%) can be saved for %2 as "
+msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
+msgstr "目前縮放 (%1%) 可保存為 %2 "
+
+#: src/app/ZoomControls.qml:200
+#, fuzzy, qt-format
+#| msgid "Current zoom (%1%) can be saved for %2 as "
+msgid ""
+"The current zoom level (%1%) can be saved in %2 as the default zoom level."
+msgstr "目前縮放 (%1%) 可保存為 %2 "
+
+#: src/app/ZoomControls.qml:207
 msgid "Save for domain"
 msgstr "儲存到網域"
 
-#: src/app/ZoomControls.qml:211
+#: src/app/ZoomControls.qml:220
 msgid "Save as default"
 msgstr "另存為預設值"
 
@@ -618,7 +698,7 @@ msgstr "剪下"
 msgid "Erase"
 msgstr "清除"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:761
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:822
 msgid "Find in page"
 msgstr "在頁面上尋找"
 
@@ -648,7 +728,7 @@ msgstr "前往"
 msgid "Address;URL;www"
 msgstr "位址;網址;www"
 
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:635
+#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:692
 #: src/app/webbrowser/TabsBar.qml:88
 msgid "New Tab"
 msgstr "新分頁"
@@ -718,7 +798,7 @@ msgstr "儲存連結"
 msgid "Save video"
 msgstr "儲存影片"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:741
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
 msgid "Share"
 msgstr "分享"
 
@@ -769,87 +849,82 @@ msgstr "建立新資料夾"
 
 #: src/app/webbrowser/BookmarksFoldersView.qml:191
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
-#: src/app/webbrowser/NewTabView.qml:253 src/app/webbrowser/SettingsPage.qml:90
+#: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
 #: src/app/webbrowser/SettingsPage.qml:466
 msgid "Homepage"
 msgstr "首頁"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:749 src/app/webbrowser/NewTabView.qml:130
+#: src/app/webbrowser/Browser.qml:810 src/app/webbrowser/NewTabView.qml:130
 #: src/app/webbrowser/NewTabViewWide.qml:139
 msgid "Bookmarks"
 msgstr "書籤"
 
-#: src/app/webbrowser/BookmarksView.qml:77
-#: src/app/webbrowser/BookmarksViewWide.qml:76
-#: src/app/webbrowser/Browser.qml:621 src/app/webbrowser/HistoryView.qml:123
-#: src/app/webbrowser/HistoryViewWide.qml:408
-msgid "Done"
-msgstr "完成"
-
-#: src/app/webbrowser/BookmarksView.qml:91
-#: src/app/webbrowser/BookmarksViewWide.qml:90
-#: src/app/webbrowser/HistoryView.qml:137
-#: src/app/webbrowser/HistoryViewWide.qml:422 src/app/webbrowser/TabsBar.qml:64
-#: src/app/webbrowser/TabsList.qml:99
-msgid "New tab"
-msgstr "新分頁"
-
-#: src/app/webbrowser/Browser.qml:222
-#: src/app/webcontainer/WebViewImplOxide.qml:310
+#: src/app/webbrowser/Browser.qml:231
+#: src/app/webcontainer/WebViewImplOxide.qml:299
 msgid "Blocked domain"
 msgstr "封鎖網域"
 
-#: src/app/webbrowser/Browser.qml:223
-#: src/app/webcontainer/WebViewImplOxide.qml:311
+#: src/app/webbrowser/Browser.qml:232
+#: src/app/webcontainer/WebViewImplOxide.qml:300
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr "封鎖的導覽要求引導至網域 %1。"
 
-#: src/app/webbrowser/Browser.qml:249
-#: src/app/webcontainer/WebViewImplOxide.qml:337
+#: src/app/webbrowser/Browser.qml:258
+#: src/app/webcontainer/WebViewImplOxide.qml:326
 msgid "Whitelisted domain"
 msgstr "網域白名單"
 
-#: src/app/webbrowser/Browser.qml:250
+#: src/app/webbrowser/Browser.qml:259
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
 msgstr "‎網域 ‎%1‎ 現在已經被列入白名單，將會在下一頁重新載入。‎"
 
-#: src/app/webbrowser/Browser.qml:729
+#: src/app/webbrowser/Browser.qml:649
+msgid "Done"
+msgstr "完成"
+
+#: src/app/webbrowser/Browser.qml:674
+#, fuzzy
+#| msgid "Close Tab"
+msgid "Reopen Tab"
+msgstr "關閉分頁"
+
+#: src/app/webbrowser/Browser.qml:790
 msgid "New window"
 msgstr "新視窗"
 
-#: src/app/webbrowser/Browser.qml:735
+#: src/app/webbrowser/Browser.qml:796
 msgid "New private window"
 msgstr "新無痕式視窗"
 
-#: src/app/webbrowser/Browser.qml:755 src/app/webbrowser/HistoryView.qml:31
+#: src/app/webbrowser/Browser.qml:816 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
 msgstr "歷史"
 
-#: src/app/webbrowser/Browser.qml:775 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/Browser.qml:836 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
 msgstr "設定"
 
-#: src/app/webbrowser/Browser.qml:781
+#: src/app/webbrowser/Browser.qml:842
 msgid "View source"
 msgstr "查看資料"
 
-#: src/app/webbrowser/Browser.qml:794
+#: src/app/webbrowser/Browser.qml:855
 msgid "Save / Print to PDF"
 msgstr "另存 / 列印為 PDF"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1014 src/app/webbrowser/Browser.qml:1052
+#: src/app/webbrowser/Browser.qml:1075 src/app/webbrowser/Browser.qml:1113
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1830
+#: src/app/webbrowser/Browser.qml:1947
 msgid "the file is already in the downloads folder."
 msgstr "該文件已經在下載資料夾中。"
 
@@ -862,16 +937,11 @@ msgstr "選擇要開啟此檔案的應用程式，或放入「下載」資料夾
 msgid "Choose an application"
 msgstr "選擇一個應用程式"
 
-#: src/app/webbrowser/ExpandedHistoryView.qml:117
+#: src/app/webbrowser/ExpandedHistoryView.qml:135
 #, qt-format
 msgid "%1 page"
 msgid_plural "%1 pages"
 msgstr[0] "共 %1 頁"
-
-#: src/app/webbrowser/ExpandedHistoryView.qml:132
-#: src/app/webbrowser/NewTabView.qml:143
-msgid "Less"
-msgstr "較少"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:26
 msgid "Last Visited"
@@ -907,16 +977,20 @@ msgstr ""
 "您在此分中所瀏覽的頁面不會記錄在瀏覽器的歷史中。\n"
 "但您所建立的書籤將會保留。"
 
-#: src/app/webbrowser/NewTabView.qml:143
+#: src/app/webbrowser/NewTabView.qml:142
+msgid "Less"
+msgstr "較少"
+
+#: src/app/webbrowser/NewTabView.qml:142
 msgid "More"
 msgstr "更多"
 
-#: src/app/webbrowser/NewTabView.qml:327
+#: src/app/webbrowser/NewTabView.qml:326
 #: src/app/webbrowser/NewTabViewWide.qml:138
 msgid "Top sites"
 msgstr "熱門網頁"
 
-#: src/app/webbrowser/NewTabView.qml:358
+#: src/app/webbrowser/NewTabView.qml:357
 msgid "You haven't visited any site yet"
 msgstr "您尚未瀏覽過任何的網頁"
 
@@ -1044,11 +1118,6 @@ msgstr "清除所有快取"
 msgid "Clear all Cookies?"
 msgstr "是否清除所有網頁快取？"
 
-#: src/app/webbrowser/SettingsPage.qml:445
-#: src/app/webcontainer/WebappSettingsPage.qml:273
-msgid "Clear"
-msgstr "清除"
-
 #: src/app/webbrowser/SettingsPage.qml:496
 msgid "Custom hompage"
 msgstr "自訂首頁"
@@ -1069,9 +1138,13 @@ msgstr "向上掃以結束全螢幕"
 msgid "Press ESC To Exit Full Screen"
 msgstr "按 ESC 以結束全螢幕"
 
-#: src/app/webbrowser/TabPreview.qml:97
+#: src/app/webbrowser/TabPreview.qml:113
 msgid "Tap to view"
 msgstr "輕觸以檢視"
+
+#: src/app/webbrowser/TabsBar.qml:64 src/app/webbrowser/TabsList.qml:100
+msgid "New tab"
+msgstr "新分頁"
 
 #: src/app/webbrowser/TabsBar.qml:99
 msgid "Move to New Window"
@@ -1086,14 +1159,14 @@ msgid "Remove"
 msgstr "移除"
 
 #. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:108
-#: src/app/webcontainer/webapp-container.qml:76
+#: src/app/webbrowser/morph-browser.qml:110
+#: src/app/webcontainer/webapp-container.qml:75
 #, qt-format
 msgid "%1 - Morph Web Browser"
 msgstr "%1 - Morph 網頁瀏覽器"
 
-#: src/app/webbrowser/morph-browser.qml:110
-#: src/app/webcontainer/webapp-container.qml:78
+#: src/app/webbrowser/morph-browser.qml:112
+#: src/app/webcontainer/webapp-container.qml:77
 #: po/src/app/webbrowser/morph-browser.desktop.in.in.h:2
 msgid "Morph Web Browser"
 msgstr "Morph 網頁瀏覽器"
@@ -1165,7 +1238,7 @@ msgstr "選擇帳號"
 msgid "Oops, something went wrong."
 msgstr "糟糕... 發生了問題。"
 
-#: src/app/webcontainer/WebViewImplOxide.qml:338
+#: src/app/webcontainer/WebViewImplOxide.qml:327
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
 msgstr "網域 %1 已列入白名單，請重新載入頁面。"
@@ -1197,6 +1270,32 @@ msgstr "新視窗"
 #: po/src/app/webbrowser/morph-browser.desktop.in.in.h:6
 msgid "New Private Window"
 msgstr "新無痕式視窗"
+
+#~ msgid "Pause"
+#~ msgstr "暫停"
+
+#~ msgid "Resume"
+#~ msgstr "恢復"
+
+#~ msgid "none"
+#~ msgstr "無"
+
+#, qt-format
+#~ msgid ""
+#~ "domain zoom (currently %1 and can be removed with reset button or from "
+#~ "domain specific settings in privacy settings)"
+#~ msgstr ""
+#~ "‎網域縮放（目前 %1 ‎可以使用重置按鈕或從隱私設置裡的網域特定設定中移除）‎"
+
+#~ msgid " and resets domain zoom"
+#~ msgstr " 並重置網域縮放"
+
+#, qt-format
+#~ msgid "default zoom (currently %1%, can be changed from settings menu%2)"
+#~ msgstr "預設縮放（目前 %1， 可從設定選單%2 裡變更 ）"
+
+#~ msgid "or"
+#~ msgstr "或者"
 
 #~ msgid "Save as HTML / PDF"
 #~ msgstr "另存為 HTML / PDF"

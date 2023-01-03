@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-18 19:58+0000\n"
+"POT-Creation-Date: 2022-08-30 07:09+0000\n"
 "PO-Revision-Date: 2017-03-28 10:40+0000\n"
 "Last-Translator: Olivier Tilloy <olivier.tilloy@canonical.com>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
@@ -25,6 +25,7 @@ msgstr "JavaScript Alert"
 
 #: src/app/AlertDialog.qml:31 src/app/AuthenticationDialog.qml:47
 #: src/app/ColorSelectDialog.qml:73 src/app/ConfirmDialog.qml:33
+#: src/app/EditCustomUserAgentDialog.qml:62
 #: src/app/HttpAuthenticationDialog.qml:70 src/app/PromptDialog.qml:50
 #: src/app/webbrowser/BookmarkOptions.qml:122
 msgid "OK"
@@ -46,12 +47,12 @@ msgid ""
 msgstr ""
 
 #: src/app/AllowCustomSchemesDialog.qml:44
-#: src/app/GeolocationPermissionRequest.qml:42
+#: src/app/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
 msgstr ""
 
 #: src/app/AllowCustomSchemesDialog.qml:50
-#: src/app/GeolocationPermissionRequest.qml:49
+#: src/app/GeolocationPermissionRequest.qml:51
 msgid "Allow"
 msgstr "Allow"
 
@@ -59,9 +60,10 @@ msgstr "Allow"
 #: src/app/AllowOrBlockDomainDialog.qml:53 src/app/AuthenticationDialog.qml:53
 #: src/app/CertificateVerificationDialog.qml:46
 #: src/app/ColorSelectDialog.qml:84 src/app/ConfirmDialog.qml:41
-#: src/app/DownloadDelegate.qml:159 src/app/HttpAuthenticationDialog.qml:80
-#: src/app/PromptDialog.qml:61 src/app/SavePageDialog.qml:73
-#: src/app/ZoomControls.qml:229 src/app/webbrowser/BookmarkOptions.qml:164
+#: src/app/DownloadDelegate.qml:271 src/app/EditCustomUserAgentDialog.qml:69
+#: src/app/HttpAuthenticationDialog.qml:80 src/app/PromptDialog.qml:61
+#: src/app/SavePageDialog.qml:73 src/app/SimpleDownloadDelegate.qml:136
+#: src/app/ZoomControls.qml:238 src/app/webbrowser/BookmarkOptions.qml:182
 #: src/app/webbrowser/ContentDownloadDialog.qml:114
 #: src/app/webbrowser/ContextMenuMobile.qml:143
 #: src/app/webbrowser/SettingsPage.qml:438
@@ -159,30 +161,26 @@ msgstr "JavaScript Confirmation"
 msgid "Custom User Agents"
 msgstr ""
 
-#: src/app/CustomUserAgentsPage.qml:57 src/app/DomainPermissionsPage.qml:69
-#: src/app/DomainSettingsPage.qml:66 src/app/DownloadsPage.qml:85
+#: src/app/CustomUserAgentsPage.qml:47 src/app/DomainPermissionsPage.qml:69
+#: src/app/DomainSettingsPage.qml:67 src/app/DownloadsPage.qml:87
 #: src/app/actions/SelectAll.qml:22
 msgid "Select all"
 msgstr "Select all"
 
-#: src/app/CustomUserAgentsPage.qml:73 src/app/DomainPermissionsPage.qml:85
-#: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
+#: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:85
+#: src/app/DomainSettingsPage.qml:83 src/app/DownloadsPage.qml:103
 msgid "Delete"
 msgstr "Delete"
 
-#: src/app/CustomUserAgentsPage.qml:104
+#: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
 msgstr ""
 
-#: src/app/CustomUserAgentsPage.qml:105
-msgid "Add the name for the new user agent"
+#: src/app/CustomUserAgentsPage.qml:161
+msgid "Edit User Agent"
 msgstr ""
 
-#: src/app/CustomUserAgentsPage.qml:207
-msgid "enter user agent string..."
-msgstr ""
-
-#: src/app/CustomUserAgentsPage.qml:248
+#: src/app/CustomUserAgentsPage.qml:187
 #, fuzzy
 msgid "No custom user agents available"
 msgstr "No downloads available"
@@ -191,7 +189,7 @@ msgstr "No downloads available"
 msgid "Domain blacklist/whitelist"
 msgstr ""
 
-#: src/app/DomainPermissionsPage.qml:114 src/app/DomainSettingsPage.qml:113
+#: src/app/DomainPermissionsPage.qml:114 src/app/DomainSettingsPage.qml:114
 msgid "Add domain"
 msgstr ""
 
@@ -216,69 +214,146 @@ msgstr ""
 msgid "No sites have been granted special permissions"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:52
+#: src/app/DomainSettingsPage.qml:53
 msgid "Domain specific settings"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:114
+#: src/app/DomainSettingsPage.qml:115
 msgid "Enter the name of the domain, e.g. m.example.com"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:206
+#: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:223
+#: src/app/DomainSettingsPage.qml:226
 #, fuzzy
-msgid "allowed to access your location"
+msgid "access your location"
 msgstr "Allow this domain to access your camera?"
 
-#: src/app/DomainSettingsPage.qml:239
+#: src/app/DomainSettingsPage.qml:231
+msgid "Ask each time"
+msgstr ""
+
+#: src/app/DomainSettingsPage.qml:231
+#, fuzzy
+#| msgid "Allow"
+msgid "Allowed"
+msgstr "Allow"
+
+#: src/app/DomainSettingsPage.qml:231
+msgid "Denied"
+msgstr ""
+
+#: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:315 src/app/DomainSettingsPage.qml:320
+#: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:320
+#: src/app/DomainSettingsPage.qml:325
 msgid "not set"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:354
+#: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
 msgstr ""
 
-#: src/app/DownloadDelegate.qml:131
-msgid "Download failed"
-msgstr "Download failed"
-
 #. TRANSLATORS: %1 is the percentage of the download completed so far
-#: src/app/DownloadDelegate.qml:174
+#: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/app/DownloadDelegate.qml:180
-msgid "Pause"
+#: src/app/DownloadDelegate.qml:170
+msgid "Download failed"
+msgstr "Download failed"
+
+#: src/app/DownloadDelegate.qml:199
+msgid "Unknown"
 msgstr ""
 
-#: src/app/DownloadDelegate.qml:191
-msgid "Resume"
-msgstr "Resume"
+#. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
+#: src/app/DownloadDelegate.qml:207
+#, qt-format
+msgid "%1/s"
+msgstr ""
 
-#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:768
+#: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
+#, fuzzy
+#| msgid "Delete"
+msgid "Delete File"
+msgstr "Delete"
+
+#: src/app/DownloadDelegate.qml:261
+#, fuzzy
+#| msgid "Clear History"
+msgid "Remove from History"
+msgstr "Clear History"
+
+#: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
+#, fuzzy
+#| msgid "Copy link"
+msgid "Copy Download Link"
+msgstr "Copy link"
+
+#: src/app/DownloadsDialog.qml:68
+#, fuzzy
+#| msgid "Downloads"
+msgid "Recent Downloads"
+msgstr "Downloads"
+
+#: src/app/DownloadsDialog.qml:83
+#, fuzzy
+#| msgid "Downloads"
+msgid "No Recent Downloads"
+msgstr "Downloads"
+
+#: src/app/DownloadsDialog.qml:106
+#, fuzzy
+#| msgid "Cancel"
+msgid "Cancelled"
+msgstr "Cancel"
+
+#: src/app/DownloadsDialog.qml:109
+msgid "Completed"
+msgstr ""
+
+#: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
+#: src/app/webcontainer/WebappSettingsPage.qml:273
+msgid "Clear"
+msgstr "Clear"
+
+#: src/app/DownloadsDialog.qml:182
+msgid "View All"
+msgstr ""
+
+#: src/app/DownloadsPage.qml:48 src/app/webbrowser/Browser.qml:829
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Downloads"
 msgstr "Downloads"
 
-#: src/app/DownloadsPage.qml:60
+#: src/app/DownloadsPage.qml:62
 msgid "Confirm selection"
 msgstr "Confirm selection"
 
-#: src/app/DownloadsPage.qml:297
+#: src/app/DownloadsPage.qml:311
 msgid "No downloads available"
 msgstr "No downloads available"
+
+#: src/app/EditCustomUserAgentDialog.qml:42
+msgid "this user agent name is already taken"
+msgstr ""
+
+#: src/app/EditCustomUserAgentDialog.qml:48
+msgid "Add the name for the user agent"
+msgstr ""
+
+#: src/app/EditCustomUserAgentDialog.qml:54
+msgid "enter user agent string..."
+msgstr ""
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
@@ -319,7 +394,7 @@ msgstr "Permission Request"
 msgid "This page wants to know your device’s location."
 msgstr "This page wants to know your device’s location."
 
-#: src/app/GeolocationPermissionRequest.qml:55
+#: src/app/GeolocationPermissionRequest.qml:57
 msgid "Deny"
 msgstr "Deny"
 
@@ -485,7 +560,11 @@ msgstr "Download"
 msgid "Save as PDF"
 msgstr ""
 
-#: src/app/WebViewImpl.qml:667 src/app/webbrowser/Browser.qml:815
+#: src/app/SimpleDownloadDelegate.qml:128
+msgid "Remove from List"
+msgstr ""
+
+#: src/app/WebViewImpl.qml:680 src/app/webbrowser/Browser.qml:876
 msgid "Zoom"
 msgstr ""
 
@@ -505,7 +584,7 @@ msgstr ""
 msgid "Zoom In"
 msgstr ""
 
-#: src/app/ZoomControls.qml:83 src/app/webbrowser/BookmarkOptions.qml:174
+#: src/app/ZoomControls.qml:83 src/app/webbrowser/BookmarkOptions.qml:164
 #: src/app/webbrowser/SettingsPage.qml:530
 msgid "Save"
 msgstr "Save"
@@ -528,54 +607,41 @@ msgstr "Default"
 msgid "auto-fit"
 msgstr ""
 
-#: src/app/ZoomControls.qml:187
+#: src/app/ZoomControls.qml:191
 #, fuzzy
 #| msgid "Save image"
 msgid "Save Zoom"
 msgstr "Save image"
 
-#: src/app/ZoomControls.qml:188
-msgid "none"
-msgstr ""
-
-#: src/app/ZoomControls.qml:188
-#, qt-format
-msgid ""
-"domain zoom (currently %1 and can be removed with reset button or from "
-"domain specific settings in privacy settings)"
-msgstr ""
-
-#: src/app/ZoomControls.qml:189
-msgid " and resets domain zoom"
-msgstr ""
-
-#: src/app/ZoomControls.qml:189
-#, qt-format
-msgid "default zoom (currently %1%, can be changed from settings menu%2)"
-msgstr ""
-
-#: src/app/ZoomControls.qml:190
+#: src/app/ZoomControls.qml:193
 msgid "the current web app"
 msgstr ""
 
-#: src/app/ZoomControls.qml:190
+#: src/app/ZoomControls.qml:196
 #, qt-format
-msgid "Current zoom (%1%) can be saved for %2 as "
+msgid ""
+"The current zoom level (%1%) can be saved in %2 either for the current "
+"domain or as the default zoom level."
 msgstr ""
 
-#: src/app/ZoomControls.qml:192
-#, fuzzy
-#| msgid "More"
-msgid "or"
-msgstr "More"
-
 #: src/app/ZoomControls.qml:198
+#, qt-format
+msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
+msgstr ""
+
+#: src/app/ZoomControls.qml:200
+#, qt-format
+msgid ""
+"The current zoom level (%1%) can be saved in %2 as the default zoom level."
+msgstr ""
+
+#: src/app/ZoomControls.qml:207
 #, fuzzy
 #| msgid "Save in"
 msgid "Save for domain"
 msgstr "Save in"
 
-#: src/app/ZoomControls.qml:211
+#: src/app/ZoomControls.qml:220
 msgid "Save as default"
 msgstr ""
 
@@ -633,7 +699,7 @@ msgstr "Cut"
 msgid "Erase"
 msgstr "Erase"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:761
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:822
 msgid "Find in page"
 msgstr "Find on page"
 
@@ -663,7 +729,7 @@ msgstr "Goto"
 msgid "Address;URL;www"
 msgstr "Address;URL;www"
 
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:635
+#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:692
 #: src/app/webbrowser/TabsBar.qml:88
 msgid "New Tab"
 msgstr "New Tab"
@@ -734,7 +800,7 @@ msgstr "Save link"
 msgid "Save video"
 msgstr "Save video"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:741
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
 msgid "Share"
 msgstr "Share"
 
@@ -785,87 +851,82 @@ msgstr "Create new folder"
 
 #: src/app/webbrowser/BookmarksFoldersView.qml:191
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
-#: src/app/webbrowser/NewTabView.qml:253 src/app/webbrowser/SettingsPage.qml:90
+#: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
 #: src/app/webbrowser/SettingsPage.qml:466
 msgid "Homepage"
 msgstr "Homepage"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:749 src/app/webbrowser/NewTabView.qml:130
+#: src/app/webbrowser/Browser.qml:810 src/app/webbrowser/NewTabView.qml:130
 #: src/app/webbrowser/NewTabViewWide.qml:139
 msgid "Bookmarks"
 msgstr "Bookmarks"
 
-#: src/app/webbrowser/BookmarksView.qml:77
-#: src/app/webbrowser/BookmarksViewWide.qml:76
-#: src/app/webbrowser/Browser.qml:621 src/app/webbrowser/HistoryView.qml:123
-#: src/app/webbrowser/HistoryViewWide.qml:408
-msgid "Done"
-msgstr "Done"
-
-#: src/app/webbrowser/BookmarksView.qml:91
-#: src/app/webbrowser/BookmarksViewWide.qml:90
-#: src/app/webbrowser/HistoryView.qml:137
-#: src/app/webbrowser/HistoryViewWide.qml:422 src/app/webbrowser/TabsBar.qml:64
-#: src/app/webbrowser/TabsList.qml:99
-msgid "New tab"
-msgstr "New tab"
-
-#: src/app/webbrowser/Browser.qml:222
-#: src/app/webcontainer/WebViewImplOxide.qml:310
+#: src/app/webbrowser/Browser.qml:231
+#: src/app/webcontainer/WebViewImplOxide.qml:299
 msgid "Blocked domain"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:223
-#: src/app/webcontainer/WebViewImplOxide.qml:311
+#: src/app/webbrowser/Browser.qml:232
+#: src/app/webcontainer/WebViewImplOxide.qml:300
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:249
-#: src/app/webcontainer/WebViewImplOxide.qml:337
+#: src/app/webbrowser/Browser.qml:258
+#: src/app/webcontainer/WebViewImplOxide.qml:326
 msgid "Whitelisted domain"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:250
+#: src/app/webbrowser/Browser.qml:259
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:729
+#: src/app/webbrowser/Browser.qml:649
+msgid "Done"
+msgstr "Done"
+
+#: src/app/webbrowser/Browser.qml:674
+#, fuzzy
+#| msgid "Close Tab"
+msgid "Reopen Tab"
+msgstr "Close Tab"
+
+#: src/app/webbrowser/Browser.qml:790
 msgid "New window"
 msgstr "New window"
 
-#: src/app/webbrowser/Browser.qml:735
+#: src/app/webbrowser/Browser.qml:796
 msgid "New private window"
 msgstr "New private window"
 
-#: src/app/webbrowser/Browser.qml:755 src/app/webbrowser/HistoryView.qml:31
+#: src/app/webbrowser/Browser.qml:816 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
 msgstr "History"
 
-#: src/app/webbrowser/Browser.qml:775 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/Browser.qml:836 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
 msgstr "Settings"
 
-#: src/app/webbrowser/Browser.qml:781
+#: src/app/webbrowser/Browser.qml:842
 msgid "View source"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:794
+#: src/app/webbrowser/Browser.qml:855
 msgid "Save / Print to PDF"
 msgstr ""
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1014 src/app/webbrowser/Browser.qml:1052
+#: src/app/webbrowser/Browser.qml:1075 src/app/webbrowser/Browser.qml:1113
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1830
+#: src/app/webbrowser/Browser.qml:1947
 #, fuzzy
 #| msgid ""
 #| "Choose an application to open this file or add it to the downloads folder."
@@ -883,17 +944,12 @@ msgstr ""
 msgid "Choose an application"
 msgstr "Choose an application"
 
-#: src/app/webbrowser/ExpandedHistoryView.qml:117
+#: src/app/webbrowser/ExpandedHistoryView.qml:135
 #, qt-format
 msgid "%1 page"
 msgid_plural "%1 pages"
 msgstr[0] "%1 page"
 msgstr[1] "%1 pages"
-
-#: src/app/webbrowser/ExpandedHistoryView.qml:132
-#: src/app/webbrowser/NewTabView.qml:143
-msgid "Less"
-msgstr "Less"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:26
 msgid "Last Visited"
@@ -929,16 +985,20 @@ msgstr ""
 "Pages that you view in this tab won't appear in your browser history.\n"
 "Bookmarks you create will be preserved, however."
 
-#: src/app/webbrowser/NewTabView.qml:143
+#: src/app/webbrowser/NewTabView.qml:142
+msgid "Less"
+msgstr "Less"
+
+#: src/app/webbrowser/NewTabView.qml:142
 msgid "More"
 msgstr "More"
 
-#: src/app/webbrowser/NewTabView.qml:327
+#: src/app/webbrowser/NewTabView.qml:326
 #: src/app/webbrowser/NewTabViewWide.qml:138
 msgid "Top sites"
 msgstr "Top sites"
 
-#: src/app/webbrowser/NewTabView.qml:358
+#: src/app/webbrowser/NewTabView.qml:357
 msgid "You haven't visited any site yet"
 msgstr "You haven't visited any site yet"
 
@@ -1083,11 +1143,6 @@ msgstr "Clear Cache"
 msgid "Clear all Cookies?"
 msgstr "Clear Cache?"
 
-#: src/app/webbrowser/SettingsPage.qml:445
-#: src/app/webcontainer/WebappSettingsPage.qml:273
-msgid "Clear"
-msgstr "Clear"
-
 #: src/app/webbrowser/SettingsPage.qml:496
 msgid "Custom hompage"
 msgstr ""
@@ -1108,9 +1163,13 @@ msgstr "Swipe Up To Exit Full Screen"
 msgid "Press ESC To Exit Full Screen"
 msgstr "Press ESC To Exit Full Screen"
 
-#: src/app/webbrowser/TabPreview.qml:97
+#: src/app/webbrowser/TabPreview.qml:113
 msgid "Tap to view"
 msgstr "Tap to view"
+
+#: src/app/webbrowser/TabsBar.qml:64 src/app/webbrowser/TabsList.qml:100
+msgid "New tab"
+msgstr "New tab"
 
 #: src/app/webbrowser/TabsBar.qml:99
 msgid "Move to New Window"
@@ -1125,14 +1184,14 @@ msgid "Remove"
 msgstr "Remove"
 
 #. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:108
-#: src/app/webcontainer/webapp-container.qml:76
+#: src/app/webbrowser/morph-browser.qml:110
+#: src/app/webcontainer/webapp-container.qml:75
 #, fuzzy, qt-format
 msgid "%1 - Morph Web Browser"
 msgstr "%1 - Ubuntu Web Browser"
 
-#: src/app/webbrowser/morph-browser.qml:110
-#: src/app/webcontainer/webapp-container.qml:78
+#: src/app/webbrowser/morph-browser.qml:112
+#: src/app/webcontainer/webapp-container.qml:77
 #: po/src/app/webbrowser/morph-browser.desktop.in.in.h:2
 #, fuzzy
 msgid "Morph Web Browser"
@@ -1208,7 +1267,7 @@ msgstr "Choose account"
 msgid "Oops, something went wrong."
 msgstr "Oops, something went wrong."
 
-#: src/app/webcontainer/WebViewImplOxide.qml:338
+#: src/app/webcontainer/WebViewImplOxide.qml:327
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
 msgstr ""
@@ -1243,6 +1302,14 @@ msgstr "New Window"
 #: po/src/app/webbrowser/morph-browser.desktop.in.in.h:6
 msgid "New Private Window"
 msgstr "New Private Window"
+
+#~ msgid "Resume"
+#~ msgstr "Resume"
+
+#, fuzzy
+#~| msgid "More"
+#~ msgid "or"
+#~ msgstr "More"
 
 #~ msgid ""
 #~ "You attempted to reach %1 but the server presented a security certificate "

@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-30 07:09+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-01-04 00:08+0000\n"
+"Last-Translator: Muhammad <muhammad23012009@hotmail.com>\n"
+"Language-Team: Urdu <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/ur/>\n"
 "Language: ur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: src/app/AlertDialog.qml:24
 msgid "JavaScript Alert"
@@ -70,7 +72,7 @@ msgstr ""
 #: src/app/webcontainer/ContextMenuMobile.qml:143
 #: src/app/webcontainer/WebappSettingsPage.qml:266
 msgid "Cancel"
-msgstr ""
+msgstr "منسوخ کریں"
 
 #: src/app/AllowOrBlockDomainDialog.qml:25
 #: src/app/AllowOrBlockDomainDialog.qml:41
@@ -635,7 +637,7 @@ msgstr ""
 
 #: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:373
 msgid "Copy"
-msgstr ""
+msgstr "نقل"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
@@ -647,7 +649,7 @@ msgstr ""
 
 #: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:362
 msgid "Cut"
-msgstr ""
+msgstr "کاٹیں"
 
 #: src/app/actions/Erase.qml:22
 msgid "Erase"
@@ -724,11 +726,11 @@ msgstr ""
 
 #: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:384
 msgid "Paste"
-msgstr ""
+msgstr "چسپاں کریں"
 
 #: src/app/actions/Redo.qml:22
 msgid "Redo"
-msgstr ""
+msgstr "دوبارہ کریں"
 
 #: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
 #: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
@@ -759,7 +761,7 @@ msgstr ""
 
 #: src/app/actions/Undo.qml:22
 msgid "Undo"
-msgstr ""
+msgstr "کالعدم"
 
 #: src/app/webbrowser/AddressBar.qml:242
 msgid "find in page"
@@ -840,7 +842,7 @@ msgstr ""
 
 #: src/app/webbrowser/Browser.qml:649
 msgid "Done"
-msgstr ""
+msgstr "ہوگیا"
 
 #: src/app/webbrowser/Browser.qml:674
 msgid "Reopen Tab"
@@ -861,7 +863,7 @@ msgstr ""
 
 #: src/app/webbrowser/Browser.qml:836 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
-msgstr ""
+msgstr "ترتیبات"
 
 #: src/app/webbrowser/Browser.qml:842
 msgid "View source"
@@ -1076,11 +1078,11 @@ msgstr ""
 
 #: src/app/webbrowser/SettingsPage.qml:581
 msgid "Microphone"
-msgstr ""
+msgstr "مائیکروفون"
 
 #: src/app/webbrowser/SettingsPage.qml:602
 msgid "Camera"
-msgstr ""
+msgstr "کیمرہ"
 
 #: src/app/webbrowser/TabComponent.qml:258
 msgid "Swipe Up To Exit Full Screen"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-30 07:09+0000\n"
-"PO-Revision-Date: 2023-01-04 08:07+0000\n"
+"PO-Revision-Date: 2023-01-04 19:47+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/nb_NO/>\n"
@@ -285,13 +285,13 @@ msgstr "Nedlasting mislyktes"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "Ukjent"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
 #, fuzzy
@@ -357,7 +357,7 @@ msgstr "Ingen nedlastinger tilgjengelig"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "dette brukeragentnavnet er allerede i bruk"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
 #, fuzzy
@@ -634,6 +634,8 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"Nåværende forstørrelsesnivå (%1%) kan lagres i %2 enten for nåværende "
+"domene, eller som forvalgt forstørrelsesnivå."
 
 #: src/app/ZoomControls.qml:198
 #, fuzzy, qt-format

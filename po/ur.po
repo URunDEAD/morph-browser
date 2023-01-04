@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-30 07:09+0000\n"
-"PO-Revision-Date: 2023-01-04 00:08+0000\n"
+"PO-Revision-Date: 2023-01-04 19:47+0000\n"
 "Last-Translator: Muhammad <muhammad23012009@hotmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/ur/>\n"
@@ -115,7 +115,7 @@ msgstr ""
 
 #: src/app/AuthenticationDialog.qml:41 src/app/HttpAuthenticationDialog.qml:60
 msgid "Password"
-msgstr ""
+msgstr "پاس ورڈ"
 
 #: src/app/BeforeUnloadDialog.qml:24
 msgid "Confirm Navigation"
@@ -536,7 +536,7 @@ msgstr ""
 
 #: src/app/ZoomControls.qml:69
 msgid "Reset"
-msgstr ""
+msgstr "دوبارہ ترتیب دیں"
 
 #: src/app/ZoomControls.qml:69
 msgid "fit"
@@ -603,7 +603,7 @@ msgstr ""
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
-msgstr ""
+msgstr "واپس"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
@@ -782,7 +782,7 @@ msgstr ""
 #. TRANSLATORS: Field where the title of bookmarked URL can be changed
 #: src/app/webbrowser/BookmarkOptions.qml:71
 msgid "Name"
-msgstr ""
+msgstr "نام"
 
 #. TRANSLATORS: Field to choose the folder where bookmarked URL will be saved in
 #: src/app/webbrowser/BookmarkOptions.qml:89
@@ -1145,7 +1145,7 @@ msgstr ""
 
 #: src/app/webcontainer/AccountErrorScreen.qml:50
 msgid "Close"
-msgstr ""
+msgstr "بند کریں"
 
 #: src/app/webcontainer/AccountsLogic.qml:63
 msgid ""

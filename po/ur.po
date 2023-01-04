@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-30 07:09+0000\n"
 "PO-Revision-Date: 2023-01-04 19:47+0000\n"
-"Last-Translator: Muhammad <muhammad23012009@hotmail.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/ur/>\n"
 "Language: ur\n"
@@ -166,8 +166,9 @@ msgstr ""
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:85
 #: src/app/DomainSettingsPage.qml:83 src/app/DownloadsPage.qml:103
+#, fuzzy
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"

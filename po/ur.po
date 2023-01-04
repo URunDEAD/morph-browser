@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-30 07:09+0000\n"
-"PO-Revision-Date: 2023-01-04 19:47+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-01-05 11:03+0000\n"
+"Last-Translator: Muhammad <muhammad23012009@hotmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/ur/>\n"
 "Language: ur\n"
@@ -166,9 +166,8 @@ msgstr ""
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:85
 #: src/app/DomainSettingsPage.qml:83 src/app/DownloadsPage.qml:103
-#, fuzzy
 msgid "Delete"
-msgstr "Delete"
+msgstr "حذف کریں"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
@@ -315,7 +314,7 @@ msgstr ""
 #: src/app/DownloadsPage.qml:48 src/app/webbrowser/Browser.qml:829
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Downloads"
-msgstr ""
+msgstr "ڈاؤن لوڈ"
 
 #: src/app/DownloadsPage.qml:62
 msgid "Confirm selection"
@@ -482,11 +481,11 @@ msgstr ""
 
 #: src/app/MediaAccessDialog.qml:77
 msgid "Yes"
-msgstr ""
+msgstr "ہاں"
 
 #: src/app/MediaAccessDialog.qml:85
 msgid "No"
-msgstr ""
+msgstr "نہیں"
 
 #: src/app/PromptDialog.qml:25
 msgid "JavaScript Prompt"

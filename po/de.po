@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-30 07:09+0000\n"
-"PO-Revision-Date: 2021-04-22 05:43+0000\n"
+"PO-Revision-Date: 2023-01-07 17:50+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
-"Language-Team: German <https://translate.ubports.com/projects/ubports/morph-"
-"browser/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: src/app/AlertDialog.qml:24
@@ -185,17 +185,15 @@ msgstr "Löschen"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
-msgstr "Neuer Benutzer-Agent"
+msgstr "Neuer User Agent"
 
 #: src/app/CustomUserAgentsPage.qml:161
-#, fuzzy
-#| msgid "New User Agent"
 msgid "Edit User Agent"
-msgstr "Neuer Benutzer-Agent"
+msgstr "User Agent anpassen"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
-msgstr "Keine benutzerdefinierten User Agents verfügbar"
+msgstr "Keine benutzerdefinierten User Agent's verfügbar"
 
 #: src/app/DomainPermissionsPage.qml:55
 msgid "Domain blacklist/whitelist"
@@ -241,24 +239,20 @@ msgid "allowed to launch other apps"
 msgstr "Erlaubt, andere Apps zu starten"
 
 #: src/app/DomainSettingsPage.qml:226
-#, fuzzy
-#| msgid "allowed to access your location"
 msgid "access your location"
-msgstr "Erlaubt, deine Position abzurufen"
+msgstr "Position abrufen"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "Jedes Mal fragen"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "Erlauben"
+msgstr "Erlaubt"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Verboten"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
@@ -288,62 +282,50 @@ msgstr "Herunterladen ist fehlgeschlagen"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "Unbekannt"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "Löschen"
+msgstr "Datei Löschen"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "Verlauf löschen"
+msgstr "Aus dem Verlauf löschen"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "Verweisadresse kopieren"
+msgstr "Downloadlink kopieren"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "Downloads"
+msgstr "Letzte Downloads"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
-msgstr "Downloads"
+msgstr "Keine Downloads vorhanden"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Abbrechen"
+msgstr "Abgebrochen"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Abgeschlossen"
 
 #: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
 #: src/app/webcontainer/WebappSettingsPage.qml:273
 msgid "Clear"
-msgstr "Leeren"
+msgstr "Bereinigen"
 
 #: src/app/DownloadsDialog.qml:182
 msgid "View All"
-msgstr ""
+msgstr "Alle anzeigen"
 
 #: src/app/DownloadsPage.qml:48 src/app/webbrowser/Browser.qml:829
 #: src/app/webcontainer/WebappSettingsPage.qml:117
@@ -360,17 +342,15 @@ msgstr "Keine Downloads verfügbar"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "Dieser User Agent Name ist bereits vergeben"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
-#, fuzzy
-#| msgid "Add the name for the new user agent"
 msgid "Add the name for the user agent"
-msgstr "Fügen Sie den Namen für den neuen User Agent hinzu"
+msgstr "Fügen Sie den Namen für den User Agent hinzu"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
-msgstr "Geben Sie die Zeichenfolge des User Agents ein..."
+msgstr "Geben Sie die Bezeichnung des User Agent ein..."
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
@@ -582,7 +562,7 @@ msgstr "Als PDF speichern"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Aus der Liste entfernen"
 
 #: src/app/WebViewImpl.qml:680 src/app/webbrowser/Browser.qml:876
 msgid "Zoom"
@@ -639,19 +619,23 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"Der aktuelle Zoomfaktor (%1 %) kann in %2 gespeichert werden, entweder für "
+"die aktuelle Domain oder als Standardzoomfaktor."
 
 #: src/app/ZoomControls.qml:198
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "Aktueller Zoom (%1 %) kann als %2 gespeichert werden für "
+msgstr ""
+"Der aktuelle Zoomfaktor (%1 %) kann in %2 gespeichert werden für die "
+"aktuelle Domain."
 
 #: src/app/ZoomControls.qml:200
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr "Aktueller Zoom (%1 %) kann als %2 gespeichert werden für "
+msgstr ""
+"Der aktuelle Zoomfaktor (%1 %) kann in %2 gespeichert werden als "
+"Standardzoomfaktor."
 
 #: src/app/ZoomControls.qml:207
 msgid "Save for domain"
@@ -907,10 +891,8 @@ msgid "Done"
 msgstr "Fertig"
 
 #: src/app/webbrowser/Browser.qml:674
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "Reiter schließen"
+msgstr "Reiter neu öffnen"
 
 #: src/app/webbrowser/Browser.qml:790
 msgid "New window"

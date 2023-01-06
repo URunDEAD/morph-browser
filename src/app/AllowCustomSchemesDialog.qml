@@ -27,9 +27,9 @@ ModalDialog {
     property string domain
     property bool showAllowPermanentlyCheckBox
 
-    message: i18n.tr("The site '%1' is trying to open the following URL with a custom scheme:").arg(domain) + "\n" +
+    message: i18n.tr("The '%1' website wants to open this URL outside of the web browser:").arg(domain) + "\n" +
              url + "\n\n" +
-             i18n.tr("This will try to dispatch this url to a system app if possible. Do you want to proceed?");
+             i18n.tr("Open this URL with a system app if possible?");
 
     signal allow()
     signal allowPermanently()

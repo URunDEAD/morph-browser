@@ -3,6 +3,15 @@
 Lightweight web browser tailored for Ubuntu Touch, based on the Qt WebEngine
 and using the Lomiri UI components.
 
+## i18n: Translating Morph Browser into your Language
+
+You can easily contribute to the localization of this project (i.e. the
+translation into your language) by visiting (and signing up with) the
+[Hosted Weblate service](https://hosted.weblate.org/projects/lomiri/morph-browser)
+
+The localization platform of this project is sponsored by Hosted Weblate
+via their free hosting plan for Libre and Open Source Projects.
+
 ## Copyright
 
 Morph Browser is distributed under the GPLv3 license, see COPYING.

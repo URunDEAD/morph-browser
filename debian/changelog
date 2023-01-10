@@ -1,4 +1,4 @@
-morph-browser (0.25) UNRELEASED; urgency=medium
+morph-browser (1.0.0) UNRELEASED; urgency=medium
 
   * Switch from url-dispatcher to lomiri-url-dispatcher
 

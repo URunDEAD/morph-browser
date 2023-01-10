@@ -3,14 +3,7 @@ project(morph-browser VERSION 1.0.0 LANGUAGES CXX)
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
-find_program(INTLTOOL_MERGE intltool-merge)
-if(NOT INTLTOOL_MERGE)
-    message(FATAL_ERROR "Could not find intltool-merge, please install the intltool package")
-endif()
-find_program(INTLTOOL_EXTRACT intltool-extract)
-if(NOT INTLTOOL_EXTRACT)
-    message(FATAL_ERROR "Could not find intltool-extract, please install the intltool package")
-endif()
+find_package(Gettext REQUIRED)
 
 option(CLICK_MODE "Build as a click package" off)
 
@@ -72,7 +65,7 @@ enable_testing()
 add_subdirectory(tests)
 
 # make non compiled files (QML, JS, images, etc.) visible in QtCreator
-file(GLOB NON_COMPILED_ROOT *.png .bzrignore COPYING README snapcraft.yaml)
+file(GLOB NON_COMPILED_ROOT *.png .gitignore COPYING README snapcraft.yaml)
 file(GLOB_RECURSE NON_COMPILED_SUBDIRS
      debian/*.dirs debian/*.install debian/*.lintian-overrides debian/*.manifest
      debian/compat debian/control debian/copyright debian/rules debian/source/format

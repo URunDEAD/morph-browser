@@ -1,9 +1,9 @@
 [Desktop Entry]
 Version=1.0
-_Name=Morph Browser
-_GenericName=Morph Web Browser
-_Comment=Browse the World Wide Web using QtWebEngine
-_Keywords=Internet;WWW;Browser;Web;Explorer
+Name=Morph Browser
+GenericName=Morph Web Browser
+Comment=Browse the World Wide Web using QtWebEngine
+Keywords=Internet;WWW;Browser;Web;Explorer
 Type=Application
 Icon=@CMAKE_INSTALL_FULL_DATADIR@/morph-browser/morph-browser.svg
 Exec=morph-browser %u
@@ -19,9 +19,9 @@ X-Ubuntu-Splash-Image=@CMAKE_INSTALL_FULL_DATADIR@/morph-browser/morph-browser-s
 Actions=new-window;Incognito;
 
 [Desktop Action new-window]
-_Name=New Window
+Name=New Window
 Exec=morph-browser --new-window
 
 [Desktop Action Incognito]
-_Name=New Private Window
+Name=New Private Window
 Exec=morph-browser --incognito

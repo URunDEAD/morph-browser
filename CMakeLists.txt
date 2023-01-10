@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 2.8.9)
-set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+cmake_minimum_required(VERSION 3.5)
+project(morph-browser VERSION 1.0.0 LANGUAGES CXX)
 
-project("webbrowser")
+set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 find_program(INTLTOOL_MERGE intltool-merge)
 if(NOT INTLTOOL_MERGE)

@@ -4,8 +4,8 @@ Priority: optional
 Maintainer: UBports developers
 Build-Depends: apparmor:native,
                apparmor-easyprof,
-               cmake (>= 2.8.9),
-               debhelper (>= 9),
+               cmake,
+               debhelper-compat (= 12),
                dh-apparmor,
                dh-translations,
                dh-migrations,
@@ -34,7 +34,9 @@ Build-Depends: apparmor:native,
                qtwebengine5-dev,
                xvfb,
 Standards-Version: 3.9.7
-Homepage: https://github.com/ubports/morph-browser
+Homepage: https://gitlab.com/ubports/development/core/morph-browser
+Vcs-Browser: https://gitlab.com/ubports/development/core/morph-browser
+Vcs-Git: https://gitlab.com/ubports/development/core/morph-browser.git
 XS-Testsuite: autopkgtest
 
 Package: morph-browser
@@ -61,9 +63,9 @@ Replaces: morph-browser-assets,
 Conflicts: morph-browser-assets, webbrowser-app
 Provides: morph-browser-assets, webbrowser-app
 Breaks: qtdeclarative5-ubuntu-ui-extras-browser-plugin (<< 0.22)
-Description: morph web browser
- A lightweight web browser tailored for morph, based on the Oxide browser
- engine and using the Suru UI components.
+Description: Web Browser for Ubuntu Touch
+ Lightweight web browser tailored for Ubuntu Touch, based on the Qt WebEngine
+ and using the Lomiri UI components.
 
 Package: morph-webapp-container
 Architecture: any
@@ -85,8 +87,8 @@ Depends: ${misc:Depends},
 Conflicts: ubuntu-html5-container, webapp-container
 Replaces: ubuntu-html5-container, webapp-container
 Description: Morph web applications container
- A lightweight webapp container tailored for Morph, based on the QtWebEngine browser
- engine and using the Suru UI components.
+ A lightweight webapp container tailored for Ubuntu Touch, based on the Qt WebEngine
+ and using the Lomiri UI components.
 
 Package: qml-module-ubuntu-web-compat
 Architecture: any

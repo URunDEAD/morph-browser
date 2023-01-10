@@ -1,18 +1,25 @@
-# morph-browser
+# Morph Browser
 
-Lightweight web browser tailored for Ubuntu,
-based on the Qt WebEngine  and using the Ubuntu UI components.
-It requires Qt 5.9 to build and run.
+Lightweight web browser tailored for Ubuntu Touch, based on the Qt WebEngine
+and using the Lomiri UI components.
 
-Morph Icon is based on Origami Licensed CC-by Creative Mania from the Noun Project
+## Copyright
+
+Morph Browser is distributed under the GPLv3 license, see COPYING.
+
+Morph Icon is based on Origami Licensed CC-BY by Creative Mania from the Noun
+Project, see https://creativecommons.org/licenses/by/3.0/ for the license
+terms.
 
 ## Building
 
-The build system uses cmake.
-To compile, simply invoke cmake and then make:
+The build system uses cmake. Please see debian/control for the complete list of
+build requirements.  To compile, simply invoke cmake and then make:
 
 ```sh
-cmake .
+mkdir build
+cd build
+cmake ..
 make
 ```
 
@@ -78,6 +85,9 @@ ctest
 ```
 
 ## Tests
+
+**NOTE**: autopilot is currently not available in UBports and the instructions
+below are no longer accurate.
 
 ### Automated UI tests
 

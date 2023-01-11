@@ -9,7 +9,7 @@ export DPKG_GENSYMBOLS_CHECK_LEVEL=4
 BUILDHOME=/tmp/home
 
 %:
-	dh $@ --parallel --with translations,migrations
+	dh $@ --with translations,migrations
 
 apparmor:
 	aa-easyprof -m ./debian/morph-browser-apparmor.manifest --no-verify | \
@@ -28,7 +28,10 @@ ifeq ($(DEB_BUILD_GNU_TYPE),$(DEB_HOST_GNU_TYPE))
 endif
 
 override_dh_install: apparmor
-	dh_install --fail-missing
+	dh_install
+
+override_dh_missing:
+	dh_missing --fail-missing
 
 override_dh_installdeb:
 	dh_apparmor --profile-name=usr.bin.morph-browser -pmorph-browser

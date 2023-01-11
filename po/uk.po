@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-01-11 15:55+0000\n"
+"PO-Revision-Date: 2023-01-12 16:47+0000\n"
 "Last-Translator: Dan <denqwerta@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/uk/>\n"
@@ -520,7 +520,7 @@ msgstr ""
 #: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
 #: src/app/webcontainer/WebappSettingsPage.qml:273
 msgid "Clear"
-msgstr "Спорожнити"
+msgstr "Чисто"
 
 #: src/app/DownloadsDialog.qml:182
 msgid "View All"

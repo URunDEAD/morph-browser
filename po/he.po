@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 07:09+0000\n"
+"POT-Creation-Date: 2023-01-10 14:27+0000\n"
 "PO-Revision-Date: 2021-06-24 07:30+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.ubports.com/projects/ubports/morph-"
@@ -19,6 +19,203 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Weblate 3.11.3\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
+
+#: morph-browser.desktop.in:4
+msgid "Morph Browser"
+msgstr "דפדפן מורף"
+
+#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:112
+#: src/app/webcontainer/webapp-container.qml:77
+msgid "Morph Web Browser"
+msgstr "דפדפן האינטרנט של מורף"
+
+#: morph-browser.desktop.in:6
+msgid "Browse the World Wide Web using QtWebEngine"
+msgstr "גלוש באינטרנט באמצעות QtWebEngine"
+
+#: morph-browser.desktop.in:7
+msgid "Internet;WWW;Browser;Web;Explorer"
+msgstr "אינטרנט;רשת;דפדפן;מרשתת;נווט;סייר"
+
+#: morph-browser.desktop.in:9
+msgid "/usr/share/morph-browser/morph-browser.svg"
+msgstr ""
+
+#: morph-browser.desktop.in:23
+msgid "New Window"
+msgstr "חלון חדש"
+
+#: morph-browser.desktop.in:27
+msgid "New Private Window"
+msgstr "חלון פרטי חדש"
+
+#: src/app/actions/Back.qml:23
+msgid "Back"
+msgstr "אחורה"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/Back.qml:26
+msgid "Older Page"
+msgstr "דף ישן יותר"
+
+#: src/app/actions/BookmarkLink.qml:22
+msgid "Bookmark link"
+msgstr "קישור הסימנייה"
+
+#: src/app/actions/Bookmark.qml:23
+msgid "Bookmark"
+msgstr "סימנייה"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Bookmark' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/Bookmark.qml:26
+msgid "Add This Page to Bookmarks"
+msgstr "הוספת עמוד זה לסימניות"
+
+#: src/app/actions/ClearHistory.qml:23
+msgid "Clear History"
+msgstr "מחיקת ההיסטוריה"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/ClearHistory.qml:26
+msgid "Clear Navigation History"
+msgstr "מחיקת היסטוריית הניווט"
+
+#: src/app/actions/CopyImage.qml:22
+msgid "Copy image"
+msgstr "העתקת תמונה"
+
+#: src/app/actions/CopyLink.qml:22
+msgid "Copy link"
+msgstr "העתקת קישור"
+
+#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:373
+msgid "Copy"
+msgstr "העתק"
+
+#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:362
+msgid "Cut"
+msgstr "גזירה"
+
+#: src/app/actions/Erase.qml:22
+msgid "Erase"
+msgstr "מחיקה"
+
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:822
+msgid "Find in page"
+msgstr "איתור בעמוד"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/FindInPage.qml:26
+msgid "Search in Page"
+msgstr "חיפוש בעמוד"
+
+#: src/app/actions/Forward.qml:23
+msgid "Forward"
+msgstr "העבר"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Forward' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/Forward.qml:26
+msgid "Newer Page"
+msgstr "דף חדש יותר"
+
+#: src/app/actions/GoTo.qml:23
+msgid "Goto"
+msgstr "גישה"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/GoTo.qml:26
+msgid "Address;URL;www"
+msgstr "כתובת;URL;www;דפדפן"
+
+#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:692
+#: src/app/webbrowser/TabsBar.qml:88
+msgid "New Tab"
+msgstr "לשונית חדשה"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'New Tab' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/NewTab.qml:26
+msgid "Open a New Tab"
+msgstr "פתיחת לשונית חדשה"
+
+#: src/app/actions/OpenImageInNewTab.qml:22
+msgid "Open image in new tab"
+msgstr "פתיחת תמונה בחלון חדש"
+
+#: src/app/actions/OpenLinkInBrowser.qml:22
+msgid "Open link in default browser"
+msgstr "פתיחת קישור בדפדפן בררת המחדל"
+
+#: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
+msgid "Open link in new background tab"
+msgstr "פתיחת קישור בלשונית רקע חדשה"
+
+#: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
+msgid "Open link in new private window"
+msgstr "פתח קישור בחלון פרטי חדש"
+
+#: src/app/actions/OpenLinkInNewTab.qml:22
+msgid "Open link in new tab"
+msgstr "פתיחת קישור בלשונית חדשה"
+
+#: src/app/actions/OpenLinkInNewWindow.qml:22
+msgid "Open link in new window"
+msgstr "פתיחת קישור בחלון חדש"
+
+#: src/app/actions/OpenVideoInNewTab.qml:22
+msgid "Open video in new tab"
+msgstr "פתיחת סרטון בלשונית חדשה"
+
+#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:384
+msgid "Paste"
+msgstr "הדבקה"
+
+#: src/app/actions/Redo.qml:22
+msgid "Redo"
+msgstr "בצע שוב"
+
+#: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
+#: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
+msgid "Reload"
+msgstr "טעינה מחדש"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Reload' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/Reload.qml:26
+msgid "Leave Page"
+msgstr "עזיבת העמוד"
+
+#: src/app/actions/SaveImage.qml:22
+msgid "Save image"
+msgstr "שמירת התמונה"
+
+#: src/app/actions/SaveLink.qml:22
+msgid "Save link"
+msgstr "שמירת קישור"
+
+#: src/app/actions/SaveVideo.qml:22
+msgid "Save video"
+msgstr "שמירת הסרטון"
+
+#: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
+#: src/app/DomainPermissionsPage.qml:69 src/app/DomainSettingsPage.qml:67
+#: src/app/DownloadsPage.qml:87
+msgid "Select all"
+msgstr "בחירת הכול"
+
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
+msgid "Share"
+msgstr "שיתוף"
+
+#: src/app/actions/Undo.qml:22
+msgid "Undo"
+msgstr "החזרה"
 
 #: src/app/AlertDialog.qml:24
 msgid "JavaScript Alert"
@@ -38,16 +235,12 @@ msgstr "תוכניות כתובות אתרים מותאמות אישית"
 
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
-msgid "The site '%1' is trying to open the following URL with a custom scheme:"
-msgstr "האתר '%1' מנסה לפתוח את כתובת האתר הבאה באמצעות ערכת התאמה אישית:"
+msgid "The '%1' website wants to open this URL outside of the web browser:"
+msgstr ""
 
 #: src/app/AllowCustomSchemesDialog.qml:32
-msgid ""
-"This will try to dispatch this url to a system app if possible. Do you want "
-"to proceed?"
+msgid "Open this URL with a system app if possible?"
 msgstr ""
-"פעולה זו תנסה להעביר כתובת אתר זו לאפליקציית מערכת במידת האפשר. האם אתה רוצה "
-"להמשיך?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -66,14 +259,14 @@ msgstr "אישור"
 #: src/app/DownloadDelegate.qml:271 src/app/EditCustomUserAgentDialog.qml:69
 #: src/app/HttpAuthenticationDialog.qml:80 src/app/PromptDialog.qml:61
 #: src/app/SavePageDialog.qml:73 src/app/SimpleDownloadDelegate.qml:136
-#: src/app/ZoomControls.qml:238 src/app/webbrowser/BookmarkOptions.qml:182
+#: src/app/webbrowser/BookmarkOptions.qml:182
 #: src/app/webbrowser/ContentDownloadDialog.qml:114
 #: src/app/webbrowser/ContextMenuMobile.qml:143
 #: src/app/webbrowser/SettingsPage.qml:438
 #: src/app/webbrowser/SettingsPage.qml:554
 #: src/app/webcontainer/AccountChooserDialog.qml:96
 #: src/app/webcontainer/ContextMenuMobile.qml:143
-#: src/app/webcontainer/WebappSettingsPage.qml:266
+#: src/app/webcontainer/WebappSettingsPage.qml:266 src/app/ZoomControls.qml:238
 msgid "Cancel"
 msgstr "ביטול"
 
@@ -167,12 +360,6 @@ msgstr "אישור JavaScript"
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
 msgstr "סוכני משתמשים בהתאמה אישית"
-
-#: src/app/CustomUserAgentsPage.qml:47 src/app/DomainPermissionsPage.qml:69
-#: src/app/DomainSettingsPage.qml:67 src/app/DownloadsPage.qml:87
-#: src/app/actions/SelectAll.qml:22
-msgid "Select all"
-msgstr "בחירת הכול"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:85
 #: src/app/DomainSettingsPage.qml:83 src/app/DownloadsPage.qml:103
@@ -574,245 +761,6 @@ msgstr "שמור כקובץ PDF"
 msgid "Remove from List"
 msgstr ""
 
-#: src/app/WebViewImpl.qml:680 src/app/webbrowser/Browser.qml:876
-msgid "Zoom"
-msgstr "תקריב"
-
-#: src/app/ZoomControls.qml:62
-msgid "Zoom Out"
-msgstr "להקטין את התצוגה"
-
-#: src/app/ZoomControls.qml:69
-msgid "Reset"
-msgstr "איפוס"
-
-#: src/app/ZoomControls.qml:69
-msgid "fit"
-msgstr "התאם"
-
-#: src/app/ZoomControls.qml:76
-msgid "Zoom In"
-msgstr "להתמקד"
-
-#: src/app/ZoomControls.qml:83 src/app/webbrowser/BookmarkOptions.qml:164
-#: src/app/webbrowser/SettingsPage.qml:530
-msgid "Save"
-msgstr "שמור"
-
-#: src/app/ZoomControls.qml:101
-msgid "Current Zoom"
-msgstr "זום נוכחי"
-
-#: src/app/ZoomControls.qml:102
-msgid "domain"
-msgstr "דומיין"
-
-#: src/app/ZoomControls.qml:102
-msgid "default"
-msgstr "בררת מחדל"
-
-#: src/app/ZoomControls.qml:102
-msgid "auto-fit"
-msgstr "התאמה אוטומטית"
-
-#: src/app/ZoomControls.qml:191
-msgid "Save Zoom"
-msgstr "שמור זום"
-
-#: src/app/ZoomControls.qml:193
-msgid "the current web app"
-msgstr "אפליקציית האינטרנט הנוכחית"
-
-#: src/app/ZoomControls.qml:196
-#, qt-format
-msgid ""
-"The current zoom level (%1%) can be saved in %2 either for the current "
-"domain or as the default zoom level."
-msgstr ""
-
-#: src/app/ZoomControls.qml:198
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
-msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "ניתן לשמור את הזום הנוכחי (%1%) עבור %2 כ- "
-
-#: src/app/ZoomControls.qml:200
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
-msgid ""
-"The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr "ניתן לשמור את הזום הנוכחי (%1%) עבור %2 כ- "
-
-#: src/app/ZoomControls.qml:207
-msgid "Save for domain"
-msgstr "שמור לדומיין"
-
-#: src/app/ZoomControls.qml:220
-msgid "Save as default"
-msgstr "שמור כברירת מחדל"
-
-#: src/app/actions/Back.qml:23
-msgid "Back"
-msgstr "אחורה"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Back.qml:26
-msgid "Older Page"
-msgstr "דף ישן יותר"
-
-#: src/app/actions/Bookmark.qml:23
-msgid "Bookmark"
-msgstr "סימנייה"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Bookmark' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Bookmark.qml:26
-msgid "Add This Page to Bookmarks"
-msgstr "הוספת עמוד זה לסימניות"
-
-#: src/app/actions/BookmarkLink.qml:22
-msgid "Bookmark link"
-msgstr "קישור הסימנייה"
-
-#: src/app/actions/ClearHistory.qml:23
-msgid "Clear History"
-msgstr "מחיקת ההיסטוריה"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/ClearHistory.qml:26
-msgid "Clear Navigation History"
-msgstr "מחיקת היסטוריית הניווט"
-
-#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:373
-msgid "Copy"
-msgstr "העתק"
-
-#: src/app/actions/CopyImage.qml:22
-msgid "Copy image"
-msgstr "העתקת תמונה"
-
-#: src/app/actions/CopyLink.qml:22
-msgid "Copy link"
-msgstr "העתקת קישור"
-
-#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:362
-msgid "Cut"
-msgstr "גזירה"
-
-#: src/app/actions/Erase.qml:22
-msgid "Erase"
-msgstr "מחיקה"
-
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:822
-msgid "Find in page"
-msgstr "איתור בעמוד"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/FindInPage.qml:26
-msgid "Search in Page"
-msgstr "חיפוש בעמוד"
-
-#: src/app/actions/Forward.qml:23
-msgid "Forward"
-msgstr "העבר"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Forward' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Forward.qml:26
-msgid "Newer Page"
-msgstr "דף חדש יותר"
-
-#: src/app/actions/GoTo.qml:23
-msgid "Goto"
-msgstr "גישה"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/GoTo.qml:26
-msgid "Address;URL;www"
-msgstr "כתובת;URL;www;דפדפן"
-
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:692
-#: src/app/webbrowser/TabsBar.qml:88
-msgid "New Tab"
-msgstr "לשונית חדשה"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'New Tab' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/NewTab.qml:26
-msgid "Open a New Tab"
-msgstr "פתיחת לשונית חדשה"
-
-#: src/app/actions/OpenImageInNewTab.qml:22
-msgid "Open image in new tab"
-msgstr "פתיחת תמונה בחלון חדש"
-
-#: src/app/actions/OpenLinkInBrowser.qml:22
-msgid "Open link in default browser"
-msgstr "פתיחת קישור בדפדפן בררת המחדל"
-
-#: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
-msgid "Open link in new background tab"
-msgstr "פתיחת קישור בלשונית רקע חדשה"
-
-#: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
-msgid "Open link in new private window"
-msgstr "פתח קישור בחלון פרטי חדש"
-
-#: src/app/actions/OpenLinkInNewTab.qml:22
-msgid "Open link in new tab"
-msgstr "פתיחת קישור בלשונית חדשה"
-
-#: src/app/actions/OpenLinkInNewWindow.qml:22
-msgid "Open link in new window"
-msgstr "פתיחת קישור בחלון חדש"
-
-#: src/app/actions/OpenVideoInNewTab.qml:22
-msgid "Open video in new tab"
-msgstr "פתיחת סרטון בלשונית חדשה"
-
-#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:384
-msgid "Paste"
-msgstr "הדבקה"
-
-#: src/app/actions/Redo.qml:22
-msgid "Redo"
-msgstr "בצע שוב"
-
-#: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
-#: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
-msgid "Reload"
-msgstr "טעינה מחדש"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Reload' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Reload.qml:26
-msgid "Leave Page"
-msgstr "עזיבת העמוד"
-
-#: src/app/actions/SaveImage.qml:22
-msgid "Save image"
-msgstr "שמירת התמונה"
-
-#: src/app/actions/SaveLink.qml:22
-msgid "Save link"
-msgstr "שמירת קישור"
-
-#: src/app/actions/SaveVideo.qml:22
-msgid "Save video"
-msgstr "שמירת הסרטון"
-
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
-msgid "Share"
-msgstr "שיתוף"
-
-#: src/app/actions/Undo.qml:22
-msgid "Undo"
-msgstr "החזרה"
-
 #: src/app/webbrowser/AddressBar.qml:242
 msgid "find in page"
 msgstr "חיפוש בעמוד"
@@ -854,6 +802,11 @@ msgstr "תיקייה חדשה"
 msgid "Create new folder"
 msgstr "יצירת תיקייה חדשה"
 
+#: src/app/webbrowser/BookmarkOptions.qml:164
+#: src/app/webbrowser/SettingsPage.qml:530 src/app/ZoomControls.qml:83
+msgid "Save"
+msgstr "שמור"
+
 #: src/app/webbrowser/BookmarksFoldersView.qml:191
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
 #: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
@@ -869,18 +822,18 @@ msgid "Bookmarks"
 msgstr "סימניות"
 
 #: src/app/webbrowser/Browser.qml:231
-#: src/app/webcontainer/WebViewImplOxide.qml:299
+#: src/app/webcontainer/WebViewImplOxide.qml:303
 msgid "Blocked domain"
 msgstr "דומיין חסום"
 
 #: src/app/webbrowser/Browser.qml:232
-#: src/app/webcontainer/WebViewImplOxide.qml:300
+#: src/app/webcontainer/WebViewImplOxide.qml:304
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr "בקשת ניווט חסומה לדומיין %1."
 
 #: src/app/webbrowser/Browser.qml:258
-#: src/app/webcontainer/WebViewImplOxide.qml:326
+#: src/app/webcontainer/WebViewImplOxide.qml:330
 msgid "Whitelisted domain"
 msgstr "דומיין ברשימת ההיתרים"
 
@@ -927,6 +880,10 @@ msgstr "ראה מקור"
 #| msgid "Save as PDF"
 msgid "Save / Print to PDF"
 msgstr "שמור כקובץ PDF"
+
+#: src/app/webbrowser/Browser.qml:876 src/app/WebViewImpl.qml:680
+msgid "Zoom"
+msgstr "תקריב"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
 #: src/app/webbrowser/Browser.qml:1075 src/app/webbrowser/Browser.qml:1113
@@ -978,6 +935,13 @@ msgstr "כל ההיסטוריה"
 #: src/app/webbrowser/HistoryViewWide.qml:337
 msgid "Today"
 msgstr "היום"
+
+#. TRANSLATORS: %1 refers to the current page’s title
+#: src/app/webbrowser/morph-browser.qml:110
+#: src/app/webcontainer/webapp-container.qml:75
+#, qt-format
+msgid "%1 - Morph Web Browser"
+msgstr "%1 - דפדפן האינטרנט של מורף"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:41
 msgid "This is a private tab"
@@ -1172,19 +1136,6 @@ msgstr "סגירת הלשונית"
 msgid "Remove"
 msgstr "הסר"
 
-#. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:110
-#: src/app/webcontainer/webapp-container.qml:75
-#, qt-format
-msgid "%1 - Morph Web Browser"
-msgstr "%1 - דפדפן האינטרנט של מורף"
-
-#: src/app/webbrowser/morph-browser.qml:112
-#: src/app/webcontainer/webapp-container.qml:77
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:2
-msgid "Morph Web Browser"
-msgstr "דפדפן האינטרנט של מורף"
-
 #: src/app/webcontainer/AccountChooserDialog.qml:62
 msgid ""
 "No accounts have been linked to this webapp; press the item below to add an "
@@ -1254,11 +1205,6 @@ msgstr "בחר חשבון"
 msgid "Oops, something went wrong."
 msgstr "אופס, משהו השתבש."
 
-#: src/app/webcontainer/WebViewImplOxide.qml:327
-#, qt-format
-msgid "domain %1 is now whitelisted, please reload the page."
-msgstr "הדומיין %1 נמצא כעת ברשימת ההיתרים, טען מחדש את הדף."
-
 #: src/app/webcontainer/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
 msgstr "הגדרות WebappContainer"
@@ -1267,25 +1213,90 @@ msgstr "הגדרות WebappContainer"
 msgid "Reset webapp settings"
 msgstr "אפס את הגדרות ה- webapp"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:1
-msgid "Morph Browser"
-msgstr "דפדפן מורף"
+#: src/app/webcontainer/WebViewImplOxide.qml:331
+#, qt-format
+msgid "domain %1 is now whitelisted, please reload the page."
+msgstr "הדומיין %1 נמצא כעת ברשימת ההיתרים, טען מחדש את הדף."
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:3
-msgid "Browse the World Wide Web using QtWebEngine"
-msgstr "גלוש באינטרנט באמצעות QtWebEngine"
+#: src/app/ZoomControls.qml:62
+msgid "Zoom Out"
+msgstr "להקטין את התצוגה"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:4
-msgid "Internet;WWW;Browser;Web;Explorer"
-msgstr "אינטרנט;רשת;דפדפן;מרשתת;נווט;סייר"
+#: src/app/ZoomControls.qml:69
+msgid "Reset"
+msgstr "איפוס"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:5
-msgid "New Window"
-msgstr "חלון חדש"
+#: src/app/ZoomControls.qml:69
+msgid "fit"
+msgstr "התאם"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:6
-msgid "New Private Window"
-msgstr "חלון פרטי חדש"
+#: src/app/ZoomControls.qml:76
+msgid "Zoom In"
+msgstr "להתמקד"
+
+#: src/app/ZoomControls.qml:101
+msgid "Current Zoom"
+msgstr "זום נוכחי"
+
+#: src/app/ZoomControls.qml:102
+msgid "domain"
+msgstr "דומיין"
+
+#: src/app/ZoomControls.qml:102
+msgid "default"
+msgstr "בררת מחדל"
+
+#: src/app/ZoomControls.qml:102
+msgid "auto-fit"
+msgstr "התאמה אוטומטית"
+
+#: src/app/ZoomControls.qml:191
+msgid "Save Zoom"
+msgstr "שמור זום"
+
+#: src/app/ZoomControls.qml:193
+msgid "the current web app"
+msgstr "אפליקציית האינטרנט הנוכחית"
+
+#: src/app/ZoomControls.qml:196
+#, qt-format
+msgid ""
+"The current zoom level (%1%) can be saved in %2 either for the current "
+"domain or as the default zoom level."
+msgstr ""
+
+#: src/app/ZoomControls.qml:198
+#, fuzzy, qt-format
+#| msgid "Current zoom (%1%) can be saved for %2 as "
+msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
+msgstr "ניתן לשמור את הזום הנוכחי (%1%) עבור %2 כ- "
+
+#: src/app/ZoomControls.qml:200
+#, fuzzy, qt-format
+#| msgid "Current zoom (%1%) can be saved for %2 as "
+msgid ""
+"The current zoom level (%1%) can be saved in %2 as the default zoom level."
+msgstr "ניתן לשמור את הזום הנוכחי (%1%) עבור %2 כ- "
+
+#: src/app/ZoomControls.qml:207
+msgid "Save for domain"
+msgstr "שמור לדומיין"
+
+#: src/app/ZoomControls.qml:220
+msgid "Save as default"
+msgstr "שמור כברירת מחדל"
+
+#, qt-format
+#~ msgid ""
+#~ "The site '%1' is trying to open the following URL with a custom scheme:"
+#~ msgstr "האתר '%1' מנסה לפתוח את כתובת האתר הבאה באמצעות ערכת התאמה אישית:"
+
+#~ msgid ""
+#~ "This will try to dispatch this url to a system app if possible. Do you "
+#~ "want to proceed?"
+#~ msgstr ""
+#~ "פעולה זו תנסה להעביר כתובת אתר זו לאפליקציית מערכת במידת האפשר. האם אתה "
+#~ "רוצה להמשיך?"
 
 #~ msgid "Pause"
 #~ msgstr "השהייה"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 07:09+0000\n"
+"POT-Creation-Date: 2023-01-10 14:27+0000\n"
 "PO-Revision-Date: 2021-05-22 21:42+0000\n"
 "Last-Translator: dano6 <dano.kutka@gmail.com>\n"
 "Language-Team: Slovak <https://translate.ubports.com/projects/ubports/morph-"
@@ -19,6 +19,203 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
 "X-Generator: Weblate 3.11.3\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
+
+#: morph-browser.desktop.in:4
+msgid "Morph Browser"
+msgstr "Prehliadač Morph"
+
+#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:112
+#: src/app/webcontainer/webapp-container.qml:77
+msgid "Morph Web Browser"
+msgstr "Webový prehliadač Morph"
+
+#: morph-browser.desktop.in:6
+msgid "Browse the World Wide Web using QtWebEngine"
+msgstr "Prehliadajte internet s <<QtWebEngine>>"
+
+#: morph-browser.desktop.in:7
+msgid "Internet;WWW;Browser;Web;Explorer"
+msgstr "Internet;WWW;Prehliadač;Web;Explorer"
+
+#: morph-browser.desktop.in:9
+msgid "/usr/share/morph-browser/morph-browser.svg"
+msgstr ""
+
+#: morph-browser.desktop.in:23
+msgid "New Window"
+msgstr "Nové okno"
+
+#: morph-browser.desktop.in:27
+msgid "New Private Window"
+msgstr "Nové súkromné okno"
+
+#: src/app/actions/Back.qml:23
+msgid "Back"
+msgstr "Späť"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/Back.qml:26
+msgid "Older Page"
+msgstr "Staršia stránka"
+
+#: src/app/actions/BookmarkLink.qml:22
+msgid "Bookmark link"
+msgstr "Adresa na záložku"
+
+#: src/app/actions/Bookmark.qml:23
+msgid "Bookmark"
+msgstr "Záložka"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Bookmark' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/Bookmark.qml:26
+msgid "Add This Page to Bookmarks"
+msgstr "Pridať túto stránku do záložiek"
+
+#: src/app/actions/ClearHistory.qml:23
+msgid "Clear History"
+msgstr "Vymazať históriu"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/ClearHistory.qml:26
+msgid "Clear Navigation History"
+msgstr "Vymazať históriu prezerania"
+
+#: src/app/actions/CopyImage.qml:22
+msgid "Copy image"
+msgstr "Kopírovať obrázok"
+
+#: src/app/actions/CopyLink.qml:22
+msgid "Copy link"
+msgstr "Kopírovať odkaz"
+
+#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:373
+msgid "Copy"
+msgstr "Kopírovať"
+
+#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:362
+msgid "Cut"
+msgstr "Vystrihnúť"
+
+#: src/app/actions/Erase.qml:22
+msgid "Erase"
+msgstr "Vymazať"
+
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:822
+msgid "Find in page"
+msgstr "Nájsť na stránke"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/FindInPage.qml:26
+msgid "Search in Page"
+msgstr "Hľadať na stránke"
+
+#: src/app/actions/Forward.qml:23
+msgid "Forward"
+msgstr "Preposlať"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Forward' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/Forward.qml:26
+msgid "Newer Page"
+msgstr "Novšia stránka"
+
+#: src/app/actions/GoTo.qml:23
+msgid "Goto"
+msgstr "Prejsť na"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/GoTo.qml:26
+msgid "Address;URL;www"
+msgstr "Adresa;URL;www"
+
+#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:692
+#: src/app/webbrowser/TabsBar.qml:88
+msgid "New Tab"
+msgstr "Nová karta"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'New Tab' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/NewTab.qml:26
+msgid "Open a New Tab"
+msgstr "Otvoriť novú kartu"
+
+#: src/app/actions/OpenImageInNewTab.qml:22
+msgid "Open image in new tab"
+msgstr "Otvoriť obrázok na novej karte"
+
+#: src/app/actions/OpenLinkInBrowser.qml:22
+msgid "Open link in default browser"
+msgstr "Otvoriť odkaz v predvolenom prehliadači"
+
+#: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
+msgid "Open link in new background tab"
+msgstr "Otvoriť odkaz na novej karte v pozadí"
+
+#: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
+msgid "Open link in new private window"
+msgstr "Otvoriť odkaz v novom súkromnom okne"
+
+#: src/app/actions/OpenLinkInNewTab.qml:22
+msgid "Open link in new tab"
+msgstr "Otvoriť odkaz na novej karte"
+
+#: src/app/actions/OpenLinkInNewWindow.qml:22
+msgid "Open link in new window"
+msgstr "Otvoriť adresu v novom okne"
+
+#: src/app/actions/OpenVideoInNewTab.qml:22
+msgid "Open video in new tab"
+msgstr "Otvoriť video na novej karte"
+
+#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:384
+msgid "Paste"
+msgstr "Vložiť"
+
+#: src/app/actions/Redo.qml:22
+msgid "Redo"
+msgstr "Opakovať"
+
+#: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
+#: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
+msgid "Reload"
+msgstr "Obnoviť"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Reload' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/Reload.qml:26
+msgid "Leave Page"
+msgstr "Opustiť stránku"
+
+#: src/app/actions/SaveImage.qml:22
+msgid "Save image"
+msgstr "Uložiť obrázok"
+
+#: src/app/actions/SaveLink.qml:22
+msgid "Save link"
+msgstr "Uložiť odkaz"
+
+#: src/app/actions/SaveVideo.qml:22
+msgid "Save video"
+msgstr "Uložiť video"
+
+#: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
+#: src/app/DomainPermissionsPage.qml:69 src/app/DomainSettingsPage.qml:67
+#: src/app/DownloadsPage.qml:87
+msgid "Select all"
+msgstr "Vybrať všetko"
+
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
+msgid "Share"
+msgstr "Zdieľať"
+
+#: src/app/actions/Undo.qml:22
+msgid "Undo"
+msgstr "Späť"
 
 #: src/app/AlertDialog.qml:24
 msgid "JavaScript Alert"
@@ -38,17 +235,12 @@ msgstr "Vlastné URL objekty"
 
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
-msgid "The site '%1' is trying to open the following URL with a custom scheme:"
-msgstr "Stránka '%1' sa pokúša otvoriť nasledujúcu URL s vlastnými objektmi:"
+msgid "The '%1' website wants to open this URL outside of the web browser:"
+msgstr ""
 
 #: src/app/AllowCustomSchemesDialog.qml:32
-msgid ""
-"This will try to dispatch this url to a system app if possible. Do you want "
-"to proceed?"
+msgid "Open this URL with a system app if possible?"
 msgstr ""
-"Pokiaľ to bude možné, dôjde k pokusu o odoslanie URL do aplikácie systému. "
-"Prajete\n"
-"si pokračovať?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -67,14 +259,14 @@ msgstr "Povoliť"
 #: src/app/DownloadDelegate.qml:271 src/app/EditCustomUserAgentDialog.qml:69
 #: src/app/HttpAuthenticationDialog.qml:80 src/app/PromptDialog.qml:61
 #: src/app/SavePageDialog.qml:73 src/app/SimpleDownloadDelegate.qml:136
-#: src/app/ZoomControls.qml:238 src/app/webbrowser/BookmarkOptions.qml:182
+#: src/app/webbrowser/BookmarkOptions.qml:182
 #: src/app/webbrowser/ContentDownloadDialog.qml:114
 #: src/app/webbrowser/ContextMenuMobile.qml:143
 #: src/app/webbrowser/SettingsPage.qml:438
 #: src/app/webbrowser/SettingsPage.qml:554
 #: src/app/webcontainer/AccountChooserDialog.qml:96
 #: src/app/webcontainer/ContextMenuMobile.qml:143
-#: src/app/webcontainer/WebappSettingsPage.qml:266
+#: src/app/webcontainer/WebappSettingsPage.qml:266 src/app/ZoomControls.qml:238
 msgid "Cancel"
 msgstr "Zrušiť"
 
@@ -169,12 +361,6 @@ msgstr "Potvrdenie JavaScriptu"
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
 msgstr "Vlastný užívateľský agent"
-
-#: src/app/CustomUserAgentsPage.qml:47 src/app/DomainPermissionsPage.qml:69
-#: src/app/DomainSettingsPage.qml:67 src/app/DownloadsPage.qml:87
-#: src/app/actions/SelectAll.qml:22
-msgid "Select all"
-msgstr "Vybrať všetko"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:85
 #: src/app/DomainSettingsPage.qml:83 src/app/DownloadsPage.qml:103
@@ -577,245 +763,6 @@ msgstr "Uložiť ako PDF"
 msgid "Remove from List"
 msgstr ""
 
-#: src/app/WebViewImpl.qml:680 src/app/webbrowser/Browser.qml:876
-msgid "Zoom"
-msgstr "Priblíženie"
-
-#: src/app/ZoomControls.qml:62
-msgid "Zoom Out"
-msgstr "Oddialiť"
-
-#: src/app/ZoomControls.qml:69
-msgid "Reset"
-msgstr "Obnoviť"
-
-#: src/app/ZoomControls.qml:69
-msgid "fit"
-msgstr "prispôsobiť"
-
-#: src/app/ZoomControls.qml:76
-msgid "Zoom In"
-msgstr "Priblížiť"
-
-#: src/app/ZoomControls.qml:83 src/app/webbrowser/BookmarkOptions.qml:164
-#: src/app/webbrowser/SettingsPage.qml:530
-msgid "Save"
-msgstr "Uložiť"
-
-#: src/app/ZoomControls.qml:101
-msgid "Current Zoom"
-msgstr "Aktuálne priblíženie"
-
-#: src/app/ZoomControls.qml:102
-msgid "domain"
-msgstr "doména"
-
-#: src/app/ZoomControls.qml:102
-msgid "default"
-msgstr "predvolený"
-
-#: src/app/ZoomControls.qml:102
-msgid "auto-fit"
-msgstr "autom. prizp."
-
-#: src/app/ZoomControls.qml:191
-msgid "Save Zoom"
-msgstr "Uložiť veľkosť"
-
-#: src/app/ZoomControls.qml:193
-msgid "the current web app"
-msgstr "aktuálna web app"
-
-#: src/app/ZoomControls.qml:196
-#, qt-format
-msgid ""
-"The current zoom level (%1%) can be saved in %2 either for the current "
-"domain or as the default zoom level."
-msgstr ""
-
-#: src/app/ZoomControls.qml:198
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
-msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "Súčasná veľkosť stránky (%1%) môže byť pre %2 uložená "
-
-#: src/app/ZoomControls.qml:200
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
-msgid ""
-"The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr "Súčasná veľkosť stránky (%1%) môže byť pre %2 uložená "
-
-#: src/app/ZoomControls.qml:207
-msgid "Save for domain"
-msgstr "Uložiť pre doménu"
-
-#: src/app/ZoomControls.qml:220
-msgid "Save as default"
-msgstr "Uložiť ako predvolené"
-
-#: src/app/actions/Back.qml:23
-msgid "Back"
-msgstr "Späť"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Back.qml:26
-msgid "Older Page"
-msgstr "Staršia stránka"
-
-#: src/app/actions/Bookmark.qml:23
-msgid "Bookmark"
-msgstr "Záložka"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Bookmark' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Bookmark.qml:26
-msgid "Add This Page to Bookmarks"
-msgstr "Pridať túto stránku do záložiek"
-
-#: src/app/actions/BookmarkLink.qml:22
-msgid "Bookmark link"
-msgstr "Adresa na záložku"
-
-#: src/app/actions/ClearHistory.qml:23
-msgid "Clear History"
-msgstr "Vymazať históriu"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/ClearHistory.qml:26
-msgid "Clear Navigation History"
-msgstr "Vymazať históriu prezerania"
-
-#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:373
-msgid "Copy"
-msgstr "Kopírovať"
-
-#: src/app/actions/CopyImage.qml:22
-msgid "Copy image"
-msgstr "Kopírovať obrázok"
-
-#: src/app/actions/CopyLink.qml:22
-msgid "Copy link"
-msgstr "Kopírovať odkaz"
-
-#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:362
-msgid "Cut"
-msgstr "Vystrihnúť"
-
-#: src/app/actions/Erase.qml:22
-msgid "Erase"
-msgstr "Vymazať"
-
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:822
-msgid "Find in page"
-msgstr "Nájsť na stránke"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/FindInPage.qml:26
-msgid "Search in Page"
-msgstr "Hľadať na stránke"
-
-#: src/app/actions/Forward.qml:23
-msgid "Forward"
-msgstr "Preposlať"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Forward' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Forward.qml:26
-msgid "Newer Page"
-msgstr "Novšia stránka"
-
-#: src/app/actions/GoTo.qml:23
-msgid "Goto"
-msgstr "Prejsť na"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/GoTo.qml:26
-msgid "Address;URL;www"
-msgstr "Adresa;URL;www"
-
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:692
-#: src/app/webbrowser/TabsBar.qml:88
-msgid "New Tab"
-msgstr "Nová karta"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'New Tab' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/NewTab.qml:26
-msgid "Open a New Tab"
-msgstr "Otvoriť novú kartu"
-
-#: src/app/actions/OpenImageInNewTab.qml:22
-msgid "Open image in new tab"
-msgstr "Otvoriť obrázok na novej karte"
-
-#: src/app/actions/OpenLinkInBrowser.qml:22
-msgid "Open link in default browser"
-msgstr "Otvoriť odkaz v predvolenom prehliadači"
-
-#: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
-msgid "Open link in new background tab"
-msgstr "Otvoriť odkaz na novej karte v pozadí"
-
-#: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
-msgid "Open link in new private window"
-msgstr "Otvoriť odkaz v novom súkromnom okne"
-
-#: src/app/actions/OpenLinkInNewTab.qml:22
-msgid "Open link in new tab"
-msgstr "Otvoriť odkaz na novej karte"
-
-#: src/app/actions/OpenLinkInNewWindow.qml:22
-msgid "Open link in new window"
-msgstr "Otvoriť adresu v novom okne"
-
-#: src/app/actions/OpenVideoInNewTab.qml:22
-msgid "Open video in new tab"
-msgstr "Otvoriť video na novej karte"
-
-#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:384
-msgid "Paste"
-msgstr "Vložiť"
-
-#: src/app/actions/Redo.qml:22
-msgid "Redo"
-msgstr "Opakovať"
-
-#: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
-#: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
-msgid "Reload"
-msgstr "Obnoviť"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Reload' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Reload.qml:26
-msgid "Leave Page"
-msgstr "Opustiť stránku"
-
-#: src/app/actions/SaveImage.qml:22
-msgid "Save image"
-msgstr "Uložiť obrázok"
-
-#: src/app/actions/SaveLink.qml:22
-msgid "Save link"
-msgstr "Uložiť odkaz"
-
-#: src/app/actions/SaveVideo.qml:22
-msgid "Save video"
-msgstr "Uložiť video"
-
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
-msgid "Share"
-msgstr "Zdieľať"
-
-#: src/app/actions/Undo.qml:22
-msgid "Undo"
-msgstr "Späť"
-
 #: src/app/webbrowser/AddressBar.qml:242
 msgid "find in page"
 msgstr "nájsť na stránke"
@@ -857,6 +804,11 @@ msgstr "Nový priečinok"
 msgid "Create new folder"
 msgstr "Vytvoriť nový priečinok"
 
+#: src/app/webbrowser/BookmarkOptions.qml:164
+#: src/app/webbrowser/SettingsPage.qml:530 src/app/ZoomControls.qml:83
+msgid "Save"
+msgstr "Uložiť"
+
 #: src/app/webbrowser/BookmarksFoldersView.qml:191
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
 #: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
@@ -872,18 +824,18 @@ msgid "Bookmarks"
 msgstr "Záložky"
 
 #: src/app/webbrowser/Browser.qml:231
-#: src/app/webcontainer/WebViewImplOxide.qml:299
+#: src/app/webcontainer/WebViewImplOxide.qml:303
 msgid "Blocked domain"
 msgstr "Blokovaná doména"
 
 #: src/app/webbrowser/Browser.qml:232
-#: src/app/webcontainer/WebViewImplOxide.qml:300
+#: src/app/webcontainer/WebViewImplOxide.qml:304
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr "Požiadavka navigácie na doménu %1 zablokovaná."
 
 #: src/app/webbrowser/Browser.qml:258
-#: src/app/webcontainer/WebViewImplOxide.qml:326
+#: src/app/webcontainer/WebViewImplOxide.qml:330
 msgid "Whitelisted domain"
 msgstr "Doména na zozname povolených"
 
@@ -928,6 +880,10 @@ msgstr "Ukázať zdrojový kód"
 #: src/app/webbrowser/Browser.qml:855
 msgid "Save / Print to PDF"
 msgstr "Uložiť/ Vytlačiť ako PDF"
+
+#: src/app/webbrowser/Browser.qml:876 src/app/WebViewImpl.qml:680
+msgid "Zoom"
+msgstr "Priblíženie"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
 #: src/app/webbrowser/Browser.qml:1075 src/app/webbrowser/Browser.qml:1113
@@ -979,6 +935,13 @@ msgstr "Celá história"
 #: src/app/webbrowser/HistoryViewWide.qml:337
 msgid "Today"
 msgstr "Dnes"
+
+#. TRANSLATORS: %1 refers to the current page’s title
+#: src/app/webbrowser/morph-browser.qml:110
+#: src/app/webcontainer/webapp-container.qml:75
+#, qt-format
+msgid "%1 - Morph Web Browser"
+msgstr "%1 - Webový prehliadač Morph"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:41
 msgid "This is a private tab"
@@ -1174,19 +1137,6 @@ msgstr "Zavrieť kartu"
 msgid "Remove"
 msgstr "Odstrániť"
 
-#. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:110
-#: src/app/webcontainer/webapp-container.qml:75
-#, qt-format
-msgid "%1 - Morph Web Browser"
-msgstr "%1 - Webový prehliadač Morph"
-
-#: src/app/webbrowser/morph-browser.qml:112
-#: src/app/webcontainer/webapp-container.qml:77
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:2
-msgid "Morph Web Browser"
-msgstr "Webový prehliadač Morph"
-
 #: src/app/webcontainer/AccountChooserDialog.qml:62
 msgid ""
 "No accounts have been linked to this webapp; press the item below to add an "
@@ -1256,11 +1206,6 @@ msgstr "Vyberte účet"
 msgid "Oops, something went wrong."
 msgstr "Ups, niečo sa pokazilo."
 
-#: src/app/webcontainer/WebViewImplOxide.qml:327
-#, qt-format
-msgid "domain %1 is now whitelisted, please reload the page."
-msgstr "doména %1 je teraz medzi povolenými, prosím obnovte stránku."
-
 #: src/app/webcontainer/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
 msgstr "<<WebappContainer>> nastavenia"
@@ -1269,25 +1214,92 @@ msgstr "<<WebappContainer>> nastavenia"
 msgid "Reset webapp settings"
 msgstr "Obnovenie nastavení webových aplikácií"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:1
-msgid "Morph Browser"
-msgstr "Prehliadač Morph"
+#: src/app/webcontainer/WebViewImplOxide.qml:331
+#, qt-format
+msgid "domain %1 is now whitelisted, please reload the page."
+msgstr "doména %1 je teraz medzi povolenými, prosím obnovte stránku."
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:3
-msgid "Browse the World Wide Web using QtWebEngine"
-msgstr "Prehliadajte internet s <<QtWebEngine>>"
+#: src/app/ZoomControls.qml:62
+msgid "Zoom Out"
+msgstr "Oddialiť"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:4
-msgid "Internet;WWW;Browser;Web;Explorer"
-msgstr "Internet;WWW;Prehliadač;Web;Explorer"
+#: src/app/ZoomControls.qml:69
+msgid "Reset"
+msgstr "Obnoviť"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:5
-msgid "New Window"
-msgstr "Nové okno"
+#: src/app/ZoomControls.qml:69
+msgid "fit"
+msgstr "prispôsobiť"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:6
-msgid "New Private Window"
-msgstr "Nové súkromné okno"
+#: src/app/ZoomControls.qml:76
+msgid "Zoom In"
+msgstr "Priblížiť"
+
+#: src/app/ZoomControls.qml:101
+msgid "Current Zoom"
+msgstr "Aktuálne priblíženie"
+
+#: src/app/ZoomControls.qml:102
+msgid "domain"
+msgstr "doména"
+
+#: src/app/ZoomControls.qml:102
+msgid "default"
+msgstr "predvolený"
+
+#: src/app/ZoomControls.qml:102
+msgid "auto-fit"
+msgstr "autom. prizp."
+
+#: src/app/ZoomControls.qml:191
+msgid "Save Zoom"
+msgstr "Uložiť veľkosť"
+
+#: src/app/ZoomControls.qml:193
+msgid "the current web app"
+msgstr "aktuálna web app"
+
+#: src/app/ZoomControls.qml:196
+#, qt-format
+msgid ""
+"The current zoom level (%1%) can be saved in %2 either for the current "
+"domain or as the default zoom level."
+msgstr ""
+
+#: src/app/ZoomControls.qml:198
+#, fuzzy, qt-format
+#| msgid "Current zoom (%1%) can be saved for %2 as "
+msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
+msgstr "Súčasná veľkosť stránky (%1%) môže byť pre %2 uložená "
+
+#: src/app/ZoomControls.qml:200
+#, fuzzy, qt-format
+#| msgid "Current zoom (%1%) can be saved for %2 as "
+msgid ""
+"The current zoom level (%1%) can be saved in %2 as the default zoom level."
+msgstr "Súčasná veľkosť stránky (%1%) môže byť pre %2 uložená "
+
+#: src/app/ZoomControls.qml:207
+msgid "Save for domain"
+msgstr "Uložiť pre doménu"
+
+#: src/app/ZoomControls.qml:220
+msgid "Save as default"
+msgstr "Uložiť ako predvolené"
+
+#, qt-format
+#~ msgid ""
+#~ "The site '%1' is trying to open the following URL with a custom scheme:"
+#~ msgstr ""
+#~ "Stránka '%1' sa pokúša otvoriť nasledujúcu URL s vlastnými objektmi:"
+
+#~ msgid ""
+#~ "This will try to dispatch this url to a system app if possible. Do you "
+#~ "want to proceed?"
+#~ msgstr ""
+#~ "Pokiaľ to bude možné, dôjde k pokusu o odoslanie URL do aplikácie "
+#~ "systému. Prajete\n"
+#~ "si pokračovať?"
 
 #~ msgid "Pause"
 #~ msgstr "Prerušiť"

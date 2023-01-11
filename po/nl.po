@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 07:09+0000\n"
+"POT-Creation-Date: 2023-01-10 14:27+0000\n"
 "PO-Revision-Date: 2021-05-29 18:40+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.ubports.com/projects/ubports/morph-"
@@ -19,6 +19,203 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.11.3\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
+
+#: morph-browser.desktop.in:4
+msgid "Morph Browser"
+msgstr "Morph-webbrowser"
+
+#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:112
+#: src/app/webcontainer/webapp-container.qml:77
+msgid "Morph Web Browser"
+msgstr "Morph-webbrowser"
+
+#: morph-browser.desktop.in:6
+msgid "Browse the World Wide Web using QtWebEngine"
+msgstr "Surf op het internet met QtWebEngine"
+
+#: morph-browser.desktop.in:7
+msgid "Internet;WWW;Browser;Web;Explorer"
+msgstr "Internet;www;Browser;Web;Surfen"
+
+#: morph-browser.desktop.in:9
+msgid "/usr/share/morph-browser/morph-browser.svg"
+msgstr ""
+
+#: morph-browser.desktop.in:23
+msgid "New Window"
+msgstr "Nieuw venster"
+
+#: morph-browser.desktop.in:27
+msgid "New Private Window"
+msgstr "Nieuw privévenster"
+
+#: src/app/actions/Back.qml:23
+msgid "Back"
+msgstr "Vorige"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/Back.qml:26
+msgid "Older Page"
+msgstr "Oudere pagina"
+
+#: src/app/actions/BookmarkLink.qml:22
+msgid "Bookmark link"
+msgstr "Link toevoegen aan bladwijzers"
+
+#: src/app/actions/Bookmark.qml:23
+msgid "Bookmark"
+msgstr "Bladwijzer"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Bookmark' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/Bookmark.qml:26
+msgid "Add This Page to Bookmarks"
+msgstr "Pagina toevoegen aan bladwijzers"
+
+#: src/app/actions/ClearHistory.qml:23
+msgid "Clear History"
+msgstr "Geschiedenis wissen"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/ClearHistory.qml:26
+msgid "Clear Navigation History"
+msgstr "Navigatiegeschiedenis wissen"
+
+#: src/app/actions/CopyImage.qml:22
+msgid "Copy image"
+msgstr "Afbeelding kopiëren"
+
+#: src/app/actions/CopyLink.qml:22
+msgid "Copy link"
+msgstr "Link kopiëren"
+
+#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:373
+msgid "Copy"
+msgstr "Kopiëren"
+
+#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:362
+msgid "Cut"
+msgstr "Knippen"
+
+#: src/app/actions/Erase.qml:22
+msgid "Erase"
+msgstr "Wissen"
+
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:822
+msgid "Find in page"
+msgstr "Zoeken op pagina"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/FindInPage.qml:26
+msgid "Search in Page"
+msgstr "Zoeken op pagina"
+
+#: src/app/actions/Forward.qml:23
+msgid "Forward"
+msgstr "Doorsturen"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Forward' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/Forward.qml:26
+msgid "Newer Page"
+msgstr "Nieuwere pagina"
+
+#: src/app/actions/GoTo.qml:23
+msgid "Goto"
+msgstr "Ga naar"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/GoTo.qml:26
+msgid "Address;URL;www"
+msgstr "Adres;url;www"
+
+#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:692
+#: src/app/webbrowser/TabsBar.qml:88
+msgid "New Tab"
+msgstr "Nieuw tabblad"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'New Tab' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/NewTab.qml:26
+msgid "Open a New Tab"
+msgstr "Open een nieuw tabblad"
+
+#: src/app/actions/OpenImageInNewTab.qml:22
+msgid "Open image in new tab"
+msgstr "Afbeelding openen op nieuw tabblad"
+
+#: src/app/actions/OpenLinkInBrowser.qml:22
+msgid "Open link in default browser"
+msgstr "Link openen in standaardbrowser"
+
+#: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
+msgid "Open link in new background tab"
+msgstr "Link openen op nieuw achtergrondtabblad"
+
+#: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
+msgid "Open link in new private window"
+msgstr "Link openen in nieuw privévenster"
+
+#: src/app/actions/OpenLinkInNewTab.qml:22
+msgid "Open link in new tab"
+msgstr "Link openen op nieuw tabblad"
+
+#: src/app/actions/OpenLinkInNewWindow.qml:22
+msgid "Open link in new window"
+msgstr "Link openen in nieuw venster"
+
+#: src/app/actions/OpenVideoInNewTab.qml:22
+msgid "Open video in new tab"
+msgstr "Video openen op nieuw tabblad"
+
+#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:384
+msgid "Paste"
+msgstr "Plakken"
+
+#: src/app/actions/Redo.qml:22
+msgid "Redo"
+msgstr "Opnieuw"
+
+#: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
+#: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
+msgid "Reload"
+msgstr "Herladen"
+
+#. TRANSLATORS: This is a free-form list of keywords associated to the 'Reload' action.
+#. Keywords may actually be sentences, and must be separated by semi-colons.
+#: src/app/actions/Reload.qml:26
+msgid "Leave Page"
+msgstr "Pagina verlaten"
+
+#: src/app/actions/SaveImage.qml:22
+msgid "Save image"
+msgstr "Afbeelding opslaan"
+
+#: src/app/actions/SaveLink.qml:22
+msgid "Save link"
+msgstr "Link opslaan"
+
+#: src/app/actions/SaveVideo.qml:22
+msgid "Save video"
+msgstr "Video opslaan"
+
+#: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
+#: src/app/DomainPermissionsPage.qml:69 src/app/DomainSettingsPage.qml:67
+#: src/app/DownloadsPage.qml:87
+msgid "Select all"
+msgstr "Alles selecteren"
+
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
+msgid "Share"
+msgstr "Delen"
+
+#: src/app/actions/Undo.qml:22
+msgid "Undo"
+msgstr "Ongedaan maken"
 
 #: src/app/AlertDialog.qml:24
 msgid "JavaScript Alert"
@@ -38,17 +235,12 @@ msgstr "Aangepaste url-schema's"
 
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
-msgid "The site '%1' is trying to open the following URL with a custom scheme:"
+msgid "The '%1' website wants to open this URL outside of the web browser:"
 msgstr ""
-"De website '%1' probeert de volgende url te openen met een aangepast schema:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
-msgid ""
-"This will try to dispatch this url to a system app if possible. Do you want "
-"to proceed?"
+msgid "Open this URL with a system app if possible?"
 msgstr ""
-"Deze url wordt, indien mogelijk, verzonden naar een systeemapp. Wil je "
-"doorgaan?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -67,14 +259,14 @@ msgstr "Toestaan"
 #: src/app/DownloadDelegate.qml:271 src/app/EditCustomUserAgentDialog.qml:69
 #: src/app/HttpAuthenticationDialog.qml:80 src/app/PromptDialog.qml:61
 #: src/app/SavePageDialog.qml:73 src/app/SimpleDownloadDelegate.qml:136
-#: src/app/ZoomControls.qml:238 src/app/webbrowser/BookmarkOptions.qml:182
+#: src/app/webbrowser/BookmarkOptions.qml:182
 #: src/app/webbrowser/ContentDownloadDialog.qml:114
 #: src/app/webbrowser/ContextMenuMobile.qml:143
 #: src/app/webbrowser/SettingsPage.qml:438
 #: src/app/webbrowser/SettingsPage.qml:554
 #: src/app/webcontainer/AccountChooserDialog.qml:96
 #: src/app/webcontainer/ContextMenuMobile.qml:143
-#: src/app/webcontainer/WebappSettingsPage.qml:266
+#: src/app/webcontainer/WebappSettingsPage.qml:266 src/app/ZoomControls.qml:238
 msgid "Cancel"
 msgstr "Annuleren"
 
@@ -168,12 +360,6 @@ msgstr "JavaScript-bevestiging"
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
 msgstr "Aangepaste gebruikersagenten"
-
-#: src/app/CustomUserAgentsPage.qml:47 src/app/DomainPermissionsPage.qml:69
-#: src/app/DomainSettingsPage.qml:67 src/app/DownloadsPage.qml:87
-#: src/app/actions/SelectAll.qml:22
-msgid "Select all"
-msgstr "Alles selecteren"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:85
 #: src/app/DomainSettingsPage.qml:83 src/app/DownloadsPage.qml:103
@@ -578,245 +764,6 @@ msgstr "Opslaan als PDF"
 msgid "Remove from List"
 msgstr ""
 
-#: src/app/WebViewImpl.qml:680 src/app/webbrowser/Browser.qml:876
-msgid "Zoom"
-msgstr "Zoomniveau"
-
-#: src/app/ZoomControls.qml:62
-msgid "Zoom Out"
-msgstr "Uitzoomen"
-
-#: src/app/ZoomControls.qml:69
-msgid "Reset"
-msgstr "Standaardwaarden"
-
-#: src/app/ZoomControls.qml:69
-msgid "fit"
-msgstr "passend"
-
-#: src/app/ZoomControls.qml:76
-msgid "Zoom In"
-msgstr "Inzoomen"
-
-#: src/app/ZoomControls.qml:83 src/app/webbrowser/BookmarkOptions.qml:164
-#: src/app/webbrowser/SettingsPage.qml:530
-msgid "Save"
-msgstr "Opslaan"
-
-#: src/app/ZoomControls.qml:101
-msgid "Current Zoom"
-msgstr "Huidig zoomniveau"
-
-#: src/app/ZoomControls.qml:102
-msgid "domain"
-msgstr "domein"
-
-#: src/app/ZoomControls.qml:102
-msgid "default"
-msgstr "standaard"
-
-#: src/app/ZoomControls.qml:102
-msgid "auto-fit"
-msgstr "automatisch inpassen"
-
-#: src/app/ZoomControls.qml:191
-msgid "Save Zoom"
-msgstr "Zoomniveau onthouden"
-
-#: src/app/ZoomControls.qml:193
-msgid "the current web app"
-msgstr "de huidige webapp"
-
-#: src/app/ZoomControls.qml:196
-#, qt-format
-msgid ""
-"The current zoom level (%1%) can be saved in %2 either for the current "
-"domain or as the default zoom level."
-msgstr ""
-
-#: src/app/ZoomControls.qml:198
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
-msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "Het huidige zoomniveau (%1%) van %2 kan worden opgeslagen als "
-
-#: src/app/ZoomControls.qml:200
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
-msgid ""
-"The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr "Het huidige zoomniveau (%1%) van %2 kan worden opgeslagen als "
-
-#: src/app/ZoomControls.qml:207
-msgid "Save for domain"
-msgstr "Onthouden voor domein"
-
-#: src/app/ZoomControls.qml:220
-msgid "Save as default"
-msgstr "Onthouden"
-
-#: src/app/actions/Back.qml:23
-msgid "Back"
-msgstr "Vorige"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Back.qml:26
-msgid "Older Page"
-msgstr "Oudere pagina"
-
-#: src/app/actions/Bookmark.qml:23
-msgid "Bookmark"
-msgstr "Bladwijzer"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Bookmark' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Bookmark.qml:26
-msgid "Add This Page to Bookmarks"
-msgstr "Pagina toevoegen aan bladwijzers"
-
-#: src/app/actions/BookmarkLink.qml:22
-msgid "Bookmark link"
-msgstr "Link toevoegen aan bladwijzers"
-
-#: src/app/actions/ClearHistory.qml:23
-msgid "Clear History"
-msgstr "Geschiedenis wissen"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/ClearHistory.qml:26
-msgid "Clear Navigation History"
-msgstr "Navigatiegeschiedenis wissen"
-
-#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:373
-msgid "Copy"
-msgstr "Kopiëren"
-
-#: src/app/actions/CopyImage.qml:22
-msgid "Copy image"
-msgstr "Afbeelding kopiëren"
-
-#: src/app/actions/CopyLink.qml:22
-msgid "Copy link"
-msgstr "Link kopiëren"
-
-#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:362
-msgid "Cut"
-msgstr "Knippen"
-
-#: src/app/actions/Erase.qml:22
-msgid "Erase"
-msgstr "Wissen"
-
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:822
-msgid "Find in page"
-msgstr "Zoeken op pagina"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/FindInPage.qml:26
-msgid "Search in Page"
-msgstr "Zoeken op pagina"
-
-#: src/app/actions/Forward.qml:23
-msgid "Forward"
-msgstr "Doorsturen"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Forward' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Forward.qml:26
-msgid "Newer Page"
-msgstr "Nieuwere pagina"
-
-#: src/app/actions/GoTo.qml:23
-msgid "Goto"
-msgstr "Ga naar"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/GoTo.qml:26
-msgid "Address;URL;www"
-msgstr "Adres;url;www"
-
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:692
-#: src/app/webbrowser/TabsBar.qml:88
-msgid "New Tab"
-msgstr "Nieuw tabblad"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'New Tab' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/NewTab.qml:26
-msgid "Open a New Tab"
-msgstr "Open een nieuw tabblad"
-
-#: src/app/actions/OpenImageInNewTab.qml:22
-msgid "Open image in new tab"
-msgstr "Afbeelding openen op nieuw tabblad"
-
-#: src/app/actions/OpenLinkInBrowser.qml:22
-msgid "Open link in default browser"
-msgstr "Link openen in standaardbrowser"
-
-#: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
-msgid "Open link in new background tab"
-msgstr "Link openen op nieuw achtergrondtabblad"
-
-#: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
-msgid "Open link in new private window"
-msgstr "Link openen in nieuw privévenster"
-
-#: src/app/actions/OpenLinkInNewTab.qml:22
-msgid "Open link in new tab"
-msgstr "Link openen op nieuw tabblad"
-
-#: src/app/actions/OpenLinkInNewWindow.qml:22
-msgid "Open link in new window"
-msgstr "Link openen in nieuw venster"
-
-#: src/app/actions/OpenVideoInNewTab.qml:22
-msgid "Open video in new tab"
-msgstr "Video openen op nieuw tabblad"
-
-#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:384
-msgid "Paste"
-msgstr "Plakken"
-
-#: src/app/actions/Redo.qml:22
-msgid "Redo"
-msgstr "Opnieuw"
-
-#: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
-#: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
-msgid "Reload"
-msgstr "Herladen"
-
-#. TRANSLATORS: This is a free-form list of keywords associated to the 'Reload' action.
-#. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Reload.qml:26
-msgid "Leave Page"
-msgstr "Pagina verlaten"
-
-#: src/app/actions/SaveImage.qml:22
-msgid "Save image"
-msgstr "Afbeelding opslaan"
-
-#: src/app/actions/SaveLink.qml:22
-msgid "Save link"
-msgstr "Link opslaan"
-
-#: src/app/actions/SaveVideo.qml:22
-msgid "Save video"
-msgstr "Video opslaan"
-
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
-msgid "Share"
-msgstr "Delen"
-
-#: src/app/actions/Undo.qml:22
-msgid "Undo"
-msgstr "Ongedaan maken"
-
 #: src/app/webbrowser/AddressBar.qml:242
 msgid "find in page"
 msgstr "zoeken op pagina"
@@ -858,6 +805,11 @@ msgstr "Nieuwe map"
 msgid "Create new folder"
 msgstr "Nieuwe map aanmaken"
 
+#: src/app/webbrowser/BookmarkOptions.qml:164
+#: src/app/webbrowser/SettingsPage.qml:530 src/app/ZoomControls.qml:83
+msgid "Save"
+msgstr "Opslaan"
+
 #: src/app/webbrowser/BookmarksFoldersView.qml:191
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
 #: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
@@ -873,18 +825,18 @@ msgid "Bookmarks"
 msgstr "Bladwijzers"
 
 #: src/app/webbrowser/Browser.qml:231
-#: src/app/webcontainer/WebViewImplOxide.qml:299
+#: src/app/webcontainer/WebViewImplOxide.qml:303
 msgid "Blocked domain"
 msgstr "Geblokkeerd domein"
 
 #: src/app/webbrowser/Browser.qml:232
-#: src/app/webcontainer/WebViewImplOxide.qml:300
+#: src/app/webcontainer/WebViewImplOxide.qml:304
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr "Geblokkeerd navigatieverzoek naar domein %1."
 
 #: src/app/webbrowser/Browser.qml:258
-#: src/app/webcontainer/WebViewImplOxide.qml:326
+#: src/app/webcontainer/WebViewImplOxide.qml:330
 msgid "Whitelisted domain"
 msgstr "Witte lijst-domein"
 
@@ -930,6 +882,10 @@ msgstr "Broncode tonen"
 #: src/app/webbrowser/Browser.qml:855
 msgid "Save / Print to PDF"
 msgstr "Opslaan als/Afdrukken naar pdf"
+
+#: src/app/webbrowser/Browser.qml:876 src/app/WebViewImpl.qml:680
+msgid "Zoom"
+msgstr "Zoomniveau"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
 #: src/app/webbrowser/Browser.qml:1075 src/app/webbrowser/Browser.qml:1113
@@ -979,6 +935,13 @@ msgstr "Alle geschiedenis"
 #: src/app/webbrowser/HistoryViewWide.qml:337
 msgid "Today"
 msgstr "Vandaag"
+
+#. TRANSLATORS: %1 refers to the current page’s title
+#: src/app/webbrowser/morph-browser.qml:110
+#: src/app/webcontainer/webapp-container.qml:75
+#, qt-format
+msgid "%1 - Morph Web Browser"
+msgstr "%1 - Morph-webbrowser"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:41
 msgid "This is a private tab"
@@ -1174,19 +1137,6 @@ msgstr "Tabblad sluiten"
 msgid "Remove"
 msgstr "Verwijderen"
 
-#. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:110
-#: src/app/webcontainer/webapp-container.qml:75
-#, qt-format
-msgid "%1 - Morph Web Browser"
-msgstr "%1 - Morph-webbrowser"
-
-#: src/app/webbrowser/morph-browser.qml:112
-#: src/app/webcontainer/webapp-container.qml:77
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:2
-msgid "Morph Web Browser"
-msgstr "Morph-webbrowser"
-
 #: src/app/webcontainer/AccountChooserDialog.qml:62
 msgid ""
 "No accounts have been linked to this webapp; press the item below to add an "
@@ -1257,11 +1207,6 @@ msgstr "Account kiezen"
 msgid "Oops, something went wrong."
 msgstr "Oeps, er is iets misgegaan."
 
-#: src/app/webcontainer/WebViewImplOxide.qml:327
-#, qt-format
-msgid "domain %1 is now whitelisted, please reload the page."
-msgstr "Het domein '%1' staat nu op de witte lijst. Herlaad de pagina."
-
 #: src/app/webcontainer/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
 msgstr "WebappContainer-instellingen"
@@ -1270,25 +1215,92 @@ msgstr "WebappContainer-instellingen"
 msgid "Reset webapp settings"
 msgstr "Standaardwaarden herstellen"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:1
-msgid "Morph Browser"
-msgstr "Morph-webbrowser"
+#: src/app/webcontainer/WebViewImplOxide.qml:331
+#, qt-format
+msgid "domain %1 is now whitelisted, please reload the page."
+msgstr "Het domein '%1' staat nu op de witte lijst. Herlaad de pagina."
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:3
-msgid "Browse the World Wide Web using QtWebEngine"
-msgstr "Surf op het internet met QtWebEngine"
+#: src/app/ZoomControls.qml:62
+msgid "Zoom Out"
+msgstr "Uitzoomen"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:4
-msgid "Internet;WWW;Browser;Web;Explorer"
-msgstr "Internet;www;Browser;Web;Surfen"
+#: src/app/ZoomControls.qml:69
+msgid "Reset"
+msgstr "Standaardwaarden"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:5
-msgid "New Window"
-msgstr "Nieuw venster"
+#: src/app/ZoomControls.qml:69
+msgid "fit"
+msgstr "passend"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:6
-msgid "New Private Window"
-msgstr "Nieuw privévenster"
+#: src/app/ZoomControls.qml:76
+msgid "Zoom In"
+msgstr "Inzoomen"
+
+#: src/app/ZoomControls.qml:101
+msgid "Current Zoom"
+msgstr "Huidig zoomniveau"
+
+#: src/app/ZoomControls.qml:102
+msgid "domain"
+msgstr "domein"
+
+#: src/app/ZoomControls.qml:102
+msgid "default"
+msgstr "standaard"
+
+#: src/app/ZoomControls.qml:102
+msgid "auto-fit"
+msgstr "automatisch inpassen"
+
+#: src/app/ZoomControls.qml:191
+msgid "Save Zoom"
+msgstr "Zoomniveau onthouden"
+
+#: src/app/ZoomControls.qml:193
+msgid "the current web app"
+msgstr "de huidige webapp"
+
+#: src/app/ZoomControls.qml:196
+#, qt-format
+msgid ""
+"The current zoom level (%1%) can be saved in %2 either for the current "
+"domain or as the default zoom level."
+msgstr ""
+
+#: src/app/ZoomControls.qml:198
+#, fuzzy, qt-format
+#| msgid "Current zoom (%1%) can be saved for %2 as "
+msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
+msgstr "Het huidige zoomniveau (%1%) van %2 kan worden opgeslagen als "
+
+#: src/app/ZoomControls.qml:200
+#, fuzzy, qt-format
+#| msgid "Current zoom (%1%) can be saved for %2 as "
+msgid ""
+"The current zoom level (%1%) can be saved in %2 as the default zoom level."
+msgstr "Het huidige zoomniveau (%1%) van %2 kan worden opgeslagen als "
+
+#: src/app/ZoomControls.qml:207
+msgid "Save for domain"
+msgstr "Onthouden voor domein"
+
+#: src/app/ZoomControls.qml:220
+msgid "Save as default"
+msgstr "Onthouden"
+
+#, qt-format
+#~ msgid ""
+#~ "The site '%1' is trying to open the following URL with a custom scheme:"
+#~ msgstr ""
+#~ "De website '%1' probeert de volgende url te openen met een aangepast "
+#~ "schema:"
+
+#~ msgid ""
+#~ "This will try to dispatch this url to a system app if possible. Do you "
+#~ "want to proceed?"
+#~ msgstr ""
+#~ "Deze url wordt, indien mogelijk, verzonden naar een systeemapp. Wil je "
+#~ "doorgaan?"
 
 #~ msgid "Pause"
 #~ msgstr "Onderbreken"

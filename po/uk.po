@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
 "PO-Revision-Date: 2023-01-17 10:48+0000\n"
-"Last-Translator: Sergii Horichenko <m@sgg.im>\n"
+"Last-Translator: Dan <denqwerta@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/uk/>\n"
 "Language: uk\n"
@@ -232,7 +232,7 @@ msgstr "Сповіщення JavaScript"
 #: src/app/HttpAuthenticationDialog.qml:70 src/app/PromptDialog.qml:50
 #: src/app/webbrowser/BookmarkOptions.qml:122
 msgid "OK"
-msgstr "Добре"
+msgstr "ОК"
 
 #: src/app/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
@@ -869,7 +869,7 @@ msgstr "Журнал"
 
 #: src/app/webbrowser/Browser.qml:836 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
-msgstr "Параметри"
+msgstr "Налаштування"
 
 #: src/app/webbrowser/Browser.qml:842
 msgid "View source"

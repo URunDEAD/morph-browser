@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-01-10 14:50+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/lomiri/morph-"
-"browser/pt/>\n"
+"PO-Revision-Date: 2023-01-17 10:48+0000\n"
+"Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,7 +39,7 @@ msgstr "Internet;WWW;Browser;Web;Explorador"
 
 #: morph-browser.desktop.in:9
 msgid "/usr/share/morph-browser/morph-browser.svg"
-msgstr ""
+msgstr "/usr/share/morph-browser/morph-browser.svg"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
@@ -207,7 +207,7 @@ msgstr "Guardar vídeo"
 #: src/app/DomainPermissionsPage.qml:69 src/app/DomainSettingsPage.qml:67
 #: src/app/DownloadsPage.qml:87
 msgid "Select all"
-msgstr "Selecionar tudo"
+msgstr "Escolher tudo"
 
 #: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
 msgid "Share"
@@ -236,11 +236,11 @@ msgstr "Esquemas de URL personalizados"
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "O site '%1' deseja abrir este URL fora do navegador:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "Abrir este URL com uma aplicação do sistema, se possível?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -372,10 +372,8 @@ msgid "New User Agent"
 msgstr "Novo agente de utilizador"
 
 #: src/app/CustomUserAgentsPage.qml:161
-#, fuzzy
-#| msgid "New User Agent"
 msgid "Edit User Agent"
-msgstr "Novo agente de utilizador"
+msgstr "Editar Agente de Utilizador"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
@@ -423,24 +421,20 @@ msgid "allowed to launch other apps"
 msgstr "permissão para iniciar outras apps"
 
 #: src/app/DomainSettingsPage.qml:226
-#, fuzzy
-#| msgid "allowed to access your location"
 msgid "access your location"
-msgstr "permissão para aceder à sua localização"
+msgstr "aceder à sua localização"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "Perguntar sempre"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "Permitir"
+msgstr "Permitido"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Negado"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
@@ -470,53 +464,41 @@ msgstr "Transferência falhou"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "Desconhecido"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "Eliminar"
+msgstr "Eliminar Ficheiro"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "Limpar histórico"
+msgstr "Eliminar do Histórico"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "Copiar link"
+msgstr "Copiar Endereço de Transferência"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "Transferências"
+msgstr "Transferências Recentes"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
-msgstr "Transferências"
+msgstr "Sem Transferências Recentes"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Cancelar"
+msgstr "Cancelado"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Completo"
 
 #: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
 #: src/app/webcontainer/WebappSettingsPage.qml:273
@@ -525,7 +507,7 @@ msgstr "Limpar"
 
 #: src/app/DownloadsDialog.qml:182
 msgid "View All"
-msgstr ""
+msgstr "Ver Todos"
 
 #: src/app/DownloadsPage.qml:48 src/app/webbrowser/Browser.qml:829
 #: src/app/webcontainer/WebappSettingsPage.qml:117
@@ -542,13 +524,11 @@ msgstr "Sem transferências disponíveis"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "este nome de agente de utilizador já foi usado"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
-#, fuzzy
-#| msgid "Add the name for the new user agent"
 msgid "Add the name for the user agent"
-msgstr "Adicionar o nome para um novo agente de utilizador"
+msgstr "Adicionar o nome para o agente de utilizador"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
@@ -758,7 +738,7 @@ msgstr "Guardar como PDF"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Remover da Lista"
 
 #: src/app/webbrowser/AddressBar.qml:242
 msgid "find in page"
@@ -849,10 +829,8 @@ msgid "Done"
 msgstr "Concluído"
 
 #: src/app/webbrowser/Browser.qml:674
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "Fechar separador"
+msgstr "Reabrir Separador"
 
 #: src/app/webbrowser/Browser.qml:790
 msgid "New window"
@@ -1263,19 +1241,22 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"O nível de zoom atual (%1%) pode ser guardado em %2 para o domínio atual ou "
+"como o nível de zoom padrão."
 
 #: src/app/ZoomControls.qml:198
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "O zoom atual (%1%) pode ser guardado para %2 como "
+msgstr ""
+"O nível de zoom atual (%1%) pode ser guardado em %2 para o domínio atual."
 
 #: src/app/ZoomControls.qml:200
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr "O zoom atual (%1%) pode ser guardado para %2 como "
+msgstr ""
+"O nível de zoom atual (%1%) pode ser guardado em %2 como o nível de zoom "
+"padrão."
 
 #: src/app/ZoomControls.qml:207
 msgid "Save for domain"

@@ -280,9 +280,30 @@ WebEngineView {
             _webview.stop()
         }
         if ((loadRequest.url === url) && (loadRequest.status !== WebEngineLoadRequest.LoadStartedStatus)) {
-            internal.lastLoadRequestStatus = loadRequest.status;
-            internal.lastLoadRequestErrorString = loadRequest.errorString;
-            internal.lastLoadRequestErrorDomain = loadRequest.errorDomain;
+            if (loadRequest.status === WebEngineLoadRequest.LoadFailedStatus &&
+                    loadRequest.errorCode > 0) {
+                /*
+                 * Workaround QtWebEngine 5.15.3+ API break (!), where it starts
+                 * to report HTTP errors as errors instead of success. This is
+                 * breaking because an HTTP error may or may not have a body. Ideally,
+                 * we want to display our error page only when the response is empty.
+                 * However, to the best of my knowledge, I can't find any API of
+                 * QtWebEngine that can report that to us. So, the best thing we can
+                 * do here is to lie about this and pretend that the load is successful.
+                 * If the HTTP error doesn't have a body, Chromium's error page will be
+                 * shown, which will do for the time being.
+                 *
+                 * Bug-UBports: https://gitlab.com/ubports/core/packaging/qtwebengine/-/merge_requests/8#note_912596857
+                 */
+
+                internal.lastLoadRequestStatus = WebEngineView.LoadSucceededStatus;
+                internal.lastLoadRequestErrorString = "";
+                internal.lastLoadRequestErrorDomain = WebEngineView.NoErrorDomain;
+            } else {
+                internal.lastLoadRequestStatus = loadRequest.status;
+                internal.lastLoadRequestErrorString = loadRequest.errorString;
+                internal.lastLoadRequestErrorDomain = loadRequest.errorDomain;
+            }
         }
         internal.dismissCurrentContextualMenu();
     }

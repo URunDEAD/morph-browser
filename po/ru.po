@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-01-17 10:48+0000\n"
+"PO-Revision-Date: 2023-01-19 18:51+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.15.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -40,7 +40,7 @@ msgstr "Интернет;WWW;Браузер;Веб;Обозреватель"
 
 #: morph-browser.desktop.in:9
 msgid "/usr/share/morph-browser/morph-browser.svg"
-msgstr ""
+msgstr "/usr/share/morph-browser/morph-browser.svg"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
@@ -237,11 +237,11 @@ msgstr "Пользовательские URL-ссылки"
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "Веб-сайт \"%1\" хочет открыть этот URL-адрес вне веб-браузера:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "Если возможно, открыть этот URL-адрес с помощью системного приложения?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -373,10 +373,8 @@ msgid "New User Agent"
 msgstr "Новый User Agent"
 
 #: src/app/CustomUserAgentsPage.qml:161
-#, fuzzy
-#| msgid "New User Agent"
 msgid "Edit User Agent"
-msgstr "Новый User Agent"
+msgstr "Изменить User Agent"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
@@ -424,24 +422,20 @@ msgid "allowed to launch other apps"
 msgstr "разрешить запускать другие приложения"
 
 #: src/app/DomainSettingsPage.qml:226
-#, fuzzy
-#| msgid "allowed to access your location"
 msgid "access your location"
-msgstr "разрешить домену узнать Ваше местоположение"
+msgstr "доступ к Вашему местоположению"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "Спрашивать каждый раз"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "Разрешить"
+msgstr "Разрешено"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Запрещено"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
@@ -477,47 +471,35 @@ msgstr "Неизвестно"
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/с"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "Удалить"
+msgstr "Удалить файл"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "Очистить историю"
+msgstr "Удалить из истории"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "Копировать ссылку"
+msgstr "Скопировать ссылку для скачивания"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "Загрузки"
+msgstr "Недавние загрузки"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
-msgstr "Загрузки"
+msgstr "Нет последних загрузок"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Отменить"
+msgstr "Отменено"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Завершено"
 
 #: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
 #: src/app/webcontainer/WebappSettingsPage.qml:273
@@ -526,7 +508,7 @@ msgstr "Очистить"
 
 #: src/app/DownloadsDialog.qml:182
 msgid "View All"
-msgstr ""
+msgstr "Просмотреть все"
 
 #: src/app/DownloadsPage.qml:48 src/app/webbrowser/Browser.qml:829
 #: src/app/webcontainer/WebappSettingsPage.qml:117
@@ -543,13 +525,11 @@ msgstr "Нет доступных загрузок"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "это имя User Agent уже занято"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
-#, fuzzy
-#| msgid "Add the name for the new user agent"
 msgid "Add the name for the user agent"
-msgstr "Ведите название нового \"user agent\""
+msgstr "Добавьте имя для User Agent"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
@@ -761,7 +741,7 @@ msgstr "Сохранить как PDF"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Убрать из списка"
 
 #: src/app/webbrowser/AddressBar.qml:242
 msgid "find in page"
@@ -852,10 +832,8 @@ msgid "Done"
 msgstr "Сделано"
 
 #: src/app/webbrowser/Browser.qml:674
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "Закрыть вкладку"
+msgstr "Открыть вкладку заново"
 
 #: src/app/webbrowser/Browser.qml:790
 msgid "New window"
@@ -1271,19 +1249,20 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"Текущий масштаб (%1%) может быть сохранен в %2 либо для текущего домена, "
+"либо как масштаб по умолчанию."
 
 #: src/app/ZoomControls.qml:198
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "Текущий масштаб (%1%) не может быть сохранен для %2 как "
+msgstr "Текущий масштаб (%1%) может быть сохранен в %2 для текущего домена."
 
 #: src/app/ZoomControls.qml:200
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr "Текущий масштаб (%1%) не может быть сохранен для %2 как "
+msgstr ""
+"Текущий масштаб (%1%) может быть сохранен в %2 как масштаб по умолчанию."
 
 #: src/app/ZoomControls.qml:207
 msgid "Save for domain"

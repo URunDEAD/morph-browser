@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-01-07 17:50+0000\n"
+"PO-Revision-Date: 2023-01-19 18:51+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/nb_NO/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.15.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -38,8 +38,9 @@ msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr "Internett;WWW;Nettleser;Web;Utforsker"
 
 #: morph-browser.desktop.in:9
+#, fuzzy
 msgid "/usr/share/morph-browser/morph-browser.svg"
-msgstr ""
+msgstr "/usr/share/morph-browser/morph-browser.svg"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
@@ -234,13 +235,13 @@ msgid "Custom URL schemes"
 msgstr "Tilpassede nettadresseavarter"
 
 #: src/app/AllowCustomSchemesDialog.qml:30
-#, qt-format
+#, fuzzy, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "«%1»-nettsiden ønsker å åpne denne nettsiden i systemets nettleser."
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "Åpne denne nettadressen med et systemprogram hvis mulig?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44

@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-01-17 10:48+0000\n"
-"Last-Translator: Dan <denqwerta@gmail.com>\n"
+"PO-Revision-Date: 2023-01-22 01:35+0000\n"
+"Last-Translator: Sergii Horichenko <m@sgg.im>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/uk/>\n"
 "Language: uk\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.15.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -897,7 +897,7 @@ msgstr "файл вже знаходиться у теці завантажен�
 msgid ""
 "Choose an application to open this file or add it to the downloads folder."
 msgstr ""
-"Оберіть застосунок для відкриття цього файла або додайте його до теки "
+"Оберіть програму для відкриття цього файлу або додайте його до теки "
 "отриманих файлів."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:89
@@ -1210,7 +1210,7 @@ msgstr ""
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Close the app"
-msgstr "Закрити застосунок"
+msgstr "Закрити програму"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Skip"

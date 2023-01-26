@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-01-26 14:51+0000\n"
+"PO-Revision-Date: 2023-01-27 17:40+0000\n"
 "Last-Translator: gnu-ewm <gnu.ewm@protonmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/pl/>\n"
@@ -429,17 +429,15 @@ msgstr "dostęp do Twojej lokalizacji"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "Pytaj za każdym razem"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "Zezwól"
+msgstr "Zezwolono"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Odrzucono"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
@@ -475,47 +473,35 @@ msgstr "Nieznane"
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "Usuń"
+msgstr "Usuń plik"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "Wyczyść historię"
+msgstr "Usuń z historii"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "Kopiuj odnośnik"
+msgstr "Kopiuj link do pobierania"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "Pobrane"
+msgstr "Ostatnio pobrane"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
-msgstr "Pobrane"
+msgstr "Brak ostatnio pobranych plików"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Anuluj"
+msgstr "Anulowano"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Zakończono"
 
 #: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
 #: src/app/webcontainer/WebappSettingsPage.qml:273
@@ -524,7 +510,7 @@ msgstr "Wyczyść"
 
 #: src/app/DownloadsDialog.qml:182
 msgid "View All"
-msgstr ""
+msgstr "Zobacz wszystkie"
 
 #: src/app/DownloadsPage.qml:48 src/app/webbrowser/Browser.qml:829
 #: src/app/webcontainer/WebappSettingsPage.qml:117
@@ -541,13 +527,11 @@ msgstr "Brak pobranych plików"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "ta nazwa aplikacji klienta jest już zajęta"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
-#, fuzzy
-#| msgid "Add the name for the new user agent"
 msgid "Add the name for the user agent"
-msgstr "Dodaj nazwę nowej aplikacji klienckiej"
+msgstr "Dodaj nazwę aplikacji klienckiej"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
@@ -759,7 +743,7 @@ msgstr "Zapisz jako PDF"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Usuń z listy"
 
 #: src/app/webbrowser/AddressBar.qml:242
 msgid "find in page"
@@ -850,10 +834,8 @@ msgid "Done"
 msgstr "Gotowe"
 
 #: src/app/webbrowser/Browser.qml:674
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "Zamknij kartę"
+msgstr "Otwórz ponownie kartę"
 
 #: src/app/webbrowser/Browser.qml:790
 msgid "New window"
@@ -1263,19 +1245,22 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"Bieżący poziom powiększenia (%1%) można zapisać w %2 dla bieżącej domeny lub "
+"jako domyślny poziom powiększenia."
 
 #: src/app/ZoomControls.qml:198
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "Bieżące powiększenie (%1%) można zapisać dla %2 jako "
+msgstr ""
+"Bieżący poziom powiększenia (%1%) można zapisać w %2 dla bieżącej domeny."
 
 #: src/app/ZoomControls.qml:200
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr "Bieżące powiększenie (%1%) można zapisać dla %2 jako "
+msgstr ""
+"Bieżący poziom powiększenia (%1%) można zapisać w %2 jako domyślny poziom "
+"powiększenia."
 
 #: src/app/ZoomControls.qml:207
 msgid "Save for domain"

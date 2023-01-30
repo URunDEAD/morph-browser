@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-01-21 14:11+0000\n"
+"PO-Revision-Date: 2023-01-31 15:48+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1\n"
+"X-Generator: Weblate 4.16-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -269,7 +269,7 @@ msgstr "Разрешить"
 #: src/app/webcontainer/ContextMenuMobile.qml:143
 #: src/app/webcontainer/WebappSettingsPage.qml:266 src/app/ZoomControls.qml:238
 msgid "Cancel"
-msgstr "Отменить"
+msgstr "Отмена"
 
 #: src/app/AllowOrBlockDomainDialog.qml:25
 #: src/app/AllowOrBlockDomainDialog.qml:41

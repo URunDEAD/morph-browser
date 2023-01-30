@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-01-22 01:35+0000\n"
+"PO-Revision-Date: 2023-01-31 15:48+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/uk/>\n"
@@ -18,23 +18,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1\n"
+"X-Generator: Weblate 4.16-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
 msgid "Morph Browser"
-msgstr "Morph Browser"
+msgstr "Переглядач Morph"
 
 #: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:112
 #: src/app/webcontainer/webapp-container.qml:77
-#, fuzzy
 msgid "Morph Web Browser"
-msgstr "Переглядач інтернету"
+msgstr "Переглядач інтернету Morph"
 
 #: morph-browser.desktop.in:6
-#, fuzzy
 msgid "Browse the World Wide Web using QtWebEngine"
-msgstr "Перегляд сторінок інтернету"
+msgstr "Перегляд WWW за допомогою QtWebEngine"
 
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
@@ -43,15 +41,15 @@ msgstr ""
 
 #: morph-browser.desktop.in:9
 msgid "/usr/share/morph-browser/morph-browser.svg"
-msgstr ""
+msgstr "/usr/share/morph-browser/morph-browser.svg"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
-msgstr ""
+msgstr "Нове вікно"
 
 #: morph-browser.desktop.in:27
 msgid "New Private Window"
-msgstr ""
+msgstr "Нове приватне вікно"
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
@@ -161,9 +159,8 @@ msgid "Open link in new background tab"
 msgstr "Відкрити посилання у новій вкладці у тлі"
 
 #: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
-#, fuzzy
 msgid "Open link in new private window"
-msgstr "Відкрити посилання у конфіденційному вікні"
+msgstr "Відкрити посилання в новому приватному вікні"
 
 #: src/app/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
@@ -236,21 +233,21 @@ msgstr "ОК"
 
 #: src/app/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
-msgstr ""
+msgstr "Користувацькі схеми URL-адрес"
 
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "Веб-сайт \"%1\" хоче відкрити цю URL-адресу за межами веб-браузера:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "Якщо можливо, відкрити цю URL-адресу за допомогою системної програми?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
-msgstr ""
+msgstr "Запам'ятати дію"
 
 #: src/app/AllowCustomSchemesDialog.qml:50
 #: src/app/GeolocationPermissionRequest.qml:51
@@ -278,7 +275,7 @@ msgstr "Скасувати"
 #: src/app/AllowOrBlockDomainDialog.qml:25
 #: src/app/AllowOrBlockDomainDialog.qml:41
 msgid "Block domain"
-msgstr ""
+msgstr "Заблокувати домен"
 
 #: src/app/AllowOrBlockDomainDialog.qml:30
 #, qt-format
@@ -287,6 +284,9 @@ msgid ""
 "Would you like to continue to block the domain, allow browsing to the "
 "domain, or go back?"
 msgstr ""
+"Ви намагаєтеся отримати доступ до %1, але його немає у Вашому білому списку "
+"доменів. Ви хочете продовжити блокування домену, дозволити доступ до нього "
+"чи повернутися назад?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:31
 #, qt-format
@@ -295,10 +295,13 @@ msgid ""
 "Would you like to continue to block the domain, allow loading data from the "
 "domain, or just ignore this request ?"
 msgstr ""
+"%1 намагається отримати доступ до %2, але його немає у затвердженому Вами "
+"білому списку доменів. Чи хочете Ви продовжувати блокувати домен, дозволити "
+"завантаження даних з нього або просто ігнорувати цей запит?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
-msgstr ""
+msgstr "Дозволити домен"
 
 #: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
@@ -336,13 +339,13 @@ msgstr "Це з’єднання не є довіреним"
 
 #. TRANSLATORS: %1 refers to the hostname
 #: src/app/CertificateVerificationDialog.qml:26
-#, fuzzy, qt-format
+#, qt-format
 msgid ""
 "You are trying to securely reach %1, but the security certificate of this "
 "website is not trusted. Reason: %2"
 msgstr ""
-"Ви намагаєтеся встановити безпечне з’єднання з %1, але сертифікат захисту "
-"цього сайте не є довіреним."
+"Ви намагаєтеся безпечно перейти за адресою %1, але сертифікат безпеки цього "
+"веб-сайту не викликає довіри. Причина: %2"
 
 #: src/app/CertificateVerificationDialog.qml:39
 #: src/app/InvalidCertificateErrorSheet.qml:160
@@ -350,9 +353,8 @@ msgid "Proceed anyway"
 msgstr "Продовжити"
 
 #: src/app/ColorSelectDialog.qml:25
-#, fuzzy
 msgid "Select Color"
-msgstr "Позначити все"
+msgstr "Виберіть колір"
 
 #: src/app/ConfirmDialog.qml:24
 msgid "JavaScript Confirmation"
@@ -360,7 +362,7 @@ msgstr "Підтвердження дій JavaScript"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
-msgstr ""
+msgstr "Користувацькі агенти (User Agent)"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:85
 #: src/app/DomainSettingsPage.qml:83 src/app/DownloadsPage.qml:103
@@ -369,57 +371,57 @@ msgstr "Видалити"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
-msgstr ""
+msgstr "Новий агент User Agent"
 
 #: src/app/CustomUserAgentsPage.qml:161
 msgid "Edit User Agent"
-msgstr ""
+msgstr "Редагувати агента User Agent"
 
 #: src/app/CustomUserAgentsPage.qml:187
-#, fuzzy
 msgid "No custom user agents available"
-msgstr "Немає доступних завантажень"
+msgstr "Користувацькі агенти (User Agent) недоступні"
 
 #: src/app/DomainPermissionsPage.qml:55
 msgid "Domain blacklist/whitelist"
-msgstr ""
+msgstr "Білий/чорний список доменів"
 
 #: src/app/DomainPermissionsPage.qml:114 src/app/DomainSettingsPage.qml:114
 msgid "Add domain"
-msgstr ""
+msgstr "Додати домен"
 
 #: src/app/DomainPermissionsPage.qml:115
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
 msgstr ""
+"Введіть назву домену, наприклад, example.com (субдомени будуть видалені)."
 
 #: src/app/DomainPermissionsPage.qml:223
 msgid "Not Set"
-msgstr ""
+msgstr "Не встановлено"
 
 #: src/app/DomainPermissionsPage.qml:233
 msgid "Never allow access"
-msgstr ""
+msgstr "Ніколи не надавати доступ"
 
 #: src/app/DomainPermissionsPage.qml:244
 msgid "Always allow access"
-msgstr ""
+msgstr "Завжди дозволяти доступ"
 
 #: src/app/DomainPermissionsPage.qml:284
 msgid "No sites have been granted special permissions"
-msgstr ""
+msgstr "Жодному сайту не було надано спеціальних дозволів"
 
 #: src/app/DomainSettingsPage.qml:53
 msgid "Domain specific settings"
-msgstr ""
+msgstr "Специфічні налаштування для домену"
 
 #: src/app/DomainSettingsPage.qml:115
 msgid "Enter the name of the domain, e.g. m.example.com"
-msgstr ""
+msgstr "Введіть назву домену, наприклад, m.example.com"
 
 #: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
-msgstr ""
+msgstr "може запускати інші програми"
 
 #: src/app/DomainSettingsPage.qml:226
 #, fuzzy
@@ -781,7 +783,7 @@ msgstr "Додано закладку"
 #. TRANSLATORS: Field where the title of bookmarked URL can be changed
 #: src/app/webbrowser/BookmarkOptions.qml:71
 msgid "Name"
-msgstr "Назва"
+msgstr "Ім'я"
 
 #. TRANSLATORS: Field to choose the folder where bookmarked URL will be saved in
 #: src/app/webbrowser/BookmarkOptions.qml:89

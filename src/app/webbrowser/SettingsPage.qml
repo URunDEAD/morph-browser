@@ -493,7 +493,7 @@ FocusScope {
 
             Common.CustomizedRadioButton {
                 id: customHomepageOption
-                text: i18n.tr("Custom hompage")
+                text: i18n.tr("Custom homepage")
                 color: theme.palette.normal.foregroundText
                 onCheckedChanged: {
                 if (checked) {

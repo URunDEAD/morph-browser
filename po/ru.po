@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-01-31 15:48+0000\n"
+"PO-Revision-Date: 2023-02-01 22:05+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/ru/>\n"
@@ -439,7 +439,7 @@ msgstr "Запрещено"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
-msgstr "настраиваемый пользовательский агент"
+msgstr "пользовательский User Agent"
 
 #: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
@@ -1233,7 +1233,7 @@ msgstr "по умолчанию"
 
 #: src/app/ZoomControls.qml:102
 msgid "auto-fit"
-msgstr "авто-подгонка"
+msgstr "автоподгонка"
 
 #: src/app/ZoomControls.qml:191
 msgid "Save Zoom"

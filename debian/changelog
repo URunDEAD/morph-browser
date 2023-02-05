@@ -1,8 +1,13 @@
-morph-browser (1.0.0) UNRELEASED; urgency=medium
+morph-browser (1.0.1) unstable; urgency=medium
 
+  [ Guido Berhoerster ]
   * Switch from url-dispatcher to lomiri-url-dispatcher
 
- -- Guido Berhoerster <guido+gitlab.com@berhoerster.name>  Tue, 03 May 2022 11:51:04 +0200
+  [ UBports developers ]
+  * Upstream-provided Debian package for morph-browser. See upstream
+    ChangeLog for recent changes.
+
+ -- UBports developers <developers@ubports.com>  Sun, 05 Feb 2023 14:01:34 +0100
 
 morph-browser (0.24+ubports) xenial; urgency=medium
 

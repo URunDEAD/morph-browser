@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-01-27 17:40+0000\n"
+"PO-Revision-Date: 2023-02-06 03:01+0000\n"
 "Last-Translator: gnu-ewm <gnu.ewm@protonmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/pl/>\n"
@@ -985,7 +985,7 @@ msgstr "Jesteś połączony z %1 przez HTTPS. Certyfikat jest ważny."
 
 #: src/app/webbrowser/SettingsDeviceSelector.qml:42
 msgid "Default"
-msgstr "Domyślny"
+msgstr "Domyślne"
 
 #: src/app/webbrowser/SettingsPage.qml:74
 #: src/app/webbrowser/SettingsPage.qml:257

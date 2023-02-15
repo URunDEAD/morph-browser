@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-02-14 22:35+0000\n"
+"PO-Revision-Date: 2023-02-15 22:47+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/es/>\n"
@@ -522,7 +522,7 @@ msgstr "Descargas"
 
 #: src/app/DownloadsPage.qml:62
 msgid "Confirm selection"
-msgstr "Confirmar la selección"
+msgstr "Confirmar selección"
 
 #: src/app/DownloadsPage.qml:311
 msgid "No downloads available"
@@ -530,17 +530,15 @@ msgstr "No hay descargas disponibles"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "ya se usa este nombre de agente de usuario"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
-#, fuzzy
-#| msgid "Add the name for the new user agent"
 msgid "Add the name for the user agent"
-msgstr "Añadir el nombre para el nuevo agente de usuario"
+msgstr "Añadir el nombre del agente de usuario"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
-msgstr "introducir la cadena de agente de usuario..."
+msgstr "introduzca la cadena de agente de usuario…"
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
@@ -567,8 +565,7 @@ msgstr "Volver para estar a salvo"
 
 #: src/app/ErrorSheet.qml:70
 msgid "Please check your network settings and try refreshing the page."
-msgstr ""
-"Por favor, compruebe la configuración de la red e intente recargar la página."
+msgstr "Compruebe la configuración de la red e intente recargar la página."
 
 #: src/app/ErrorSheet.qml:77
 msgid "Refresh page"

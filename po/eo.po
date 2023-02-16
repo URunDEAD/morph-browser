@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-01-08 22:50+0000\n"
-"Last-Translator: Alexander Richards <electrodeyt@gmail.com>\n"
-"Language-Team: Esperanto <https://hosted.weblate.org/projects/lomiri/morph-"
-"browser/eo/>\n"
+"PO-Revision-Date: 2023-02-16 22:38+0000\n"
+"Last-Translator: phlostically <phlostically@mailinator.com>\n"
+"Language-Team: Esperanto <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/eo/>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -43,7 +43,7 @@ msgstr ""
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
-msgstr ""
+msgstr "Nova fenestro"
 
 #: morph-browser.desktop.in:27
 msgid "New Private Window"
@@ -51,7 +51,7 @@ msgstr ""
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
-msgstr ""
+msgstr "Reen"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
@@ -85,7 +85,7 @@ msgstr ""
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
-msgstr ""
+msgstr "Kopii bildon"
 
 #: src/app/actions/CopyLink.qml:22
 msgid "Copy link"
@@ -93,11 +93,11 @@ msgstr ""
 
 #: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:373
 msgid "Copy"
-msgstr ""
+msgstr "Kopii"
 
 #: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:362
 msgid "Cut"
-msgstr ""
+msgstr "Eltondi"
 
 #: src/app/actions/Erase.qml:22
 msgid "Erase"
@@ -136,7 +136,7 @@ msgstr ""
 #: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:692
 #: src/app/webbrowser/TabsBar.qml:88
 msgid "New Tab"
-msgstr ""
+msgstr "Nova langeto"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'New Tab' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
@@ -174,16 +174,16 @@ msgstr ""
 
 #: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:384
 msgid "Paste"
-msgstr ""
+msgstr "Alglui"
 
 #: src/app/actions/Redo.qml:22
 msgid "Redo"
-msgstr ""
+msgstr "Refari"
 
 #: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
 #: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
 msgid "Reload"
-msgstr ""
+msgstr "Reŝargi"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Reload' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
@@ -193,21 +193,21 @@ msgstr ""
 
 #: src/app/actions/SaveImage.qml:22
 msgid "Save image"
-msgstr ""
+msgstr "Konservi bildon"
 
 #: src/app/actions/SaveLink.qml:22
 msgid "Save link"
-msgstr ""
+msgstr "Konservi ligon"
 
 #: src/app/actions/SaveVideo.qml:22
 msgid "Save video"
-msgstr ""
+msgstr "Konservi filmon"
 
 #: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
 #: src/app/DomainPermissionsPage.qml:69 src/app/DomainSettingsPage.qml:67
 #: src/app/DownloadsPage.qml:87
 msgid "Select all"
-msgstr ""
+msgstr "Elekti ĉion"
 
 #: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
 msgid "Share"
@@ -215,7 +215,7 @@ msgstr ""
 
 #: src/app/actions/Undo.qml:22
 msgid "Undo"
-msgstr ""
+msgstr "Malfari"
 
 #: src/app/AlertDialog.qml:24
 msgid "JavaScript Alert"
@@ -436,7 +436,7 @@ msgstr ""
 
 #: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
-msgstr ""
+msgstr "Zomo: "
 
 #: src/app/DomainSettingsPage.qml:325
 msgid "not set"
@@ -450,7 +450,7 @@ msgstr ""
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: src/app/DownloadDelegate.qml:170
 msgid "Download failed"
@@ -464,7 +464,7 @@ msgstr "Nekonato"
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
 msgid "Delete File"
@@ -512,7 +512,7 @@ msgstr ""
 #: src/app/DownloadsPage.qml:48 src/app/webbrowser/Browser.qml:829
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Downloads"
-msgstr ""
+msgstr "Elŝutoj"
 
 #: src/app/DownloadsPage.qml:62
 msgid "Confirm selection"
@@ -679,11 +679,11 @@ msgstr ""
 
 #: src/app/MediaAccessDialog.qml:77
 msgid "Yes"
-msgstr ""
+msgstr "Jes"
 
 #: src/app/MediaAccessDialog.qml:85
 msgid "No"
-msgstr ""
+msgstr "Ne"
 
 #: src/app/PromptDialog.qml:25
 msgid "JavaScript Prompt"
@@ -808,7 +808,7 @@ msgstr ""
 
 #: src/app/webbrowser/Browser.qml:649
 msgid "Done"
-msgstr ""
+msgstr "Farite"
 
 #: src/app/webbrowser/Browser.qml:674
 msgid "Reopen Tab"
@@ -957,7 +957,7 @@ msgstr ""
 
 #: src/app/webbrowser/SettingsDeviceSelector.qml:42
 msgid "Default"
-msgstr ""
+msgstr "Implicite"
 
 #: src/app/webbrowser/SettingsPage.qml:74
 #: src/app/webbrowser/SettingsPage.qml:257
@@ -1059,7 +1059,7 @@ msgstr ""
 
 #: src/app/webbrowser/SettingsPage.qml:602
 msgid "Camera"
-msgstr ""
+msgstr "Kamerao"
 
 #: src/app/webbrowser/TabComponent.qml:258
 msgid "Swipe Up To Exit Full Screen"
@@ -1075,7 +1075,7 @@ msgstr ""
 
 #: src/app/webbrowser/TabsBar.qml:64 src/app/webbrowser/TabsList.qml:100
 msgid "New tab"
-msgstr ""
+msgstr "Nova langeto"
 
 #: src/app/webbrowser/TabsBar.qml:99
 msgid "Move to New Window"
@@ -1109,7 +1109,7 @@ msgstr ""
 
 #: src/app/webcontainer/AccountErrorScreen.qml:50
 msgid "Close"
-msgstr ""
+msgstr "Fermi"
 
 #: src/app/webcontainer/AccountsLogic.qml:63
 msgid ""

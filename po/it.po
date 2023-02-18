@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-02-18 19:39+0000\n"
+"PO-Revision-Date: 2023-02-20 14:39+0000\n"
 "Last-Translator: Nathan Giovannini <nathan95@live.it>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/it/>\n"
@@ -207,7 +207,7 @@ msgstr "Salva il video"
 #: src/app/DomainPermissionsPage.qml:69 src/app/DomainSettingsPage.qml:67
 #: src/app/DownloadsPage.qml:87
 msgid "Select all"
-msgstr "Seleziona tutto"
+msgstr "Seleziona tutti"
 
 #: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
 msgid "Share"
@@ -527,7 +527,7 @@ msgstr "Pulisci"
 
 #: src/app/DownloadsDialog.qml:182
 msgid "View All"
-msgstr ""
+msgstr "Vedi tutto"
 
 #: src/app/DownloadsPage.qml:48 src/app/webbrowser/Browser.qml:829
 #: src/app/webcontainer/WebappSettingsPage.qml:117

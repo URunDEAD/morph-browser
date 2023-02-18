@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2021-03-19 13:22+0000\n"
-"Last-Translator: Mike <miguel2000@livecom.it>\n"
-"Language-Team: Italian <https://translate.ubports.com/projects/ubports/morph-"
-"browser/it/>\n"
+"PO-Revision-Date: 2023-02-18 19:39+0000\n"
+"Last-Translator: Nathan Giovannini <nathan95@live.it>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.16-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -236,11 +236,11 @@ msgstr "Schemi URL personalizzati"
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "Il sito web \"%1\" vuole aprire questo URL al di fuori del browser web:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "Aprire questo URL con un'applicazione di sistema, se possibile?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -432,7 +432,7 @@ msgstr "autorizzato ad accedere alla tua posizione"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "Chiedi ogni volta"
 
 #: src/app/DomainSettingsPage.qml:231
 #, fuzzy
@@ -442,7 +442,7 @@ msgstr "Consenti"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Negato"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
@@ -472,13 +472,13 @@ msgstr "Scaricamento non riuscito"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "Sconosciuto"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
 #, fuzzy
@@ -518,7 +518,7 @@ msgstr "Annulla"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Completato"
 
 #: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
 #: src/app/webcontainer/WebappSettingsPage.qml:273

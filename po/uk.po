@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-02-12 17:36+0000\n"
+"PO-Revision-Date: 2023-02-23 00:29+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/uk/>\n"
@@ -586,7 +586,7 @@ msgstr "Заборонити"
 #: src/app/HttpAuthenticationDialog.qml:27
 #, qt-format
 msgid "The website at %1 requires authentication. The website says \"%2\""
-msgstr "Сайт %1 потребує проходження розпізнавання. Повідомлення сайта: «%2»"
+msgstr "Сайт %1 вимагає пройти аутентифікацію: \"%2\""
 
 #: src/app/InvalidCertificateErrorSheet.qml:55
 msgid "This site security certificate is not trusted.\n"
@@ -1126,8 +1126,8 @@ msgid ""
 "No accounts have been linked to this webapp; press the item below to add an "
 "account."
 msgstr ""
-"Жоден обліковий запис не було пов’язано з цим вебзастосунком; натисніть "
-"нижче, щоб додати обліковий запис."
+"З цією веб-програмою не пов'язано жодного облікового запису; можете додати, "
+"натиснувши нижче."
 
 #: src/app/webcontainer/AccountChooserDialog.qml:78
 msgid "Add account"

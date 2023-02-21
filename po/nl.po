@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2021-05-29 18:40+0000\n"
+"PO-Revision-Date: 2023-02-23 00:29+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
-"Language-Team: Dutch <https://translate.ubports.com/projects/ubports/morph-"
-"browser/nl/>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.16-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -39,7 +39,7 @@ msgstr "Internet;www;Browser;Web;Surfen"
 
 #: morph-browser.desktop.in:9
 msgid "/usr/share/morph-browser/morph-browser.svg"
-msgstr ""
+msgstr "/usr/share/morph-browser/morph-browser.svg"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
@@ -51,7 +51,7 @@ msgstr "Nieuw privévenster"
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
-msgstr "Vorige"
+msgstr "Terug"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
@@ -236,11 +236,11 @@ msgstr "Aangepaste url-schema's"
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "‘%1’ wil deze url buiten de webbrowser openen:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "Wil je deze url in een systeemapp openen (indien mogelijk)?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -351,7 +351,7 @@ msgstr "Tóch doorgaan"
 
 #: src/app/ColorSelectDialog.qml:25
 msgid "Select Color"
-msgstr "Kleur kiezen"
+msgstr "Kies een kleur"
 
 #: src/app/ConfirmDialog.qml:24
 msgid "JavaScript Confirmation"
@@ -371,10 +371,8 @@ msgid "New User Agent"
 msgstr "Nieuwe gebruikersagent"
 
 #: src/app/CustomUserAgentsPage.qml:161
-#, fuzzy
-#| msgid "New User Agent"
 msgid "Edit User Agent"
-msgstr "Nieuwe gebruikersagent"
+msgstr "Gebruikersagent bewerken"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
@@ -421,27 +419,23 @@ msgstr "Voer de naam in van het domein, bijv. m.voorbeeld.nl"
 
 #: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
-msgstr "Mag andere apps openen"
+msgstr "mag andere apps openen"
 
 #: src/app/DomainSettingsPage.qml:226
-#, fuzzy
-#| msgid "allowed to access your location"
 msgid "access your location"
-msgstr "Mag je locatie opvragen"
+msgstr "toegang tot je locatie"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "Elke keer vragen"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "Toestaan"
+msgstr "Toegestaan"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Geweigerd"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
@@ -471,53 +465,41 @@ msgstr "Het downloaden is mislukt"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "Onbekend"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "Verwijderen"
+msgstr "Bestand verwijderen"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "Geschiedenis wissen"
+msgstr "Verwijderen uit geschiedenis"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "Link kopiëren"
+msgstr "Downloadlink kopiëren"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "Downloads"
+msgstr "Onlangs gedownload"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
-msgstr "Downloads"
+msgstr "Er is onlangs niets gedownload"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Annuleren"
+msgstr "Afgebroken"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Voltooid"
 
 #: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
 #: src/app/webcontainer/WebappSettingsPage.qml:273
@@ -526,7 +508,7 @@ msgstr "Wissen"
 
 #: src/app/DownloadsDialog.qml:182
 msgid "View All"
-msgstr ""
+msgstr "Allen bekijken"
 
 #: src/app/DownloadsPage.qml:48 src/app/webbrowser/Browser.qml:829
 #: src/app/webcontainer/WebappSettingsPage.qml:117
@@ -543,13 +525,11 @@ msgstr "Er zijn geen downloads beschikbaar"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "Deze naam is al in gebruik"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
-#, fuzzy
-#| msgid "Add the name for the new user agent"
 msgid "Add the name for the user agent"
-msgstr "Geef de nieuwe gebruikersagent een naam"
+msgstr "Geef de gebruikersagent een naam"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
@@ -762,7 +742,7 @@ msgstr "Opslaan als PDF"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Verwijderen van lijst"
 
 #: src/app/webbrowser/AddressBar.qml:242
 msgid "find in page"
@@ -853,10 +833,8 @@ msgid "Done"
 msgstr "Gereed"
 
 #: src/app/webbrowser/Browser.qml:674
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "Tabblad sluiten"
+msgstr "Tabblad heropenen"
 
 #: src/app/webbrowser/Browser.qml:790
 msgid "New window"
@@ -1111,11 +1089,11 @@ msgstr "Camera"
 
 #: src/app/webbrowser/TabComponent.qml:258
 msgid "Swipe Up To Exit Full Screen"
-msgstr "Veeg omhoog om de beeldvullende modus te verlaten"
+msgstr "Veeg omhoog om de schermvullende modus te verlaten"
 
 #: src/app/webbrowser/TabComponent.qml:259
 msgid "Press ESC To Exit Full Screen"
-msgstr "Druk op ESC om de beeldvullende modus te verlaten"
+msgstr "Druk op ESC om de schermvullende modus te verlaten"
 
 #: src/app/webbrowser/TabPreview.qml:113
 msgid "Tap to view"
@@ -1172,7 +1150,7 @@ msgstr ""
 
 #: src/app/webcontainer/AccountsLogic.qml:214
 msgid "Authentication failed"
-msgstr "Authenticatie mislukt"
+msgstr "Verificatie mislukt"
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
 #: src/app/webcontainer/AccountsSplashScreen.qml:45
@@ -1266,19 +1244,23 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"Het huidige zoomniveau (%1%) van %2 kan worden opgeslagen voor het huidige "
+"domein of als standaard zoomniveau."
 
 #: src/app/ZoomControls.qml:198
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "Het huidige zoomniveau (%1%) van %2 kan worden opgeslagen als "
+msgstr ""
+"Het huidige zoomniveau (%1%) van %2 kan worden opgeslagen voor het huidige "
+"domein."
 
 #: src/app/ZoomControls.qml:200
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr "Het huidige zoomniveau (%1%) van %2 kan worden opgeslagen als "
+msgstr ""
+"Het huidige zoomniveau (%1%) van %2 kan worden ingesteld als standaard "
+"zoomniveau."
 
 #: src/app/ZoomControls.qml:207
 msgid "Save for domain"

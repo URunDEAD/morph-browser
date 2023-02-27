@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-02-23 00:29+0000\n"
+"PO-Revision-Date: 2023-02-28 18:47+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/nl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.16-rc\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -31,7 +31,7 @@ msgstr "Morph-webbrowser"
 
 #: morph-browser.desktop.in:6
 msgid "Browse the World Wide Web using QtWebEngine"
-msgstr "Surf op het internet met QtWebEngine"
+msgstr "Surf op het internet met behulp van QtWebEngine"
 
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
@@ -240,7 +240,7 @@ msgstr "‘%1’ wil deze url buiten de webbrowser openen:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr "Wil je deze url in een systeemapp openen (indien mogelijk)?"
+msgstr "Wil je deze url in een andere app openen (indien mogelijk)?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -302,13 +302,13 @@ msgstr "Domein toestaan"
 
 #: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
-msgstr "Authenticatie vereist."
+msgstr "Inloggen vereist."
 
 #. TRANSLATORS: %1 refers to the URL of the current website
 #: src/app/AuthenticationDialog.qml:26
 #, qt-format
 msgid "The website %1 requires authentication."
-msgstr "De website '%1' vereist authenticatie."
+msgstr "Op ‘%1’ is inloggen vereist."
 
 #: src/app/AuthenticationDialog.qml:34 src/app/HttpAuthenticationDialog.qml:50
 msgid "Username"
@@ -341,7 +341,7 @@ msgid ""
 "You are trying to securely reach %1, but the security certificate of this "
 "website is not trusted. Reason: %2"
 msgstr ""
-"Je probeert '%1' op een veilige manier te bereiken, maar het "
+"Je probeert ‘%1’ op een veilige manier te bereiken, maar het "
 "beveiligingscertificaat van deze website is onvertrouwd. Reden: %2"
 
 #: src/app/CertificateVerificationDialog.qml:39
@@ -376,7 +376,7 @@ msgstr "Gebruikersagent bewerken"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
-msgstr "Er zijn geen aangepaste gebruikersagenten beschikbaar"
+msgstr "Er zijn geen gebruikersagenten beschikbaar"
 
 #: src/app/DomainPermissionsPage.qml:55
 msgid "Domain blacklist/whitelist"
@@ -423,11 +423,11 @@ msgstr "mag andere apps openen"
 
 #: src/app/DomainSettingsPage.qml:226
 msgid "access your location"
-msgstr "toegang tot je locatie"
+msgstr "heeft toegang tot je locatie"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr "Elke keer vragen"
+msgstr "Altijd vragen"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Allowed"
@@ -451,7 +451,7 @@ msgstr "niet ingesteld"
 
 #: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
-msgstr "Geen domein-specifieke instellingen beschikbaar"
+msgstr "Er zijn geen domein-specifieke instellingen beschikbaar"
 
 #. TRANSLATORS: %1 is the percentage of the download completed so far
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
@@ -547,12 +547,12 @@ msgstr "Netwerkfout"
 #: src/app/ErrorSheet.qml:49
 #, qt-format
 msgid "It appears you are having trouble viewing: %1."
-msgstr "Het lijkt erop dat je problemen ondervindt bij het bekijken van %1."
+msgstr "Het lijkt er op dat je problemen ondervindt bij het bekijken van %1."
 
 #: src/app/ErrorSheet.qml:56
 #, qt-format
 msgid "Error: %1"
-msgstr "Fout: %1"
+msgstr "Foutmelding: %1"
 
 #: src/app/ErrorSheet.qml:62 src/app/InvalidCertificateErrorSheet.qml:173
 msgid "Back to safety"
@@ -582,7 +582,7 @@ msgstr "Weigeren"
 #: src/app/HttpAuthenticationDialog.qml:27
 #, qt-format
 msgid "The website at %1 requires authentication. The website says \"%2\""
-msgstr "De website '%1' vereist authenticatie. De website meldt \"%2\""
+msgstr "Op ‘%1’ is inloggen vereist. De website meldt: “%2”"
 
 #: src/app/InvalidCertificateErrorSheet.qml:55
 msgid "This site security certificate is not trusted.\n"
@@ -711,25 +711,25 @@ msgstr "JavaScript-vraag"
 
 #: src/app/ProxyAuthenticationDialog.qml:22
 msgid "Proxy authentication required."
-msgstr "De proxy vereist authenticatie."
+msgstr "Inloggen op proxy vereist."
 
 #. TRANSLATORS: %1 refers to the proxy address, %2 refers to the proxy port
 #: src/app/ProxyAuthenticationDialog.qml:24
 #, qt-format
 msgid "The website %1:%2 requires authentication."
-msgstr "De website '%1:%2' vereist authenticatie."
+msgstr "Op ‘%1:%2’ is inloggen vereist."
 
 #: src/app/SavePageDialog.qml:24
 msgid "Save page as HTML / PDF"
-msgstr "Pagina opslaan als HTML/PDF"
+msgstr "Pagina opslaan als html-/pdf-bestand"
 
 #: src/app/SavePageDialog.qml:41
 msgid "No save actions are available"
-msgstr "Er zijn geen acties omtrent opslaan beschikbaar"
+msgstr "Er zijn geen bewaaracties beschikbaar"
 
 #: src/app/SavePageDialog.qml:46
 msgid "Save as HTML"
-msgstr "Opslaan als HTML"
+msgstr "Opslaan als html-bestand"
 
 #: src/app/SavePageDialog.qml:54
 #: src/app/webbrowser/ContentDownloadDialog.qml:102
@@ -738,7 +738,7 @@ msgstr "Downloaden"
 
 #: src/app/SavePageDialog.qml:64
 msgid "Save as PDF"
-msgstr "Opslaan als PDF"
+msgstr "Opslaan als pdf-bestand"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
@@ -746,7 +746,7 @@ msgstr "Verwijderen van lijst"
 
 #: src/app/webbrowser/AddressBar.qml:242
 msgid "find in page"
-msgstr "zoeken op pagina"
+msgstr "Zoeken op pagina"
 
 #: src/app/webbrowser/AddressBar.qml:243
 msgid "search or enter an address"
@@ -813,24 +813,24 @@ msgstr "Geblokkeerd domein"
 #: src/app/webcontainer/WebViewImplOxide.qml:304
 #, qt-format
 msgid "Blocked navigation request to domain %1."
-msgstr "Geblokkeerd navigatieverzoek naar domein %1."
+msgstr "Het verzoek naar ‘%1’ is geblokkeerd."
 
 #: src/app/webbrowser/Browser.qml:258
 #: src/app/webcontainer/WebViewImplOxide.qml:330
 msgid "Whitelisted domain"
-msgstr "Witte lijst-domein"
+msgstr "Wittelijstdomein"
 
 #: src/app/webbrowser/Browser.qml:259
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
 msgstr ""
-"Het domein '%1' staat nu op de witte lijst. Dit wordt behouden tot de "
-"volgende paginaherlading."
+"‘%1’ staat nu op de witte lijst. De keuze wordt bewaard totdat de pagina "
+"wordt herladen."
 
 #: src/app/webbrowser/Browser.qml:649
 msgid "Done"
-msgstr "Gereed"
+msgstr "Sluiten"
 
 #: src/app/webbrowser/Browser.qml:674
 msgid "Reopen Tab"
@@ -855,7 +855,7 @@ msgstr "Instellingen"
 
 #: src/app/webbrowser/Browser.qml:842
 msgid "View source"
-msgstr "Broncode tonen"
+msgstr "Broncode bekijken"
 
 #: src/app/webbrowser/Browser.qml:855
 msgid "Save / Print to PDF"
@@ -873,13 +873,13 @@ msgstr "(%1)"
 
 #: src/app/webbrowser/Browser.qml:1947
 msgid "the file is already in the downloads folder."
-msgstr "Dit bestand is al opgeslagen in de map 'Downloads'."
+msgstr "Dit bestand is al opgeslagen in de downloadmap."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:83
 msgid ""
 "Choose an application to open this file or add it to the downloads folder."
 msgstr ""
-"Kies een app om dit bestand te openen of sla het op in de map 'Downloads'."
+"Kies een app om dit bestand mee te openen of sla het op in de downloadmap."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:89
 msgid "Choose an application"
@@ -945,7 +945,7 @@ msgstr "Meer"
 #: src/app/webbrowser/NewTabView.qml:326
 #: src/app/webbrowser/NewTabViewWide.qml:138
 msgid "Top sites"
-msgstr "Topsites"
+msgstr "Meest bezocht"
 
 #: src/app/webbrowser/NewTabView.qml:357
 msgid "You haven't visited any site yet"
@@ -979,7 +979,8 @@ msgstr "De identiteit van deze website is niet geverifieerd."
 #: src/app/webbrowser/SecurityCertificatePopover.qml:109
 #, qt-format
 msgid "You are connected to %1 via HTTPS. The certificate is valid."
-msgstr "Je bent via HTTPS verbonden met %1. Het certificaat is geldig."
+msgstr ""
+"Je bent via https verbonden met %1 en het certificaat is geldig verklaard."
 
 #: src/app/webbrowser/SettingsDeviceSelector.qml:42
 msgid "Default"
@@ -993,11 +994,11 @@ msgstr "Zoekmachine"
 #: src/app/webbrowser/SettingsPage.qml:91
 #: src/app/webbrowser/SettingsPage.qml:484
 msgid "New Tab Page"
-msgstr "Nieuwe tabblad-pagina"
+msgstr "Nieuw tabblad"
 
 #: src/app/webbrowser/SettingsPage.qml:119
 msgid "Restore previous session at startup"
-msgstr "Vorige sessie herstellen bij opstarten"
+msgstr "Vorige sessie herstellen na opstarten"
 
 #: src/app/webbrowser/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
@@ -1040,7 +1041,7 @@ msgstr "Opstarten in privémodus"
 #: src/app/webbrowser/SettingsPage.qml:338
 #: src/app/webcontainer/WebappSettingsPage.qml:186
 msgid "Only allow browsing to whitelisted websites"
-msgstr "Alleen bezoeken van witte lijst-websites toestaan"
+msgstr "Alleen wittelijstwebsites toestaan"
 
 #: src/app/webbrowser/SettingsPage.qml:378
 #: src/app/webbrowser/SettingsPage.qml:569
@@ -1077,7 +1078,7 @@ msgstr "Wil je alle cookies wissen?"
 
 #: src/app/webbrowser/SettingsPage.qml:496
 msgid "Custom hompage"
-msgstr "Aangepaste startpagina"
+msgstr "Eigen startpagina"
 
 #: src/app/webbrowser/SettingsPage.qml:581
 msgid "Microphone"
@@ -1093,7 +1094,7 @@ msgstr "Veeg omhoog om de schermvullende modus te verlaten"
 
 #: src/app/webbrowser/TabComponent.qml:259
 msgid "Press ESC To Exit Full Screen"
-msgstr "Druk op ESC om de schermvullende modus te verlaten"
+msgstr "Druk op Esc om de schermvullende modus te verlaten"
 
 #: src/app/webbrowser/TabPreview.qml:113
 msgid "Tap to view"
@@ -1167,7 +1168,7 @@ msgstr "<b>%1</b> wil toegang tot je %2-account."
 #: src/app/webcontainer/AccountsSplashScreen.qml:64
 msgid ""
 "Choose an account now, or skip this step and choose an online account later."
-msgstr "Kies nu een account of sla deze stap over en kies dit later."
+msgstr "Kies nu een account of sla deze stap over en kies op een later moment."
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Close the app"
@@ -1196,7 +1197,7 @@ msgstr "Standaardwaarden herstellen"
 #: src/app/webcontainer/WebViewImplOxide.qml:331
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
-msgstr "Het domein '%1' staat nu op de witte lijst. Herlaad de pagina."
+msgstr "‘%1’ staat nu op de witte lijst - herlaad de pagina."
 
 #: src/app/ZoomControls.qml:62
 msgid "Zoom Out"
@@ -1208,7 +1209,7 @@ msgstr "Standaardwaarden"
 
 #: src/app/ZoomControls.qml:69
 msgid "fit"
-msgstr "passend"
+msgstr "Inpassen"
 
 #: src/app/ZoomControls.qml:76
 msgid "Zoom In"
@@ -1268,7 +1269,7 @@ msgstr "Onthouden voor domein"
 
 #: src/app/ZoomControls.qml:220
 msgid "Save as default"
-msgstr "Onthouden"
+msgstr "Instellen als standaard"
 
 #, qt-format
 #~ msgid ""

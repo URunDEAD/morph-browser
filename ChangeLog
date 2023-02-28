@@ -1,6 +1,67 @@
+2023-02-28 Mike Gabriel
+
+        * Release 1.0.2 (HEAD -> main, tag: 1.0.2)
+
+2023-02-28 Luna Jernberg
+
+        * Translated using Weblate (Swedish) (2af42529)
+
+2023-02-27 Heimen Stoffels
+
+        * Translated using Weblate (Dutch) (d2477f6c)
+
+2023-02-23 Mike Gabriel
+
+        * po/ckb.po: Add missing file. (06a9ddf4)
+
+2023-02-20 Sergii Horichenko
+
+        * Translated using Weblate (Ukrainian) (9fd45da2)
+
+2023-02-21 Heimen Stoffels
+
+        * Translated using Weblate (Dutch) (674bbb32)
+
+2023-02-18 Nathan Giovannini
+
+        * Translated using Weblate (Italian) (e84d5b5a)
+        * Translated using Weblate (Italian) (7e4dc065)
+
+2023-02-16 phlostically
+
+        * Translated using Weblate (Esperanto) (8f12c164)
+
+2023-02-15 Adolfo Jayme Barrientos
+
+        * Translated using Weblate (Spanish) (fad2b24b)
+
+2023-02-15 Mike Gabriel
+
+        * po/: Rename ku.po to ckb.po as suggested by Weblate. (eb86f2ba)
+
+2023-02-13 Adolfo Jayme Barrientos
+
+        * Translated using Weblate (Spanish) (caad3ae4)
+
+2023-02-11 Sergii Horichenko
+
+        * Translated using Weblate (Ukrainian) (3a89deb2)
+
+2023-02-07 Ivo Xavier
+
+        * Translated using Weblate (Portuguese) (61456e91)
+
+2023-02-05 gnu-ewm
+
+        * Translated using Weblate (Polish) (9d0ff6d5)
+
+2023-02-04 Mike Gabriel
+
+        * Translated using Weblate (German) (870c5b87)
+
 2023-02-05 Mike Gabriel
 
-        * Release 1.0.1 (HEAD -> main, tag: 1.0.1)
+        * Release 1.0.1 (9f283278) (tag: 1.0.1)
 
 2023-02-03 Sergii Horichenko
 

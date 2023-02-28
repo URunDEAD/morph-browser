@@ -8,33 +8,30 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2021-06-01 23:45+0000\n"
-"Last-Translator: Marcus Fredlund <marcus.karlson@gmail.com>\n"
-"Language-Team: Swedish <https://translate.ubports.com/projects/ubports/morph-"
-"browser/sv/>\n"
+"PO-Revision-Date: 2023-02-28 18:47+0000\n"
+"Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.16-rc\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
-#, fuzzy
 msgid "Morph Browser"
-msgstr "Webbläsare"
+msgstr "Morph webbläsare"
 
 #: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:112
 #: src/app/webcontainer/webapp-container.qml:77
-#, fuzzy
 msgid "Morph Web Browser"
-msgstr "Webbläsare"
+msgstr "Morph Webbläsare"
 
 #: morph-browser.desktop.in:6
-#, fuzzy
 msgid "Browse the World Wide Web using QtWebEngine"
-msgstr "Surfa på nätet"
+msgstr "Surfa på nätet använder QtWebEngine"
 
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
@@ -42,7 +39,7 @@ msgstr "Internet;WWW;Webbläsare;Webb;Explorer"
 
 #: morph-browser.desktop.in:9
 msgid "/usr/share/morph-browser/morph-browser.svg"
-msgstr ""
+msgstr "/usr/share/morph-browser/morph-browser.svg"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
@@ -160,9 +157,8 @@ msgid "Open link in new background tab"
 msgstr "Öppna länk i ny flik i bakgrunden"
 
 #: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
-#, fuzzy
 msgid "Open link in new private window"
-msgstr "Öppna länk i privat fönster"
+msgstr "Öppna länk i nytt privat fönster"
 
 #: src/app/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
@@ -211,7 +207,7 @@ msgstr "Spara video"
 #: src/app/DomainPermissionsPage.qml:69 src/app/DomainSettingsPage.qml:67
 #: src/app/DownloadsPage.qml:87
 msgid "Select all"
-msgstr "Markera alla"
+msgstr "Välj alla"
 
 #: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
 msgid "Share"
@@ -235,21 +231,21 @@ msgstr "OK"
 
 #: src/app/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
-msgstr ""
+msgstr "Anpassade URL scheman"
 
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "Webbplatsen '%1' vill öppna denna URL utanför webbläsaren:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "Öppna denna URL med en systemapp om tillgänglig?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
-msgstr ""
+msgstr "Kom ihåg val"
 
 #: src/app/AllowCustomSchemesDialog.qml:50
 #: src/app/GeolocationPermissionRequest.qml:51
@@ -277,7 +273,7 @@ msgstr "Avbryt"
 #: src/app/AllowOrBlockDomainDialog.qml:25
 #: src/app/AllowOrBlockDomainDialog.qml:41
 msgid "Block domain"
-msgstr ""
+msgstr "Blockera domän"
 
 #: src/app/AllowOrBlockDomainDialog.qml:30
 #, qt-format
@@ -286,6 +282,9 @@ msgid ""
 "Would you like to continue to block the domain, allow browsing to the "
 "domain, or go back?"
 msgstr ""
+"Du försöker komma åt %1 men det finns inte på din godkända domän vitlista. "
+"Vill du fortsätta att blockera domänen, tillåta surfning till domänen eller "
+"gå tillbaka?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:31
 #, qt-format
@@ -294,10 +293,13 @@ msgid ""
 "Would you like to continue to block the domain, allow loading data from the "
 "domain, or just ignore this request ?"
 msgstr ""
+"%1 försöker få åtkomst till %2 men det finns inte på din godkända domän "
+"vitlista. Vill du fortsätta att blockera domänen, tillåta laddningsdata från "
+"domänen eller bara ignorera denna begäran?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
-msgstr ""
+msgstr "Tillåt domän"
 
 #: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
@@ -335,13 +337,13 @@ msgstr "Anslutningen är inte pålitlig"
 
 #. TRANSLATORS: %1 refers to the hostname
 #: src/app/CertificateVerificationDialog.qml:26
-#, fuzzy, qt-format
+#, qt-format
 msgid ""
 "You are trying to securely reach %1, but the security certificate of this "
 "website is not trusted. Reason: %2"
 msgstr ""
 "Du försöker nå %1 via en säker anslutning, men webbsidans "
-"säkerhetscertifikat är opålitligt."
+"säkerhetscertifikat är opålitligt. Anledning: %2"
 
 #: src/app/CertificateVerificationDialog.qml:39
 #: src/app/InvalidCertificateErrorSheet.qml:160
@@ -349,9 +351,8 @@ msgid "Proceed anyway"
 msgstr "Fortsätt ändå"
 
 #: src/app/ColorSelectDialog.qml:25
-#, fuzzy
 msgid "Select Color"
-msgstr "Markera alla"
+msgstr "Välj färg"
 
 #: src/app/ConfirmDialog.qml:24
 msgid "JavaScript Confirmation"
@@ -359,7 +360,7 @@ msgstr "JavaScript-bekräftelse"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
-msgstr ""
+msgstr "Anpassade användaragenter"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:85
 #: src/app/DomainSettingsPage.qml:83 src/app/DownloadsPage.qml:103
@@ -368,92 +369,89 @@ msgstr "Radera"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
-msgstr ""
+msgstr "Ny användaragent"
 
 #: src/app/CustomUserAgentsPage.qml:161
 msgid "Edit User Agent"
-msgstr ""
+msgstr "Redigera användaragent"
 
 #: src/app/CustomUserAgentsPage.qml:187
-#, fuzzy
 msgid "No custom user agents available"
-msgstr "Inga hämtningar tillgängliga"
+msgstr "Inga anpassade användaragenter tillgängliga"
 
 #: src/app/DomainPermissionsPage.qml:55
 msgid "Domain blacklist/whitelist"
-msgstr ""
+msgstr "Domän svartlista/vitlista"
 
 #: src/app/DomainPermissionsPage.qml:114 src/app/DomainSettingsPage.qml:114
 msgid "Add domain"
-msgstr ""
+msgstr "Lägg till domän"
 
 #: src/app/DomainPermissionsPage.qml:115
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
 msgstr ""
+"Ange namnet på domänen, t.ex. Exempel.com (underdomäner kommer att tas bort)."
 
 #: src/app/DomainPermissionsPage.qml:223
 msgid "Not Set"
-msgstr ""
+msgstr "Inte inställd"
 
 #: src/app/DomainPermissionsPage.qml:233
 msgid "Never allow access"
-msgstr ""
+msgstr "Tillåt aldrig åtkomst"
 
 #: src/app/DomainPermissionsPage.qml:244
 msgid "Always allow access"
-msgstr ""
+msgstr "Tillåt alltid åtkomst"
 
 #: src/app/DomainPermissionsPage.qml:284
 msgid "No sites have been granted special permissions"
-msgstr ""
+msgstr "Inga webbplatser har beviljats särskilda behörigheter"
 
 #: src/app/DomainSettingsPage.qml:53
 msgid "Domain specific settings"
-msgstr ""
+msgstr "Domänspecifika inställningar"
 
 #: src/app/DomainSettingsPage.qml:115
 msgid "Enter the name of the domain, e.g. m.example.com"
-msgstr ""
+msgstr "Ange namnet på domänen, t.ex. m.example.com"
 
 #: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
-msgstr ""
+msgstr "tillåt att starta andra appar"
 
 #: src/app/DomainSettingsPage.qml:226
-#, fuzzy
 msgid "access your location"
-msgstr "Tillåt domänen att komma åt din kamera?"
+msgstr "komma åt din plats"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "Fråga varje gång"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "Tillåt"
+msgstr "Tillåtet"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Förnekad"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
-msgstr ""
+msgstr "anpassad användaragent"
 
 #: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
-msgstr ""
+msgstr "Zoom: "
 
 #: src/app/DomainSettingsPage.qml:325
 msgid "not set"
-msgstr ""
+msgstr "inte satt"
 
 #: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
-msgstr ""
+msgstr "Inga domänspecifika inställningar tillgängliga"
 
 #. TRANSLATORS: %1 is the percentage of the download completed so far
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
@@ -467,67 +465,55 @@ msgstr "Hämtning misslyckades"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "Okänd"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "Radera"
+msgstr "Radera fil"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "Rensa historik"
+msgstr "Rensa från historik"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "Kopiera länk"
+msgstr "Kopiera hämtningslänk"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "Hämtningar"
+msgstr "Senaste hämtningar"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
-msgstr "Hämtningar"
+msgstr "Inga senaste hämtningar"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Avbryt"
+msgstr "Avbryten"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Slutförd"
 
 #: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
 #: src/app/webcontainer/WebappSettingsPage.qml:273
 msgid "Clear"
-msgstr "Töm"
+msgstr "Rensa"
 
 #: src/app/DownloadsDialog.qml:182
 msgid "View All"
-msgstr ""
+msgstr "Visa alla"
 
 #: src/app/DownloadsPage.qml:48 src/app/webbrowser/Browser.qml:829
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Downloads"
-msgstr "Hämtningar"
+msgstr "Nerladdningar"
 
 #: src/app/DownloadsPage.qml:62
 msgid "Confirm selection"
@@ -539,19 +525,19 @@ msgstr "Inga hämtningar tillgängliga"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "detta användaragentnamn har redan tagits"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
 msgid "Add the name for the user agent"
-msgstr ""
+msgstr "Lägg till namnet för denna användaragenten"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
-msgstr ""
+msgstr "Ange användaragentsträng..."
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
-msgstr ""
+msgstr "Certifikatsfel"
 
 #: src/app/ErrorSheet.qml:42
 msgid "Network Error"
@@ -566,7 +552,7 @@ msgstr "Du verkar ha problem med att visa: %1."
 #: src/app/ErrorSheet.qml:56
 #, qt-format
 msgid "Error: %1"
-msgstr ""
+msgstr "Fel: %1"
 
 #: src/app/ErrorSheet.qml:62 src/app/InvalidCertificateErrorSheet.qml:173
 msgid "Back to safety"
@@ -734,16 +720,15 @@ msgstr "Webbsidan %1:%2 kräver autentisering."
 
 #: src/app/SavePageDialog.qml:24
 msgid "Save page as HTML / PDF"
-msgstr ""
+msgstr "Spara sida som HTML / PDF"
 
 #: src/app/SavePageDialog.qml:41
-#, fuzzy
 msgid "No save actions are available"
-msgstr "Inga hämtningar tillgängliga"
+msgstr "Inga sparade åtgärder är tillgängliga"
 
 #: src/app/SavePageDialog.qml:46
 msgid "Save as HTML"
-msgstr ""
+msgstr "Spara som HTML"
 
 #: src/app/SavePageDialog.qml:54
 #: src/app/webbrowser/ContentDownloadDialog.qml:102
@@ -752,11 +737,11 @@ msgstr "Hämta"
 
 #: src/app/SavePageDialog.qml:64
 msgid "Save as PDF"
-msgstr ""
+msgstr "Spara som PDF"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Ta bort från lista"
 
 #: src/app/webbrowser/AddressBar.qml:242
 msgid "find in page"
@@ -768,7 +753,7 @@ msgstr "sök eller ange en adress"
 
 #: src/app/webbrowser/AddressBar.qml:395
 msgid "Paste and Go"
-msgstr ""
+msgstr "Klistra in och gå"
 
 #: src/app/webbrowser/BookmarkOptions.qml:66
 msgid "Bookmark Added"
@@ -821,34 +806,34 @@ msgstr "Bokmärken"
 #: src/app/webbrowser/Browser.qml:231
 #: src/app/webcontainer/WebViewImplOxide.qml:303
 msgid "Blocked domain"
-msgstr ""
+msgstr "Blockerad domän"
 
 #: src/app/webbrowser/Browser.qml:232
 #: src/app/webcontainer/WebViewImplOxide.qml:304
 #, qt-format
 msgid "Blocked navigation request to domain %1."
-msgstr ""
+msgstr "Blockerad navigationsbegäran till domän %1."
 
 #: src/app/webbrowser/Browser.qml:258
 #: src/app/webcontainer/WebViewImplOxide.qml:330
 msgid "Whitelisted domain"
-msgstr ""
+msgstr "Vitlistad domän"
 
 #: src/app/webbrowser/Browser.qml:259
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
 msgstr ""
+"domän %1 är nu vitlistad, den kommer att vara aktiv vid nästa omladdning av "
+"sida."
 
 #: src/app/webbrowser/Browser.qml:649
 msgid "Done"
-msgstr "Klar"
+msgstr "Klart"
 
 #: src/app/webbrowser/Browser.qml:674
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "Stäng flik"
+msgstr "Öppna flik igen"
 
 #: src/app/webbrowser/Browser.qml:790
 msgid "New window"
@@ -869,15 +854,15 @@ msgstr "Inställningar"
 
 #: src/app/webbrowser/Browser.qml:842
 msgid "View source"
-msgstr ""
+msgstr "Visa källkod"
 
 #: src/app/webbrowser/Browser.qml:855
 msgid "Save / Print to PDF"
-msgstr ""
+msgstr "Spara / Skriv ut till PDF"
 
 #: src/app/webbrowser/Browser.qml:876 src/app/WebViewImpl.qml:680
 msgid "Zoom"
-msgstr ""
+msgstr "Zooma"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
 #: src/app/webbrowser/Browser.qml:1075 src/app/webbrowser/Browser.qml:1113
@@ -886,12 +871,8 @@ msgid "(%1)"
 msgstr "(%1)"
 
 #: src/app/webbrowser/Browser.qml:1947
-#, fuzzy
-#| msgid ""
-#| "Choose an application to open this file or add it to the downloads folder."
 msgid "the file is already in the downloads folder."
-msgstr ""
-"Välj ett program för att öppna filen eller lägg den i mappen för hämtningar."
+msgstr "filen finns redan i hämtningsmappen."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:83
 msgid ""
@@ -935,9 +916,9 @@ msgstr "Idag"
 #. TRANSLATORS: %1 refers to the current page’s title
 #: src/app/webbrowser/morph-browser.qml:110
 #: src/app/webcontainer/webapp-container.qml:75
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 - Morph Web Browser"
-msgstr "%1 - Ubuntu webbläsare"
+msgstr "%1 - Morph webbläsare"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:41
 msgid "This is a private tab"
@@ -997,11 +978,11 @@ msgstr "Webbplatsens identitet har inte bekräftats."
 #: src/app/webbrowser/SecurityCertificatePopover.qml:109
 #, qt-format
 msgid "You are connected to %1 via HTTPS. The certificate is valid."
-msgstr ""
+msgstr "Du är ansluten till %1 via HTTPS. Certifikatet är giltigt."
 
 #: src/app/webbrowser/SettingsDeviceSelector.qml:42
 msgid "Default"
-msgstr "Förval"
+msgstr "Standard"
 
 #: src/app/webbrowser/SettingsPage.qml:74
 #: src/app/webbrowser/SettingsPage.qml:257
@@ -1010,10 +991,8 @@ msgstr "Sökmotor"
 
 #: src/app/webbrowser/SettingsPage.qml:91
 #: src/app/webbrowser/SettingsPage.qml:484
-#, fuzzy
-#| msgid "New Tab"
 msgid "New Tab Page"
-msgstr "Ny flik"
+msgstr "Ny fliksida"
 
 #: src/app/webbrowser/SettingsPage.qml:119
 msgid "Restore previous session at startup"
@@ -1021,27 +1000,26 @@ msgstr "Återställ tidigare session vid uppstart"
 
 #: src/app/webbrowser/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
-msgstr ""
+msgstr "ej tillgängligt på grund av start i privat läge"
 
 #: src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
-msgstr ""
+msgstr "Ställ in skrivbordsläge"
 
 #: src/app/webbrowser/SettingsPage.qml:159
 #: src/app/webcontainer/WebappSettingsPage.qml:58
 msgid "Automatic fit to width"
-msgstr ""
+msgstr "Automatisk passform till bredd"
 
 #: src/app/webbrowser/SettingsPage.qml:160
 #: src/app/webcontainer/WebappSettingsPage.qml:59
 msgid "Adjusts the width of the website to the window"
-msgstr ""
+msgstr "Justerar webbplatsens bredd till fönstret"
 
 #: src/app/webbrowser/SettingsPage.qml:179
 #: src/app/webcontainer/WebappSettingsPage.qml:78
-#, fuzzy
 msgid "Default Zoom"
-msgstr "Förval"
+msgstr "Standard zoom"
 
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webbrowser/SettingsPage.qml:300
@@ -1055,15 +1033,13 @@ msgid "Reset browser settings"
 msgstr "Återställ webbläsarinställningarna"
 
 #: src/app/webbrowser/SettingsPage.qml:314
-#, fuzzy
-#| msgid "Leave Private Mode"
 msgid "Start in private mode"
-msgstr "Lämna privat läge"
+msgstr "Starta i privat läge"
 
 #: src/app/webbrowser/SettingsPage.qml:338
 #: src/app/webcontainer/WebappSettingsPage.qml:186
 msgid "Only allow browsing to whitelisted websites"
-msgstr ""
+msgstr "Tillåt bara att surfa till vitlistade webbplatser"
 
 #: src/app/webbrowser/SettingsPage.qml:378
 #: src/app/webbrowser/SettingsPage.qml:569
@@ -1071,48 +1047,36 @@ msgid "Camera & microphone"
 msgstr "Kamera & mikrofon"
 
 #: src/app/webbrowser/SettingsPage.qml:387
-#, fuzzy
-#| msgid "Clear Browsing History"
 msgid "Clear browsing history"
 msgstr "Rensa webbläsarhistorik"
 
 #: src/app/webbrowser/SettingsPage.qml:391
-#, fuzzy
-#| msgid "Clear Browsing History?"
 msgid "Clear browsing history?"
 msgstr "Rensa webbläsarhistorik?"
 
 #: src/app/webbrowser/SettingsPage.qml:399
 #: src/app/webcontainer/WebappSettingsPage.qml:227
-#, fuzzy
-#| msgid "Clear Cache"
 msgid "Clear cache"
 msgstr "Rensa cache"
 
 #: src/app/webbrowser/SettingsPage.qml:402
 #: src/app/webcontainer/WebappSettingsPage.qml:230
-#, fuzzy
-#| msgid "Clear Cache?"
 msgid "Clear cache?"
 msgstr "Rensa cache?"
 
 #: src/app/webbrowser/SettingsPage.qml:410
 #: src/app/webcontainer/WebappSettingsPage.qml:238
-#, fuzzy
-#| msgid "Clear Cache"
 msgid "Clear all cookies"
-msgstr "Rensa cache"
+msgstr "Rensa alla kakor"
 
 #: src/app/webbrowser/SettingsPage.qml:413
 #: src/app/webcontainer/WebappSettingsPage.qml:241
-#, fuzzy
-#| msgid "Clear Cache?"
 msgid "Clear all Cookies?"
-msgstr "Rensa cache?"
+msgstr "Rensa alla kakor?"
 
 #: src/app/webbrowser/SettingsPage.qml:496
 msgid "Custom hompage"
-msgstr ""
+msgstr "Anpassad hemsida"
 
 #: src/app/webbrowser/SettingsPage.qml:581
 msgid "Microphone"
@@ -1222,61 +1186,56 @@ msgstr "Hoppsan, något gick snett!"
 
 #: src/app/webcontainer/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
-msgstr ""
+msgstr "WebappContainer inställningar"
 
 #: src/app/webcontainer/WebappSettingsPage.qml:143
-#, fuzzy
 msgid "Reset webapp settings"
-msgstr "Återställ webbläsarinställningarna"
+msgstr "Återställ webbappinställningarna"
 
 #: src/app/webcontainer/WebViewImplOxide.qml:331
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
-msgstr ""
+msgstr "domän %1 är nu vitlistad, ladda om sidan."
 
 #: src/app/ZoomControls.qml:62
 msgid "Zoom Out"
-msgstr ""
+msgstr "Zooma ut"
 
 #: src/app/ZoomControls.qml:69
 msgid "Reset"
-msgstr ""
+msgstr "Återställ"
 
 #: src/app/ZoomControls.qml:69
 msgid "fit"
-msgstr ""
+msgstr "passa"
 
 #: src/app/ZoomControls.qml:76
 msgid "Zoom In"
-msgstr ""
+msgstr "Zooma in"
 
 #: src/app/ZoomControls.qml:101
 msgid "Current Zoom"
-msgstr ""
+msgstr "Nuvarande zoom"
 
 #: src/app/ZoomControls.qml:102
 msgid "domain"
-msgstr ""
+msgstr "domän"
 
 #: src/app/ZoomControls.qml:102
-#, fuzzy
-#| msgid "Default"
 msgid "default"
-msgstr "Förval"
+msgstr "standard"
 
 #: src/app/ZoomControls.qml:102
 msgid "auto-fit"
-msgstr ""
+msgstr "auto-passning"
 
 #: src/app/ZoomControls.qml:191
-#, fuzzy
-#| msgid "Save image"
 msgid "Save Zoom"
-msgstr "Spara bild"
+msgstr "Spara zoom"
 
 #: src/app/ZoomControls.qml:193
 msgid "the current web app"
-msgstr ""
+msgstr "den nuvarande web appen"
 
 #: src/app/ZoomControls.qml:196
 #, qt-format
@@ -1284,27 +1243,27 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"Den nuvarande zoomnivån (%1%) kan sparas i %2 antingen för den aktuella "
+"domänen eller som standard zoomnivå."
 
 #: src/app/ZoomControls.qml:198
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr ""
+msgstr "Den nuvarande zoomnivån (%1%) kan sparas i %2 för den aktuella domänen."
 
 #: src/app/ZoomControls.qml:200
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr ""
+msgstr "Den nuvarande zoomnivån (%1%) kan sparas i %2 som standard zoomnivå."
 
 #: src/app/ZoomControls.qml:207
-#, fuzzy
-#| msgid "Save in"
 msgid "Save for domain"
-msgstr "Spara i"
+msgstr "Spara för domän"
 
 #: src/app/ZoomControls.qml:220
 msgid "Save as default"
-msgstr ""
+msgstr "Spara som standard"
 
 #~ msgid "Resume"
 #~ msgstr "Återuppta"

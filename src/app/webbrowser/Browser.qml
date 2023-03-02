@@ -99,9 +99,9 @@ Common.BrowserView {
     }
 
     function restoreTabState(state) {
-        var properties = {'initialUrl': state.url, 'initialTitle': state.title,
-                          'uniqueId': state.uniqueId, 'initialIcon': state.icon,
-                          'preview': state.preview}
+        var properties = {'initialUrl': UrlUtils.urlFromString(state.url),
+                          'initialTitle': state.title, 'uniqueId': state.uniqueId,
+                          'initialIcon': state.icon, 'preview': state.preview}
         return createTab(properties)
     }
 

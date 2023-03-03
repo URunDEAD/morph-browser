@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-10 14:27+0000\n"
-"PO-Revision-Date: 2023-03-02 17:36+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2023-03-03 17:28+0000\n"
+"Last-Translator: Taisei Washington <therealasahi95@users.noreply.hosted."
+"weblate.org>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/ja/>\n"
 "Language: ja\n"
@@ -467,7 +468,7 @@ msgstr ""
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: src/app/DownloadDelegate.qml:170
 msgid "Download failed"

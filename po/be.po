@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-10 14:27+0000\n"
+"POT-Creation-Date: 2023-03-02 07:15+0000\n"
 "PO-Revision-Date: 2021-05-20 14:38+0000\n"
 "Last-Translator: Zmicer <nashtlumach@gmail.com>\n"
 "Language-Team: Belarusian <https://translate.ubports.com/projects/ubports/"
@@ -107,7 +107,7 @@ msgstr "Выразаць"
 msgid "Erase"
 msgstr "Сцерці"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:822
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:821
 msgid "Find in page"
 msgstr "Знайсці на старонцы"
 
@@ -137,7 +137,7 @@ msgstr "Перайсці"
 msgid "Address;URL;www"
 msgstr "Адрас;URL;www"
 
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:692
+#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:691
 #: src/app/webbrowser/TabsBar.qml:88
 msgid "New Tab"
 msgstr "Новая картка"
@@ -209,12 +209,12 @@ msgid "Save video"
 msgstr ""
 
 #: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
-#: src/app/DomainPermissionsPage.qml:69 src/app/DomainSettingsPage.qml:67
-#: src/app/DownloadsPage.qml:87
+#: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
+#: src/app/DownloadsPage.qml:86
 msgid "Select all"
 msgstr "Пазначыць усё"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:801
 msgid "Share"
 msgstr "Падзяліцца"
 
@@ -271,7 +271,7 @@ msgstr "Дазволіць"
 #: src/app/webbrowser/SettingsPage.qml:554
 #: src/app/webcontainer/AccountChooserDialog.qml:96
 #: src/app/webcontainer/ContextMenuMobile.qml:143
-#: src/app/webcontainer/WebappSettingsPage.qml:266 src/app/ZoomControls.qml:238
+#: src/app/webcontainer/WebappSettingsPage.qml:266 src/app/ZoomControls.qml:237
 msgid "Cancel"
 msgstr "Скасаваць"
 
@@ -360,12 +360,12 @@ msgstr "Абраць колер"
 msgid "JavaScript Confirmation"
 msgstr "Пацверджанне дзеянняў JavaScript"
 
-#: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
+#: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:149
 msgid "Custom User Agents"
 msgstr ""
 
-#: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:85
-#: src/app/DomainSettingsPage.qml:83 src/app/DownloadsPage.qml:103
+#: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
+#: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:102
 msgid "Delete"
 msgstr "Выдаліць"
 
@@ -382,80 +382,80 @@ msgstr ""
 msgid "No custom user agents available"
 msgstr "Няма даступных загрузак"
 
-#: src/app/DomainPermissionsPage.qml:55
+#: src/app/DomainPermissionsPage.qml:54
 msgid "Domain blacklist/whitelist"
 msgstr ""
 
-#: src/app/DomainPermissionsPage.qml:114 src/app/DomainSettingsPage.qml:114
+#: src/app/DomainPermissionsPage.qml:113 src/app/DomainSettingsPage.qml:113
 msgid "Add domain"
 msgstr ""
 
-#: src/app/DomainPermissionsPage.qml:115
+#: src/app/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
 msgstr ""
 
-#: src/app/DomainPermissionsPage.qml:223
+#: src/app/DomainPermissionsPage.qml:222
 msgid "Not Set"
 msgstr ""
 
-#: src/app/DomainPermissionsPage.qml:233
+#: src/app/DomainPermissionsPage.qml:232
 msgid "Never allow access"
 msgstr ""
 
-#: src/app/DomainPermissionsPage.qml:244
+#: src/app/DomainPermissionsPage.qml:243
 msgid "Always allow access"
 msgstr ""
 
-#: src/app/DomainPermissionsPage.qml:284
+#: src/app/DomainPermissionsPage.qml:283
 msgid "No sites have been granted special permissions"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:53
+#: src/app/DomainSettingsPage.qml:52
 msgid "Domain specific settings"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:115
+#: src/app/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:207
+#: src/app/DomainSettingsPage.qml:206
 msgid "allowed to launch other apps"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:226
+#: src/app/DomainSettingsPage.qml:225
 #, fuzzy
 #| msgid "allowed to access your location"
 msgid "access your location"
 msgstr "дазволіць доступ да вызначэння месцазнаходжання"
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/DomainSettingsPage.qml:230
 msgid "Ask each time"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/DomainSettingsPage.qml:230
 #, fuzzy
 #| msgid "Allow"
 msgid "Allowed"
 msgstr "Дазволіць"
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/DomainSettingsPage.qml:230
 msgid "Denied"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:245
+#: src/app/DomainSettingsPage.qml:244
 msgid "custom user agent"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
+#: src/app/DomainSettingsPage.qml:319 src/app/DomainSettingsPage.qml:324
 msgid "Zoom: "
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:325
+#: src/app/DomainSettingsPage.qml:324
 msgid "not set"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:361
+#: src/app/DomainSettingsPage.qml:360
 msgid "No domain specific settings available"
 msgstr ""
 
@@ -528,16 +528,16 @@ msgstr "Ачысціць"
 msgid "View All"
 msgstr ""
 
-#: src/app/DownloadsPage.qml:48 src/app/webbrowser/Browser.qml:829
+#: src/app/DownloadsPage.qml:47 src/app/webbrowser/Browser.qml:828
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Downloads"
 msgstr "Атрыманыя"
 
-#: src/app/DownloadsPage.qml:62
+#: src/app/DownloadsPage.qml:61
 msgid "Confirm selection"
 msgstr "Пацвердзіце выбар"
 
-#: src/app/DownloadsPage.qml:311
+#: src/app/DownloadsPage.qml:310
 msgid "No downloads available"
 msgstr "Няма даступных загрузак"
 
@@ -807,7 +807,7 @@ msgid "Create new folder"
 msgstr "Стварыць новую тэчку"
 
 #: src/app/webbrowser/BookmarkOptions.qml:164
-#: src/app/webbrowser/SettingsPage.qml:530 src/app/ZoomControls.qml:83
+#: src/app/webbrowser/SettingsPage.qml:530 src/app/ZoomControls.qml:82
 msgid "Save"
 msgstr "Захаваць"
 
@@ -820,79 +820,79 @@ msgstr "Хатняя старонка"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:810 src/app/webbrowser/NewTabView.qml:130
+#: src/app/webbrowser/Browser.qml:809 src/app/webbrowser/NewTabView.qml:130
 #: src/app/webbrowser/NewTabViewWide.qml:139
 msgid "Bookmarks"
 msgstr "Закладкі"
 
-#: src/app/webbrowser/Browser.qml:231
-#: src/app/webcontainer/WebViewImplOxide.qml:303
+#: src/app/webbrowser/Browser.qml:230
+#: src/app/webcontainer/WebViewImplOxide.qml:302
 msgid "Blocked domain"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:232
-#: src/app/webcontainer/WebViewImplOxide.qml:304
+#: src/app/webbrowser/Browser.qml:231
+#: src/app/webcontainer/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:258
-#: src/app/webcontainer/WebViewImplOxide.qml:330
+#: src/app/webbrowser/Browser.qml:257
+#: src/app/webcontainer/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:259
+#: src/app/webbrowser/Browser.qml:258
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:649
+#: src/app/webbrowser/Browser.qml:648
 msgid "Done"
 msgstr "Завершана"
 
-#: src/app/webbrowser/Browser.qml:674
+#: src/app/webbrowser/Browser.qml:673
 #, fuzzy
 #| msgid "Close Tab"
 msgid "Reopen Tab"
 msgstr "Закрыць вакенца"
 
-#: src/app/webbrowser/Browser.qml:790
+#: src/app/webbrowser/Browser.qml:789
 msgid "New window"
 msgstr "Новае акно"
 
-#: src/app/webbrowser/Browser.qml:796
+#: src/app/webbrowser/Browser.qml:795
 msgid "New private window"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:816 src/app/webbrowser/HistoryView.qml:31
+#: src/app/webbrowser/Browser.qml:815 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
 msgstr "Гісторыя"
 
-#: src/app/webbrowser/Browser.qml:836 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/Browser.qml:835 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
 msgstr "Налады"
 
-#: src/app/webbrowser/Browser.qml:842
+#: src/app/webbrowser/Browser.qml:841
 msgid "View source"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:855
+#: src/app/webbrowser/Browser.qml:854
 msgid "Save / Print to PDF"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:876 src/app/WebViewImpl.qml:680
+#: src/app/webbrowser/Browser.qml:875 src/app/WebViewImpl.qml:679
 msgid "Zoom"
 msgstr ""
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1075 src/app/webbrowser/Browser.qml:1113
+#: src/app/webbrowser/Browser.qml:1074 src/app/webbrowser/Browser.qml:1112
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1947
+#: src/app/webbrowser/Browser.qml:1946
 #, fuzzy
 #| msgid ""
 #| "Choose an application to open this file or add it to the downloads folder."
@@ -1121,8 +1121,10 @@ msgid "Clear all Cookies?"
 msgstr "Спустошыць кэш?"
 
 #: src/app/webbrowser/SettingsPage.qml:496
-msgid "Custom hompage"
-msgstr ""
+#, fuzzy
+#| msgid "Homepage"
+msgid "Custom homepage"
+msgstr "Хатняя старонка"
 
 #: src/app/webbrowser/SettingsPage.qml:581
 msgid "Microphone"
@@ -1241,80 +1243,80 @@ msgstr ""
 msgid "Reset webapp settings"
 msgstr "Скінуць налады браўзэра"
 
-#: src/app/webcontainer/WebViewImplOxide.qml:331
+#: src/app/webcontainer/WebViewImplOxide.qml:330
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
 msgstr ""
 
-#: src/app/ZoomControls.qml:62
+#: src/app/ZoomControls.qml:61
 msgid "Zoom Out"
 msgstr ""
 
-#: src/app/ZoomControls.qml:69
+#: src/app/ZoomControls.qml:68
 msgid "Reset"
 msgstr "Скінуць"
 
-#: src/app/ZoomControls.qml:69
+#: src/app/ZoomControls.qml:68
 msgid "fit"
 msgstr ""
 
-#: src/app/ZoomControls.qml:76
+#: src/app/ZoomControls.qml:75
 msgid "Zoom In"
 msgstr ""
 
-#: src/app/ZoomControls.qml:101
+#: src/app/ZoomControls.qml:100
 msgid "Current Zoom"
 msgstr ""
 
-#: src/app/ZoomControls.qml:102
+#: src/app/ZoomControls.qml:101
 msgid "domain"
 msgstr ""
 
-#: src/app/ZoomControls.qml:102
+#: src/app/ZoomControls.qml:101
 #, fuzzy
 #| msgid "Default"
 msgid "default"
 msgstr "Змоўчна"
 
-#: src/app/ZoomControls.qml:102
+#: src/app/ZoomControls.qml:101
 msgid "auto-fit"
 msgstr ""
 
-#: src/app/ZoomControls.qml:191
+#: src/app/ZoomControls.qml:190
 #, fuzzy
 #| msgid "Save image"
 msgid "Save Zoom"
 msgstr "Захаваць выяву"
 
-#: src/app/ZoomControls.qml:193
+#: src/app/ZoomControls.qml:192
 msgid "the current web app"
 msgstr ""
 
-#: src/app/ZoomControls.qml:196
+#: src/app/ZoomControls.qml:195
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
 
-#: src/app/ZoomControls.qml:198
+#: src/app/ZoomControls.qml:197
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
 msgstr ""
 
-#: src/app/ZoomControls.qml:200
+#: src/app/ZoomControls.qml:199
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
 msgstr ""
 
-#: src/app/ZoomControls.qml:207
+#: src/app/ZoomControls.qml:206
 #, fuzzy
 #| msgid "Save in"
 msgid "Save for domain"
 msgstr "Захаваць у"
 
-#: src/app/ZoomControls.qml:220
+#: src/app/ZoomControls.qml:219
 msgid "Save as default"
 msgstr ""
 

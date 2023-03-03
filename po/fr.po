@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-10 14:27+0000\n"
+"POT-Creation-Date: 2023-03-02 07:15+0000\n"
 "PO-Revision-Date: 2023-01-17 10:48+0000\n"
 "Last-Translator: Timothy G. <22472919+GTimothy@users.noreply.github.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/lomiri/"
-"morph-browser/fr/>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/lomiri/morph-"
+"browser/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -103,7 +103,7 @@ msgstr "Couper"
 msgid "Erase"
 msgstr "Effacer"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:822
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:821
 msgid "Find in page"
 msgstr "Trouver dans la page"
 
@@ -133,7 +133,7 @@ msgstr "Aller à"
 msgid "Address;URL;www"
 msgstr "Adresse;lien;URL;www"
 
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:692
+#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:691
 #: src/app/webbrowser/TabsBar.qml:88
 msgid "New Tab"
 msgstr "Nouvel onglet"
@@ -204,12 +204,12 @@ msgid "Save video"
 msgstr "Enregistrer la vidéo"
 
 #: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
-#: src/app/DomainPermissionsPage.qml:69 src/app/DomainSettingsPage.qml:67
-#: src/app/DownloadsPage.qml:87
+#: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
+#: src/app/DownloadsPage.qml:86
 msgid "Select all"
 msgstr "Tout sélectionner"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:802
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:801
 msgid "Share"
 msgstr "Partager"
 
@@ -266,7 +266,7 @@ msgstr "Autoriser"
 #: src/app/webbrowser/SettingsPage.qml:554
 #: src/app/webcontainer/AccountChooserDialog.qml:96
 #: src/app/webcontainer/ContextMenuMobile.qml:143
-#: src/app/webcontainer/WebappSettingsPage.qml:266 src/app/ZoomControls.qml:238
+#: src/app/webcontainer/WebappSettingsPage.qml:266 src/app/ZoomControls.qml:237
 msgid "Cancel"
 msgstr "Annuler"
 
@@ -358,12 +358,12 @@ msgstr "Sélectionner une couleur"
 msgid "JavaScript Confirmation"
 msgstr "Confirmation JavaScript"
 
-#: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
+#: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:149
 msgid "Custom User Agents"
 msgstr "Agents utilisateur personnalisés"
 
-#: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:85
-#: src/app/DomainSettingsPage.qml:83 src/app/DownloadsPage.qml:103
+#: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
+#: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:102
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -379,78 +379,78 @@ msgstr "Modifier Agent Utilisateur"
 msgid "No custom user agents available"
 msgstr "Aucun agent utilisateur personnalisé disponible"
 
-#: src/app/DomainPermissionsPage.qml:55
+#: src/app/DomainPermissionsPage.qml:54
 msgid "Domain blacklist/whitelist"
 msgstr "Liste blanche/noire de domaines"
 
-#: src/app/DomainPermissionsPage.qml:114 src/app/DomainSettingsPage.qml:114
+#: src/app/DomainPermissionsPage.qml:113 src/app/DomainSettingsPage.qml:113
 msgid "Add domain"
 msgstr "Ajouter un domaine"
 
-#: src/app/DomainPermissionsPage.qml:115
+#: src/app/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
 msgstr ""
 "Saisissez le nom de domaine, par exemple domaine.com (les sous-domaines "
 "seront supprimés)."
 
-#: src/app/DomainPermissionsPage.qml:223
+#: src/app/DomainPermissionsPage.qml:222
 msgid "Not Set"
 msgstr "Non défini"
 
-#: src/app/DomainPermissionsPage.qml:233
+#: src/app/DomainPermissionsPage.qml:232
 msgid "Never allow access"
 msgstr "Ne jamais autoriser l'accès"
 
-#: src/app/DomainPermissionsPage.qml:244
+#: src/app/DomainPermissionsPage.qml:243
 msgid "Always allow access"
 msgstr "Toujours autoriser l'accès"
 
-#: src/app/DomainPermissionsPage.qml:284
+#: src/app/DomainPermissionsPage.qml:283
 msgid "No sites have been granted special permissions"
 msgstr "Aucun site n'a obtenu d'autorisation spéciale"
 
-#: src/app/DomainSettingsPage.qml:53
+#: src/app/DomainSettingsPage.qml:52
 msgid "Domain specific settings"
 msgstr "Paramètres spécifiques au domaine"
 
-#: src/app/DomainSettingsPage.qml:115
+#: src/app/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
 msgstr "Saisissez le nom du domaine, par exemple m.domaine.com"
 
-#: src/app/DomainSettingsPage.qml:207
+#: src/app/DomainSettingsPage.qml:206
 msgid "allowed to launch other apps"
 msgstr "Autorisé à lancer d'autres applications"
 
-#: src/app/DomainSettingsPage.qml:226
+#: src/app/DomainSettingsPage.qml:225
 msgid "access your location"
 msgstr "accéder à votre position"
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/DomainSettingsPage.qml:230
 msgid "Ask each time"
 msgstr "Demander à chaque fois"
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/DomainSettingsPage.qml:230
 msgid "Allowed"
 msgstr "Autorisé"
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/DomainSettingsPage.qml:230
 msgid "Denied"
 msgstr "Non autorisé"
 
-#: src/app/DomainSettingsPage.qml:245
+#: src/app/DomainSettingsPage.qml:244
 msgid "custom user agent"
 msgstr "Agent utilisateur personnalisé"
 
-#: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
+#: src/app/DomainSettingsPage.qml:319 src/app/DomainSettingsPage.qml:324
 msgid "Zoom: "
 msgstr "Zoom : "
 
-#: src/app/DomainSettingsPage.qml:325
+#: src/app/DomainSettingsPage.qml:324
 msgid "not set"
 msgstr "Non défini"
 
-#: src/app/DomainSettingsPage.qml:361
+#: src/app/DomainSettingsPage.qml:360
 msgid "No domain specific settings available"
 msgstr "Aucun paramètre spécifique au domaine disponible"
 
@@ -513,16 +513,16 @@ msgstr "Effacer"
 msgid "View All"
 msgstr "Voir Tout"
 
-#: src/app/DownloadsPage.qml:48 src/app/webbrowser/Browser.qml:829
+#: src/app/DownloadsPage.qml:47 src/app/webbrowser/Browser.qml:828
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Downloads"
 msgstr "Téléchargements"
 
-#: src/app/DownloadsPage.qml:62
+#: src/app/DownloadsPage.qml:61
 msgid "Confirm selection"
 msgstr "Confirmer la sélection"
 
-#: src/app/DownloadsPage.qml:311
+#: src/app/DownloadsPage.qml:310
 msgid "No downloads available"
 msgstr "Aucun téléchargement disponible"
 
@@ -792,7 +792,7 @@ msgid "Create new folder"
 msgstr "Créer un nouveau dossier"
 
 #: src/app/webbrowser/BookmarkOptions.qml:164
-#: src/app/webbrowser/SettingsPage.qml:530 src/app/ZoomControls.qml:83
+#: src/app/webbrowser/SettingsPage.qml:530 src/app/ZoomControls.qml:82
 msgid "Save"
 msgstr "Enregistrer"
 
@@ -805,28 +805,28 @@ msgstr "Page d’accueil"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:810 src/app/webbrowser/NewTabView.qml:130
+#: src/app/webbrowser/Browser.qml:809 src/app/webbrowser/NewTabView.qml:130
 #: src/app/webbrowser/NewTabViewWide.qml:139
 msgid "Bookmarks"
 msgstr "Favoris"
 
-#: src/app/webbrowser/Browser.qml:231
-#: src/app/webcontainer/WebViewImplOxide.qml:303
+#: src/app/webbrowser/Browser.qml:230
+#: src/app/webcontainer/WebViewImplOxide.qml:302
 msgid "Blocked domain"
 msgstr "Domaine bloqué"
 
-#: src/app/webbrowser/Browser.qml:232
-#: src/app/webcontainer/WebViewImplOxide.qml:304
+#: src/app/webbrowser/Browser.qml:231
+#: src/app/webcontainer/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr "Demande de navigation vers le domaine %1 bloquée."
 
-#: src/app/webbrowser/Browser.qml:258
-#: src/app/webcontainer/WebViewImplOxide.qml:330
+#: src/app/webbrowser/Browser.qml:257
+#: src/app/webcontainer/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
 msgstr "Domaine en liste blanche"
 
-#: src/app/webbrowser/Browser.qml:259
+#: src/app/webbrowser/Browser.qml:258
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
@@ -834,50 +834,50 @@ msgstr ""
 "Le domaine %1 est désormais ajouté à la liste blanche. Ceci sera pris en "
 "compte au prochain chargement de la page."
 
-#: src/app/webbrowser/Browser.qml:649
+#: src/app/webbrowser/Browser.qml:648
 msgid "Done"
 msgstr "Terminé"
 
-#: src/app/webbrowser/Browser.qml:674
+#: src/app/webbrowser/Browser.qml:673
 msgid "Reopen Tab"
 msgstr "Ré-ouvrir l'onglet"
 
-#: src/app/webbrowser/Browser.qml:790
+#: src/app/webbrowser/Browser.qml:789
 msgid "New window"
 msgstr "Nouvelle fenêtre"
 
-#: src/app/webbrowser/Browser.qml:796
+#: src/app/webbrowser/Browser.qml:795
 msgid "New private window"
 msgstr "Nouvelle fenêtre de navigation privée"
 
-#: src/app/webbrowser/Browser.qml:816 src/app/webbrowser/HistoryView.qml:31
+#: src/app/webbrowser/Browser.qml:815 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
 msgstr "Historique"
 
-#: src/app/webbrowser/Browser.qml:836 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/Browser.qml:835 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
 msgstr "Paramètres"
 
-#: src/app/webbrowser/Browser.qml:842
+#: src/app/webbrowser/Browser.qml:841
 msgid "View source"
 msgstr "Afficher le code source"
 
-#: src/app/webbrowser/Browser.qml:855
+#: src/app/webbrowser/Browser.qml:854
 msgid "Save / Print to PDF"
 msgstr "Enregistrer / Imprimer en PDF"
 
-#: src/app/webbrowser/Browser.qml:876 src/app/WebViewImpl.qml:680
+#: src/app/webbrowser/Browser.qml:875 src/app/WebViewImpl.qml:679
 msgid "Zoom"
 msgstr "Zoom"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1075 src/app/webbrowser/Browser.qml:1113
+#: src/app/webbrowser/Browser.qml:1074 src/app/webbrowser/Browser.qml:1112
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1947
+#: src/app/webbrowser/Browser.qml:1946
 msgid "the file is already in the downloads folder."
 msgstr "Le fichier est déjà dans le dossier des téléchargements."
 
@@ -1083,7 +1083,9 @@ msgid "Clear all Cookies?"
 msgstr "Supprimer tous les cookies ?"
 
 #: src/app/webbrowser/SettingsPage.qml:496
-msgid "Custom hompage"
+#, fuzzy
+#| msgid "Custom hompage"
+msgid "Custom homepage"
 msgstr "Page d'accueil personnalisée"
 
 #: src/app/webbrowser/SettingsPage.qml:581
@@ -1202,53 +1204,53 @@ msgstr "Paramètres de WebappContainer"
 msgid "Reset webapp settings"
 msgstr "Réinitialiser les paramètres de l'application Web"
 
-#: src/app/webcontainer/WebViewImplOxide.qml:331
+#: src/app/webcontainer/WebViewImplOxide.qml:330
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
 msgstr ""
 "Le domaine %1 est désormais en liste blanche. Veuillez recharger la page."
 
-#: src/app/ZoomControls.qml:62
+#: src/app/ZoomControls.qml:61
 msgid "Zoom Out"
 msgstr "Dézoomer"
 
-#: src/app/ZoomControls.qml:69
+#: src/app/ZoomControls.qml:68
 msgid "Reset"
 msgstr "Réinitialiser"
 
-#: src/app/ZoomControls.qml:69
+#: src/app/ZoomControls.qml:68
 msgid "fit"
 msgstr "Ajuster"
 
-#: src/app/ZoomControls.qml:76
+#: src/app/ZoomControls.qml:75
 msgid "Zoom In"
 msgstr "Zoomer"
 
-#: src/app/ZoomControls.qml:101
+#: src/app/ZoomControls.qml:100
 msgid "Current Zoom"
 msgstr "Zoom actuel"
 
-#: src/app/ZoomControls.qml:102
+#: src/app/ZoomControls.qml:101
 msgid "domain"
 msgstr "domaine"
 
-#: src/app/ZoomControls.qml:102
+#: src/app/ZoomControls.qml:101
 msgid "default"
 msgstr "par défaut"
 
-#: src/app/ZoomControls.qml:102
+#: src/app/ZoomControls.qml:101
 msgid "auto-fit"
 msgstr "auto-ajustement"
 
-#: src/app/ZoomControls.qml:191
+#: src/app/ZoomControls.qml:190
 msgid "Save Zoom"
 msgstr "Enregistrer le zoom"
 
-#: src/app/ZoomControls.qml:193
+#: src/app/ZoomControls.qml:192
 msgid "the current web app"
 msgstr "L'application Web actuelle"
 
-#: src/app/ZoomControls.qml:196
+#: src/app/ZoomControls.qml:195
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
@@ -1257,14 +1259,14 @@ msgstr ""
 "Le niveau de zoom actuel (%1%) peut être enregistré dans %2 soit pour le "
 "domaine actuel uniquement, soit comme niveau de zoom par défaut."
 
-#: src/app/ZoomControls.qml:198
+#: src/app/ZoomControls.qml:197
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
 msgstr ""
 "Le niveau de zoom actuel (%1%) peut être enregistré dans %2 pour le domaine "
 "actuel."
 
-#: src/app/ZoomControls.qml:200
+#: src/app/ZoomControls.qml:199
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
@@ -1272,11 +1274,11 @@ msgstr ""
 "Le niveau de zoom actuel (%1%) peut être enregistré pour %2 comme niveau de "
 "zoom par défaut."
 
-#: src/app/ZoomControls.qml:207
+#: src/app/ZoomControls.qml:206
 msgid "Save for domain"
 msgstr "Enregistrer pour le domaine"
 
-#: src/app/ZoomControls.qml:220
+#: src/app/ZoomControls.qml:219
 msgid "Save as default"
 msgstr "Enregistrer par défaut"
 

@@ -20,9 +20,9 @@ import QtQuick 2.4
 import Lomiri.Components 1.3
 import Lomiri.Components.Popups 1.3
 import webbrowserapp.private 0.1
+import webbrowsercommon.private 0.1
 import QtWebEngine 1.5
 import "../actions" as Actions
-import "../UrlUtils.js" as UrlUtils
 import ".."
 
 // FIXME: This component breaks encapsulation: it uses variables not defined in

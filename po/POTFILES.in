@@ -93,7 +93,7 @@ src/app/SimpleDownloadDelegate.qml
 src/app/single-instance-manager.cpp
 src/app/ThinProgressBar.qml
 src/app/Thumbnailer.qml
-src/app/UrlUtils.js
+src/app/url-utils.cpp
 src/app/webbrowser/AddressBar.qml
 src/app/webbrowser/BookmarkOptions.qml
 src/app/webbrowser/bookmarks-folderlist-model.cpp
@@ -264,7 +264,6 @@ tests/unittests/qml/tst_Reparenter.qml
 tests/unittests/qml/tst_SearchEngines.qml
 tests/unittests/qml/tst_SettingsPage.qml
 tests/unittests/qml/tst_Suggestions.qml
-tests/unittests/qml/tst_UrlUtils.qml
 tests/unittests/qml/tst_WebProcessMonitor.qml
 tests/unittests/qml/WebbrowserTestCase.qml
 tests/unittests/search-engine/tst_SearchEngineTests.cpp
@@ -273,5 +272,6 @@ tests/unittests/session-utils/tst_SessionUtilsTests.cpp
 tests/unittests/single-instance-manager/tst_SingleInstanceManagerTests.cpp
 tests/unittests/tabs-model/tst_TabsModelTests.cpp
 tests/unittests/text-search-filter-model/tst_TextSearchFilterModelTests.cpp
+tests/unittests/url-utils/tst_UrlUtilsTests.cpp
 tests/unittests/webapp-container-color-helper/tst_WebappContainerColorTests.cpp
 tests/unittests/webapp-container-hook/tst_WebappContainerHookTests.cpp

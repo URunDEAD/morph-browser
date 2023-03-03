@@ -3,7 +3,6 @@ import Lomiri.Components 1.3                  // For LomiriShape.
 import Lomiri.Components.Popups 1.3 as Popups // For saveDialog.
 import QtWebEngine 1.7
 import webbrowsercommon.private 0.1           // For DomainSettingsModel singleton.
-import "UrlUtils.js" as UrlUtils
 
 // ZoomControls object to provide zoom menu, control and autofit logic for WebViewImpl.
 // Scope requirements:

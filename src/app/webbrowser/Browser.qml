@@ -30,7 +30,6 @@ import QtQuick.Controls 2.2 as QQC2
 import webbrowserapp.private 0.1
 import webbrowsercommon.private 0.1
 import "../actions" as Actions
-import "../UrlUtils.js" as UrlUtils
 import ".." as Common
 import "." as Local
 
@@ -100,9 +99,9 @@ Common.BrowserView {
     }
 
     function restoreTabState(state) {
-        var properties = {'initialUrl': state.url, 'initialTitle': state.title,
-                          'uniqueId': state.uniqueId, 'initialIcon': state.icon,
-                          'preview': state.preview}
+        var properties = {'initialUrl': UrlUtils.urlFromString(state.url),
+                          'initialTitle': state.title, 'uniqueId': state.uniqueId,
+                          'initialIcon': state.icon, 'preview': state.preview}
         return createTab(properties)
     }
 

@@ -23,7 +23,6 @@ import Lomiri.Components.Popups 1.3
 import QtWebEngine 1.7
 import Morph.Web 0.1
 import webbrowsercommon.private 0.1
-import "../UrlUtils.js" as UrlUtils
 import ".."
 
 WebappWebview {

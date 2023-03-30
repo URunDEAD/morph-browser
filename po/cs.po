@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 07:15+0000\n"
-"PO-Revision-Date: 2023-03-29 17:39+0000\n"
+"PO-Revision-Date: 2023-03-30 13:45+0000\n"
 "Last-Translator: Jozef Mlich <jmlich83@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/cs/>\n"
@@ -39,7 +39,7 @@ msgstr "Internet;WWW;Prohlížeč;Web;Explorer"
 
 #: morph-browser.desktop.in:9
 msgid "/usr/share/morph-browser/morph-browser.svg"
-msgstr ""
+msgstr "/usr/share/morph-browser/morph-browser.svg"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
@@ -236,11 +236,11 @@ msgstr "Uživatelsky určené URL schémata"
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "Webová stránka '%1' chce otevřít tuto URL mimo webový prohlížeč:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "Chcete otevřít URL pomocí systémové aplikace pokud je to možné?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -372,10 +372,8 @@ msgid "New User Agent"
 msgstr "Nový uživatelský agent"
 
 #: src/app/CustomUserAgentsPage.qml:161
-#, fuzzy
-#| msgid "New User Agent"
 msgid "Edit User Agent"
-msgstr "Nový uživatelský agent"
+msgstr "Upravit uživatelského agenta"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
@@ -423,24 +421,20 @@ msgid "allowed to launch other apps"
 msgstr "spuštění dalších aplikací je povoleno"
 
 #: src/app/DomainSettingsPage.qml:225
-#, fuzzy
-#| msgid "allowed to access your location"
 msgid "access your location"
-msgstr "přístup k vaší poloze je povolen"
+msgstr "přístup k vaší poloze"
 
 #: src/app/DomainSettingsPage.qml:230
 msgid "Ask each time"
-msgstr ""
+msgstr "Zeptat se pokaždé"
 
 #: src/app/DomainSettingsPage.qml:230
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "Umožnit"
+msgstr "Povoleno"
 
 #: src/app/DomainSettingsPage.qml:230
 msgid "Denied"
-msgstr ""
+msgstr "Zakázáno"
 
 #: src/app/DomainSettingsPage.qml:244
 msgid "custom user agent"
@@ -470,53 +464,41 @@ msgstr "Stahování se nezdařilo"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "Neznámo"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "Smazat"
+msgstr "Smazat soubor"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "Vymazat historii"
+msgstr "Odstranit z historie"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
 msgstr "Kopírovat odkaz"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "Stahování"
+msgstr "Nedávné stahování"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
-msgstr "Stahování"
+msgstr "Nejsou žádné nedávné stahování"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Zrušit"
+msgstr "Zrušeno"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Dokončeno"
 
 #: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
 #: src/app/webcontainer/WebappSettingsPage.qml:273
@@ -525,7 +507,7 @@ msgstr "Vyčistit"
 
 #: src/app/DownloadsDialog.qml:182
 msgid "View All"
-msgstr ""
+msgstr "Zobrazit vše"
 
 #: src/app/DownloadsPage.qml:47 src/app/webbrowser/Browser.qml:828
 #: src/app/webcontainer/WebappSettingsPage.qml:117
@@ -542,13 +524,11 @@ msgstr "Žádná stahování"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "toto jméno uživatelského agenta je již použito"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
-#, fuzzy
-#| msgid "Add the name for the new user agent"
 msgid "Add the name for the user agent"
-msgstr "Přidat název novému uživatelskému agentovi"
+msgstr "Přidat název uživatelskému agentovi"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
@@ -760,7 +740,7 @@ msgstr "Uložit jako PDF"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Odstranit ze seznamu"
 
 #: src/app/webbrowser/AddressBar.qml:242
 msgid "find in page"
@@ -849,10 +829,8 @@ msgid "Done"
 msgstr "Hotovo"
 
 #: src/app/webbrowser/Browser.qml:673
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "Zavřít panel"
+msgstr "Znovu otevřít panel"
 
 #: src/app/webbrowser/Browser.qml:789
 msgid "New window"
@@ -1095,10 +1073,8 @@ msgid "Clear all Cookies?"
 msgstr "Smazat všechny cookies?"
 
 #: src/app/webbrowser/SettingsPage.qml:496
-#, fuzzy
-#| msgid "Custom hompage"
 msgid "Custom homepage"
-msgstr "Vlastní stránka"
+msgstr "Vlastní domovská stránka"
 
 #: src/app/webbrowser/SettingsPage.qml:581
 msgid "Microphone"
@@ -1264,19 +1240,22 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"Současná úroveň přiblížení (%1%) může být uložena do %2 buď pro danou doménu "
+"nebo jako výchozí hodnota."
 
 #: src/app/ZoomControls.qml:197
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "Stávající velikost stránky (%1%) může být pro %2 uložena "
+msgstr ""
+"Stávající velikost stránky (%1%) může být pro %2 uložena pro danou doménu."
 
 #: src/app/ZoomControls.qml:199
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr "Stávající velikost stránky (%1%) může být pro %2 uložena "
+msgstr ""
+"Stávající velikost stránky (%1%) může být pro %2 uložena jako výchozí "
+"hodnota."
 
 #: src/app/ZoomControls.qml:206
 msgid "Save for domain"

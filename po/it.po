@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 07:15+0000\n"
-"PO-Revision-Date: 2023-03-30 13:45+0000\n"
+"PO-Revision-Date: 2023-04-02 03:45+0000\n"
 "Last-Translator: Sylke Vicious <silkevicious@tuta.io>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/it/>\n"
@@ -39,7 +39,7 @@ msgstr "Internet;WWW;Browser;Web;Explorer:Esplora"
 
 #: morph-browser.desktop.in:9
 msgid "/usr/share/morph-browser/morph-browser.svg"
-msgstr ""
+msgstr "/usr/share/morph-browser/morph-browser.svg"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
@@ -343,8 +343,8 @@ msgid ""
 "You are trying to securely reach %1, but the security certificate of this "
 "website is not trusted. Reason: %2"
 msgstr ""
-"Tentativo di raggiungere in maniera sicura  %1, ma il certificato di "
-"sicurezza del sito web non è verificato:  %2"
+"Tentativo di raggiungere in maniera sicura %1, ma il certificato di "
+"sicurezza del sito web non è verificato. Motivo: %2"
 
 #: src/app/CertificateVerificationDialog.qml:39
 #: src/app/InvalidCertificateErrorSheet.qml:160
@@ -373,10 +373,8 @@ msgid "New User Agent"
 msgstr "Nuovo User Agent"
 
 #: src/app/CustomUserAgentsPage.qml:161
-#, fuzzy
-#| msgid "New User Agent"
 msgid "Edit User Agent"
-msgstr "Nuovo User Agent"
+msgstr "Modifica User Agent"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
@@ -426,20 +424,16 @@ msgid "allowed to launch other apps"
 msgstr "autorizzato a lanciare altre app"
 
 #: src/app/DomainSettingsPage.qml:225
-#, fuzzy
-#| msgid "allowed to access your location"
 msgid "access your location"
-msgstr "autorizzato ad accedere alla tua posizione"
+msgstr "accesso alla tua posizione"
 
 #: src/app/DomainSettingsPage.qml:230
 msgid "Ask each time"
 msgstr "Chiedi ogni volta"
 
 #: src/app/DomainSettingsPage.qml:230
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "Consenti"
+msgstr "Consentito"
 
 #: src/app/DomainSettingsPage.qml:230
 msgid "Denied"
@@ -482,40 +476,28 @@ msgid "%1/s"
 msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "Elimina"
+msgstr "Elimina File"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "Pulisci cronologia"
+msgstr "Rimuovi dalla Cronologia"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "Copia collegamento"
+msgstr "Copia Collegamento per lo Scaricamento"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "Scaricamenti"
+msgstr "Scaricamenti Recenti"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
-msgstr "Scaricamenti"
+msgstr "Nessun Scaricamento Recente"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Annulla"
+msgstr "Annullato"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
@@ -545,13 +527,11 @@ msgstr "Nessuno scaricamento disponibile"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "questo nome per l'user agent è già stato utilizzato"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
-#, fuzzy
-#| msgid "Add the name for the new user agent"
 msgid "Add the name for the user agent"
-msgstr "Aggiungi un nome per il nuovo user agent"
+msgstr "Aggiungi un nome per l'user agent"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
@@ -720,7 +700,7 @@ msgstr "Consentire a questo dominio di accedere al microfono?"
 
 #: src/app/MediaAccessDialog.qml:77
 msgid "Yes"
-msgstr "Sì"
+msgstr "Si"
 
 #: src/app/MediaAccessDialog.qml:85
 msgid "No"
@@ -763,7 +743,7 @@ msgstr "Salva come PDF"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Rimuovi dall'Elenco"
 
 #: src/app/webbrowser/AddressBar.qml:242
 msgid "find in page"
@@ -854,10 +834,8 @@ msgid "Done"
 msgstr "Fatto"
 
 #: src/app/webbrowser/Browser.qml:673
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "Chiudi scheda"
+msgstr "Riapri Scheda"
 
 #: src/app/webbrowser/Browser.qml:789
 msgid "New window"
@@ -1100,8 +1078,6 @@ msgid "Clear all Cookies?"
 msgstr "Cancellare tutti i cookies?"
 
 #: src/app/webbrowser/SettingsPage.qml:496
-#, fuzzy
-#| msgid "Custom hompage"
 msgid "Custom homepage"
 msgstr "Pagina iniziale personalizzata"
 
@@ -1233,7 +1209,7 @@ msgstr "Riduci Zoom"
 
 #: src/app/ZoomControls.qml:68
 msgid "Reset"
-msgstr "Reset"
+msgstr "Resetta"
 
 #: src/app/ZoomControls.qml:68
 msgid "fit"
@@ -1273,19 +1249,23 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"Il livello di ingrandimento corrente (%1%) può essere memorizzato come %2 "
+"per il dominio attuale o come livello di ingrandimento predefinito."
 
 #: src/app/ZoomControls.qml:197
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "Zoom corrente (%1%) può essere salvato per %2 come "
+msgstr ""
+"Il livello di ingrandimento corrente (%1%) può essere memorizzato come %2 "
+"per il dominio attuale."
 
 #: src/app/ZoomControls.qml:199
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr "Zoom corrente (%1%) può essere salvato per %2 come "
+msgstr ""
+"Il livello di ingrandimento corrente (%1%) può essere memorizzato come %2 "
+"livello di ingrandimento predefinito."
 
 #: src/app/ZoomControls.qml:206
 msgid "Save for domain"

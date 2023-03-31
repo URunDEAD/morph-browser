@@ -96,8 +96,6 @@ QtObject {
         BrowserWindow {
             id: window
 
-            color: "#111111"
-
             property alias incognito: browser.incognito
             readonly property alias model: browser.tabsModel
             readonly property var tabsModel: browser.tabsModel

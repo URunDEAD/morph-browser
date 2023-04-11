@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 07:15+0000\n"
-"PO-Revision-Date: 2023-04-11 19:50+0000\n"
+"PO-Revision-Date: 2023-04-11 20:27+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/ka/>\n"
@@ -226,7 +226,7 @@ msgstr ""
 #: src/app/HttpAuthenticationDialog.qml:70 src/app/PromptDialog.qml:50
 #: src/app/webbrowser/BookmarkOptions.qml:122
 msgid "OK"
-msgstr ""
+msgstr "დიახ"
 
 #: src/app/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
@@ -494,7 +494,7 @@ msgstr ""
 #: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
 #: src/app/webcontainer/WebappSettingsPage.qml:273
 msgid "Clear"
-msgstr ""
+msgstr "სუფთა ცა"
 
 #: src/app/DownloadsDialog.qml:182
 msgid "View All"
@@ -531,7 +531,7 @@ msgstr ""
 
 #: src/app/ErrorSheet.qml:42
 msgid "Network Error"
-msgstr ""
+msgstr "ქსელის შეცდომა"
 
 #. TRANSLATORS: %1 refers to the URL of the current page
 #: src/app/ErrorSheet.qml:49
@@ -838,7 +838,7 @@ msgstr ""
 #: src/app/webbrowser/Browser.qml:1074 src/app/webbrowser/Browser.qml:1112
 #, qt-format
 msgid "(%1)"
-msgstr ""
+msgstr "(%1)"
 
 #: src/app/webbrowser/Browser.qml:1946
 msgid "the file is already in the downloads folder."
@@ -867,7 +867,7 @@ msgstr ""
 #: src/app/webbrowser/HistorySectionDelegate.qml:48
 #: src/app/webbrowser/HistoryViewWide.qml:252
 msgid "Yesterday"
-msgstr ""
+msgstr "გუშინ"
 
 #: src/app/webbrowser/HistoryViewWide.qml:161
 msgid "search history"
@@ -880,7 +880,7 @@ msgstr ""
 #: src/app/webbrowser/HistoryViewWide.qml:250
 #: src/app/webbrowser/HistoryViewWide.qml:337
 msgid "Today"
-msgstr ""
+msgstr "დღეს"
 
 #. TRANSLATORS: %1 refers to the current page’s title
 #: src/app/webbrowser/morph-browser.qml:110

@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 07:15+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-04-11 19:50+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/ka/>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: morph-browser.desktop.in:4
 msgid "Morph Browser"
@@ -48,7 +50,7 @@ msgstr ""
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
-msgstr ""
+msgstr "უკან"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
@@ -208,7 +210,7 @@ msgstr ""
 
 #: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:801
 msgid "Share"
-msgstr ""
+msgstr "გაზიარება"
 
 #: src/app/actions/Undo.qml:22
 msgid "Undo"
@@ -265,7 +267,7 @@ msgstr ""
 #: src/app/webcontainer/ContextMenuMobile.qml:143
 #: src/app/webcontainer/WebappSettingsPage.qml:266 src/app/ZoomControls.qml:237
 msgid "Cancel"
-msgstr ""
+msgstr "გაუქმება"
 
 #: src/app/AllowOrBlockDomainDialog.qml:25
 #: src/app/AllowOrBlockDomainDialog.qml:41
@@ -354,7 +356,7 @@ msgstr ""
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
 #: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:102
 msgid "Delete"
-msgstr ""
+msgstr "წაშლა"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
@@ -668,11 +670,11 @@ msgstr ""
 
 #: src/app/MediaAccessDialog.qml:77
 msgid "Yes"
-msgstr ""
+msgstr "დიახ"
 
 #: src/app/MediaAccessDialog.qml:85
 msgid "No"
-msgstr ""
+msgstr "არა"
 
 #: src/app/PromptDialog.qml:25
 msgid "JavaScript Prompt"
@@ -757,7 +759,7 @@ msgstr ""
 #: src/app/webbrowser/BookmarkOptions.qml:164
 #: src/app/webbrowser/SettingsPage.qml:530 src/app/ZoomControls.qml:82
 msgid "Save"
-msgstr ""
+msgstr "შენახვა"
 
 #: src/app/webbrowser/BookmarksFoldersView.qml:191
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
@@ -818,7 +820,7 @@ msgstr ""
 
 #: src/app/webbrowser/Browser.qml:835 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
-msgstr ""
+msgstr "მორგება"
 
 #: src/app/webbrowser/Browser.qml:841
 msgid "View source"
@@ -1048,7 +1050,7 @@ msgstr ""
 
 #: src/app/webbrowser/SettingsPage.qml:602
 msgid "Camera"
-msgstr ""
+msgstr "კამერა"
 
 #: src/app/webbrowser/TabComponent.qml:258
 msgid "Swipe Up To Exit Full Screen"
@@ -1076,7 +1078,7 @@ msgstr ""
 
 #: src/app/webbrowser/UrlPreviewDelegate.qml:138
 msgid "Remove"
-msgstr ""
+msgstr "წაშლა"
 
 #: src/app/webcontainer/AccountChooserDialog.qml:62
 msgid ""
@@ -1098,7 +1100,7 @@ msgstr ""
 
 #: src/app/webcontainer/AccountErrorScreen.qml:50
 msgid "Close"
-msgstr ""
+msgstr "დახურვა"
 
 #: src/app/webcontainer/AccountsLogic.qml:63
 msgid ""

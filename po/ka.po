@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 07:15+0000\n"
-"PO-Revision-Date: 2023-04-11 20:27+0000\n"
+"PO-Revision-Date: 2023-04-13 05:14+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/ka/>\n"
@@ -92,11 +92,11 @@ msgstr ""
 
 #: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:373
 msgid "Copy"
-msgstr ""
+msgstr "კოპირება"
 
 #: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:362
 msgid "Cut"
-msgstr ""
+msgstr "ამოჭრა"
 
 #: src/app/actions/Erase.qml:22
 msgid "Erase"
@@ -173,11 +173,11 @@ msgstr ""
 
 #: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:384
 msgid "Paste"
-msgstr ""
+msgstr "ჩასმა"
 
 #: src/app/actions/Redo.qml:22
 msgid "Redo"
-msgstr ""
+msgstr "გამეორება"
 
 #: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
 #: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
@@ -206,7 +206,7 @@ msgstr ""
 #: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
 #: src/app/DownloadsPage.qml:86
 msgid "Select all"
-msgstr ""
+msgstr "ყველას მონიშვნა"
 
 #: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:801
 msgid "Share"
@@ -214,7 +214,7 @@ msgstr "გაზიარება"
 
 #: src/app/actions/Undo.qml:22
 msgid "Undo"
-msgstr ""
+msgstr "დაბრუნება"
 
 #: src/app/AlertDialog.qml:24
 msgid "JavaScript Alert"
@@ -306,11 +306,11 @@ msgstr ""
 
 #: src/app/AuthenticationDialog.qml:34 src/app/HttpAuthenticationDialog.qml:50
 msgid "Username"
-msgstr ""
+msgstr "მომხმარებლის სახელი"
 
 #: src/app/AuthenticationDialog.qml:41 src/app/HttpAuthenticationDialog.qml:60
 msgid "Password"
-msgstr ""
+msgstr "პაროლი"
 
 #: src/app/BeforeUnloadDialog.qml:24
 msgid "Confirm Navigation"
@@ -447,7 +447,7 @@ msgstr ""
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: src/app/DownloadDelegate.qml:170
 msgid "Download failed"
@@ -455,7 +455,7 @@ msgstr ""
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "უცნობი"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
@@ -734,7 +734,7 @@ msgstr ""
 #. TRANSLATORS: Field where the title of bookmarked URL can be changed
 #: src/app/webbrowser/BookmarkOptions.qml:71
 msgid "Name"
-msgstr ""
+msgstr "სახელი"
 
 #. TRANSLATORS: Field to choose the folder where bookmarked URL will be saved in
 #: src/app/webbrowser/BookmarkOptions.qml:89
@@ -799,7 +799,7 @@ msgstr ""
 
 #: src/app/webbrowser/Browser.qml:648
 msgid "Done"
-msgstr ""
+msgstr "დასრულებულია"
 
 #: src/app/webbrowser/Browser.qml:673
 msgid "Reopen Tab"
@@ -948,7 +948,7 @@ msgstr ""
 
 #: src/app/webbrowser/SettingsDeviceSelector.qml:42
 msgid "Default"
-msgstr ""
+msgstr "ნაგულისხმები"
 
 #: src/app/webbrowser/SettingsPage.qml:74
 #: src/app/webbrowser/SettingsPage.qml:257
@@ -1110,7 +1110,7 @@ msgstr ""
 
 #: src/app/webcontainer/AccountsLogic.qml:214
 msgid "Authentication failed"
-msgstr ""
+msgstr "ავტორიზაცია ვერ განხორციელდა"
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
 #: src/app/webcontainer/AccountsSplashScreen.qml:45
@@ -1135,7 +1135,7 @@ msgstr ""
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Skip"
-msgstr ""
+msgstr "გამოტოვება"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:84
 msgid "Choose account"

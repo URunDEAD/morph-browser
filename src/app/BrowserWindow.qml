@@ -24,6 +24,8 @@ import Lomiri.Components 1.3
 Window {
     id: window
 
+    color: "#FF111111"
+
     property bool developerExtrasEnabled: false
     property bool forceFullscreen: false
     property var currentWebview: null

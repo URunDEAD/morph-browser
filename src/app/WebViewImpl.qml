@@ -366,9 +366,16 @@ WebView {
             enabled:  contextMenuRequest &&
                       ((contextMenuRequest.mediaType === ContextMenuRequest.MediaTypeImage) ||
                        (contextMenuRequest.mediaType === ContextMenuRequest.MediaTypeCanvas )) // && contextModel.hasImageContents
-            // TODO !
-            onTriggered: showMessage("Actions.CopyImage not implemented."); //contextModel.saveMedia()
+            onTriggered:  webview.triggerWebAction(WebEngineView.CopyImageToClipboard) //showMessage("Actions.CopyImage not implementedIGOOOR."); //contextModel.saveMedia()
         }
+        Actions.CopyImageLink {
+            objectName: "CopyImageLinkContextualAction"
+            enabled:  contextMenuRequest &&
+                      ((contextMenuRequest.mediaType === ContextMenuRequest.MediaTypeImage) ||
+                       (contextMenuRequest.mediaType === ContextMenuRequest.MediaTypeCanvas )) // && contextModel.hasImageContents
+            onTriggered:  Clipboard.push(["text/plain", contextMenuRequest.mediaUrl.toString()])
+        }
+
         Actions.SaveImage {
             objectName: "SaveImageContextualAction"
             enabled: contextMenuRequest &&

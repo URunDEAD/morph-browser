@@ -366,7 +366,7 @@ WebView {
             enabled:  contextMenuRequest &&
                       ((contextMenuRequest.mediaType === ContextMenuRequest.MediaTypeImage) ||
                        (contextMenuRequest.mediaType === ContextMenuRequest.MediaTypeCanvas )) // && contextModel.hasImageContents
-            onTriggered:  webview.triggerWebAction(WebEngineView.CopyImageToClipboard) //showMessage("Actions.CopyImage not implementedIGOOOR."); //contextModel.saveMedia()
+            onTriggered:  webview.triggerWebAction(WebEngineView.CopyImageToClipboard) 
         }
         Actions.CopyImageLink {
             objectName: "CopyImageLinkContextualAction"

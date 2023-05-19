@@ -378,6 +378,7 @@ Item {
             typeString("hello")
             wait(150)
             addressBar.findInPageMode = false
+            wait(150)
             compare(addressBar.text, "example.org")
         }
     }

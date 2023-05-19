@@ -46,6 +46,8 @@ Item {
                 property int current
                 property int count
             }
+
+            searchTextTimerInterval: 100
         }
 
         // only exists to steal focus from the address bar
@@ -258,6 +260,7 @@ Item {
 
         function test_urlShouldBeSimplifiedWhenUnfocused(data) {
             typeString(data.input)
+            wait(150)
             compare(addressBar.text, data.input)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -279,6 +282,7 @@ Item {
         function test_clickingWhenUnfocusedShouldSelectAll() {
             var url = "http://example.org/"
             typeString(url)
+            wait(150)
             compare(addressBar.text, url)
             addressBar.actualUrl = url
             clickItem(textInput)
@@ -290,6 +294,7 @@ Item {
         function test_clickingWhenFocusedShouldDeselectText() {
             var url = "http://example.org/"
             typeString(url)
+            wait(150)
             compare(addressBar.text, url)
             addressBar.actualUrl = url
             clickItem(textInput)
@@ -304,6 +309,7 @@ Item {
         function test_clickingActionButtonWhenUnfocusedShouldNotSelectAll() {
             var url = "http://example.org/"
             typeString(url)
+            wait(150)
             compare(addressBar.text, url)
             clickItem(textInput)
             verify(!addressBar.activeFocus)
@@ -343,6 +349,7 @@ Item {
         function test_unfocusingWhileEditingShouldResetUrl() {
             var url = "http://example.org/"
             typeString(url)
+            wait(150)
             compare(addressBar.text, url)
             addressBar.actualUrl = url
             var clearButton = findChild(addressBar, "clear_button")
@@ -361,6 +368,7 @@ Item {
             verify(addressBar.activeFocus)
             compare(addressBar.text, "")
             typeString("hello")
+            wait(150)
             addressBar.findInPageMode = false
             compare(addressBar.text, "example.org")
         }

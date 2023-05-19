@@ -28,6 +28,7 @@ FocusScope {
     property alias icon: favicon.source
     property bool incognito: false
     property string text
+    property int searchTextTimerInterval: 0
     property bool bookmarked: false
     signal toggleBookmark()
     property url requestedUrl
@@ -76,7 +77,7 @@ FocusScope {
     Timer {
         id: searchTextTimer
         onTriggered: (addressbar.text = textField.text)
-        interval: 900
+        interval: addressbar.searchTextTimerInterval
     }
 
     TextField {

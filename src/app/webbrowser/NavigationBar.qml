@@ -171,6 +171,7 @@ FocusScope {
             findController: internal.webview ? internal.webview.findController : null
             certificateErrorsMap: internal.webview ? internal.webview.certificateErrorsMap : ({})
             lastLoadSucceeded: internal.webview ? internal.webview.lastLoadSucceeded : false
+            searchTextTimerInterval: 900
 
             anchors {
                 left: parent.left

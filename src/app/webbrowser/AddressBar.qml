@@ -506,6 +506,7 @@ FocusScope {
                 textField.text = actualUrl;
                 internal.simplified = false;
             }
+            addressbar.text = textField.text;
         }
     }
 
@@ -520,6 +521,7 @@ FocusScope {
             textField.text = actualUrl;
             internal.simplified = false;
         }
+        addressbar.text = textField.text;
     }
 
     onActualUrlChanged: {
@@ -533,6 +535,7 @@ FocusScope {
             textField.text = actualUrl;
             internal.simplified = false;
         }
+        addressbar.text = textField.text;
     }
 
     onRequestedUrlChanged: {
@@ -546,6 +549,7 @@ FocusScope {
             textField.text = requestedUrl;
             internal.simplified = false;
         }
+        addressbar.text = textField.text;
     }
 
     onFindInPageModeChanged: {
@@ -553,13 +557,12 @@ FocusScope {
             textField.text = "";
         } else if (canSimplifyText) {
             textField.text = internal.simplifyUrl(actualUrl);
-            addressbar.text = textField.text;
             internal.simplified = true;
         } else {
             textField.text = actualUrl;
-            addressbar.text = textField.text;
             internal.simplified = false;
         }
+        addressbar.text = textField.text;
     }
 
     function showSecurityCertificateDetails() {

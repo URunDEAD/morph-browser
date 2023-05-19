@@ -102,6 +102,7 @@ Item {
 
         function test_validUrlShouldNotBeRewritten(data) {
             typeString(data.url)
+            wait(150)
             compare(addressBar.text, data.url)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -120,6 +121,7 @@ Item {
 
         function test_urlWithoutSchemeShouldBeRewritten(data) {
             typeString(data.text)
+            wait(150)
             compare(addressBar.text, data.text)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -136,6 +138,7 @@ Item {
 
         function test_leadingAndTrailingWhitespacesShouldBeTrimmed(data) {
             typeString(data.text)
+            wait(150)
             compare(addressBar.text, data.text)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -151,6 +154,7 @@ Item {
 
         function test_searchQueryShouldBeRewritten(data) {
             typeString(data.text)
+            wait(150)
             compare(addressBar.text, data.text)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -171,6 +175,7 @@ Item {
 
         function test_htmlEntitiesShouldBeEscapedInSearchQueries(data) {
             typeString(data.text)
+            wait(150)
             compare(addressBar.text, data.text)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -187,6 +192,7 @@ Item {
 
         function test_uppercaseDomainsShouldBeRewritten(data) {
             typeString(data.text)
+            wait(150)
             compare(addressBar.text, data.text)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -208,6 +214,7 @@ Item {
 
         function test_uppercaseSchemeShouldBeRewritten(data) {
             typeString(data.text)
+            wait(150)
             compare(addressBar.text, data.text)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()

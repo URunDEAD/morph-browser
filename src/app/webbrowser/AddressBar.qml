@@ -91,6 +91,9 @@ FocusScope {
              addressbar.text = "";
              searchTextTimer.restart();
            }
+           else if (!findInPageMode) {
+             addressbar.text = textField.text;
+           }
         }
 
         primaryItem: Item {
@@ -497,6 +500,7 @@ FocusScope {
         }
         if (editing && internal.simplified) {
             textField.text = actualUrl;
+            addressbar.text = textField.text;
             internal.simplified = false;
         } else if (!editing) {
             if (canSimplifyText && !loading && actualUrl.toString()) {
@@ -506,7 +510,6 @@ FocusScope {
                 textField.text = actualUrl;
                 internal.simplified = false;
             }
-            addressbar.text = textField.text;
         }
     }
 
@@ -521,7 +524,6 @@ FocusScope {
             textField.text = actualUrl;
             internal.simplified = false;
         }
-        addressbar.text = textField.text;
     }
 
     onActualUrlChanged: {
@@ -535,7 +537,6 @@ FocusScope {
             textField.text = actualUrl;
             internal.simplified = false;
         }
-        addressbar.text = textField.text;
     }
 
     onRequestedUrlChanged: {
@@ -549,7 +550,6 @@ FocusScope {
             textField.text = requestedUrl;
             internal.simplified = false;
         }
-        addressbar.text = textField.text;
     }
 
     onFindInPageModeChanged: {
@@ -562,7 +562,6 @@ FocusScope {
             textField.text = actualUrl;
             internal.simplified = false;
         }
-        addressbar.text = textField.text;
     }
 
     function showSecurityCertificateDetails() {

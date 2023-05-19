@@ -282,6 +282,7 @@ Item {
         function test_actionButtonShouldBeDisabledWhenEmpty() {
             verify(!addressBar.__actionButton.enabled)
             keyClick(Qt.Key_U)
+            wait(150)
             verify(addressBar.text != "")
             verify(addressBar.__actionButton.enabled)
         }

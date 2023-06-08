@@ -47,7 +47,7 @@ Item {
                 property int count
             }
 
-            searchTextTimerInterval: 100
+            searchTextTimerInterval: 50
         }
 
         // only exists to steal focus from the address bar

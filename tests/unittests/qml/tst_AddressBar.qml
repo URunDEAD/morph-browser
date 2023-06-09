@@ -46,6 +46,8 @@ Item {
                 property int current
                 property int count
             }
+
+            searchTextTimerInterval: 50
         }
 
         // only exists to steal focus from the address bar
@@ -100,6 +102,7 @@ Item {
 
         function test_validUrlShouldNotBeRewritten(data) {
             typeString(data.url)
+            wait(150)
             compare(addressBar.text, data.url)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -118,6 +121,7 @@ Item {
 
         function test_urlWithoutSchemeShouldBeRewritten(data) {
             typeString(data.text)
+            wait(150)
             compare(addressBar.text, data.text)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -134,6 +138,7 @@ Item {
 
         function test_leadingAndTrailingWhitespacesShouldBeTrimmed(data) {
             typeString(data.text)
+            wait(150)
             compare(addressBar.text, data.text)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -149,6 +154,7 @@ Item {
 
         function test_searchQueryShouldBeRewritten(data) {
             typeString(data.text)
+            wait(150)
             compare(addressBar.text, data.text)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -169,6 +175,7 @@ Item {
 
         function test_htmlEntitiesShouldBeEscapedInSearchQueries(data) {
             typeString(data.text)
+            wait(150)
             compare(addressBar.text, data.text)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -185,6 +192,7 @@ Item {
 
         function test_uppercaseDomainsShouldBeRewritten(data) {
             typeString(data.text)
+            wait(150)
             compare(addressBar.text, data.text)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -206,6 +214,7 @@ Item {
 
         function test_uppercaseSchemeShouldBeRewritten(data) {
             typeString(data.text)
+            wait(150)
             compare(addressBar.text, data.text)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -258,6 +267,7 @@ Item {
 
         function test_urlShouldBeSimplifiedWhenUnfocused(data) {
             typeString(data.input)
+            wait(150)
             compare(addressBar.text, data.input)
             keyClick(Qt.Key_Return)
             validatedSpy.wait()
@@ -272,6 +282,7 @@ Item {
         function test_actionButtonShouldBeDisabledWhenEmpty() {
             verify(!addressBar.__actionButton.enabled)
             keyClick(Qt.Key_U)
+            wait(150)
             verify(addressBar.text != "")
             verify(addressBar.__actionButton.enabled)
         }
@@ -279,6 +290,7 @@ Item {
         function test_clickingWhenUnfocusedShouldSelectAll() {
             var url = "http://example.org/"
             typeString(url)
+            wait(150)
             compare(addressBar.text, url)
             addressBar.actualUrl = url
             clickItem(textInput)
@@ -290,6 +302,7 @@ Item {
         function test_clickingWhenFocusedShouldDeselectText() {
             var url = "http://example.org/"
             typeString(url)
+            wait(150)
             compare(addressBar.text, url)
             addressBar.actualUrl = url
             clickItem(textInput)
@@ -304,6 +317,7 @@ Item {
         function test_clickingActionButtonWhenUnfocusedShouldNotSelectAll() {
             var url = "http://example.org/"
             typeString(url)
+            wait(150)
             compare(addressBar.text, url)
             clickItem(textInput)
             verify(!addressBar.activeFocus)
@@ -343,6 +357,7 @@ Item {
         function test_unfocusingWhileEditingShouldResetUrl() {
             var url = "http://example.org/"
             typeString(url)
+            wait(150)
             compare(addressBar.text, url)
             addressBar.actualUrl = url
             var clearButton = findChild(addressBar, "clear_button")
@@ -361,7 +376,9 @@ Item {
             verify(addressBar.activeFocus)
             compare(addressBar.text, "")
             typeString("hello")
+            wait(150)
             addressBar.findInPageMode = false
+            wait(150)
             compare(addressBar.text, "example.org")
         }
     }

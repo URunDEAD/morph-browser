@@ -64,6 +64,7 @@ private:
     QString m_webappIcon;
     QString m_webappModelSearchPath;
     QStringList m_webappUrlPatterns;
+    QList<QUrl> m_userScripts;
     QString m_accountProvider;
     bool m_accountSwitcher;
     bool m_storeSessionCookies;
@@ -82,6 +83,7 @@ private:
     bool m_localContentCanAccessRemoteUrls;
 
     static const QString URL_PATTERN_SEPARATOR;
+    static const QString USERSCRIPTS_SEPARATOR;
     static const QString LOCAL_SCHEME_FILTER_FILENAME;
 };
 

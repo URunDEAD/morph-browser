@@ -78,6 +78,7 @@ static void clearCookiesHack(const QString &provider)
 }
 
 const QString WebappContainer::URL_PATTERN_SEPARATOR = ",";
+const QString WebappContainer::USERSCRIPTS_SEPARATOR = ",";
 const QString WebappContainer::LOCAL_SCHEME_FILTER_FILENAME = "local-scheme-filter.js";
 
 
@@ -144,7 +145,7 @@ bool WebappContainer::initialize()
                 QQmlProperty::write(m_object, QStringLiteral("webappModelSearchPath"), searchDir.path());
             }
         }
-        if ( ! m_localCookieStoreDbPath.isEmpty()) {
+        if (!m_localCookieStoreDbPath.isEmpty()) {
             QQmlProperty::write(m_object, QStringLiteral("localCookieStoreDbPath"), m_localCookieStoreDbPath);
         }
 
@@ -162,6 +163,7 @@ bool WebappContainer::initialize()
         QQmlProperty::write(m_object, QStringLiteral("openExternalUrlInOverlay"), m_openExternalUrlInOverlay);
         QQmlProperty::write(m_object, QStringLiteral("defaultVideoCaptureCameraPosition"), m_defaultVideoCaptureCameraPosition);
         QQmlProperty::write(m_object, QStringLiteral("webappUrlPatterns"), m_webappUrlPatterns);
+        QQmlProperty::write(m_object, QStringLiteral("userScripts"), QVariant::fromValue(m_userScripts));
         QQmlContext* context = m_engine->rootContext();
         if (m_storeSessionCookies) {
             QString sessionCookieMode = SessionUtils::firstRun(m_webappName) ?
@@ -172,7 +174,7 @@ bool WebappContainer::initialize()
 
         context->setContextProperty("webappContainerHelper", m_webappContainerHelper.data());
 
-        if ( ! m_popupRedirectionUrlPrefixPattern.isEmpty()) {
+        if (!m_popupRedirectionUrlPrefixPattern.isEmpty()) {
             const QString WEBAPP_CONTAINER_DO_NOT_FILTER_PATTERN_URL_ENV_VAR =
                 qgetenv("WEBAPP_CONTAINER_DO_NOT_FILTER_PATTERN_URL");
             QQmlProperty::write(
@@ -307,6 +309,7 @@ void WebappContainer::printUsage() const
        " [--icon=PATH]"
        " [--webappModelSearchPath=PATH]"
        " [--webappUrlPatterns=URL_PATTERNS]"
+       " [--user-scripts=USER_SCRIPTS]"
        " [--accountProvider=PROVIDER_NAME]"
        " [--accountSwitcher]"
        " [--enable-back-forward]"
@@ -330,6 +333,7 @@ void WebappContainer::printUsage() const
     out << "  --icon=PATH                         Icon to be shown in the splash screen. PATH can be an absolute or path relative to CWD" << endl;
     out << "  --webappModelSearchPath=PATH        alter the search path for installed webapps and set it to PATH. PATH can be an absolute or path relative to CWD" << endl;
     out << "  --webappUrlPatterns=URL_PATTERNS    list of comma-separated url patterns (wildcard based) that the webapp is allowed to navigate to" << endl;
+    out << "  --user-scripts=USER_SCRIPTS         list of comma-separated user scripts to be loaded in the webapp" << endl;
     out << "  --accountProvider=PROVIDER_NAME     Online account provider for the application if the application is to reuse a local account." << endl;
     out << "  --accountSwitcher                   enable switching between different Online Accounts identities" << endl;
     out << "  --store-session-cookies             store session cookies on disk" << endl;
@@ -379,6 +383,18 @@ void WebappContainer::parseCommandLine()
             if (!tail.isEmpty()) {
                 QStringList includePatterns = tail.split(URL_PATTERN_SEPARATOR);
                 m_webappUrlPatterns = UrlPatternUtils::filterAndTransformUrlPatterns(includePatterns);
+            }
+        } else if (argument.startsWith("--user-scripts=")) {
+            QStringList userScriptFiles = argument.split("--user-scripts=")[1].split(USERSCRIPTS_SEPARATOR);
+
+            Q_FOREACH(const QString& userScriptFile, userScriptFiles)
+            {
+                if (!isValidLocalResource(userScriptFile))
+                {
+                    continue;
+                }
+                QUrl userScriptUrl = QUrl::fromLocalFile(QFileInfo(userScriptFile).absoluteFilePath());
+                m_userScripts.append(userScriptUrl);
             }
         } else if (argument.startsWith("--accountProvider=")) {
             m_accountProvider = argument.split("--accountProvider=")[1];
@@ -450,7 +466,7 @@ QString WebappContainer::getExtraWebappUrlPatterns() const
         else
             extraPatterns = patternsValue.toString();
 
-        if ( ! extraPatterns.isEmpty())
+        if (!extraPatterns.isEmpty())
         {
             qDebug() << "Found extra url patterns to be added to the list of allowed urls: "
                      << extraPatterns;

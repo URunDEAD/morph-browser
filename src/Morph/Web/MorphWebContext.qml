@@ -29,6 +29,8 @@ WebEngineProfile {
     property int userAgentId: 0
     property string customUserAgent: ""
     readonly property string defaultUserAgent: __ua.defaultUA
+    // remember certificate errors for each domain (for click on symbol in address bar)
+    readonly property var certificateErrorsMap: ({})
 
     offTheRecord: false
 

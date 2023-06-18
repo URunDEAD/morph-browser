@@ -37,9 +37,6 @@ WebView {
     // scroll positions at the moment of the context menu request
     property point contextMenuStartScroll: Qt.point(0,0)
 
-    // remember certificate errors for each domain (for click on symbol in address bar)
-    readonly property var certificateErrorsMap: ({})
-
     // better way to detect that, or move context menu items only available for the browser to other files ?
     readonly property bool isWebApp: (typeof browserTab === 'undefined')
 
@@ -239,8 +236,8 @@ WebView {
           certificateError.defer()
           var certificateVerificationDialog = PopupUtils.open(Qt.resolvedUrl("CertificateVerificationDialog.qml"), this);
           certificateVerificationDialog.host = UrlUtils.extractHost(certificateError.url);
-          certificateErrorsMap[certificateVerificationDialog.host] = certificateError;
-          certificateErrorsMapChanged();
+          webview.profile.certificateErrorsMap[certificateVerificationDialog.host] = certificateError;
+          webview.profile.certificateErrorsMapChanged();
           certificateVerificationDialog.localizedErrorMessage = certificateError.description;
           certificateVerificationDialog.errorIsOverridable = certificateError.overridable;
           certificateVerificationDialog.accept.connect(certificateError.ignoreCertificateError);

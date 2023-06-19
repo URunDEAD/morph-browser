@@ -169,7 +169,7 @@ FocusScope {
 
             findInPageMode: findInPageMode
             findController: internal.webview ? internal.webview.findController : null
-            certificateErrorsMap: internal.webview ? internal.webview.certificateErrorsMap : ({})
+            certificateErrorsMap: internal.webview ? internal.webview.profile.certificateErrorsMap : ({})
             lastLoadSucceeded: internal.webview ? internal.webview.lastLoadSucceeded : false
             searchTextTimerInterval: 900
 

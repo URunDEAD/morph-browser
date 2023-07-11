@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 07:15+0000\n"
-"PO-Revision-Date: 2023-06-28 04:34+0000\n"
+"PO-Revision-Date: 2023-07-18 07:03+0000\n"
 "Last-Translator: \"Rudra Harsh V.Singh\" <rudraHarsh45@proton.me>\n"
 "Language-Team: English (Canada) <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/en_CA/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: morph-browser.desktop.in:4
 msgid "Morph Browser"
@@ -249,7 +249,7 @@ msgstr ""
 #: src/app/AllowCustomSchemesDialog.qml:50
 #: src/app/GeolocationPermissionRequest.qml:51
 msgid "Allow"
-msgstr ""
+msgstr "Allow"
 
 #: src/app/AllowCustomSchemesDialog.qml:57
 #: src/app/AllowOrBlockDomainDialog.qml:53 src/app/AuthenticationDialog.qml:53

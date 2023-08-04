@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 07:15+0000\n"
-"PO-Revision-Date: 2023-07-18 07:03+0000\n"
+"PO-Revision-Date: 2023-08-08 18:04+0000\n"
 "Last-Translator: NPL <alterlinuxer@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/ja/>\n"
@@ -524,7 +524,7 @@ msgstr ""
 #: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
 #: src/app/webcontainer/WebappSettingsPage.qml:273
 msgid "Clear"
-msgstr "クリア"
+msgstr "削除"
 
 #: src/app/DownloadsDialog.qml:182
 msgid "View All"

@@ -223,10 +223,10 @@ BrowserWindow {
     }
 
     property var settings: Settings {
-        property bool domainWhiteListMode: false;
-        property bool autoFitToWidthEnabled: false;
-        property real zoomFactor: 1.0;
-        property bool loadImages: true;
+        property bool domainWhiteListMode: false
+        property bool autoFitToWidthEnabled: false
+        property real zoomFactor: 1.0
+        property bool loadImages: true
 
         function restoreDefaults() {
             domainWhiteListMode = false;

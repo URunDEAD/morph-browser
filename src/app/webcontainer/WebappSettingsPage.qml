@@ -109,6 +109,26 @@ FocusScope {
                         }
                     }
                 }
+                
+                ListItem {
+                    objectName: "loadImages"
+
+                    ListItemLayout {
+                        title.text: i18n.tr("Load Images")
+                        subtitle.text: i18n.tr("Automatically load images on web pages")
+                        CheckBox {
+                            id: loadImagesCheckbox
+                            SlotsLayout.position: SlotsLayout.Trailing
+                            onTriggered: settingsObject.loadImages = checked
+                        }
+                    }
+
+                    Binding {
+                        target: loadImagesCheckbox
+                        property: "checked"
+                        value: settingsObject.loadImages
+                    }
+                }
 
                 ListItem {
                     objectName: "downloads"

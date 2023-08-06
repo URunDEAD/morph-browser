@@ -40,6 +40,8 @@ WebView {
     // better way to detect that, or move context menu items only available for the browser to other files ?
     readonly property bool isWebApp: (typeof browserTab === 'undefined')
 
+    readonly property var browserOrWebAppSettings: isWebApp ? webapp.settings : browser.settings
+    
     readonly property alias findController: findController
     readonly property alias zoomController: zoomMenu.controller
 
@@ -59,6 +61,9 @@ WebView {
 
     // allow pasting to clipboard from javascript
     settings.javascriptCanAccessClipboard: true
+    
+    // automatically load images
+    settings.autoLoadImages: browserOrWebAppSettings ? browserOrWebAppSettings.loadImages : true
 
     /*experimental.certificateVerificationDialog: CertificateVerificationDialog {}
     experimental.proxyAuthenticationDialog: ProxyAuthenticationDialog {}*/

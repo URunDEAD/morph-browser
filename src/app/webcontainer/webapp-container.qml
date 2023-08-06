@@ -226,11 +226,13 @@ BrowserWindow {
         property bool domainWhiteListMode: false;
         property bool autoFitToWidthEnabled: false;
         property real zoomFactor: 1.0;
+        property bool loadImages: true;
 
         function restoreDefaults() {
             domainWhiteListMode = false;
             autoFitToWidthEnabled = false;
             zoomFactor = 1.0;
+            loadImages = true;
         }
 
         function resetDomainPermissions() {

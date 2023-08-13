@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 07:15+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-08-20 08:04+0000\n"
+"Last-Translator: Abdullah AL Shohag <hackershohag@outlook.com>\n"
+"Language-Team: Bengali (Bangladesh) <https://hosted.weblate.org/projects/"
+"lomiri/morph-browser/bn_BD/>\n"
 "Language: bn_BD\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: morph-browser.desktop.in:4
 msgid "Morph Browser"
@@ -90,11 +92,11 @@ msgstr ""
 
 #: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:373
 msgid "Copy"
-msgstr ""
+msgstr "কপি"
 
 #: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:362
 msgid "Cut"
-msgstr ""
+msgstr "কর্তন"
 
 #: src/app/actions/Erase.qml:22
 msgid "Erase"
@@ -171,11 +173,11 @@ msgstr ""
 
 #: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:384
 msgid "Paste"
-msgstr ""
+msgstr "পেস্ট"
 
 #: src/app/actions/Redo.qml:22
 msgid "Redo"
-msgstr ""
+msgstr "পুনরায়"
 
 #: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
 #: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
@@ -212,7 +214,7 @@ msgstr ""
 
 #: src/app/actions/Undo.qml:22
 msgid "Undo"
-msgstr ""
+msgstr "পূর্বাবস্থা"
 
 #: src/app/AlertDialog.qml:24
 msgid "JavaScript Alert"
@@ -247,7 +249,7 @@ msgstr ""
 #: src/app/AllowCustomSchemesDialog.qml:50
 #: src/app/GeolocationPermissionRequest.qml:51
 msgid "Allow"
-msgstr ""
+msgstr "সম্মতি"
 
 #: src/app/AllowCustomSchemesDialog.qml:57
 #: src/app/AllowOrBlockDomainDialog.qml:53 src/app/AuthenticationDialog.qml:53
@@ -501,7 +503,7 @@ msgstr ""
 #: src/app/DownloadsPage.qml:47 src/app/webbrowser/Browser.qml:828
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Downloads"
-msgstr ""
+msgstr "ডাউনলোডস"
 
 #: src/app/DownloadsPage.qml:61
 msgid "Confirm selection"
@@ -797,7 +799,7 @@ msgstr ""
 
 #: src/app/webbrowser/Browser.qml:648
 msgid "Done"
-msgstr ""
+msgstr "সম্পন্ন"
 
 #: src/app/webbrowser/Browser.qml:673
 msgid "Reopen Tab"
@@ -818,7 +820,7 @@ msgstr ""
 
 #: src/app/webbrowser/Browser.qml:835 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
-msgstr ""
+msgstr "সেটিংস"
 
 #: src/app/webbrowser/Browser.qml:841
 msgid "View source"

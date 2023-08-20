@@ -289,6 +289,7 @@ QtObject {
         property bool setDesktopMode: false
         property bool autoFitToWidthEnabled: false
         property real zoomFactor: 1.0
+        property bool loadImages: true
         property int newTabDefaultSection: 0
         property string defaultAudioDevice: ""
         property string defaultVideoDevice: ""
@@ -302,6 +303,7 @@ QtObject {
             setDesktopMode = false;
             autoFitToWidthEnabled = false;
             zoomFactor = 1.0;
+            loadImages = true;
             newTabDefaultSection = 0;
             defaultAudioDevice = "";
             defaultVideoDevice = "";

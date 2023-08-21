@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 07:15+0000\n"
-"PO-Revision-Date: 2023-08-20 08:04+0000\n"
+"PO-Revision-Date: 2023-08-28 00:52+0000\n"
 "Last-Translator: NPL <alterlinuxer@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -718,11 +718,11 @@ msgstr "このドメインがマイクにアクセスすることを許可しま
 
 #: src/app/MediaAccessDialog.qml:77
 msgid "Yes"
-msgstr "Yes"
+msgstr "はい"
 
 #: src/app/MediaAccessDialog.qml:85
 msgid "No"
-msgstr "No"
+msgstr "いいえ"
 
 #: src/app/PromptDialog.qml:25
 msgid "JavaScript Prompt"

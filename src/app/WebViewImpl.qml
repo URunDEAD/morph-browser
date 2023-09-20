@@ -580,7 +580,7 @@ WebView {
 
                 Action {
                     name: "undo"
-                    text: i18n.dtr('ubuntu-ui-toolkit', "Undo")
+                    text: i18n.dtr('lomiri-ui-toolkit', "Undo")
                     iconName: "edit-undo"
                     // with the editFlags we would have to close the context menu after one "Undo" step (desktop way)
                     // after one action we do no longer know if further Undo actions are possible
@@ -596,7 +596,7 @@ WebView {
                 }
                 Action {
                     name: "redo"
-                    text: i18n.dtr('ubuntu-ui-toolkit', "Redo")
+                    text: i18n.dtr('lomiri-ui-toolkit', "Redo")
                     iconName: "edit-redo"
                     // with the editFlags we would have to close the context menu after one "Redo" step (desktop way)
                     // see comment for "Undo"
@@ -608,7 +608,7 @@ WebView {
                 }
                 Action {
                     name: "selectless"
-                    text: i18n.dtr('ubuntu-ui-toolkit', "Select Less")
+                    text: i18n.dtr('lomiri-ui-toolkit', "Select Less")
                     iconName: "edit-select-all"
                     enabled: visible && quickMenu.textSelectionLevels.length > 1
                     visible: contextMenuRequest && ! domElementOfContextMenu.isDocumentElement && ! domElementOfContextMenu.hasSelectMethod
@@ -616,8 +616,8 @@ WebView {
                 }
                 Action {
                     name: "selectmore"
-                    text: (quickMenu.textSelectionLevels.length == 0)    ? i18n.dtr('ubuntu-ui-toolkit', "Select Element")
-                                                                         :  i18n.dtr('ubuntu-ui-toolkit', "Select More")
+                    text: (quickMenu.textSelectionLevels.length == 0)    ? i18n.dtr('lomiri-ui-toolkit', "Select Element")
+                                                                         :  i18n.dtr('lomiri-ui-toolkit', "Select More")
                     iconName: "edit-select-all"
                     enabled: visible && ! quickMenu.textSelectionIsAtRootLevel
                     visible: contextMenuRequest && ! domElementOfContextMenu.isDocumentElement && ! domElementOfContextMenu.hasSelectMethod
@@ -625,7 +625,7 @@ WebView {
                 }
                 Action {
                     name: "selectall"
-                    text: i18n.dtr('ubuntu-ui-toolkit', "Select All")
+                    text: i18n.dtr('lomiri-ui-toolkit', "Select All")
                     iconName: "edit-select-all"
                     // can we make it so that it only appears for non-empty inputs ?
                     enabled: contextMenuRequest && (contextMenuRequest.editFlags & ContextMenuRequest.CanSelectAll)
@@ -646,7 +646,7 @@ WebView {
                 }
                 Action {
                     name: "cut"
-                    text: i18n.dtr('ubuntu-ui-toolkit', "Cut")
+                    text: i18n.dtr('lomiri-ui-toolkit', "Cut")
                     iconName: "edit-cut"
                     enabled: contextMenuRequest && contextMenuRequest.isContentEditable && quickMenu.selectedTextLength > 0
                     visible: enabled
@@ -657,7 +657,7 @@ WebView {
                 }
                 Action {
                     name: "copy"
-                    text: i18n.dtr('ubuntu-ui-toolkit', "Copy")
+                    text: i18n.dtr('lomiri-ui-toolkit', "Copy")
                     iconName: "edit-copy"
                     enabled: contextMenuRequest && quickMenu.selectedTextLength > 0
                     visible: enabled
@@ -668,7 +668,7 @@ WebView {
                 }
                 Action {
                     name: "paste"
-                    text: i18n.dtr('ubuntu-ui-toolkit', "Paste")
+                    text: i18n.dtr('lomiri-ui-toolkit', "Paste")
                     iconName: "edit-paste"
                     enabled: contextMenuRequest && contextMenuRequest.isContentEditable && (contextMenuRequest.editFlags & ContextMenuRequest.CanPaste)
                     visible: enabled
@@ -679,7 +679,7 @@ WebView {
                 }
                 Action {
                     name: "share"
-                    text: i18n.dtr('ubuntu-ui-toolkit', "Share")
+                    text: i18n.dtr('lomiri-ui-toolkit', "Share")
                     iconName: "share"
                     enabled: !isWebApp && browserTab.contentHandlerLoader && browserTab.contentHandlerLoader.status === Loader.Ready && contextMenuRequest && quickMenu.selectedTextLength > 0
                     visible: enabled
@@ -695,7 +695,7 @@ WebView {
                 }
                 Action {
                     name: "settings"
-                    text: i18n.dtr('ubuntu-ui-toolkit', "Settings")
+                    text: i18n.dtr('lomiri-ui-toolkit', "Settings")
                     iconName: "settings"
                     enabled: isWebApp && ! domElementOfContextMenu.hasSelectMethod && ( quickMenu.selectedTextLength === 0 || domElementOfContextMenu.isDocumentElement )
                     visible: enabled
@@ -705,7 +705,7 @@ WebView {
                 // -> try to get that via WebChannel / other mechanism and hide the quickMenu automatically if control has no longer focus
                 Action {
                     name: "close"
-                    text: i18n.dtr('ubuntu-ui-toolkit', "Close")
+                    text: i18n.dtr('lomiri-ui-toolkit', "Close")
                     iconName: "close"
                     enabled: true
                     visible: enabled

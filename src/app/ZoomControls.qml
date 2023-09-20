@@ -86,7 +86,7 @@ LomiriShape {
         }
         Action {
             name: "close"
-            text: i18n.dtr('ubuntu-ui-toolkit', "Close")
+            text: i18n.dtr('lomiri-ui-toolkit', "Close")
             iconName: "close"
             enabled: true
             onTriggered: menu.visible = false

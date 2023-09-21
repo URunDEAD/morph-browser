@@ -187,7 +187,7 @@ WebEngineView {
             id: touchSelectionActions
             Action {
                 name: "selectall"
-                text: i18n.dtr('ubuntu-ui-toolkit', "Select All")
+                text: i18n.dtr('lomiri-ui-toolkit', "Select All")
                 iconName: "edit-select-all"
                 enabled: _webview.editingCapabilities & Oxide.WebView.SelectAllCapability
                 visible: enabled
@@ -195,7 +195,7 @@ WebEngineView {
             }
             Action {
                 name: "cut"
-                text: i18n.dtr('ubuntu-ui-toolkit', "Cut")
+                text: i18n.dtr('lomiri-ui-toolkit', "Cut")
                 iconName: "edit-cut"
                 enabled: _webview.editingCapabilities & Oxide.WebView.CutCapability
                 visible: enabled
@@ -203,7 +203,7 @@ WebEngineView {
             }
             Action {
                 name: "copy"
-                text: i18n.dtr('ubuntu-ui-toolkit', "Copy")
+                text: i18n.dtr('lomiri-ui-toolkit', "Copy")
                 iconName: "edit-copy"
                 enabled: _webview.editingCapabilities & Oxide.WebView.CopyCapability
                 visible: enabled
@@ -211,7 +211,7 @@ WebEngineView {
             }
             Action {
                 name: "paste"
-                text: i18n.dtr('ubuntu-ui-toolkit', "Paste")
+                text: i18n.dtr('lomiri-ui-toolkit', "Paste")
                 iconName: "edit-paste"
                 enabled: _webview.editingCapabilities & Oxide.WebView.PasteCapability
                 visible: enabled

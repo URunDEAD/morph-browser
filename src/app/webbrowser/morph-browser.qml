@@ -298,7 +298,7 @@ QtObject {
 
         function restoreDefaults() {
             homepage = ""
-            searchEngine = "duckduckgo";
+            restoreDefault_searchEngine();
             restoreSession = true;
             setDesktopMode = false;
             autoFitToWidthEnabled = false;
@@ -309,6 +309,10 @@ QtObject {
             defaultVideoDevice = "";
             domainWhiteListMode = false;
             incognitoOnStart = false;
+        }
+
+        function restoreDefault_searchEngine() {
+            searchEngine = "duckduckgo";
         }
 
         function resetDomainPermissions() {

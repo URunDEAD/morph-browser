@@ -713,6 +713,16 @@ Common.BrowserView {
         id: currentSearchEngine
         searchPaths: searchEnginesSearchPaths
         filename: settings.searchEngine
+
+        Component.onCompleted: {
+            /*
+             * A search engine could have been removed since the last time 
+             * Morph is opened.
+             */
+
+            if (!valid)
+                settings.restoreDefault_searchEngine();
+        }
     }
 
     Chrome {

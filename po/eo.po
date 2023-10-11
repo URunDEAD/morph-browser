@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 07:15+0000\n"
-"PO-Revision-Date: 2023-03-23 22:41+0000\n"
+"PO-Revision-Date: 2023-10-11 22:04+0000\n"
 "Last-Translator: phlostically <phlostically@mailinator.com>\n"
 "Language-Team: Esperanto <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/eo/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 5.1-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -211,7 +211,7 @@ msgstr "Elekti ĉion"
 
 #: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:801
 msgid "Share"
-msgstr ""
+msgstr "Diskonigi"
 
 #: src/app/actions/Undo.qml:22
 msgid "Undo"

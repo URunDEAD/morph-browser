@@ -1,3 +1,10 @@
+morph-browser (1.0.3) unstable; urgency=medium
+
+  * Upstream-provided Debian package for morph-browser. See upstream
+    ChangeLog for recent changes.
+
+ -- UBports developers <developers@ubports.com>  Sun, 15 Oct 2023 01:40:41 +0200
+
 morph-browser (1.0.2) unstable; urgency=medium
 
   * Upstream-provided Debian package for morph-browser. See upstream

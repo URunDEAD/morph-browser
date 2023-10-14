@@ -1,6 +1,299 @@
+2023-10-15 Mike Gabriel
+
+        * Release 1.0.3 (HEAD -> main, tag: 1.0.3)
+
+2023-10-11 phlostically
+
+        * Translated using Weblate (Esperanto) (189adf27)
+
+2023-10-03 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/remove-peekier' into 'main'
+          (aae9a651)
+
+2023-09-23 Ratchanan Srirattanamet
+
+        * webbrowser: reset searchengine settings to default if invalid
+          (0cd699c8)
+
+2023-07-02 Heimen Stoffels
+
+        * Delete peekier.xml (43fcac67)
+
+2023-09-22 Ratchanan Srirattanamet
+
+        * Merge branch 'domainsettings-newentry' into 'main' (16118f19)
+
+2023-09-17 Chris Clime
+
+        * use UrlUtils.fixUrl for the new user entered domain (aa980aa2)
+
+2023-09-21 Alfred Neumayer
+
+        * Merge branch 'personal/peat-psuwit/correct-translation-domain' into
+          'main' (44fdb962)
+
+2023-09-20 Ratchanan Srirattanamet
+
+        * src/*: correct the translation domain for borrowed phrases from
+          UITK (91f8a129)
+
+2023-09-06 bittin1ddc447d824349b2
+
+        * Translated using Weblate (Swedish) (e792458c)
+
+2023-08-20 AlTeveD2v
+
+        * Translated using Weblate (Russian) (0ec1857a)
+
+2023-08-21 NPL
+
+        * Translated using Weblate (Japanese) (f450e18d)
+
+2023-08-24 Marius Gripsgard
+
+        * Merge branch 'github/fork/niutech/patch-1' into 'main' (313256e4)
+
+2020-10-11 niu tech
+
+        * Set Desktop Mode from Main Menu (bbf782f7)
+
+2023-08-20 Ratchanan Srirattanamet
+
+        * Merge branch 'settings-load-images' into 'main' (b932394f)
+
+2023-08-19 Chris Clime
+
+        * add comment for properties browser and webapp (a955db0b)
+        * undo change of pot file (ec36c17a)
+
+2023-08-06 Chris Clime
+
+        * remove semicolons from property definitions (84912747)
+        * add checkbox for WebEngineSettings property 'autoLoadImages' to
+          Settings and WebAppSettings (8f63309a)
+
+2023-08-13 Abdullah AL Shohag
+
+        * Translated using Weblate (Bengali (Bangladesh)) (099dbd04)
+
+2023-08-12 NPL
+
+        * Translated using Weblate (Japanese) (ca16cee4)
+
+2023-08-08 Ivo Xavier
+
+        * Translated using Weblate (Portuguese) (f06967d2)
+
+2023-08-04 NPL
+
+        * Translated using Weblate (Japanese) (902f890b)
+
+2023-08-04 Salif Mehmed
+
+        * Translated using Weblate (Bulgarian) (671f6bd9)
+
+2023-07-21 Serhii Horichenko
+
+        * Translated using Weblate (Ukrainian) (cc26b57c)
+
+2023-07-11 Rudra Harsh V.Singh
+
+        * Translated using Weblate (French (Switzerland)) (4bf4688d)
+        * Translated using Weblate (English (Canada)) (6b589fb3)
+        * Translated using Weblate (English (United States)) (6f996890)
+        * Translated using Weblate (Sanskrit) (c73da38a)
+
+2023-07-07 NPL
+
+        * Translated using Weblate (Japanese) (29e401c6)
+
+2023-06-27 Rudra Harsh V.Singh
+
+        * Translated using Weblate (English (Canada)) (081a6475)
+
+2023-06-28 J. Lavoie
+
+        * Translated using Weblate (German) (09194954)
+
+2023-06-19 Mike Gabriel
+
+        * Merge branch 'copy-image-action' into 'main' (2f63af58)
+
+2023-05-07 Igor Montagner
+
+        * remove comment (f0c38df3)
+        * Implement Copy Image and Copy Image Link actions. (5f42c37b)
+
+2023-06-19 Mike Gabriel
+
+        * Merge branch 'certificate-error-map' into 'main' (280b80df)
+
+2023-06-18 Chris Clime
+
+        * move certificateErrorsMap to the profile, so that it is valid for
+          all tabs / windows with that profile (52d37f44)
+
+2023-06-11 Mike Gabriel
+
+        * Merge branch 'xenial_-_httpauth' into 'main' (02a8aed2)
+
+2021-11-20 Chris Clime
+
+        * HttpAuthenticationDialog is accepted via a function (f2966606)
+
+2023-06-11 Mike Gabriel
+
+        * Merge branch 'addressbarunittest' into 'main' (a5c1e4e1)
+
+2023-06-11 Chris Clime
+
+        * extend wait for address bar unit test to 500 ms (64662fed)
+
+2023-06-09 Mike Gabriel
+
+        * Merge branch 'xenial_-_userscripts' into 'main' (66cda385)
+
+2022-07-03 Chris Clime
+
+        * remove extra blanks (09d44612)
+
+2022-01-15 Chris Clime
+
+        * add parameter "--user-scripts" for custom user scripts (05e1d7a3)
+
+2023-06-09 Mike Gabriel
+
+        * Merge branch 'xenial_-_addressbartext2' into 'main' (6f8d6483)
+
+2023-06-08 Chris Clime
+
+        * set timer interval (unit test address bar) to 50 (646edf53)
+
+2023-05-19 Chris Clime
+
+        * add wait to test_exitingFindInPageRestoresUrl (d7177468)
+        * wait after pressing key U in test case (e2ef8d15)
+        * if not in edit mode / findInPageMode, change the address bar text
+          immediately (97c35f81)
+        * update address bar text on status change (801286c4)
+        * add missing waits to addressbar test case (74d5980b)
+        * - make search text timer interval a property of AddressBar - add
+          wait to unit tests after typing to the addressbar, as the
+          input is now delayed by the timer (9cc1af1a)
+
+2023-05-14 Chris Clime
+
+        * clear the search results when the user starts typing (ea814573)
+
+2023-06-06 Mike Gabriel
+
+        * Revert "Add Neeva search engine" (280ac558)
+
+2023-05-13 abidin toumi
+
+        * Translated using Weblate (Arabic) (f28492a1)
+
+2023-04-12 Temuri Doghonadze
+
+        * Translated using Weblate (Georgian) (c054abd2)
+
+2023-04-28 Marius Gripsgard
+
+        * Merge branch 'main' into 'main' (81646fa5)
+
+2023-04-27 lkroll
+
+        * Add Neeva search engine (8df9952d)
+
+2023-04-13 Marius Gripsgard
+
+        * Merge branch 'coverup_cracks' into 'main' (49504792)
+
+2023-04-01 Katharine Chui
+
+        * expand ee7fdcf6 to cover webapps as well (fc037428)
+
+2023-04-11 Temuri Doghonadze
+
+        * Translated using Weblate (Georgian) (6140e748)
+        * Translated using Weblate (Georgian) (216a5030)
+
+2023-04-04 gallegonovato
+
+        * Translated using Weblate (Spanish) (bbabd7d3)
+
+2023-04-03 Daniel Frost
+
+        * Translated using Weblate (German) (f0e5d146)
+
+2023-03-31 Sylke Vicious
+
+        * Translated using Weblate (Italian) (ad1ad52b)
+
+2023-03-30 Sylke Vicious
+
+        * Translated using Weblate (Italian) (84319998)
+
+2023-03-30 Jozef Mlich
+
+        * Translated using Weblate (Czech) (f0b3fbf6)
+
+2023-03-28 Jozef Mlich
+
+        * Translated using Weblate (Czech) (9242062a)
+
+2023-03-22 phlostically
+
+        * Translated using Weblate (Esperanto) (d70a9779)
+
+2023-03-17 gnu-ewm
+
+        * Translated using Weblate (Polish) (bf53a187)
+
+2023-03-06 Ivo Xavier
+
+        * Translated using Weblate (Portuguese) (27bee785)
+
+2023-03-03 Heimen Stoffels
+
+        * Translated using Weblate (Dutch) (d823ced4)
+
+2023-03-03 Hosted Weblate
+
+        * Update translation files (6068f58b)
+
+2023-03-03 Taisei Washington
+
+        * Translated using Weblate (Japanese) (03321bde)
+
+2023-03-03 Mike Gabriel
+
+        * Merge branch 'personal/gberh/urlutils2' into 'main' (837158d6)
+
+2023-03-02 Guido Berhoerster
+
+        * Update translations (e03a820e)
+        * Fix deserialization of stored session tab URLs (03060fe7)
+
+2021-08-08 Chris Clime
+
+        * Make looksLikeAUrl() check if url starts with its scheme case
+          insensitive (a5f59cb9)
+
+2021-08-07 Chris Clime
+
+        * Adapt urlutils tests (c9db67f6)
+        * cpp based UrlUtils (instead of UrlUtils.js), with unit tests
+          (aee97cf9)
+
+2023-03-01 Allan Nordhøy
+
+        * Translated using Weblate (Japanese) (45262c71)
+
 2023-02-28 Mike Gabriel
 
-        * Release 1.0.2 (HEAD -> main, tag: 1.0.2)
+        * Release 1.0.2 (8e789d32) (tag: 1.0.2)
 
 2023-02-28 Luna Jernberg
 

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 07:15+0000\n"
-"PO-Revision-Date: 2023-08-28 00:52+0000\n"
+"PO-Revision-Date: 2023-11-05 13:35+0000\n"
 "Last-Translator: NPL <alterlinuxer@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/ja/>\n"
@@ -17,24 +17,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
+"X-Generator: Weblate 5.2-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
-#, fuzzy
 msgid "Morph Browser"
-msgstr "ブラウザー"
+msgstr "ブラウザ"
 
 #: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:112
 #: src/app/webcontainer/webapp-container.qml:77
 #, fuzzy
 msgid "Morph Web Browser"
-msgstr "ウェブブラウザー"
+msgstr "Morph ウェブブラウザ"
 
 #: morph-browser.desktop.in:6
 #, fuzzy
 msgid "Browse the World Wide Web using QtWebEngine"
-msgstr "ウェブを閲覧します"
+msgstr "QtWebEngineで世界中のウェブを閲覧します"
 
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
@@ -44,15 +43,15 @@ msgstr ""
 
 #: morph-browser.desktop.in:9
 msgid "/usr/share/morph-browser/morph-browser.svg"
-msgstr ""
+msgstr "/usr/share/morph-browser/morph-browser.svg"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
-msgstr ""
+msgstr "新しいウィンドウ"
 
 #: morph-browser.desktop.in:27
 msgid "New Private Window"
-msgstr ""
+msgstr "新しいプライベートウィンドウ"
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
@@ -155,16 +154,15 @@ msgstr "新しいタブで画像を開く"
 
 #: src/app/actions/OpenLinkInBrowser.qml:22
 msgid "Open link in default browser"
-msgstr ""
+msgstr "既定のブラウザでリンクを開く"
 
 #: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
 msgid "Open link in new background tab"
 msgstr "新しいバックグラウンドタブでリンクを開く"
 
 #: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
-#, fuzzy
 msgid "Open link in new private window"
-msgstr "新しいタブでリンクを開く"
+msgstr "新しいプライベートウィンドウでリンクを開く"
 
 #: src/app/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
@@ -172,7 +170,7 @@ msgstr "新しいタブでリンクを開く"
 
 #: src/app/actions/OpenLinkInNewWindow.qml:22
 msgid "Open link in new window"
-msgstr ""
+msgstr "新しいウィンドウでリンクを開く"
 
 #: src/app/actions/OpenVideoInNewTab.qml:22
 msgid "Open video in new tab"
@@ -242,11 +240,11 @@ msgstr "カスタムURLスキーマ"
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "'%1'のウェブサイトがウェブブラウザ外でURLを開こうとしています："
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "可能であればシステムアプリでURLを開きますか？"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -356,9 +354,8 @@ msgid "Proceed anyway"
 msgstr "とにかく続行する"
 
 #: src/app/ColorSelectDialog.qml:25
-#, fuzzy
 msgid "Select Color"
-msgstr "すべて選択"
+msgstr "色を選択"
 
 #: src/app/ConfirmDialog.qml:24
 msgid "JavaScript Confirmation"
@@ -366,7 +363,7 @@ msgstr "JavaScriptの確認"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:149
 msgid "Custom User Agents"
-msgstr ""
+msgstr "カスタムユーザーエージェント"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
 #: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:102
@@ -375,41 +372,41 @@ msgstr "削除"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
-msgstr ""
+msgstr "新しいユーザーエージェント"
 
 #: src/app/CustomUserAgentsPage.qml:161
 msgid "Edit User Agent"
-msgstr ""
+msgstr "ユーザーエージェントを編集"
 
 #: src/app/CustomUserAgentsPage.qml:187
-#, fuzzy
 msgid "No custom user agents available"
-msgstr "ダウンロードはありません"
+msgstr "利用可能なユーザーエージェントはありません"
 
 #: src/app/DomainPermissionsPage.qml:54
 msgid "Domain blacklist/whitelist"
-msgstr ""
+msgstr "ドメインブラック/ホワイトリスト"
 
 #: src/app/DomainPermissionsPage.qml:113 src/app/DomainSettingsPage.qml:113
 msgid "Add domain"
-msgstr ""
+msgstr "ドメインを追加"
 
 #: src/app/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
-msgstr ""
+msgstr "example."
+"comといった形でドメイン名を入力してください（サブドメインは削除されます）。"
 
 #: src/app/DomainPermissionsPage.qml:222
 msgid "Not Set"
-msgstr ""
+msgstr "設定されていません"
 
 #: src/app/DomainPermissionsPage.qml:232
 msgid "Never allow access"
-msgstr ""
+msgstr "アクセスを許可しない"
 
 #: src/app/DomainPermissionsPage.qml:243
 msgid "Always allow access"
-msgstr ""
+msgstr "常にアクセスを許可する"
 
 #: src/app/DomainPermissionsPage.qml:283
 msgid "No sites have been granted special permissions"
@@ -417,11 +414,11 @@ msgstr ""
 
 #: src/app/DomainSettingsPage.qml:52
 msgid "Domain specific settings"
-msgstr ""
+msgstr "ドメイン固有の設定"
 
 #: src/app/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
-msgstr ""
+msgstr "example.comのようにドメイン名を入力してください"
 
 #: src/app/DomainSettingsPage.qml:206
 msgid "allowed to launch other apps"
@@ -433,7 +430,7 @@ msgstr "現在地にアクセス"
 
 #: src/app/DomainSettingsPage.qml:230
 msgid "Ask each time"
-msgstr ""
+msgstr "毎回尋ねる"
 
 #: src/app/DomainSettingsPage.qml:230
 #, fuzzy
@@ -442,12 +439,13 @@ msgid "Allowed"
 msgstr "許可"
 
 #: src/app/DomainSettingsPage.qml:230
+#, fuzzy
 msgid "Denied"
-msgstr ""
+msgstr "拒否"
 
 #: src/app/DomainSettingsPage.qml:244
 msgid "custom user agent"
-msgstr ""
+msgstr "カスタムユーザーエージェント"
 
 #: src/app/DomainSettingsPage.qml:319 src/app/DomainSettingsPage.qml:324
 msgid "Zoom: "
@@ -459,7 +457,7 @@ msgstr ""
 
 #: src/app/DomainSettingsPage.qml:360
 msgid "No domain specific settings available"
-msgstr ""
+msgstr "利用可能なドメイン固有の設定はありません"
 
 #. TRANSLATORS: %1 is the percentage of the download completed so far
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
@@ -479,19 +477,15 @@ msgstr "不明"
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/秒"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "削除"
+msgstr "ファイルを削除"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "履歴をクリア"
+msgstr "履歴から削除"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
 #, fuzzy
@@ -572,7 +566,7 @@ msgstr "次のページを表示する際に問題が発生しました: %1."
 #: src/app/ErrorSheet.qml:56
 #, qt-format
 msgid "Error: %1"
-msgstr ""
+msgstr "エラー：%1"
 
 #: src/app/ErrorSheet.qml:62 src/app/InvalidCertificateErrorSheet.qml:173
 msgid "Back to safety"
@@ -602,7 +596,8 @@ msgstr "拒否"
 #: src/app/HttpAuthenticationDialog.qml:27
 #, qt-format
 msgid "The website at %1 requires authentication. The website says \"%2\""
-msgstr ""
+msgstr "%1のウェブサイトが認証を要求しています。ウェブサイトから「%2」と通知されてい"
+"ます"
 
 #: src/app/InvalidCertificateErrorSheet.qml:55
 msgid "This site security certificate is not trusted.\n"
@@ -702,7 +697,7 @@ msgstr ""
 
 #: src/app/MediaAccessDialog.qml:39
 msgid "Permission"
-msgstr ""
+msgstr "権限"
 
 #: src/app/MediaAccessDialog.qml:46
 msgid "Allow this domain to access your camera and microphone?"
@@ -740,16 +735,16 @@ msgstr "%1:%2 は認証が必要です。"
 
 #: src/app/SavePageDialog.qml:24
 msgid "Save page as HTML / PDF"
-msgstr ""
+msgstr "HTML/PDF形式で保存"
 
 #: src/app/SavePageDialog.qml:41
 #, fuzzy
 msgid "No save actions are available"
-msgstr "ダウンロードはありません"
+msgstr "利用可能な保存方式はありません"
 
 #: src/app/SavePageDialog.qml:46
 msgid "Save as HTML"
-msgstr ""
+msgstr "HTML形式で保存"
 
 #: src/app/SavePageDialog.qml:54
 #: src/app/webbrowser/ContentDownloadDialog.qml:102
@@ -758,11 +753,11 @@ msgstr "ダウンロード"
 
 #: src/app/SavePageDialog.qml:64
 msgid "Save as PDF"
-msgstr ""
+msgstr "PDF形式で保存"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "リストから削除"
 
 #: src/app/webbrowser/AddressBar.qml:242
 msgid "find in page"
@@ -774,7 +769,7 @@ msgstr "検索 / アドレスの入力"
 
 #: src/app/webbrowser/AddressBar.qml:395
 msgid "Paste and Go"
-msgstr ""
+msgstr "貼り付けて開く"
 
 #: src/app/webbrowser/BookmarkOptions.qml:66
 msgid "Bookmark Added"
@@ -826,35 +821,35 @@ msgstr "ブックマーク"
 
 #: src/app/webbrowser/Browser.qml:230
 #: src/app/webcontainer/WebViewImplOxide.qml:302
+#, fuzzy
 msgid "Blocked domain"
-msgstr ""
+msgstr "ブロックされたドメイン"
 
 #: src/app/webbrowser/Browser.qml:231
 #: src/app/webcontainer/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
-msgstr ""
+msgstr "ドメイン%1の操作リクエストをブロックしました。"
 
 #: src/app/webbrowser/Browser.qml:257
 #: src/app/webcontainer/WebViewImplOxide.qml:329
+#, fuzzy
 msgid "Whitelisted domain"
-msgstr ""
+msgstr "ホワイトリストドメイン"
 
 #: src/app/webbrowser/Browser.qml:258
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
-msgstr ""
+msgstr "ドメイン%1がホワイトリスト化され、次回ページ読み込み時に有効になります。"
 
 #: src/app/webbrowser/Browser.qml:648
 msgid "Done"
 msgstr "完了"
 
 #: src/app/webbrowser/Browser.qml:673
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "タブを閉じる"
+msgstr "タブを開き直す"
 
 #: src/app/webbrowser/Browser.qml:789
 msgid "New window"
@@ -862,7 +857,7 @@ msgstr "新しいウィンドウ"
 
 #: src/app/webbrowser/Browser.qml:795
 msgid "New private window"
-msgstr ""
+msgstr "新しいプライベートウィンドウ"
 
 #: src/app/webbrowser/Browser.qml:815 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
@@ -875,11 +870,11 @@ msgstr "設定"
 
 #: src/app/webbrowser/Browser.qml:841
 msgid "View source"
-msgstr ""
+msgstr "ソースを見る"
 
 #: src/app/webbrowser/Browser.qml:854
 msgid "Save / Print to PDF"
-msgstr ""
+msgstr "PDFに保存/印刷"
 
 #: src/app/webbrowser/Browser.qml:875 src/app/WebViewImpl.qml:679
 msgid "Zoom"
@@ -892,13 +887,8 @@ msgid "(%1)"
 msgstr "(%1)"
 
 #: src/app/webbrowser/Browser.qml:1946
-#, fuzzy
-#| msgid ""
-#| "Choose an application to open this file or add it to the downloads folder."
 msgid "the file is already in the downloads folder."
-msgstr ""
-"このファイルを開くアプリケーションを選択するか、downloadsフォルダーに追加して"
-"ください。"
+msgstr "ファイルはすでにダウンロードフォルダに存在します。"
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:83
 msgid ""
@@ -942,9 +932,9 @@ msgstr "今日"
 #. TRANSLATORS: %1 refers to the current page’s title
 #: src/app/webbrowser/morph-browser.qml:110
 #: src/app/webcontainer/webapp-container.qml:75
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 - Morph Web Browser"
-msgstr "%1 - Ubuntuウェブブラウザー"
+msgstr "%1 - Morph ウェブブラウザ"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:41
 msgid "This is a private tab"
@@ -1003,7 +993,7 @@ msgstr "このウェブサイトのIDは確認されていません。"
 #: src/app/webbrowser/SecurityCertificatePopover.qml:109
 #, qt-format
 msgid "You are connected to %1 via HTTPS. The certificate is valid."
-msgstr ""
+msgstr "HTTPS経由で%1に接続されています。証明書は有効です。"
 
 #: src/app/webbrowser/SettingsDeviceSelector.qml:42
 msgid "Default"
@@ -1016,10 +1006,8 @@ msgstr "検索エンジン"
 
 #: src/app/webbrowser/SettingsPage.qml:91
 #: src/app/webbrowser/SettingsPage.qml:484
-#, fuzzy
-#| msgid "New Tab"
 msgid "New Tab Page"
-msgstr "新しいタブ"
+msgstr "新しいタブページ"
 
 #: src/app/webbrowser/SettingsPage.qml:119
 msgid "Restore previous session at startup"
@@ -1027,21 +1015,21 @@ msgstr "起動時に前回のセッションを復元する"
 
 #: src/app/webbrowser/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
-msgstr ""
+msgstr "プライベートモードで起動しているため利用できません"
 
 #: src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
-msgstr ""
+msgstr "デスクトップモードに設定する"
 
 #: src/app/webbrowser/SettingsPage.qml:159
 #: src/app/webcontainer/WebappSettingsPage.qml:58
 msgid "Automatic fit to width"
-msgstr ""
+msgstr "自動で横幅に合わせる"
 
 #: src/app/webbrowser/SettingsPage.qml:160
 #: src/app/webcontainer/WebappSettingsPage.qml:59
 msgid "Adjusts the width of the website to the window"
-msgstr ""
+msgstr "ウェブサイトの幅をウィンドウに合わせて調整する"
 
 #: src/app/webbrowser/SettingsPage.qml:179
 #: src/app/webcontainer/WebappSettingsPage.qml:78
@@ -1061,15 +1049,13 @@ msgid "Reset browser settings"
 msgstr "ブラウザの設定をリセットする"
 
 #: src/app/webbrowser/SettingsPage.qml:314
-#, fuzzy
-#| msgid "Leave Private Mode"
 msgid "Start in private mode"
-msgstr "プライベートモードを離れる"
+msgstr "プライベートモードではじめる"
 
 #: src/app/webbrowser/SettingsPage.qml:338
 #: src/app/webcontainer/WebappSettingsPage.qml:186
 msgid "Only allow browsing to whitelisted websites"
-msgstr ""
+msgstr "ホワイトリストのウェブサイトのみ閲覧可能にする"
 
 #: src/app/webbrowser/SettingsPage.qml:378
 #: src/app/webbrowser/SettingsPage.qml:569
@@ -1077,50 +1063,36 @@ msgid "Camera & microphone"
 msgstr "カメラとマイク"
 
 #: src/app/webbrowser/SettingsPage.qml:387
-#, fuzzy
-#| msgid "Clear Browsing History"
 msgid "Clear browsing history"
 msgstr "ブラウジング履歴を消去する"
 
 #: src/app/webbrowser/SettingsPage.qml:391
-#, fuzzy
-#| msgid "Clear Browsing History?"
 msgid "Clear browsing history?"
 msgstr "ブラウジング履歴を消去しますか？"
 
 #: src/app/webbrowser/SettingsPage.qml:399
 #: src/app/webcontainer/WebappSettingsPage.qml:227
-#, fuzzy
-#| msgid "Clear Cache"
 msgid "Clear cache"
 msgstr "キャッシュをクリアする"
 
 #: src/app/webbrowser/SettingsPage.qml:402
 #: src/app/webcontainer/WebappSettingsPage.qml:230
-#, fuzzy
-#| msgid "Clear Cache?"
 msgid "Clear cache?"
 msgstr "キャッシュを消去しますか？"
 
 #: src/app/webbrowser/SettingsPage.qml:410
 #: src/app/webcontainer/WebappSettingsPage.qml:238
-#, fuzzy
-#| msgid "Clear Cache"
 msgid "Clear all cookies"
-msgstr "キャッシュをクリアする"
+msgstr "すべてのCockieを削除する"
 
 #: src/app/webbrowser/SettingsPage.qml:413
 #: src/app/webcontainer/WebappSettingsPage.qml:241
-#, fuzzy
-#| msgid "Clear Cache?"
 msgid "Clear all Cookies?"
-msgstr "キャッシュを消去しますか？"
+msgstr "すべてのCookieを削除しますか？"
 
 #: src/app/webbrowser/SettingsPage.qml:496
-#, fuzzy
-#| msgid "Homepage"
 msgid "Custom homepage"
-msgstr "ホームページ"
+msgstr "カスタムホームページ"
 
 #: src/app/webbrowser/SettingsPage.qml:581
 msgid "Microphone"
@@ -1148,7 +1120,7 @@ msgstr "新しいタブ"
 
 #: src/app/webbrowser/TabsBar.qml:99
 msgid "Move to New Window"
-msgstr ""
+msgstr "新しいウィンドウに移動"
 
 #: src/app/webbrowser/TabsBar.qml:116
 msgid "Close Tab"
@@ -1232,17 +1204,16 @@ msgstr "エラーが発生しました。"
 
 #: src/app/webcontainer/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
-msgstr ""
+msgstr "Webappコンテナ設定"
 
 #: src/app/webcontainer/WebappSettingsPage.qml:143
-#, fuzzy
 msgid "Reset webapp settings"
-msgstr "ブラウザの設定をリセットする"
+msgstr "Webapp設定をリセットする"
 
 #: src/app/webcontainer/WebViewImplOxide.qml:330
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
-msgstr ""
+msgstr "ドメイン%1がホワイトリスト化されました。ページを再読み込みしてください。"
 
 #: src/app/ZoomControls.qml:61
 msgid "Zoom Out"
@@ -1250,7 +1221,7 @@ msgstr ""
 
 #: src/app/ZoomControls.qml:68
 msgid "Reset"
-msgstr ""
+msgstr "リセット"
 
 #: src/app/ZoomControls.qml:68
 msgid "fit"
@@ -1266,11 +1237,9 @@ msgstr ""
 
 #: src/app/ZoomControls.qml:101
 msgid "domain"
-msgstr ""
+msgstr "ドメイン"
 
 #: src/app/ZoomControls.qml:101
-#, fuzzy
-#| msgid "Default"
 msgid "default"
 msgstr "デフォルト"
 
@@ -1282,39 +1251,40 @@ msgstr ""
 #, fuzzy
 #| msgid "Save image"
 msgid "Save Zoom"
-msgstr "画像を保存"
+msgstr "拡大率を保存"
 
 #: src/app/ZoomControls.qml:192
 msgid "the current web app"
-msgstr ""
+msgstr "現在のWebアプリ"
 
 #: src/app/ZoomControls.qml:195
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
-msgstr ""
+msgstr "現在の拡大率（%1%）は現在のドメインのみかデフォルトの拡大率として%2に保存でき"
+"ます。"
 
 #: src/app/ZoomControls.qml:197
-#, qt-format
+#, fuzzy, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr ""
+msgstr "現在の拡大率（%1%）は現在のドメイン向けに%2へ保存できます。"
 
 #: src/app/ZoomControls.qml:199
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr ""
+msgstr "現在の拡大率（%1%）はデフォルトの拡大率として%2に保存できます。"
 
 #: src/app/ZoomControls.qml:206
 #, fuzzy
 #| msgid "Save in"
 msgid "Save for domain"
-msgstr "保存先"
+msgstr "ドメイン保存"
 
 #: src/app/ZoomControls.qml:219
 msgid "Save as default"
-msgstr ""
+msgstr "デフォルトとして保存"
 
 #, qt-format
 #~ msgid ""

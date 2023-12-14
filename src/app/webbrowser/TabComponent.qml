@@ -80,6 +80,13 @@ Component {
                     sourceUrl: Qt.resolvedUrl("readability.js")
                     runOnSubframes: true
                     worldId: WebEngineScript.MainWorld
+                },
+                WebEngineScript {
+                    name: "readability-readerable"
+                    injectionPoint: WebEngineScript.DocumentReady
+                    sourceUrl: Qt.resolvedUrl("readability-readerable.js")
+                    runOnSubframes: true
+                    worldId: WebEngineScript.MainWorld
                 }
             ]
 

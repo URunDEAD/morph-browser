@@ -126,20 +126,24 @@ function makeDomReadable() {
   }
 
   if (article.title) {
+    // Add hr before title
+    let hr = document.createElement('hr');
+    body.prepend(hr);
+    
     let titleEl = document.createElement('h1');
     titleEl.innerText = article.title;
     body.prepend(titleEl);
   }
 
   let style = document.createElement("style");
-  style.innerHTML = `body { background-color: #f4ecd8;
-                            color: #5b4636;
-                            margin: 0px;
+  style.innerHTML = `body { background-color: #1c1b18;
+                            color: #fbfbfe;
+                            margin: auto;
                             padding: 1rem;
-                            max-width: 100%; }
-                      img { max-width: 100%; height: auto; }
-                      a { color: #0060df; }
+                            max-width: 30em; }
+                      img { max-width: 30em; height: auto; }
+                      a { color: #00ddff; }
                       h1 { font-size: 1.6em }
-                      ::-webkit-scrollbar {width: 5px;}::-webkit-scrollbar-track {border-radius: 0px;}::-webkit-scrollbar-thumb {background: rgba(0, 0, 0, 0.4);border-radius: 10px;}::-webkit-scrollbar-thumb:hover {background: rgba(0, 0, 0, 0.6);}";`;
+                      ::-webkit-scrollbar {width: 5px;}::-webkit-scrollbar-track {border-radius: 0px;}::-webkit-scrollbar-thumb {background: rgba(215, 215, 219, 0.4);border-radius: 10px;}::-webkit-scrollbar-thumb:hover {background: rgba(215, 215, 219, 0.6);}";`;
   document.head.appendChild(style);
 }

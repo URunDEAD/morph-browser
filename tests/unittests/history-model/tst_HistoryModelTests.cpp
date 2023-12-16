@@ -258,16 +258,19 @@ private Q_SLOTS:
     void shouldSerializeOnDisk()
     {
         QTemporaryFile tempFile;
-        tempFile.open();
+        QVERIFY(tempFile.open());
         QString fileName = tempFile.fileName();
+
         delete model;
         model = new HistoryModel;
         model->setDatabasePath(fileName);
         model->add(QUrl("http://example.org/"), "Example Domain", QUrl());
         QTest::qWait(1001);
         model->add(QUrl("http://example.com/"), "Example Domain", QUrl());
+        QTest::qWait(1001);
         model->hide(QUrl("http://example.com/"));
-        QTest::qWait(100);
+        QTest::qWait(1001);
+
         delete model;
         model = new HistoryModel;
         model->setDatabasePath(fileName);

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-02 07:15+0000\n"
+"POT-Creation-Date: 2023-12-19 16:45+0100\n"
 "PO-Revision-Date: 2021-05-22 21:42+0000\n"
 "Last-Translator: dano6 <dano.kutka@gmail.com>\n"
 "Language-Team: Slovak <https://translate.ubports.com/projects/ubports/morph-"
@@ -24,8 +24,8 @@ msgstr ""
 msgid "Morph Browser"
 msgstr "Prehliadač Morph"
 
-#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:112
-#: src/app/webcontainer/webapp-container.qml:77
+#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:110
+#: src/app/webcontainer/webapp-container.qml:78
 msgid "Morph Web Browser"
 msgstr "Webový prehliadač Morph"
 
@@ -36,10 +36,6 @@ msgstr "Prehliadajte internet s <<QtWebEngine>>"
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr "Internet;WWW;Prehliadač;Web;Explorer"
-
-#: morph-browser.desktop.in:9
-msgid "/usr/share/morph-browser/morph-browser.svg"
-msgstr ""
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
@@ -91,11 +87,11 @@ msgstr "Kopírovať obrázok"
 msgid "Copy link"
 msgstr "Kopírovať odkaz"
 
-#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:373
+#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:418
 msgid "Copy"
 msgstr "Kopírovať"
 
-#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:362
+#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:407
 msgid "Cut"
 msgstr "Vystrihnúť"
 
@@ -103,7 +99,7 @@ msgstr "Vystrihnúť"
 msgid "Erase"
 msgstr "Vymazať"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:821
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:831
 msgid "Find in page"
 msgstr "Nájsť na stránke"
 
@@ -172,7 +168,7 @@ msgstr "Otvoriť adresu v novom okne"
 msgid "Open video in new tab"
 msgstr "Otvoriť video na novej karte"
 
-#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:384
+#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:429
 msgid "Paste"
 msgstr "Vložiť"
 
@@ -205,11 +201,11 @@ msgstr "Uložiť video"
 
 #: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
 #: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
-#: src/app/DownloadsPage.qml:86
+#: src/app/DownloadsPage.qml:85
 msgid "Select all"
 msgstr "Vybrať všetko"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:801
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:811
 msgid "Share"
 msgstr "Zdieľať"
 
@@ -262,11 +258,11 @@ msgstr "Povoliť"
 #: src/app/webbrowser/BookmarkOptions.qml:182
 #: src/app/webbrowser/ContentDownloadDialog.qml:114
 #: src/app/webbrowser/ContextMenuMobile.qml:143
-#: src/app/webbrowser/SettingsPage.qml:438
-#: src/app/webbrowser/SettingsPage.qml:554
+#: src/app/webbrowser/SettingsPage.qml:458
+#: src/app/webbrowser/SettingsPage.qml:574
 #: src/app/webcontainer/AccountChooserDialog.qml:96
 #: src/app/webcontainer/ContextMenuMobile.qml:143
-#: src/app/webcontainer/WebappSettingsPage.qml:266 src/app/ZoomControls.qml:237
+#: src/app/webcontainer/WebappSettingsPage.qml:286 src/app/ZoomControls.qml:237
 msgid "Cancel"
 msgstr "Zrušiť"
 
@@ -358,12 +354,12 @@ msgstr "Vybrať farbu"
 msgid "JavaScript Confirmation"
 msgstr "Potvrdenie JavaScriptu"
 
-#: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:149
+#: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
 msgstr "Vlastný užívateľský agent"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
-#: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:102
+#: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
 msgid "Delete"
 msgstr "Vymazať"
 
@@ -419,43 +415,43 @@ msgstr "Špecifické nastavenia domény"
 msgid "Enter the name of the domain, e.g. m.example.com"
 msgstr "Vložte nazov domény, napr. <<m.example.com>>"
 
-#: src/app/DomainSettingsPage.qml:206
+#: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
 msgstr "spustenie ďalších aplikácií je povolené"
 
-#: src/app/DomainSettingsPage.qml:225
+#: src/app/DomainSettingsPage.qml:226
 #, fuzzy
 #| msgid "allowed to access your location"
 msgid "access your location"
 msgstr "prístup k vašej polohe je povolený"
 
-#: src/app/DomainSettingsPage.qml:230
+#: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:230
+#: src/app/DomainSettingsPage.qml:231
 #, fuzzy
 #| msgid "Allow"
 msgid "Allowed"
 msgstr "Povoliť"
 
-#: src/app/DomainSettingsPage.qml:230
+#: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:244
+#: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
 msgstr "vlastný užívateľský agent"
 
-#: src/app/DomainSettingsPage.qml:319 src/app/DomainSettingsPage.qml:324
+#: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
 msgstr "Priblížiť: "
 
-#: src/app/DomainSettingsPage.qml:324
+#: src/app/DomainSettingsPage.qml:325
 msgid "not set"
 msgstr "bez nastavenia"
 
-#: src/app/DomainSettingsPage.qml:360
+#: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
 msgstr "Pre doménu nie je dostupné žiadne špecifické nastavenie"
 
@@ -519,25 +515,25 @@ msgstr "Zrušiť"
 msgid "Completed"
 msgstr ""
 
-#: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
-#: src/app/webcontainer/WebappSettingsPage.qml:273
+#: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
+#: src/app/webcontainer/WebappSettingsPage.qml:293
 msgid "Clear"
 msgstr "Vyčistiť"
 
-#: src/app/DownloadsDialog.qml:182
+#: src/app/DownloadsDialog.qml:179
 msgid "View All"
 msgstr ""
 
-#: src/app/DownloadsPage.qml:47 src/app/webbrowser/Browser.qml:828
-#: src/app/webcontainer/WebappSettingsPage.qml:117
+#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:838
+#: src/app/webcontainer/WebappSettingsPage.qml:137
 msgid "Downloads"
 msgstr "Stiahnuté"
 
-#: src/app/DownloadsPage.qml:61
+#: src/app/DownloadsPage.qml:60
 msgid "Confirm selection"
 msgstr "Potvrdiť výber"
 
-#: src/app/DownloadsPage.qml:310
+#: src/app/DownloadsPage.qml:288
 msgid "No downloads available"
 msgstr "Žiadne stiahnuté súbory"
 
@@ -763,15 +759,15 @@ msgstr "Uložiť ako PDF"
 msgid "Remove from List"
 msgstr ""
 
-#: src/app/webbrowser/AddressBar.qml:242
+#: src/app/webbrowser/AddressBar.qml:287
 msgid "find in page"
 msgstr "nájsť na stránke"
 
-#: src/app/webbrowser/AddressBar.qml:243
+#: src/app/webbrowser/AddressBar.qml:288
 msgid "search or enter an address"
 msgstr "hľadať alebo zadajte adresu"
 
-#: src/app/webbrowser/AddressBar.qml:395
+#: src/app/webbrowser/AddressBar.qml:440
 msgid "Paste and Go"
 msgstr "Vložiť a spustiť"
 
@@ -805,20 +801,20 @@ msgid "Create new folder"
 msgstr "Vytvoriť nový priečinok"
 
 #: src/app/webbrowser/BookmarkOptions.qml:164
-#: src/app/webbrowser/SettingsPage.qml:530 src/app/ZoomControls.qml:82
+#: src/app/webbrowser/SettingsPage.qml:550 src/app/ZoomControls.qml:82
 msgid "Save"
 msgstr "Uložiť"
 
 #: src/app/webbrowser/BookmarksFoldersView.qml:191
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
 #: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
-#: src/app/webbrowser/SettingsPage.qml:466
+#: src/app/webbrowser/SettingsPage.qml:486
 msgid "Homepage"
 msgstr "Domovská stránka"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:809 src/app/webbrowser/NewTabView.qml:130
+#: src/app/webbrowser/Browser.qml:819 src/app/webbrowser/NewTabView.qml:130
 #: src/app/webbrowser/NewTabViewWide.qml:139
 msgid "Bookmarks"
 msgstr "Záložky"
@@ -856,42 +852,46 @@ msgstr "Hotovo"
 msgid "Reopen Tab"
 msgstr "Zavrieť kartu"
 
-#: src/app/webbrowser/Browser.qml:789
+#: src/app/webbrowser/Browser.qml:799
 msgid "New window"
 msgstr "Nové okno"
 
-#: src/app/webbrowser/Browser.qml:795
+#: src/app/webbrowser/Browser.qml:805
 msgid "New private window"
 msgstr "Nové súkromné okno"
 
-#: src/app/webbrowser/Browser.qml:815 src/app/webbrowser/HistoryView.qml:31
+#: src/app/webbrowser/Browser.qml:825 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
 msgstr "História"
 
-#: src/app/webbrowser/Browser.qml:835 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/Browser.qml:845 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
 msgstr "Nastavenia"
 
-#: src/app/webbrowser/Browser.qml:841
+#: src/app/webbrowser/Browser.qml:851
 msgid "View source"
 msgstr "Ukázať zdrojový kód"
 
-#: src/app/webbrowser/Browser.qml:854
+#: src/app/webbrowser/Browser.qml:864
 msgid "Save / Print to PDF"
 msgstr "Uložiť/ Vytlačiť ako PDF"
 
-#: src/app/webbrowser/Browser.qml:875 src/app/WebViewImpl.qml:679
+#: src/app/webbrowser/Browser.qml:885 src/app/WebViewImpl.qml:690
 msgid "Zoom"
 msgstr "Priblíženie"
 
+#: src/app/webbrowser/Browser.qml:892 src/app/webbrowser/SettingsPage.qml:140
+msgid "Set Desktop mode"
+msgstr "Spustiť Desktop režim"
+
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1074 src/app/webbrowser/Browser.qml:1112
+#: src/app/webbrowser/Browser.qml:1092 src/app/webbrowser/Browser.qml:1130
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1946
+#: src/app/webbrowser/Browser.qml:1970
 msgid "the file is already in the downloads folder."
 msgstr "súbor je už v zložke na sťahovanie."
 
@@ -937,8 +937,8 @@ msgid "Today"
 msgstr "Dnes"
 
 #. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:110
-#: src/app/webcontainer/webapp-container.qml:75
+#: src/app/webbrowser/morph-browser.qml:108
+#: src/app/webcontainer/webapp-container.qml:76
 #, qt-format
 msgid "%1 - Morph Web Browser"
 msgstr "%1 - Webový prehliadač Morph"
@@ -1008,12 +1008,12 @@ msgid "Default"
 msgstr "Predvolený"
 
 #: src/app/webbrowser/SettingsPage.qml:74
-#: src/app/webbrowser/SettingsPage.qml:257
+#: src/app/webbrowser/SettingsPage.qml:277
 msgid "Search engine"
 msgstr "Vyhľadávač"
 
 #: src/app/webbrowser/SettingsPage.qml:91
-#: src/app/webbrowser/SettingsPage.qml:484
+#: src/app/webbrowser/SettingsPage.qml:504
 msgid "New Tab Page"
 msgstr "Nové okno"
 
@@ -1024,10 +1024,6 @@ msgstr "Pri štarte obnoviť predchádzajúce sedenie"
 #: src/app/webbrowser/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
 msgstr "nie je k dispozícii pri spustení v súkromnom režime"
-
-#: src/app/webbrowser/SettingsPage.qml:140
-msgid "Set Desktop mode"
-msgstr "Spustiť Desktop režim"
 
 #: src/app/webbrowser/SettingsPage.qml:159
 #: src/app/webcontainer/WebappSettingsPage.qml:58
@@ -1045,77 +1041,87 @@ msgid "Default Zoom"
 msgstr "Predvolené priblíženie"
 
 #: src/app/webbrowser/SettingsPage.qml:218
-#: src/app/webbrowser/SettingsPage.qml:300
-#: src/app/webcontainer/WebappSettingsPage.qml:131
-#: src/app/webcontainer/WebappSettingsPage.qml:172
+#: src/app/webcontainer/WebappSettingsPage.qml:117
+msgid "Load Images"
+msgstr ""
+
+#: src/app/webbrowser/SettingsPage.qml:219
+#: src/app/webcontainer/WebappSettingsPage.qml:118
+msgid "Automatically load images on web pages"
+msgstr ""
+
+#: src/app/webbrowser/SettingsPage.qml:238
+#: src/app/webbrowser/SettingsPage.qml:320
+#: src/app/webcontainer/WebappSettingsPage.qml:151
+#: src/app/webcontainer/WebappSettingsPage.qml:192
 msgid "Privacy & permissions"
 msgstr "Súkromie a oprávnenia"
 
-#: src/app/webbrowser/SettingsPage.qml:229
+#: src/app/webbrowser/SettingsPage.qml:249
 msgid "Reset browser settings"
 msgstr "Obnovenie nastavení prehliadača"
 
-#: src/app/webbrowser/SettingsPage.qml:314
+#: src/app/webbrowser/SettingsPage.qml:334
 msgid "Start in private mode"
 msgstr "Spustiť v súkromnom režime"
 
-#: src/app/webbrowser/SettingsPage.qml:338
-#: src/app/webcontainer/WebappSettingsPage.qml:186
+#: src/app/webbrowser/SettingsPage.qml:358
+#: src/app/webcontainer/WebappSettingsPage.qml:206
 msgid "Only allow browsing to whitelisted websites"
 msgstr "Povoliť prehliadanie stránok iba zo zoznamu povolených"
 
-#: src/app/webbrowser/SettingsPage.qml:378
-#: src/app/webbrowser/SettingsPage.qml:569
+#: src/app/webbrowser/SettingsPage.qml:398
+#: src/app/webbrowser/SettingsPage.qml:589
 msgid "Camera & microphone"
 msgstr "Fotoaparát a mikrofón"
 
-#: src/app/webbrowser/SettingsPage.qml:387
+#: src/app/webbrowser/SettingsPage.qml:407
 msgid "Clear browsing history"
 msgstr "Vymazať históriu prehliadania"
 
-#: src/app/webbrowser/SettingsPage.qml:391
+#: src/app/webbrowser/SettingsPage.qml:411
 msgid "Clear browsing history?"
 msgstr "Vymazať históriu prehliadania?"
 
-#: src/app/webbrowser/SettingsPage.qml:399
-#: src/app/webcontainer/WebappSettingsPage.qml:227
+#: src/app/webbrowser/SettingsPage.qml:419
+#: src/app/webcontainer/WebappSettingsPage.qml:247
 msgid "Clear cache"
 msgstr "Vyčistiť vyrovnávaciu pamäť"
 
-#: src/app/webbrowser/SettingsPage.qml:402
-#: src/app/webcontainer/WebappSettingsPage.qml:230
+#: src/app/webbrowser/SettingsPage.qml:422
+#: src/app/webcontainer/WebappSettingsPage.qml:250
 msgid "Clear cache?"
 msgstr "Vyčistiť vyrovnávaciu pamäť?"
 
-#: src/app/webbrowser/SettingsPage.qml:410
-#: src/app/webcontainer/WebappSettingsPage.qml:238
+#: src/app/webbrowser/SettingsPage.qml:430
+#: src/app/webcontainer/WebappSettingsPage.qml:258
 msgid "Clear all cookies"
 msgstr "Zmazať všetky cookies"
 
-#: src/app/webbrowser/SettingsPage.qml:413
-#: src/app/webcontainer/WebappSettingsPage.qml:241
+#: src/app/webbrowser/SettingsPage.qml:433
+#: src/app/webcontainer/WebappSettingsPage.qml:261
 msgid "Clear all Cookies?"
 msgstr "Zmazať všetky cookies?"
 
-#: src/app/webbrowser/SettingsPage.qml:496
+#: src/app/webbrowser/SettingsPage.qml:516
 #, fuzzy
 #| msgid "Custom hompage"
 msgid "Custom homepage"
 msgstr "Vlastná domovská stránka"
 
-#: src/app/webbrowser/SettingsPage.qml:581
+#: src/app/webbrowser/SettingsPage.qml:601
 msgid "Microphone"
 msgstr "Mikrofón"
 
-#: src/app/webbrowser/SettingsPage.qml:602
+#: src/app/webbrowser/SettingsPage.qml:622
 msgid "Camera"
 msgstr "Fotoaparát"
 
-#: src/app/webbrowser/TabComponent.qml:258
+#: src/app/webbrowser/TabComponent.qml:282
 msgid "Swipe Up To Exit Full Screen"
 msgstr "Prejdite prstom hore pre ukončenie režimu celej obrazovky"
 
-#: src/app/webbrowser/TabComponent.qml:259
+#: src/app/webbrowser/TabComponent.qml:283
 msgid "Press ESC To Exit Full Screen"
 msgstr "Stlačte ESC pre ukončenie režimu celej obrazovky"
 
@@ -1212,7 +1218,7 @@ msgstr "Ups, niečo sa pokazilo."
 msgid "WebappContainer Settings"
 msgstr "<<WebappContainer>> nastavenia"
 
-#: src/app/webcontainer/WebappSettingsPage.qml:143
+#: src/app/webcontainer/WebappSettingsPage.qml:163
 msgid "Reset webapp settings"
 msgstr "Obnovenie nastavení webových aplikácií"
 

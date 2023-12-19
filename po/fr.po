@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-02 07:15+0000\n"
+"POT-Creation-Date: 2023-12-19 16:45+0100\n"
 "PO-Revision-Date: 2023-01-17 10:48+0000\n"
 "Last-Translator: Timothy G. <22472919+GTimothy@users.noreply.github.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/lomiri/morph-"
@@ -24,8 +24,8 @@ msgstr ""
 msgid "Morph Browser"
 msgstr "Navigateur Morph"
 
-#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:112
-#: src/app/webcontainer/webapp-container.qml:77
+#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:110
+#: src/app/webcontainer/webapp-container.qml:78
 msgid "Morph Web Browser"
 msgstr "Navigateur internet Morph"
 
@@ -36,10 +36,6 @@ msgstr "Naviguez sur internet à l'aide de QtWebEngine"
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr "Internet;WWW;Navigateur;Web;Explorateur"
-
-#: morph-browser.desktop.in:9
-msgid "/usr/share/morph-browser/morph-browser.svg"
-msgstr ""
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
@@ -91,11 +87,11 @@ msgstr "Copier l'image"
 msgid "Copy link"
 msgstr "Copier le lien"
 
-#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:373
+#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:418
 msgid "Copy"
 msgstr "Copier"
 
-#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:362
+#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:407
 msgid "Cut"
 msgstr "Couper"
 
@@ -103,7 +99,7 @@ msgstr "Couper"
 msgid "Erase"
 msgstr "Effacer"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:821
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:831
 msgid "Find in page"
 msgstr "Trouver dans la page"
 
@@ -172,7 +168,7 @@ msgstr "Ouvrir le lien dans une nouvelle fenêtre"
 msgid "Open video in new tab"
 msgstr "Ouvrir la vidéo dans un nouvel onglet"
 
-#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:384
+#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:429
 msgid "Paste"
 msgstr "Coller"
 
@@ -205,11 +201,11 @@ msgstr "Enregistrer la vidéo"
 
 #: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
 #: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
-#: src/app/DownloadsPage.qml:86
+#: src/app/DownloadsPage.qml:85
 msgid "Select all"
 msgstr "Tout sélectionner"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:801
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:811
 msgid "Share"
 msgstr "Partager"
 
@@ -262,11 +258,11 @@ msgstr "Autoriser"
 #: src/app/webbrowser/BookmarkOptions.qml:182
 #: src/app/webbrowser/ContentDownloadDialog.qml:114
 #: src/app/webbrowser/ContextMenuMobile.qml:143
-#: src/app/webbrowser/SettingsPage.qml:438
-#: src/app/webbrowser/SettingsPage.qml:554
+#: src/app/webbrowser/SettingsPage.qml:458
+#: src/app/webbrowser/SettingsPage.qml:574
 #: src/app/webcontainer/AccountChooserDialog.qml:96
 #: src/app/webcontainer/ContextMenuMobile.qml:143
-#: src/app/webcontainer/WebappSettingsPage.qml:266 src/app/ZoomControls.qml:237
+#: src/app/webcontainer/WebappSettingsPage.qml:286 src/app/ZoomControls.qml:237
 msgid "Cancel"
 msgstr "Annuler"
 
@@ -358,12 +354,12 @@ msgstr "Sélectionner une couleur"
 msgid "JavaScript Confirmation"
 msgstr "Confirmation JavaScript"
 
-#: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:149
+#: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
 msgstr "Agents utilisateur personnalisés"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
-#: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:102
+#: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -418,39 +414,39 @@ msgstr "Paramètres spécifiques au domaine"
 msgid "Enter the name of the domain, e.g. m.example.com"
 msgstr "Saisissez le nom du domaine, par exemple m.domaine.com"
 
-#: src/app/DomainSettingsPage.qml:206
+#: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
 msgstr "Autorisé à lancer d'autres applications"
 
-#: src/app/DomainSettingsPage.qml:225
+#: src/app/DomainSettingsPage.qml:226
 msgid "access your location"
 msgstr "accéder à votre position"
 
-#: src/app/DomainSettingsPage.qml:230
+#: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
 msgstr "Demander à chaque fois"
 
-#: src/app/DomainSettingsPage.qml:230
+#: src/app/DomainSettingsPage.qml:231
 msgid "Allowed"
 msgstr "Autorisé"
 
-#: src/app/DomainSettingsPage.qml:230
+#: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
 msgstr "Non autorisé"
 
-#: src/app/DomainSettingsPage.qml:244
+#: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
 msgstr "Agent utilisateur personnalisé"
 
-#: src/app/DomainSettingsPage.qml:319 src/app/DomainSettingsPage.qml:324
+#: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
 msgstr "Zoom : "
 
-#: src/app/DomainSettingsPage.qml:324
+#: src/app/DomainSettingsPage.qml:325
 msgid "not set"
 msgstr "Non défini"
 
-#: src/app/DomainSettingsPage.qml:360
+#: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
 msgstr "Aucun paramètre spécifique au domaine disponible"
 
@@ -504,25 +500,25 @@ msgstr "Annuler"
 msgid "Completed"
 msgstr ""
 
-#: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
-#: src/app/webcontainer/WebappSettingsPage.qml:273
+#: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
+#: src/app/webcontainer/WebappSettingsPage.qml:293
 msgid "Clear"
 msgstr "Effacer"
 
-#: src/app/DownloadsDialog.qml:182
+#: src/app/DownloadsDialog.qml:179
 msgid "View All"
 msgstr "Voir Tout"
 
-#: src/app/DownloadsPage.qml:47 src/app/webbrowser/Browser.qml:828
-#: src/app/webcontainer/WebappSettingsPage.qml:117
+#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:838
+#: src/app/webcontainer/WebappSettingsPage.qml:137
 msgid "Downloads"
 msgstr "Téléchargements"
 
-#: src/app/DownloadsPage.qml:61
+#: src/app/DownloadsPage.qml:60
 msgid "Confirm selection"
 msgstr "Confirmer la sélection"
 
-#: src/app/DownloadsPage.qml:310
+#: src/app/DownloadsPage.qml:288
 msgid "No downloads available"
 msgstr "Aucun téléchargement disponible"
 
@@ -750,15 +746,15 @@ msgstr "Enregistrer en PDF"
 msgid "Remove from List"
 msgstr "Supprimer de la Liste"
 
-#: src/app/webbrowser/AddressBar.qml:242
+#: src/app/webbrowser/AddressBar.qml:287
 msgid "find in page"
 msgstr "trouver dans la page"
 
-#: src/app/webbrowser/AddressBar.qml:243
+#: src/app/webbrowser/AddressBar.qml:288
 msgid "search or enter an address"
 msgstr "rechercher ou saisir une adresse"
 
-#: src/app/webbrowser/AddressBar.qml:395
+#: src/app/webbrowser/AddressBar.qml:440
 msgid "Paste and Go"
 msgstr "Coller et ouvrir"
 
@@ -792,20 +788,20 @@ msgid "Create new folder"
 msgstr "Créer un nouveau dossier"
 
 #: src/app/webbrowser/BookmarkOptions.qml:164
-#: src/app/webbrowser/SettingsPage.qml:530 src/app/ZoomControls.qml:82
+#: src/app/webbrowser/SettingsPage.qml:550 src/app/ZoomControls.qml:82
 msgid "Save"
 msgstr "Enregistrer"
 
 #: src/app/webbrowser/BookmarksFoldersView.qml:191
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
 #: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
-#: src/app/webbrowser/SettingsPage.qml:466
+#: src/app/webbrowser/SettingsPage.qml:486
 msgid "Homepage"
 msgstr "Page d’accueil"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:809 src/app/webbrowser/NewTabView.qml:130
+#: src/app/webbrowser/Browser.qml:819 src/app/webbrowser/NewTabView.qml:130
 #: src/app/webbrowser/NewTabViewWide.qml:139
 msgid "Bookmarks"
 msgstr "Favoris"
@@ -842,42 +838,46 @@ msgstr "Terminé"
 msgid "Reopen Tab"
 msgstr "Ré-ouvrir l'onglet"
 
-#: src/app/webbrowser/Browser.qml:789
+#: src/app/webbrowser/Browser.qml:799
 msgid "New window"
 msgstr "Nouvelle fenêtre"
 
-#: src/app/webbrowser/Browser.qml:795
+#: src/app/webbrowser/Browser.qml:805
 msgid "New private window"
 msgstr "Nouvelle fenêtre de navigation privée"
 
-#: src/app/webbrowser/Browser.qml:815 src/app/webbrowser/HistoryView.qml:31
+#: src/app/webbrowser/Browser.qml:825 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
 msgstr "Historique"
 
-#: src/app/webbrowser/Browser.qml:835 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/Browser.qml:845 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
 msgstr "Paramètres"
 
-#: src/app/webbrowser/Browser.qml:841
+#: src/app/webbrowser/Browser.qml:851
 msgid "View source"
 msgstr "Afficher le code source"
 
-#: src/app/webbrowser/Browser.qml:854
+#: src/app/webbrowser/Browser.qml:864
 msgid "Save / Print to PDF"
 msgstr "Enregistrer / Imprimer en PDF"
 
-#: src/app/webbrowser/Browser.qml:875 src/app/WebViewImpl.qml:679
+#: src/app/webbrowser/Browser.qml:885 src/app/WebViewImpl.qml:690
 msgid "Zoom"
 msgstr "Zoom"
 
+#: src/app/webbrowser/Browser.qml:892 src/app/webbrowser/SettingsPage.qml:140
+msgid "Set Desktop mode"
+msgstr "Activer le mode ordinateur"
+
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1074 src/app/webbrowser/Browser.qml:1112
+#: src/app/webbrowser/Browser.qml:1092 src/app/webbrowser/Browser.qml:1130
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1946
+#: src/app/webbrowser/Browser.qml:1970
 msgid "the file is already in the downloads folder."
 msgstr "Le fichier est déjà dans le dossier des téléchargements."
 
@@ -922,8 +922,8 @@ msgid "Today"
 msgstr "Aujourd'hui"
 
 #. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:110
-#: src/app/webcontainer/webapp-container.qml:75
+#: src/app/webbrowser/morph-browser.qml:108
+#: src/app/webcontainer/webapp-container.qml:76
 #, qt-format
 msgid "%1 - Morph Web Browser"
 msgstr "%1 - Navigateur internet Morph"
@@ -993,12 +993,12 @@ msgid "Default"
 msgstr "Par défaut"
 
 #: src/app/webbrowser/SettingsPage.qml:74
-#: src/app/webbrowser/SettingsPage.qml:257
+#: src/app/webbrowser/SettingsPage.qml:277
 msgid "Search engine"
 msgstr "Moteur de recherche"
 
 #: src/app/webbrowser/SettingsPage.qml:91
-#: src/app/webbrowser/SettingsPage.qml:484
+#: src/app/webbrowser/SettingsPage.qml:504
 msgid "New Tab Page"
 msgstr "Page de nouvel onglet"
 
@@ -1009,10 +1009,6 @@ msgstr "Restaurer la session précédente au démarrage"
 #: src/app/webbrowser/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
 msgstr "indisponible en raison du démarrage en mode privé"
-
-#: src/app/webbrowser/SettingsPage.qml:140
-msgid "Set Desktop mode"
-msgstr "Activer le mode ordinateur"
 
 #: src/app/webbrowser/SettingsPage.qml:159
 #: src/app/webcontainer/WebappSettingsPage.qml:58
@@ -1030,77 +1026,87 @@ msgid "Default Zoom"
 msgstr "Zoom par défaut"
 
 #: src/app/webbrowser/SettingsPage.qml:218
-#: src/app/webbrowser/SettingsPage.qml:300
-#: src/app/webcontainer/WebappSettingsPage.qml:131
-#: src/app/webcontainer/WebappSettingsPage.qml:172
+#: src/app/webcontainer/WebappSettingsPage.qml:117
+msgid "Load Images"
+msgstr ""
+
+#: src/app/webbrowser/SettingsPage.qml:219
+#: src/app/webcontainer/WebappSettingsPage.qml:118
+msgid "Automatically load images on web pages"
+msgstr ""
+
+#: src/app/webbrowser/SettingsPage.qml:238
+#: src/app/webbrowser/SettingsPage.qml:320
+#: src/app/webcontainer/WebappSettingsPage.qml:151
+#: src/app/webcontainer/WebappSettingsPage.qml:192
 msgid "Privacy & permissions"
 msgstr "Vie privée & autorisations"
 
-#: src/app/webbrowser/SettingsPage.qml:229
+#: src/app/webbrowser/SettingsPage.qml:249
 msgid "Reset browser settings"
 msgstr "Réinitialiser les paramètres du navigateur"
 
-#: src/app/webbrowser/SettingsPage.qml:314
+#: src/app/webbrowser/SettingsPage.qml:334
 msgid "Start in private mode"
 msgstr "Démarrer en mode privé"
 
-#: src/app/webbrowser/SettingsPage.qml:338
-#: src/app/webcontainer/WebappSettingsPage.qml:186
+#: src/app/webbrowser/SettingsPage.qml:358
+#: src/app/webcontainer/WebappSettingsPage.qml:206
 msgid "Only allow browsing to whitelisted websites"
 msgstr "Autoriser uniquement la navigation vers les sites en liste blanche"
 
-#: src/app/webbrowser/SettingsPage.qml:378
-#: src/app/webbrowser/SettingsPage.qml:569
+#: src/app/webbrowser/SettingsPage.qml:398
+#: src/app/webbrowser/SettingsPage.qml:589
 msgid "Camera & microphone"
 msgstr "Caméra & microphone"
 
-#: src/app/webbrowser/SettingsPage.qml:387
+#: src/app/webbrowser/SettingsPage.qml:407
 msgid "Clear browsing history"
 msgstr "Supprimer l’historique de navigation"
 
-#: src/app/webbrowser/SettingsPage.qml:391
+#: src/app/webbrowser/SettingsPage.qml:411
 msgid "Clear browsing history?"
 msgstr "Effacer l'historique de navigation ?"
 
-#: src/app/webbrowser/SettingsPage.qml:399
-#: src/app/webcontainer/WebappSettingsPage.qml:227
+#: src/app/webbrowser/SettingsPage.qml:419
+#: src/app/webcontainer/WebappSettingsPage.qml:247
 msgid "Clear cache"
 msgstr "Vider le cache"
 
-#: src/app/webbrowser/SettingsPage.qml:402
-#: src/app/webcontainer/WebappSettingsPage.qml:230
+#: src/app/webbrowser/SettingsPage.qml:422
+#: src/app/webcontainer/WebappSettingsPage.qml:250
 msgid "Clear cache?"
 msgstr "Vider le cache ?"
 
-#: src/app/webbrowser/SettingsPage.qml:410
-#: src/app/webcontainer/WebappSettingsPage.qml:238
+#: src/app/webbrowser/SettingsPage.qml:430
+#: src/app/webcontainer/WebappSettingsPage.qml:258
 msgid "Clear all cookies"
 msgstr "Supprimer tous les cookies"
 
-#: src/app/webbrowser/SettingsPage.qml:413
-#: src/app/webcontainer/WebappSettingsPage.qml:241
+#: src/app/webbrowser/SettingsPage.qml:433
+#: src/app/webcontainer/WebappSettingsPage.qml:261
 msgid "Clear all Cookies?"
 msgstr "Supprimer tous les cookies ?"
 
-#: src/app/webbrowser/SettingsPage.qml:496
+#: src/app/webbrowser/SettingsPage.qml:516
 #, fuzzy
 #| msgid "Custom hompage"
 msgid "Custom homepage"
 msgstr "Page d'accueil personnalisée"
 
-#: src/app/webbrowser/SettingsPage.qml:581
+#: src/app/webbrowser/SettingsPage.qml:601
 msgid "Microphone"
 msgstr "Microphone"
 
-#: src/app/webbrowser/SettingsPage.qml:602
+#: src/app/webbrowser/SettingsPage.qml:622
 msgid "Camera"
 msgstr "Caméra"
 
-#: src/app/webbrowser/TabComponent.qml:258
+#: src/app/webbrowser/TabComponent.qml:282
 msgid "Swipe Up To Exit Full Screen"
 msgstr "Faites glisser vers le haut pour sortir du plein écran"
 
-#: src/app/webbrowser/TabComponent.qml:259
+#: src/app/webbrowser/TabComponent.qml:283
 msgid "Press ESC To Exit Full Screen"
 msgstr "Appuyez sur Échap pour sortir du plein écran"
 
@@ -1200,7 +1206,7 @@ msgstr "Oups, une erreur s'est produite."
 msgid "WebappContainer Settings"
 msgstr "Paramètres de WebappContainer"
 
-#: src/app/webcontainer/WebappSettingsPage.qml:143
+#: src/app/webcontainer/WebappSettingsPage.qml:163
 msgid "Reset webapp settings"
 msgstr "Réinitialiser les paramètres de l'application Web"
 

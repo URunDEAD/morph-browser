@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-02 07:15+0000\n"
+"POT-Creation-Date: 2023-12-19 16:45+0100\n"
 "PO-Revision-Date: 2023-10-17 05:51+0000\n"
 "Last-Translator: Serhii Horichenko <m@sgg.im>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/lomiri/"
-"morph-browser/ru/>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/lomiri/morph-"
+"browser/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,8 +25,8 @@ msgstr ""
 msgid "Morph Browser"
 msgstr "Интернет Браузер"
 
-#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:112
-#: src/app/webcontainer/webapp-container.qml:77
+#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:110
+#: src/app/webcontainer/webapp-container.qml:78
 msgid "Morph Web Browser"
 msgstr "Morph веб-браузер"
 
@@ -37,10 +37,6 @@ msgstr "Просмотр Интернет используя QtWebEngine"
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr "Интернет;WWW;Браузер;Веб;Обозреватель"
-
-#: morph-browser.desktop.in:9
-msgid "/usr/share/morph-browser/morph-browser.svg"
-msgstr "/usr/share/morph-browser/morph-browser.svg"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
@@ -92,11 +88,11 @@ msgstr "Копировать изображение"
 msgid "Copy link"
 msgstr "Копировать ссылку"
 
-#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:373
+#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:418
 msgid "Copy"
 msgstr "Копировать"
 
-#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:362
+#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:407
 msgid "Cut"
 msgstr "Вырезать"
 
@@ -104,7 +100,7 @@ msgstr "Вырезать"
 msgid "Erase"
 msgstr "Удалить"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:821
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:831
 msgid "Find in page"
 msgstr "Найти на странице"
 
@@ -173,7 +169,7 @@ msgstr "Открыть ссылку в новом окне"
 msgid "Open video in new tab"
 msgstr "Открыть видео в новой вкладке"
 
-#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:384
+#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:429
 msgid "Paste"
 msgstr "Вставить"
 
@@ -206,11 +202,11 @@ msgstr "Сохранить видео"
 
 #: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
 #: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
-#: src/app/DownloadsPage.qml:86
+#: src/app/DownloadsPage.qml:85
 msgid "Select all"
 msgstr "Выбрать все"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:801
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:811
 msgid "Share"
 msgstr "Поделиться"
 
@@ -263,11 +259,11 @@ msgstr "Разрешить"
 #: src/app/webbrowser/BookmarkOptions.qml:182
 #: src/app/webbrowser/ContentDownloadDialog.qml:114
 #: src/app/webbrowser/ContextMenuMobile.qml:143
-#: src/app/webbrowser/SettingsPage.qml:438
-#: src/app/webbrowser/SettingsPage.qml:554
+#: src/app/webbrowser/SettingsPage.qml:458
+#: src/app/webbrowser/SettingsPage.qml:574
 #: src/app/webcontainer/AccountChooserDialog.qml:96
 #: src/app/webcontainer/ContextMenuMobile.qml:143
-#: src/app/webcontainer/WebappSettingsPage.qml:266 src/app/ZoomControls.qml:237
+#: src/app/webcontainer/WebappSettingsPage.qml:286 src/app/ZoomControls.qml:237
 msgid "Cancel"
 msgstr "Отмена"
 
@@ -359,12 +355,12 @@ msgstr "Выделить цветом"
 msgid "JavaScript Confirmation"
 msgstr "Подтверждение действий JavaScript"
 
-#: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:149
+#: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
 msgstr "Пользовательские агенты"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
-#: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:102
+#: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
 msgid "Delete"
 msgstr "Удалить"
 
@@ -417,39 +413,39 @@ msgstr "Специальные настройки для домена"
 msgid "Enter the name of the domain, e.g. m.example.com"
 msgstr "Введите имя домена. Например, m.example.com"
 
-#: src/app/DomainSettingsPage.qml:206
+#: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
 msgstr "разрешить запускать другие приложения"
 
-#: src/app/DomainSettingsPage.qml:225
+#: src/app/DomainSettingsPage.qml:226
 msgid "access your location"
 msgstr "доступ к Вашему местоположению"
 
-#: src/app/DomainSettingsPage.qml:230
+#: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
 msgstr "Спрашивать каждый раз"
 
-#: src/app/DomainSettingsPage.qml:230
+#: src/app/DomainSettingsPage.qml:231
 msgid "Allowed"
 msgstr "Разрешено"
 
-#: src/app/DomainSettingsPage.qml:230
+#: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
 msgstr "Запрещено"
 
-#: src/app/DomainSettingsPage.qml:244
+#: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
 msgstr "пользовательский User Agent"
 
-#: src/app/DomainSettingsPage.qml:319 src/app/DomainSettingsPage.qml:324
+#: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
 msgstr "Увеличение: "
 
-#: src/app/DomainSettingsPage.qml:324
+#: src/app/DomainSettingsPage.qml:325
 msgid "not set"
 msgstr "не задано"
 
-#: src/app/DomainSettingsPage.qml:360
+#: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
 msgstr "Не заданы настройки для домена"
 
@@ -501,25 +497,25 @@ msgstr "Отменено"
 msgid "Completed"
 msgstr "Выполнено"
 
-#: src/app/DownloadsDialog.qml:172 src/app/webbrowser/SettingsPage.qml:445
-#: src/app/webcontainer/WebappSettingsPage.qml:273
+#: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
+#: src/app/webcontainer/WebappSettingsPage.qml:293
 msgid "Clear"
 msgstr "Очистить"
 
-#: src/app/DownloadsDialog.qml:182
+#: src/app/DownloadsDialog.qml:179
 msgid "View All"
 msgstr "Просмотреть все"
 
-#: src/app/DownloadsPage.qml:47 src/app/webbrowser/Browser.qml:828
-#: src/app/webcontainer/WebappSettingsPage.qml:117
+#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:838
+#: src/app/webcontainer/WebappSettingsPage.qml:137
 msgid "Downloads"
 msgstr "Загрузки"
 
-#: src/app/DownloadsPage.qml:61
+#: src/app/DownloadsPage.qml:60
 msgid "Confirm selection"
 msgstr "Подтвердить выбор"
 
-#: src/app/DownloadsPage.qml:310
+#: src/app/DownloadsPage.qml:288
 msgid "No downloads available"
 msgstr "Нет доступных загрузок"
 
@@ -743,15 +739,15 @@ msgstr "Сохранить как PDF"
 msgid "Remove from List"
 msgstr "Убрать из списка"
 
-#: src/app/webbrowser/AddressBar.qml:242
+#: src/app/webbrowser/AddressBar.qml:287
 msgid "find in page"
 msgstr "найти на странице"
 
-#: src/app/webbrowser/AddressBar.qml:243
+#: src/app/webbrowser/AddressBar.qml:288
 msgid "search or enter an address"
 msgstr "Введите поисковый запрос или адрес"
 
-#: src/app/webbrowser/AddressBar.qml:395
+#: src/app/webbrowser/AddressBar.qml:440
 msgid "Paste and Go"
 msgstr "Вставить из буфера обмена и перейти"
 
@@ -785,20 +781,20 @@ msgid "Create new folder"
 msgstr "Создать новую папку"
 
 #: src/app/webbrowser/BookmarkOptions.qml:164
-#: src/app/webbrowser/SettingsPage.qml:530 src/app/ZoomControls.qml:82
+#: src/app/webbrowser/SettingsPage.qml:550 src/app/ZoomControls.qml:82
 msgid "Save"
 msgstr "Сохранить"
 
 #: src/app/webbrowser/BookmarksFoldersView.qml:191
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
 #: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
-#: src/app/webbrowser/SettingsPage.qml:466
+#: src/app/webbrowser/SettingsPage.qml:486
 msgid "Homepage"
 msgstr "Домашняя страница"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:809 src/app/webbrowser/NewTabView.qml:130
+#: src/app/webbrowser/Browser.qml:819 src/app/webbrowser/NewTabView.qml:130
 #: src/app/webbrowser/NewTabViewWide.qml:139
 msgid "Bookmarks"
 msgstr "Закладки"
@@ -835,42 +831,46 @@ msgstr "Сделано"
 msgid "Reopen Tab"
 msgstr "Открыть вкладку заново"
 
-#: src/app/webbrowser/Browser.qml:789
+#: src/app/webbrowser/Browser.qml:799
 msgid "New window"
 msgstr "Новое окно"
 
-#: src/app/webbrowser/Browser.qml:795
+#: src/app/webbrowser/Browser.qml:805
 msgid "New private window"
 msgstr "Новое приватное окно"
 
-#: src/app/webbrowser/Browser.qml:815 src/app/webbrowser/HistoryView.qml:31
+#: src/app/webbrowser/Browser.qml:825 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
 msgstr "История"
 
-#: src/app/webbrowser/Browser.qml:835 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/Browser.qml:845 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
 msgstr "Настройки"
 
-#: src/app/webbrowser/Browser.qml:841
+#: src/app/webbrowser/Browser.qml:851
 msgid "View source"
 msgstr "Просмотр кода страницы"
 
-#: src/app/webbrowser/Browser.qml:854
+#: src/app/webbrowser/Browser.qml:864
 msgid "Save / Print to PDF"
 msgstr "Сохранить / Распечатать в PDF"
 
-#: src/app/webbrowser/Browser.qml:875 src/app/WebViewImpl.qml:679
+#: src/app/webbrowser/Browser.qml:885 src/app/WebViewImpl.qml:690
 msgid "Zoom"
 msgstr "Увеличить"
 
+#: src/app/webbrowser/Browser.qml:892 src/app/webbrowser/SettingsPage.qml:140
+msgid "Set Desktop mode"
+msgstr "Включить режим \"десктоп\""
+
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1074 src/app/webbrowser/Browser.qml:1112
+#: src/app/webbrowser/Browser.qml:1092 src/app/webbrowser/Browser.qml:1130
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1946
+#: src/app/webbrowser/Browser.qml:1970
 msgid "the file is already in the downloads folder."
 msgstr "файл уже находится в папке загрузок."
 
@@ -916,8 +916,8 @@ msgid "Today"
 msgstr "Сегодня"
 
 #. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:110
-#: src/app/webcontainer/webapp-container.qml:75
+#: src/app/webbrowser/morph-browser.qml:108
+#: src/app/webcontainer/webapp-container.qml:76
 #, qt-format
 msgid "%1 - Morph Web Browser"
 msgstr "%1 - Morph Веб-Браузер"
@@ -987,12 +987,12 @@ msgid "Default"
 msgstr "По умолчанию"
 
 #: src/app/webbrowser/SettingsPage.qml:74
-#: src/app/webbrowser/SettingsPage.qml:257
+#: src/app/webbrowser/SettingsPage.qml:277
 msgid "Search engine"
 msgstr "Поисковая система"
 
 #: src/app/webbrowser/SettingsPage.qml:91
-#: src/app/webbrowser/SettingsPage.qml:484
+#: src/app/webbrowser/SettingsPage.qml:504
 msgid "New Tab Page"
 msgstr "Новая вкладка"
 
@@ -1003,10 +1003,6 @@ msgstr "Восстановить предыдущий сеанс при запу
 #: src/app/webbrowser/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
 msgstr "недоступно из-за запуска в приватном режиме"
-
-#: src/app/webbrowser/SettingsPage.qml:140
-msgid "Set Desktop mode"
-msgstr "Включить режим \"десктоп\""
 
 #: src/app/webbrowser/SettingsPage.qml:159
 #: src/app/webcontainer/WebappSettingsPage.qml:58
@@ -1024,75 +1020,85 @@ msgid "Default Zoom"
 msgstr "Масштаб по умолчанию"
 
 #: src/app/webbrowser/SettingsPage.qml:218
-#: src/app/webbrowser/SettingsPage.qml:300
-#: src/app/webcontainer/WebappSettingsPage.qml:131
-#: src/app/webcontainer/WebappSettingsPage.qml:172
+#: src/app/webcontainer/WebappSettingsPage.qml:117
+msgid "Load Images"
+msgstr ""
+
+#: src/app/webbrowser/SettingsPage.qml:219
+#: src/app/webcontainer/WebappSettingsPage.qml:118
+msgid "Automatically load images on web pages"
+msgstr ""
+
+#: src/app/webbrowser/SettingsPage.qml:238
+#: src/app/webbrowser/SettingsPage.qml:320
+#: src/app/webcontainer/WebappSettingsPage.qml:151
+#: src/app/webcontainer/WebappSettingsPage.qml:192
 msgid "Privacy & permissions"
 msgstr "Конфиденциальность и разрешения"
 
-#: src/app/webbrowser/SettingsPage.qml:229
+#: src/app/webbrowser/SettingsPage.qml:249
 msgid "Reset browser settings"
 msgstr "Сбросить настройки браузера"
 
-#: src/app/webbrowser/SettingsPage.qml:314
+#: src/app/webbrowser/SettingsPage.qml:334
 msgid "Start in private mode"
 msgstr "Начать в приватном режиме"
 
-#: src/app/webbrowser/SettingsPage.qml:338
-#: src/app/webcontainer/WebappSettingsPage.qml:186
+#: src/app/webbrowser/SettingsPage.qml:358
+#: src/app/webcontainer/WebappSettingsPage.qml:206
 msgid "Only allow browsing to whitelisted websites"
 msgstr "Разрешить просмотр страниц только из списка разрешенных сайтов"
 
-#: src/app/webbrowser/SettingsPage.qml:378
-#: src/app/webbrowser/SettingsPage.qml:569
+#: src/app/webbrowser/SettingsPage.qml:398
+#: src/app/webbrowser/SettingsPage.qml:589
 msgid "Camera & microphone"
 msgstr "Камера и микрофон"
 
-#: src/app/webbrowser/SettingsPage.qml:387
+#: src/app/webbrowser/SettingsPage.qml:407
 msgid "Clear browsing history"
 msgstr "Очистить историю"
 
-#: src/app/webbrowser/SettingsPage.qml:391
+#: src/app/webbrowser/SettingsPage.qml:411
 msgid "Clear browsing history?"
 msgstr "Очистить историю?"
 
-#: src/app/webbrowser/SettingsPage.qml:399
-#: src/app/webcontainer/WebappSettingsPage.qml:227
+#: src/app/webbrowser/SettingsPage.qml:419
+#: src/app/webcontainer/WebappSettingsPage.qml:247
 msgid "Clear cache"
 msgstr "Очистить кэш"
 
-#: src/app/webbrowser/SettingsPage.qml:402
-#: src/app/webcontainer/WebappSettingsPage.qml:230
+#: src/app/webbrowser/SettingsPage.qml:422
+#: src/app/webcontainer/WebappSettingsPage.qml:250
 msgid "Clear cache?"
 msgstr "Очистить кэш?"
 
-#: src/app/webbrowser/SettingsPage.qml:410
-#: src/app/webcontainer/WebappSettingsPage.qml:238
+#: src/app/webbrowser/SettingsPage.qml:430
+#: src/app/webcontainer/WebappSettingsPage.qml:258
 msgid "Clear all cookies"
 msgstr "Очистить куки"
 
-#: src/app/webbrowser/SettingsPage.qml:413
-#: src/app/webcontainer/WebappSettingsPage.qml:241
+#: src/app/webbrowser/SettingsPage.qml:433
+#: src/app/webcontainer/WebappSettingsPage.qml:261
 msgid "Clear all Cookies?"
 msgstr "Очистить куки?"
 
-#: src/app/webbrowser/SettingsPage.qml:496
+#: src/app/webbrowser/SettingsPage.qml:516
 msgid "Custom homepage"
 msgstr "Пользовательская домашняя страница"
 
-#: src/app/webbrowser/SettingsPage.qml:581
+#: src/app/webbrowser/SettingsPage.qml:601
 msgid "Microphone"
 msgstr "Микрофон"
 
-#: src/app/webbrowser/SettingsPage.qml:602
+#: src/app/webbrowser/SettingsPage.qml:622
 msgid "Camera"
 msgstr "Камера"
 
-#: src/app/webbrowser/TabComponent.qml:258
+#: src/app/webbrowser/TabComponent.qml:282
 msgid "Swipe Up To Exit Full Screen"
 msgstr "Смахните вверх для выхода из полноэкранного режима"
 
-#: src/app/webbrowser/TabComponent.qml:259
+#: src/app/webbrowser/TabComponent.qml:283
 msgid "Press ESC To Exit Full Screen"
 msgstr "Нажмите ESC для выхода из полноэкранного режима"
 
@@ -1192,7 +1198,7 @@ msgstr "Упс, что-то пошло не так."
 msgid "WebappContainer Settings"
 msgstr "Настройки WebappContainer"
 
-#: src/app/webcontainer/WebappSettingsPage.qml:143
+#: src/app/webcontainer/WebappSettingsPage.qml:163
 msgid "Reset webapp settings"
 msgstr "Сбросить настройки веб-приложения"
 
@@ -1271,6 +1277,9 @@ msgstr "Сохранить для домена"
 #: src/app/ZoomControls.qml:219
 msgid "Save as default"
 msgstr "Сохранить по умолчанию"
+
+#~ msgid "/usr/share/morph-browser/morph-browser.svg"
+#~ msgstr "/usr/share/morph-browser/morph-browser.svg"
 
 #, qt-format
 #~ msgid ""

@@ -50,28 +50,11 @@ WebEngineProfile {
             runOnSubframes: true
         },
         WebEngineScript {
-            name: "oxide://twitter-no-omniprompt/"
-            sourceUrl: Qt.resolvedUrl("twitter-no-omniprompt.js")
-            runOnSubframes: true
-        },
-        WebEngineScript {
             name: "oxide://scrollbar-theme/"
             injectionPoint: WebEngineScript.DocumentReady
             worldId: WebEngineScript.MainWorld
             sourceUrl: Qt.resolvedUrl("scrollbar-theme.js")
             runOnSubframes: true
-        },
-        WebEngineScript {
-            name: "oxide://fb-no-appbanner/"
-            sourceUrl: Qt.resolvedUrl("fb-no-appbanner.js")
-            runOnSubframes: true
-        /*
-        },
-        WebEngineScript {
-            context: "oxide://selection/"
-            sourceUrl: Qt.resolvedUrl("selection02.js")
-            runOnSubframes: true
-        */
         }
     ]
 

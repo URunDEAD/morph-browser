@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2023-10-11 22:04+0000\n"
+"PO-Revision-Date: 2024-01-04 16:35+0000\n"
 "Last-Translator: phlostically <phlostically@mailinator.com>\n"
-"Language-Team: Esperanto <https://hosted.weblate.org/projects/lomiri/morph-"
-"browser/eo/>\n"
+"Language-Team: Esperanto <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/eo/>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -35,7 +35,7 @@ msgstr ""
 
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
-msgstr ""
+msgstr "Interreto;TTT;TTT-legilo;retumilo;reto"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
@@ -43,7 +43,7 @@ msgstr "Nova fenestro"
 
 #: morph-browser.desktop.in:27
 msgid "New Private Window"
-msgstr ""
+msgstr "Nova privata fenestro"
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
@@ -53,7 +53,7 @@ msgstr "Reen"
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Back.qml:26
 msgid "Older Page"
-msgstr ""
+msgstr "Pli malnova paĝo"
 
 #: src/app/actions/BookmarkLink.qml:22
 msgid "Bookmark link"
@@ -61,7 +61,7 @@ msgstr ""
 
 #: src/app/actions/Bookmark.qml:23
 msgid "Bookmark"
-msgstr ""
+msgstr "Legosigno"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Bookmark' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
@@ -71,13 +71,13 @@ msgstr ""
 
 #: src/app/actions/ClearHistory.qml:23
 msgid "Clear History"
-msgstr ""
+msgstr "Forviŝi historion"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/ClearHistory.qml:26
 msgid "Clear Navigation History"
-msgstr ""
+msgstr "Forviŝi navigan historion"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
@@ -85,7 +85,7 @@ msgstr "Kopii bildon"
 
 #: src/app/actions/CopyLink.qml:22
 msgid "Copy link"
-msgstr ""
+msgstr "Kopii ligilon"
 
 #: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:418
 msgid "Copy"
@@ -107,21 +107,21 @@ msgstr ""
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/FindInPage.qml:26
 msgid "Search in Page"
-msgstr ""
+msgstr "Serĉi en paĝo"
 
 #: src/app/actions/Forward.qml:23
 msgid "Forward"
-msgstr ""
+msgstr "Antaŭen"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Forward' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Forward.qml:26
 msgid "Newer Page"
-msgstr ""
+msgstr "Pli nova paĝo"
 
 #: src/app/actions/GoTo.qml:23
 msgid "Goto"
-msgstr ""
+msgstr "Iri al"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
@@ -142,31 +142,31 @@ msgstr ""
 
 #: src/app/actions/OpenImageInNewTab.qml:22
 msgid "Open image in new tab"
-msgstr ""
+msgstr "Malfermi bildon en nova langeto"
 
 #: src/app/actions/OpenLinkInBrowser.qml:22
 msgid "Open link in default browser"
-msgstr ""
+msgstr "Malfermi ligon per implicita TTT-legilo"
 
 #: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
 msgid "Open link in new background tab"
-msgstr ""
+msgstr "Malfermi ligon en nova fona langeto"
 
 #: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
 msgid "Open link in new private window"
-msgstr ""
+msgstr "Malfermi ligon en nova privata fenestro"
 
 #: src/app/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
-msgstr ""
+msgstr "Malfermi ligon en nova langeto"
 
 #: src/app/actions/OpenLinkInNewWindow.qml:22
 msgid "Open link in new window"
-msgstr ""
+msgstr "Malfermi ligon en nova fenestro"
 
 #: src/app/actions/OpenVideoInNewTab.qml:22
 msgid "Open video in new tab"
-msgstr ""
+msgstr "Malfermi filmon en nova langeto"
 
 #: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:429
 msgid "Paste"
@@ -241,7 +241,7 @@ msgstr ""
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
-msgstr ""
+msgstr "Memori decidon"
 
 #: src/app/AllowCustomSchemesDialog.qml:50
 #: src/app/GeolocationPermissionRequest.qml:51
@@ -311,7 +311,7 @@ msgstr "Pasvorto"
 
 #: src/app/BeforeUnloadDialog.qml:24
 msgid "Confirm Navigation"
-msgstr ""
+msgstr "Konfirmi navigon"
 
 #: src/app/BeforeUnloadDialog.qml:33
 msgid "Leave"
@@ -417,14 +417,12 @@ msgid "Ask each time"
 msgstr ""
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "Permesi"
+msgstr "Permesita"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Malpermesita"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
@@ -487,19 +485,17 @@ msgid "No Recent Downloads"
 msgstr ""
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Nuligi"
+msgstr "Nuligita"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Kompletigita"
 
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
 msgid "Clear"
-msgstr ""
+msgstr "Forviŝi"
 
 #: src/app/DownloadsDialog.qml:179
 msgid "View All"
@@ -739,7 +735,7 @@ msgstr ""
 #. TRANSLATORS: Field where the title of bookmarked URL can be changed
 #: src/app/webbrowser/BookmarkOptions.qml:71
 msgid "Name"
-msgstr ""
+msgstr "Nomo"
 
 #. TRANSLATORS: Field to choose the folder where bookmarked URL will be saved in
 #: src/app/webbrowser/BookmarkOptions.qml:89
@@ -764,14 +760,14 @@ msgstr ""
 #: src/app/webbrowser/BookmarkOptions.qml:164
 #: src/app/webbrowser/SettingsPage.qml:550 src/app/ZoomControls.qml:82
 msgid "Save"
-msgstr ""
+msgstr "Konservi"
 
 #: src/app/webbrowser/BookmarksFoldersView.qml:191
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
 #: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
 #: src/app/webbrowser/SettingsPage.qml:486
 msgid "Homepage"
-msgstr ""
+msgstr "Ĉefpaĝo"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
@@ -816,28 +812,28 @@ msgstr ""
 
 #: src/app/webbrowser/Browser.qml:805
 msgid "New private window"
-msgstr ""
+msgstr "Nova privata fenestro"
 
 #: src/app/webbrowser/Browser.qml:825 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
-msgstr ""
+msgstr "Historio"
 
 #: src/app/webbrowser/Browser.qml:845 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
-msgstr ""
+msgstr "Agordoj"
 
 #: src/app/webbrowser/Browser.qml:851
 msgid "View source"
-msgstr ""
+msgstr "Vidi fonton"
 
 #: src/app/webbrowser/Browser.qml:864
 msgid "Save / Print to PDF"
-msgstr ""
+msgstr "Konservi/presi kiel PDF-on"
 
 #: src/app/webbrowser/Browser.qml:885 src/app/WebViewImpl.qml:690
 msgid "Zoom"
-msgstr ""
+msgstr "Zomi"
 
 #: src/app/webbrowser/Browser.qml:892 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
@@ -876,7 +872,7 @@ msgstr ""
 #: src/app/webbrowser/HistorySectionDelegate.qml:48
 #: src/app/webbrowser/HistoryViewWide.qml:252
 msgid "Yesterday"
-msgstr ""
+msgstr "Hieraŭ"
 
 #: src/app/webbrowser/HistoryViewWide.qml:161
 msgid "search history"
@@ -889,7 +885,7 @@ msgstr ""
 #: src/app/webbrowser/HistoryViewWide.qml:250
 #: src/app/webbrowser/HistoryViewWide.qml:337
 msgid "Today"
-msgstr ""
+msgstr "Hodiaŭ"
 
 #. TRANSLATORS: %1 refers to the current page’s title
 #: src/app/webbrowser/morph-browser.qml:108
@@ -914,7 +910,7 @@ msgstr ""
 
 #: src/app/webbrowser/NewTabView.qml:142
 msgid "More"
-msgstr ""
+msgstr "Pli"
 
 #: src/app/webbrowser/NewTabView.qml:326
 #: src/app/webbrowser/NewTabViewWide.qml:138
@@ -1061,7 +1057,7 @@ msgstr ""
 
 #: src/app/webbrowser/SettingsPage.qml:601
 msgid "Microphone"
-msgstr ""
+msgstr "Mikrofono"
 
 #: src/app/webbrowser/SettingsPage.qml:622
 msgid "Camera"
@@ -1093,7 +1089,7 @@ msgstr ""
 
 #: src/app/webbrowser/UrlPreviewDelegate.qml:138
 msgid "Remove"
-msgstr ""
+msgstr "Forigi"
 
 #: src/app/webcontainer/AccountChooserDialog.qml:62
 msgid ""
@@ -1146,7 +1142,7 @@ msgstr ""
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Close the app"
-msgstr ""
+msgstr "Fermi la programon"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Skip"
@@ -1207,7 +1203,7 @@ msgstr ""
 
 #: src/app/ZoomControls.qml:190
 msgid "Save Zoom"
-msgstr ""
+msgstr "Konservi zomon"
 
 #: src/app/ZoomControls.qml:192
 msgid "the current web app"

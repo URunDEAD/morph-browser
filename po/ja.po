@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2023-11-05 13:35+0000\n"
+"PO-Revision-Date: 2024-01-12 01:06+0000\n"
 "Last-Translator: NPL <alterlinuxer@gmail.com>\n"
-"Language-Team: Japanese <https://hosted.weblate.org/projects/lomiri/morph-"
-"browser/ja/>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.2-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -407,8 +407,9 @@ msgid "Always allow access"
 msgstr "常にアクセスを許可する"
 
 #: src/app/DomainPermissionsPage.qml:283
+#, fuzzy
 msgid "No sites have been granted special permissions"
-msgstr ""
+msgstr "特別な許可を付与されたサイトはありません"
 
 #: src/app/DomainSettingsPage.qml:52
 msgid "Domain specific settings"
@@ -419,8 +420,9 @@ msgid "Enter the name of the domain, e.g. m.example.com"
 msgstr "example.comのようにドメイン名を入力してください"
 
 #: src/app/DomainSettingsPage.qml:207
+#, fuzzy
 msgid "allowed to launch other apps"
-msgstr ""
+msgstr "他のアプリで開くことを許可されています"
 
 #: src/app/DomainSettingsPage.qml:226
 msgid "access your location"
@@ -447,11 +449,11 @@ msgstr "カスタムユーザーエージェント"
 
 #: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
-msgstr ""
+msgstr "拡大率: "
 
 #: src/app/DomainSettingsPage.qml:325
 msgid "not set"
-msgstr ""
+msgstr "設定されていません"
 
 #: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
@@ -511,7 +513,7 @@ msgstr "キャンセル"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "完了済み"
 
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
@@ -520,7 +522,7 @@ msgstr "削除"
 
 #: src/app/DownloadsDialog.qml:179
 msgid "View All"
-msgstr ""
+msgstr "すべて表示"
 
 #: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:838
 #: src/app/webcontainer/WebappSettingsPage.qml:137
@@ -537,19 +539,19 @@ msgstr "ダウンロードはありません"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "このユーザーエージェント名はすでに取得済みです"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
 msgid "Add the name for the user agent"
-msgstr ""
+msgstr "ユーザーエージェント名を追加"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
-msgstr ""
+msgstr "ユーザーエージェントの文字列を入力…"
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
-msgstr ""
+msgstr "認証エラー"
 
 #: src/app/ErrorSheet.qml:42
 msgid "Network Error"
@@ -1040,12 +1042,12 @@ msgstr "デフォルト"
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Load Images"
-msgstr ""
+msgstr "画像の読み込み"
 
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
-msgstr ""
+msgstr "ウェブページの画像を自動で読み込む"
 
 #: src/app/webbrowser/SettingsPage.qml:238
 #: src/app/webbrowser/SettingsPage.qml:320
@@ -1244,7 +1246,7 @@ msgstr ""
 
 #: src/app/ZoomControls.qml:100
 msgid "Current Zoom"
-msgstr ""
+msgstr "現在の拡大率"
 
 #: src/app/ZoomControls.qml:101
 msgid "domain"

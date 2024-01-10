@@ -95,17 +95,24 @@ Component {
                     switch (request.destination) {
 
                     case WebEngineView.NewViewInTab:
-                        browser.openLinkInNewTabRequested(request.requestedUrl, false);
+                        browser.newViewInNewTabRequested(request, false);
                         break;
 
                    case WebEngineView.NewViewInBackgroundTab:
-                       browser.openLinkInNewTabRequested(request.requestedUrl, true);
+                       browser.newViewInNewTabRequested(request, true);
                        break;
 
                    case WebEngineView.NewViewInWindow:
-                   case WebEngineView.NewViewInDialog:
-                       browser.openLinkInNewWindowRequested(request.requestedUrl, browser.incognito);
+                       browser.newViewInNewWindowRequested(request, browser.incognito);
                        break;
+
+                    // FIXME: make an actual dialog-type window, one that will
+                    // close itself if the page calls window.close() and the
+                    // only tab is closed. Then, use such window type only on
+                    // desktop.
+                    case WebEngineView.NewViewInDialog:
+                        browser.newViewInNewTabRequested(request, false);
+                        break;
 
                     }
 

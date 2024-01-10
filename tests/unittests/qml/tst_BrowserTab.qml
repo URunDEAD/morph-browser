@@ -110,10 +110,16 @@ Item {
         }
 
         function test_create_with_request() {
-            var tab = tabComponent.createObject(root, {'request': "foobar"})
+            var request = {
+                requestedUrl: "about:blank#test",
+                openIn: function(webview) {
+                    webview.url = this.requestedUrl
+                },
+            }
+            var tab = tabComponent.createObject(root, {'request': request})
             tryCompare(tab, 'webviewPresent', true)
             verify(tab.webviewPresent)
-            compare(tab.webview.request, "foobar")
+            compare(tab.webview.url, request.requestedUrl)
             tab.destroy()
         }
 

@@ -134,28 +134,25 @@ Component {
                 internal.addTab(newTab, setCurrent, tabsModel.indexOf(browserTab) + 1)
                 if (setCurrent) tabContainer.forceActiveFocus()
             }
+*/
+            onWindowCloseRequested: {
+                if (tab) {
+                    var i = tabsModel.indexOf(tab);
+                    if (i != -1) {
+                        tabsModel.remove(i);
+                    }
 
-            onCloseRequested: prepareToClose()
-            onPrepareToCloseResponse: {
-                if (proceed) {
-                    if (tab) {
-                        var i = tabsModel.indexOf(tab);
-                        if (i != -1) {
-                            tabsModel.remove(i);
-                        }
-
-                        // tab.close() destroys the context so add new tab before destroy if required
-                        if (tabsModel.count === 0) {
-                            internal.openUrlInNewTab("", true, true)
-                        }
-
-                        tab.close()
-                    } else if (tabsModel.count === 0) {
+                    // tab.close() destroys the context so add new tab before destroy if required
+                    if (tabsModel.count === 0) {
                         internal.openUrlInNewTab("", true, true)
                     }
+
+                    tab.close()
+                } else if (tabsModel.count === 0) {
+                    internal.openUrlInNewTab("", true, true)
                 }
             }
-*/
+
             QtObject {
                 id: webviewInternal
                 property url storedUrl: ""

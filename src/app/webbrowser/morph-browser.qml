@@ -233,6 +233,22 @@ QtObject {
                     window.requestActivate()
                 }
 
+                onNewViewInNewWindowRequested: {
+                    var window = windowFactory.createObject(
+                        null,
+                        {
+                            "incognito": incognito,
+                            "height": parent.height,
+                            "width": parent.width,
+                        }
+                    )
+                    window.addTab(request.requestedUrl, request)
+                    window.tabsModel.currentIndex = window.tabsModel.count - 1
+                    window.tabsModel.currentTab.load()
+                    window.show()
+                    window.requestActivate()
+                }
+
                 // Not handled as a window-level shortcut as it would take
                 // precedence over key events in web content.
                 Keys.onEscapePressed: {
@@ -274,8 +290,11 @@ QtObject {
                 return browser.restoreTabState(state)
             }
 
-            function addTab(url) {
-                var tab = browser.createTab({"initialUrl": url || ""})
+            function addTab(url, newViewRequest) {
+                var tab = browser.createTab({
+                    "initialUrl": url || "",
+                    "request": newViewRequest,
+                })
                 tabsModel.add(tab)
                 return tab
             }

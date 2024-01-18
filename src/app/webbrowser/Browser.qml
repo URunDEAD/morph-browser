@@ -127,11 +127,17 @@ Common.BrowserView {
     signal newWindowFromTab(var tab, var callback)
     signal openLinkInNewWindowRequested(url url, bool incognito)
     signal openLinkInNewTabRequested(url url, bool background)
+    signal newViewInNewWindowRequested(WebEngineNewViewRequest request, bool incognito)
+    signal newViewInNewTabRequested(WebEngineNewViewRequest request, bool background)
     signal shareLinkRequested(url linkUrl, string title)
     signal shareTextRequested(string text)
 
     onOpenLinkInNewTabRequested: {
         internal.openUrlInNewTab(url, !background, true, tabsModel.selectedIndex + 1)
+    }
+
+    onNewViewInNewTabRequested: {
+        internal.openUrlInNewTab(request.requestedUrl, !background, true, tabsModel.selectedIndex + 1, request)
     }
 
     onShareLinkRequested: {
@@ -1357,14 +1363,17 @@ Common.BrowserView {
             if (share) share.shareText(text)
         }
 
-        function openUrlInNewTab(url, setCurrent, load, index) {
+        function openUrlInNewTab(url, setCurrent, load, index, newViewRequest) {
             load = typeof load !== 'undefined' ? load : true
-            var tab = internal.createTabHelper({"initialUrl": url})
+            var tab = internal.createTabHelper({
+                "initialUrl": url,
+                "request": newViewRequest,
+            })
             addTab(tab, setCurrent, index)
             if (load) {
                 tab.load()
             }
-            if (!url.toString()) {
+            if (!url.toString() && !newViewRequest) {
                 focusAddressBar()
             }
         }

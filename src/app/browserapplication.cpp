@@ -216,6 +216,7 @@ bool BrowserApplication::initialize(const QString& qmlFileSubPath
     QQmlContext* context = m_engine->rootContext();
     context->setContextProperty("__runningConfined", runningConfined);
     context->setContextProperty("unversionedAppId", unversionedAppId);
+    context->setContextProperty("i18nDirectory", I18nDirectory());
 
     m_component = new QQmlComponent(m_engine);
     m_component->loadUrl(QUrl::fromLocalFile(qmlFileSubPath));

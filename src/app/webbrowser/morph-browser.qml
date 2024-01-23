@@ -30,6 +30,7 @@ QtObject {
 
     function init(urls, newSession, incognito) {
         i18n.domain = "morph-browser"
+        i18n.bindtextdomain("morph-browser", i18nDirectory)
         if (!newSession && settings.restoreSession && ! (incognito || settings.incognitoOnStart)) {
             session.restore();
         }

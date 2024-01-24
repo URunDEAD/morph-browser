@@ -40,6 +40,7 @@
 #include <QtQml/QQmlProperty>
 #include <QtQml/QtQml>
 #include <QtQuick/QQuickWindow>
+#include <QtCore/QLoggingCategory>
 //#include <QtWebEngine/qtwebengineglobal.h>
 
 #include <stdlib.h>
@@ -167,6 +168,10 @@ int main(int argc, char** argv)
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     WebbrowserApp app(argc, argv);
+
+    // Reduce the amount of logging to the console
+    QLoggingCategory::setFilterRules(QStringLiteral("*.debug=false\n"
+                                                    "*.info=false\n"));
     if (app.initialize()) {
         return app.run();
     } else {

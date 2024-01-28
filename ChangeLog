@@ -1,6 +1,222 @@
+2024-01-28 Mike Gabriel
+
+        * Release 1.1.0 (HEAD -> main, tag: 1.1.0)
+
+2024-01-24 Vlad Nirky
+
+        * Translated using Weblate (French) (8477283e)
+
+2024-01-18 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/fix-window-opener' into 'main'
+          (53f72827)
+
+2024-01-10 Ratchanan Srirattanamet
+
+        * webbrowser: wire up window.close() (2340622f)
+        * webbrowser: fix window.opener when sites use window.open()
+          (636dcff9)
+
+2024-01-05 NPL
+
+        * Translated using Weblate (Japanese) (3b44facf)
+
+2023-12-27 Serhii Horichenko
+
+        * Translated using Weblate (Ukrainian) (05d65929)
+
+2023-12-28 Ivo Xavier
+
+        * Translated using Weblate (Portuguese) (89805c4b)
+
+2024-01-03 Eryk Michalak
+
+        * Translated using Weblate (Polish) (96106a3e)
+
+2023-12-27 Allan Nordhøy
+
+        * Translated using Weblate (Norwegian Bokmål) (c1e27acf)
+
+2023-12-31 phlostically
+
+        * Translated using Weblate (Esperanto) (38ebe099)
+
+2023-12-27 Weblate
+
+        * Added translation using Weblate (Chinese (Simplified)
+          (zh_LATN@pinyin)) (adf9de60)
+        * Added translation using Weblate (Tamil (Sri Lanka)) (5cb8347f)
+        * Added translation using Weblate (German (Walser)) (a6eff5fd)
+        * Added translation using Weblate (Meadow Mari) (e48a38bc)
+        * Added translation using Weblate (Crimean Tatar) (2f972126)
+        * Added translation using Weblate (Chuvash) (70e7f134)
+        * Added translation using Weblate (Silesian) (2492fbb5)
+        * Added translation using Weblate (Latin) (8bf98324)
+        * Added translation using Weblate (Venetian) (6a1fc488)
+        * Added translation using Weblate (Ossetian) (3319cff9)
+        * Added translation using Weblate (Sami (Northern)) (13ac5de2)
+        * Added translation using Weblate (Greenlandic) (ddd09286)
+        * Added translation using Weblate (Assamese) (5ab755ad)
+        * Added translation using Weblate (Haitian) (8a8b8ffb)
+        * Added translation using Weblate (Cornish) (c0d537a8)
+        * Added translation using Weblate (Frisian) (34eb92a9)
+        * Added translation using Weblate (Kashubian) (9eb589d1)
+        * Added translation using Weblate (Aragonese) (2f6ce184)
+        * Added translation using Weblate (Tibetan) (4b09019b)
+        * Added translation using Weblate (Filipino) (e9343605)
+        * Added translation using Weblate (Tigrinya) (ab15627f)
+        * Added translation using Weblate (Tatar) (52ed9995)
+
+2023-12-26 Weblate
+
+        * Added translation using Weblate (Italian (it_CARES)) (e0258eee)
+
+2023-12-20 bittin1ddc447d824349b2
+
+        * Translated using Weblate (Swedish) (0a69c1fc)
+
+2023-12-20 Heimen Stoffels
+
+        * Translated using Weblate (Dutch) (58ab4450)
+
+2023-12-20 gallegonovato
+
+        * Translated using Weblate (Spanish) (8c7d9bab)
+
+2023-12-20 Daniel Frost
+
+        * Translated using Weblate (German) (7e3171dc)
+
+2023-12-21 Jozef Mlich
+
+        * Translated using Weblate (Czech) (1d548f05)
+
+2023-12-21 Mike Gabriel
+
+        * Merge branch 'remove_old_scripts' into 'main' (1aa73423)
+
+2023-12-21 Adam Havelka
+
+        * remove old scripts twitter-no-omniprompt.js, fb-no-appbanner.js are
+          no longer relevant selection02.js was already commented
+          not to be used (2d698283)
+
+2023-12-19 Hosted Weblate
+
+        * Update translation files (1697c6b2)
+
+2023-12-19 Mike Gabriel
+
+        * po/: Update translation template. (aa43fe29)
+
+2023-12-16 Mike Gabriel
+
+        * Merge branch 'kugi_popover' into 'main' (9c1c63ad)
+
+2021-07-15 Kugi Eusebio
+
+        * Change sizing behavior of content export popup (d072b7ed)
+
+2021-03-27 kugiigi
+
+        * Replaced UITK popup with QQC2 (1c6f3e2f)
+
+2021-02-04 kugiigi
+
+        * updated copyright texts and enabled click logic in downloads dialog
+          (859cc177)
+
+2020-12-03 Kugi Eusebio
+
+        * moved content picker to a popover (11ae32d8)
+
+2023-12-16 Mike Gabriel
+
+        * Merge branch 'fix_tests' into 'main' (cd0582ed)
+
+2023-12-14 Luigi311
+
+        * Test: HistoryModelTests: Add additional delay (00b4c141)
+
+2023-12-14 Marius Gripsgard
+
+        * Merge branch 'readability' into 'main' (b097cb23)
+
+2023-12-14 Luigi311
+
+        * Web: Readability: Match firefox style (eea15c4a)
+
+2021-09-10 david
+
+        * add style for scrollbar (82a0aef3)
+        * minimal styling changes (b60cc1bc)
+        * add height: auto to css (5f3968ba)
+
+2023-12-14 Luigi311
+
+        * Web: Readability: Update readability scripts (863e07cf)
+
+2021-09-10 david
+
+        * use built-in stock_ebook icon (052023fc)
+
+2021-09-09 david
+
+        * add reader mode (14829c30)
+
+2023-12-04 Reza Almanda
+
+        * Translated using Weblate (Indonesian) (57bc5177)
+
+2023-11-21 Mike Gabriel
+
+        * Merge branch 'personal/mariogrip/dialog_background' into 'main'
+          (7154a9ab)
+
+2023-11-19 Marius Gripsgard
+
+        * Add dim background color to select element popup (9863b976)
+
+2023-11-08 gallegonovato
+
+        * Translated using Weblate (Spanish) (9bc44834)
+
+2023-10-29 NPL
+
+        * Translated using Weblate (Japanese) (269d4508)
+
+2023-10-18 Lundrin
+
+        * Translated using Weblate (Hungarian) (6a7de03e)
+
+2023-10-17 Weblate
+
+        * Added translation using Weblate (Xhosa) (fdb19655)
+        * Added translation using Weblate (Manx) (1669125b)
+        * Added translation using Weblate (Corsican) (de300364)
+        * Added translation using Weblate (Chechen) (05f32888)
+        * Added translation using Weblate (Wolof) (2213e6b1)
+        * Added translation using Weblate (Kyrgyz) (6905fd80)
+        * Added translation using Weblate (Kurdish) (5a1ca329)
+        * Added translation using Weblate (Sotho (Southern)) (b4ef09af)
+        * Added translation using Weblate (Kazakh) (0feee0ee)
+        * Added translation using Weblate (Faroese) (a609bcda)
+        * Added translation using Weblate (Norwegian Nynorsk) (c0bae635)
+        * Added translation using Weblate (Swahili) (3de7dd01)
+        * Added translation using Weblate (Afrikaans) (24ff1daf)
+        * Added translation using Weblate (Odia) (1d65812b)
+
+2023-10-11 Serhii Horichenko
+
+        * Translated using Weblate (Russian) (26553a2c)
+
+2023-10-13 Império Linux
+
+        * Translated using Weblate (Portuguese (Brazil)) (35607cd9)
+
 2023-10-15 Mike Gabriel
 
-        * Release 1.0.3 (HEAD -> main, tag: 1.0.3)
+        * Release 1.0.3 (46a14f5e) (tag: 1.0.3)
 
 2023-10-11 phlostically
 

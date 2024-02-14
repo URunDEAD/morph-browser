@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2021-05-22 21:42+0000\n"
-"Last-Translator: dano6 <dano.kutka@gmail.com>\n"
-"Language-Team: Slovak <https://translate.ubports.com/projects/ubports/morph-"
-"browser/sk/>\n"
+"PO-Revision-Date: 2024-02-14 16:29+0000\n"
+"Last-Translator: RTheren <rtheren@protonmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 5.4-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -232,11 +232,11 @@ msgstr "Vlastné URL objekty"
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "Webová stránka '%1' chce otvoriť túto URL mimo webového prehliadača:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "OtvoriŤ túto URL so systémovou aplikáciou, ak je to možné?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -368,10 +368,8 @@ msgid "New User Agent"
 msgstr "Nový užívateľský agent"
 
 #: src/app/CustomUserAgentsPage.qml:161
-#, fuzzy
-#| msgid "New User Agent"
 msgid "Edit User Agent"
-msgstr "Nový užívateľský agent"
+msgstr "Upraviť užívateľského agenta"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
@@ -420,24 +418,20 @@ msgid "allowed to launch other apps"
 msgstr "spustenie ďalších aplikácií je povolené"
 
 #: src/app/DomainSettingsPage.qml:226
-#, fuzzy
-#| msgid "allowed to access your location"
 msgid "access your location"
-msgstr "prístup k vašej polohe je povolený"
+msgstr "prístup k vašej polohe"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
 msgstr ""
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "Povoliť"
+msgstr "Povolené"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Zamietnuté"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
@@ -479,25 +473,19 @@ msgstr ""
 #, fuzzy
 #| msgid "Delete"
 msgid "Delete File"
-msgstr "Vymazať"
+msgstr "Zmazať súbor"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "Vymazať históriu"
+msgstr "Vymazať z histórie"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "Kopírovať odkaz"
+msgstr "Kopírovať odkaz na stiahnutie"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "Stiahnuté"
+msgstr "Nedávne stiahnuté súbory"
 
 #: src/app/DownloadsDialog.qml:83
 #, fuzzy
@@ -509,11 +497,11 @@ msgstr "Stiahnuté"
 #, fuzzy
 #| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Zrušiť"
+msgstr "Zrušené"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Dokončené"
 
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
@@ -539,13 +527,11 @@ msgstr "Žiadne stiahnuté súbory"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "tento užívateľský agent je už použitý"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
-#, fuzzy
-#| msgid "Add the name for the new user agent"
 msgid "Add the name for the user agent"
-msgstr "Pridať názov novému užívateľskému agentovi"
+msgstr "Pridať názov užívateľskému agentovi"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
@@ -757,7 +743,7 @@ msgstr "Uložiť ako PDF"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Odstrániť zo zoznamu"
 
 #: src/app/webbrowser/AddressBar.qml:287
 msgid "find in page"
@@ -847,10 +833,8 @@ msgid "Done"
 msgstr "Hotovo"
 
 #: src/app/webbrowser/Browser.qml:673
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "Zavrieť kartu"
+msgstr "Znovu otvoriť kartu"
 
 #: src/app/webbrowser/Browser.qml:799
 msgid "New window"
@@ -1043,12 +1027,13 @@ msgstr "Predvolené priblíženie"
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Load Images"
-msgstr ""
+msgstr "Načítať obrázky"
 
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
+#, fuzzy
 msgid "Automatically load images on web pages"
-msgstr ""
+msgstr "Automatické načítanie obrázkov na webových stránkach"
 
 #: src/app/webbrowser/SettingsPage.qml:238
 #: src/app/webbrowser/SettingsPage.qml:320
@@ -1104,8 +1089,6 @@ msgid "Clear all Cookies?"
 msgstr "Zmazať všetky cookies?"
 
 #: src/app/webbrowser/SettingsPage.qml:516
-#, fuzzy
-#| msgid "Custom hompage"
 msgid "Custom homepage"
 msgstr "Vlastná domovská stránka"
 

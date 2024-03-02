@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2023-04-02 03:45+0000\n"
-"Last-Translator: Sylke Vicious <silkevicious@tuta.io>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/lomiri/morph-"
-"browser/it/>\n"
+"PO-Revision-Date: 2024-03-03 21:21+0000\n"
+"Last-Translator: Ermete D'Oro <liberta-combattente@paranoici.org>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -1023,12 +1023,12 @@ msgstr "Zoom predefinito"
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Load Images"
-msgstr ""
+msgstr "Carica Immagini"
 
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
-msgstr ""
+msgstr "Carica automaticamente le immagini sulle pagine web"
 
 #: src/app/webbrowser/SettingsPage.qml:238
 #: src/app/webbrowser/SettingsPage.qml:320

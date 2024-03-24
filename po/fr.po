@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2024-03-24 06:22+0000\n"
-"Last-Translator: Steve <steve.kueffer.ch@gmail.com>\n"
+"PO-Revision-Date: 2024-03-24 21:15+0000\n"
+"Last-Translator: \"Timothy G.\" <22472919+GTimothy@users.noreply.github.com>"
+"\n"
 "Language-Team: French <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/fr/>\n"
 "Language: fr\n"
@@ -463,7 +464,7 @@ msgstr "Échec du téléchargement"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr "Inconnu"
+msgstr "Inconnu(e)"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
@@ -493,11 +494,11 @@ msgstr "Aucun Téléchargement Récent"
 
 #: src/app/DownloadsDialog.qml:106
 msgid "Cancelled"
-msgstr "Annulé"
+msgstr "Annulé(e)"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr "Terminé"
+msgstr "Terminé(e)"
 
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293

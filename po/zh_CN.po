@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2021-06-14 20:30+0000\n"
-"Last-Translator: Ito Rimai <ItoRimai@foxmail.com>\n"
-"Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
-"ubports/morph-browser/zh_Hans/>\n"
+"PO-Revision-Date: 2024-04-23 12:06+0000\n"
+"Last-Translator: 复予 <clonewith@qq.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"lomiri/morph-browser/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 5.5-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -232,11 +232,11 @@ msgstr "自定义URL路径"
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "“%1”网站想在浏览器外部打开此 URL："
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "若有可能，要用系统应用打开此 URL 吗？"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -364,10 +364,8 @@ msgid "New User Agent"
 msgstr "新用户标识"
 
 #: src/app/CustomUserAgentsPage.qml:161
-#, fuzzy
-#| msgid "New User Agent"
 msgid "Edit User Agent"
-msgstr "新用户标识"
+msgstr "编辑用户标识"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
@@ -415,24 +413,20 @@ msgid "allowed to launch other apps"
 msgstr "允许启动其他应用"
 
 #: src/app/DomainSettingsPage.qml:226
-#, fuzzy
-#| msgid "allowed to access your location"
 msgid "access your location"
-msgstr "允许访问你的位置信息"
+msgstr "访问你的位置信息"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "每次询问"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
 msgstr "允许"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "拒绝"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
@@ -462,53 +456,41 @@ msgstr "下载失败"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "未知"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/秒"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "删除"
+msgstr "删除文件"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "清除历史记录"
+msgstr "从历史记录中删除"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "复制链接"
+msgstr "复制下载链接"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "下载"
+msgstr "最近下载"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
-msgstr "下载"
+msgstr "无最近下载"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "取消"
+msgstr "已取消"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "已完成"
 
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
@@ -517,7 +499,7 @@ msgstr "清除"
 
 #: src/app/DownloadsDialog.qml:179
 msgid "View All"
-msgstr ""
+msgstr "查看全部"
 
 #: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:838
 #: src/app/webcontainer/WebappSettingsPage.qml:137
@@ -534,13 +516,11 @@ msgstr "没有可用的下载"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "用户标识名已被占用"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
-#, fuzzy
-#| msgid "Add the name for the new user agent"
 msgid "Add the name for the user agent"
-msgstr "添加新用户标识名称"
+msgstr "添加用户标识名称"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
@@ -750,7 +730,7 @@ msgstr "保存为PDF"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "从列表中删除"
 
 #: src/app/webbrowser/AddressBar.qml:287
 msgid "find in page"
@@ -839,10 +819,8 @@ msgid "Done"
 msgstr "完成"
 
 #: src/app/webbrowser/Browser.qml:673
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "关闭标签页"
+msgstr "重新打开标签页"
 
 #: src/app/webbrowser/Browser.qml:799
 msgid "New window"
@@ -1030,12 +1008,12 @@ msgstr "默认"
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Load Images"
-msgstr ""
+msgstr "加载图像"
 
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
-msgstr ""
+msgstr "自动加载网页上的图像"
 
 #: src/app/webbrowser/SettingsPage.qml:238
 #: src/app/webbrowser/SettingsPage.qml:320
@@ -1091,8 +1069,6 @@ msgid "Clear all Cookies?"
 msgstr "清除所有cookies？"
 
 #: src/app/webbrowser/SettingsPage.qml:516
-#, fuzzy
-#| msgid "Custom hompage"
 msgid "Custom homepage"
 msgstr "自定义主页"
 
@@ -1256,18 +1232,18 @@ msgstr "当前web应用"
 msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
-msgstr ""
+msgstr "当前缩放大小（%1%）可在 %2 中为当前域名保存，或保存为默认缩放大小。"
 
 #: src/app/ZoomControls.qml:197
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr ""
+msgstr "当前缩放大小（%1%）可在 %2 中为当前域名保存。"
 
 #: src/app/ZoomControls.qml:199
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr ""
+msgstr "当前缩放大小（%1%）可在 %2 中保存为默认缩放大小。"
 
 #: src/app/ZoomControls.qml:206
 msgid "Save for domain"

@@ -172,6 +172,12 @@ Common.BrowserPage {
                 urlsListView.forceActiveFocus()
             }
         }
+
+        Component.onCompleted: {
+            // Workaround QTBUG-92446, re-set parent to null imperatively as the
+            // declaratively defining it doesn't work.
+            parent = null
+        }
     }
 
     Row {

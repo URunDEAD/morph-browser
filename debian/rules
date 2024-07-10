@@ -8,8 +8,11 @@ export DPKG_GENSYMBOLS_CHECK_LEVEL=4
 
 BUILDHOME=/tmp/home
 
+# Add migrations add-on when build on Ubuntu & original name is available.
+DH_MIGRATIONS = $(shell type dh_migrations >/dev/null 2>&1 && echo "--with migrations")
+
 %:
-	dh $@ --with migrations
+	dh $@ $(DH_MIGRATIONS)
 
 apparmor:
 	aa-easyprof -m ./debian/morph-browser-apparmor.manifest --no-verify | \

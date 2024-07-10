@@ -77,9 +77,7 @@ file(GLOB_RECURSE NON_COMPILED_SUBDIRS
      tests/*.py tests/*.qml)
 add_custom_target(NON_COMPILED_TARGET ALL SOURCES ${NON_COMPILED_ROOT} ${NON_COMPILED_SUBDIRS})
 
-# for dh_translations to extract the domain
-# (regarding syntax consistency, see http://pad.lv/1181187)
-set (GETTEXT_PACKAGE "morph-browser")
+set(GETTEXT_PACKAGE "morph-browser")
 
 add_subdirectory(po)
 

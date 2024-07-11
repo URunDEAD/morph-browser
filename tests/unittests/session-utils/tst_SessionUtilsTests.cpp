@@ -60,6 +60,10 @@ void SessionUtilsTests::clearXdgRuntimeDir()
     QDir xdgRuntimeDir(m_xdgRuntimeDir);
     xdgRuntimeDir.removeRecursively();
     xdgRuntimeDir.mkpath(".");
+    QFile::setPermissions(m_xdgRuntimeDir,
+          QFileDevice::ReadOwner |
+          QFileDevice::WriteOwner |
+          QFileDevice::ExeOwner);
 }
 
 void SessionUtilsTests::startNewSession()

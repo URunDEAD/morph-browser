@@ -115,7 +115,7 @@ FocusScope {
                     promptDialog.inputMethodHints = Qt.ImhUrlCharactersOnly | Qt.ImhNoPredictiveText;
                     promptDialog.accept.connect(function(text) {
                         if (text !== "") {
-                            var domain = DomainPermissionsModel.getDomainWithoutSubdomain(UrlUtils.extractHost(text));
+                            var domain = DomainPermissionsModel.getDomainWithoutSubdomain(UrlUtils.extractHost(UrlUtils.fixUrl(text)));
                             if (DomainPermissionsModel.contains(domain)) {
                                 domainPermissionsItem.setDomainAsCurrentItem(domain);
                             }

@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2024-01-12 01:06+0000\n"
-"Last-Translator: NPL <alterlinuxer@gmail.com>\n"
+"PO-Revision-Date: 2024-08-14 12:07+0000\n"
+"Last-Translator: umesaburo sagawa <atowa-notonare-yamatonare427@pm.me>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/ja/>\n"
 "Language: ja\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -26,12 +26,10 @@ msgstr "ブラウザ"
 
 #: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:110
 #: src/app/webcontainer/webapp-container.qml:78
-#, fuzzy
 msgid "Morph Web Browser"
 msgstr "Morph ウェブブラウザ"
 
 #: morph-browser.desktop.in:6
-#, fuzzy
 msgid "Browse the World Wide Web using QtWebEngine"
 msgstr "QtWebEngineで世界中のウェブを閲覧します"
 
@@ -407,7 +405,6 @@ msgid "Always allow access"
 msgstr "常にアクセスを許可する"
 
 #: src/app/DomainPermissionsPage.qml:283
-#, fuzzy
 msgid "No sites have been granted special permissions"
 msgstr "特別な許可を付与されたサイトはありません"
 
@@ -420,7 +417,6 @@ msgid "Enter the name of the domain, e.g. m.example.com"
 msgstr "example.comのようにドメイン名を入力してください"
 
 #: src/app/DomainSettingsPage.qml:207
-#, fuzzy
 msgid "allowed to launch other apps"
 msgstr "他のアプリで開くことを許可されています"
 
@@ -433,13 +429,10 @@ msgid "Ask each time"
 msgstr "毎回尋ねる"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
 msgstr "許可"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
 msgid "Denied"
 msgstr "拒否"
 
@@ -488,26 +481,18 @@ msgid "Remove from History"
 msgstr "履歴から削除"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
 msgstr "リンクをコピー"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "ダウンロード"
+msgstr "最新のダウンロード"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
-msgstr "ダウンロード"
+msgstr "最近のダウンロードがありません"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
 msgstr "キャンセル"
 
@@ -739,7 +724,6 @@ msgid "Save page as HTML / PDF"
 msgstr "HTML/PDF形式で保存"
 
 #: src/app/SavePageDialog.qml:41
-#, fuzzy
 msgid "No save actions are available"
 msgstr "利用可能な保存方式はありません"
 
@@ -822,7 +806,6 @@ msgstr "ブックマーク"
 
 #: src/app/webbrowser/Browser.qml:230
 #: src/app/webcontainer/WebViewImplOxide.qml:302
-#, fuzzy
 msgid "Blocked domain"
 msgstr "ブロックされたドメイン"
 
@@ -834,7 +817,6 @@ msgstr "ドメイン%1の操作リクエストをブロックしました。"
 
 #: src/app/webbrowser/Browser.qml:257
 #: src/app/webcontainer/WebViewImplOxide.qml:329
-#, fuzzy
 msgid "Whitelisted domain"
 msgstr "ホワイトリストドメイン"
 
@@ -880,7 +862,7 @@ msgstr "PDFに保存/印刷"
 
 #: src/app/webbrowser/Browser.qml:885 src/app/WebViewImpl.qml:690
 msgid "Zoom"
-msgstr ""
+msgstr "ズーム"
 
 #: src/app/webbrowser/Browser.qml:892 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
@@ -1035,9 +1017,8 @@ msgstr "ウェブサイトの幅をウィンドウに合わせて調整する"
 
 #: src/app/webbrowser/SettingsPage.qml:179
 #: src/app/webcontainer/WebappSettingsPage.qml:78
-#, fuzzy
 msgid "Default Zoom"
-msgstr "デフォルト"
+msgstr "既定のズーム"
 
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
@@ -1230,7 +1211,7 @@ msgstr ""
 
 #: src/app/ZoomControls.qml:61
 msgid "Zoom Out"
-msgstr ""
+msgstr "ズームアウト"
 
 #: src/app/ZoomControls.qml:68
 msgid "Reset"
@@ -1238,11 +1219,11 @@ msgstr "リセット"
 
 #: src/app/ZoomControls.qml:68
 msgid "fit"
-msgstr ""
+msgstr "フィット"
 
 #: src/app/ZoomControls.qml:75
 msgid "Zoom In"
-msgstr ""
+msgstr "ズームイン"
 
 #: src/app/ZoomControls.qml:100
 msgid "Current Zoom"
@@ -1258,31 +1239,28 @@ msgstr "デフォルト"
 
 #: src/app/ZoomControls.qml:101
 msgid "auto-fit"
-msgstr ""
+msgstr "オートフィット"
 
 #: src/app/ZoomControls.qml:190
-#, fuzzy
-#| msgid "Save image"
 msgid "Save Zoom"
-msgstr "拡大率を保存"
+msgstr "ズームを保存"
 
 #: src/app/ZoomControls.qml:192
 msgid "the current web app"
 msgstr "現在のWebアプリ"
 
 #: src/app/ZoomControls.qml:195
-#, fuzzy, qt-format
+#, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
-msgstr ""
-"現在の拡大率（%1%）は現在のドメインのみかデフォルトの拡大率として%2に保存でき"
-"ます。"
+msgstr "現在の拡大率（%）は現在のドメインのみかデフォルトの拡大率として%に保存できま"
+"す。"
 
 #: src/app/ZoomControls.qml:197
-#, fuzzy, qt-format
+#, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "現在の拡大率（%1%）は現在のドメイン向けに%2へ保存できます。"
+msgstr "現在の拡大率（%）は現在のドメイン向けに%へ保存できます。"
 
 #: src/app/ZoomControls.qml:199
 #, qt-format
@@ -1291,8 +1269,6 @@ msgid ""
 msgstr "現在の拡大率（%1%）はデフォルトの拡大率として%2に保存できます。"
 
 #: src/app/ZoomControls.qml:206
-#, fuzzy
-#| msgid "Save in"
 msgid "Save for domain"
 msgstr "ドメイン保存"
 

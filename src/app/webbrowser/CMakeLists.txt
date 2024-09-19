@@ -79,7 +79,7 @@ install(FILES "morph-browser.url-dispatcher"
         DESTINATION ${CMAKE_INSTALL_DATADIR}/lomiri-url-dispatcher/urls)
 
 install(FILES "morph-browser-content-hub.json"
-    DESTINATION ${CMAKE_INSTALL_DATADIR}/content-hub/peers
+    DESTINATION ${CMAKE_INSTALL_DATADIR}/lomiri-content-hub/peers
     RENAME morph-browser
     )
 

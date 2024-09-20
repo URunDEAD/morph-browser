@@ -1,4 +1,4 @@
-project(morph-browser)
+project(webbrowser-app)
 
 find_package(Qt5Concurrent REQUIRED)
 find_package(Qt5Sql REQUIRED)

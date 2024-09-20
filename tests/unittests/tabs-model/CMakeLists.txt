@@ -5,7 +5,7 @@ find_package(Qt5Sql REQUIRED)
 find_package(Qt5Test REQUIRED)
 set(TEST tst_TabsModelTests)
 add_executable(${TEST} tst_TabsModelTests.cpp)
-include_directories(${morph-browser_SOURCE_DIR})
+include_directories(${webbrowser-app_SOURCE_DIR})
 target_link_libraries(${TEST}
     Qt5::Core
     Qt5::Qml

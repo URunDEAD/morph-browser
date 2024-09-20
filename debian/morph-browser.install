@@ -8,5 +8,5 @@ usr/share/morph-browser/webbrowser/
 usr/share/applications/morph-browser.desktop
 usr/share/locale/*/LC_MESSAGES/morph-browser.mo
 usr/share/lomiri-url-dispatcher/
-usr/share/content-hub/peers/morph-browser
+usr/share/lomiri-content-hub/peers/morph-browser
 debian/usr.bin.morph-browser etc/apparmor.d

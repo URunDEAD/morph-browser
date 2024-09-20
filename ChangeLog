@@ -1,6 +1,105 @@
+2024-09-20 Mike Gabriel
+
+        * Release 1.1.1 (HEAD -> main, tag: 1.1.1)
+        * Merge branch 'fix/content-hub-rename-debian' into 'main' (9d33ae3d)
+
+2024-09-20 OPNA2608
+
+        * Fix morph-browser CMake project redefinition (2d55928c)
+        * debian/morph-browser.install: Fix after lomiri-content-hub rename
+          (e634de6d)
+
+2024-09-19 Mike Gabriel
+
+        * Merge branch 'fix/content-hub-rename' into 'main' (a2ec02fc)
+
+2024-09-16 OPNA2608
+
+        * Update content-hub file location to rename (b657ad6d)
+
+2024-08-12 umesaburo sagawa
+
+        * Translated using Weblate (Japanese) (014b0b28)
+
+2024-07-22 Jiri Grönroos
+
+        * Translated using Weblate (Finnish) (4054d8d9)
+
+2024-07-08 Ricky From Hong Kong
+
+        * Translated using Weblate (Chinese (Traditional, Hong Kong))
+          (65e2ea3c)
+
+2024-07-11 Ratchanan Srirattanamet
+
+        * Merge branch 'main_-_domainsettings' into 'main' (0aa97bbe)
+
+2024-04-24 Kugi Eusebio
+
+        * Fix adding new domain in whitelist/blacklist settings (cd305004)
+
+2024-07-11 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/build-against-noble' into 'main'
+          (5bbd148a)
+
+2024-07-11 Ratchanan Srirattanamet
+
+        * d/control: add xauth as a missing dependency of xvfb-run (in xvfb)
+          (014f4c7b)
+
+2024-07-10 Ratchanan Srirattanamet
+
+        * debian/: make usage of dh_migrations optional (f5fa5580)
+        * debian/: remove the usage of dh_translations (36293b9e)
+        * tst_SessionUtilsTests: correct test XDG_RUNTIME_DIR's permission
+          (8614e617)
+        * webbrowser: workaround QML parent not settable declaratively
+          (665db68a)
+
+2024-05-29 Ali Beyaz
+
+        * Translated using Weblate (Turkish) (3c58fe96)
+
+2024-05-16 Daniel Soohan Park
+
+        * Translated using Weblate (Korean) (8bf3d453)
+
+2024-05-11 Adam Havelka
+
+        * Translated using Weblate (Czech) (9bd313ee)
+
+2024-04-18 复予
+
+        * Translated using Weblate (Chinese (Simplified)) (40f3b2fa)
+
+2024-03-24 Steve
+
+        * Translated using Weblate (French) (86c4950b)
+
+2024-03-24 Timothy G
+
+        * Translated using Weblate (French) (91a8f68d)
+
+2024-03-23 Steve
+
+        * Translated using Weblate (French) (83951c9f)
+
+2024-03-02 Ermete D'Oro
+
+        * Translated using Weblate (Italian) (4880ef21)
+
+2024-02-14 RTheren
+
+        * Translated using Weblate (Slovak) (a4c199ba)
+
+2024-02-11 ancalina
+
+        * Translated using Weblate (Korean) (e4defb70)
+
 2024-01-28 Mike Gabriel
 
-        * Release 1.1.0 (HEAD -> main, tag: 1.1.0)
+        * Release 1.1.0 (adefe05d) (tag: 1.1.0)
 
 2024-01-24 Vlad Nirky
 

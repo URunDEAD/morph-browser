@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2020-10-29 01:02+0000\n"
-"Last-Translator: George Kitsopoulos <gkitsopoulos@tutanota.com>\n"
-"Language-Team: Greek <https://translate.ubports.com/projects/ubports/morph-"
-"browser/el/>\n"
+"PO-Revision-Date: 2024-10-12 15:31+0000\n"
+"Last-Translator: ikozyris <ioannis.kozyris@outlook.com>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 5.8-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -233,10 +233,12 @@ msgstr "Προσαρμοσμένα σχήματα URL"
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
 msgstr ""
+"Η ιστοσελίδα “%1 θέλει να ανοίξει αυτό τον υπερσύνδεσμο εκτός του περιηγητή:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
 msgstr ""
+"Ανοίξτε αυτόν τον υπερσύνδεσμο με μια εφαρμογή συστήματος εάν είναι δυνατόν;"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -369,10 +371,8 @@ msgid "New User Agent"
 msgstr "Νέος πράκτορας χρήστη"
 
 #: src/app/CustomUserAgentsPage.qml:161
-#, fuzzy
-#| msgid "New User Agent"
 msgid "Edit User Agent"
-msgstr "Νέος πράκτορας χρήστη"
+msgstr "Αλλαγή User Agent"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
@@ -422,24 +422,21 @@ msgid "allowed to launch other apps"
 msgstr "επιτρέπεται η εκκίνηση άλλων εφαρμογών"
 
 #: src/app/DomainSettingsPage.qml:226
-#, fuzzy
-#| msgid "allowed to access your location"
 msgid "access your location"
-msgstr "επιτρέπεται η πρόσβαση στην τοποθεσία σας"
-
-#: src/app/DomainSettingsPage.qml:231
-msgid "Ask each time"
-msgstr ""
+msgstr "πρόσβαση στην τοποθεσία σας"
 
 #: src/app/DomainSettingsPage.qml:231
 #, fuzzy
-#| msgid "Allow"
+msgid "Ask each time"
+msgstr "Ρωτήστε κάθε φορά"
+
+#: src/app/DomainSettingsPage.qml:231
 msgid "Allowed"
-msgstr "Να επιτρέπεται"
+msgstr "Eπιτρέπεται"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Απορρίφθηκε"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
@@ -469,53 +466,41 @@ msgstr "Αποτυχία λήψης"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "'Αγνωστο"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "Διαγραφή"
+msgstr "Διαγραφή αρχείου"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "Εκκαθάριση ιστορικού"
+msgstr "Εκκαθάριση από το ιστορικό"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "Αντιγραφή συνδέσμου"
+msgstr "Αντιγραφή συνδέσμου λήψης"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "Λήψεις"
+msgstr "Πρόσφατες Λήψεις"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
-msgstr "Λήψεις"
+msgstr "Καμία πρόσφατη λήψη"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Ακύρωση"
+msgstr "Ακυρώθηκε"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Ολοκληρώθηκε"
 
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
@@ -524,7 +509,7 @@ msgstr "Καθαρισμός"
 
 #: src/app/DownloadsDialog.qml:179
 msgid "View All"
-msgstr ""
+msgstr "Εμφάνιση όλων"
 
 #: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:838
 #: src/app/webcontainer/WebappSettingsPage.qml:137
@@ -541,13 +526,11 @@ msgstr "Δεν υπάρχουν διαθέσιμες λήψεις"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "αυτό το όνομα user agent είναι κατειλημμένο"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
-#, fuzzy
-#| msgid "Add the name for the new user agent"
 msgid "Add the name for the user agent"
-msgstr "Προσθήκη ονόματος για το νέο πράκτορα χρήστη"
+msgstr "Προσθήκη ονόματος για τον user agent"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
@@ -745,10 +728,8 @@ msgid "Save page as HTML / PDF"
 msgstr "Αποθήκευση ως HTML / PDF"
 
 #: src/app/SavePageDialog.qml:41
-#, fuzzy
-#| msgid "No custom user agents available"
 msgid "No save actions are available"
-msgstr "Δεν υπάρχουν διαθέσιμοι πράκτορες χρήστη"
+msgstr "Δεν υπάρχουν διαθέσιμες ενέργειες αποθήκευσης"
 
 #: src/app/SavePageDialog.qml:46
 msgid "Save as HTML"
@@ -765,7 +746,7 @@ msgstr "Αποθήκευση ως PDF"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Αφαίρεση από τη λίστα"
 
 #: src/app/webbrowser/AddressBar.qml:287
 msgid "find in page"
@@ -859,7 +840,7 @@ msgstr "Ολοκληρώθηκε"
 #, fuzzy
 #| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "Κλείσιμο Καρτέλας"
+msgstr "Ξανάνοιγμα Καρτέλας"
 
 #: src/app/webbrowser/Browser.qml:799
 msgid "New window"
@@ -883,10 +864,8 @@ msgid "View source"
 msgstr "Προβολή πηγής"
 
 #: src/app/webbrowser/Browser.qml:864
-#, fuzzy
-#| msgid "Save as PDF"
 msgid "Save / Print to PDF"
-msgstr "Αποθήκευση ως PDF"
+msgstr "Αποθήκευση / εκτύπωση σε PDF"
 
 #: src/app/webbrowser/Browser.qml:885 src/app/WebViewImpl.qml:690
 msgid "Zoom"
@@ -903,13 +882,8 @@ msgid "(%1)"
 msgstr "(%1)"
 
 #: src/app/webbrowser/Browser.qml:1970
-#, fuzzy
-#| msgid ""
-#| "Choose an application to open this file or add it to the downloads folder."
 msgid "the file is already in the downloads folder."
-msgstr ""
-"Επιλέξτε μια εφαρμογή για να ανοίξετε αυτό το αρχείο ή προσθέστε το στον "
-"φάκελο λήψεις."
+msgstr "το αρχείο είναι ήδη στον φάκελο λήψεων."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:83
 msgid ""
@@ -1058,12 +1032,12 @@ msgstr "Προεπιλεγμένη εστίαση"
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Load Images"
-msgstr ""
+msgstr "Φόρτωση Εικόνων"
 
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
-msgstr ""
+msgstr "Φορτώσετε αυτόματα εικόνες στις ιστοσελίδες"
 
 #: src/app/webbrowser/SettingsPage.qml:238
 #: src/app/webbrowser/SettingsPage.qml:320
@@ -1295,19 +1269,22 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"Το τωρινό επίπεδο εστίασης (%1%) μπορεί να αποθηκευτεί σε %2 είτε για τον "
+"τρέχον ιστότοπο είτε ως προεπιλεγμένο επίπεδο εστίασης."
 
 #: src/app/ZoomControls.qml:197
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "Η τρέχουσα εστίαση (%1%) μπορεί να αποθηκευτεί για %2 ως "
+msgstr ""
+"Η τρέχουσα εστίαση (%1%) μπορεί να αποθηκευτεί στο %2 για τον τρέχον ιστότοπο"
 
 #: src/app/ZoomControls.qml:199
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr "Η τρέχουσα εστίαση (%1%) μπορεί να αποθηκευτεί για %2 ως "
+msgstr ""
+"Η τρέχουσα εστίαση (%1%) μπορεί να αποθηκευτεί στο %2 ως το προεπιλεγμένο "
+"επίπεδο εστίασης"
 
 #: src/app/ZoomControls.qml:206
 msgid "Save for domain"

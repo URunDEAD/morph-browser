@@ -18,7 +18,7 @@
 
 /*!
     \qmltype WebContext
-    \inqmlmodule Morph.Web 0.2
+    \inqmlmodule Morph.Web 0.1
     \ingroup morph
     \brief A default context implementation for use with \l WebView.
 

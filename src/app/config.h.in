@@ -57,4 +57,9 @@ inline QString UbuntuBrowserImportsDirectory()
     return QStringLiteral("@CMAKE_BINARY_DIR@/src");
 }
 
+inline QString I18nDirectory()
+{
+    return QStringLiteral("@CMAKE_INSTALL_FULL_LOCALEDIR@");
+}
+
 #endif // __CONFIG_H__

@@ -282,6 +282,7 @@ BrowserWindow {
     Component.onCompleted: {
       //  console.info("webapp-container using QtWebEngine %1 (chromium %2)".arg(Oxide.version).arg(Oxide.chromiumVersion))
         i18n.domain = "morph-browser"
+        i18n.bindtextdomain("morph-browser", i18nDirectory)
         if (forceFullscreen) {
             showFullScreen()
         } else if (startMaximized) {

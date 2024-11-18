@@ -169,7 +169,6 @@ Component {
 
                     webviewimpl.runJavaScript("isProbablyReaderable(document)", function(res) {
                         isReaderable = res
-                        console.log('readerable', res)
                     });
                 }
 

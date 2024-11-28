@@ -535,6 +535,9 @@ int main(int argc, char** argv)
 {
     qputenv("QTWEBENGINE_DISABLE_SANDBOX","1");
     qputenv("QT_AUTO_SCREEN_SCALE_FACTOR", "true");
+    /* Workaround QTBUG-85043 in UT-specific way. Other distro than UT
+     * shouldn't be affected by this. */
+    qputenv("QTWEBENGINE_DISABLE_TOUCH_SELECTION_MENU_UT", "1");
 
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);

@@ -93,7 +93,13 @@ Common.BrowserView {
         state.uniqueId = tab.uniqueId;
         state.url = tab.url.toString();
         state.title = tab.title;
-        state.icon = tab.icon.toString();
+
+        if (UrlUtils.schemeIs(tab.icon, "image") && UrlUtils.hostIs(tab.icon, "favicon")) {
+            state.icon = tab.icon.toString().substring(("image://favicon/").length)
+        } else {
+            state.icon = tab.icon.toString()
+        }
+
         state.preview = Qt.resolvedUrl(PreviewManager.previewPathFromUrl(tab.url)).toString();
         return state;
     }

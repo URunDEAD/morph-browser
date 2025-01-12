@@ -8,44 +8,42 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2014-01-18 17:47+0000\n"
-"Last-Translator: solomon sunder <Unknown>\n"
-"Language-Team: Tamil <ta@li.org>\n"
+"PO-Revision-Date: 2025-01-13 20:00+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/ta/>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: morph-browser.desktop.in:4
-#, fuzzy
 msgid "Morph Browser"
-msgstr "உலாவி"
+msgstr "மார்ப் உலாவி"
 
 #: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:110
 #: src/app/webcontainer/webapp-container.qml:78
-#, fuzzy
 msgid "Morph Web Browser"
-msgstr "இணைய உலாவி"
+msgstr "மார்ப் வலை உலாவி"
 
 #: morph-browser.desktop.in:6
-#, fuzzy
 msgid "Browse the World Wide Web using QtWebEngine"
-msgstr "உலகளாவிய அளிவில் உலாவு"
+msgstr "Qtwebengine ஐப் பயன்படுத்தி உலகளாவிய வலையை உலாவுக"
 
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
-msgstr ""
+msgstr "இணையம்; www; உலாவி; வலை; எக்ச்ப்ளோரர்"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
-msgstr ""
+msgstr "புதிய சாளரம்"
 
 #: morph-browser.desktop.in:27
 msgid "New Private Window"
-msgstr ""
+msgstr "புதிய தனியார் சாளரம்"
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
@@ -95,21 +93,21 @@ msgstr "படியெடு"
 
 #: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:407
 msgid "Cut"
-msgstr ""
+msgstr "வெட்டு"
 
 #: src/app/actions/Erase.qml:22
 msgid "Erase"
-msgstr ""
+msgstr "அழிக்கவும்"
 
 #: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:831
 msgid "Find in page"
-msgstr ""
+msgstr "பக்கத்தில் காண்க"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/FindInPage.qml:26
 msgid "Search in Page"
-msgstr ""
+msgstr "பக்கத்தில் தேடுங்கள்"
 
 #: src/app/actions/Forward.qml:23
 msgid "Forward"
@@ -148,16 +146,15 @@ msgstr "படத்தை புதிய கீற்றில் திற"
 
 #: src/app/actions/OpenLinkInBrowser.qml:22
 msgid "Open link in default browser"
-msgstr ""
+msgstr "இயல்புநிலை உலாவியில் இணைப்பைத் திறக்கவும்"
 
 #: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
 msgid "Open link in new background tab"
-msgstr ""
+msgstr "புதிய பின்னணி தாவலில் இணைப்பைத் திறக்கவும்"
 
 #: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
-#, fuzzy
 msgid "Open link in new private window"
-msgstr "தொணைப்பை புதிய கீற்றில் திற"
+msgstr "புதிய தனியார் சாளரத்தில் இணைப்பைத் திறக்கவும்"
 
 #: src/app/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
@@ -165,19 +162,19 @@ msgstr "தொணைப்பை புதிய கீற்றில் த
 
 #: src/app/actions/OpenLinkInNewWindow.qml:22
 msgid "Open link in new window"
-msgstr ""
+msgstr "புதிய சாளரத்தில் இணைப்பைத் திறக்கவும்"
 
 #: src/app/actions/OpenVideoInNewTab.qml:22
 msgid "Open video in new tab"
-msgstr ""
+msgstr "புதிய தாவலில் வீடியோவைத் திறக்கவும்"
 
 #: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:429
 msgid "Paste"
-msgstr ""
+msgstr "ஒட்டு"
 
 #: src/app/actions/Redo.qml:22
 msgid "Redo"
-msgstr ""
+msgstr "மீண்டும்செய்"
 
 #: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
 #: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
@@ -192,29 +189,29 @@ msgstr "பக்கத்திலருந்து விலகு"
 
 #: src/app/actions/SaveImage.qml:22
 msgid "Save image"
-msgstr ""
+msgstr "படத்தை சேமிக்கவும்"
 
 #: src/app/actions/SaveLink.qml:22
 msgid "Save link"
-msgstr ""
+msgstr "இணைப்பைச் சேமிக்கவும்"
 
 #: src/app/actions/SaveVideo.qml:22
 msgid "Save video"
-msgstr ""
+msgstr "வீடியோவை சேமிக்கவும்"
 
 #: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
 #: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
 #: src/app/DownloadsPage.qml:85
 msgid "Select all"
-msgstr ""
+msgstr "அனைத்தையும் தெரிவுசெய்"
 
 #: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:811
 msgid "Share"
-msgstr ""
+msgstr "பங்கு"
 
 #: src/app/actions/Undo.qml:22
 msgid "Undo"
-msgstr ""
+msgstr "செயல்தவிர்"
 
 #: src/app/AlertDialog.qml:24
 msgid "JavaScript Alert"
@@ -230,21 +227,21 @@ msgstr "சரி"
 
 #: src/app/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
-msgstr ""
+msgstr "தனிப்பயன் முகவரி திட்டங்கள்"
 
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "'%1' வலைத்தளம் இந்த முகவரி ஐ வலை உலாவிக்கு வெளியே திறக்க விரும்புகிறது:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "முடிந்தால் கணினி பயன்பாட்டுடன் இந்த முகவரி ஐத் திறக்கவா?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
-msgstr ""
+msgstr "முடிவை நினைவில் கொள்ளுங்கள்"
 
 #: src/app/AllowCustomSchemesDialog.qml:50
 #: src/app/GeolocationPermissionRequest.qml:51
@@ -272,7 +269,7 @@ msgstr "ரத்துசெய்"
 #: src/app/AllowOrBlockDomainDialog.qml:25
 #: src/app/AllowOrBlockDomainDialog.qml:41
 msgid "Block domain"
-msgstr ""
+msgstr "தொகுதி டொமைன்"
 
 #: src/app/AllowOrBlockDomainDialog.qml:30
 #, qt-format
@@ -281,6 +278,9 @@ msgid ""
 "Would you like to continue to block the domain, allow browsing to the "
 "domain, or go back?"
 msgstr ""
+"நீங்கள் %1 ஐ அணுக முயற்சிக்கிறீர்கள், ஆனால் அது உங்கள் அங்கீகரிக்கப்பட்ட டொமைன் "
+"அனுமதிப்பட்டியலில் இல்லை. டொமைனைத் தடுக்க, டொமைனுக்கு உலாவ அனுமதிக்க அல்லது திரும்பிச் "
+"செல்ல விரும்புகிறீர்களா?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:31
 #, qt-format
@@ -289,10 +289,13 @@ msgid ""
 "Would you like to continue to block the domain, allow loading data from the "
 "domain, or just ignore this request ?"
 msgstr ""
+"%1 %2 ஐ அணுக முயற்சிக்கிறது, ஆனால் இது உங்கள் அங்கீகரிக்கப்பட்ட டொமைன் அனுமதிப்பட்டியலில் "
+"இல்லை. டொமைனைத் தடுக்க, டொமைனில் இருந்து தரவை ஏற்ற அனுமதிக்க அல்லது இந்த கோரிக்கையை "
+"புறக்கணிக்க விரும்புகிறீர்களா?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
-msgstr ""
+msgstr "டொமைனை அனுமதிக்கவும்"
 
 #: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
@@ -314,15 +317,15 @@ msgstr "கடவுச்சொல்"
 
 #: src/app/BeforeUnloadDialog.qml:24
 msgid "Confirm Navigation"
-msgstr ""
+msgstr "வழிசெலுத்தலை உறுதிப்படுத்தவும்"
 
 #: src/app/BeforeUnloadDialog.qml:33
 msgid "Leave"
-msgstr ""
+msgstr "விடுப்பு"
 
 #: src/app/BeforeUnloadDialog.qml:41
 msgid "Stay"
-msgstr ""
+msgstr "தங்க"
 
 #: src/app/CertificateVerificationDialog.qml:24
 msgid "This connection is untrusted"
@@ -330,13 +333,13 @@ msgstr "இந்த இணைப்பு நம்பகமற்றது"
 
 #. TRANSLATORS: %1 refers to the hostname
 #: src/app/CertificateVerificationDialog.qml:26
-#, fuzzy, qt-format
+#, qt-format
 msgid ""
 "You are trying to securely reach %1, but the security certificate of this "
 "website is not trusted. Reason: %2"
 msgstr ""
-"நீங்க பாதுகாப்பாக %1 அடைய முயற்சி செய்கிறீர்கள், ஆனால் இந்த இணையதளத்தின் பாதுபாப்பு "
-"சான்றிதழ் நம்பக்கூடியதாக இல்லை."
+"நீங்கள் %1 ஐ பாதுகாப்பாக அடைய முயற்சிக்கிறீர்கள், ஆனால் இந்த வலைத்தளத்தின் பாதுகாப்பு "
+"சான்றிதழ் நம்பப்படவில்லை. காரணம்: %2"
 
 #: src/app/CertificateVerificationDialog.qml:39
 #: src/app/InvalidCertificateErrorSheet.qml:160
@@ -345,7 +348,7 @@ msgstr "இருப்பினும் தொடர்க"
 
 #: src/app/ColorSelectDialog.qml:25
 msgid "Select Color"
-msgstr ""
+msgstr "வண்ணத்தைத் தேர்ந்தெடுக்கவும்"
 
 #: src/app/ConfirmDialog.qml:24
 msgid "JavaScript Confirmation"
@@ -353,191 +356,184 @@ msgstr "ஜாவாஸ்கிரிப்ட்டை உறுதிப்�
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
-msgstr ""
+msgstr "தனிப்பயன் பயனர் முகவர்கள்"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
 #: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
 msgid "Delete"
-msgstr ""
+msgstr "நீக்கு"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
-msgstr ""
+msgstr "புதிய பயனர் முகவர்"
 
 #: src/app/CustomUserAgentsPage.qml:161
 msgid "Edit User Agent"
-msgstr ""
+msgstr "பயனர் முகவரைத் திருத்து"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
-msgstr ""
+msgstr "தனிப்பயன் பயனர் முகவர்கள் எதுவும் கிடைக்கவில்லை"
 
 #: src/app/DomainPermissionsPage.qml:54
 msgid "Domain blacklist/whitelist"
-msgstr ""
+msgstr "டொமைன் பிளாக்லிச்ட்/அனுமதிப்பட்டியலாளர்"
 
 #: src/app/DomainPermissionsPage.qml:113 src/app/DomainSettingsPage.qml:113
 msgid "Add domain"
-msgstr ""
+msgstr "டொமைனைச் சேர்க்கவும்"
 
 #: src/app/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
 msgstr ""
+"டொமைனின் பெயரை உள்ளிடவும், எ.கா. எடுத்துக்காட்டு.காம் (துணை டொமைன்கள் அகற்றப்படும்)."
 
 #: src/app/DomainPermissionsPage.qml:222
 msgid "Not Set"
-msgstr ""
+msgstr "அமைக்கப்படவில்லை"
 
 #: src/app/DomainPermissionsPage.qml:232
 msgid "Never allow access"
-msgstr ""
+msgstr "அணுகலை ஒருபோதும் அனுமதிக்க வேண்டாம்"
 
 #: src/app/DomainPermissionsPage.qml:243
 msgid "Always allow access"
-msgstr ""
+msgstr "எப்போதும் அணுகலை அனுமதிக்கவும்"
 
 #: src/app/DomainPermissionsPage.qml:283
 msgid "No sites have been granted special permissions"
-msgstr ""
+msgstr "எந்த தளங்களுக்கும் சிறப்பு இசைவு வழங்கப்படவில்லை"
 
 #: src/app/DomainSettingsPage.qml:52
 msgid "Domain specific settings"
-msgstr ""
+msgstr "டொமைன் குறிப்பிட்ட அமைப்புகள்"
 
 #: src/app/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
-msgstr ""
+msgstr "டொமைனின் பெயரை உள்ளிடவும், எ.கா. m.example.com"
 
 #: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
-msgstr ""
+msgstr "பிற பயன்பாடுகளைத் தொடங்க அனுமதிக்கப்படுகிறது"
 
 #: src/app/DomainSettingsPage.qml:226
 msgid "access your location"
-msgstr ""
+msgstr "உங்கள் இருப்பிடத்தை அணுகவும்"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "ஒவ்வொரு முறையும் கேளுங்கள்"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "அனுமதி"
+msgstr "அனுமதிக்கப்படுகிறது"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "மறுக்கப்பட்டது"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
-msgstr ""
+msgstr "தனிப்பயன் பயனர் முகவர்"
 
 #: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
-msgstr ""
+msgstr "சூம்: "
 
 #: src/app/DomainSettingsPage.qml:325
 msgid "not set"
-msgstr ""
+msgstr "அமைக்கப்படவில்லை"
 
 #: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
-msgstr ""
+msgstr "டொமைன் குறிப்பிட்ட அமைப்புகள் எதுவும் கிடைக்கவில்லை"
 
 #. TRANSLATORS: %1 is the percentage of the download completed so far
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: src/app/DownloadDelegate.qml:170
 msgid "Download failed"
-msgstr ""
+msgstr "பதிவிறக்கம் தோல்வியடைந்தது"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "தெரியவில்லை"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/வி"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
 msgid "Delete File"
-msgstr ""
+msgstr "கோப்பை அழி"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "வரலாற்றை நீக்கு"
+msgstr "வரலாற்றிலிருந்து அகற்று"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "தொடுப்பை நகலெடு"
+msgstr "பதிவிறக்க இணைப்பை நகலெடுக்கவும்"
 
 #: src/app/DownloadsDialog.qml:68
 msgid "Recent Downloads"
-msgstr ""
+msgstr "அண்மைக் கால பதிவிறக்கங்கள்"
 
 #: src/app/DownloadsDialog.qml:83
 msgid "No Recent Downloads"
-msgstr ""
+msgstr "அண்மைக் கால பதிவிறக்கங்கள் இல்லை"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "ரத்துசெய்"
+msgstr "ரத்து செய்யப்பட்டது"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "முடிந்தது"
 
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
 msgid "Clear"
-msgstr ""
+msgstr "தெளிவான"
 
 #: src/app/DownloadsDialog.qml:179
 msgid "View All"
-msgstr ""
+msgstr "அனைத்தையும் காண்க"
 
 #: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:838
 #: src/app/webcontainer/WebappSettingsPage.qml:137
 msgid "Downloads"
-msgstr ""
+msgstr "பதிவிறக்கங்கள்"
 
 #: src/app/DownloadsPage.qml:60
 msgid "Confirm selection"
-msgstr ""
+msgstr "தேர்வை உறுதிப்படுத்தவும்"
 
 #: src/app/DownloadsPage.qml:288
 msgid "No downloads available"
-msgstr ""
+msgstr "பதிவிறக்கங்கள் எதுவும் கிடைக்கவில்லை"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "இந்த பயனர் முகவர் பெயர் ஏற்கனவே எடுக்கப்பட்டுள்ளது"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
 msgid "Add the name for the user agent"
-msgstr ""
+msgstr "பயனர் முகவருக்கு பெயரைச் சேர்க்கவும்"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
-msgstr ""
+msgstr "பயனர் முகவர் சரத்தை உள்ளிடவும் ..."
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
-msgstr ""
+msgstr "சான்றிதழ் பிழை"
 
 #: src/app/ErrorSheet.qml:42
 msgid "Network Error"
@@ -552,7 +548,7 @@ msgstr "இதை பார்ப்பதில் உங்களுக்க�
 #: src/app/ErrorSheet.qml:56
 #, qt-format
 msgid "Error: %1"
-msgstr ""
+msgstr "பிழை: %1"
 
 #: src/app/ErrorSheet.qml:62 src/app/InvalidCertificateErrorSheet.qml:173
 msgid "Back to safety"
@@ -561,6 +557,7 @@ msgstr "பாதுகாப்பான நிலைக்குத் தி�
 #: src/app/ErrorSheet.qml:70
 msgid "Please check your network settings and try refreshing the page."
 msgstr ""
+"உங்கள் பிணைய அமைப்புகளை சரிபார்த்து, பக்கத்தைப் புதுப்பிக்க முயற்சிக்கவும்."
 
 #: src/app/ErrorSheet.qml:77
 msgid "Refresh page"
@@ -572,7 +569,7 @@ msgstr "அனுமதிக்கான கோரிக்கை"
 
 #: src/app/GeolocationPermissionRequest.qml:30
 msgid "This page wants to know your device’s location."
-msgstr ""
+msgstr "இந்த பக்கம் உங்கள் சாதனத்தின் இருப்பிடத்தை அறிய விரும்புகிறது."
 
 #: src/app/GeolocationPermissionRequest.qml:57
 msgid "Deny"
@@ -583,14 +580,15 @@ msgstr "மறுக்கவும்"
 #, qt-format
 msgid "The website at %1 requires authentication. The website says \"%2\""
 msgstr ""
+"%1 இல் உள்ள வலைத்தளத்திற்கு ஏற்பு தேவை. வலைத்தளம் \"%2\" என்று கூறுகிறது"
 
 #: src/app/InvalidCertificateErrorSheet.qml:55
 msgid "This site security certificate is not trusted.\n"
-msgstr ""
+msgstr "இந்த தள பாதுகாப்பு சான்றிதழ் நம்பப்படவில்லை.\n"
 
 #: src/app/InvalidCertificateErrorSheet.qml:63
 msgid "Learn more"
-msgstr ""
+msgstr "மேலும் அறிக"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's serial number
 #: src/app/InvalidCertificateErrorSheet.qml:87
@@ -599,6 +597,8 @@ msgid ""
 "Serial number:\n"
 "%1"
 msgstr ""
+"வரிசை எண்:\n"
+" %1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject display name
 #: src/app/InvalidCertificateErrorSheet.qml:94
@@ -607,6 +607,8 @@ msgid ""
 "Subject:\n"
 "%1"
 msgstr ""
+"பொருள்:\n"
+" %1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject's address
 #: src/app/InvalidCertificateErrorSheet.qml:102
@@ -615,6 +617,8 @@ msgid ""
 "Subject address:\n"
 "%1"
 msgstr ""
+"பொருள் முகவரி:\n"
+" %1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer display name
 #: src/app/InvalidCertificateErrorSheet.qml:113
@@ -623,6 +627,8 @@ msgid ""
 "Issuer:\n"
 "%1"
 msgstr ""
+"வழங்குபவர்:\n"
+" %1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer's address
 #: src/app/InvalidCertificateErrorSheet.qml:121
@@ -631,6 +637,8 @@ msgid ""
 "Issuer address:\n"
 "%1"
 msgstr ""
+"வழங்குபவர் முகவரி:\n"
+" %1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's start date
 #: src/app/InvalidCertificateErrorSheet.qml:132
@@ -639,6 +647,8 @@ msgid ""
 "Valid from:\n"
 "%1"
 msgstr ""
+"இதிலிருந்து செல்லுபடியாகும்:\n"
+" %1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's expiry date
 #: src/app/InvalidCertificateErrorSheet.qml:139
@@ -647,6 +657,8 @@ msgid ""
 "Valid until:\n"
 "%1"
 msgstr ""
+"வரை செல்லுபடியாகும்:\n"
+" %1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's SHA1 fingerprint
 #: src/app/InvalidCertificateErrorSheet.qml:146
@@ -655,36 +667,40 @@ msgid ""
 "Fingerprint (SHA1):\n"
 "%1"
 msgstr ""
+"கைரேகை (சா 1):\n"
+" %1"
 
 #: src/app/InvalidCertificateErrorSheet.qml:153
 msgid ""
 "You should not proceed, especially if you have never seen this warning "
 "before for this site."
 msgstr ""
+"நீங்கள் தொடரக்கூடாது, குறிப்பாக இந்த தளத்திற்கான இந்த எச்சரிக்கையை நீங்கள் ஒருபோதும் "
+"பார்த்ததில்லை என்றால்."
 
 #: src/app/MediaAccessDialog.qml:39
 msgid "Permission"
-msgstr ""
+msgstr "இசைவு"
 
 #: src/app/MediaAccessDialog.qml:46
 msgid "Allow this domain to access your camera and microphone?"
-msgstr ""
+msgstr "உங்கள் கேமரா மற்றும் மைக்ரோஃபோனை அணுக இந்த டொமைனை அனுமதிக்கவா?"
 
 #: src/app/MediaAccessDialog.qml:47
 msgid "Allow this domain to access your camera?"
-msgstr ""
+msgstr "உங்கள் கேமராவை அணுக இந்த டொமைனை அனுமதிக்கவா?"
 
 #: src/app/MediaAccessDialog.qml:48
 msgid "Allow this domain to access your microphone?"
-msgstr ""
+msgstr "உங்கள் மைக்ரோஃபோனை அணுக இந்த டொமைனை அனுமதிக்கவா?"
 
 #: src/app/MediaAccessDialog.qml:77
 msgid "Yes"
-msgstr ""
+msgstr "ஆம்"
 
 #: src/app/MediaAccessDialog.qml:85
 msgid "No"
-msgstr ""
+msgstr "இல்லை"
 
 #: src/app/PromptDialog.qml:25
 msgid "JavaScript Prompt"
@@ -702,81 +718,81 @@ msgstr "இணையத்தளங்கள் %1:%2 அனுமதியை �
 
 #: src/app/SavePageDialog.qml:24
 msgid "Save page as HTML / PDF"
-msgstr ""
+msgstr "பக்கத்தை உஉகுமொ / PDF ஆக சேமிக்கவும்"
 
 #: src/app/SavePageDialog.qml:41
 msgid "No save actions are available"
-msgstr ""
+msgstr "சேமிக்கும் செயல்கள் எதுவும் கிடைக்கவில்லை"
 
 #: src/app/SavePageDialog.qml:46
 msgid "Save as HTML"
-msgstr ""
+msgstr "உஉகுமொ ஆக சேமிக்கவும்"
 
 #: src/app/SavePageDialog.qml:54
 #: src/app/webbrowser/ContentDownloadDialog.qml:102
 msgid "Download"
-msgstr ""
+msgstr "பதிவிறக்கம்"
 
 #: src/app/SavePageDialog.qml:64
 msgid "Save as PDF"
-msgstr ""
+msgstr "PDF ஆக சேமிக்கவும்"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "பட்டியலிலிருந்து அகற்று"
 
 #: src/app/webbrowser/AddressBar.qml:287
 msgid "find in page"
-msgstr ""
+msgstr "பக்கத்தில் காண்க"
 
 #: src/app/webbrowser/AddressBar.qml:288
 msgid "search or enter an address"
-msgstr ""
+msgstr "முகவரியைத் தேடுங்கள் அல்லது உள்ளிடவும்"
 
 #: src/app/webbrowser/AddressBar.qml:440
 msgid "Paste and Go"
-msgstr ""
+msgstr "ஒட்டவும் செல்லுங்கள்"
 
 #: src/app/webbrowser/BookmarkOptions.qml:66
 msgid "Bookmark Added"
-msgstr ""
+msgstr "புக்மார்க்கு சேர்க்கப்பட்டது"
 
 #. TRANSLATORS: Field where the title of bookmarked URL can be changed
 #: src/app/webbrowser/BookmarkOptions.qml:71
 msgid "Name"
-msgstr ""
+msgstr "பெயர்"
 
 #. TRANSLATORS: Field to choose the folder where bookmarked URL will be saved in
 #: src/app/webbrowser/BookmarkOptions.qml:89
 msgid "Save in"
-msgstr ""
+msgstr "சேமிக்கவும்"
 
 #: src/app/webbrowser/BookmarkOptions.qml:96
 #: src/app/webbrowser/BookmarksFoldersView.qml:133
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:105
 msgid "All Bookmarks"
-msgstr ""
+msgstr "அனைத்து புக்மார்க்குகள்"
 
 #: src/app/webbrowser/BookmarkOptions.qml:114
 #: src/app/webbrowser/BookmarkOptions.qml:154
 msgid "New Folder"
-msgstr ""
+msgstr "புதிய கோப்புறை"
 
 #: src/app/webbrowser/BookmarkOptions.qml:136
 msgid "Create new folder"
-msgstr ""
+msgstr "புதிய கோப்புறையை உருவாக்கவும்"
 
 #: src/app/webbrowser/BookmarkOptions.qml:164
 #: src/app/webbrowser/SettingsPage.qml:550 src/app/ZoomControls.qml:82
 msgid "Save"
-msgstr ""
+msgstr "சேமி"
 
 #: src/app/webbrowser/BookmarksFoldersView.qml:191
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
 #: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
 #: src/app/webbrowser/SettingsPage.qml:486
 msgid "Homepage"
-msgstr ""
+msgstr "முகப்புப்பக்கம்"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
@@ -788,95 +804,99 @@ msgstr "புத்தகக்குறிகள்"
 #: src/app/webbrowser/Browser.qml:230
 #: src/app/webcontainer/WebViewImplOxide.qml:302
 msgid "Blocked domain"
-msgstr ""
+msgstr "தடுக்கப்பட்ட டொமைன்"
 
 #: src/app/webbrowser/Browser.qml:231
 #: src/app/webcontainer/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
-msgstr ""
+msgstr "டொமைன் %1 க்கு வழிசெலுத்தல் கோரிக்கை."
 
 #: src/app/webbrowser/Browser.qml:257
 #: src/app/webcontainer/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
-msgstr ""
+msgstr "அனுமதிப்பட்டிய டொமைன்"
 
 #: src/app/webbrowser/Browser.qml:258
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
 msgstr ""
+"டொமைன் %1 இப்போது அனுமதிப்பட்டியில் உள்ளது, இது அடுத்த பக்க மறுஏற்றத்தில் செயலில் "
+"இருக்கும்."
 
 #: src/app/webbrowser/Browser.qml:648
 msgid "Done"
-msgstr ""
+msgstr "முடிந்தது"
 
 #: src/app/webbrowser/Browser.qml:673
 msgid "Reopen Tab"
-msgstr ""
+msgstr "தாவலை மீண்டும் திறக்கவும்"
 
 #: src/app/webbrowser/Browser.qml:799
 msgid "New window"
-msgstr ""
+msgstr "புதிய சாளரம்"
 
 #: src/app/webbrowser/Browser.qml:805
 msgid "New private window"
-msgstr ""
+msgstr "புதிய தனியார் சாளரம்"
 
 #: src/app/webbrowser/Browser.qml:825 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
-msgstr ""
+msgstr "வரலாறு"
 
 #: src/app/webbrowser/Browser.qml:845 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
-msgstr ""
+msgstr "அமைப்புகள்"
 
 #: src/app/webbrowser/Browser.qml:851
 msgid "View source"
-msgstr ""
+msgstr "மூலத்தைக் காண்க"
 
 #: src/app/webbrowser/Browser.qml:864
 msgid "Save / Print to PDF"
-msgstr ""
+msgstr "PDF இல் சேமிக்கவும் / அச்சிடவும்"
 
 #: src/app/webbrowser/Browser.qml:885 src/app/WebViewImpl.qml:690
 msgid "Zoom"
-msgstr ""
+msgstr "பெரிதாக்கு"
 
 #: src/app/webbrowser/Browser.qml:892 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
-msgstr ""
+msgstr "டெச்க்டாப் பயன்முறையை அமைக்கவும்"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
 #: src/app/webbrowser/Browser.qml:1092 src/app/webbrowser/Browser.qml:1130
 #, qt-format
 msgid "(%1)"
-msgstr ""
+msgstr "(%1)"
 
 #: src/app/webbrowser/Browser.qml:1970
 msgid "the file is already in the downloads folder."
-msgstr ""
+msgstr "கோப்பு ஏற்கனவே பதிவிறக்கங்கள் கோப்புறையில் உள்ளது."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:83
 msgid ""
 "Choose an application to open this file or add it to the downloads folder."
 msgstr ""
+"இந்த கோப்பைத் திறக்க ஒரு பயன்பாட்டைத் தேர்வுசெய்க அல்லது பதிவிறக்கங்கள் கோப்புறையில் "
+"சேர்க்கவும்."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:89
 msgid "Choose an application"
-msgstr ""
+msgstr "பயன்பாட்டைத் தேர்வுசெய்க"
 
 #: src/app/webbrowser/ExpandedHistoryView.qml:135
 #, qt-format
 msgid "%1 page"
 msgid_plural "%1 pages"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 பக்கம்"
+msgstr[1] "%1 பக்கங்கள்"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:26
 msgid "Last Visited"
-msgstr ""
+msgstr "கடைசியாக பார்வையிட்டார்"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:48
 #: src/app/webbrowser/HistoryViewWide.qml:252
@@ -885,344 +905,348 @@ msgstr "நேற்று"
 
 #: src/app/webbrowser/HistoryViewWide.qml:161
 msgid "search history"
-msgstr ""
+msgstr "தேடல் வரலாறு"
 
 #: src/app/webbrowser/HistoryViewWide.qml:236
 msgid "All History"
-msgstr ""
+msgstr "அனைத்து வரலாறும்"
 
 #: src/app/webbrowser/HistoryViewWide.qml:250
 #: src/app/webbrowser/HistoryViewWide.qml:337
 msgid "Today"
-msgstr ""
+msgstr "இன்று"
 
 #. TRANSLATORS: %1 refers to the current page’s title
 #: src/app/webbrowser/morph-browser.qml:108
 #: src/app/webcontainer/webapp-container.qml:76
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 - Morph Web Browser"
-msgstr "%1 - உபுண்டு இணைய உலாவி"
+msgstr "%1 - மார்ப் வலை உலாவி"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:41
 msgid "This is a private tab"
-msgstr ""
+msgstr "இது ஒரு தனியார் தாவல்"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:56
 msgid ""
 "Pages that you view in this tab won't appear in your browser history.\n"
 "Bookmarks you create will be preserved, however."
 msgstr ""
+"இந்த தாவலில் நீங்கள் பார்க்கும் பக்கங்கள் உங்கள் உலாவி வரலாற்றில் தோன்றாது.\n"
+" இருப்பினும், நீங்கள் உருவாக்கும் புக்மார்க்குகள் பாதுகாக்கப்படும்."
 
 #: src/app/webbrowser/NewTabView.qml:142
 msgid "Less"
-msgstr ""
+msgstr "குறைவாக"
 
 #: src/app/webbrowser/NewTabView.qml:142
 msgid "More"
-msgstr ""
+msgstr "மேலும்"
 
 #: src/app/webbrowser/NewTabView.qml:326
 #: src/app/webbrowser/NewTabViewWide.qml:138
 msgid "Top sites"
-msgstr ""
+msgstr "சிறந்த தளங்கள்"
 
 #: src/app/webbrowser/NewTabView.qml:357
 msgid "You haven't visited any site yet"
-msgstr ""
+msgstr "நீங்கள் இதுவரை எந்த தளத்தையும் பார்வையிடவில்லை"
 
 #: src/app/webbrowser/SadTab.qml:47
 msgid "The rendering process has been closed for this tab."
-msgstr ""
+msgstr "இந்த தாவலுக்கு வழங்குதல் செயல்முறை மூடப்பட்டுள்ளது."
 
 #: src/app/webbrowser/SadTab.qml:60
 #, qt-format
 msgid "Something went wrong while displaying %1."
-msgstr ""
+msgstr "%1 ஐக் காண்பிக்கும் போது ஏதோ தவறு ஏற்பட்டது."
 
 #: src/app/webbrowser/SadTab.qml:70
 msgid "Close tab"
-msgstr ""
+msgstr "தாவலை மூடு"
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:70
 msgid "This site has insecure content"
-msgstr ""
+msgstr "இந்த தளத்தில் பாதுகாப்பற்ற உள்ளடக்கம் உள்ளது"
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:71
 msgid "Identity Not Verified"
-msgstr ""
+msgstr "அடையாளம் சரிபார்க்கப்படவில்லை"
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:79
 msgid "The identity of this website has not been verified."
-msgstr ""
+msgstr "இந்த வலைத்தளத்தின் அடையாளம் சரிபார்க்கப்படவில்லை."
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:109
 #, qt-format
 msgid "You are connected to %1 via HTTPS. The certificate is valid."
 msgstr ""
+"நீங்கள் HTTPS வழியாக %1 உடன் இணைக்கப்பட்டுள்ளீர்கள். சான்றிதழ் செல்லுபடியாகும்."
 
 #: src/app/webbrowser/SettingsDeviceSelector.qml:42
 msgid "Default"
-msgstr ""
+msgstr "இயல்புநிலை"
 
 #: src/app/webbrowser/SettingsPage.qml:74
 #: src/app/webbrowser/SettingsPage.qml:277
 msgid "Search engine"
-msgstr ""
+msgstr "தேடுபொறி"
 
 #: src/app/webbrowser/SettingsPage.qml:91
 #: src/app/webbrowser/SettingsPage.qml:504
-#, fuzzy
-#| msgid "New Tab"
 msgid "New Tab Page"
-msgstr "புதிய கீற்று"
+msgstr "புதிய தாவல் பக்கம்"
 
 #: src/app/webbrowser/SettingsPage.qml:119
 msgid "Restore previous session at startup"
-msgstr ""
+msgstr "தொடக்கத்தில் முந்தைய அமர்வை மீட்டமைக்கவும்"
 
 #: src/app/webbrowser/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
-msgstr ""
+msgstr "தனியார் பயன்முறையில் தொடக்கத்தின் காரணமாக கிடைக்கவில்லை"
 
 #: src/app/webbrowser/SettingsPage.qml:159
 #: src/app/webcontainer/WebappSettingsPage.qml:58
 msgid "Automatic fit to width"
-msgstr ""
+msgstr "அகலத்திற்கு தானியங்கி பொருத்தம்"
 
 #: src/app/webbrowser/SettingsPage.qml:160
 #: src/app/webcontainer/WebappSettingsPage.qml:59
 msgid "Adjusts the width of the website to the window"
-msgstr ""
+msgstr "வலைத்தளத்தின் அகலத்தை சாளரத்துடன் சரிசெய்கிறது"
 
 #: src/app/webbrowser/SettingsPage.qml:179
 #: src/app/webcontainer/WebappSettingsPage.qml:78
 msgid "Default Zoom"
-msgstr ""
+msgstr "இயல்புநிலை சூம்"
 
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Load Images"
-msgstr ""
+msgstr "படங்களை ஏற்றவும்"
 
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
-msgstr ""
+msgstr "வலைப்பக்கங்களில் படங்களை தானாக ஏற்றவும்"
 
 #: src/app/webbrowser/SettingsPage.qml:238
 #: src/app/webbrowser/SettingsPage.qml:320
 #: src/app/webcontainer/WebappSettingsPage.qml:151
 #: src/app/webcontainer/WebappSettingsPage.qml:192
 msgid "Privacy & permissions"
-msgstr ""
+msgstr "தனியுரிமை மற்றும் அனுமதிகள்"
 
 #: src/app/webbrowser/SettingsPage.qml:249
 msgid "Reset browser settings"
-msgstr ""
+msgstr "உலாவி அமைப்புகளை மீட்டமைக்கவும்"
 
 #: src/app/webbrowser/SettingsPage.qml:334
 msgid "Start in private mode"
-msgstr ""
+msgstr "தனியார் பயன்முறையில் தொடங்கவும்"
 
 #: src/app/webbrowser/SettingsPage.qml:358
 #: src/app/webcontainer/WebappSettingsPage.qml:206
 msgid "Only allow browsing to whitelisted websites"
-msgstr ""
+msgstr "அனுமதிப்பட்டிய வலைத்தளங்களுக்கு உலாவலை மட்டுமே அனுமதிக்கவும்"
 
 #: src/app/webbrowser/SettingsPage.qml:398
 #: src/app/webbrowser/SettingsPage.qml:589
 msgid "Camera & microphone"
-msgstr ""
+msgstr "கேமரா & மைக்ரோஃபோன்"
 
 #: src/app/webbrowser/SettingsPage.qml:407
-#, fuzzy
-#| msgid "Clear History"
 msgid "Clear browsing history"
-msgstr "வரலாற்றை நீக்கு"
+msgstr "தெளிவான உலாவல் வரலாறு"
 
 #: src/app/webbrowser/SettingsPage.qml:411
-#, fuzzy
-#| msgid "Clear History"
 msgid "Clear browsing history?"
-msgstr "வரலாற்றை நீக்கு"
+msgstr "தெளிவான உலாவல் வரலாறு?"
 
 #: src/app/webbrowser/SettingsPage.qml:419
 #: src/app/webcontainer/WebappSettingsPage.qml:247
 msgid "Clear cache"
-msgstr ""
+msgstr "தெளிவான தற்காலிக சேமிப்பு"
 
 #: src/app/webbrowser/SettingsPage.qml:422
 #: src/app/webcontainer/WebappSettingsPage.qml:250
 msgid "Clear cache?"
-msgstr ""
+msgstr "கேச் அழிக்கவா?"
 
 #: src/app/webbrowser/SettingsPage.qml:430
 #: src/app/webcontainer/WebappSettingsPage.qml:258
 msgid "Clear all cookies"
-msgstr ""
+msgstr "அனைத்து குக்கீகளையும் அழிக்கவும்"
 
 #: src/app/webbrowser/SettingsPage.qml:433
 #: src/app/webcontainer/WebappSettingsPage.qml:261
 msgid "Clear all Cookies?"
-msgstr ""
+msgstr "அனைத்து குக்கீகளையும் அழிக்கவா?"
 
 #: src/app/webbrowser/SettingsPage.qml:516
 msgid "Custom homepage"
-msgstr ""
+msgstr "தனிப்பயன் முகப்புப்பக்கம்"
 
 #: src/app/webbrowser/SettingsPage.qml:601
 msgid "Microphone"
-msgstr ""
+msgstr "ஒலிவாங்கி"
 
 #: src/app/webbrowser/SettingsPage.qml:622
 msgid "Camera"
-msgstr ""
+msgstr "கேமரா"
 
 #: src/app/webbrowser/TabComponent.qml:282
 msgid "Swipe Up To Exit Full Screen"
-msgstr ""
+msgstr "முழுத் திரையில் இருந்து வெளியேற ச்வைப் செய்யவும்"
 
 #: src/app/webbrowser/TabComponent.qml:283
 msgid "Press ESC To Exit Full Screen"
-msgstr ""
+msgstr "முழுத் திரையில் இருந்து வெளியேற தப்பி ஐ அழுத்தவும்"
 
 #: src/app/webbrowser/TabPreview.qml:113
 msgid "Tap to view"
-msgstr ""
+msgstr "பார்க்க தட்டவும்"
 
 #: src/app/webbrowser/TabsBar.qml:64 src/app/webbrowser/TabsList.qml:100
 msgid "New tab"
-msgstr ""
+msgstr "புதிய தாவல்"
 
 #: src/app/webbrowser/TabsBar.qml:99
 msgid "Move to New Window"
-msgstr ""
+msgstr "புதிய சாளரத்திற்கு செல்லுங்கள்"
 
 #: src/app/webbrowser/TabsBar.qml:116
 msgid "Close Tab"
-msgstr ""
+msgstr "தாவலை மூடு"
 
 #: src/app/webbrowser/UrlPreviewDelegate.qml:138
 msgid "Remove"
-msgstr ""
+msgstr "அகற்று"
 
 #: src/app/webcontainer/AccountChooserDialog.qml:62
 msgid ""
 "No accounts have been linked to this webapp; press the item below to add an "
 "account."
 msgstr ""
+"இந்த வெப்ஆப்புடன் கணக்குகள் எதுவும் இணைக்கப்படவில்லை; கணக்கைச் சேர்க்க கீழே உள்ள உருப்படியை "
+"அழுத்தவும்."
 
 #: src/app/webcontainer/AccountChooserDialog.qml:78
 msgid "Add account"
-msgstr ""
+msgstr "கணக்கைச் சேர்க்கவும்"
 
 #: src/app/webcontainer/AccountChooserDialog.qml:87
 msgid "Don't use an account"
-msgstr ""
+msgstr "கணக்கைப் பயன்படுத்த வேண்டாம்"
 
 #: src/app/webcontainer/AccountErrorScreen.qml:39
 msgid "Account error"
-msgstr ""
+msgstr "கணக்கு பிழை"
 
 #: src/app/webcontainer/AccountErrorScreen.qml:50
 msgid "Close"
-msgstr ""
+msgstr "மூடு"
 
 #: src/app/webcontainer/AccountsLogic.qml:63
 msgid ""
 "Account window could not be opened. You can only create one account at a "
 "time; please try again after closing all other account windows."
 msgstr ""
+"கணக்கு சாளரத்தைத் திறக்க முடியவில்லை. நீங்கள் ஒரு நேரத்தில் ஒரு கணக்கை மட்டுமே உருவாக்க "
+"முடியும்; மற்ற அனைத்து கணக்கு சாளரங்களையும் மூடிய பிறகு மீண்டும் முயற்சிக்கவும்."
 
 #: src/app/webcontainer/AccountsLogic.qml:214
 msgid "Authentication failed"
-msgstr ""
+msgstr "ஏற்பு தோல்வியடைந்தது"
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
 #: src/app/webcontainer/AccountsSplashScreen.qml:45
 #, qt-format
 msgid "<b>%1</b> needs to access your %2 online account."
-msgstr ""
+msgstr "<b> %1 </b> உங்கள் %2 நிகழ்நிலை கணக்கை அணுக வேண்டும்."
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
 #: src/app/webcontainer/AccountsSplashScreen.qml:55
 #, qt-format
 msgid "<b>%1</b> would like to access your %2 online account."
-msgstr ""
+msgstr "<b> %1 </b> உங்கள் %2 நிகழ்நிலை கணக்கை அணுக விரும்புகிறது."
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:64
 msgid ""
 "Choose an account now, or skip this step and choose an online account later."
 msgstr ""
+"இப்போது ஒரு கணக்கைத் தேர்வுசெய்க, அல்லது இந்த படியைத் தவிர்த்து, பின்னர் நிகழ்நிலை கணக்கைத் "
+"தேர்வுசெய்க."
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Close the app"
-msgstr ""
+msgstr "பயன்பாட்டை மூடு"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Skip"
-msgstr ""
+msgstr "தவிர்"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:84
 msgid "Choose account"
-msgstr ""
+msgstr "கணக்கைத் தேர்வுசெய்க"
 
 #: src/app/webcontainer/SadPage.qml:45
 msgid "Oops, something went wrong."
-msgstr ""
+msgstr "அச்சச்சோ, ஏதோ தவறு நடந்தது."
 
 #: src/app/webcontainer/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
-msgstr ""
+msgstr "WebAppContainer அமைப்புகள்"
 
 #: src/app/webcontainer/WebappSettingsPage.qml:163
 msgid "Reset webapp settings"
-msgstr ""
+msgstr "WebApp அமைப்புகளை மீட்டமைக்கவும்"
 
 #: src/app/webcontainer/WebViewImplOxide.qml:330
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
 msgstr ""
+"டொமைன் %1 இப்போது அனுமதிப்பட்டியாக உள்ளது, தயவுசெய்து பக்கத்தை மீண்டும் ஏற்றவும்."
 
 #: src/app/ZoomControls.qml:61
 msgid "Zoom Out"
-msgstr ""
+msgstr "சிறிதாக்கு"
 
 #: src/app/ZoomControls.qml:68
 msgid "Reset"
-msgstr ""
+msgstr "மீட்டமை"
 
 #: src/app/ZoomControls.qml:68
 msgid "fit"
-msgstr ""
+msgstr "பொருத்தம்"
 
 #: src/app/ZoomControls.qml:75
 msgid "Zoom In"
-msgstr ""
+msgstr "பெரிதாக்கு"
 
 #: src/app/ZoomControls.qml:100
 msgid "Current Zoom"
-msgstr ""
+msgstr "தற்போதைய சூம்"
 
 #: src/app/ZoomControls.qml:101
 msgid "domain"
-msgstr ""
+msgstr "டொமைன்"
 
 #: src/app/ZoomControls.qml:101
 msgid "default"
-msgstr ""
+msgstr "இயல்புநிலை"
 
 #: src/app/ZoomControls.qml:101
 msgid "auto-fit"
-msgstr ""
+msgstr "ஆட்டோ-ஃபிட்"
 
 #: src/app/ZoomControls.qml:190
 msgid "Save Zoom"
-msgstr ""
+msgstr "சூம் சேமிக்கவும்"
 
 #: src/app/ZoomControls.qml:192
 msgid "the current web app"
-msgstr ""
+msgstr "தற்போதைய வலை பயன்பாடு"
 
 #: src/app/ZoomControls.qml:195
 #, qt-format
@@ -1230,25 +1254,28 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"தற்போதைய சூம் நிலை (%1%) தற்போதைய களத்திற்கு அல்லது இயல்புநிலை சூம் மட்டமாக%2 இல் "
+"சேமிக்கப்படலாம்."
 
 #: src/app/ZoomControls.qml:197
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr ""
+msgstr "தற்போதைய சூம் நிலை (%1%) தற்போதைய களத்திற்கு%2 இல் சேமிக்க முடியும்."
 
 #: src/app/ZoomControls.qml:199
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
 msgstr ""
+"தற்போதைய சூம் நிலை (%1%) இயல்புநிலை சூம் மட்டமாக%2 இல் சேமிக்க முடியும்."
 
 #: src/app/ZoomControls.qml:206
 msgid "Save for domain"
-msgstr ""
+msgstr "டொமைனுக்காக சேமிக்கவும்"
 
 #: src/app/ZoomControls.qml:219
 msgid "Save as default"
-msgstr ""
+msgstr "இயல்புநிலையாக சேமிக்கவும்"
 
 #~ msgid "Ubuntu Web Browser"
 #~ msgstr "உபுண்டு இணைய உலாவி"

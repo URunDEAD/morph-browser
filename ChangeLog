@@ -1,6 +1,81 @@
+2025-01-20 Mike Gabriel
+
+        * Release 1.1.2 (HEAD -> main, tag: 1.1.2)
+        * Merge branch 'fix/typeString-timeout' into 'main' (e186d2e8)
+
+2025-01-14 OPNA2608
+
+        * tests/unittests/qml/tst_AddressBar.qml: Replace wait + compare with
+          tryCompare (9c4cd4fa)
+
+2025-01-12 தமிழ்நேரம்
+
+        * Translated using Weblate (Tamil) (340089d3)
+
+2024-12-28 Hosted Weblate
+
+        * Update translation files (1ca3c26b)
+
+2024-12-27 Hosted Weblate
+
+        * Update translation files (ca9ff18d)
+
+2024-12-01 Mike Gabriel
+
+        * Merge branch 'main_-_favicons' into 'main' (bb991e02)
+
+2024-11-29 Kugi Eusebio
+
+        * Fixed #456 (df17bc59)
+
+2024-11-28 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/suppress-touch-selection-menu'
+          into 'main' (c42679d4)
+
+2024-11-21 Ratchanan Srirattanamet
+
+        * webbrowser/, webcontainer/: disable touch selection menu via env
+          var (5bfd06cf)
+
+2024-11-18 Mike Gabriel
+
+        * Merge branch 'readability_log' into 'main' (b2f9942f)
+
+2024-01-24 Luigi311
+
+        * Morph: Remove excessive javascript log (4547528d)
+
+2023-12-19 Luigi311
+
+        * Readability: Remove readerable log (676b1f64)
+
+2024-11-18 Mike Gabriel
+
+        * Merge branch 'add/bindtextdomain' into 'main' (92324ffe)
+
+2024-01-23 OPNA2608
+
+        * Call i18n.bindtextdomain with buildtime-determined locale path
+          (3d9777fd)
+
+2024-11-04 Ratchanan Srirattanamet
+
+        * Merge branch 'personal/peat-psuwit/fix-import-version' into 'main'
+          (68b0a660)
+        * doc/: update Ubuntu.Components -> Lomiri.Components in an example
+          (07e51980)
+        * doc/: correct QML module version (0.2 -> 0.1) (42212ecc)
+          Fixes:
+          https://gitlab.com/ubports/development/core/morph-browser/-/issues/577
+
+2024-10-12 ikozyris
+
+        * Translated using Weblate (Greek) (3d170c61)
+
 2024-09-20 Mike Gabriel
 
-        * Release 1.1.1 (HEAD -> main, tag: 1.1.1)
+        * Release 1.1.1 (856e1c21) (tag: 1.1.1)
         * Merge branch 'fix/content-hub-rename-debian' into 'main' (9d33ae3d)
 
 2024-09-20 OPNA2608

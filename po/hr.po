@@ -8,17 +8,18 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2014-12-07 23:33+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Croatian <hr@li.org>\n"
+"PO-Revision-Date: 2025-02-04 07:51+0000\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
+"Language-Team: Croatian <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/hr/>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.10-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: morph-browser.desktop.in:4
 #, fuzzy
@@ -215,7 +216,7 @@ msgstr "Podijeli"
 
 #: src/app/actions/Undo.qml:22
 msgid "Undo"
-msgstr "Vrati"
+msgstr "Poništi"
 
 #: src/app/AlertDialog.qml:24
 msgid "JavaScript Alert"
@@ -455,7 +456,7 @@ msgstr ""
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: src/app/DownloadDelegate.qml:170
 msgid "Download failed"
@@ -463,19 +464,17 @@ msgstr "Preuzimanje neuspjelo"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "Nepoznato"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "Obriši"
+msgstr "Obriši datoteku"
 
 #: src/app/DownloadDelegate.qml:261
 #, fuzzy
@@ -518,7 +517,7 @@ msgstr "Obriši"
 
 #: src/app/DownloadsDialog.qml:179
 msgid "View All"
-msgstr ""
+msgstr "Prikaži sve"
 
 #: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:838
 #: src/app/webcontainer/WebappSettingsPage.qml:137
@@ -547,7 +546,7 @@ msgstr ""
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
-msgstr ""
+msgstr "Greška certifikata"
 
 #: src/app/ErrorSheet.qml:42
 msgid "Network Error"
@@ -562,11 +561,11 @@ msgstr "Izgleda da imate problema pri pregledavanju: %1."
 #: src/app/ErrorSheet.qml:56
 #, qt-format
 msgid "Error: %1"
-msgstr ""
+msgstr "Greška: %1"
 
 #: src/app/ErrorSheet.qml:62 src/app/InvalidCertificateErrorSheet.qml:173
 msgid "Back to safety"
-msgstr "Povratak na sigurno"
+msgstr "Natrag na sigurnost"
 
 #: src/app/ErrorSheet.qml:70
 msgid "Please check your network settings and try refreshing the page."
@@ -730,16 +729,15 @@ msgstr "Web stranica %1:%2 zahtijeva ovjeru."
 
 #: src/app/SavePageDialog.qml:24
 msgid "Save page as HTML / PDF"
-msgstr ""
+msgstr "Spremi stranicu kao HTML / PDF"
 
 #: src/app/SavePageDialog.qml:41
-#, fuzzy
 msgid "No save actions are available"
-msgstr "Nema dostupnih preuzimanja"
+msgstr "Nema dostupnih radnji spremanja"
 
 #: src/app/SavePageDialog.qml:46
 msgid "Save as HTML"
-msgstr ""
+msgstr "Spremi kao HTML"
 
 #: src/app/SavePageDialog.qml:54
 #: src/app/webbrowser/ContentDownloadDialog.qml:102
@@ -748,11 +746,11 @@ msgstr "Preuzimanje"
 
 #: src/app/SavePageDialog.qml:64
 msgid "Save as PDF"
-msgstr ""
+msgstr "Spremi kao PDF"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Ukloni iz popisa"
 
 #: src/app/webbrowser/AddressBar.qml:287
 msgid "find in page"
@@ -764,7 +762,7 @@ msgstr "pretraži ili upiši adresu"
 
 #: src/app/webbrowser/AddressBar.qml:440
 msgid "Paste and Go"
-msgstr ""
+msgstr "Zalijepi i kreni"
 
 #: src/app/webbrowser/BookmarkOptions.qml:66
 msgid "Bookmark Added"
@@ -773,7 +771,7 @@ msgstr "Zabilješka dodana"
 #. TRANSLATORS: Field where the title of bookmarked URL can be changed
 #: src/app/webbrowser/BookmarkOptions.qml:71
 msgid "Name"
-msgstr "Naziv"
+msgstr "Ime"
 
 #. TRANSLATORS: Field to choose the folder where bookmarked URL will be saved in
 #: src/app/webbrowser/BookmarkOptions.qml:89
@@ -838,7 +836,7 @@ msgstr ""
 
 #: src/app/webbrowser/Browser.qml:648
 msgid "Done"
-msgstr "Završeno"
+msgstr "Gotovo"
 
 #: src/app/webbrowser/Browser.qml:673
 #, fuzzy
@@ -1050,7 +1048,7 @@ msgstr ""
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
-msgstr ""
+msgstr "Automatski učitaj slike na web stranicama"
 
 #: src/app/webbrowser/SettingsPage.qml:238
 #: src/app/webbrowser/SettingsPage.qml:320
@@ -1252,7 +1250,7 @@ msgstr ""
 
 #: src/app/ZoomControls.qml:68
 msgid "Reset"
-msgstr ""
+msgstr "Resetiraj"
 
 #: src/app/ZoomControls.qml:68
 msgid "fit"
@@ -1271,10 +1269,8 @@ msgid "domain"
 msgstr ""
 
 #: src/app/ZoomControls.qml:101
-#, fuzzy
-#| msgid "Default"
 msgid "default"
-msgstr "Zadano"
+msgstr "zadano"
 
 #: src/app/ZoomControls.qml:101
 msgid "auto-fit"

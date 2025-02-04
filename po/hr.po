@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2025-02-04 19:29+0000\n"
+"PO-Revision-Date: 2025-02-05 20:43+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/hr/>\n"
@@ -1197,19 +1197,19 @@ msgstr "Autentifikacija neuspjela"
 #: src/app/webcontainer/AccountsSplashScreen.qml:45
 #, qt-format
 msgid "<b>%1</b> needs to access your %2 online account."
-msgstr "<b>%1</b> treba pristupiti vašem %2 mrežnom računu."
+msgstr "<b>%1</b> mora pristupiti vašem %2 online računu."
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
 #: src/app/webcontainer/AccountsSplashScreen.qml:55
 #, qt-format
 msgid "<b>%1</b> would like to access your %2 online account."
-msgstr "<b>%1</b> želiš li pristupiti svojem %2 mrežnom računu."
+msgstr "<b>%1</b> želi pristupiti vašem %2 online računu."
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:64
 msgid ""
 "Choose an account now, or skip this step and choose an online account later."
 msgstr ""
-"Odaberite račun odmah ili preskočite ovaj korak i odaberite mrežni račun "
+"Odaberite račun sada ili preskočite ovaj korak i odaberite online račun "
 "kasnije."
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77

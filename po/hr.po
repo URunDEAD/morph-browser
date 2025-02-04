@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2025-02-04 07:51+0000\n"
+"PO-Revision-Date: 2025-02-04 18:53+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/hr/>\n"
@@ -75,7 +75,7 @@ msgstr "Dodaj ovu stranicu u zabilješke"
 
 #: src/app/actions/ClearHistory.qml:23
 msgid "Clear History"
-msgstr "Obiši povijest"
+msgstr "Obriši povijest"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
@@ -391,7 +391,7 @@ msgstr ""
 
 #: src/app/DomainPermissionsPage.qml:222
 msgid "Not Set"
-msgstr ""
+msgstr "Nije postavljeno"
 
 #: src/app/DomainPermissionsPage.qml:232
 msgid "Never allow access"
@@ -424,21 +424,19 @@ msgstr "Dopusti ovoj domeni pristup tvojoj kameri?"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "Pitaj svaki put"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "Dopustiti"
+msgstr "Dozvoljeno"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Odbijeno"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
-msgstr ""
+msgstr "prilagođen korisnički agent"
 
 #: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
@@ -446,7 +444,7 @@ msgstr ""
 
 #: src/app/DomainSettingsPage.qml:325
 msgid "not set"
-msgstr ""
+msgstr "nije postavljeno"
 
 #: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
@@ -1133,11 +1131,11 @@ msgstr "Kamera"
 
 #: src/app/webbrowser/TabComponent.qml:282
 msgid "Swipe Up To Exit Full Screen"
-msgstr "Klizni za izlazak i cjelozaslonskog prikaza"
+msgstr "Povuci prema gore za isključivanje cjeloekranskog prikaza"
 
 #: src/app/webbrowser/TabComponent.qml:283
 msgid "Press ESC To Exit Full Screen"
-msgstr "Pritisni ESC za izlazak i cjelozaslonskog prikaza"
+msgstr "Pritisni ESC za isključivanje cjeloekranskog prikaza"
 
 #: src/app/webbrowser/TabPreview.qml:113
 msgid "Tap to view"

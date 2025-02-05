@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2025-02-05 20:43+0000\n"
+"PO-Revision-Date: 2025-02-06 10:51+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/hr/>\n"
@@ -440,7 +440,7 @@ msgstr "prilagođen korisnički agent"
 
 #: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
-msgstr ""
+msgstr "Zoom: "
 
 #: src/app/DomainSettingsPage.qml:325
 msgid "not set"
@@ -448,7 +448,7 @@ msgstr "nije postavljeno"
 
 #: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
-msgstr ""
+msgstr "Nema specifičnih postavki domene"
 
 #. TRANSLATORS: %1 is the percentage of the download completed so far
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
@@ -475,38 +475,28 @@ msgid "Delete File"
 msgstr "Obriši datoteku"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "Obiši povijest"
+msgstr "Ukloni iz povijesti"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "Kopiraj poveznicu"
+msgstr "Kopiraj poveznicu preuzimanja"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "Preuzimanja"
+msgstr "Nedavna preuzimanja"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
-msgstr "Preuzimanja"
+msgstr "Nema nedavnih preuzimanja"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Odustani"
+msgstr "Prekinuto"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Završeno"
 
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
@@ -532,15 +522,15 @@ msgstr "Nema dostupnih preuzimanja"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "ime ovog korisničkog agenta se već koristi"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
 msgid "Add the name for the user agent"
-msgstr ""
+msgstr "Dodaj ime za ovaj korisnički agent"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
-msgstr ""
+msgstr "upiši znakovni niz korisničkog agenta …"
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
@@ -554,7 +544,7 @@ msgstr "Mrežna greška"
 #: src/app/ErrorSheet.qml:49
 #, qt-format
 msgid "It appears you are having trouble viewing: %1."
-msgstr "Izgleda da imate problema pri pregledavanju: %1."
+msgstr "Čini se da postoje problemi s prikazom: %1."
 
 #: src/app/ErrorSheet.qml:56
 #, qt-format
@@ -575,7 +565,7 @@ msgstr "Osvježi stranicu"
 
 #: src/app/GeolocationPermissionRequest.qml:29
 msgid "Permission Request"
-msgstr "Zatražena dozvola"
+msgstr "Zahtjev za dozvolu"
 
 #: src/app/GeolocationPermissionRequest.qml:30
 msgid "This page wants to know your device’s location."
@@ -583,21 +573,21 @@ msgstr "Ova stranica želi znati lokaciju vašeg uređaja."
 
 #: src/app/GeolocationPermissionRequest.qml:57
 msgid "Deny"
-msgstr "Uskrati"
+msgstr "Odbij"
 
 #. TRANSLATORS: %1 refers to the URL of the current website and %2 is a string that the website sends with more information about the authentication challenge (technically called "realm")
 #: src/app/HttpAuthenticationDialog.qml:27
 #, qt-format
 msgid "The website at %1 requires authentication. The website says \"%2\""
-msgstr "Web stranica %1 zahtijeva ovjeru. Web stranica kaže \"%2\""
+msgstr "Web stranica %1 zahtijeva autentifikaciju. Web stranica javlja „%2”"
 
 #: src/app/InvalidCertificateErrorSheet.qml:55
 msgid "This site security certificate is not trusted.\n"
-msgstr "Sigurnosna vjerodajnica ove stranice nije pouzdana.\n"
+msgstr "Sigurnosni certifikat ove stranice nije pouzdan.\n"
 
 #: src/app/InvalidCertificateErrorSheet.qml:63
 msgid "Learn more"
-msgstr "Saznajte više"
+msgstr "Saznaj više"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's serial number
 #: src/app/InvalidCertificateErrorSheet.qml:87
@@ -656,7 +646,7 @@ msgid ""
 "Valid from:\n"
 "%1"
 msgstr ""
-"Valjan oblik:\n"
+"Vrijedi od:\n"
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's expiry date
@@ -666,7 +656,7 @@ msgid ""
 "Valid until:\n"
 "%1"
 msgstr ""
-"Valjan do:\n"
+"Vrijedi do:\n"
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's SHA1 fingerprint
@@ -693,15 +683,15 @@ msgstr "Dozvola"
 
 #: src/app/MediaAccessDialog.qml:46
 msgid "Allow this domain to access your camera and microphone?"
-msgstr "Dopusti ovoj domeni pristup tvojoj kameri i mikrofonu?"
+msgstr "Dopustiti ovoj domeni pristup tvojoj kameri i mikrofonu?"
 
 #: src/app/MediaAccessDialog.qml:47
 msgid "Allow this domain to access your camera?"
-msgstr "Dopusti ovoj domeni pristup tvojoj kameri?"
+msgstr "Dopustiti ovoj domeni pristup tvojoj kameri?"
 
 #: src/app/MediaAccessDialog.qml:48
 msgid "Allow this domain to access your microphone?"
-msgstr "Dopusti ovoj domeni pristup tvojem i mikrofonu?"
+msgstr "Dopustiti ovoj domeni pristup tvom mikrofonu?"
 
 #: src/app/MediaAccessDialog.qml:77
 msgid "Yes"
@@ -869,7 +859,7 @@ msgstr ""
 
 #: src/app/webbrowser/Browser.qml:885 src/app/WebViewImpl.qml:690
 msgid "Zoom"
-msgstr ""
+msgstr "Zoom"
 
 #: src/app/webbrowser/Browser.qml:892 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
@@ -1034,9 +1024,8 @@ msgstr ""
 
 #: src/app/webbrowser/SettingsPage.qml:179
 #: src/app/webcontainer/WebappSettingsPage.qml:78
-#, fuzzy
 msgid "Default Zoom"
-msgstr "Zadano"
+msgstr "Zadani zoom"
 
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
@@ -1226,16 +1215,15 @@ msgstr "Odaberi račun"
 
 #: src/app/webcontainer/SadPage.qml:45
 msgid "Oops, something went wrong."
-msgstr "Ups... Nešto je pošlo po krivu."
+msgstr "Ups, nešto nije u redu."
 
 #: src/app/webcontainer/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
 msgstr ""
 
 #: src/app/webcontainer/WebappSettingsPage.qml:163
-#, fuzzy
 msgid "Reset webapp settings"
-msgstr "Vrati zadane postavke preglednika"
+msgstr "Resetiraj postavke web aplikacije"
 
 #: src/app/webcontainer/WebViewImplOxide.qml:330
 #, qt-format
@@ -1244,7 +1232,7 @@ msgstr ""
 
 #: src/app/ZoomControls.qml:61
 msgid "Zoom Out"
-msgstr ""
+msgstr "Umanji"
 
 #: src/app/ZoomControls.qml:68
 msgid "Reset"
@@ -1252,19 +1240,19 @@ msgstr "Resetiraj"
 
 #: src/app/ZoomControls.qml:68
 msgid "fit"
-msgstr ""
+msgstr "prilagodi"
 
 #: src/app/ZoomControls.qml:75
 msgid "Zoom In"
-msgstr ""
+msgstr "Uvećaj"
 
 #: src/app/ZoomControls.qml:100
 msgid "Current Zoom"
-msgstr ""
+msgstr "Trenutačni zoom"
 
 #: src/app/ZoomControls.qml:101
 msgid "domain"
-msgstr ""
+msgstr "domena"
 
 #: src/app/ZoomControls.qml:101
 msgid "default"
@@ -1272,13 +1260,11 @@ msgstr "zadano"
 
 #: src/app/ZoomControls.qml:101
 msgid "auto-fit"
-msgstr ""
+msgstr "automatski prilagodi"
 
 #: src/app/ZoomControls.qml:190
-#, fuzzy
-#| msgid "Save image"
 msgid "Save Zoom"
-msgstr "Spremi sliku"
+msgstr "Spremi zoom"
 
 #: src/app/ZoomControls.qml:192
 msgid "the current web app"
@@ -1290,17 +1276,19 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"Trenutačno zumiranje (%1 %) se može spremiti u %2, bilo za trenutačnu domenu "
+"ili kao zadano zumiranje."
 
 #: src/app/ZoomControls.qml:197
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr ""
+msgstr "Trenutačno zumiranje (%1 %) se može spremiti u %2 za trenutačnu domenu."
 
 #: src/app/ZoomControls.qml:199
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr ""
+msgstr "Trenutačno zumiranje (%1 %) se može spremiti u %2 kao zadano zumiranje."
 
 #: src/app/ZoomControls.qml:206
 #, fuzzy

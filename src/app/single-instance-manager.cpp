@@ -55,7 +55,12 @@ ProfilePathParts getProfilePathPartsFromAppId(const QString& appId)
     QString profilePath =
             QStandardPaths::writableLocation(QStandardPaths::DataLocation);
 
+// QString::Splitbehavior is deprecated in Qt 5.15
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
+    QStringList appIdParts = appId.split('_', Qt::SkipEmptyParts);
+#else
     QStringList appIdParts = appId.split('_', QString::SkipEmptyParts);
+#endif
 
     QString appDesktopName;
 
@@ -163,7 +168,7 @@ bool SingleInstanceManager::run(const QStringList& arguments, const QString& app
                    << "behaviors in the application's cache management. To avoid that"
                    << "you could use a shorter application name.";
     }
-    
+
     if (!ensureNameProfilePathExists(profilePath)) {
         return false;
     }

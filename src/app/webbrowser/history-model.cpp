@@ -405,7 +405,11 @@ void HistoryModel::removeEntryFromHiddenDatabaseByUrl(const QUrl& url)
 void HistoryModel::removeEntriesFromDatabaseByDate(const QDate& date)
 {
     QVariantList values;
+#if QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
+    QDateTime dateTime = QDateTime(date.startOfDay());
+#else
     QDateTime dateTime = QDateTime(date);
+#endif
     values << dateTime.toTime_t();
     dateTime.setTime(QTime(23, 59, 59, 999));
     values << dateTime.toTime_t();
@@ -458,7 +462,7 @@ void HistoryModel::hide(const QUrl& url)
             entry.hidden = true;
             Q_EMIT dataChanged(this->index(i, 0), this->index(i, 0), roles);
         }
-    }                                                                   
+    }
 
     insertNewEntryInHiddenDatabase(url);
 }
@@ -486,7 +490,7 @@ void HistoryModel::unHide(const QUrl& url)
             entry.hidden = false;
             Q_EMIT dataChanged(this->index(i, 0), this->index(i, 0), roles);
         }
-    }                                                                   
+    }
 
     removeEntryFromHiddenDatabaseByUrl(url);
 }

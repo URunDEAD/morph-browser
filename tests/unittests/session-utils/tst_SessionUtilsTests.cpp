@@ -71,7 +71,7 @@ void SessionUtilsTests::startNewSession()
     QDir upstartSessionDir(QString(m_xdgRuntimeDir + "/upstart/sessions"));
     upstartSessionDir.mkpath(".");
 
-    QString sessionFile = QString("%1.session").arg(qrand());
+    QString sessionFile = QString("%1.session").arg(QRandomGenerator::global()->generate());
     QFile file(upstartSessionDir.filePath(sessionFile));
     file.open(QIODevice::WriteOnly);
     file.close();

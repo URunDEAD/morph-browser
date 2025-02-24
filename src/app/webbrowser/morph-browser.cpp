@@ -122,19 +122,25 @@ bool WebbrowserApp::initialize()
     }
 }
 
+#if QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
+  #define ENDL Qt::endl
+#else
+  #define ENDL endl
+#endif
+
 void WebbrowserApp::printUsage() const
 {
     QTextStream out(stdout);
     QString command = QFileInfo(QCoreApplication::applicationFilePath()).fileName();
     out << "Usage: " << command << " [-h|--help] [--inspector]"
-                                << " [--app-id=APP_ID] [--new-session] [URL]" << endl;
-    out << "Options:" << endl;
-    out << "  -h, --help         display this help message and exit" << endl;
-    out << "  --inspector[=PORT] run a remote inspector on a specified port or " << REMOTE_INSPECTOR_PORT << " as the default port" << endl;
-    out << "  --app-id=APP_ID    run the application with a specific APP_ID" << endl;
-    out << "  --new-session      do not restore open tabs from the last session" << endl;
-    out << "  --new-window       open (the passed URLs in) a new browser window" << endl;
-    out << "  --incognito        open (the passed URLs in) an incognito window" << endl;
+                                << " [--app-id=APP_ID] [--new-session] [URL]" << ENDL;
+    out << "Options:" << ENDL;
+    out << "  -h, --help         display this help message and exit" << ENDL;
+    out << "  --inspector[=PORT] run a remote inspector on a specified port or " << REMOTE_INSPECTOR_PORT << " as the default port" << ENDL;
+    out << "  --app-id=APP_ID    run the application with a specific APP_ID" << ENDL;
+    out << "  --new-session      do not restore open tabs from the last session" << ENDL;
+    out << "  --new-window       open (the passed URLs in) a new browser window" << ENDL;
+    out << "  --incognito        open (the passed URLs in) an incognito window" << ENDL;
 }
 
 void WebbrowserApp::onNewInstanceLaunched(const QStringList& arguments) const

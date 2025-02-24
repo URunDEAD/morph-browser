@@ -6,6 +6,7 @@ set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 find_package(Gettext REQUIRED)
 
 option(CLICK_MODE "Build as a click package" off)
+option(WERROR "Enable -Werror" off)
 
 # Standard install paths
 include(GNUInstallDirs)
@@ -38,6 +39,9 @@ if(cmake_build_type_lower MATCHES coverage)
 endif()
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+if(WERROR)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror")
+endif()
 
 # enable QML debugging
 if(CMAKE_BUILD_TYPE MATCHES DEBUG OR CMAKE_BUILD_TYPE MATCHES "Debug")

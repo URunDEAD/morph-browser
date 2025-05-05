@@ -8,215 +8,216 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2023-01-04 19:47+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/morph-"
-"browser/et/>\n"
+"PO-Revision-Date: 2025-05-10 18:00+0000\n"
+"Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/et/>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
 msgid "Morph Browser"
-msgstr ""
+msgstr "Veebibrauser Morph"
 
 #: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:110
 #: src/app/webcontainer/webapp-container.qml:78
 msgid "Morph Web Browser"
-msgstr ""
+msgstr "Veebibrauser Morph"
 
 #: morph-browser.desktop.in:6
 msgid "Browse the World Wide Web using QtWebEngine"
-msgstr ""
+msgstr "Sirvi veebisaite kasutades QtWebEngine'i renderdusmootorit"
 
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr ""
+"Internet;WWW;Browser;Web;Explorer;brauser;veebibrauser;veebisirvija;veeb;sait;saidid"
+""
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
-msgstr ""
+msgstr "Uus aken"
 
 #: morph-browser.desktop.in:27
 msgid "New Private Window"
-msgstr ""
+msgstr "Uus privaatne aken"
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
-msgstr ""
+msgstr "Tagasi"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Back.qml:26
 msgid "Older Page"
-msgstr ""
+msgstr "Eelmine leht;Eelmine vaade;Mine tagasi;Eelmisele lehele"
 
 #: src/app/actions/BookmarkLink.qml:22
 msgid "Bookmark link"
-msgstr ""
+msgstr "Lisa lingile järjehoidja"
 
 #: src/app/actions/Bookmark.qml:23
 msgid "Bookmark"
-msgstr ""
+msgstr "Järjehoidja"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Bookmark' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Bookmark.qml:26
 msgid "Add This Page to Bookmarks"
-msgstr ""
+msgstr "Lisa see leht järjehoidjaks"
 
 #: src/app/actions/ClearHistory.qml:23
 msgid "Clear History"
-msgstr ""
+msgstr "Kustuta ajalugu"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/ClearHistory.qml:26
 msgid "Clear Navigation History"
-msgstr ""
+msgstr "Kustuta veebisirvimise ja edasi- ja tagasi nuppude vajutuste ajalugu"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
-msgstr ""
+msgstr "Kopeeri pilt"
 
 #: src/app/actions/CopyLink.qml:22
 msgid "Copy link"
-msgstr ""
+msgstr "Kopeeri link"
 
 #: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:418
-#, fuzzy
 msgid "Copy"
-msgstr "Copy"
+msgstr "Kopeeri"
 
 #: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:407
 msgid "Cut"
-msgstr ""
+msgstr "Lõika"
 
 #: src/app/actions/Erase.qml:22
 msgid "Erase"
-msgstr ""
+msgstr "Kustuta"
 
 #: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:831
 msgid "Find in page"
-msgstr ""
+msgstr "Otsi lehelt"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/FindInPage.qml:26
 msgid "Search in Page"
-msgstr ""
+msgstr "Otsi ja leia selle veebilehe piires"
 
 #: src/app/actions/Forward.qml:23
 msgid "Forward"
-msgstr ""
+msgstr "Edasi"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Forward' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Forward.qml:26
 msgid "Newer Page"
-msgstr ""
+msgstr "Mine uuemale või järgmisele lehele"
 
 #: src/app/actions/GoTo.qml:23
 msgid "Goto"
-msgstr ""
+msgstr "Mine"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/GoTo.qml:26
 msgid "Address;URL;www"
-msgstr ""
+msgstr "Address;URL;www;aadress;sait;veebisait;leht;veebileht;võrk;veeb"
 
 #: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:691
 #: src/app/webbrowser/TabsBar.qml:88
 msgid "New Tab"
-msgstr ""
+msgstr "Uus vahekaart"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'New Tab' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/NewTab.qml:26
 msgid "Open a New Tab"
-msgstr ""
+msgstr "Ava uuel vahekaardil"
 
 #: src/app/actions/OpenImageInNewTab.qml:22
 msgid "Open image in new tab"
-msgstr ""
+msgstr "Ava pilt uuel vahekaardil"
 
 #: src/app/actions/OpenLinkInBrowser.qml:22
 msgid "Open link in default browser"
-msgstr ""
+msgstr "Ava link vaikimisi veebibrauseris"
 
 #: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
 msgid "Open link in new background tab"
-msgstr ""
+msgstr "Ava link taustal uuel vahekaardil"
 
 #: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
 msgid "Open link in new private window"
-msgstr ""
+msgstr "Ava link uuel privaatsel vahekaardil"
 
 #: src/app/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
-msgstr ""
+msgstr "Ava link uuel vahekaardil"
 
 #: src/app/actions/OpenLinkInNewWindow.qml:22
 msgid "Open link in new window"
-msgstr ""
+msgstr "Ava link uues aknas"
 
 #: src/app/actions/OpenVideoInNewTab.qml:22
 msgid "Open video in new tab"
-msgstr ""
+msgstr "Ava video uuel vahekaardil"
 
 #: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:429
 msgid "Paste"
-msgstr ""
+msgstr "Aseta"
 
 #: src/app/actions/Redo.qml:22
 msgid "Redo"
-msgstr ""
+msgstr "Korda tegevust"
 
 #: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
 #: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
 msgid "Reload"
-msgstr ""
+msgstr "Laadi uuesti"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Reload' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Reload.qml:26
 msgid "Leave Page"
-msgstr ""
+msgstr "Lahku lehelt"
 
 #: src/app/actions/SaveImage.qml:22
 msgid "Save image"
-msgstr ""
+msgstr "Salvesta pilt"
 
 #: src/app/actions/SaveLink.qml:22
 msgid "Save link"
-msgstr ""
+msgstr "Salvesta link"
 
 #: src/app/actions/SaveVideo.qml:22
 msgid "Save video"
-msgstr ""
+msgstr "Salvesta video"
 
 #: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
 #: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
 #: src/app/DownloadsPage.qml:85
 msgid "Select all"
-msgstr ""
+msgstr "Vali kõik"
 
 #: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:811
 msgid "Share"
-msgstr ""
+msgstr "Jaga"
 
 #: src/app/actions/Undo.qml:22
 msgid "Undo"
-msgstr ""
+msgstr "Võta tegevus tagasi"
 
 #: src/app/AlertDialog.qml:24
 msgid "JavaScript Alert"
-msgstr ""
+msgstr "JavaScripti teade"
 
 #: src/app/AlertDialog.qml:31 src/app/AuthenticationDialog.qml:47
 #: src/app/ColorSelectDialog.qml:73 src/app/ConfirmDialog.qml:33
@@ -224,7 +225,7 @@ msgstr ""
 #: src/app/HttpAuthenticationDialog.qml:70 src/app/PromptDialog.qml:50
 #: src/app/webbrowser/BookmarkOptions.qml:122
 msgid "OK"
-msgstr "OK"
+msgstr "Sobib"
 
 #: src/app/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
@@ -247,7 +248,7 @@ msgstr ""
 #: src/app/AllowCustomSchemesDialog.qml:50
 #: src/app/GeolocationPermissionRequest.qml:51
 msgid "Allow"
-msgstr ""
+msgstr "Luba"
 
 #: src/app/AllowCustomSchemesDialog.qml:57
 #: src/app/AllowOrBlockDomainDialog.qml:53 src/app/AuthenticationDialog.qml:53
@@ -264,14 +265,13 @@ msgstr ""
 #: src/app/webcontainer/AccountChooserDialog.qml:96
 #: src/app/webcontainer/ContextMenuMobile.qml:143
 #: src/app/webcontainer/WebappSettingsPage.qml:286 src/app/ZoomControls.qml:237
-#, fuzzy
 msgid "Cancel"
-msgstr "Cancel"
+msgstr "Katkesta"
 
 #: src/app/AllowOrBlockDomainDialog.qml:25
 #: src/app/AllowOrBlockDomainDialog.qml:41
 msgid "Block domain"
-msgstr ""
+msgstr "Blokeeri domeen"
 
 #: src/app/AllowOrBlockDomainDialog.qml:30
 #, qt-format
@@ -309,7 +309,7 @@ msgstr "Kasutajanimi"
 
 #: src/app/AuthenticationDialog.qml:41 src/app/HttpAuthenticationDialog.qml:60
 msgid "Password"
-msgstr "Parool"
+msgstr "Salasõna"
 
 #: src/app/BeforeUnloadDialog.qml:24
 msgid "Confirm Navigation"
@@ -317,15 +317,15 @@ msgstr "Kinnita navigatsiooni"
 
 #: src/app/BeforeUnloadDialog.qml:33
 msgid "Leave"
-msgstr ""
+msgstr "Lahku"
 
 #: src/app/BeforeUnloadDialog.qml:41
 msgid "Stay"
-msgstr ""
+msgstr "Jää siia"
 
 #: src/app/CertificateVerificationDialog.qml:24
 msgid "This connection is untrusted"
-msgstr ""
+msgstr "See ühendus pole usaldusväärne"
 
 #. TRANSLATORS: %1 refers to the hostname
 #: src/app/CertificateVerificationDialog.qml:26
@@ -354,9 +354,8 @@ msgstr ""
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
 #: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
-#, fuzzy
 msgid "Delete"
-msgstr "Delete"
+msgstr "Kustuta"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
@@ -484,10 +483,8 @@ msgid "No Recent Downloads"
 msgstr ""
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Sulge"
+msgstr "Katkestatud"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
@@ -752,11 +749,11 @@ msgstr ""
 #: src/app/webbrowser/BookmarkOptions.qml:114
 #: src/app/webbrowser/BookmarkOptions.qml:154
 msgid "New Folder"
-msgstr ""
+msgstr "Uus kaust"
 
 #: src/app/webbrowser/BookmarkOptions.qml:136
 msgid "Create new folder"
-msgstr ""
+msgstr "Loo uus kaust"
 
 #: src/app/webbrowser/BookmarkOptions.qml:164
 #: src/app/webbrowser/SettingsPage.qml:550 src/app/ZoomControls.qml:82
@@ -822,7 +819,7 @@ msgstr ""
 
 #: src/app/webbrowser/Browser.qml:845 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
-msgstr ""
+msgstr "Seadistused"
 
 #: src/app/webbrowser/Browser.qml:851
 msgid "View source"
@@ -848,12 +845,12 @@ msgstr ""
 
 #: src/app/webbrowser/Browser.qml:1970
 msgid "the file is already in the downloads folder."
-msgstr ""
+msgstr "see fail juba asub allalaadimiste kaustas."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:83
 msgid ""
 "Choose an application to open this file or add it to the downloads folder."
-msgstr ""
+msgstr "Vali rakendus selle faili avamiseks või lisa ta allalaadimiste kausta."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:89
 msgid "Choose an application"
@@ -1008,7 +1005,7 @@ msgstr ""
 
 #: src/app/webbrowser/SettingsPage.qml:249
 msgid "Reset browser settings"
-msgstr ""
+msgstr "Lähtesta veebibrauseri seadistused"
 
 #: src/app/webbrowser/SettingsPage.qml:334
 msgid "Start in private mode"
@@ -1159,11 +1156,11 @@ msgstr ""
 
 #: src/app/webcontainer/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
-msgstr ""
+msgstr "Veebirakenduste konteineri seadistused"
 
 #: src/app/webcontainer/WebappSettingsPage.qml:163
 msgid "Reset webapp settings"
-msgstr ""
+msgstr "Lähtesta veebirakenduste konteineri seadistused"
 
 #: src/app/webcontainer/WebViewImplOxide.qml:330
 #, qt-format

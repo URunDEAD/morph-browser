@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2024-01-04 16:35+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2025-05-18 18:23+0000\n"
+"Last-Translator: Ida Brenna <ida@larald.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/nb_NO/>\n"
 "Language: nb\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -230,9 +230,9 @@ msgid "Custom URL schemes"
 msgstr "Tilpassede nettadresseavarter"
 
 #: src/app/AllowCustomSchemesDialog.qml:30
-#, fuzzy, qt-format
+#, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr "«%1»-nettsiden ønsker å åpne denne nettsiden i systemets nettleser."
+msgstr "«%1»-nettsiden ønsker å åpne denne lenken utenfor nettleseren:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
@@ -1022,7 +1022,6 @@ msgstr "Last inn bilder"
 
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
-#, fuzzy
 msgid "Automatically load images on web pages"
 msgstr "Last inn bilder på nettsider automatisk"
 
@@ -1080,10 +1079,8 @@ msgid "Clear all Cookies?"
 msgstr "Fjern alle kaker?"
 
 #: src/app/webbrowser/SettingsPage.qml:516
-#, fuzzy
-#| msgid "Custom hompage"
 msgid "Custom homepage"
-msgstr "Tilpasset hjemmeside"
+msgstr "Skreddersydd hjemmeside"
 
 #: src/app/webbrowser/SettingsPage.qml:601
 msgid "Microphone"

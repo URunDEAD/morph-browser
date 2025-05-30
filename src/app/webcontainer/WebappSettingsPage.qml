@@ -222,7 +222,7 @@ FocusScope {
                             objectName: "DomainPermissions"
 
                             ListItemLayout {
-                                title.text: "Domain blacklist/whitelist"
+                                title.text: i18n.tr("Domain blacklist/whitelist")
                                 ProgressionSlot {}
                             }
 
@@ -233,7 +233,7 @@ FocusScope {
                             objectName: "DomainSettings"
 
                             ListItemLayout {
-                                title.text: "Domain specific settings"
+                                title.text: i18n.tr("Domain specific settings")
                                 ProgressionSlot {}
                             }
 

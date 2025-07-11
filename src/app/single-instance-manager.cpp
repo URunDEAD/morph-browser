@@ -53,7 +53,7 @@ typedef QPair<QString, QString> ProfilePathParts;
 ProfilePathParts getProfilePathPartsFromAppId(const QString& appId)
 {
     QString profilePath =
-            QStandardPaths::writableLocation(QStandardPaths::DataLocation);
+            QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
 
 // QString::Splitbehavior is deprecated in Qt 5.15
 #if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)

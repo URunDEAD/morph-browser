@@ -117,7 +117,7 @@ QString MorphWebPluginContext::cacheLocation() const
 
 QString MorphWebPluginContext::dataLocation() const
 {
-    QDir location(QStandardPaths::writableLocation(QStandardPaths::DataLocation));
+    QDir location(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation));
     if (!location.exists()) {
         QDir::root().mkpath(location.absolutePath());
     } else {

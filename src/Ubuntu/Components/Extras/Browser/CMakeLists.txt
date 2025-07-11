@@ -1,9 +1,5 @@
 project(webbrowser-plugin)
 
-find_package(Qt5Core REQUIRED)
-find_package(Qt5Gui REQUIRED)
-find_package(Qt5Qml REQUIRED)
-
 set(WEBBROWSER_IMPORTS_DIR "${QT_INSTALL_QML}/Ubuntu/Components/Extras/Browser")
 
 set(PLUGIN ubuntu-ui-extras-browser-plugin)
@@ -12,9 +8,9 @@ set(PLUGIN_SRC plugin.cpp)
 
 add_library(${PLUGIN} MODULE ${PLUGIN_SRC})
 target_link_libraries(${PLUGIN}
-    Qt5::Core
-    Qt5::Gui
-    Qt5::Qml
+    Qt::Core
+    Qt::Gui
+    Qt::Qml
 )
 
 file(GLOB UA_OVERRIDES_IN RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ua-overrides-*.js.in)

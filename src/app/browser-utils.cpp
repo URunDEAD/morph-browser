@@ -19,7 +19,11 @@
 #include "browser-utils.h"
 
 #include <QtWebEngineCore/QWebEngineCookieStore>
-#include <QtWebEngine/QQuickWebEngineProfile>
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    #include <QQuickWebEngineProfile>
+#else
+    #include <QtWebEngine/QQuickWebEngineProfile>
+#endif
 
 BrowserUtils::BrowserUtils(QObject* parent) : QObject(parent)
 {

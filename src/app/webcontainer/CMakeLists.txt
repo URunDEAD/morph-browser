@@ -1,8 +1,5 @@
 project(webapp-container)
 
-find_package(Qt5DBus REQUIRED)
-find_package(Qt5Sql REQUIRED)
-
 include_directories(
     ${CMAKE_BINARY_DIR}
     ${webbrowser-common_SOURCE_DIR}
@@ -28,12 +25,12 @@ set(WEBAPP_CONTAINER_SRC
 add_executable(${WEBAPP_CONTAINER} ${WEBAPP_CONTAINER_SRC})
 
 target_link_libraries(${WEBAPP_CONTAINER}
-    Qt5::Core
-    Qt5::DBus
-    Qt5::Gui
-    Qt5::Qml
-    Qt5::Quick
-    Qt5::Sql
+    Qt::Core
+    Qt::DBus
+    Qt::Gui
+    Qt::Qml
+    Qt::Quick
+    Qt::Sql
     ${COMMONLIB}
 )
 

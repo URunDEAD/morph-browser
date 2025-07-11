@@ -73,7 +73,7 @@ static void clearCookiesHack(const QString &provider)
      * moving from the first to the latter.
      */
     QStringList baseDirs;
-    baseDirs << QStandardPaths::writableLocation(QStandardPaths::DataLocation);
+    baseDirs << QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
     baseDirs << QStandardPaths::writableLocation(QStandardPaths::CacheLocation);
 
     Q_FOREACH(const QString &baseDir, baseDirs) {
@@ -453,7 +453,7 @@ QString WebappContainer::getExtraWebappUrlPatterns() const
 
     QString extraUrlPatternsFilename =
             QString("%1/%2")
-                .arg(QStandardPaths::writableLocation(QStandardPaths::DataLocation))
+                .arg(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation))
                 .arg(EXTRA_APP_URL_PATTERNS_CONF_FILENAME);
 
     QString extraPatterns;

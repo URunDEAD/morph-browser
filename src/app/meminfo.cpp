@@ -21,7 +21,7 @@
 // Qt
 #include <QtCore/QByteArray>
 #include <QtCore/QFile>
-#include <QtCore/QRegExp>
+#include <QRegularExpression>
 #include <QtCore/QString>
 #include <QtCore/QtGlobal>
 
@@ -88,10 +88,10 @@ void MemInfo::update()
     if (!meminfo.open(QIODevice::ReadOnly)) {
         return;
     }
-    static QRegExp memTotalRegexp(QStringLiteral("MemTotal:\\s*(\\d+) kB\\n"));
-    static QRegExp memFreeRegexp(QStringLiteral("MemFree:\\s*(\\d+) kB\\n"));
-    static QRegExp buffersRegexp(QStringLiteral("Buffers:\\s*(\\d+) kB\\n"));
-    static QRegExp cachedRegexp(QStringLiteral("Cached:\\s*(\\d+) kB\\n"));
+    static QRegularExpression memTotalRegexp(QStringLiteral("^MemTotal:\\s*(\\d+) kB\\n$"));
+    static QRegularExpression memFreeRegexp(QStringLiteral("^MemFree:\\s*(\\d+) kB\\n$"));
+    static QRegularExpression buffersRegexp(QStringLiteral("^Buffers:\\s*(\\d+) kB\\n$"));
+    static QRegularExpression cachedRegexp(QStringLiteral("^Cached:\\s*(\\d+) kB\\n$"));
     int parsedTotal = -1;
     int parsedFree = -1;
     int parsedBuffers = -1;
@@ -102,14 +102,16 @@ void MemInfo::update()
         if (line.isEmpty()) {
             break;
         }
-        if (memTotalRegexp.exactMatch(line)) {
-            parsedTotal = memTotalRegexp.cap(1).toInt();
-        } else if (memFreeRegexp.exactMatch(line)) {
-            parsedFree = memFreeRegexp.cap(1).toInt();
-        } else if (buffersRegexp.exactMatch(line)) {
-            parsedBuffers = buffersRegexp.cap(1).toInt();
-        } else if (cachedRegexp.exactMatch(line)) {
-            parsedCached = cachedRegexp.cap(1).toInt();
+
+        QRegularExpressionMatch match;
+        if ((match = memTotalRegexp.match(line)).hasMatch()) {
+            parsedTotal = match.captured(1).toInt();
+        } else if ((match = memFreeRegexp.match(line)).hasMatch()) {
+            parsedFree = match.captured(1).toInt();
+        } else if ((match = buffersRegexp.match(line)).hasMatch()) {
+            parsedBuffers = match.captured(1).toInt();
+        } else if ((match = cachedRegexp.match(line)).hasMatch()) {
+            parsedCached = match.captured(1).toInt();
         }
     }
     meminfo.close();

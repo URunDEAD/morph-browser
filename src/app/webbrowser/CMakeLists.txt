@@ -1,8 +1,5 @@
 project(webbrowser-app)
 
-find_package(Qt5Concurrent REQUIRED)
-find_package(Qt5Sql REQUIRED)
-
 include_directories(
     ${CMAKE_BINARY_DIR}
     ${webbrowser-common_SOURCE_DIR}
@@ -26,9 +23,10 @@ set(WEBBROWSER_APP_MODELS morph-browser-models)
 
 add_library(${WEBBROWSER_APP_MODELS} STATIC ${WEBBROWSER_APP_MODELS_SRC})
 target_link_libraries(${WEBBROWSER_APP_MODELS}
-    Qt5::Core
-    Qt5::Sql
-#    Qt5::WebEngine
+    Qt::Core
+    Qt::Sql
+    Qt::CorePrivate
+    Qt::NetworkPrivate
 )
 
 set(WEBBROWSER_APP_SRC
@@ -41,10 +39,10 @@ set(WEBBROWSER_APP morph-browser)
 
 add_executable(${WEBBROWSER_APP} ${WEBBROWSER_APP_SRC})
 target_link_libraries(${WEBBROWSER_APP}
-    Qt5::Concurrent
-    Qt5::Core
-    Qt5::Qml
-    Qt5::Quick
+    Qt::Concurrent
+    Qt::Core
+    Qt::Qml
+    Qt::Quick
     ${COMMONLIB}
     ${WEBBROWSER_APP_MODELS}
 )

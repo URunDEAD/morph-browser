@@ -22,6 +22,7 @@
 // Qt
 #include <QtCore/QSortFilterProxyModel>
 #include <QtCore/QString>
+#include "bookmarks-model.h"
 
 class BookmarksModel;
 

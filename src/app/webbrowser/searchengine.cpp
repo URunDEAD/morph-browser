@@ -117,16 +117,16 @@ void SearchEngine::locateAndParseDescription()
             while (!parser.atEnd()) {
                 parser.readNext();
                 if (parser.isStartElement()) {
-                    QStringRef name = parser.name();
-                    if (name == "ShortName") {
+                    QStringView name = parser.name();
+                    if (name == QStringLiteral("ShortName")) {
                         m_name = parser.readElementText();
-                    } else if (name == "Description") {
+                    } else if (name == QStringLiteral("Description")) {
                         m_description = parser.readElementText();
-                    } else if (name == "Url") {
-                        QStringRef type = parser.attributes().value("type");
-                        if (type == "text/html") {
+                    } else if (name == QStringLiteral("Url")) {
+                        QStringView type = parser.attributes().value("type");
+                        if (type == QStringLiteral("text/html")) {
                             m_template = parser.attributes().value("template").toString();
-                        } else if (type == "application/x-suggestions+json") {
+                        } else if (type == QStringLiteral("application/x-suggestions+json")) {
                             m_suggestionsTemplate = parser.attributes().value("template").toString();
                         }
                     }

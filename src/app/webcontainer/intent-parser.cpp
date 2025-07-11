@@ -21,7 +21,6 @@
 #include <QtCore/QRegularExpression>
 #include <QUrl>
 
-
 namespace {
 
 const char INTENT_SCHEME_STRING[] = "intent";
@@ -35,7 +34,7 @@ const char INTENT_END_FRAGMENT_TAG[] = ";end";
 
 void trimUriSeparator(QString& uriComponent)
 {
-    uriComponent.remove(QRegExp("^/*")).remove(QRegExp("/*$"));
+    uriComponent.remove(QRegularExpression("^/*")).remove(QRegularExpression("/*$"));
 }
 
 }

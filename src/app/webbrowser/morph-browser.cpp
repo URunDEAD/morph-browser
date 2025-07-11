@@ -41,7 +41,6 @@
 #include <QtQml/QtQml>
 #include <QtQuick/QQuickWindow>
 #include <QtCore/QLoggingCategory>
-//#include <QtWebEngine/qtwebengineglobal.h>
 
 #include <stdlib.h>
 
@@ -78,7 +77,7 @@ bool WebbrowserApp::initialize()
     QString qmlfile;
     const QString filePath = UbuntuBrowserDirectory() + "/webbrowser/morph-browser.qml";
     // QLatin1String("share/morph-browser/webbrowser/morph-browser.qml");
-    QStringList paths = QStandardPaths::standardLocations(QStandardPaths::DataLocation);
+    QStringList paths = QStandardPaths::standardLocations(QStandardPaths::AppDataLocation);
     paths.prepend(QDir::currentPath());
     paths.prepend(QCoreApplication::applicationDirPath());
     Q_FOREACH (const QString &path, paths) {
@@ -97,7 +96,7 @@ bool WebbrowserApp::initialize()
         //QtWebEngine::initialize();
 
         QStringList searchEnginesSearchPaths;
-        searchEnginesSearchPaths << QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/searchengines";
+        searchEnginesSearchPaths << QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/searchengines";
         searchEnginesSearchPaths << UbuntuBrowserDirectory() + "/webbrowser/searchengines";
         m_engine->rootContext()->setContextProperty("searchEnginesSearchPaths", searchEnginesSearchPaths);
 

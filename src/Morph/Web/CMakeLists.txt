@@ -21,9 +21,8 @@ foreach(_file ${UA_OVERRIDES_IN})
           DESTINATION ${MORPH_WEB_IMPORTS_DIR})
 endforeach(_file)
 
-file(GLOB PLUGIN_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.qml qmldir *.js *.png)
 install(TARGETS ${PLUGIN} DESTINATION ${MORPH_WEB_IMPORTS_DIR})
-install(FILES ${PLUGIN_FILES} DESTINATION ${MORPH_WEB_IMPORTS_DIR})
+install(DIRECTORY qml-qt${QT_VERSION_MAJOR}/ DESTINATION ${MORPH_WEB_IMPORTS_DIR})
 
 if(NOT ${CMAKE_CURRENT_BINARY_DIR} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR})
   # copy qml files over to build dir to be able to import them uninstalled

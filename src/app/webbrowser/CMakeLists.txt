@@ -50,8 +50,7 @@ target_link_libraries(${WEBBROWSER_APP}
 install(TARGETS ${WEBBROWSER_APP}
         RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
-file(GLOB QML_FILES *.qml qmldir *.js)
-install(FILES ${QML_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser)
+install(DIRECTORY qml-qt${QT_VERSION_MAJOR}/ DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser)
 
 install(DIRECTORY assets
         DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser

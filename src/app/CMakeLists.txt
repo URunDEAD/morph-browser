@@ -48,12 +48,7 @@ else()
     target_link_libraries(${COMMONLIB} Qt::WebEngine Qt::WebEngineCore)
 endif()
 
-file(GLOB QML_FILES *.qml qmldir)
-install(FILES ${QML_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser)
-file(GLOB JS_FILES *.js)
-install(FILES ${JS_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser)
-install(DIRECTORY actions DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser
-        FILES_MATCHING PATTERN *.qml)
+install(DIRECTORY qml-qt${QT_VERSION_MAJOR}/ DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser)
 
 add_subdirectory(webbrowser)
 add_subdirectory(webcontainer)

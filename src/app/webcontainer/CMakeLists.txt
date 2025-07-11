@@ -37,11 +37,7 @@ target_link_libraries(${WEBAPP_CONTAINER}
 install(TARGETS ${WEBAPP_CONTAINER}
         RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
-file(GLOB QML_FILES *.qml *.js)
-install(FILES ${QML_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webcontainer)
-install(DIRECTORY actions DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webcontainer
-        FILES_MATCHING PATTERN *.qml)
-
+install(DIRECTORY qml-qt${QT_VERSION_MAJOR}/ DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webcontainer)
 install(DIRECTORY assets
         DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webcontainer
         FILES_MATCHING PATTERN *.png)

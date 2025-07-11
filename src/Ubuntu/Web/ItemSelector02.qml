@@ -1,1 +1,1 @@
-../../Morph/Web/ItemSelector02.qml
+../../Morph/Web/qml-qt5/ItemSelector02.qml

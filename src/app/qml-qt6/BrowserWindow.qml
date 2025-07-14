@@ -18,8 +18,8 @@
 
 import QtQuick 2.4
 import QtQuick.Window 2.2
-import QtSystemInfo 5.0
-import Lomiri.Components 1.3
+import Lomiri.SystemInfo
+import Lomiri.Components
 
 Window {
     id: window

@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.7
-import Lomiri.Components 1.3
+import Lomiri.Components
 import QtWebEngine 1.10
 import ".."
 

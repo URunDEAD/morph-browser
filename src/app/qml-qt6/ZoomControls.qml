@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Lomiri.Components 1.3                  // For LomiriShape.
-import Lomiri.Components.Popups 1.3 as Popups // For saveDialog.
+import Lomiri.Components                  // For LomiriShape.
+import Lomiri.Components.Popups as Popups // For saveDialog.
 import QtWebEngine 1.7
 import webbrowsercommon.private 0.1           // For DomainSettingsModel singleton.
 

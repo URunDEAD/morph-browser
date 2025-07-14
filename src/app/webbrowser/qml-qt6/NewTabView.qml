@@ -18,8 +18,8 @@
 
 import QtQuick 2.4
 import Qt.labs.settings 1.0
-import Lomiri.Components 1.3
-import Lomiri.Components.ListItems 1.3 as ListItems
+import Lomiri.Components
+import Lomiri.Components.ListItems as ListItems
 import webbrowserapp.private 0.1
 import "."
 

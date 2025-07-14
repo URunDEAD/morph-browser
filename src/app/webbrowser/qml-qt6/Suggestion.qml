@@ -17,8 +17,8 @@
  */
 
 import QtQuick 2.4
-import Lomiri.Components 1.3
-import Lomiri.Components.ListItems 1.3 as ListItem
+import Lomiri.Components
+import Lomiri.Components.ListItems as ListItem
 
 // Not using ListItem.Subtitled because it’s not themable,
 // and we want the subText to be on one line only.

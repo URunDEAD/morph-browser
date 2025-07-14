@@ -17,8 +17,8 @@
  */
 
 import QtQuick 2.4
-import Lomiri.Components 1.3
-import Lomiri.Components.Popups 1.3
+import Lomiri.Components
+import Lomiri.Components.Popups
 import Lomiri.Content 1.3
 
 PopupBase {

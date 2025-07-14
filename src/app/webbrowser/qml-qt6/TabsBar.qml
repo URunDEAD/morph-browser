@@ -17,9 +17,9 @@
  */
 
 import QtQuick 2.4
-import Lomiri.Components 1.3
-import Lomiri.Components.Extras 0.3 as Extras
-import Lomiri.Components.Popups 1.3
+import Lomiri.Components
+import Lomiri.Components.Extras as Extras
+import Lomiri.Components.Popups
 import "."
 import ".."
 

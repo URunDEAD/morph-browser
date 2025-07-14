@@ -18,13 +18,13 @@
 
 import QtQuick 2.5
 import QtQuick.Window 2.2
-import QtGraphicalEffects 1.0
-import QtSystemInfo 5.5
+import Qt5Compat.GraphicalEffects 1.0
+import Lomiri.SystemInfo
 import QtWebEngine 1.10
 import Qt.labs.settings 1.0
 import Morph.Web 0.1
-import Lomiri.Components 1.3
-import Lomiri.Components.Popups 1.3
+import Lomiri.Components
+import Lomiri.Components.Popups
 import Lomiri.Content 1.3
 import QtQuick.Controls 2.2 as QQC2
 import webbrowserapp.private 0.1
@@ -133,8 +133,8 @@ Common.BrowserView {
     signal newWindowFromTab(var tab, var callback)
     signal openLinkInNewWindowRequested(url url, bool incognito)
     signal openLinkInNewTabRequested(url url, bool background)
-    signal newViewInNewWindowRequested(WebEngineNewViewRequest request, bool incognito)
-    signal newViewInNewTabRequested(WebEngineNewViewRequest request, bool background)
+    signal newViewInNewWindowRequested(WebEngineNewWindowRequest request, bool incognito)
+    signal newViewInNewTabRequested(WebEngineNewWindowRequest request, bool background)
     signal shareLinkRequested(url linkUrl, string title)
     signal shareTextRequested(string text)
 

@@ -18,9 +18,9 @@
 
 import QtQuick 2.4
 import QtQuick.Window 2.2
-import QtWebEngine 1.10
-import Lomiri.Components 1.3
-import Lomiri.Components.Popups 1.3
+import QtWebEngine
+import Lomiri.Components
+import Lomiri.Components.Popups
 import "." // QTBUG-34418
 
 WebEngineView {
@@ -75,11 +75,13 @@ WebEngineView {
         return (request.type === JavaScriptDialogRequest.DialogTypePrompt && request.message==='XX-MORPH-SELECT-OVERRIDE-XX')
     }
 
-    userScripts: WebEngineScript {
-        runOnSubframes: true
-        sourceUrl: enableSelectOverride && (screenDiagonal > 0 && screenDiagonal < 190)  ? Qt.resolvedUrl("select_overrides.js") : ""
-        injectionPoint: WebEngineScript.DocumentCreation
-        worldId: WebEngineScript.MainWorld
+    Component.onCompleted: {
+        var selectOverrideScript = WebEngine.script();
+        selectOverrideScript.sourceUrl = enableSelectOverride && (screenDiagonal > 0 && screenDiagonal < 190)  ? Qt.resolvedUrl("select_overrides.js") : "";
+        selectOverrideScript.runsOnSubframes = true;
+        selectOverrideScript.injectionPoint = WebEngineScript.DocumentCreation;
+        selectOverrideScript.worldId = WebEngineScript.MainWorld;
+        userScripts.insert(selectOverrideScript);
     }
 
     onJavaScriptDialogRequested: function(request) {

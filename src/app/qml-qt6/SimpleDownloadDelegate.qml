@@ -18,7 +18,7 @@
  
 import QtQuick 2.9
 import QtWebEngine 1.10
-import Lomiri.Components 1.3
+import Lomiri.Components
 
 ListItem {
     id: simpleDownloadDelegate

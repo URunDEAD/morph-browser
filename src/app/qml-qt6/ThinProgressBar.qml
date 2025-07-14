@@ -17,11 +17,10 @@
  */
 
 import QtQuick 2.4
-import Lomiri.Components 1.3
+import Lomiri.Components
 
 ProgressBar {
     height: units.dp(3)
-    showProgressPercentage: false
     minimumValue: 0
     maximumValue: 100
 }

@@ -18,7 +18,7 @@
 
 import QtQuick 2.6
 import QtQuick.Controls 2.2
-import Lomiri.Components 1.3
+import Lomiri.Components
 
 RadioButton {
     property string color

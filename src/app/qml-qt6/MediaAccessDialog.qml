@@ -18,8 +18,8 @@
 
 import QtQuick 2.4
 import QtWebEngine 1.5
-import Lomiri.Components 1.3
-import Lomiri.Components.Popups 1.3
+import Lomiri.Components
+import Lomiri.Components.Popups
 
 Dialog {
     property url origin

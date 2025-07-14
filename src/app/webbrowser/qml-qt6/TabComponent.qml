@@ -17,11 +17,11 @@
  */
 
 import QtQuick 2.4
-import Lomiri.Components 1.3
-import Lomiri.Components.Popups 1.3
+import Lomiri.Components
+import Lomiri.Components.Popups
 import webbrowserapp.private 0.1
 import webbrowsercommon.private 0.1
-import QtWebEngine 1.5
+import QtWebEngine
 import "../actions" as Actions
 import ".."
 
@@ -73,24 +73,25 @@ Component {
             focus: true
 
             enabled: current && !bottomEdgeHandle.dragging && !recentView.visible && parent.focus
-            userScripts: [
-                WebEngineScript {
-                    name: "readability"
-                    injectionPoint: WebEngineScript.DocumentReady
-                    sourceUrl: Qt.resolvedUrl("readability.js")
-                    runOnSubframes: true
-                    worldId: WebEngineScript.MainWorld
-                },
-                WebEngineScript {
-                    name: "readability-readerable"
-                    injectionPoint: WebEngineScript.DocumentReady
-                    sourceUrl: Qt.resolvedUrl("readability-readerable.js")
-                    runOnSubframes: true
-                    worldId: WebEngineScript.MainWorld
-                }
-            ]
 
-            onNewViewRequested: function(request) {
+            Component.onCompleted: {
+                var readabilityScript = WebEngine.script();
+                readabilityScript.name = "readability";
+                readabilityScript.injectionPoint = WebEngineScript.DocumentReady;
+                readabilityScript.sourceUrl = Qt.resolvedUrl("readability.js")
+                readabilityScript.runsOnSubframes = true;
+                readabilityScript.worldId = WebEngineScript.MainWorld;
+                userScripts.insert(readabilityScript);
+
+                var readabilityReaderableScript = WebEngine.script();
+                readabilityReaderableScript.injectionPoint = WebEngineScript.DocumentReady;
+                readabilityReaderableScript.sourceUrl = Qt.resolvedUrl("readability-readerable.js");
+                readabilityReaderableScript.runsOnSubframes = true;
+                readabilityReaderableScript.worldId = WebEngineScript.MainWorld;
+                userScripts.insert(readabilityReaderableScript);
+            }
+
+            onNewWindowRequested: function(request) {
 
                     switch (request.destination) {
 
@@ -128,7 +129,7 @@ Component {
 
             //contextMenu: browser && browser.wide ? contextMenuWideComponent : contextMenuNarrowComponent
             /*
-            onNewViewRequested: {
+            onNewWindowRequested: {
                 var newTab = browser.createTab({"request": request})
                 var setCurrent = true//(request.disposition == Oxide.NewViewRequest.DispositionNewForegroundTab)
                 internal.addTab(newTab, setCurrent, tabsModel.indexOf(browserTab) + 1)

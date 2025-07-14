@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import Lomiri.Components 1.3
+import Lomiri.Components
 import Lomiri.Action 1.1 as LomiriActions
 
 LomiriActions.Action {

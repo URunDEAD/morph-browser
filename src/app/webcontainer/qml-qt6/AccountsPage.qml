@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.4
-import Lomiri.Components 1.3
+import Lomiri.Components
 import SSO.OnlineAccounts 0.1
 import webcontainer.private 0.1
 

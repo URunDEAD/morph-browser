@@ -43,21 +43,6 @@ WebEngineProfile {
 
     persistentCookiesPolicy: WebEngineProfile.ForcePersistentCookies
 
-    userScripts: [
-        WebEngineScript {
-            name: "oxide://smartbanners/"
-            sourceUrl: Qt.resolvedUrl("smartbanners.js")
-            runOnSubframes: true
-        },
-        WebEngineScript {
-            name: "oxide://scrollbar-theme/"
-            injectionPoint: WebEngineScript.DocumentReady
-            worldId: WebEngineScript.MainWorld
-            sourceUrl: Qt.resolvedUrl("scrollbar-theme.js")
-            runOnSubframes: true
-        }
-    ]
-
     property QtObject __ua: UserAgent02 {
         onScreenSizeChanged: reloadOverrides()
         Component.onCompleted: reloadOverrides()
@@ -99,4 +84,19 @@ WebEngineProfile {
 
     hostMappingRules: webviewHostMappingRules
     */
+
+    Component.onCompleted: {
+        var smartbannersScript = WebEngine.script();
+        smartbannersScript.name = "oxide://smartbanners/";
+        smartbannersScript.sourceUrl = Qt.resolvedUrl("smartbanners.js");
+        smartbannersScript.runsOnSubframes = true;
+        userScripts.insert(smartbannersScript);
+
+        var scrollbarScript = WebEngine.script();
+        scrollbarScript.injectionPoint = WebEngineScript.DocumentReady;
+        scrollbarScript.worldId = WebEngineScript.MainWorld;
+        scrollbarScript.sourceUrl = Qt.resolvedUrl("scrollbar-theme.js");
+        scrollbarScript.runsOnSubframes = true;
+        userScripts.insert(scrollbarScript);
+    }
 }

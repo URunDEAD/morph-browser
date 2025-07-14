@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.4
-import Lomiri.Components 1.3
+import Lomiri.Components
 import webbrowserapp.private 0.1
 import "BookmarksModelUtils.js" as BookmarksModelUtils
 

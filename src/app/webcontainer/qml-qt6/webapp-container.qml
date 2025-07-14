@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.4
-import Lomiri.Components 1.3
+import Lomiri.Components
 import Qt.labs.settings 1.0
 import QtWebEngine 1.10
 import Morph.Web 0.1
@@ -209,7 +209,7 @@ BrowserWindow {
               script.sourceUrl = customScripts[i];
               script.injectionPoint = WebEngineScript.DocumentCreation;
               script.worldId = WebEngineScript.MainWorld;
-              script.runOnSubframes = true;
+              script.runsOnSubframes = true;
               scripts.push(script);
             }
 

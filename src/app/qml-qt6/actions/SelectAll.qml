@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import Lomiri.Components 1.3
+import Lomiri.Components
 
 Action {
     text: i18n.tr("Select all")

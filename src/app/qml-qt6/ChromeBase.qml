@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.4
-import Lomiri.Components 1.3
+import Lomiri.Components
 
 // use styled item otherwise Drawer button will steal focus from the AddressBar
 StyledItem {

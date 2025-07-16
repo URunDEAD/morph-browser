@@ -142,20 +142,20 @@ WebEngineView {
 //        source: "handle.png"
 //        Component.onCompleted: horizontalPaddingRatio = 0.5
 //    }
-
-    Connections {
-        target: _webview.touchSelectionController
-        onStatusChanged: {
-            var status = _webview.touchSelectionController.status
-            if (status == Oxide.TouchSelectionController.StatusInactive) {
-                quickMenu.visible = false
-            } else if (status == Oxide.TouchSelectionController.StatusSelectionActive) {
-                quickMenu.visible = true
-            }
-        }
-        onInsertionHandleTapped: quickMenu.visible = !quickMenu.visible
-        onContextMenuIntercepted: quickMenu.visible = true
-    }
+//
+//    Connections {
+//        target: _webview.touchSelectionController
+//        onStatusChanged: {
+//            var status = _webview.touchSelectionController.status
+//            if (status == Oxide.TouchSelectionController.StatusInactive) {
+//                quickMenu.visible = false
+//            } else if (status == Oxide.TouchSelectionController.StatusSelectionActive) {
+//                quickMenu.visible = true
+//            }
+//        }
+//        onInsertionHandleTapped: quickMenu.visible = !quickMenu.visible
+//        onContextMenuIntercepted: quickMenu.visible = true
+//    }
 
     /* TODO check how copy&paste works in QtWebEngine
     LomiriShape {

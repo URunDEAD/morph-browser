@@ -268,8 +268,6 @@ WebEngineView {
                 model.close()
             }
         }
-
-        onContextModelChanged: if (!contextModel) _webview.contextualData.clear()
     }
 
     readonly property bool lastLoadSucceeded: internal.lastLoadRequestStatus === WebEngineLoadRequest.LoadSucceededStatus

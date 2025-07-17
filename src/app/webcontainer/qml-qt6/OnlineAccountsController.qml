@@ -59,8 +59,8 @@ Loader {
 
     Connections {
         target: item
-        onAccountSelected: root.accountSelected(accountDataLocation, willMoveCookies)
-        onContextReady: root.contextReady()
-        onQuitRequested: root.quitRequested()
+        function onAccountSelected(accountDataLocation, willMoveCookies) { root.accountSelected(accountDataLocation, willMoveCookies) }
+        function onContextReady() { root.contextReady() }
+        function onQuitRequested() { root.quitRequested() }
     }
 }

@@ -50,7 +50,7 @@ Window {
 
     Connections {
         target: window.currentWebview
-        onIsFullScreenChanged: window.setFullscreen(window.currentWebview.isFullScreen)
+        function onIsFullScreenChanged() { window.setFullscreen(window.currentWebview.isFullScreen) }
     }
 
     function setFullscreen(fullscreen) {

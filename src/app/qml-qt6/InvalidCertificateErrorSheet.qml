@@ -27,7 +27,7 @@ Rectangle {
 
     Connections {
         target: certificateError ? certificateError : null
-        onCancelled: denied()
+        function onCancelled() { denied() }
     }
 
     Flickable {

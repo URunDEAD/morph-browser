@@ -86,15 +86,15 @@ FocusScope {
 
     Connections {
         target: webappContainerWebViewLoader.item
-        onSamlRequestUrlPatternReceived: {
+        function onSamlRequestUrlPatternReceived(urlPattern) {
             samlRequestUrlPatternReceived(urlPattern)
         }
 
-        onThemeColorMetaInformationDetected: {
+        function onThemeColorMetaInformationDetected(theme_color) {
             themeColorMetaInformationDetected(theme_color)
         }
 
-        onLastLoadSucceededChanged: {
+        function onLastLoadSucceededChanged() {
           if (! initialUrlLoaded && webappContainerWebViewLoader.item.lastLoadSucceeded) {
              if (UrlUtils.extractScheme(containerWebView.url) !== 'file') {
                webappContainerWebViewLoader.item.runJavaScript("window.location.replace('%1')".arg(containerWebView.url))

@@ -195,7 +195,7 @@ FocusScope {
 
     Connections {
         target: recentView
-        onVisibleChanged: {
+        function onVisibleChanged() {
             if(visible && current && !empty && !webview.incognito) {
                 preview = ""
                 loadingPreview = true

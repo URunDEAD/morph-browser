@@ -42,8 +42,8 @@ Item {
     // is not updated, it would result in incorrect positioning.
     Connections {
         target: webview
-        onWidthChanged: selectorModel.cancel()
-        onHeightChanged: selectorModel.cancel()
+        function onWidthChanged() { selectorModel.cancel() }
+        function onHeightChanged() { selectorModel.cancel() }
     }
     onListContentHeightChanged: updatePosition()
     onAddressBarHeightChanged: updatePosition()

@@ -71,7 +71,7 @@ Item {
 
     Connections {
         target: Qt.application
-        onAboutToQuit: {
+        function onAboutToQuit() {
             webviewOverlayUrlsSettings.overlayUrls = "[]"
         }
     }

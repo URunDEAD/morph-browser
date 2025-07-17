@@ -200,7 +200,7 @@ ChromeBase {
             Connections {
                 target: root
 
-                onDownloadNotifyChanged: {
+                function onDownloadNotifyChanged() {
                     if (downloadNotify) {
                         shakeAnimation.start()
                     }

@@ -45,7 +45,7 @@ Item {
 
     Connections {
         target: webview
-        onRenderProcessTerminated: {
+        function onRenderProcessTerminated(terminationStatus) {
              if (terminationStatus == WebEngineView.KilledTerminationStatus) {
                 internal.killed = true;
                 if (internal.killedRetries == 0) {
@@ -58,7 +58,7 @@ Item {
             }
         }
         
-        onLoadingChanged: {
+        function onLoadingChanged() {
             if ((loadRequest.status == WebEngineView.LoadSucceededStatus) ||
                 (loadRequest.status == WebEngineView.LoadFailedStatus)) {
                 internal.killed = false;

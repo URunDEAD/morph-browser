@@ -60,7 +60,7 @@ Item {
     Connections {
         target: webview
 
-        onIsFullScreenChanged: {
+        function onIsFullScreenChanged() {
             if (webview.isFullScreen) {
                 webview.locationBarController.mode = internal.modeHidden
             } else if (!forceHide) {
@@ -75,7 +75,7 @@ Item {
             }
         }
 
-        onLoadingChanged: {
+        function onLoadingChanged() {
             // When loading, force ModeShown until the load is committed or stopped,
             // to work around https://launchpad.net/bugs/1453908.
             if (forceHide || forceShow) return

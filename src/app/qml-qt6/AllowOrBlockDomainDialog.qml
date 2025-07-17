@@ -56,7 +56,7 @@ ModalDialog {
 
     Connections {
         target: DomainPermissionsModel
-        onDataChanged: {
+        function onDataChanged() {
             if (DomainPermissionsModel.getPermission(domain) !== DomainPermissionsModel.NotSet) {
                 cancel();
             }

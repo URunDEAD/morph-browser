@@ -76,6 +76,6 @@ Popups.Dialog {
     //make sure reject is fired when closing the popup
     Connections {
         target: __eventGrabber
-        onPressed: selectOverlay.reject()
+        function onPressed() { selectOverlay.reject() }
     }
 }

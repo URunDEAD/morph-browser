@@ -300,7 +300,7 @@ FocusScope {
                             Connections {
                                 target: item
 
-                                onIsCurrentItemChanged: {
+                                function onIsCurrentItemChanged() {
                                     if (item.isCurrentItem && (item.userAgentId > 0)) {
                                         userAgentSelect.updateIndex();
                                     }
@@ -374,11 +374,11 @@ FocusScope {
 
         Connections {
             target: customUserAgentsViewLoader.item
-            onDone: {
+            function onDone() {
                 customUserAgentsViewLoader.active = false;
                 domainSettingsItem.reload(null);
             }
-            onReload: {
+            function onReload() {
                 customUserAgentsViewLoader.active = false;
                 customUserAgentsViewLoader.active = true;
             }

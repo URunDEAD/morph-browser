@@ -63,8 +63,8 @@ Item {
     onDefaultDeviceChanged: internal.updateDefaultDevice()
     Connections {
         target: Oxide
-        onAvailableAudioCaptureDevicesChanged: if (isAudio) internal.updateDefaultDevice()
-        onAvailableVideoCaptureDevicesChanged: if (!isAudio) internal.updateDefaultDevice()
+        function onAvailableAudioCaptureDevicesChanged() { if (isAudio) internal.updateDefaultDevice() }
+        function onAvailableVideoCaptureDevicesChanged() { if (!isAudio) internal.updateDefaultDevice() }
     }
 
     onIsAudioChanged: internal.updateDefaultDevice()

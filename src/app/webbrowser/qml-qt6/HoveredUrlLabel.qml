@@ -89,6 +89,6 @@ Item {
     
     Connections {
         target: root.webview
-        onLinkHovered: label.text = hoveredUrl.toString()
+        function onLinkHovered(hoveredUrl) { label.text = hoveredUrl.toString() }
     }
 }

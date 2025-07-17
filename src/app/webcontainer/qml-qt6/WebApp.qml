@@ -247,7 +247,7 @@ Common.BrowserView {
 
     Connections {
         target: currentDownloadsDialog
-        onShowDownloadsPage: showDownloadsPage()
+        function onShowDownloadsPage() { showDownloadsPage() }
     }
 
     /* Only used for anchoring the downloads dialog to the top when chromeless */
@@ -420,7 +420,7 @@ Common.BrowserView {
 
             Connections {
                 target: downloadsViewLoader.item
-                onDone: downloadsViewLoader.active = false
+                function onDone() { downloadsViewLoader.active = false }
             }
         }
 
@@ -433,7 +433,7 @@ Common.BrowserView {
         Connections {
             target: contentExportLoader.item
 
-            onPreview: {
+            function onPreview(url) {
                 downloadsViewLoader.active = false
                 webapp.currentWebview.url = url;
             }
@@ -454,7 +454,7 @@ Common.BrowserView {
 
             Connections {
                 target: webappSettingsViewLoader.item
-                onClearCache: {
+                function onClearCache() {
 
                     // clear http cache
                     webapp.currentWebview.profile.clearHttpCache();
@@ -495,7 +495,7 @@ Common.BrowserView {
             target: webapp.currentWebview
             enabled: !webapp.chromeless
 
-            onIsFullScreenChanged: {
+            function onIsFullScreenChanged() {
                 if (webapp.currentWebview.isFullScreen) {
                     chromeLoader.item.state = "hidden";
                 } else {
@@ -508,7 +508,7 @@ Common.BrowserView {
 
            target: webapp.currentWebview ? webapp.currentWebview.context : null
 
-           onDownloadRequested: {
+           function onDownloadRequested(download) {
 
                console.log("a download was requested with path %1".arg(download.path))
 
@@ -516,7 +516,7 @@ Common.BrowserView {
                webapp.startDownload(download);
            }
 
-           onDownloadFinished: {
+           function onDownloadFinished(download) {
 
                console.log("a download was finished with path %1.".arg(download.path))
                webapp.setDownloadComplete(download)
@@ -525,8 +525,8 @@ Common.BrowserView {
 
        Connections {
            target: settings
-           onZoomFactorChanged: DomainSettingsModel.defaultZoomFactor = settings.zoomFactor
-           onDomainWhiteListModeChanged: DomainPermissionsModel.whiteListMode = settings.domainWhiteListMode
+           function onZoomFactorChanged() { DomainSettingsModel.defaultZoomFactor = settings.zoomFactor }
+           function onDomainWhiteListModeChanged() { DomainPermissionsModel.whiteListMode = settings.domainWhiteListMode }
        }
 
         Common.ChromeController {

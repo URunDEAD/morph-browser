@@ -95,7 +95,7 @@ import "."
         Connections {
             id: stateChangeConnection
             target: null
-            onStateChanged: {
+            function onStateChanged() {
                 if (picker.activeTransfer.state === ContentTransfer.Charged) {
                     var selectedItems = []
                     for(var i in picker.activeTransfer.items) {

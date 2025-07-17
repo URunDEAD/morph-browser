@@ -33,7 +33,7 @@ AbstractButton {
 
     Connections {
         target: contextMenu
-        onVisibleChanged: if (!target.visible) pressedState = false
+        function onVisibleChanged() { if (!target.visible) pressedState = false }
     }
 
     Rectangle {

@@ -401,6 +401,6 @@ BrowserWindow {
 
     property var openUrlsHandler: Connections {
         target: UriHandler
-        onOpened: root.openUrls(uris)
+        function onOpened(uris) { root.openUrls(uris) }
     }
 }

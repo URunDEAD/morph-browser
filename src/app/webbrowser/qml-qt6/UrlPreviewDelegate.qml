@@ -98,7 +98,7 @@ AbstractButton {
 
             Connections {
                 target: PreviewManager
-                onPreviewSaved: {
+                function onPreviewSaved(pageUrl, previewUrl) {
                     if (pageUrl != preview.url) return
                     previewImage.source = ""
                     previewImage.source = previewShape.previewUrl

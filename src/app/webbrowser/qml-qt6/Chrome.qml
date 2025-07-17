@@ -105,8 +105,8 @@ ChromeBase {
             Connections {
                 target: tabsBar.item
 
-                onRequestNewTab: chrome.requestNewTab(index, makeCurrent)
-                onTabClosed: chrome.tabClosed(index, moving)
+                function onRequestNewTab(index, makeCurrent) { chrome.requestNewTab(index, makeCurrent) }
+                function onTabClosed(index, moving) { chrome.tabClosed(index, moving) }
             }
         }
 
@@ -139,7 +139,7 @@ ChromeBase {
     // flickering (https://launchpad.net/bugs/1611680).
     Connections {
         target: webview
-        onLoadingChanged: delayedLoadingNotifier.restart()
+        function onLoadingChanged() { delayedLoadingNotifier.restart() }
     }
     Timer {
         id: delayedLoadingNotifier

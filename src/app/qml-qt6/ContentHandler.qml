@@ -25,7 +25,7 @@ Item {
 
     Connections {
         target: ContentHub
-        onExportRequested: {
+        function onExportRequested(transfer) {
             exportFromDownloads(transfer,
                                 MimeTypeMapper.mimeTypeRegexForContentType(transfer.contentType),
                                 transfer.selectionType === ContentTransfer.Multiple)

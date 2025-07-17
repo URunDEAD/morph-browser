@@ -175,7 +175,7 @@ Common.BrowserView {
         //onMediaAccessPermissionRequested: PopupUtils.open(Qt.resolvedUrl("../MediaAccessDialog.qml"), null, { request: request })
 
         // this opens the file as download
-        onPdfPrintingFinished: {
+        function onPdfPrintingFinished(filePath, success) {
 
             if (success)
             {
@@ -187,7 +187,7 @@ Common.BrowserView {
             }
         }
 
-        onNavigationRequested: {
+        function onNavigationRequested(request) {
 
             var url = request.url;
             var isMainFrame = request.isMainFrame;
@@ -438,8 +438,8 @@ Common.BrowserView {
                                              })
             Connections {
                 target: errorSheetLoader.item
-                onBackToSafetyClicked: currentWebview.goBack()
-                onRefreshClicked: currentWebview.reload()
+                function onBackToSafetyClicked() { currentWebview.goBack() }
+                function onRefreshClicked() { currentWebview.reload() }
             }
 
             focus: item && item.visible
@@ -458,13 +458,13 @@ Common.BrowserView {
                                              })
             Connections {
                 target: invalidCertificateErrorSheetLoader.item
-                onAllowed: {
+                function onAllowed() {
                     // Automatically allow future requests involving this
                     // certificate for the duration of the session.
                     internal.allowCertificateError(currentWebview.certificateError)
                     currentWebview.resetCertificateError()
                 }
-                onDenied: {
+                function onDenied () {
                     currentWebview.resetCertificateError()
                 }
             }
@@ -483,11 +483,11 @@ Common.BrowserView {
             // Avoid loading the new tab view if the webview has or will have content
             Connections {
                 target: tabsModel.currentTab
-                onEmptyChanged: newTabViewLoader.setActive(tabsModel.currentTab.empty)
+                function onEmptyChanged() { newTabViewLoader.setActive(tabsModel.currentTab.empty) }
             }
             Connections {
                 target: tabsModel
-                onCurrentTabChanged: newTabViewLoader.setActive(tabsModel.currentTab && tabsModel.currentTab.empty)
+                function onCurrentTabChanged() { newTabViewLoader.setActive(tabsModel.currentTab && tabsModel.currentTab.empty) }
             }
             active: false
             focus: active
@@ -495,7 +495,7 @@ Common.BrowserView {
 
             Connections {
                 target: browser
-                onWideChanged: newTabViewLoader.selectTabView()
+                function onWideChanged() { newTabViewLoader.selectTabView() }
             }
             Component.onCompleted: newTabViewLoader.selectTabView()
 
@@ -527,13 +527,13 @@ Common.BrowserView {
 
             Connections {
                 target: newTabViewLoader.item && !browser.incognito ? newTabViewLoader.item : null
-                onBookmarkClicked: {
+                function onBookmarkClicked(url) {
                     chrome.requestedUrl = url
                     currentWebview.url = url
                     tabContainer.forceActiveFocus()
                 }
-                onBookmarkRemoved: BookmarksModel.remove(url)
-                onHistoryEntryClicked: {
+                function onBookmarkRemoved(url) { BookmarksModel.remove(url) }
+                function onHistoryEntryClicked(url) {
                     chrome.requestedUrl = url
                     currentWebview.url = url
                     tabContainer.forceActiveFocus()
@@ -557,7 +557,7 @@ Common.BrowserView {
                                              })
             Connections {
                 target: sadTabLoader.item
-                onCloseTabRequested: internal.closeCurrentTab()
+                function onCloseTabRequested() { internal.closeCurrentTab() }
             }
 
             Common.WebProcessMonitor {
@@ -784,11 +784,11 @@ Common.BrowserView {
         onWebviewChanged: bookmarked = isCurrentUrlBookmarked()
         Connections {
             target: chrome.tab
-            onUrlChanged: chrome.bookmarked = chrome.isCurrentUrlBookmarked()
+            function onUrlChanged() { chrome.bookmarked = chrome.isCurrentUrlBookmarked() }
         }
         Connections {
             target: BookmarksModel
-            onCountChanged: chrome.bookmarked = chrome.isCurrentUrlBookmarked()
+            function onCountChanged() { chrome.bookmarked = chrome.isCurrentUrlBookmarked() }
         }
 
         onSwitchToTab: internal.switchToTab(index, true)
@@ -930,14 +930,14 @@ Common.BrowserView {
 
         Connections {
             target: browser.currentWebview
-            onLoadingChanged: {
+            function onLoadingChanged() {
                 if (browser.currentWebview.loading && !recentView.visible) {
                     chrome.state = "shown";
                 } else if (browser.currentWebview.isFullScreen) {
                     chrome.state = "hidden"
                 }
             }
-            onIsFullScreenChanged: {
+            function onIsFullScreenChanged() {
                 if (browser.currentWebview.isFullScreen) {
                     chrome.state = "hidden";
                 } else {
@@ -1151,7 +1151,7 @@ Common.BrowserView {
         asynchronous: true
         Connections {
             target: browser
-            onWideChanged: bookmarksViewLoader.selectBookmarksView()
+            function onWideChanged() { bookmarksViewLoader.selectBookmarksView() }
         }
         Component.onCompleted: bookmarksViewLoader.selectBookmarksView()
 
@@ -1174,12 +1174,12 @@ Common.BrowserView {
         Connections {
             target: bookmarksViewLoader.item
 
-            onBookmarkEntryClicked: {
+            function onBookmarkEntryClicked(url) {
                 internal.openUrlInNewTab(url, true)
                 bookmarksViewLoader.active = false
             }
-            onBack: bookmarksViewLoader.active = false
-            onNewTabClicked: {
+            function onBack() { bookmarksViewLoader.active = false }
+            function onNewTabClicked() {
                 internal.openUrlInNewTab("", true)
                 bookmarksViewLoader.active = false
             }
@@ -1194,7 +1194,7 @@ Common.BrowserView {
         asynchronous: true
         Connections {
             target: browser
-            onWideChanged: historyViewLoader.selectHistoryView()
+            function onWideChanged() { historyViewLoader.selectHistoryView() }
         }
         Component.onCompleted: historyViewLoader.selectHistoryView()
 
@@ -1205,19 +1205,19 @@ Common.BrowserView {
 
         Connections {
             target: historyViewLoader.item
-            onHistoryEntryClicked: {
+            function onHistoryEntryClicked(url) {
                 historyViewLoader.active = false
                 internal.openUrlInNewTab(url, true)
             }
-            onNewTabRequested: {
+            function onNewTabRequested() {
                 historyViewLoader.active = false
                 internal.openUrlInNewTab("", true)
             }
-            onDone: {
+            function onDone() {
                 historyViewLoader.active = false
                 internal.resetFocus()
             }
-            onBack: historyViewLoader.active = false
+            function onBack() { historyViewLoader.active = false }
         }
 
         onStatusChanged: {
@@ -1253,7 +1253,7 @@ Common.BrowserView {
                                          })
         Connections {
             target: settingsViewLoader.item
-            onClearCache: {
+            function onClearCache() {
                 // clear Http cache
                 SharedWebContext.sharedContext.clearHttpCache();
                 SharedWebContext.sharedIncognitoContext.clearHttpCache();
@@ -1282,12 +1282,12 @@ Common.BrowserView {
                 // Visited Links
                 FileOperations.remove(dataLocationUrl + "/Visited Links");
             }
-            onClearAllCookies: {
+            function onClearAllCookies() {
 
                 BrowserUtils.deleteAllCookiesOfProfile(SharedWebContext.sharedContext);
                 BrowserUtils.deleteAllCookiesOfProfile(SharedWebContext.sharedIncognitoContext);
             }
-            onDone: settingsViewLoader.active = false
+            function onDone() { settingsViewLoader.active = false }
         }
     }
 
@@ -1313,7 +1313,7 @@ Common.BrowserView {
 
         Connections {
             target: downloadsViewLoader.item
-            onDone: downloadsViewLoader.active = false
+            function onDone() { downloadsViewLoader.active = false }
         }
 
         onStatusChanged: {
@@ -1655,7 +1655,7 @@ Common.BrowserView {
     Connections {
         target: internal.currentDownloadsDialog
 
-        onShowDownloadsPage: showDownloadsPage()
+        function onShowDownloadsPage() { showDownloadsPage() }
     }
 
     // Work around https://launchpad.net/bugs/1502675 by delaying the switch to
@@ -1668,7 +1668,7 @@ Common.BrowserView {
 
     Connections {
         target: tabsModel
-        onCurrentTabChanged: {
+        function onCurrentTabChanged() {
             chrome.findInPageMode = false
             internal.resetFocus()
         }
@@ -1889,7 +1889,7 @@ Common.BrowserView {
 
     Connections {
         target: contentHandlerLoader.item
-        onExportFromDownloads: {
+        function onExportFromDownloads(transfer, mimetypeFilter, multiSelect) {
             downloadsViewLoader.loadSynchronously();
             // export from downloads
             downloadsViewLoader.item.mimetypeFilter = mimetypeFilter
@@ -1908,7 +1908,7 @@ Common.BrowserView {
     Connections {
         target: contentExportLoader.item
 
-        onPreview: {
+        function onPreview(url) {
             downloadsViewLoader.active = false
             currentWebview.url = url;
         }
@@ -1972,7 +1972,7 @@ Common.BrowserView {
 
         target: currentWebview ? currentWebview.context : null
 
-        onDownloadRequested: {
+        function onDownloadRequested(download) {
 
             if (currentWebview.url.toString().match(/^view-source:/i)) {
                 console.log(incognito ? "a download was rejected" : "a download was rejected with url %1".arg(download.url));
@@ -1991,7 +1991,7 @@ Common.BrowserView {
             browser.startDownload(download);
         }
 
-        onDownloadFinished: {
+        function onDownloadFinished(download) {
 
             console.log(incognito? "download finished" : "a download was finished with path %1.".arg(download.path));
             browser.setDownloadComplete(download);
@@ -2006,8 +2006,8 @@ Common.BrowserView {
 
     Connections {
         target: settings
-        onZoomFactorChanged: DomainSettingsModel.defaultZoomFactor = settings.zoomFactor
-        onDomainWhiteListModeChanged: DomainPermissionsModel.whiteListMode = settings.domainWhiteListMode
+        function onZoomFactorChanged() { DomainSettingsModel.defaultZoomFactor = settings.zoomFactor }
+        function onDomainWhiteListModeChanged() { DomainPermissionsModel.whiteListMode = settings.domainWhiteListMode }
     }
     /*
 

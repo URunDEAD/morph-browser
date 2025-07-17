@@ -316,8 +316,8 @@ FocusScope {
 
         Connections {
             target: domainSettingsViewLoader.item
-            onDone: domainSettingsViewLoader.active = false
-            onReload: {
+            function onDone() { domainSettingsViewLoader.active = false }
+            function onReload() {
                 domainSettingsViewLoader.active = false
                 domainSettingsViewLoader.active = true
 
@@ -340,8 +340,8 @@ FocusScope {
 
         Connections {
             target: domainPermissionsViewLoader.item
-            onDone: domainPermissionsViewLoader.active = false
-            onReload: {
+            function onDone() { domainPermissionsViewLoader.active = false }
+            function onReload() {
                 domainPermissionsViewLoader.active = false
                 domainPermissionsViewLoader.active = true
 

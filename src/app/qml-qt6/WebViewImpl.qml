@@ -790,7 +790,7 @@ WebView {
    Connections {
        // user clicks in a browser text field, the keyboard is not yet open
        target: Qt.inputMethod
-       onVisibleChanged: {
+       function onVisibleChanged() {
          if (visible && ! inputMethodTimer.running) {
            inputMethodTimer.restart()
          }

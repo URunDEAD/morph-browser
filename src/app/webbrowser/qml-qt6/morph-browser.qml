@@ -261,7 +261,7 @@ QtObject {
 
             Connections {
                 target: window.tabsModel
-                onCountChanged: {
+                function onCountChanged() {
                     if ((window.tabsModel.count === 0) && browser.wide) {
                         window.close()
                     }
@@ -270,13 +270,13 @@ QtObject {
 
             Connections {
                 target: window.incognito ? null : window.tabsModel
-                onCurrentIndexChanged: delayedSessionSaver.restart()
-                onCountChanged: delayedSessionSaver.restart()
+                function onCurrentIndexChanged() { delayedSessionSaver.restart() }
+                function onCountChanged() { delayedSessionSaver.restart() }
             }
 
             Connections {
                 target: (session.restoring || !window.visible || browser.wide) ? null : window.tabsModel
-                onCurrentIndexChanged: {
+                function onCurrentIndexChanged() {
                     // In narrow mode, the tabslist is a stack:
                     // the current tab is always at the top.
                     window.tabsModel.move(window.tabsModel.currentIndex, 0)
@@ -354,7 +354,7 @@ QtObject {
     // url-dispatcher/upstart level.
     property var openUrlsHandler: Connections {
         target: UriHandler
-        onOpened: webbrowserapp.openUrls(uris, false, settings.incognitoOnStart)
+        function onOpened(uris) { webbrowserapp.openUrls(uris, false, settings.incognitoOnStart) }
     }
 
     property var session: SessionStorage {
@@ -461,12 +461,12 @@ QtObject {
 
     property var applicationMonitor: Connections {
         target: Qt.application
-        onStateChanged: {
+        function onStateChanged() {
             if (Qt.application.state !== Qt.ApplicationActive) {
                 session.save()
             }
         }
-        onAboutToQuit: {
+        function onAboutToQuit() {
             if (allWindows.length > 0) {
                 session.save()
             }
@@ -475,7 +475,7 @@ QtObject {
 
     property var memoryPressureMonitor: Connections {
         target: MemInfo
-        onFreeChanged: {
+        function onFreeChanged() {
             var freeMemRatio = (MemInfo.total > 0) ? (MemInfo.free / MemInfo.total) : 1.0
             var lowMemoryThresholdPercent = 0.2;
             // Under that threshold, available memory is considered "low", and the
@@ -520,7 +520,7 @@ QtObject {
 
     property var historyModelMonitor: Connections {
         target: HistoryModel
-        onLoaded: {
+        function onLoaded() {
             var doNotCleanUrls = []
             for (var x in allWindows) {
                 var tabs = allWindows[x].tabsModel

@@ -53,7 +53,7 @@ Item {
 
     Connections {
         target: scrollTracker.active ? scrollTracker.webview : null
-        onContentYChanged: {
+        function onContentYChanged() {
             var old = internal.previousScrollFraction
             internal.previousScrollFraction = internal.currentScrollFraction
             if (internal.currentScrollFraction < old) {

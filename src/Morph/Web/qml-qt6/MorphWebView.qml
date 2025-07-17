@@ -270,17 +270,17 @@ WebEngineView {
         }
     }
 
-    readonly property bool lastLoadSucceeded: internal.lastLoadRequestStatus === WebEngineLoadRequest.LoadSucceededStatus
+    readonly property bool lastLoadSucceeded: internal.lastLoadRequestStatus === WebEngineView.LoadSucceededStatus
     readonly property bool lastLoadStopped: false // TODO internal.lastLoadRequestStatus === Oxide.LoadEvent.TypeStopped
-    readonly property bool lastLoadFailed: internal.lastLoadRequestStatus === WebEngineLoadRequest.LoadFailedStatus
+    readonly property bool lastLoadFailed: internal.lastLoadRequestStatus === WebEngineView.LoadFailedStatus
     readonly property string lastLoadRequestErrorString: internal.lastLoadRequestErrorString
     readonly property int lastLoadRequestErrorDomain: internal.lastLoadRequestErrorDomain
     onLoadingChanged: {
         if (loadRequest.errorCode === 420) {
             _webview.stop()
         }
-        if ((loadRequest.url === url) && (loadRequest.status !== WebEngineLoadRequest.LoadStartedStatus)) {
-            if (loadRequest.status === WebEngineLoadRequest.LoadFailedStatus &&
+        if ((loadRequest.url === url) && (loadRequest.status !== WebEngineView.LoadStartedStatus)) {
+            if (loadRequest.status === WebEngineView.LoadFailedStatus &&
                     loadRequest.errorCode > 0) {
                 /*
                  * Workaround QtWebEngine 5.15.3+ API break (!), where it starts

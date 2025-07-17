@@ -162,7 +162,7 @@ Component {
             }
 
             onLoadingChanged: {
-                if (loadRequest.status === WebEngineLoadRequest.LoadSucceededStatus) {
+                if (loadRequest.status === WebEngineView.LoadSucceededStatus) {
                     chrome.findInPageMode = false
                     webviewInternal.titleSet = false
                     webviewInternal.title = title
@@ -177,7 +177,7 @@ Component {
                     return
                 }
 
-                if (loadRequest.status === WebEngineLoadRequest.LoadSucceededStatus) {
+                if (loadRequest.status === WebEngineView.LoadSucceededStatus) {
                     webviewInternal.storedUrl = loadRequest.url
                     // note: at this point the icon is an empty string most times, not sure why (seems to be set after this event)
                     HistoryModel.add(loadRequest.url, title, (UrlUtils.schemeIs(icon, "image") && UrlUtils.hostIs(icon, "favicon")) ? icon.toString().substring(("image://favicon/").length) : icon)
@@ -188,7 +188,7 @@ Component {
                 // Otherwise if no title change has occurred the next title
                 // change will be the url of the next page causing the
                 // history entry to be incorrect (pad.lv/1603835)
-                if (loadRequest.status === WebEngineLoadRequest.LoadFailedStatus) {
+                if (loadRequest.status === WebEngineView.LoadFailedStatus) {
                     webviewInternal.titleSet = true
                     webviewInternal.storedUrl = ""
                 }

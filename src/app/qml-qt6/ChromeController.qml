@@ -79,13 +79,13 @@ Item {
             // When loading, force ModeShown until the load is committed or stopped,
             // to work around https://launchpad.net/bugs/1453908.
             if (forceHide || forceShow) return
-            if (loadRequest.status === WebEngineLoadRequest.LoadStartedStatus) {
+            if (loadRequest.status === WebEngineView.LoadStartedStatus) {
                 if (!webview.isFullScreen && (webview.locationBarController.mode === internal.modeAuto)) {
                     webview.locationBarController.show(true)
                 }
                 webview.locationBarController.mode = internal.modeShown
-            } else if ((loadRequest.status === WebEngineLoadRequest.LoadSucceededStatus) ||
-                       (loadRequest.status === WebEngineLoadRequest.LoadFailedStatus)) {
+            } else if ((loadRequest.status === WebEngineView.LoadSucceededStatus) ||
+                       (loadRequest.status === WebEngineView.LoadFailedStatus)) {
                 webview.locationBarController.mode = defaultMode
             }
         }

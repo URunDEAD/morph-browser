@@ -59,8 +59,8 @@ Item {
         }
         
         onLoadingChanged: {
-            if ((loadRequest.status == WebEngineLoadRequest.LoadSucceededStatus) ||
-                (loadRequest.status == WebEngineLoadRequest.LoadFailedStatus)) {
+            if ((loadRequest.status == WebEngineView.LoadSucceededStatus) ||
+                (loadRequest.status == WebEngineView.LoadFailedStatus)) {
                 internal.killed = false;
                 internal.crashed = false;
             }

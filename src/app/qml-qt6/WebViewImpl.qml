@@ -738,7 +738,7 @@ WebView {
             return;
         }
 
-        if (loadRequest.status === WebEngineLoadRequest.LoadFailedStatus) {
+        if (loadRequest.status === WebEngineView.LoadFailedStatus) {
             if (loadRequest.errorCode < 0) { // Positive errorCode means HTTP error
                 /*
                  * This intends to remove Chromium's error page. Ideally, we could set
@@ -752,7 +752,7 @@ WebView {
             }
         }
 
-        if ((loadRequest.status === WebEngineLoadRequest.LoadSucceededStatus) && ! UrlUtils.isPdfViewerExtensionUrl(webview.url)) {
+        if ((loadRequest.status === WebEngineView.LoadSucceededStatus) && ! UrlUtils.isPdfViewerExtensionUrl(webview.url)) {
            webview.runJavaScript("document.contentType", function(docContentType) {
                if (docContentType === "application/pdf") {
                    // ToDo: decide how we handle PDFs:

@@ -77,6 +77,6 @@ ScrollTracker {
 
     Connections {
         target: chromeStateTracker.header
-        transfer onMovingChanged() { chromeStateChangeTimer.settled = false }
+        function onMovingChanged() { chromeStateChangeTimer.settled = false }
     }
 }

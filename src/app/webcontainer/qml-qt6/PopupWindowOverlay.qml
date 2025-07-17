@@ -215,16 +215,16 @@ FocusScope {
                     disposition === WebEngineView.NewViewInTab;
         }
 
-        onNavigationRequested: {
+        onNavigationRequested: (request) => {
             var url = request.url.toString()
-            request.action = WebEngineNavigationRequest.AcceptRequest
             if (isNewForegroundWebViewDisposition(request.disposition)) {
                 var shouldAcceptRequest =
                         popupWindowController.handleNewForegroundNavigationRequest(url, request, false);
                 if (!shouldAcceptRequest) {
-                    request.action = WebEngineNavigationRequest.IgnoreRequest
+                    request.reject();
                 }
             }
+            request.accept();
         }
 /*
         onCloseRequested: {

@@ -200,7 +200,7 @@ Common.BrowserView {
             {
                 if (! internal.areCustomUrlSchemesAllowed(currentDomain))
                 {
-                  request.action = WebEngineNavigationRequest.IgnoreRequest;
+                  request.reject();
 
                   var allowCustomSchemesDialog = PopupUtils.open(Qt.resolvedUrl("../AllowCustomSchemesDialog.qml"), currentWebview);
                   allowCustomSchemesDialog.url = url;
@@ -242,7 +242,7 @@ Common.BrowserView {
                     alertDialog.title = i18n.tr("Blocked domain");
                     alertDialog.message = i18n.tr("Blocked navigation request to domain %1.").arg(requestDomainWithoutSubdomain);
                 }
-                request.action = WebEngineNavigationRequest.IgnoreRequest;
+                request.reject();
                 return;
             }
 
@@ -274,7 +274,7 @@ Common.BrowserView {
                     DomainPermissionsModel.setRequestedByDomain(requestDomainWithoutSubdomain, isMainFrame ? "" : currentDomainWithoutSubdomain, browser.incognito);
                     DomainPermissionsModel.setPermission(requestDomainWithoutSubdomain, DomainPermissionsModel.Blocked, browser.incognito);
                   });
-                request.action = WebEngineNavigationRequest.IgnoreRequest;
+                request.reject();
                 return;
             }
 
@@ -292,7 +292,7 @@ Common.BrowserView {
 
 		    // for some reason when letting through the request, another navigation request will take us back to the
                     // to the previous page. Therefore we block it first and navigate to the new url with the correct user agent.
-                    request.action = WebEngineNavigationRequest.IgnoreRequest;
+                    request.reject();
                     currentWebview.url = url;
                     return;
                 }

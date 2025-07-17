@@ -115,8 +115,8 @@ WebEngineView {
     ]
     */
 
-    onNavigationRequested: {
-        request.action = WebEngineNavigationRequest.AcceptRequest;
+    onNavigationRequested: (request) => {
+        request.accept();
         navigationRequestedDelegate(request);
     }
 
@@ -313,7 +313,7 @@ WebEngineView {
         internal.dismissCurrentContextualMenu()
     }
 
-    onJavaScriptConsoleMessage: {
+    onJavaScriptConsoleMessage: (level, message, lineNumber, sourceID) => {
         if (_webview.incognito) {
             return
         }

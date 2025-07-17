@@ -732,14 +732,14 @@ WebView {
         request.accept();
     }
 
-    onLoadingChanged: {
+    onLoadingChanged: (loadingInfo) => {
         // not about current url (e.g. finished loading of page we have already navigated away from)
-        if (loadRequest.url !== webview.url) {
+        if (loadingInfo.url !== webview.url) {
             return;
         }
 
-        if (loadRequest.status === WebEngineView.LoadFailedStatus) {
-            if (loadRequest.errorCode < 0) { // Positive errorCode means HTTP error
+        if (loadingInfo.status === WebEngineView.LoadFailedStatus) {
+            if (loadingInfo.errorCode < 0) { // Positive errorCode means HTTP error
                 /*
                  * This intends to remove Chromium's error page. Ideally, we could set
                  * webView.settings.errorPageEnabled = false and we wouldn't have to do
@@ -752,7 +752,7 @@ WebView {
             }
         }
 
-        if ((loadRequest.status === WebEngineView.LoadSucceededStatus) && ! UrlUtils.isPdfViewerExtensionUrl(webview.url)) {
+        if ((loadingInfo.status === WebEngineView.LoadSucceededStatus) && ! UrlUtils.isPdfViewerExtensionUrl(webview.url)) {
            webview.runJavaScript("document.contentType", function(docContentType) {
                if (docContentType === "application/pdf") {
                    // ToDo: decide how we handle PDFs:

@@ -402,16 +402,16 @@ LomiriShape {
             }
 
             // A page loading status has been changed. If it is our current page and the status is a LoadSucceededStatus, then now is our time to handle autofit or retrieve scroll width if oom menu is visible.
-            function onLoadingChanged() {
+            function onLoadingChanged(loadingInfo) {
                 //console.log("[ZC] webview.onLoadingChanged: %1".arg(webview.url));
                 //console.log("[ZC]   webview.loading: %1".arg(webview.loading));
 
                 // Not our current url (e.g. finished loading of page we have already navigated away from).
-                if (loadRequest.url !== webview.url) {
+                if (loadingInfo.url !== webview.url) {
                     return;
                 }
 
-                if (loadRequest.status !== WebEngineLoadRequest.LoadSucceededStatus) {
+                if (loadingInfo.status !== WebEngineView.LoadSucceededStatus) {
                     return;
                 }
 

@@ -275,13 +275,13 @@ WebEngineView {
     readonly property bool lastLoadFailed: internal.lastLoadRequestStatus === WebEngineView.LoadFailedStatus
     readonly property string lastLoadRequestErrorString: internal.lastLoadRequestErrorString
     readonly property int lastLoadRequestErrorDomain: internal.lastLoadRequestErrorDomain
-    onLoadingChanged: {
-        if (loadRequest.errorCode === 420) {
+    onLoadingChanged: (loadingInfo) => {
+        if (loadingInfo.errorCode === 420) {
             _webview.stop()
         }
-        if ((loadRequest.url === url) && (loadRequest.status !== WebEngineView.LoadStartedStatus)) {
-            if (loadRequest.status === WebEngineView.LoadFailedStatus &&
-                    loadRequest.errorCode > 0) {
+        if ((loadingInfo.url === url) && (loadingInfo.status !== WebEngineView.LoadStartedStatus)) {
+            if (loadingInfo.status === WebEngineView.LoadFailedStatus &&
+                    loadingInfo.errorCode > 0) {
                 /*
                  * Workaround QtWebEngine 5.15.3+ API break (!), where it starts
                  * to report HTTP errors as errors instead of success. This is
@@ -300,9 +300,9 @@ WebEngineView {
                 internal.lastLoadRequestErrorString = "";
                 internal.lastLoadRequestErrorDomain = WebEngineView.NoErrorDomain;
             } else {
-                internal.lastLoadRequestStatus = loadRequest.status;
-                internal.lastLoadRequestErrorString = loadRequest.errorString;
-                internal.lastLoadRequestErrorDomain = loadRequest.errorDomain;
+                internal.lastLoadRequestStatus = loadingInfo.status;
+                internal.lastLoadRequestErrorString = loadingInfo.errorString;
+                internal.lastLoadRequestErrorDomain = loadingInfo.errorDomain;
             }
         }
         internal.dismissCurrentContextualMenu();

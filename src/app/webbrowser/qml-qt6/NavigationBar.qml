@@ -120,8 +120,8 @@ FocusScope {
 
             // normally the "canGoBack" should be automatically updated, but does not for webview.url changes.
             // this is a workaround for https://github.com/ubports/morph-browser/issues/306
-            function onLoadingChanged() {
-                if (loadRequest.status !== WebEngineView.LoadStartedStatus) {
+            function onLoadingChanged(loadingInfo) {
+                if (loadingInfo.status !== WebEngineView.LoadStartedStatus) {
                     internal.webview.onUrlChanged();
                 }
             }

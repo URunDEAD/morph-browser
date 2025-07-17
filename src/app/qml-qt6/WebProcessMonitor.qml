@@ -58,9 +58,9 @@ Item {
             }
         }
         
-        function onLoadingChanged() {
-            if ((loadRequest.status == WebEngineView.LoadSucceededStatus) ||
-                (loadRequest.status == WebEngineView.LoadFailedStatus)) {
+        function onLoadingChanged(loadingInfo) {
+            if ((loadingInfo.status == WebEngineView.LoadSucceededStatus) ||
+                (loadingInfo.status == WebEngineView.LoadFailedStatus)) {
                 internal.killed = false;
                 internal.crashed = false;
             }

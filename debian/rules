@@ -51,7 +51,8 @@ override_dh_auto_install:
 
 override_dh_install: apparmor
 	install -D -m644 ./debian/usr.bin.morph-browser ./debian/tmp-qt5/etc/apparmor.d/usr.bin.morph-browser
-	install -D -m644 ./debian/usr.bin.morph-browser ./debian/tmp-qt6/etc/apparmor.d/usr.bin.morph-browser
+	# FIXME re-enable after fixing the profile
+	#install -D -m644 ./debian/usr.bin.morph-browser ./debian/tmp-qt6/etc/apparmor.d/usr.bin.morph-browser
 	dh_install -Nmorph-browser-qt6 -Nqml6-module-morph-web --sourcedir=debian/tmp-qt5
 	dh_install -pmorph-browser-qt6 -pqml6-module-morph-web --sourcedir=debian/tmp-qt6
 

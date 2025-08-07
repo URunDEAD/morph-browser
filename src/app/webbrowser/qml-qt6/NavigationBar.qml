@@ -476,11 +476,7 @@ FocusScope {
                         width: units.gu(2)
                         height: width
 
-                        name: model.iconName
-                        Binding on source {
-                            when: model.iconSource.toString()
-                            value: model.iconSource
-                        }
+                        source: model.iconSource
                         color: root.fgColor
                     }
 

@@ -304,7 +304,7 @@ WebView {
                 //    false: context menu for a specific element (e.g. input, span, ...)
                 // [5] : boolean variable morphContextMenuElementHasSelectMethod
                 [morphElemContextMenu.offsetLeft, morphElemContextMenu.offsetTop, morphElemContextMenu.offsetWidth, morphElemContextMenu.offsetHeight, morphContextMenuIsDocumentElement, morphContextMenuElementHasSelectMethod];
-                ".arg(request.x / webview.zoomFactor).arg(request.y / webview.zoomFactor)
+                ".arg(request.position.x / webview.zoomFactor).arg(request.position.y / webview.zoomFactor)
 
                 webview.runJavaScript(commandGetContextMenuInfo, function(result)
                                                             {

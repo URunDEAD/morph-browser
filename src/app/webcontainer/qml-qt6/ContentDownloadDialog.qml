@@ -19,7 +19,7 @@
 import QtQuick 2.4
 import Lomiri.Components
 import Lomiri.Components.Popups
-import Lomiri.Content 1.3
+import Lomiri.Content 2.0
 import webbrowsercommon.private 0.1
 import ".."
 

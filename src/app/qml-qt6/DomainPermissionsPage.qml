@@ -22,7 +22,7 @@ import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.1
 import Lomiri.Components
 import Lomiri.Components.Popups
-import Lomiri.Content 1.3
+import Lomiri.Content 2.0
 import webbrowsercommon.private 0.1
 
 FocusScope {

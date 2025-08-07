@@ -19,7 +19,7 @@
 import QtQuick 2.9
 import Lomiri.Components
 import Lomiri.Components.Popups
-import Lomiri.Content 1.3
+import Lomiri.Content 2.0
 import QtQuick.Controls 2.5 as QQC2
 /* FIXME: re-enable once Suru has been ported to Qt 6
 import QtQuick.Controls.Suru 2.2

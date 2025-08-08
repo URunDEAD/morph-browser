@@ -21,7 +21,6 @@ import Lomiri.Components
 import webbrowserapp.private 0.1
 import "Highlight.js" as Highlight
 import ".." as Common
-import "." as Local
 
 Common.BrowserPage {
     id: historyViewWide

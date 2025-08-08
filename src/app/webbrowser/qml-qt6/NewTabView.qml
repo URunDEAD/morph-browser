@@ -21,7 +21,6 @@ import Qt.labs.settings 1.0
 import Lomiri.Components
 import Lomiri.Components.ListItems as ListItems
 import webbrowserapp.private 0.1
-import "."
 
 FocusScope {
     id: newTabView

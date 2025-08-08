@@ -19,7 +19,6 @@
 import QtQuick 2.4
 import Lomiri.Components
 import webbrowserapp.private 0.1
-import "."
 
 FocusScope {
     id: newTabViewWide

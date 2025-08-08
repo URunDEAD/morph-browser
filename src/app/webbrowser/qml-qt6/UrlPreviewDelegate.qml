@@ -22,7 +22,6 @@ import Lomiri.Components.Popups
 import webbrowserapp.private 0.1
 import webbrowsercommon.private 0.1
 import ".."
-import "."
 
 AbstractButton {
     id: preview

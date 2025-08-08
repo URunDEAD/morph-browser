@@ -20,7 +20,6 @@ import QtQuick 2.5
 import QtQuick.Window 2.2
 import Qt.labs.settings 1.0
 import Lomiri.Components
-import "."
 import ".."
 import webbrowsercommon.private 0.1
 import webbrowserapp.private 0.1

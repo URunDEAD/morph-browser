@@ -21,7 +21,6 @@ import Lomiri.Components
 import Lomiri.Components.Popups as Popups
 import Lomiri.Content 2.0
 import "MimeTypeMapper.js" as MimeTypeMapper
-import "."
 
 //Component {
     Popups.PopupBase {

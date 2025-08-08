@@ -21,7 +21,6 @@ import QtQuick.Window 2.2
 import QtWebEngine
 import Lomiri.Components
 import Lomiri.Components.Popups
-import "." // QTBUG-34418
 
 WebEngineView {
     id: _webview

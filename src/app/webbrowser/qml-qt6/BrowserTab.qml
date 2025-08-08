@@ -21,7 +21,6 @@ import QtQuick.Window 2.2
 import QtWebEngine 1.5
 import webbrowserapp.private 0.1
 import webbrowsercommon.private 0.1
-import "."
 
 FocusScope {
     id: tab

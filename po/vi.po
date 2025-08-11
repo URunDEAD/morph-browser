@@ -8,42 +8,43 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-19 16:45+0100\n"
-"PO-Revision-Date: 2023-01-04 19:47+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Vietnamese <https://hosted.weblate.org/projects/lomiri/morph-"
-"browser/vi/>\n"
+"PO-Revision-Date: 2025-08-15 23:23+0000\n"
+"Last-Translator: \"Bảo Nam (Namm)\" <namb20994@gmail.com>\n"
+"Language-Team: Vietnamese <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.13\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
 msgid "Morph Browser"
-msgstr ""
+msgstr "Trình duyệt Morph"
 
 #: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:110
 #: src/app/webcontainer/webapp-container.qml:78
 msgid "Morph Web Browser"
-msgstr ""
+msgstr "Trình duyệt Morph"
 
 #: morph-browser.desktop.in:6
 msgid "Browse the World Wide Web using QtWebEngine"
-msgstr ""
+msgstr "Duyệt những trang web sử dụng QtWebEngine"
 
 #: morph-browser.desktop.in:7
+#, fuzzy
 msgid "Internet;WWW;Browser;Web;Explorer"
-msgstr ""
+msgstr "Mạng;WWW;Trình duyệt;Trang web;Trình duyệt"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
-msgstr ""
+msgstr "Cửa sổ mới"
 
 #: morph-browser.desktop.in:27
 msgid "New Private Window"
-msgstr ""
+msgstr "Cửa sổ riêng tư mới"
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
@@ -57,7 +58,7 @@ msgstr "Trang Cũ hơn"
 
 #: src/app/actions/BookmarkLink.qml:22
 msgid "Bookmark link"
-msgstr ""
+msgstr "Liên kết dấu trang"
 
 #: src/app/actions/Bookmark.qml:23
 msgid "Bookmark"
@@ -71,44 +72,44 @@ msgstr "Đánh dấu Trang Này"
 
 #: src/app/actions/ClearHistory.qml:23
 msgid "Clear History"
-msgstr ""
+msgstr "Xoá lịch sử"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/ClearHistory.qml:26
 msgid "Clear Navigation History"
-msgstr ""
+msgstr "Xóa lịch sử điều hướng"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
-msgstr ""
+msgstr "Sao chép ảnh"
 
 #: src/app/actions/CopyLink.qml:22
 msgid "Copy link"
-msgstr ""
+msgstr "Sao chép liên kết"
 
 #: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:418
-#, fuzzy
 msgid "Copy"
-msgstr "Copy"
+msgstr "Sao chép"
 
 #: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:407
 msgid "Cut"
-msgstr ""
+msgstr "Cắt"
 
 #: src/app/actions/Erase.qml:22
 msgid "Erase"
-msgstr ""
+msgstr "Xoá"
 
 #: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:831
 msgid "Find in page"
-msgstr ""
+msgstr "Tìm trong trang"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/FindInPage.qml:26
+#, fuzzy
 msgid "Search in Page"
-msgstr ""
+msgstr "Tìm trong trang"
 
 #: src/app/actions/Forward.qml:23
 msgid "Forward"
@@ -143,35 +144,35 @@ msgstr "Mở Thẻ Mới"
 
 #: src/app/actions/OpenImageInNewTab.qml:22
 msgid "Open image in new tab"
-msgstr ""
+msgstr "Mở ảnh trong thẻ mới"
 
 #: src/app/actions/OpenLinkInBrowser.qml:22
 msgid "Open link in default browser"
-msgstr ""
+msgstr "Mở liên kết trong trình duyệt mặc định"
 
 #: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
 msgid "Open link in new background tab"
-msgstr ""
+msgstr "Mở liên kết trong thẻ ngầm"
 
 #: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
 msgid "Open link in new private window"
-msgstr ""
+msgstr "Mở liên kết trong thẻ riêng tư"
 
 #: src/app/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
-msgstr ""
+msgstr "Mở liên kết trong thẻ mới"
 
 #: src/app/actions/OpenLinkInNewWindow.qml:22
 msgid "Open link in new window"
-msgstr ""
+msgstr "Mở liên kết trong cửa sổ mới"
 
 #: src/app/actions/OpenVideoInNewTab.qml:22
 msgid "Open video in new tab"
-msgstr ""
+msgstr "Mở video trong thẻ mới"
 
 #: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:429
 msgid "Paste"
-msgstr ""
+msgstr "Dán"
 
 #: src/app/actions/Redo.qml:22
 msgid "Redo"
@@ -186,29 +187,29 @@ msgstr "Tải lại"
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Reload.qml:26
 msgid "Leave Page"
-msgstr ""
+msgstr "Thoát trang"
 
 #: src/app/actions/SaveImage.qml:22
 msgid "Save image"
-msgstr ""
+msgstr "Lưu ảnh"
 
 #: src/app/actions/SaveLink.qml:22
 msgid "Save link"
-msgstr ""
+msgstr "Lưu liên kết"
 
 #: src/app/actions/SaveVideo.qml:22
 msgid "Save video"
-msgstr ""
+msgstr "Lưu video"
 
 #: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
 #: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
 #: src/app/DownloadsPage.qml:85
 msgid "Select all"
-msgstr ""
+msgstr "Chọn tất cả"
 
 #: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:811
 msgid "Share"
-msgstr ""
+msgstr "Chia sẻ"
 
 #: src/app/actions/Undo.qml:22
 msgid "Undo"
@@ -216,7 +217,7 @@ msgstr "Hoàn tác"
 
 #: src/app/AlertDialog.qml:24
 msgid "JavaScript Alert"
-msgstr ""
+msgstr "Cảnh báo JavaScript"
 
 #: src/app/AlertDialog.qml:31 src/app/AuthenticationDialog.qml:47
 #: src/app/ColorSelectDialog.qml:73 src/app/ConfirmDialog.qml:33
@@ -228,21 +229,21 @@ msgstr "Chấp nhận"
 
 #: src/app/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
-msgstr ""
+msgstr "Giao thức URL tùy chỉnh"
 
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "Website '%1' muốn mở URL này bên ngoài trình duyệt:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "Mở URL với ứng dụng hệ thống nếu có thể?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
-msgstr ""
+msgstr "Ghi nhớ quyết định"
 
 #: src/app/AllowCustomSchemesDialog.qml:50
 #: src/app/GeolocationPermissionRequest.qml:51
@@ -270,7 +271,7 @@ msgstr "Huỷ bỏ"
 #: src/app/AllowOrBlockDomainDialog.qml:25
 #: src/app/AllowOrBlockDomainDialog.qml:41
 msgid "Block domain"
-msgstr ""
+msgstr "Chặn tên miền"
 
 #: src/app/AllowOrBlockDomainDialog.qml:30
 #, qt-format
@@ -279,6 +280,9 @@ msgid ""
 "Would you like to continue to block the domain, allow browsing to the "
 "domain, or go back?"
 msgstr ""
+"Bạn đang cố gắng truy cập %1 nhưng nó không ở trong tên miền được cho phép. "
+"Bạn có muốn tiếp tục chặn tên miền này, cho phép truy cập vào tên miền hoặc "
+"quay lại?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:31
 #, qt-format
@@ -287,6 +291,9 @@ msgid ""
 "Would you like to continue to block the domain, allow loading data from the "
 "domain, or just ignore this request ?"
 msgstr ""
+"%1 đang cố gắng truy cập %2 nhưng nó không ở trong tên miền được cho phép. "
+"Bạn có muốn tiếp tục chặn tên miền này, cho phép tải dữ liệu từ tên miền "
+"này, hay chỉ bỏ qua yêu cầu này?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"

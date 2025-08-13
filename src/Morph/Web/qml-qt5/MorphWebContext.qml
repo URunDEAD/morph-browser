@@ -59,37 +59,6 @@ WebEngineProfile {
     ]
 
     property QtObject __ua: UserAgent02 {
-        onScreenSizeChanged: reloadOverrides()
-        Component.onCompleted: reloadOverrides()
-
-        property string _target: ""
-
-        function reloadOverrides() {
-            if (screenSize === "unknown") {
-                return
-            }
-            var target = screenSize === "small" ? "mobile" : "desktop"
-            if (target == _target) return
-            _target = target
-            var script = "ua-overrides-%1.js".arg(target)
-            var temp = null
-            try {
-                temp = Qt.createQmlObject('import QtQml 2.0; import "%1" as Overrides; QtObject { readonly property var overrides: Overrides.overrides }'.arg(script), oxideContext)
-            } catch (e) {
-                console.error("No overrides found for", target)
-            }
-            if (temp !== null) {
-                console.log("Loaded %1 UA override(s) from %2".arg(temp.overrides.length).arg(Qt.resolvedUrl(script)))
-                var chromiumVersion = __ua._chromiumVersion
-                var overrides = []
-                for (var o in temp.overrides) {
-                    var override = temp.overrides[o]
-                    overrides.push([override[0], override[1].replace(/\$\{CHROMIUM_VERSION\}/g, chromiumVersion)])
-                }
-                userAgentOverrides = overrides
-                temp.destroy()
-            }
-        }
     }
 
     /*

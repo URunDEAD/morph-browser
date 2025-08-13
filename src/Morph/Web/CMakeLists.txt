@@ -13,14 +13,6 @@ target_link_libraries(${PLUGIN}
     Qt::Qml
 )
 
-file(GLOB UA_OVERRIDES_IN RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ua-overrides-*.js.in)
-foreach(_file ${UA_OVERRIDES_IN})
-  string(REGEX REPLACE "\\.in$" "" OUTFILE ${_file})
-  configure_file(${_file} ${CMAKE_CURRENT_BINARY_DIR}/${OUTFILE} @ONLY)
-  install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${OUTFILE}
-          DESTINATION ${MORPH_WEB_IMPORTS_DIR})
-endforeach(_file)
-
 install(TARGETS ${PLUGIN} DESTINATION ${MORPH_WEB_IMPORTS_DIR})
 install(DIRECTORY qml-qt${QT_VERSION_MAJOR}/ DESTINATION ${MORPH_WEB_IMPORTS_DIR})
 

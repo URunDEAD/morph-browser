@@ -4,6 +4,7 @@ src/app/actions/Back.qml
 src/app/actions/BookmarkLink.qml
 src/app/actions/Bookmark.qml
 src/app/actions/ClearHistory.qml
+src/app/actions/CopyImageLink.qml
 src/app/actions/CopyImage.qml
 src/app/actions/CopyLink.qml
 src/app/actions/Copy.qml
@@ -47,6 +48,7 @@ src/app/ChromeController.qml
 src/app/ChromeStateTracker.qml
 src/app/ColorSelectDialog.qml
 src/app/ConfirmDialog.qml
+src/app/ContentExportDialog.qml
 src/app/ContentHandler.qml
 src/app/ContentPickerDialog.qml
 src/app/ContentShareDialog.qml
@@ -132,6 +134,8 @@ src/app/webbrowser/NewPrivateTabView.qml
 src/app/webbrowser/NewTabView.qml
 src/app/webbrowser/NewTabViewWide.qml
 src/app/webbrowser/PreviewManager.qml
+src/app/webbrowser/readability.js
+src/app/webbrowser/readability-readerable.js
 src/app/webbrowser/reparenter.cpp
 src/app/webbrowser/SadTab.qml
 src/app/webbrowser/searchengine.cpp

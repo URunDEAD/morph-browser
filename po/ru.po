@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-19 16:45+0100\n"
+"POT-Creation-Date: 2025-08-14 17:32+0000\n"
 "PO-Revision-Date: 2023-10-17 05:51+0000\n"
 "Last-Translator: Serhii Horichenko <m@sgg.im>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/lomiri/morph-"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "Morph Browser"
 msgstr "Интернет Браузер"
 
-#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:110
+#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:111
 #: src/app/webcontainer/webapp-container.qml:78
 msgid "Morph Web Browser"
 msgstr "Morph веб-браузер"
@@ -80,6 +80,12 @@ msgstr "Очистить историю"
 msgid "Clear Navigation History"
 msgstr "Удалить историю просмотров"
 
+#: src/app/actions/CopyImageLink.qml:22
+#, fuzzy
+#| msgid "Copy image"
+msgid "Copy image link"
+msgstr "Копировать изображение"
+
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
 msgstr "Копировать изображение"
@@ -100,7 +106,7 @@ msgstr "Вырезать"
 msgid "Erase"
 msgstr "Удалить"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:831
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:843
 msgid "Find in page"
 msgstr "Найти на странице"
 
@@ -130,7 +136,7 @@ msgstr "Перейти к"
 msgid "Address;URL;www"
 msgstr "Адрес;URL;www;ссылка"
 
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:691
+#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:703
 #: src/app/webbrowser/TabsBar.qml:88
 msgid "New Tab"
 msgstr "Новая вкладка"
@@ -206,7 +212,7 @@ msgstr "Сохранить видео"
 msgid "Select all"
 msgstr "Выбрать все"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:811
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:823
 msgid "Share"
 msgstr "Поделиться"
 
@@ -355,6 +361,34 @@ msgstr "Выделить цветом"
 msgid "JavaScript Confirmation"
 msgstr "Подтверждение действий JavaScript"
 
+#: src/app/ContentExportDialog.qml:79
+#, fuzzy
+#| msgid "Open tabs"
+msgid "Open with"
+msgstr "Открытые вкладки"
+
+#: src/app/ContentExportDialog.qml:80
+#, qt-format
+msgid "File name: %1"
+msgstr ""
+
+#: src/app/ContentExportDialog.qml:91
+#: src/app/webcontainer/AccountErrorScreen.qml:50
+msgid "Close"
+msgstr "Закрыть"
+
+#: src/app/ContentExportDialog.qml:100
+#, fuzzy
+#| msgid "Open link in default browser"
+msgid "Open link in browser"
+msgstr "Открыть ссылку в браузере по-умолчанию"
+
+#: src/app/ContentExportDialog.qml:109
+#, fuzzy
+#| msgid "Open link in default browser"
+msgid "Open file in browser"
+msgstr "Открыть ссылку в браузере по-умолчанию"
+
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
 msgstr "Пользовательские агенты"
@@ -377,6 +411,7 @@ msgid "No custom user agents available"
 msgstr "Нет доступных пользовательских агентов"
 
 #: src/app/DomainPermissionsPage.qml:54
+#: src/app/webcontainer/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
 msgstr "Чёрный/белый список доменов"
 
@@ -406,6 +441,7 @@ msgid "No sites have been granted special permissions"
 msgstr "Ни один сайт не получил специальных полномочий"
 
 #: src/app/DomainSettingsPage.qml:52
+#: src/app/webcontainer/WebappSettingsPage.qml:236
 msgid "Domain specific settings"
 msgstr "Специальные настройки для домена"
 
@@ -506,7 +542,7 @@ msgstr "Очистить"
 msgid "View All"
 msgstr "Просмотреть все"
 
-#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:838
+#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:850
 #: src/app/webcontainer/WebappSettingsPage.qml:137
 msgid "Downloads"
 msgstr "Загрузки"
@@ -794,28 +830,28 @@ msgstr "Домашняя страница"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:819 src/app/webbrowser/NewTabView.qml:130
+#: src/app/webbrowser/Browser.qml:831 src/app/webbrowser/NewTabView.qml:130
 #: src/app/webbrowser/NewTabViewWide.qml:139
 msgid "Bookmarks"
 msgstr "Закладки"
 
-#: src/app/webbrowser/Browser.qml:230
+#: src/app/webbrowser/Browser.qml:242
 #: src/app/webcontainer/WebViewImplOxide.qml:302
 msgid "Blocked domain"
 msgstr "Заблокированный домен"
 
-#: src/app/webbrowser/Browser.qml:231
+#: src/app/webbrowser/Browser.qml:243
 #: src/app/webcontainer/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr "Заблокирован запрос к домену %1."
 
-#: src/app/webbrowser/Browser.qml:257
+#: src/app/webbrowser/Browser.qml:269
 #: src/app/webcontainer/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
 msgstr "Домен из списка разрешенных адресов"
 
-#: src/app/webbrowser/Browser.qml:258
+#: src/app/webbrowser/Browser.qml:270
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
@@ -823,54 +859,54 @@ msgstr ""
 "домен %1 теперь находится в списке разрешённых адресов, он станет доступным "
 "при перезагрузке страницы."
 
-#: src/app/webbrowser/Browser.qml:648
+#: src/app/webbrowser/Browser.qml:660
 msgid "Done"
 msgstr "Сделано"
 
-#: src/app/webbrowser/Browser.qml:673
+#: src/app/webbrowser/Browser.qml:685
 msgid "Reopen Tab"
 msgstr "Открыть вкладку заново"
 
-#: src/app/webbrowser/Browser.qml:799
+#: src/app/webbrowser/Browser.qml:811
 msgid "New window"
 msgstr "Новое окно"
 
-#: src/app/webbrowser/Browser.qml:805
+#: src/app/webbrowser/Browser.qml:817
 msgid "New private window"
 msgstr "Новое приватное окно"
 
-#: src/app/webbrowser/Browser.qml:825 src/app/webbrowser/HistoryView.qml:31
+#: src/app/webbrowser/Browser.qml:837 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
 msgstr "История"
 
-#: src/app/webbrowser/Browser.qml:845 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/Browser.qml:857 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
 msgstr "Настройки"
 
-#: src/app/webbrowser/Browser.qml:851
+#: src/app/webbrowser/Browser.qml:863
 msgid "View source"
 msgstr "Просмотр кода страницы"
 
-#: src/app/webbrowser/Browser.qml:864
+#: src/app/webbrowser/Browser.qml:876
 msgid "Save / Print to PDF"
 msgstr "Сохранить / Распечатать в PDF"
 
-#: src/app/webbrowser/Browser.qml:885 src/app/WebViewImpl.qml:690
+#: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
 msgid "Zoom"
 msgstr "Увеличить"
 
-#: src/app/webbrowser/Browser.qml:892 src/app/webbrowser/SettingsPage.qml:140
+#: src/app/webbrowser/Browser.qml:904 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
 msgstr "Включить режим \"десктоп\""
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1092 src/app/webbrowser/Browser.qml:1130
+#: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1970
+#: src/app/webbrowser/Browser.qml:1985
 msgid "the file is already in the downloads folder."
 msgstr "файл уже находится в папке загрузок."
 
@@ -898,7 +934,7 @@ msgid "Last Visited"
 msgstr "Последние посещённые"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:48
-#: src/app/webbrowser/HistoryViewWide.qml:252
+#: src/app/webbrowser/HistoryViewWide.qml:258
 msgid "Yesterday"
 msgstr "Вчера"
 
@@ -906,17 +942,17 @@ msgstr "Вчера"
 msgid "search history"
 msgstr "история поиска"
 
-#: src/app/webbrowser/HistoryViewWide.qml:236
+#: src/app/webbrowser/HistoryViewWide.qml:242
 msgid "All History"
 msgstr "За всё время"
 
-#: src/app/webbrowser/HistoryViewWide.qml:250
-#: src/app/webbrowser/HistoryViewWide.qml:337
+#: src/app/webbrowser/HistoryViewWide.qml:256
+#: src/app/webbrowser/HistoryViewWide.qml:343
 msgid "Today"
 msgstr "Сегодня"
 
 #. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:108
+#: src/app/webbrowser/morph-browser.qml:109
 #: src/app/webcontainer/webapp-container.qml:76
 #, qt-format
 msgid "%1 - Morph Web Browser"
@@ -1094,11 +1130,11 @@ msgstr "Микрофон"
 msgid "Camera"
 msgstr "Камера"
 
-#: src/app/webbrowser/TabComponent.qml:282
+#: src/app/webbrowser/TabComponent.qml:285
 msgid "Swipe Up To Exit Full Screen"
 msgstr "Смахните вверх для выхода из полноэкранного режима"
 
-#: src/app/webbrowser/TabComponent.qml:283
+#: src/app/webbrowser/TabComponent.qml:286
 msgid "Press ESC To Exit Full Screen"
 msgstr "Нажмите ESC для выхода из полноэкранного режима"
 
@@ -1141,10 +1177,6 @@ msgstr "Не использовать учётную запись"
 #: src/app/webcontainer/AccountErrorScreen.qml:39
 msgid "Account error"
 msgstr "Ошибка учётной записи"
-
-#: src/app/webcontainer/AccountErrorScreen.qml:50
-msgid "Close"
-msgstr "Закрыть"
 
 #: src/app/webcontainer/AccountsLogic.qml:63
 msgid ""
@@ -1463,9 +1495,6 @@ msgstr "Сохранить по умолчанию"
 
 #~ msgid "Add"
 #~ msgstr "Добавить"
-
-#~ msgid "Open tabs"
-#~ msgstr "Открытые вкладки"
 
 #~ msgid "Allow opening new tabs in background"
 #~ msgstr "Открывать новые вкладки в фоне"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-19 16:45+0100\n"
+"POT-Creation-Date: 2025-08-14 17:32+0000\n"
 "PO-Revision-Date: 2023-12-26 12:02+0000\n"
 "Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/lomiri/morph-"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Morph Browser"
 msgstr "Morph webbläsare"
 
-#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:110
+#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:111
 #: src/app/webcontainer/webapp-container.qml:78
 msgid "Morph Web Browser"
 msgstr "Morph Webbläsare"
@@ -79,6 +79,12 @@ msgstr "Rensa historik"
 msgid "Clear Navigation History"
 msgstr "Rensa navigeringshistorik"
 
+#: src/app/actions/CopyImageLink.qml:22
+#, fuzzy
+#| msgid "Copy image"
+msgid "Copy image link"
+msgstr "Kopiera bild"
+
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
 msgstr "Kopiera bild"
@@ -99,7 +105,7 @@ msgstr "Klipp ut"
 msgid "Erase"
 msgstr "Radera"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:831
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:843
 msgid "Find in page"
 msgstr "Hitta på sida"
 
@@ -129,7 +135,7 @@ msgstr "Gå till"
 msgid "Address;URL;www"
 msgstr "Adress;URL;www"
 
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:691
+#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:703
 #: src/app/webbrowser/TabsBar.qml:88
 msgid "New Tab"
 msgstr "Ny flik"
@@ -205,7 +211,7 @@ msgstr "Spara video"
 msgid "Select all"
 msgstr "Välj alla"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:811
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:823
 msgid "Share"
 msgstr "Dela"
 
@@ -354,6 +360,34 @@ msgstr "Välj färg"
 msgid "JavaScript Confirmation"
 msgstr "JavaScript-bekräftelse"
 
+#: src/app/ContentExportDialog.qml:79
+#, fuzzy
+#| msgid "Open tabs"
+msgid "Open with"
+msgstr "Öppna flikar"
+
+#: src/app/ContentExportDialog.qml:80
+#, qt-format
+msgid "File name: %1"
+msgstr ""
+
+#: src/app/ContentExportDialog.qml:91
+#: src/app/webcontainer/AccountErrorScreen.qml:50
+msgid "Close"
+msgstr "Stäng"
+
+#: src/app/ContentExportDialog.qml:100
+#, fuzzy
+#| msgid "Open link in default browser"
+msgid "Open link in browser"
+msgstr "Öppna länken i standardwebbläsaren"
+
+#: src/app/ContentExportDialog.qml:109
+#, fuzzy
+#| msgid "Open link in default browser"
+msgid "Open file in browser"
+msgstr "Öppna länken i standardwebbläsaren"
+
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
 msgstr "Anpassade användaragenter"
@@ -376,6 +410,7 @@ msgid "No custom user agents available"
 msgstr "Inga anpassade användaragenter tillgängliga"
 
 #: src/app/DomainPermissionsPage.qml:54
+#: src/app/webcontainer/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
 msgstr "Domän svartlista/vitlista"
 
@@ -406,6 +441,7 @@ msgid "No sites have been granted special permissions"
 msgstr "Inga webbplatser har beviljats särskilda behörigheter"
 
 #: src/app/DomainSettingsPage.qml:52
+#: src/app/webcontainer/WebappSettingsPage.qml:236
 msgid "Domain specific settings"
 msgstr "Domänspecifika inställningar"
 
@@ -506,7 +542,7 @@ msgstr "Rensa"
 msgid "View All"
 msgstr "Visa alla"
 
-#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:838
+#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:850
 #: src/app/webcontainer/WebappSettingsPage.qml:137
 msgid "Downloads"
 msgstr "Nerladdningar"
@@ -794,28 +830,28 @@ msgstr "Hemsida"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:819 src/app/webbrowser/NewTabView.qml:130
+#: src/app/webbrowser/Browser.qml:831 src/app/webbrowser/NewTabView.qml:130
 #: src/app/webbrowser/NewTabViewWide.qml:139
 msgid "Bookmarks"
 msgstr "Bokmärken"
 
-#: src/app/webbrowser/Browser.qml:230
+#: src/app/webbrowser/Browser.qml:242
 #: src/app/webcontainer/WebViewImplOxide.qml:302
 msgid "Blocked domain"
 msgstr "Blockerad domän"
 
-#: src/app/webbrowser/Browser.qml:231
+#: src/app/webbrowser/Browser.qml:243
 #: src/app/webcontainer/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr "Blockerad navigationsbegäran till domän %1."
 
-#: src/app/webbrowser/Browser.qml:257
+#: src/app/webbrowser/Browser.qml:269
 #: src/app/webcontainer/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
 msgstr "Vitlistad domän"
 
-#: src/app/webbrowser/Browser.qml:258
+#: src/app/webbrowser/Browser.qml:270
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
@@ -823,54 +859,54 @@ msgstr ""
 "domän %1 är nu vitlistad, den kommer att vara aktiv vid nästa omladdning av "
 "sida."
 
-#: src/app/webbrowser/Browser.qml:648
+#: src/app/webbrowser/Browser.qml:660
 msgid "Done"
 msgstr "Klart"
 
-#: src/app/webbrowser/Browser.qml:673
+#: src/app/webbrowser/Browser.qml:685
 msgid "Reopen Tab"
 msgstr "Öppna flik igen"
 
-#: src/app/webbrowser/Browser.qml:799
+#: src/app/webbrowser/Browser.qml:811
 msgid "New window"
 msgstr "Nytt fönster"
 
-#: src/app/webbrowser/Browser.qml:805
+#: src/app/webbrowser/Browser.qml:817
 msgid "New private window"
 msgstr "Nytt privat fönster"
 
-#: src/app/webbrowser/Browser.qml:825 src/app/webbrowser/HistoryView.qml:31
+#: src/app/webbrowser/Browser.qml:837 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
 msgstr "Historik"
 
-#: src/app/webbrowser/Browser.qml:845 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/Browser.qml:857 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
 msgstr "Inställningar"
 
-#: src/app/webbrowser/Browser.qml:851
+#: src/app/webbrowser/Browser.qml:863
 msgid "View source"
 msgstr "Visa källkod"
 
-#: src/app/webbrowser/Browser.qml:864
+#: src/app/webbrowser/Browser.qml:876
 msgid "Save / Print to PDF"
 msgstr "Spara / Skriv ut till PDF"
 
-#: src/app/webbrowser/Browser.qml:885 src/app/WebViewImpl.qml:690
+#: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
 msgid "Zoom"
 msgstr "Zooma"
 
-#: src/app/webbrowser/Browser.qml:892 src/app/webbrowser/SettingsPage.qml:140
+#: src/app/webbrowser/Browser.qml:904 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
 msgstr "Ställ in skrivbordsläge"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1092 src/app/webbrowser/Browser.qml:1130
+#: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1970
+#: src/app/webbrowser/Browser.qml:1985
 msgid "the file is already in the downloads folder."
 msgstr "filen finns redan i hämtningsmappen."
 
@@ -896,7 +932,7 @@ msgid "Last Visited"
 msgstr "Senast besökt"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:48
-#: src/app/webbrowser/HistoryViewWide.qml:252
+#: src/app/webbrowser/HistoryViewWide.qml:258
 msgid "Yesterday"
 msgstr "Igår"
 
@@ -904,17 +940,17 @@ msgstr "Igår"
 msgid "search history"
 msgstr "sökhistorik"
 
-#: src/app/webbrowser/HistoryViewWide.qml:236
+#: src/app/webbrowser/HistoryViewWide.qml:242
 msgid "All History"
 msgstr "All historik"
 
-#: src/app/webbrowser/HistoryViewWide.qml:250
-#: src/app/webbrowser/HistoryViewWide.qml:337
+#: src/app/webbrowser/HistoryViewWide.qml:256
+#: src/app/webbrowser/HistoryViewWide.qml:343
 msgid "Today"
 msgstr "Idag"
 
 #. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:108
+#: src/app/webbrowser/morph-browser.qml:109
 #: src/app/webcontainer/webapp-container.qml:76
 #, qt-format
 msgid "%1 - Morph Web Browser"
@@ -1092,11 +1128,11 @@ msgstr "Mikrofon"
 msgid "Camera"
 msgstr "Kamera"
 
-#: src/app/webbrowser/TabComponent.qml:282
+#: src/app/webbrowser/TabComponent.qml:285
 msgid "Swipe Up To Exit Full Screen"
 msgstr "Svep uppåt för att lämna helskärm"
 
-#: src/app/webbrowser/TabComponent.qml:283
+#: src/app/webbrowser/TabComponent.qml:286
 msgid "Press ESC To Exit Full Screen"
 msgstr "Tryck Esc för att lämna helskärm"
 
@@ -1139,10 +1175,6 @@ msgstr "Använd inte ett konto"
 #: src/app/webcontainer/AccountErrorScreen.qml:39
 msgid "Account error"
 msgstr "Kontofel"
-
-#: src/app/webcontainer/AccountErrorScreen.qml:50
-msgid "Close"
-msgstr "Stäng"
 
 #: src/app/webcontainer/AccountsLogic.qml:63
 msgid ""
@@ -1413,9 +1445,6 @@ msgstr "Spara som standard"
 
 #~ msgid "Share…"
 #~ msgstr "Dela…"
-
-#~ msgid "Open tabs"
-#~ msgstr "Öppna flikar"
 
 #~ msgid "Add"
 #~ msgstr "Lägg till"

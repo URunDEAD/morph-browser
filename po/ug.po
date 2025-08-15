@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-19 16:45+0100\n"
+"POT-Creation-Date: 2025-08-14 17:32+0000\n"
 "PO-Revision-Date: 2015-10-21 13:32+0000\n"
 "Last-Translator: Eltikin <eltikinuyghur@hotmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Morph Browser"
 msgstr "توركۆرگۈ"
 
-#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:110
+#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:111
 #: src/app/webcontainer/webapp-container.qml:78
 #, fuzzy
 msgid "Morph Web Browser"
@@ -81,6 +81,12 @@ msgstr "ئىزنى تازىلا"
 msgid "Clear Navigation History"
 msgstr "بارلىق ئىزلارنى تازىلايدۇ"
 
+#: src/app/actions/CopyImageLink.qml:22
+#, fuzzy
+#| msgid "Copy image"
+msgid "Copy image link"
+msgstr "سۈرەت كۆچۈر"
+
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
 msgstr "سۈرەت كۆچۈر"
@@ -101,7 +107,7 @@ msgstr "كەس"
 msgid "Erase"
 msgstr "ئۆچۈر"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:831
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:843
 msgid "Find in page"
 msgstr ""
 
@@ -131,7 +137,7 @@ msgstr "يۆتكەل"
 msgid "Address;URL;www"
 msgstr "ئادرېس;URL;www"
 
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:691
+#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:703
 #: src/app/webbrowser/TabsBar.qml:88
 msgid "New Tab"
 msgstr "يېڭى بەتكۈچ"
@@ -208,7 +214,7 @@ msgstr ""
 msgid "Select all"
 msgstr "ھەممىنى تاللا"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:811
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:823
 msgid "Share"
 msgstr "ھەمبەھىر"
 
@@ -352,6 +358,32 @@ msgstr "ھەممىنى تاللا"
 msgid "JavaScript Confirmation"
 msgstr "JavaScript نى جەزملە"
 
+#: src/app/ContentExportDialog.qml:79
+#, fuzzy
+#| msgid "Open tabs"
+msgid "Open with"
+msgstr "بەتكۈچلەرنى ئاچ"
+
+#: src/app/ContentExportDialog.qml:80
+#, qt-format
+msgid "File name: %1"
+msgstr ""
+
+#: src/app/ContentExportDialog.qml:91
+#: src/app/webcontainer/AccountErrorScreen.qml:50
+msgid "Close"
+msgstr "ياپ"
+
+#: src/app/ContentExportDialog.qml:100
+#, fuzzy
+#| msgid "Open link in new tab"
+msgid "Open link in browser"
+msgstr "ئۇلانمىنى يېڭى بەتكۈچتە ئاچ"
+
+#: src/app/ContentExportDialog.qml:109
+msgid "Open file in browser"
+msgstr ""
+
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
 msgstr ""
@@ -375,6 +407,7 @@ msgid "No custom user agents available"
 msgstr "ئىشلىتشكە بۇلىدىغان چۈشۈرۈلمىلەر يوق"
 
 #: src/app/DomainPermissionsPage.qml:54
+#: src/app/webcontainer/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
 msgstr ""
 
@@ -404,6 +437,7 @@ msgid "No sites have been granted special permissions"
 msgstr ""
 
 #: src/app/DomainSettingsPage.qml:52
+#: src/app/webcontainer/WebappSettingsPage.qml:236
 msgid "Domain specific settings"
 msgstr ""
 
@@ -518,7 +552,7 @@ msgstr "تازىلا"
 msgid "View All"
 msgstr ""
 
-#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:838
+#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:850
 #: src/app/webcontainer/WebappSettingsPage.qml:137
 msgid "Downloads"
 msgstr "چۈشۈرۈلمىلەر"
@@ -807,83 +841,83 @@ msgstr "باش بەت"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:819 src/app/webbrowser/NewTabView.qml:130
+#: src/app/webbrowser/Browser.qml:831 src/app/webbrowser/NewTabView.qml:130
 #: src/app/webbrowser/NewTabViewWide.qml:139
 msgid "Bookmarks"
 msgstr "خەتكۈچلەر"
 
-#: src/app/webbrowser/Browser.qml:230
+#: src/app/webbrowser/Browser.qml:242
 #: src/app/webcontainer/WebViewImplOxide.qml:302
 msgid "Blocked domain"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:231
+#: src/app/webbrowser/Browser.qml:243
 #: src/app/webcontainer/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:257
+#: src/app/webbrowser/Browser.qml:269
 #: src/app/webcontainer/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:258
+#: src/app/webbrowser/Browser.qml:270
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:648
+#: src/app/webbrowser/Browser.qml:660
 msgid "Done"
 msgstr "تامام"
 
-#: src/app/webbrowser/Browser.qml:673
+#: src/app/webbrowser/Browser.qml:685
 #, fuzzy
 #| msgid "Close Tab"
 msgid "Reopen Tab"
 msgstr "بەتكۈچ ياپ"
 
-#: src/app/webbrowser/Browser.qml:799
+#: src/app/webbrowser/Browser.qml:811
 msgid "New window"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:805
+#: src/app/webbrowser/Browser.qml:817
 msgid "New private window"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:825 src/app/webbrowser/HistoryView.qml:31
+#: src/app/webbrowser/Browser.qml:837 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
 msgstr "ئىز"
 
-#: src/app/webbrowser/Browser.qml:845 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/Browser.qml:857 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
 msgstr "تەڭشەكلەر"
 
-#: src/app/webbrowser/Browser.qml:851
+#: src/app/webbrowser/Browser.qml:863
 msgid "View source"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:864
+#: src/app/webbrowser/Browser.qml:876
 msgid "Save / Print to PDF"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:885 src/app/WebViewImpl.qml:690
+#: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
 msgid "Zoom"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:892 src/app/webbrowser/SettingsPage.qml:140
+#: src/app/webbrowser/Browser.qml:904 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
 msgstr ""
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1092 src/app/webbrowser/Browser.qml:1130
+#: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1970
+#: src/app/webbrowser/Browser.qml:1985
 msgid "the file is already in the downloads folder."
 msgstr ""
 
@@ -907,7 +941,7 @@ msgid "Last Visited"
 msgstr "ئەڭ ئاخىرقى قېتىم زىيارەت قىلغىنى"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:48
-#: src/app/webbrowser/HistoryViewWide.qml:252
+#: src/app/webbrowser/HistoryViewWide.qml:258
 msgid "Yesterday"
 msgstr "تۈنۈگۈن"
 
@@ -915,17 +949,17 @@ msgstr "تۈنۈگۈن"
 msgid "search history"
 msgstr "ئىزدەش تاىخى"
 
-#: src/app/webbrowser/HistoryViewWide.qml:236
+#: src/app/webbrowser/HistoryViewWide.qml:242
 msgid "All History"
 msgstr "تارىخ خاتىرىسى"
 
-#: src/app/webbrowser/HistoryViewWide.qml:250
-#: src/app/webbrowser/HistoryViewWide.qml:337
+#: src/app/webbrowser/HistoryViewWide.qml:256
+#: src/app/webbrowser/HistoryViewWide.qml:343
 msgid "Today"
 msgstr "بۈگۈن"
 
 #. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:108
+#: src/app/webbrowser/morph-browser.qml:109
 #: src/app/webcontainer/webapp-container.qml:76
 #, fuzzy, qt-format
 msgid "%1 - Morph Web Browser"
@@ -1116,11 +1150,11 @@ msgstr ""
 msgid "Camera"
 msgstr ""
 
-#: src/app/webbrowser/TabComponent.qml:282
+#: src/app/webbrowser/TabComponent.qml:285
 msgid "Swipe Up To Exit Full Screen"
 msgstr "Up بېسىپ تۇلۇق ئىكىران قىلىش"
 
-#: src/app/webbrowser/TabComponent.qml:283
+#: src/app/webbrowser/TabComponent.qml:286
 msgid "Press ESC To Exit Full Screen"
 msgstr "ESC بېسىپ تۇلۇق ئىكىراندىن چېكىنىش"
 
@@ -1161,10 +1195,6 @@ msgstr ""
 #: src/app/webcontainer/AccountErrorScreen.qml:39
 msgid "Account error"
 msgstr "ھېساباتىڭىزدا خاتالىق بار"
-
-#: src/app/webcontainer/AccountErrorScreen.qml:50
-msgid "Close"
-msgstr "ياپ"
 
 #: src/app/webcontainer/AccountsLogic.qml:63
 msgid ""
@@ -1420,9 +1450,6 @@ msgstr ""
 
 #~ msgid "Add"
 #~ msgstr "قوش"
-
-#~ msgid "Open tabs"
-#~ msgstr "بەتكۈچلەرنى ئاچ"
 
 #~ msgid "Delete all history?"
 #~ msgstr "بارلىق ئىزنى ئۆچۈرسۇنمۇ؟"

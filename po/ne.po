@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-19 16:45+0100\n"
+"POT-Creation-Date: 2025-08-14 17:32+0000\n"
 "PO-Revision-Date: 2023-01-04 19:47+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Nepali <https://hosted.weblate.org/projects/lomiri/morph-"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "Morph Browser"
 msgstr "ब्राउजर"
 
-#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:110
+#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:111
 #: src/app/webcontainer/webapp-container.qml:78
 #, fuzzy
 msgid "Morph Web Browser"
@@ -82,6 +82,12 @@ msgstr "इतिहास खाली गर्नुहोस्"
 msgid "Clear Navigation History"
 msgstr "नेभिगेसन इतिहास हटाउनुहोस्"
 
+#: src/app/actions/CopyImageLink.qml:22
+#, fuzzy
+#| msgid "Copy image"
+msgid "Copy image link"
+msgstr "तस्वित प्रतिलिपी गर्नुहोस्"
+
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
 msgstr "तस्वित प्रतिलिपी गर्नुहोस्"
@@ -103,7 +109,7 @@ msgstr "काट्नुहोस्"
 msgid "Erase"
 msgstr "मेटनुहोस्"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:831
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:843
 msgid "Find in page"
 msgstr "पानामा खोज्नुहोस्"
 
@@ -133,7 +139,7 @@ msgstr "जानुहोस्"
 msgid "Address;URL;www"
 msgstr "ठेगाना; URL;www"
 
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:691
+#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:703
 #: src/app/webbrowser/TabsBar.qml:88
 msgid "New Tab"
 msgstr "नयाँ ट्याब"
@@ -210,7 +216,7 @@ msgstr "भिडियो संग्र्ह गर्नुहोस"
 msgid "Select all"
 msgstr "सबै चयन गर्नुहोस्"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:811
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:823
 msgid "Share"
 msgstr "सेयर गर्नुहोस्"
 
@@ -354,6 +360,34 @@ msgstr "सबै चयन गर्नुहोस्"
 msgid "JavaScript Confirmation"
 msgstr "जाबास्क्रिप्ट निश्चित"
 
+#: src/app/ContentExportDialog.qml:79
+#, fuzzy
+#| msgid "Open tabs"
+msgid "Open with"
+msgstr "खुल्ला ट्याबहरू"
+
+#: src/app/ContentExportDialog.qml:80
+#, qt-format
+msgid "File name: %1"
+msgstr ""
+
+#: src/app/ContentExportDialog.qml:91
+#: src/app/webcontainer/AccountErrorScreen.qml:50
+msgid "Close"
+msgstr "बन्दगर्नुहोस्"
+
+#: src/app/ContentExportDialog.qml:100
+#, fuzzy
+#| msgid "Open link in default browser"
+msgid "Open link in browser"
+msgstr "पूर्व निर्धारित ब्राउजरमा लिङ्क खोल्नुहोस्"
+
+#: src/app/ContentExportDialog.qml:109
+#, fuzzy
+#| msgid "Open link in default browser"
+msgid "Open file in browser"
+msgstr "पूर्व निर्धारित ब्राउजरमा लिङ्क खोल्नुहोस्"
+
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
 msgstr ""
@@ -378,6 +412,7 @@ msgid "No custom user agents available"
 msgstr "डाउनलोड उपलब्ध छैन"
 
 #: src/app/DomainPermissionsPage.qml:54
+#: src/app/webcontainer/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
 msgstr ""
 
@@ -407,6 +442,7 @@ msgid "No sites have been granted special permissions"
 msgstr ""
 
 #: src/app/DomainSettingsPage.qml:52
+#: src/app/webcontainer/WebappSettingsPage.qml:236
 msgid "Domain specific settings"
 msgstr ""
 
@@ -522,7 +558,7 @@ msgstr "खाली गर्नुहोस्"
 msgid "View All"
 msgstr ""
 
-#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:838
+#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:850
 #: src/app/webcontainer/WebappSettingsPage.qml:137
 msgid "Downloads"
 msgstr "डाउनलोडहरू"
@@ -811,83 +847,83 @@ msgstr "गृह पृष्ठ"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:819 src/app/webbrowser/NewTabView.qml:130
+#: src/app/webbrowser/Browser.qml:831 src/app/webbrowser/NewTabView.qml:130
 #: src/app/webbrowser/NewTabViewWide.qml:139
 msgid "Bookmarks"
 msgstr "पुस्तकचिनोहरू"
 
-#: src/app/webbrowser/Browser.qml:230
+#: src/app/webbrowser/Browser.qml:242
 #: src/app/webcontainer/WebViewImplOxide.qml:302
 msgid "Blocked domain"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:231
+#: src/app/webbrowser/Browser.qml:243
 #: src/app/webcontainer/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:257
+#: src/app/webbrowser/Browser.qml:269
 #: src/app/webcontainer/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:258
+#: src/app/webbrowser/Browser.qml:270
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:648
+#: src/app/webbrowser/Browser.qml:660
 msgid "Done"
 msgstr "सम्पन्न भयो"
 
-#: src/app/webbrowser/Browser.qml:673
+#: src/app/webbrowser/Browser.qml:685
 #, fuzzy
 #| msgid "Close Tab"
 msgid "Reopen Tab"
 msgstr "ट्याब बन्द गर्नुहोस्"
 
-#: src/app/webbrowser/Browser.qml:799
+#: src/app/webbrowser/Browser.qml:811
 msgid "New window"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:805
+#: src/app/webbrowser/Browser.qml:817
 msgid "New private window"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:825 src/app/webbrowser/HistoryView.qml:31
+#: src/app/webbrowser/Browser.qml:837 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
 msgstr "इतिहास"
 
-#: src/app/webbrowser/Browser.qml:845 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/Browser.qml:857 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
 msgstr "सेटिङ्"
 
-#: src/app/webbrowser/Browser.qml:851
+#: src/app/webbrowser/Browser.qml:863
 msgid "View source"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:864
+#: src/app/webbrowser/Browser.qml:876
 msgid "Save / Print to PDF"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:885 src/app/WebViewImpl.qml:690
+#: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
 msgid "Zoom"
 msgstr ""
 
-#: src/app/webbrowser/Browser.qml:892 src/app/webbrowser/SettingsPage.qml:140
+#: src/app/webbrowser/Browser.qml:904 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
 msgstr ""
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1092 src/app/webbrowser/Browser.qml:1130
+#: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1970
+#: src/app/webbrowser/Browser.qml:1985
 #, fuzzy
 #| msgid ""
 #| "Choose an application to open this file or add it to the downloads folder."
@@ -917,7 +953,7 @@ msgid "Last Visited"
 msgstr "पछिल्लो पटक भ्रमण गरिएको"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:48
-#: src/app/webbrowser/HistoryViewWide.qml:252
+#: src/app/webbrowser/HistoryViewWide.qml:258
 msgid "Yesterday"
 msgstr "हिजो"
 
@@ -925,17 +961,17 @@ msgstr "हिजो"
 msgid "search history"
 msgstr "खोज इतिहास"
 
-#: src/app/webbrowser/HistoryViewWide.qml:236
+#: src/app/webbrowser/HistoryViewWide.qml:242
 msgid "All History"
 msgstr "सबै इतिहास"
 
-#: src/app/webbrowser/HistoryViewWide.qml:250
-#: src/app/webbrowser/HistoryViewWide.qml:337
+#: src/app/webbrowser/HistoryViewWide.qml:256
+#: src/app/webbrowser/HistoryViewWide.qml:343
 msgid "Today"
 msgstr "आज"
 
 #. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:108
+#: src/app/webbrowser/morph-browser.qml:109
 #: src/app/webcontainer/webapp-container.qml:76
 #, fuzzy, qt-format
 msgid "%1 - Morph Web Browser"
@@ -1131,11 +1167,11 @@ msgstr "माइक्रोफोन"
 msgid "Camera"
 msgstr "क्यामेरा"
 
-#: src/app/webbrowser/TabComponent.qml:282
+#: src/app/webbrowser/TabComponent.qml:285
 msgid "Swipe Up To Exit Full Screen"
 msgstr "पुरा स्क्रिन छोड्न माथि स्वाइप गर्नुहोस्"
 
-#: src/app/webbrowser/TabComponent.qml:283
+#: src/app/webbrowser/TabComponent.qml:286
 msgid "Press ESC To Exit Full Screen"
 msgstr "पुरा स्क्रिन छोड्न ESC थिच्नुहोस्"
 
@@ -1176,10 +1212,6 @@ msgstr "खाता प्रयोग नगर्नुहोस्"
 #: src/app/webcontainer/AccountErrorScreen.qml:39
 msgid "Account error"
 msgstr "खाता त्रुटि"
-
-#: src/app/webcontainer/AccountErrorScreen.qml:50
-msgid "Close"
-msgstr "बन्दगर्नुहोस्"
 
 #: src/app/webcontainer/AccountsLogic.qml:63
 msgid ""
@@ -1430,9 +1462,6 @@ msgstr ""
 
 #~ msgid "Private Mode"
 #~ msgstr "निजी मोड"
-
-#~ msgid "Open tabs"
-#~ msgstr "खुल्ला ट्याबहरू"
 
 #~ msgid ""
 #~ "Ubuntu suggests you check your network settings and try refreshing the "

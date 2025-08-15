@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-19 16:45+0100\n"
+"POT-Creation-Date: 2025-08-14 17:32+0000\n"
 "PO-Revision-Date: 2024-10-12 15:31+0000\n"
 "Last-Translator: ikozyris <ioannis.kozyris@outlook.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/lomiri/morph-"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Morph Browser"
 msgstr "Περιηγητής Morph"
 
-#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:110
+#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:111
 #: src/app/webcontainer/webapp-container.qml:78
 msgid "Morph Web Browser"
 msgstr "Περιηγητής ιστού Morph"
@@ -79,6 +79,12 @@ msgstr "Εκκαθάριση ιστορικού"
 msgid "Clear Navigation History"
 msgstr "Εκκαθάριση ιστορικού περιήγησης"
 
+#: src/app/actions/CopyImageLink.qml:22
+#, fuzzy
+#| msgid "Copy image"
+msgid "Copy image link"
+msgstr "Αντιγραφή εικόνας"
+
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
 msgstr "Αντιγραφή εικόνας"
@@ -99,7 +105,7 @@ msgstr "Αποκοπή"
 msgid "Erase"
 msgstr "Διαγραφή"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:831
+#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:843
 msgid "Find in page"
 msgstr "Εύρεση στη σελίδα"
 
@@ -129,7 +135,7 @@ msgstr "Μετάβαση στο"
 msgid "Address;URL;www"
 msgstr "Διεύθυνση;URL;www"
 
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:691
+#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:703
 #: src/app/webbrowser/TabsBar.qml:88
 msgid "New Tab"
 msgstr "Νέα καρτέλα"
@@ -205,7 +211,7 @@ msgstr "Αποθήκευση βίντεο"
 msgid "Select all"
 msgstr "Επιλογή όλων"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:811
+#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:823
 msgid "Share"
 msgstr "Κοινοποίηση"
 
@@ -357,6 +363,34 @@ msgstr "Επιλογή χρώματος"
 msgid "JavaScript Confirmation"
 msgstr "Επιβεβαίωση JavaScript"
 
+#: src/app/ContentExportDialog.qml:79
+#, fuzzy
+#| msgid "Open tabs"
+msgid "Open with"
+msgstr "Ανοιχτές καρτέλες"
+
+#: src/app/ContentExportDialog.qml:80
+#, qt-format
+msgid "File name: %1"
+msgstr ""
+
+#: src/app/ContentExportDialog.qml:91
+#: src/app/webcontainer/AccountErrorScreen.qml:50
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: src/app/ContentExportDialog.qml:100
+#, fuzzy
+#| msgid "Open link in default browser"
+msgid "Open link in browser"
+msgstr "Άνοιγμα συνδέσμου στον προεπιλεγμένο περιηγητή"
+
+#: src/app/ContentExportDialog.qml:109
+#, fuzzy
+#| msgid "Open link in default browser"
+msgid "Open file in browser"
+msgstr "Άνοιγμα συνδέσμου στον προεπιλεγμένο περιηγητή"
+
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
 msgstr "Προσαρμοσμένοι πράκτορες χρήστη"
@@ -379,6 +413,7 @@ msgid "No custom user agents available"
 msgstr "Δεν υπάρχουν διαθέσιμοι πράκτορες χρήστη"
 
 #: src/app/DomainPermissionsPage.qml:54
+#: src/app/webcontainer/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
 msgstr "Λίστα αποκλεισμένων/επιτρεπόμενων τομέων"
 
@@ -410,6 +445,7 @@ msgid "No sites have been granted special permissions"
 msgstr "Σε κανέναν ιστότοπο δεν έχουν εκχωρηθεί ειδικά δικαιώματα"
 
 #: src/app/DomainSettingsPage.qml:52
+#: src/app/webcontainer/WebappSettingsPage.qml:236
 msgid "Domain specific settings"
 msgstr "Ειδικές ρυθμίσεις τομέα"
 
@@ -511,7 +547,7 @@ msgstr "Καθαρισμός"
 msgid "View All"
 msgstr "Εμφάνιση όλων"
 
-#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:838
+#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:850
 #: src/app/webcontainer/WebappSettingsPage.qml:137
 msgid "Downloads"
 msgstr "Λήψεις"
@@ -803,28 +839,28 @@ msgstr "Αρχική σελίδα"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:819 src/app/webbrowser/NewTabView.qml:130
+#: src/app/webbrowser/Browser.qml:831 src/app/webbrowser/NewTabView.qml:130
 #: src/app/webbrowser/NewTabViewWide.qml:139
 msgid "Bookmarks"
 msgstr "Σελιδοδείκτες"
 
-#: src/app/webbrowser/Browser.qml:230
+#: src/app/webbrowser/Browser.qml:242
 #: src/app/webcontainer/WebViewImplOxide.qml:302
 msgid "Blocked domain"
 msgstr "Αποκλεισμένος τομέας"
 
-#: src/app/webbrowser/Browser.qml:231
+#: src/app/webbrowser/Browser.qml:243
 #: src/app/webcontainer/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr "Αποκλεισμένο αίτημα πλοήγησης στον τομέα %1."
 
-#: src/app/webbrowser/Browser.qml:257
+#: src/app/webbrowser/Browser.qml:269
 #: src/app/webcontainer/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
 msgstr "Επιτρεπόμενος τομέας"
 
-#: src/app/webbrowser/Browser.qml:258
+#: src/app/webbrowser/Browser.qml:270
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
@@ -832,56 +868,56 @@ msgstr ""
 "ο τομέας %1 είναι πλέον στη λίστα επιτρεπόμενων, θα είναι ενεργός στην "
 "επαναφόρτωση της επόμενης σελίδας."
 
-#: src/app/webbrowser/Browser.qml:648
+#: src/app/webbrowser/Browser.qml:660
 msgid "Done"
 msgstr "Ολοκληρώθηκε"
 
-#: src/app/webbrowser/Browser.qml:673
+#: src/app/webbrowser/Browser.qml:685
 #, fuzzy
 #| msgid "Close Tab"
 msgid "Reopen Tab"
 msgstr "Ξανάνοιγμα Καρτέλας"
 
-#: src/app/webbrowser/Browser.qml:799
+#: src/app/webbrowser/Browser.qml:811
 msgid "New window"
 msgstr "Νέο παράθυρο"
 
-#: src/app/webbrowser/Browser.qml:805
+#: src/app/webbrowser/Browser.qml:817
 msgid "New private window"
 msgstr "Νέο ιδιωτικό παράθυρο"
 
-#: src/app/webbrowser/Browser.qml:825 src/app/webbrowser/HistoryView.qml:31
+#: src/app/webbrowser/Browser.qml:837 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
 msgstr "Ιστορικό"
 
-#: src/app/webbrowser/Browser.qml:845 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/Browser.qml:857 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
-#: src/app/webbrowser/Browser.qml:851
+#: src/app/webbrowser/Browser.qml:863
 msgid "View source"
 msgstr "Προβολή πηγής"
 
-#: src/app/webbrowser/Browser.qml:864
+#: src/app/webbrowser/Browser.qml:876
 msgid "Save / Print to PDF"
 msgstr "Αποθήκευση / εκτύπωση σε PDF"
 
-#: src/app/webbrowser/Browser.qml:885 src/app/WebViewImpl.qml:690
+#: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
 msgid "Zoom"
 msgstr "Εστίαση"
 
-#: src/app/webbrowser/Browser.qml:892 src/app/webbrowser/SettingsPage.qml:140
+#: src/app/webbrowser/Browser.qml:904 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
 msgstr "Ορισμός λειτουργίας σε υπολογιστή"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1092 src/app/webbrowser/Browser.qml:1130
+#: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1970
+#: src/app/webbrowser/Browser.qml:1985
 msgid "the file is already in the downloads folder."
 msgstr "το αρχείο είναι ήδη στον φάκελο λήψεων."
 
@@ -908,7 +944,7 @@ msgid "Last Visited"
 msgstr "Τελευταία επίσκεψη"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:48
-#: src/app/webbrowser/HistoryViewWide.qml:252
+#: src/app/webbrowser/HistoryViewWide.qml:258
 msgid "Yesterday"
 msgstr "Χθες"
 
@@ -916,17 +952,17 @@ msgstr "Χθες"
 msgid "search history"
 msgstr "ιστορικό αναζήτησης"
 
-#: src/app/webbrowser/HistoryViewWide.qml:236
+#: src/app/webbrowser/HistoryViewWide.qml:242
 msgid "All History"
 msgstr "Όλο το ιστορικό"
 
-#: src/app/webbrowser/HistoryViewWide.qml:250
-#: src/app/webbrowser/HistoryViewWide.qml:337
+#: src/app/webbrowser/HistoryViewWide.qml:256
+#: src/app/webbrowser/HistoryViewWide.qml:343
 msgid "Today"
 msgstr "Σήμερα"
 
 #. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:108
+#: src/app/webbrowser/morph-browser.qml:109
 #: src/app/webcontainer/webapp-container.qml:76
 #, qt-format
 msgid "%1 - Morph Web Browser"
@@ -1108,11 +1144,11 @@ msgstr "Μικρόφωνο"
 msgid "Camera"
 msgstr "Κάμερα"
 
-#: src/app/webbrowser/TabComponent.qml:282
+#: src/app/webbrowser/TabComponent.qml:285
 msgid "Swipe Up To Exit Full Screen"
 msgstr "Σύρετε προς τα πάνω για Έξοδο από Πλήρη οθόνη"
 
-#: src/app/webbrowser/TabComponent.qml:283
+#: src/app/webbrowser/TabComponent.qml:286
 msgid "Press ESC To Exit Full Screen"
 msgstr "Πατήστε ESC για έξοδο από Πλήρη οθόνη"
 
@@ -1155,10 +1191,6 @@ msgstr "Να μη χρησιμοποιηθεί λογαριασμός"
 #: src/app/webcontainer/AccountErrorScreen.qml:39
 msgid "Account error"
 msgstr "Σφάλμα λογαριασμού"
-
-#: src/app/webcontainer/AccountErrorScreen.qml:50
-msgid "Close"
-msgstr "Κλείσιμο"
 
 #: src/app/webcontainer/AccountsLogic.qml:63
 msgid ""
@@ -1477,9 +1509,6 @@ msgstr "Αποθήκευση ως προεπιλογής"
 
 #~ msgid "Please choose a file"
 #~ msgstr "Παρακαλώ επιλέξτε ένα αρχείο"
-
-#~ msgid "Open tabs"
-#~ msgstr "Ανοιχτές καρτέλες"
 
 #~ msgid "Add"
 #~ msgstr "Προσθήκη"

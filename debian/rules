@@ -6,6 +6,13 @@
 
 export DPKG_GENSYMBOLS_CHECK_LEVEL=4
 
+# Workaround https://gitlab.com/ubports/development/core/packaging/libhybris/-/issues/21
+# Basically, libhybris' libEGL implementation crash inside libhybris itself if
+# there's no Hybris/Halium environment. This variable forces GLVND's libEGL
+# loader to consider only Mesa's implementation and ignore libhybris one.
+# On CI, Mesa will simply use software rendering.
+export __EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/50_mesa.json
+
 BUILDHOME=/tmp/home
 
 # Add migrations add-on when build on Ubuntu & original name is available.

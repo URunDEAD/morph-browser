@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2025-05-27 05:13+0000\n"
-"Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
-"Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/morph-"
-"browser/et/>\n"
+"PO-Revision-Date: 2025-08-23 09:02+0000\n"
+"Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/et/>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.13\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -82,10 +82,8 @@ msgid "Clear Navigation History"
 msgstr "Kustuta veebisirvimise ja edasi- ja tagasi nuppude vajutuste ajalugu"
 
 #: src/app/actions/CopyImageLink.qml:22
-#, fuzzy
-#| msgid "Copy image"
 msgid "Copy image link"
-msgstr "Kopeeri pilt"
+msgstr "Kopeeri pildi link"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
@@ -241,10 +239,12 @@ msgstr ""
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
 msgstr ""
+"„%1“ veebisait soovib seda võrguaadressi avada väljaspool veebibrauserit:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
 msgstr ""
+"Kui võimalik, siis kas nõustud avama seda võrguaadressi süsteemi rakendusega?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -356,29 +356,25 @@ msgstr "JavaScripti kinnitus"
 
 #: src/app/ContentExportDialog.qml:79
 msgid "Open with"
-msgstr ""
+msgstr "Ava rakendusega"
 
 #: src/app/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
-msgstr ""
+msgstr "Failinimi: %1"
 
 #: src/app/ContentExportDialog.qml:91
 #: src/app/webcontainer/AccountErrorScreen.qml:50
 msgid "Close"
-msgstr ""
+msgstr "Sulge"
 
 #: src/app/ContentExportDialog.qml:100
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open link in browser"
-msgstr "Ava link vaikimisi veebibrauseris"
+msgstr "Ava link veebibrauseris"
 
 #: src/app/ContentExportDialog.qml:109
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open file in browser"
-msgstr "Ava link vaikimisi veebibrauseris"
+msgstr "Ava fail veebibrauseris"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
@@ -404,7 +400,7 @@ msgstr ""
 #: src/app/DomainPermissionsPage.qml:54
 #: src/app/webcontainer/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
-msgstr ""
+msgstr "Lubatud ja keelatud domeenide loend"
 
 #: src/app/DomainPermissionsPage.qml:113 src/app/DomainSettingsPage.qml:113
 msgid "Add domain"
@@ -450,15 +446,15 @@ msgstr ""
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "Küsi iga kord"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Allowed"
-msgstr ""
+msgstr "Lubatud"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Keelatud"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
@@ -484,37 +480,37 @@ msgstr ""
 
 #: src/app/DownloadDelegate.qml:170
 msgid "Download failed"
-msgstr ""
+msgstr "Allalaadimine ei õnnestunud"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "Pole teada"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
 msgid "Delete File"
-msgstr ""
+msgstr "Kustuta fail"
 
 #: src/app/DownloadDelegate.qml:261
 msgid "Remove from History"
-msgstr ""
+msgstr "Eemalda ajaloost"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
 msgid "Copy Download Link"
-msgstr ""
+msgstr "Kopeeri allalaadimise link"
 
 #: src/app/DownloadsDialog.qml:68
 msgid "Recent Downloads"
-msgstr ""
+msgstr "Hiljutised allalaadimised"
 
 #: src/app/DownloadsDialog.qml:83
 msgid "No Recent Downloads"
-msgstr ""
+msgstr "Hiljutisi allalaadimisi pole"
 
 #: src/app/DownloadsDialog.qml:106
 msgid "Cancelled"
@@ -527,7 +523,7 @@ msgstr "Valmis"
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
 msgid "Clear"
-msgstr ""
+msgstr "Eemalda"
 
 #: src/app/DownloadsDialog.qml:179
 msgid "View All"
@@ -544,7 +540,7 @@ msgstr "Kinnita valik"
 
 #: src/app/DownloadsPage.qml:288
 msgid "No downloads available"
-msgstr ""
+msgstr "Allalaadimisi pole saadaval"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
@@ -861,7 +857,7 @@ msgstr "Vaata lähtekoodi"
 
 #: src/app/webbrowser/Browser.qml:876
 msgid "Save / Print to PDF"
-msgstr ""
+msgstr "Salvesta PDF-failina"
 
 #: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
 msgid "Zoom"
@@ -899,36 +895,36 @@ msgstr[1] "%1 lehte"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:26
 msgid "Last Visited"
-msgstr ""
+msgstr "Viimatikülastatud"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:48
 #: src/app/webbrowser/HistoryViewWide.qml:258
 msgid "Yesterday"
-msgstr ""
+msgstr "Eile"
 
 #: src/app/webbrowser/HistoryViewWide.qml:161
 msgid "search history"
-msgstr ""
+msgstr "otsinguajalugu"
 
 #: src/app/webbrowser/HistoryViewWide.qml:242
 msgid "All History"
-msgstr ""
+msgstr "Kogu ajalugu"
 
 #: src/app/webbrowser/HistoryViewWide.qml:256
 #: src/app/webbrowser/HistoryViewWide.qml:343
 msgid "Today"
-msgstr ""
+msgstr "Täna"
 
 #. TRANSLATORS: %1 refers to the current page’s title
 #: src/app/webbrowser/morph-browser.qml:109
 #: src/app/webcontainer/webapp-container.qml:76
 #, qt-format
 msgid "%1 - Morph Web Browser"
-msgstr ""
+msgstr "%1 - Veebibrauser Morph"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:41
 msgid "This is a private tab"
-msgstr ""
+msgstr "See on privaatne vahekaart"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:56
 msgid ""
@@ -1053,7 +1049,7 @@ msgstr ""
 #: src/app/webbrowser/SettingsPage.qml:398
 #: src/app/webbrowser/SettingsPage.qml:589
 msgid "Camera & microphone"
-msgstr ""
+msgstr "Kaamera ja mikrofon"
 
 #: src/app/webbrowser/SettingsPage.qml:407
 msgid "Clear browsing history"
@@ -1109,19 +1105,19 @@ msgstr ""
 
 #: src/app/webbrowser/TabsBar.qml:64 src/app/webbrowser/TabsList.qml:100
 msgid "New tab"
-msgstr ""
+msgstr "Uus vahekaart"
 
 #: src/app/webbrowser/TabsBar.qml:99
 msgid "Move to New Window"
-msgstr ""
+msgstr "Tõsta uude aknasse"
 
 #: src/app/webbrowser/TabsBar.qml:116
 msgid "Close Tab"
-msgstr ""
+msgstr "Sulge vahekaart"
 
 #: src/app/webbrowser/UrlPreviewDelegate.qml:138
 msgid "Remove"
-msgstr ""
+msgstr "Eemalda"
 
 #: src/app/webcontainer/AccountChooserDialog.qml:62
 msgid ""
@@ -1170,19 +1166,19 @@ msgstr ""
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Close the app"
-msgstr ""
+msgstr "Sulge rakendus"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Skip"
-msgstr ""
+msgstr "Jäta vahele"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:84
 msgid "Choose account"
-msgstr ""
+msgstr "Vali kasutajakonto"
 
 #: src/app/webcontainer/SadPage.qml:45
 msgid "Oops, something went wrong."
-msgstr ""
+msgstr "Hopsti... Midagi läks nüüd viltu."
 
 #: src/app/webcontainer/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
@@ -1199,43 +1195,43 @@ msgstr ""
 
 #: src/app/ZoomControls.qml:61
 msgid "Zoom Out"
-msgstr ""
+msgstr "Suumi välja"
 
 #: src/app/ZoomControls.qml:68
 msgid "Reset"
-msgstr ""
+msgstr "Lähtesta suum"
 
 #: src/app/ZoomControls.qml:68
 msgid "fit"
-msgstr ""
+msgstr "sobita"
 
 #: src/app/ZoomControls.qml:75
 msgid "Zoom In"
-msgstr ""
+msgstr "Suumi sisse"
 
 #: src/app/ZoomControls.qml:100
 msgid "Current Zoom"
-msgstr ""
+msgstr "Praegune suumitase"
 
 #: src/app/ZoomControls.qml:101
 msgid "domain"
-msgstr ""
+msgstr "domeen"
 
 #: src/app/ZoomControls.qml:101
 msgid "default"
-msgstr ""
+msgstr "vaikimisi"
 
 #: src/app/ZoomControls.qml:101
 msgid "auto-fit"
-msgstr ""
+msgstr "sobita automaatselt"
 
 #: src/app/ZoomControls.qml:190
 msgid "Save Zoom"
-msgstr ""
+msgstr "Salvesta suumitase"
 
 #: src/app/ZoomControls.qml:192
 msgid "the current web app"
-msgstr ""
+msgstr "praegune veebirakendus"
 
 #: src/app/ZoomControls.qml:195
 #, qt-format

@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2023-12-26 12:02+0000\n"
+"PO-Revision-Date: 2025-08-23 09:02+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
-"Language-Team: Dutch <https://hosted.weblate.org/projects/lomiri/morph-"
-"browser/nl/>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.13\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -80,10 +80,8 @@ msgid "Clear Navigation History"
 msgstr "Navigatiegeschiedenis wissen"
 
 #: src/app/actions/CopyImageLink.qml:22
-#, fuzzy
-#| msgid "Copy image"
 msgid "Copy image link"
-msgstr "Afbeelding kopiëren"
+msgstr "Afbeeldingslink kopiëren"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
@@ -360,15 +358,13 @@ msgid "JavaScript Confirmation"
 msgstr "JavaScript-bevestiging"
 
 #: src/app/ContentExportDialog.qml:79
-#, fuzzy
-#| msgid "Open tabs"
 msgid "Open with"
-msgstr "Tabbladen openen"
+msgstr "Openen met"
 
 #: src/app/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
-msgstr ""
+msgstr "Bestandsnaam: %1"
 
 #: src/app/ContentExportDialog.qml:91
 #: src/app/webcontainer/AccountErrorScreen.qml:50
@@ -376,16 +372,12 @@ msgid "Close"
 msgstr "Sluiten"
 
 #: src/app/ContentExportDialog.qml:100
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open link in browser"
-msgstr "Link openen in standaardbrowser"
+msgstr "Link openen in browser"
 
 #: src/app/ContentExportDialog.qml:109
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open file in browser"
-msgstr "Link openen in standaardbrowser"
+msgstr "Bestand openen in browser"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"

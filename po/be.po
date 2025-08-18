@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2021-05-20 14:38+0000\n"
-"Last-Translator: Zmicer <nashtlumach@gmail.com>\n"
-"Language-Team: Belarusian <https://translate.ubports.com/projects/ubports/"
+"PO-Revision-Date: 2025-08-23 09:02+0000\n"
+"Last-Translator: Valery Levanchuk <levanchuk@gmail.com>\n"
+"Language-Team: Belarusian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/be/>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.13\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -43,11 +43,11 @@ msgstr "Інтэрнэт;WWW;Браўзер;Веб;Праваднік"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
-msgstr ""
+msgstr "Новае акно"
 
 #: morph-browser.desktop.in:27
 msgid "New Private Window"
-msgstr ""
+msgstr "Новае прыватнае акно"
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
@@ -84,10 +84,8 @@ msgid "Clear Navigation History"
 msgstr "Ачысціць гісторыю навігацыі"
 
 #: src/app/actions/CopyImageLink.qml:22
-#, fuzzy
-#| msgid "Copy image"
 msgid "Copy image link"
-msgstr "Капіраваць выяву"
+msgstr "Капіраваць спасылку на выяву"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
@@ -156,7 +154,7 @@ msgstr "Адчыніць выяву ў новай картцы"
 
 #: src/app/actions/OpenLinkInBrowser.qml:22
 msgid "Open link in default browser"
-msgstr ""
+msgstr "Адчыніць спасылку ў браўзеры па умаўчанні"
 
 #: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
 msgid "Open link in new background tab"
@@ -173,11 +171,11 @@ msgstr "Адчыніць ссылку ў новай картцы"
 
 #: src/app/actions/OpenLinkInNewWindow.qml:22
 msgid "Open link in new window"
-msgstr ""
+msgstr "Адчыніць спасылку ў новым акне"
 
 #: src/app/actions/OpenVideoInNewTab.qml:22
 msgid "Open video in new tab"
-msgstr ""
+msgstr "Адчыніць спасылку ў новай закладцы"
 
 #: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:429
 msgid "Paste"
@@ -208,7 +206,7 @@ msgstr "Захаваць спасылку"
 
 #: src/app/actions/SaveVideo.qml:22
 msgid "Save video"
-msgstr ""
+msgstr "Захаваць відэа"
 
 #: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
 #: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
@@ -243,11 +241,11 @@ msgstr "Адвольныя URL-схемы"
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "Вэб-сайт «%1» хоча адчыніць гэты URL-адрас па-за межамі вэб-браўзера:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "Калі магчыма, адчыніць гэты URL-адрас з дапамогай сістэмнай праграмы?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -300,10 +298,13 @@ msgid ""
 "Would you like to continue to block the domain, allow loading data from the "
 "domain, or just ignore this request ?"
 msgstr ""
+"%1 спрабуе атрымаць доступ да %2, але яго няма ў вашым белым спісе "
+"дазволеных даменаў. Вы хочаце працягнуць блакіраваць дамен, дазволіць "
+"загрузку дадзеных з дамена ці проста праігнараваць гэты запыт?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
-msgstr ""
+msgstr "Дазволіць дамен"
 
 #: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
@@ -363,15 +364,13 @@ msgid "JavaScript Confirmation"
 msgstr "Пацверджанне дзеянняў JavaScript"
 
 #: src/app/ContentExportDialog.qml:79
-#, fuzzy
-#| msgid "Open tabs"
 msgid "Open with"
-msgstr "Адчыненыя карткі"
+msgstr "Адкрыць з дапамогай"
 
 #: src/app/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
-msgstr ""
+msgstr "Назва файла: %1"
 
 #: src/app/ContentExportDialog.qml:91
 #: src/app/webcontainer/AccountErrorScreen.qml:50
@@ -379,18 +378,16 @@ msgid "Close"
 msgstr "Закрыць"
 
 #: src/app/ContentExportDialog.qml:100
-#, fuzzy
-#| msgid "Open link in new tab"
 msgid "Open link in browser"
-msgstr "Адчыніць ссылку ў новай картцы"
+msgstr "Адчыніць ссылку ў новым браўзеры"
 
 #: src/app/ContentExportDialog.qml:109
 msgid "Open file in browser"
-msgstr ""
+msgstr "Адчыніць файл у браўзеры"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
-msgstr ""
+msgstr "Індывідуальныя карыстальніцкія агенты"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
 #: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
@@ -399,95 +396,91 @@ msgstr "Выдаліць"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
-msgstr ""
+msgstr "Новы карыстальніцкі агент"
 
 #: src/app/CustomUserAgentsPage.qml:161
 msgid "Edit User Agent"
-msgstr ""
+msgstr "Рэдагаваць карыстальніцкі агент"
 
 #: src/app/CustomUserAgentsPage.qml:187
-#, fuzzy
 msgid "No custom user agents available"
-msgstr "Няма даступных загрузак"
+msgstr "Няма даступных індывідуальных карыстальніцкіх агентаў"
 
 #: src/app/DomainPermissionsPage.qml:54
 #: src/app/webcontainer/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
-msgstr ""
+msgstr "Спісы дазволеных/забароненых даменаў"
 
 #: src/app/DomainPermissionsPage.qml:113 src/app/DomainSettingsPage.qml:113
 msgid "Add domain"
-msgstr ""
+msgstr "Дадаць дамен"
 
 #: src/app/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
 msgstr ""
+"Увядзіце назву дамена, напрыклад, прыклад.бел (паддамены будуць выдалены)."
 
 #: src/app/DomainPermissionsPage.qml:222
 msgid "Not Set"
-msgstr ""
+msgstr "Не зададзена"
 
 #: src/app/DomainPermissionsPage.qml:232
 msgid "Never allow access"
-msgstr ""
+msgstr "Ніколі не дазваляць доступ"
 
 #: src/app/DomainPermissionsPage.qml:243
 msgid "Always allow access"
-msgstr ""
+msgstr "Заўсёды дазваляць доступ"
 
 #: src/app/DomainPermissionsPage.qml:283
 msgid "No sites have been granted special permissions"
-msgstr ""
+msgstr "Ніводзін сайт не атрымаў спецыяльнага дазволу"
 
 #: src/app/DomainSettingsPage.qml:52
 #: src/app/webcontainer/WebappSettingsPage.qml:236
 msgid "Domain specific settings"
-msgstr ""
+msgstr "Адмысловыя налады дамена"
 
 #: src/app/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
-msgstr ""
+msgstr "Увядзіце назву дамена, напрыклад: м.прыклад.бел"
 
 #: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
-msgstr ""
+msgstr "дазвол на запуск іншых праграм"
 
 #: src/app/DomainSettingsPage.qml:226
-#, fuzzy
-#| msgid "allowed to access your location"
 msgid "access your location"
-msgstr "дазволіць доступ да вызначэння месцазнаходжання"
+msgstr "доступ да вашага месцазнаходжання"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "Пытаць кожны раз"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "Дазволіць"
+msgstr "Дазволена"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Забаронена"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
-msgstr ""
+msgstr "індывідуальны агент карыстальніка"
 
 #: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
-msgstr ""
+msgstr "Маштаб: "
 
 #: src/app/DomainSettingsPage.qml:325
 msgid "not set"
-msgstr ""
+msgstr "не зададзена"
 
 #: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
-msgstr ""
+msgstr "спецыяльных налад дамена не знойдзена"
 
 #. TRANSLATORS: %1 is the percentage of the download completed so far
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
@@ -501,53 +494,41 @@ msgstr "Збой запампоўкі"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "Невядома"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/с"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "Выдаліць"
+msgstr "Выдаліць файл"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "Ачысціць гісторыю"
+msgstr "Выдаліць з гісторыі"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "Капіраваць спасылку"
+msgstr "Капіраваць спасылку на спампоўку"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "Атрыманыя"
+msgstr "Нядаўнія спампоўкі"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
-msgstr "Атрыманыя"
+msgstr "Няма колішніх спамповак"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Скасаваць"
+msgstr "Скасавана"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Завершана"
 
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
@@ -556,12 +537,12 @@ msgstr "Ачысціць"
 
 #: src/app/DownloadsDialog.qml:179
 msgid "View All"
-msgstr ""
+msgstr "Праглядзець усё"
 
 #: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:850
 #: src/app/webcontainer/WebappSettingsPage.qml:137
 msgid "Downloads"
-msgstr "Атрыманыя"
+msgstr "Спампоўкі"
 
 #: src/app/DownloadsPage.qml:60
 msgid "Confirm selection"
@@ -573,19 +554,19 @@ msgstr "Няма даступных загрузак"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "гэта назва карыстальніцкага агента ужо занята"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
 msgid "Add the name for the user agent"
-msgstr ""
+msgstr "Дадайце назву для карыстальніцкага агенту"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
-msgstr ""
+msgstr "увядзіце радок карыстальніцкага агенту..."
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
-msgstr ""
+msgstr "Памылка сертыфікату"
 
 #: src/app/ErrorSheet.qml:42
 msgid "Network Error"
@@ -600,7 +581,7 @@ msgstr "Здаецца, з праглядам %1 паўсталі праблем
 #: src/app/ErrorSheet.qml:56
 #, qt-format
 msgid "Error: %1"
-msgstr ""
+msgstr "Памылка: %1"
 
 #: src/app/ErrorSheet.qml:62 src/app/InvalidCertificateErrorSheet.qml:173
 msgid "Back to safety"
@@ -632,11 +613,11 @@ msgstr "Забараніць"
 #: src/app/HttpAuthenticationDialog.qml:27
 #, qt-format
 msgid "The website at %1 requires authentication. The website says \"%2\""
-msgstr ""
+msgstr "Вэб-сайт па адрасе %1 патрабуе аўтэнтыфікацыі. Сайт паведамляе «%2»"
 
 #: src/app/InvalidCertificateErrorSheet.qml:55
 msgid "This site security certificate is not trusted.\n"
-msgstr "Сертыфікат бяспекі гэтага сайта не з'яўляецца надзейным.\n"
+msgstr "Сертыфікат бяспекі гэтага сайта не мае даверу.\n"
 
 #: src/app/InvalidCertificateErrorSheet.qml:63
 msgid "Learn more"
@@ -732,7 +713,7 @@ msgstr ""
 
 #: src/app/MediaAccessDialog.qml:39
 msgid "Permission"
-msgstr ""
+msgstr "Дазвол"
 
 #: src/app/MediaAccessDialog.qml:46
 msgid "Allow this domain to access your camera and microphone?"
@@ -771,7 +752,7 @@ msgstr "Сайт %1:%2 патрабуе праверкі сапраўднасц�
 
 #: src/app/SavePageDialog.qml:24
 msgid "Save page as HTML / PDF"
-msgstr ""
+msgstr "Захаваць старонку як HTML / PDF"
 
 #: src/app/SavePageDialog.qml:41
 #, fuzzy
@@ -780,7 +761,7 @@ msgstr "Няма даступных загрузак"
 
 #: src/app/SavePageDialog.qml:46
 msgid "Save as HTML"
-msgstr ""
+msgstr "Захаваць як HTML"
 
 #: src/app/SavePageDialog.qml:54
 #: src/app/webbrowser/ContentDownloadDialog.qml:102
@@ -789,27 +770,27 @@ msgstr "Спампаваць"
 
 #: src/app/SavePageDialog.qml:64
 msgid "Save as PDF"
-msgstr ""
+msgstr "Захаваць як PDF"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Выдаліць са спісу"
 
 #: src/app/webbrowser/AddressBar.qml:287
 msgid "find in page"
-msgstr "Знайсці на старонцы"
+msgstr "шукаць на старонцы"
 
 #: src/app/webbrowser/AddressBar.qml:288
 msgid "search or enter an address"
-msgstr "Шукайце або ўвядзіце адрас"
+msgstr "шукайце або ўвядзіце адрас"
 
 #: src/app/webbrowser/AddressBar.qml:440
 msgid "Paste and Go"
-msgstr ""
+msgstr "Уставіць і перайсці"
 
 #: src/app/webbrowser/BookmarkOptions.qml:66
 msgid "Bookmark Added"
-msgstr "Закладка дададзеная"
+msgstr "Закладка дададзена"
 
 #. TRANSLATORS: Field where the title of bookmarked URL can be changed
 #: src/app/webbrowser/BookmarkOptions.qml:71
@@ -858,34 +839,34 @@ msgstr "Закладкі"
 #: src/app/webbrowser/Browser.qml:242
 #: src/app/webcontainer/WebViewImplOxide.qml:302
 msgid "Blocked domain"
-msgstr ""
+msgstr "Заблакаваны дамен"
 
 #: src/app/webbrowser/Browser.qml:243
 #: src/app/webcontainer/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
-msgstr ""
+msgstr "Заблакіраваны запыт да дамену %1."
 
 #: src/app/webbrowser/Browser.qml:269
 #: src/app/webcontainer/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
-msgstr ""
+msgstr "Дазволеныя дамены"
 
 #: src/app/webbrowser/Browser.qml:270
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
 msgstr ""
+"Дамен %1 цяпер у белым спісе, ён будзе актыўны пры наступнай перазагрузцы "
+"старонкі."
 
 #: src/app/webbrowser/Browser.qml:660
 msgid "Done"
 msgstr "Завершана"
 
 #: src/app/webbrowser/Browser.qml:685
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "Закрыць вакенца"
+msgstr "Зноў адкрыць укладку"
 
 #: src/app/webbrowser/Browser.qml:811
 msgid "New window"
@@ -893,7 +874,7 @@ msgstr "Новае акно"
 
 #: src/app/webbrowser/Browser.qml:817
 msgid "New private window"
-msgstr ""
+msgstr "Новае прыватнае акно"
 
 #: src/app/webbrowser/Browser.qml:837 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
@@ -906,19 +887,19 @@ msgstr "Налады"
 
 #: src/app/webbrowser/Browser.qml:863
 msgid "View source"
-msgstr ""
+msgstr "Глядзець зыходны код"
 
 #: src/app/webbrowser/Browser.qml:876
 msgid "Save / Print to PDF"
-msgstr ""
+msgstr "Захаваць / друкаваць у PDF"
 
 #: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
 msgid "Zoom"
-msgstr ""
+msgstr "Маштаб"
 
 #: src/app/webbrowser/Browser.qml:904 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
-msgstr ""
+msgstr "Уключыць рэжым дэсктопу"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
 #: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
@@ -927,19 +908,14 @@ msgid "(%1)"
 msgstr "(%1)"
 
 #: src/app/webbrowser/Browser.qml:1985
-#, fuzzy
-#| msgid ""
-#| "Choose an application to open this file or add it to the downloads folder."
 msgid "the file is already in the downloads folder."
-msgstr ""
-"Абярыце праграму для адкрыцця гэтага файла або дадайце яго ў тэчку атрыманых "
-"файлаў."
+msgstr "файл ужо знаходзіцца ў папцы загрузак."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:83
 msgid ""
 "Choose an application to open this file or add it to the downloads folder."
 msgstr ""
-"Абярыце праграму для адкрыцця гэтага файла або дадайце яго ў тэчку атрыманых "
+"Абярыце праграму для адкрыцця гэтага файла або дадайце яго ў папку атрыманых "
 "файлаў."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:89
@@ -1041,7 +1017,7 @@ msgstr "Ідэнтыфікацыйныя дадзеныя гэтага сайт�
 #: src/app/webbrowser/SecurityCertificatePopover.qml:109
 #, qt-format
 msgid "You are connected to %1 via HTTPS. The certificate is valid."
-msgstr ""
+msgstr "Вы падключаны да %1 праз HTTPS. Сертыфікат сапраўдны."
 
 #: src/app/webbrowser/SettingsDeviceSelector.qml:42
 msgid "Default"
@@ -1065,17 +1041,17 @@ msgstr "Аднаўляць папярэдні сеанс пры запуску"
 
 #: src/app/webbrowser/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
-msgstr ""
+msgstr "недаступна з-за запуску ў прыватным рэжыме"
 
 #: src/app/webbrowser/SettingsPage.qml:159
 #: src/app/webcontainer/WebappSettingsPage.qml:58
 msgid "Automatic fit to width"
-msgstr ""
+msgstr "Аўтаматычная падгонка па шырыні"
 
 #: src/app/webbrowser/SettingsPage.qml:160
 #: src/app/webcontainer/WebappSettingsPage.qml:59
 msgid "Adjusts the width of the website to the window"
-msgstr ""
+msgstr "Наладжвае шырыню сайта пад акно"
 
 #: src/app/webbrowser/SettingsPage.qml:179
 #: src/app/webcontainer/WebappSettingsPage.qml:78
@@ -1086,12 +1062,12 @@ msgstr "Змоўчна"
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Load Images"
-msgstr ""
+msgstr "Загрузка малюнкаў"
 
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
-msgstr ""
+msgstr "Аўтаматычна спампоўваць малюнкі на сеткавых старонках"
 
 #: src/app/webbrowser/SettingsPage.qml:238
 #: src/app/webbrowser/SettingsPage.qml:320
@@ -1113,7 +1089,7 @@ msgstr "Выйсці з канфідэнцыйнага рэжыму"
 #: src/app/webbrowser/SettingsPage.qml:358
 #: src/app/webcontainer/WebappSettingsPage.qml:206
 msgid "Only allow browsing to whitelisted websites"
-msgstr ""
+msgstr "Дазволіць прагляд толькі вэб-сайтаў з белага спісу"
 
 #: src/app/webbrowser/SettingsPage.qml:398
 #: src/app/webbrowser/SettingsPage.qml:589
@@ -1192,7 +1168,7 @@ msgstr "Новая ўкладка"
 
 #: src/app/webbrowser/TabsBar.qml:99
 msgid "Move to New Window"
-msgstr ""
+msgstr "Перамясціць у новае акно"
 
 #: src/app/webbrowser/TabsBar.qml:116
 msgid "Close Tab"
@@ -1272,7 +1248,7 @@ msgstr "На жаль, адбылася памылка."
 
 #: src/app/webcontainer/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
-msgstr ""
+msgstr "Налады кантэйнера вэб-праграмы"
 
 #: src/app/webcontainer/WebappSettingsPage.qml:163
 #, fuzzy
@@ -1282,11 +1258,11 @@ msgstr "Скінуць налады браўзэра"
 #: src/app/webcontainer/WebViewImplOxide.qml:330
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
-msgstr ""
+msgstr "дамен %1 цяпер у белым спісе, калі ласка, перазагрузіце старонку."
 
 #: src/app/ZoomControls.qml:61
 msgid "Zoom Out"
-msgstr ""
+msgstr "Паменшыць"
 
 #: src/app/ZoomControls.qml:68
 msgid "Reset"
@@ -1294,19 +1270,19 @@ msgstr "Скінуць"
 
 #: src/app/ZoomControls.qml:68
 msgid "fit"
-msgstr ""
+msgstr "змясціць"
 
 #: src/app/ZoomControls.qml:75
 msgid "Zoom In"
-msgstr ""
+msgstr "Павялічыць"
 
 #: src/app/ZoomControls.qml:100
 msgid "Current Zoom"
-msgstr ""
+msgstr "Бягучы маштаб"
 
 #: src/app/ZoomControls.qml:101
 msgid "domain"
-msgstr ""
+msgstr "дамен"
 
 #: src/app/ZoomControls.qml:101
 #, fuzzy
@@ -1316,7 +1292,7 @@ msgstr "Змоўчна"
 
 #: src/app/ZoomControls.qml:101
 msgid "auto-fit"
-msgstr ""
+msgstr "аўта-падгонка"
 
 #: src/app/ZoomControls.qml:190
 #, fuzzy
@@ -1326,7 +1302,7 @@ msgstr "Захаваць выяву"
 
 #: src/app/ZoomControls.qml:192
 msgid "the current web app"
-msgstr ""
+msgstr "бягучая сеткавая праграма"
 
 #: src/app/ZoomControls.qml:195
 #, qt-format
@@ -1334,17 +1310,22 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"Бягучы ўзровень маштабавання (%1%) можна захаваць у %2 альбо для бягучага "
+"дамена, альбо як узровень маштабавання па умаўчанні."
 
 #: src/app/ZoomControls.qml:197
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
 msgstr ""
+"Бягучы ўзровень маштабавання (%1%) можна захаваць у %2 для бягучага дамена."
 
 #: src/app/ZoomControls.qml:199
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
 msgstr ""
+"Бягучы ўзровень маштабавання (%1%) можна захаваць у %2 як узровень "
+"маштабавання па умаўчанні."
 
 #: src/app/ZoomControls.qml:206
 #, fuzzy
@@ -1354,7 +1335,7 @@ msgstr "Захаваць у"
 
 #: src/app/ZoomControls.qml:219
 msgid "Save as default"
-msgstr ""
+msgstr "Захаваць па ўмаўчанні"
 
 #, qt-format
 #~ msgid ""

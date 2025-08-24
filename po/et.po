@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2025-08-23 09:02+0000\n"
+"PO-Revision-Date: 2025-08-27 20:31+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/et/>\n"
@@ -378,7 +378,7 @@ msgstr "Ava fail veebibrauseris"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
-msgstr ""
+msgstr "Sinu loodud brauseritunnused"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
 #: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
@@ -387,15 +387,15 @@ msgstr "Kustuta"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
-msgstr ""
+msgstr "Uus brauseritunnus"
 
 #: src/app/CustomUserAgentsPage.qml:161
 msgid "Edit User Agent"
-msgstr ""
+msgstr "Muuda brauseritunnust"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
-msgstr ""
+msgstr "Sinu loodud brauseritunnuseid pole saadaval"
 
 #: src/app/DomainPermissionsPage.qml:54
 #: src/app/webcontainer/WebappSettingsPage.qml:225
@@ -458,7 +458,7 @@ msgstr "Keelatud"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
-msgstr ""
+msgstr "sinu loodud brauseritunnus"
 
 #: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
@@ -544,15 +544,15 @@ msgstr "Allalaadimisi pole saadaval"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "see brauseritunnus on juba kasutusel"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
 msgid "Add the name for the user agent"
-msgstr ""
+msgstr "Sisesta brauseritunnuse nimi"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
-msgstr ""
+msgstr "sisesta brauseritunnuse nimi..."
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
@@ -583,7 +583,7 @@ msgstr ""
 
 #: src/app/ErrorSheet.qml:77
 msgid "Refresh page"
-msgstr ""
+msgstr "Laadi leht uuesti"
 
 #: src/app/GeolocationPermissionRequest.qml:29
 msgid "Permission Request"
@@ -591,11 +591,11 @@ msgstr ""
 
 #: src/app/GeolocationPermissionRequest.qml:30
 msgid "This page wants to know your device’s location."
-msgstr ""
+msgstr "See veebileht tahab teada sinu nutiseadme asukohta."
 
 #: src/app/GeolocationPermissionRequest.qml:57
 msgid "Deny"
-msgstr ""
+msgstr "Keela"
 
 #. TRANSLATORS: %1 refers to the URL of the current website and %2 is a string that the website sends with more information about the authentication challenge (technically called "realm")
 #: src/app/HttpAuthenticationDialog.qml:27
@@ -609,7 +609,7 @@ msgstr ""
 
 #: src/app/InvalidCertificateErrorSheet.qml:63
 msgid "Learn more"
-msgstr ""
+msgstr "Lisateave"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's serial number
 #: src/app/InvalidCertificateErrorSheet.qml:87
@@ -618,6 +618,8 @@ msgid ""
 "Serial number:\n"
 "%1"
 msgstr ""
+"Seerianumber:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject display name
 #: src/app/InvalidCertificateErrorSheet.qml:94
@@ -688,22 +690,23 @@ msgstr ""
 #: src/app/MediaAccessDialog.qml:46
 msgid "Allow this domain to access your camera and microphone?"
 msgstr ""
+"Kas lubad sellel domeenil kasutada sinu nutiseadme kaamerat ja mikrofoni?"
 
 #: src/app/MediaAccessDialog.qml:47
 msgid "Allow this domain to access your camera?"
-msgstr ""
+msgstr "Kas lubad sellel domeenil kasutada sinu nutiseadme kaamerat?"
 
 #: src/app/MediaAccessDialog.qml:48
 msgid "Allow this domain to access your microphone?"
-msgstr ""
+msgstr "Kas lubad sellel domeenil kasutada sinu nutiseadme mikrofoni?"
 
 #: src/app/MediaAccessDialog.qml:77
 msgid "Yes"
-msgstr ""
+msgstr "Jah"
 
 #: src/app/MediaAccessDialog.qml:85
 msgid "No"
-msgstr ""
+msgstr "Ei"
 
 #: src/app/PromptDialog.qml:25
 msgid "JavaScript Prompt"
@@ -711,13 +714,13 @@ msgstr ""
 
 #: src/app/ProxyAuthenticationDialog.qml:22
 msgid "Proxy authentication required."
-msgstr ""
+msgstr "Proksiserver eeldab autentimist."
 
 #. TRANSLATORS: %1 refers to the proxy address, %2 refers to the proxy port
 #: src/app/ProxyAuthenticationDialog.qml:24
 #, qt-format
 msgid "The website %1:%2 requires authentication."
-msgstr ""
+msgstr "%1:%2 veebisait eeldab autentimist."
 
 #: src/app/SavePageDialog.qml:24
 msgid "Save page as HTML / PDF"
@@ -828,24 +831,24 @@ msgstr ""
 
 #: src/app/webbrowser/Browser.qml:660
 msgid "Done"
-msgstr ""
+msgstr "Valmis"
 
 #: src/app/webbrowser/Browser.qml:685
 msgid "Reopen Tab"
-msgstr ""
+msgstr "Ava vahekaart uuesti"
 
 #: src/app/webbrowser/Browser.qml:811
 msgid "New window"
-msgstr ""
+msgstr "Uus aken"
 
 #: src/app/webbrowser/Browser.qml:817
 msgid "New private window"
-msgstr ""
+msgstr "Uus privaatne aken"
 
 #: src/app/webbrowser/Browser.qml:837 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
-msgstr ""
+msgstr "Ajalugu"
 
 #: src/app/webbrowser/Browser.qml:857 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
@@ -861,17 +864,17 @@ msgstr "Salvesta PDF-failina"
 
 #: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
 msgid "Zoom"
-msgstr ""
+msgstr "Suurendus"
 
 #: src/app/webbrowser/Browser.qml:904 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
-msgstr ""
+msgstr "Kasuta saidi tavaarvutivaadet"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
 #: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
 #, qt-format
 msgid "(%1)"
-msgstr ""
+msgstr "(%1)"
 
 #: src/app/webbrowser/Browser.qml:1985
 msgid "the file is already in the downloads folder."
@@ -884,7 +887,7 @@ msgstr "Vali rakendus selle faili avamiseks või lisa ta allalaadimiste kausta."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:89
 msgid "Choose an application"
-msgstr ""
+msgstr "Vali rakendus"
 
 #: src/app/webbrowser/ExpandedHistoryView.qml:135
 #, qt-format

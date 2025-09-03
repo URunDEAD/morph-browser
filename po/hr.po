@@ -8,34 +8,31 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2025-02-06 10:51+0000\n"
+"PO-Revision-Date: 2025-09-09 15:16+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
-"Language-Team: Croatian <https://hosted.weblate.org/projects/lomiri/morph-"
-"browser/hr/>\n"
+"Language-Team: Croatian <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/hr/>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.14-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
-#, fuzzy
 msgid "Morph Browser"
-msgstr "Preglednik"
+msgstr "Morph preglednik"
 
 #: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:111
 #: src/app/webcontainer/webapp-container.qml:78
-#, fuzzy
 msgid "Morph Web Browser"
-msgstr "Web preglednik"
+msgstr "Morph web preglednik"
 
 #: morph-browser.desktop.in:6
-#, fuzzy
 msgid "Browse the World Wide Web using QtWebEngine"
-msgstr "Pregledajte svjetsku globalnu mrežu"
+msgstr "Pregledajte intrnet koristeći QtWebEngine"
 
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
@@ -84,10 +81,8 @@ msgid "Clear Navigation History"
 msgstr "Obriši povijest navigacije"
 
 #: src/app/actions/CopyImageLink.qml:22
-#, fuzzy
-#| msgid "Copy image"
 msgid "Copy image link"
-msgstr "Kopiraj sliku"
+msgstr "Kopiraj poveznicu slike"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
@@ -163,9 +158,8 @@ msgid "Open link in new background tab"
 msgstr "Otvori poveznicu u novoj pozadinskoj kartici"
 
 #: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
-#, fuzzy
 msgid "Open link in new private window"
-msgstr "Otvori poveznicu u privatnom prozoru"
+msgstr "Otvori poveznicu u novom privatnom prozoru"
 
 #: src/app/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
@@ -238,26 +232,26 @@ msgstr "U redu"
 
 #: src/app/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
-msgstr ""
+msgstr "Prilagođene URL sheme"
 
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "Web stranica „%1” želi otvoriti ovaj URL izvan web preglednika:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "Otvoriti ovaj URL pomoću aplikacije sustava ako je moguće?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
-msgstr ""
+msgstr "Zapamti odluku"
 
 #: src/app/AllowCustomSchemesDialog.qml:50
 #: src/app/GeolocationPermissionRequest.qml:51
 msgid "Allow"
-msgstr "Dopustiti"
+msgstr "Dopusti"
 
 #: src/app/AllowCustomSchemesDialog.qml:57
 #: src/app/AllowOrBlockDomainDialog.qml:53 src/app/AuthenticationDialog.qml:53
@@ -280,7 +274,7 @@ msgstr "Odustani"
 #: src/app/AllowOrBlockDomainDialog.qml:25
 #: src/app/AllowOrBlockDomainDialog.qml:41
 msgid "Block domain"
-msgstr ""
+msgstr "Blokiraj domenu"
 
 #: src/app/AllowOrBlockDomainDialog.qml:30
 #, qt-format
@@ -289,6 +283,9 @@ msgid ""
 "Would you like to continue to block the domain, allow browsing to the "
 "domain, or go back?"
 msgstr ""
+"Pokušavate pristupiti domeni %1, ali ona nije na vašem odobrenom popisu "
+"dozvoljenih domena. Želite li nastaviti blokirati domenu, dopustiti "
+"pregledavanje domene ili se vratiti natrag?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:31
 #, qt-format
@@ -297,10 +294,13 @@ msgid ""
 "Would you like to continue to block the domain, allow loading data from the "
 "domain, or just ignore this request ?"
 msgstr ""
+"%1 pokušava pristupiti domeni %2, ali ona nije na vašem odobrenom popisu "
+"dozvoljenih domena. Želite li nastaviti blokirati domenu, dopustiti "
+"učitavanje podataka s domene ili jednostavno zanemariti ovaj zahtjev?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
-msgstr ""
+msgstr "Dozvoli domenu"
 
 #: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
@@ -338,13 +338,13 @@ msgstr "Ovo povezivanje je nesigurno"
 
 #. TRANSLATORS: %1 refers to the hostname
 #: src/app/CertificateVerificationDialog.qml:26
-#, fuzzy, qt-format
+#, qt-format
 msgid ""
 "You are trying to securely reach %1, but the security certificate of this "
 "website is not trusted. Reason: %2"
 msgstr ""
-"Pokušavate osigurano dosegnuti %1, ali sigurnosna vjerodajnica ove web "
-"stranice nije pouzdana."
+"Pokušavate na siguran način dosegnuti %1, ali sigurnosni certifikat ove web "
+"stranice nije pouzdan. Razlog: %2"
 
 #: src/app/CertificateVerificationDialog.qml:39
 #: src/app/InvalidCertificateErrorSheet.qml:160
@@ -352,24 +352,21 @@ msgid "Proceed anyway"
 msgstr "Svejedno nastavi"
 
 #: src/app/ColorSelectDialog.qml:25
-#, fuzzy
 msgid "Select Color"
-msgstr "Odaberi sve"
+msgstr "Odaberi boju"
 
 #: src/app/ConfirmDialog.qml:24
 msgid "JavaScript Confirmation"
 msgstr "JavaScript potvrda"
 
 #: src/app/ContentExportDialog.qml:79
-#, fuzzy
-#| msgid "Open tabs"
 msgid "Open with"
-msgstr "Otvori kartice"
+msgstr "Otvori sa"
 
 #: src/app/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
-msgstr ""
+msgstr "Ime datoteke: %1"
 
 #: src/app/ContentExportDialog.qml:91
 #: src/app/webcontainer/AccountErrorScreen.qml:50
@@ -377,20 +374,16 @@ msgid "Close"
 msgstr "Zatvori"
 
 #: src/app/ContentExportDialog.qml:100
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open link in browser"
-msgstr "Otvori poveznicu u zadanom pregledniku"
+msgstr "Otvori poveznicu u pregledniku"
 
 #: src/app/ContentExportDialog.qml:109
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open file in browser"
-msgstr "Otvori poveznicu u zadanom pregledniku"
+msgstr "Otvori datoteku u pregledniku"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
-msgstr ""
+msgstr "Prilagođeni korisnički agent"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
 #: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
@@ -399,30 +392,29 @@ msgstr "Obriši"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
-msgstr ""
+msgstr "Novi korisnički agent"
 
 #: src/app/CustomUserAgentsPage.qml:161
 msgid "Edit User Agent"
-msgstr ""
+msgstr "Uredi korisnički agent"
 
 #: src/app/CustomUserAgentsPage.qml:187
-#, fuzzy
 msgid "No custom user agents available"
-msgstr "Nema dostupnih preuzimanja"
+msgstr "Nema dostupnih prilagođenih korisničkih agenta"
 
 #: src/app/DomainPermissionsPage.qml:54
 #: src/app/webcontainer/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
-msgstr ""
+msgstr "Popis blokiranih/dozvoljenih domena"
 
 #: src/app/DomainPermissionsPage.qml:113 src/app/DomainSettingsPage.qml:113
 msgid "Add domain"
-msgstr ""
+msgstr "Dodaj domenu"
 
 #: src/app/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
-msgstr ""
+msgstr "Unesite ime domene, npr. example.com (poddomene će se ukloniti)."
 
 #: src/app/DomainPermissionsPage.qml:222
 msgid "Not Set"
@@ -430,33 +422,32 @@ msgstr "Nije postavljeno"
 
 #: src/app/DomainPermissionsPage.qml:232
 msgid "Never allow access"
-msgstr ""
+msgstr "Nikada nemoj dozvoliti pristup"
 
 #: src/app/DomainPermissionsPage.qml:243
 msgid "Always allow access"
-msgstr ""
+msgstr "Uvijek dozvoli pristup"
 
 #: src/app/DomainPermissionsPage.qml:283
 msgid "No sites have been granted special permissions"
-msgstr ""
+msgstr "Nijednoj web stranici nisu dodijeljene posebne dozvole"
 
 #: src/app/DomainSettingsPage.qml:52
 #: src/app/webcontainer/WebappSettingsPage.qml:236
 msgid "Domain specific settings"
-msgstr ""
+msgstr "Postavke specifične za domenu"
 
 #: src/app/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
-msgstr ""
+msgstr "Unesite ime domene, npr. m.example.com"
 
 #: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
-msgstr ""
+msgstr "dozvoljava pokretanje drugih aplikacija"
 
 #: src/app/DomainSettingsPage.qml:226
-#, fuzzy
 msgid "access your location"
-msgstr "Dopusti ovoj domeni pristup tvojoj kameri?"
+msgstr "saznati vašu lokaciju"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
@@ -537,7 +528,7 @@ msgstr "Završeno"
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
 msgid "Clear"
-msgstr "Obriši"
+msgstr "Izbriši"
 
 #: src/app/DownloadsDialog.qml:179
 msgid "View All"
@@ -839,34 +830,34 @@ msgstr "Zabilješke"
 #: src/app/webbrowser/Browser.qml:242
 #: src/app/webcontainer/WebViewImplOxide.qml:302
 msgid "Blocked domain"
-msgstr ""
+msgstr "Blokirane domene"
 
 #: src/app/webbrowser/Browser.qml:243
 #: src/app/webcontainer/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
-msgstr ""
+msgstr "Blokiran zahtjev za navigaciju domeni %1."
 
 #: src/app/webbrowser/Browser.qml:269
 #: src/app/webcontainer/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
-msgstr ""
+msgstr "Dozvoljena domena"
 
 #: src/app/webbrowser/Browser.qml:270
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
 msgstr ""
+"domena %1 je sada na popisu dozvoljenih, bit će aktivna pri sljedećem "
+"ponovnom učitavanju stranice."
 
 #: src/app/webbrowser/Browser.qml:660
 msgid "Done"
 msgstr "Gotovo"
 
 #: src/app/webbrowser/Browser.qml:685
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "Zatvori karticu"
+msgstr "Ponovo otvori karticu"
 
 #: src/app/webbrowser/Browser.qml:811
 msgid "New window"
@@ -887,11 +878,11 @@ msgstr "Postavke"
 
 #: src/app/webbrowser/Browser.qml:863
 msgid "View source"
-msgstr ""
+msgstr "Prikaži izvor"
 
 #: src/app/webbrowser/Browser.qml:876
 msgid "Save / Print to PDF"
-msgstr ""
+msgstr "Spremi / Ispiši u PDF"
 
 #: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
 msgid "Zoom"
@@ -899,7 +890,7 @@ msgstr "Zoom"
 
 #: src/app/webbrowser/Browser.qml:904 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
-msgstr ""
+msgstr "Postavi način rada za radnu površinu"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
 #: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
@@ -908,13 +899,8 @@ msgid "(%1)"
 msgstr "(%1)"
 
 #: src/app/webbrowser/Browser.qml:1985
-#, fuzzy
-#| msgid ""
-#| "Choose an application to open this file or add it to the downloads folder."
 msgid "the file is already in the downloads folder."
-msgstr ""
-"Odaberite aplikaciju za otvaranje ove datoteke ili ju dodajte u mapu "
-"preuzimanja."
+msgstr "datoteka se već nalazi u mapi za preuzimanje."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:83
 msgid ""
@@ -960,9 +946,9 @@ msgstr "Danas"
 #. TRANSLATORS: %1 refers to the current page’s title
 #: src/app/webbrowser/morph-browser.qml:109
 #: src/app/webcontainer/webapp-container.qml:76
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 - Morph Web Browser"
-msgstr "%1 - Ubuntu web preglednik"
+msgstr "%1 – Morph web preglednik"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:41
 msgid "This is a private tab"
@@ -1022,7 +1008,7 @@ msgstr "Identitet ove web stranice nije provjeren."
 #: src/app/webbrowser/SecurityCertificatePopover.qml:109
 #, qt-format
 msgid "You are connected to %1 via HTTPS. The certificate is valid."
-msgstr ""
+msgstr "Povezani ste s %1 putem HTTPS-a. Certifikat je valjan."
 
 #: src/app/webbrowser/SettingsDeviceSelector.qml:42
 msgid "Default"
@@ -1035,10 +1021,8 @@ msgstr "Pogon pretraživanja"
 
 #: src/app/webbrowser/SettingsPage.qml:91
 #: src/app/webbrowser/SettingsPage.qml:504
-#, fuzzy
-#| msgid "New Tab"
 msgid "New Tab Page"
-msgstr "Nova kartica"
+msgstr "Stranica nove kartice"
 
 #: src/app/webbrowser/SettingsPage.qml:119
 msgid "Restore previous session at startup"
@@ -1046,17 +1030,17 @@ msgstr "Vrati prijašnju sesiju pri pokretanju"
 
 #: src/app/webbrowser/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
-msgstr ""
+msgstr "nije dostupno zbog pokretanja u privatnom načinu rada"
 
 #: src/app/webbrowser/SettingsPage.qml:159
 #: src/app/webcontainer/WebappSettingsPage.qml:58
 msgid "Automatic fit to width"
-msgstr ""
+msgstr "Automatsko prilagođavanje širini"
 
 #: src/app/webbrowser/SettingsPage.qml:160
 #: src/app/webcontainer/WebappSettingsPage.qml:59
 msgid "Adjusts the width of the website to the window"
-msgstr ""
+msgstr "Prilagođava širinu web stranice prozoru"
 
 #: src/app/webbrowser/SettingsPage.qml:179
 #: src/app/webcontainer/WebappSettingsPage.qml:78
@@ -1066,7 +1050,7 @@ msgstr "Zadani zoom"
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Load Images"
-msgstr ""
+msgstr "Učitaj slike"
 
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
@@ -1085,15 +1069,13 @@ msgid "Reset browser settings"
 msgstr "Vrati zadane postavke preglednika"
 
 #: src/app/webbrowser/SettingsPage.qml:334
-#, fuzzy
-#| msgid "Leave Private Mode"
 msgid "Start in private mode"
-msgstr "Napusti privatan način"
+msgstr "Pokreni u privatnom način rada"
 
 #: src/app/webbrowser/SettingsPage.qml:358
 #: src/app/webcontainer/WebappSettingsPage.qml:206
 msgid "Only allow browsing to whitelisted websites"
-msgstr ""
+msgstr "Dopusti pregledavanje samo web stranica na popisu dozvoljenih"
 
 #: src/app/webbrowser/SettingsPage.qml:398
 #: src/app/webbrowser/SettingsPage.qml:589
@@ -1101,50 +1083,36 @@ msgid "Camera & microphone"
 msgstr "Kamera i mikrofon"
 
 #: src/app/webbrowser/SettingsPage.qml:407
-#, fuzzy
-#| msgid "Clear Browsing History"
 msgid "Clear browsing history"
 msgstr "Obriši povijest pregledavanja"
 
 #: src/app/webbrowser/SettingsPage.qml:411
-#, fuzzy
-#| msgid "Clear Browsing History?"
 msgid "Clear browsing history?"
-msgstr "Želite li obrisati povijest pretraživanja?"
+msgstr "Obrisati povijest pregledavanja?"
 
 #: src/app/webbrowser/SettingsPage.qml:419
 #: src/app/webcontainer/WebappSettingsPage.qml:247
-#, fuzzy
-#| msgid "Clear Cache"
 msgid "Clear cache"
 msgstr "Obriši predmemoriju"
 
 #: src/app/webbrowser/SettingsPage.qml:422
 #: src/app/webcontainer/WebappSettingsPage.qml:250
-#, fuzzy
-#| msgid "Clear Cache?"
 msgid "Clear cache?"
-msgstr "Želite li obrisati predmemoriju?"
+msgstr "Obrisati predmemoriju?"
 
 #: src/app/webbrowser/SettingsPage.qml:430
 #: src/app/webcontainer/WebappSettingsPage.qml:258
-#, fuzzy
-#| msgid "Clear Cache"
 msgid "Clear all cookies"
-msgstr "Obriši predmemoriju"
+msgstr "Obriši sve kolačiće"
 
 #: src/app/webbrowser/SettingsPage.qml:433
 #: src/app/webcontainer/WebappSettingsPage.qml:261
-#, fuzzy
-#| msgid "Clear Cache?"
 msgid "Clear all Cookies?"
-msgstr "Želite li obrisati predmemoriju?"
+msgstr "Obrisati sve kolačiće?"
 
 #: src/app/webbrowser/SettingsPage.qml:516
-#, fuzzy
-#| msgid "Homepage"
 msgid "Custom homepage"
-msgstr "Početna stranica"
+msgstr "Prilagođena početna stranica"
 
 #: src/app/webbrowser/SettingsPage.qml:601
 msgid "Microphone"
@@ -1251,7 +1219,7 @@ msgstr "Ups, nešto nije u redu."
 
 #: src/app/webcontainer/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
-msgstr ""
+msgstr "WebappContainer postavke"
 
 #: src/app/webcontainer/WebappSettingsPage.qml:163
 msgid "Reset webapp settings"
@@ -1260,7 +1228,7 @@ msgstr "Resetiraj postavke web aplikacije"
 #: src/app/webcontainer/WebViewImplOxide.qml:330
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
-msgstr ""
+msgstr "domena %1 je sada na popisu dozvoljenih. Ponovo učitajte stranicu."
 
 #: src/app/ZoomControls.qml:61
 msgid "Zoom Out"
@@ -1300,7 +1268,7 @@ msgstr "Spremi zoom"
 
 #: src/app/ZoomControls.qml:192
 msgid "the current web app"
-msgstr ""
+msgstr "trenutačna web aplikacija"
 
 #: src/app/ZoomControls.qml:195
 #, qt-format
@@ -1325,14 +1293,12 @@ msgstr ""
 "Trenutačno zumiranje (%1 %) se može spremiti u %2 kao zadano zumiranje."
 
 #: src/app/ZoomControls.qml:206
-#, fuzzy
-#| msgid "Save in"
 msgid "Save for domain"
-msgstr "Spremi u"
+msgstr "Spremi za domenu"
 
 #: src/app/ZoomControls.qml:219
 msgid "Save as default"
-msgstr ""
+msgstr "Spremi kao zadano"
 
 #~ msgid "Resume"
 #~ msgstr "Nastavi"

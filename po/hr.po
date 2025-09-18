@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2025-09-09 15:16+0000\n"
+"PO-Revision-Date: 2025-09-21 17:02+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/hr/>\n"
@@ -72,13 +72,13 @@ msgstr "Dodaj ovu stranicu u zabilješke"
 
 #: src/app/actions/ClearHistory.qml:23
 msgid "Clear History"
-msgstr "Obriši povijest"
+msgstr "Izbriši povijest"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/ClearHistory.qml:26
 msgid "Clear Navigation History"
-msgstr "Obriši povijest navigacije"
+msgstr "Izbriši povijest navigacije"
 
 #: src/app/actions/CopyImageLink.qml:22
 msgid "Copy image link"
@@ -102,7 +102,7 @@ msgstr "Izreži"
 
 #: src/app/actions/Erase.qml:22
 msgid "Erase"
-msgstr "Obriši"
+msgstr "Izbriši"
 
 #: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:843
 msgid "Find in page"
@@ -388,7 +388,7 @@ msgstr "Prilagođeni korisnički agent"
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
 #: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
 msgid "Delete"
-msgstr "Obriši"
+msgstr "Izbriši"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
@@ -499,7 +499,7 @@ msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
 msgid "Delete File"
-msgstr "Obriši datoteku"
+msgstr "Izbriši datoteku"
 
 #: src/app/DownloadDelegate.qml:261
 msgid "Remove from History"
@@ -1084,31 +1084,31 @@ msgstr "Kamera i mikrofon"
 
 #: src/app/webbrowser/SettingsPage.qml:407
 msgid "Clear browsing history"
-msgstr "Obriši povijest pregledavanja"
+msgstr "Izbriši povijest pregledavanja"
 
 #: src/app/webbrowser/SettingsPage.qml:411
 msgid "Clear browsing history?"
-msgstr "Obrisati povijest pregledavanja?"
+msgstr "Izbrisati povijest pregledavanja?"
 
 #: src/app/webbrowser/SettingsPage.qml:419
 #: src/app/webcontainer/WebappSettingsPage.qml:247
 msgid "Clear cache"
-msgstr "Obriši predmemoriju"
+msgstr "Isprazni predmemoriju"
 
 #: src/app/webbrowser/SettingsPage.qml:422
 #: src/app/webcontainer/WebappSettingsPage.qml:250
 msgid "Clear cache?"
-msgstr "Obrisati predmemoriju?"
+msgstr "Isprazniti predmemoriju?"
 
 #: src/app/webbrowser/SettingsPage.qml:430
 #: src/app/webcontainer/WebappSettingsPage.qml:258
 msgid "Clear all cookies"
-msgstr "Obriši sve kolačiće"
+msgstr "Izbriši sve kolačiće"
 
 #: src/app/webbrowser/SettingsPage.qml:433
 #: src/app/webcontainer/WebappSettingsPage.qml:261
 msgid "Clear all Cookies?"
-msgstr "Obrisati sve kolačiće?"
+msgstr "Izbrisati sve kolačiće?"
 
 #: src/app/webbrowser/SettingsPage.qml:516
 msgid "Custom homepage"

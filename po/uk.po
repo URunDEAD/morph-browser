@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2024-01-04 16:35+0000\n"
-"Last-Translator: Serhii Horichenko <m@sgg.im>\n"
-"Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/morph-"
-"browser/uk/>\n"
+"PO-Revision-Date: 2025-09-21 17:02+0000\n"
+"Last-Translator: Libre Fox <libre_fox@ilyamikcoder.com>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.14-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -36,8 +36,7 @@ msgstr "Перегляд WWW за допомогою QtWebEngine"
 
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
-msgstr ""
-"Internet;WWW;Browser;Web;Explorer;інтернет;браузер;мережа;переглядач;веб"
+msgstr "Інтернет;WWW;Браузер;Мережа;Переглядач"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
@@ -59,7 +58,7 @@ msgstr "Старіша сторінка"
 
 #: src/app/actions/BookmarkLink.qml:22
 msgid "Bookmark link"
-msgstr "Створити закладку для посилання"
+msgstr "Створити закладку посиланню"
 
 #: src/app/actions/Bookmark.qml:23
 msgid "Bookmark"
@@ -79,13 +78,11 @@ msgstr "Спорожнити журнал"
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/ClearHistory.qml:26
 msgid "Clear Navigation History"
-msgstr "спорожнити;журнал;навігація;clear"
+msgstr "спорожнити;журнал;навігація;"
 
 #: src/app/actions/CopyImageLink.qml:22
-#, fuzzy
-#| msgid "Copy image"
 msgid "Copy image link"
-msgstr "Копіювати зображення"
+msgstr "Копіювати посилання на зображення"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
@@ -93,7 +90,7 @@ msgstr "Копіювати зображення"
 
 #: src/app/actions/CopyLink.qml:22
 msgid "Copy link"
-msgstr "Копіювати адресу посилання"
+msgstr "Копіювати посилання"
 
 #: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:418
 msgid "Copy"
@@ -240,7 +237,7 @@ msgstr "Користувацькі схеми URL-адрес"
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr "Веб-сайт \"%1\" хоче відкрити цю URL-адресу за межами веб-браузера:"
+msgstr "Веб-сайт '%1' хоче відкрити цю URL-адресу за межами веб-браузера:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
@@ -363,15 +360,13 @@ msgid "JavaScript Confirmation"
 msgstr "Підтвердження дій JavaScript"
 
 #: src/app/ContentExportDialog.qml:79
-#, fuzzy
-#| msgid "Open tabs"
 msgid "Open with"
-msgstr "Відкриті вкладки"
+msgstr "Відкрити за допомогою"
 
 #: src/app/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
-msgstr ""
+msgstr "Назва файлу: %1"
 
 #: src/app/ContentExportDialog.qml:91
 #: src/app/webcontainer/AccountErrorScreen.qml:50
@@ -379,16 +374,12 @@ msgid "Close"
 msgstr "Закрити"
 
 #: src/app/ContentExportDialog.qml:100
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open link in browser"
-msgstr "Відкрити посилання у типовому браузері"
+msgstr "Відкрити посилання у браузері"
 
 #: src/app/ContentExportDialog.qml:109
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open file in browser"
-msgstr "Відкрити посилання у типовому браузері"
+msgstr "Відкрити файл у браузері"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"

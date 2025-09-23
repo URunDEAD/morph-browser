@@ -30,8 +30,8 @@ ListItem {
     property alias image: thumbimage.source
 
     readonly property bool incomplete: !download.isFinished
-    readonly property bool error: download.interruptReason > WebEngineDownloadItem.NoReason
-    readonly property bool cancelled: download.interruptReason == WebEngineDownloadItem.UserCanceled
+    readonly property bool error: download.interruptReason > WebEngineDownloadRequest.NoReason
+    readonly property bool cancelled: download.interruptReason == WebEngineDownloadRequest.UserCanceled
     readonly property bool paused: download.isPaused
     readonly property int progress: download ? 100 * (download.receivedBytes / download.totalBytes) : -1
     

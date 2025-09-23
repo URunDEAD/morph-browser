@@ -1958,7 +1958,7 @@ Common.BrowserView {
 
         DownloadsModel.setComplete(downloadIdDataBase, true)
 
-        if ((download.state === WebEngineDownloadItem.DownloadCancelled) || (download.state === WebEngineDownloadItem.DownloadInterrupted))
+        if ((download.state === WebEngineDownloadRequest.DownloadCancelled) || (download.state === WebEngineDownloadRequest.DownloadInterrupted))
         {
           DownloadsModel.setError(downloadIdDataBase, download.interruptReasonString)
         }

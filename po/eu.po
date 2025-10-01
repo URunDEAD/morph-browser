@@ -8,33 +8,30 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2019-07-07 09:48+0000\n"
-"Last-Translator: Aitzol Berasategi <aitzol@disroot.org>\n"
-"Language-Team: Basque <https://translate.ubports.com/projects/ubports/morph-"
-"browser/eu/>\n"
+"PO-Revision-Date: 2025-10-06 23:02+0000\n"
+"Last-Translator: Joana R <git@joana.click>\n"
+"Language-Team: Basque <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/eu/>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 5.14-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
-#, fuzzy
 msgid "Morph Browser"
-msgstr "Nabigatzailea"
+msgstr "Morph Nabigatzailea"
 
 #: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:111
 #: src/app/webcontainer/webapp-container.qml:78
-#, fuzzy
 msgid "Morph Web Browser"
-msgstr "Web-nabigatzailea"
+msgstr "Morph Web-nabigatzailea"
 
 #: morph-browser.desktop.in:6
-#, fuzzy
 msgid "Browse the World Wide Web using QtWebEngine"
-msgstr "Nabigatu World Wide Web-ean"
+msgstr "Nabigatu World Wide Web-ean QtWebEngine erabiliz"
 
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
@@ -42,11 +39,11 @@ msgstr "Internet;WWW;Nabigatzailea;Weba;Arakatzailea"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
-msgstr ""
+msgstr "Leiho berria"
 
 #: morph-browser.desktop.in:27
 msgid "New Private Window"
-msgstr ""
+msgstr "Lehio pribatu berria"
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
@@ -83,10 +80,8 @@ msgid "Clear Navigation History"
 msgstr "Garbitu nabigazio-historia"
 
 #: src/app/actions/CopyImageLink.qml:22
-#, fuzzy
-#| msgid "Copy image"
 msgid "Copy image link"
-msgstr "Kopiatu irudia"
+msgstr "Kopiatu irudi esteka"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
@@ -162,9 +157,8 @@ msgid "Open link in new background tab"
 msgstr "Ireki lotura atzeko planoko fitxa berrian"
 
 #: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
-#, fuzzy
 msgid "Open link in new private window"
-msgstr "Ireki lotura fitxa berrian"
+msgstr "Ireki lotura fitxa pribatu berrian"
 
 #: src/app/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
@@ -172,7 +166,7 @@ msgstr "Ireki lotura fitxa berrian"
 
 #: src/app/actions/OpenLinkInNewWindow.qml:22
 msgid "Open link in new window"
-msgstr ""
+msgstr "Ireki esteka leiho berri batean"
 
 #: src/app/actions/OpenVideoInNewTab.qml:22
 msgid "Open video in new tab"
@@ -237,21 +231,21 @@ msgstr "Ados"
 
 #: src/app/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
-msgstr ""
+msgstr "URL eskema pertsonalizatua"
 
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "'%1'-(e)k nabigatzailetik kanpo ireki nahi du hurrengo URLa:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "URL hau sistemaren aplikazio batekin irekitzen saiatu?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
-msgstr ""
+msgstr "Erabakia gorde"
 
 #: src/app/AllowCustomSchemesDialog.qml:50
 #: src/app/GeolocationPermissionRequest.qml:51
@@ -279,7 +273,7 @@ msgstr "Utzi"
 #: src/app/AllowOrBlockDomainDialog.qml:25
 #: src/app/AllowOrBlockDomainDialog.qml:41
 msgid "Block domain"
-msgstr ""
+msgstr "Blokeatu domeinua"
 
 #: src/app/AllowOrBlockDomainDialog.qml:30
 #, qt-format
@@ -288,6 +282,9 @@ msgid ""
 "Would you like to continue to block the domain, allow browsing to the "
 "domain, or go back?"
 msgstr ""
+"%1(e)an sartzen ari zara baina hau ez dago zure baimendutako domeinuen "
+"zerrendan. Domeinua blokeatzen jarraitu nahi duzu, baimendu edo atzera joan "
+"nahi zara?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:31
 #, qt-format
@@ -296,10 +293,13 @@ msgid ""
 "Would you like to continue to block the domain, allow loading data from the "
 "domain, or just ignore this request ?"
 msgstr ""
+"%1-ek %2-an sartzen saiatu da baina %2 ez dago zure baimendutako domeinuen "
+"zerrendan. Blokeatzen jarraitu, datuak kargatzen baimendu edo eskaera hura "
+"bertan behera utzi nahi duzu?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
-msgstr ""
+msgstr "Domeinua baimendu"
 
 #: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
@@ -337,13 +337,13 @@ msgstr "Konexio hau ez da fidagarria"
 
 #. TRANSLATORS: %1 refers to the hostname
 #: src/app/CertificateVerificationDialog.qml:26
-#, fuzzy, qt-format
+#, qt-format
 msgid ""
 "You are trying to securely reach %1, but the security certificate of this "
 "website is not trusted. Reason: %2"
 msgstr ""
 "%1(e)ra modu seguruan konektatu nahian zabiltza, baina webgunearen "
-"segurtasun-ziurtagiria ez da fidagarria."
+"segurtasun-ziurtagiria ez da fidagarria. Arrazoia: %2"
 
 #: src/app/CertificateVerificationDialog.qml:39
 #: src/app/InvalidCertificateErrorSheet.qml:160
@@ -351,9 +351,8 @@ msgid "Proceed anyway"
 msgstr "Jarraitu dena den"
 
 #: src/app/ColorSelectDialog.qml:25
-#, fuzzy
 msgid "Select Color"
-msgstr "Hautatu dena"
+msgstr "Hautatu kolorea"
 
 #: src/app/ConfirmDialog.qml:24
 msgid "JavaScript Confirmation"
@@ -368,7 +367,7 @@ msgstr "Ireki fitxak"
 #: src/app/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
-msgstr ""
+msgstr "Fitxategiaren izena: %1"
 
 #: src/app/ContentExportDialog.qml:91
 #: src/app/webcontainer/AccountErrorScreen.qml:50
@@ -376,20 +375,16 @@ msgid "Close"
 msgstr "Itxi"
 
 #: src/app/ContentExportDialog.qml:100
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open link in browser"
-msgstr "Ireki lotura nabigatzaile lehenetsian"
+msgstr "Ireki lotura nabigatzailean"
 
 #: src/app/ContentExportDialog.qml:109
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open file in browser"
-msgstr "Ireki lotura nabigatzaile lehenetsian"
+msgstr "Ireki fitxategia nabigatzailean"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
-msgstr ""
+msgstr "Erabiltzaile Agente Pertsonalizatua"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
 #: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
@@ -398,100 +393,99 @@ msgstr "Ezabatu"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
-msgstr ""
+msgstr "Erabiltzaile Agente Berria"
 
 #: src/app/CustomUserAgentsPage.qml:161
 msgid "Edit User Agent"
-msgstr ""
+msgstr "Editatu Erabiltzaile Agentea"
 
 #: src/app/CustomUserAgentsPage.qml:187
-#, fuzzy
 msgid "No custom user agents available"
-msgstr "Ez dago deskargarik eskuragarri"
+msgstr "Ez dago erabiltzaile agenterik eskuragarri"
 
 #: src/app/DomainPermissionsPage.qml:54
 #: src/app/webcontainer/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
-msgstr ""
+msgstr "Domeinuen baimen/ezeztatze lista"
 
 #: src/app/DomainPermissionsPage.qml:113 src/app/DomainSettingsPage.qml:113
 msgid "Add domain"
-msgstr ""
+msgstr "Domeinua gehitu"
 
 #: src/app/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
 msgstr ""
+"Domeinuaren izena sartu, example.com adibidez "
+"(azpi-domeinuak ezabatuak izango dira)."
 
 #: src/app/DomainPermissionsPage.qml:222
 msgid "Not Set"
-msgstr ""
+msgstr "Ezarri gabea"
 
 #: src/app/DomainPermissionsPage.qml:232
 msgid "Never allow access"
-msgstr ""
+msgstr "Sarrera galarazi beti"
 
 #: src/app/DomainPermissionsPage.qml:243
 msgid "Always allow access"
-msgstr ""
+msgstr "Sarrera baimendu beti"
 
 #: src/app/DomainPermissionsPage.qml:283
 msgid "No sites have been granted special permissions"
-msgstr ""
+msgstr "Ez daude baimen berezirik duten web orririk"
 
 #: src/app/DomainSettingsPage.qml:52
 #: src/app/webcontainer/WebappSettingsPage.qml:236
 msgid "Domain specific settings"
-msgstr ""
+msgstr "Domeinu honen ezarpen"
 
 #: src/app/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
-msgstr ""
+msgstr "Domeinuaren izena sartu, m.example.com adibidez"
 
 #: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
-msgstr ""
+msgstr "beste aplikazioak hasteko gaitua"
 
 #: src/app/DomainSettingsPage.qml:226
-#, fuzzy
 msgid "access your location"
-msgstr "Baimena eman domeinu hori kamera atzitzeko?"
+msgstr "zure kokapenari sarrera"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "Aldi bakoitzean galdetu"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "Baimendu"
+msgstr "Baimenduta"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Ukatuta"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
-msgstr ""
+msgstr "erabiltzaile agente pertsonalizatua"
 
 #: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
-msgstr ""
+msgstr "Zoom: "
 
 #: src/app/DomainSettingsPage.qml:325
 msgid "not set"
-msgstr ""
+msgstr "ezarri gabea"
 
 #: src/app/DomainSettingsPage.qml:361
+#, fuzzy
 msgid "No domain specific settings available"
-msgstr ""
+msgstr "Ez dago domeinuaren ezarpenik eskuragarri"
 
 #. TRANSLATORS: %1 is the percentage of the download completed so far
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
-msgstr ""
+msgstr "%%1"
 
 #: src/app/DownloadDelegate.qml:170
 msgid "Download failed"
@@ -499,53 +493,41 @@ msgstr "Deskargak huts egin du"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "Ezezaguna"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "Ezabatu"
+msgstr "Fitxategia ezabatu"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "Garbitu historia"
+msgstr "Kendu historiatik"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "Kopiatu lotura"
+msgstr "Kopiatu deskarga lotura"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
-msgstr "Deskargak"
+msgstr "Azken Deskargak"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
-msgstr "Deskargak"
+msgstr "Deskarga berririk ez"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Utzi"
+msgstr "Deuseztatua"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Amaituta"
 
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
@@ -554,7 +536,7 @@ msgstr "Garbitu"
 
 #: src/app/DownloadsDialog.qml:179
 msgid "View All"
-msgstr ""
+msgstr "Ikusi denak"
 
 #: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:850
 #: src/app/webcontainer/WebappSettingsPage.qml:137
@@ -571,19 +553,19 @@ msgstr "Ez dago deskargarik eskuragarri"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "erabiltzaile agente izen hau jada existzen da"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
 msgid "Add the name for the user agent"
-msgstr ""
+msgstr "Gehitu erabiltzaile agentearen izena"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
-msgstr ""
+msgstr "sartu erabiltzaile agentearen ezarpenak (string)..."
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
-msgstr ""
+msgstr "Zihurtagiriak huts egin du"
 
 #: src/app/ErrorSheet.qml:42
 msgid "Network Error"
@@ -598,7 +580,7 @@ msgstr "Badirudi arazoak dituzula orri hau ikusteko: %1."
 #: src/app/ErrorSheet.qml:56
 #, qt-format
 msgid "Error: %1"
-msgstr ""
+msgstr "Errorea: %1"
 
 #: src/app/ErrorSheet.qml:62 src/app/InvalidCertificateErrorSheet.qml:173
 msgid "Back to safety"
@@ -766,16 +748,15 @@ msgstr "%1:%2 webguneak autentifikazioa behar du."
 
 #: src/app/SavePageDialog.qml:24
 msgid "Save page as HTML / PDF"
-msgstr ""
+msgstr "Gorde orria HTML ala PDF bezala"
 
 #: src/app/SavePageDialog.qml:41
-#, fuzzy
 msgid "No save actions are available"
-msgstr "Ez dago deskargarik eskuragarri"
+msgstr "Ez dago gordetzeko modurik eskuragarri"
 
 #: src/app/SavePageDialog.qml:46
 msgid "Save as HTML"
-msgstr ""
+msgstr "Gorde HTML bezala"
 
 #: src/app/SavePageDialog.qml:54
 #: src/app/webbrowser/ContentDownloadDialog.qml:102
@@ -784,11 +765,11 @@ msgstr "Deskargatu"
 
 #: src/app/SavePageDialog.qml:64
 msgid "Save as PDF"
-msgstr ""
+msgstr "Gorde PDF bezala"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Ezabatu zerrendatik"
 
 #: src/app/webbrowser/AddressBar.qml:287
 msgid "find in page"
@@ -800,7 +781,7 @@ msgstr "bilatu edo idatzi helbide bat"
 
 #: src/app/webbrowser/AddressBar.qml:440
 msgid "Paste and Go"
-msgstr ""
+msgstr "Itsatsi eta Joan"
 
 #: src/app/webbrowser/BookmarkOptions.qml:66
 msgid "Bookmark Added"
@@ -853,42 +834,40 @@ msgstr "Laster-markak"
 #: src/app/webbrowser/Browser.qml:242
 #: src/app/webcontainer/WebViewImplOxide.qml:302
 msgid "Blocked domain"
-msgstr ""
+msgstr "Domeinu blokeatua"
 
 #: src/app/webbrowser/Browser.qml:243
 #: src/app/webcontainer/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
-msgstr ""
+msgstr "Nabigatze eskaria %1-(e)ra blokeatua izan da."
 
 #: src/app/webbrowser/Browser.qml:269
 #: src/app/webcontainer/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
-msgstr ""
+msgstr "Baimendutako domeinua"
 
 #: src/app/webbrowser/Browser.qml:270
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
-msgstr ""
+msgstr "%1 domeinua baimenduta dago orain, freskatu ondoren izango da prest."
 
 #: src/app/webbrowser/Browser.qml:660
 msgid "Done"
 msgstr "Eginda"
 
 #: src/app/webbrowser/Browser.qml:685
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
-msgstr "Itxi fitxa"
+msgstr "Ireki fitxa berriz"
 
 #: src/app/webbrowser/Browser.qml:811
 msgid "New window"
-msgstr ""
+msgstr "Leiho berria"
 
 #: src/app/webbrowser/Browser.qml:817
 msgid "New private window"
-msgstr ""
+msgstr "Lehio pribatu berria"
 
 #: src/app/webbrowser/Browser.qml:837 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
@@ -901,19 +880,19 @@ msgstr "Ezarpenak"
 
 #: src/app/webbrowser/Browser.qml:863
 msgid "View source"
-msgstr ""
+msgstr "Ikusi iturburua"
 
 #: src/app/webbrowser/Browser.qml:876
 msgid "Save / Print to PDF"
-msgstr ""
+msgstr "Gorde / Imprimatu PDF-an"
 
 #: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
 msgid "Zoom"
-msgstr ""
+msgstr "Zoom"
 
 #: src/app/webbrowser/Browser.qml:904 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
-msgstr ""
+msgstr "Gaitu Mahigaineko itxura"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
 #: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
@@ -922,13 +901,8 @@ msgid "(%1)"
 msgstr "(%1)"
 
 #: src/app/webbrowser/Browser.qml:1985
-#, fuzzy
-#| msgid ""
-#| "Choose an application to open this file or add it to the downloads folder."
 msgid "the file is already in the downloads folder."
-msgstr ""
-"Aukeratu aplikazio bat fitxategia zabaltzeko edo deskarga karpetan "
-"gordetzeko."
+msgstr "fitxategia badago jada deskarga karpetan."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:83
 msgid ""
@@ -973,9 +947,9 @@ msgstr "Gaur"
 #. TRANSLATORS: %1 refers to the current page’s title
 #: src/app/webbrowser/morph-browser.qml:109
 #: src/app/webcontainer/webapp-container.qml:76
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 - Morph Web Browser"
-msgstr "%1 - Ubunturen web-nabigatzailea"
+msgstr "%1 - Morph web-nabigatzailea"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:41
 msgid "This is a private tab"
@@ -1035,7 +1009,7 @@ msgstr "Webgune honen identitatea ez da egiaztatu."
 #: src/app/webbrowser/SecurityCertificatePopover.qml:109
 #, qt-format
 msgid "You are connected to %1 via HTTPS. The certificate is valid."
-msgstr ""
+msgstr "%1-era HTTPS bitartez konektatuta zaude. Zihurtagiria baliozkoa da."
 
 #: src/app/webbrowser/SettingsDeviceSelector.qml:42
 msgid "Default"
@@ -1048,10 +1022,8 @@ msgstr "Bilaketa-motorra"
 
 #: src/app/webbrowser/SettingsPage.qml:91
 #: src/app/webbrowser/SettingsPage.qml:504
-#, fuzzy
-#| msgid "New Tab"
 msgid "New Tab Page"
-msgstr "Fitxa berria"
+msgstr "Orri fitxa berria"
 
 #: src/app/webbrowser/SettingsPage.qml:119
 msgid "Restore previous session at startup"
@@ -1059,33 +1031,32 @@ msgstr "Hasterakoan berreskuratu saioa"
 
 #: src/app/webbrowser/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
-msgstr ""
+msgstr "ez dago eskuragarri modu izkutuan hasita"
 
 #: src/app/webbrowser/SettingsPage.qml:159
 #: src/app/webcontainer/WebappSettingsPage.qml:58
 msgid "Automatic fit to width"
-msgstr ""
+msgstr "Automatikoki zabalerara egokitu"
 
 #: src/app/webbrowser/SettingsPage.qml:160
 #: src/app/webcontainer/WebappSettingsPage.qml:59
 msgid "Adjusts the width of the website to the window"
-msgstr ""
+msgstr "Web orriaren zabalera lehioaren zabalerari egokitzen du"
 
 #: src/app/webbrowser/SettingsPage.qml:179
 #: src/app/webcontainer/WebappSettingsPage.qml:78
-#, fuzzy
 msgid "Default Zoom"
-msgstr "Lehenetsia"
+msgstr "Zoom Lehenetsia"
 
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Load Images"
-msgstr ""
+msgstr "Kargatu Irudiak"
 
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
-msgstr ""
+msgstr "Web orrietan irudiak automatikoki kargatu"
 
 #: src/app/webbrowser/SettingsPage.qml:238
 #: src/app/webbrowser/SettingsPage.qml:320
@@ -1099,10 +1070,8 @@ msgid "Reset browser settings"
 msgstr "Berrezarri nabigatzailearen ezarpenak"
 
 #: src/app/webbrowser/SettingsPage.qml:334
-#, fuzzy
-#| msgid "Leave Private Mode"
 msgid "Start in private mode"
-msgstr "Utzi modu pribatua"
+msgstr "Hasi modu pribatuan"
 
 #: src/app/webbrowser/SettingsPage.qml:358
 #: src/app/webcontainer/WebappSettingsPage.qml:206
@@ -1115,50 +1084,36 @@ msgid "Camera & microphone"
 msgstr "Kamera eta mikrofonoa"
 
 #: src/app/webbrowser/SettingsPage.qml:407
-#, fuzzy
-#| msgid "Clear Browsing History"
 msgid "Clear browsing history"
 msgstr "Garbitu nabigatze-historia"
 
 #: src/app/webbrowser/SettingsPage.qml:411
-#, fuzzy
-#| msgid "Clear Browsing History?"
 msgid "Clear browsing history?"
 msgstr "Garbitu nabigazio historia?"
 
 #: src/app/webbrowser/SettingsPage.qml:419
 #: src/app/webcontainer/WebappSettingsPage.qml:247
-#, fuzzy
-#| msgid "Clear Cache"
 msgid "Clear cache"
 msgstr "Garbitu cache-a"
 
 #: src/app/webbrowser/SettingsPage.qml:422
 #: src/app/webcontainer/WebappSettingsPage.qml:250
-#, fuzzy
-#| msgid "Clear Cache?"
 msgid "Clear cache?"
-msgstr "Garbitu cachea?"
+msgstr "Garbitu cache-a?"
 
 #: src/app/webbrowser/SettingsPage.qml:430
 #: src/app/webcontainer/WebappSettingsPage.qml:258
-#, fuzzy
-#| msgid "Clear Cache"
 msgid "Clear all cookies"
-msgstr "Garbitu cache-a"
+msgstr "Garbitu cookie-ak"
 
 #: src/app/webbrowser/SettingsPage.qml:433
 #: src/app/webcontainer/WebappSettingsPage.qml:261
-#, fuzzy
-#| msgid "Clear Cache?"
 msgid "Clear all Cookies?"
-msgstr "Garbitu cachea?"
+msgstr "Garbitu cookie guztiak?"
 
 #: src/app/webbrowser/SettingsPage.qml:516
-#, fuzzy
-#| msgid "Homepage"
 msgid "Custom homepage"
-msgstr "Hasiera-orria"
+msgstr "Hasiera-orri pertsonalizatua"
 
 #: src/app/webbrowser/SettingsPage.qml:601
 msgid "Microphone"
@@ -1268,58 +1223,53 @@ msgid "WebappContainer Settings"
 msgstr ""
 
 #: src/app/webcontainer/WebappSettingsPage.qml:163
-#, fuzzy
 msgid "Reset webapp settings"
-msgstr "Berrezarri nabigatzailearen ezarpenak"
+msgstr "Berrezarri web aplikazioaren ezarpenak"
 
 #: src/app/webcontainer/WebViewImplOxide.qml:330
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
-msgstr ""
+msgstr "%1 domeinua baimendua izan da, freskatu orria mesedez."
 
 #: src/app/ZoomControls.qml:61
 msgid "Zoom Out"
-msgstr ""
+msgstr "Gutxitu Zoom"
 
 #: src/app/ZoomControls.qml:68
 msgid "Reset"
-msgstr ""
+msgstr "Berrezarri"
 
 #: src/app/ZoomControls.qml:68
 msgid "fit"
-msgstr ""
+msgstr "egokitu"
 
 #: src/app/ZoomControls.qml:75
 msgid "Zoom In"
-msgstr ""
+msgstr "Handitu Zoom"
 
 #: src/app/ZoomControls.qml:100
 msgid "Current Zoom"
-msgstr ""
+msgstr "Oraingo Zoom-a"
 
 #: src/app/ZoomControls.qml:101
 msgid "domain"
-msgstr ""
+msgstr "domeinu"
 
 #: src/app/ZoomControls.qml:101
-#, fuzzy
-#| msgid "Default"
 msgid "default"
-msgstr "Lehenetsia"
+msgstr "lehenetsia"
 
 #: src/app/ZoomControls.qml:101
 msgid "auto-fit"
-msgstr ""
+msgstr "egokitu"
 
 #: src/app/ZoomControls.qml:190
-#, fuzzy
-#| msgid "Save image"
 msgid "Save Zoom"
-msgstr "Gorde irudia"
+msgstr "Gorde Zoom-a"
 
 #: src/app/ZoomControls.qml:192
 msgid "the current web app"
-msgstr ""
+msgstr "Oraingo web aplikazioa"
 
 #: src/app/ZoomControls.qml:195
 #, qt-format
@@ -1327,27 +1277,27 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"Oraingo Zoom-a (%%1) %2(e)n oraingo domeinurako ala Zoom lehentsi gisa gorde "
+"daiteke."
 
 #: src/app/ZoomControls.qml:197
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr ""
+msgstr "Oraingo Zoom-a (%%1) %2(e)n oraingo domeinurako gorde daiteke."
 
 #: src/app/ZoomControls.qml:199
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr ""
+msgstr "Oraingo Zoom-a (%%1) %2(e)n Zoom lehentsi gisa gorde daiteke."
 
 #: src/app/ZoomControls.qml:206
-#, fuzzy
-#| msgid "Save in"
 msgid "Save for domain"
-msgstr "Gorde hemen"
+msgstr "Gorde domeinuarentzako"
 
 #: src/app/ZoomControls.qml:219
 msgid "Save as default"
-msgstr ""
+msgstr "Gorde lehentsi gisa"
 
 #~ msgid "Resume"
 #~ msgstr "Berrekin"

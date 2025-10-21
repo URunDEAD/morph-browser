@@ -1938,7 +1938,7 @@ Common.BrowserView {
 
         console.log("adding download with id " + downloadIdDataBase)
         Common.ActiveDownloadsSingleton.currentDownloads[downloadIdDataBase] = download
-        DownloadsModel.add(downloadIdDataBase, (download.url.toString().indexOf("file://%1/pdf_tmp".arg(cacheLocation)) === 0) ? "" : download.url, download.path, download.mimeType, incognito)
+        DownloadsModel.add(downloadIdDataBase, (download.url.toString().indexOf("file://%1/pdf_tmp".arg(cacheLocation)) === 0) ? "" : download.url, `${download.downloadDirectory}/${download.downloadFileName}`, download.mimeType, incognito)
 
         internal.addNewDownload(download)
         internal.showDownloadsDialog()
@@ -1980,20 +1980,20 @@ Common.BrowserView {
             }
 
             // already downloaded item
-            if ((download.url.toString().indexOf("file://%1".arg(currentWebview.profile.downloadPath)) === 0) && FileOperations.extension(download.path) !== "mhtml" ) {
+            if ((download.url.toString().indexOf("file://%1".arg(currentWebview.profile.downloadPath)) === 0) && FileOperations.extension(download.downloadFileName) !== "mhtml" ) {
                console.log(incognito ? "download rejected (item has already been downloaded)" : "download rejected (%1 has already been downloaded)".arg(download.url));
                currentWebview.showMessage(i18n.tr("the file is already in the downloads folder."))
                return;
             }
 
-            console.log("a download was requested with path %1".arg(download.path))
+            console.log(`a download was requested with path ${download.downloadDirectory}/${download.downloadFileName}`)
             download.accept();
             browser.startDownload(download);
         }
 
         function onDownloadFinished(download) {
 
-            console.log(incognito? "download finished" : "a download was finished with path %1.".arg(download.path));
+            console.log(incognito? "download finished" : `a download was finished with path ${download.downloadDirectory}/${download.downloadFileName}.`);
             browser.setDownloadComplete(download);
 
             // delete pdf in cache / close the tab

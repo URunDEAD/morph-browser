@@ -101,7 +101,7 @@ Popover {
             
             delegate: SimpleDownloadDelegate {
                 download: modelData
-                title.text: FileUtils.getFilename(modelData.path)
+                title.text: modelData.downloadFileName
                 subtitle.text: if (cancelled) {
                             i18n.tr("Cancelled")
                         } else {
@@ -113,12 +113,12 @@ Popover {
                 image: !incomplete && thumbnailLoader.status == Loader.Ready 
                               && (modelData.mimeType.indexOf("image") === 0 
                                   || modelData.mimeType.indexOf("video") === 0)
-                              ? "image://thumbnailer/file://" + modelData.path : ""
+                              ? `image://thumbnailer/file://${modelData.downloadDirectory}/${modelData.downloadFileName}` : ""
                 icon: MimeDatabase.iconForMimetype(modelData.mimeType)
                 
                 onClicked: {
                     if (!incomplete && !error) {
-                        contentExportLoader.item.openDialog(download.path, MimeTypeMapper.mimeTypeToContentType(download.mimeType), download.mimeType, download.url, title.text)
+                        contentExportLoader.item.openDialog(`${download.downloadDirectory}/${download.downloadFileName}`, MimeTypeMapper.mimeTypeToContentType(download.mimeType), download.mimeType, download.url, title.text)
                     } else {
                         if (download) {
                             if (paused) {
@@ -134,7 +134,7 @@ Popover {
                 onCancel: DownloadsModel.cancelDownload(download.id)
                 onDeleted: {
                     if (!incomplete) {
-                        DownloadsModel.deleteDownload(download.path)
+                        DownloadsModel.deleteDownload(`${download.downloadDirectory}/${download.downloadFileName}`)
                     }
                 }
             }

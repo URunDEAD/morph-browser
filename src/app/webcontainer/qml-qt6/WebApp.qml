@@ -178,7 +178,7 @@ Common.BrowserView {
 
         console.log("adding download with id " + downloadIdDataBase)
         Common.ActiveDownloadsSingleton.currentDownloads[downloadIdDataBase] = download
-        DownloadsModel.add(downloadIdDataBase, download.url, download.path, download.mimeType, false)
+        DownloadsModel.add(downloadIdDataBase, download.url, `${download.downloadDirectory}/${download.downloadFileName}`, download.mimeType, false)
 
         addNewDownload(download)
 
@@ -510,7 +510,7 @@ Common.BrowserView {
 
            function onDownloadRequested(download) {
 
-               console.log("a download was requested with path %1".arg(download.path))
+               console.log(`a download was requested with path ${download.downloadDirectory}/${download.downloadFileName}`)
 
                download.accept();
                webapp.startDownload(download);
@@ -518,7 +518,7 @@ Common.BrowserView {
 
            function onDownloadFinished(download) {
 
-               console.log("a download was finished with path %1.".arg(download.path))
+               console.log(`a download was finished with path ${download.downloadDirectory}/${download.downloadFileName}`)
                webapp.setDownloadComplete(download)
            }
        }

@@ -888,7 +888,13 @@ Common.BrowserView {
 
                         // the filename of the PDF is determined from the title (replace not allowed / problematic chars with '_')
                         // the QtWebEngine does give the filename (.mhtml) for the SavePage action with that pattern as well
-                        savePageDialog.saveAsPdf.connect( function() { currentWebview.printToPdf("%1/pdf_tmp/%2.pdf".arg(cacheLocation).arg(currentWebview.title.replace(/["/:*?\\<>|~]/g,'_')));});
+                        savePageDialog.saveAsPdf.connect( function() {
+                            currentWebview.printToPdf((data) => {
+                                const dataURL = "data:application/pdf;base64," + Qt.btoa(data);
+                                const filename = currentWebview.title.replace(/["/:*?\\<>|~]/g,'_') + ".pdf";
+                                currentWebview.runJavaScript("var link = document.createElement('a');link.download='%1';link.href='%2';link.click();".arg(filename).arg(dataURL));
+                            });
+                        });
                         savePageDialog.canSaveAsPdf = (docContentType.startsWith("text/") || docContentType.startsWith("image/") || xmlTypes.includes(docContentType)) && ! UrlUtils.isPdfViewerExtensionUrl(currentWebview.url);
                     });
                 }

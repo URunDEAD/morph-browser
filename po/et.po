@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2025-08-27 20:31+0000\n"
+"PO-Revision-Date: 2025-10-26 08:53+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/et/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 5.14.1-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -297,7 +297,7 @@ msgstr ""
 
 #: src/app/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
-msgstr ""
+msgstr "Luba domeen"
 
 #: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
@@ -417,32 +417,32 @@ msgstr ""
 
 #: src/app/DomainPermissionsPage.qml:232
 msgid "Never allow access"
-msgstr ""
+msgstr "Alati keela ligipääs"
 
 #: src/app/DomainPermissionsPage.qml:243
 msgid "Always allow access"
-msgstr ""
+msgstr "Alati luba ligipääs"
 
 #: src/app/DomainPermissionsPage.qml:283
 msgid "No sites have been granted special permissions"
-msgstr ""
+msgstr "Ühelgi veebisaidil pole eraldi õigusi"
 
 #: src/app/DomainSettingsPage.qml:52
 #: src/app/webcontainer/WebappSettingsPage.qml:236
 msgid "Domain specific settings"
-msgstr ""
+msgstr "Domeenikohased seadistused"
 
 #: src/app/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
-msgstr ""
+msgstr "Sisesta domeeni nimi, näiteks m.toresait.ee"
 
 #: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
-msgstr ""
+msgstr "võib käivitada teisi rakendusi"
 
 #: src/app/DomainSettingsPage.qml:226
 msgid "access your location"
-msgstr ""
+msgstr "võib tuvastada sinu asukohta"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
@@ -462,21 +462,21 @@ msgstr "sinu loodud brauseritunnus"
 
 #: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
-msgstr ""
+msgstr "Suumitase: "
 
 #: src/app/DomainSettingsPage.qml:325
 msgid "not set"
-msgstr ""
+msgstr "määramata"
 
 #: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
-msgstr ""
+msgstr "Domeenikohaseid seadistusi pole saadaval"
 
 #. TRANSLATORS: %1 is the percentage of the download completed so far
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: src/app/DownloadDelegate.qml:170
 msgid "Download failed"

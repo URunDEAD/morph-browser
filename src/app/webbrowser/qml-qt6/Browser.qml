@@ -878,9 +878,10 @@ Common.BrowserView {
                 enabled: currentWebview && (currentWebview.url.toString() !== "")
                 onTriggered: {
                     currentWebview.runJavaScript("document.contentType", function(docContentType) {
+                        const xmlTypes = ["application/xhtml+xml", "application/xml"];
                         var savePageDialog = PopupUtils.open(Qt.resolvedUrl("../SavePageDialog.qml"), currentWebview);
                         savePageDialog.saveAsHtml.connect( function() { currentWebview.triggerWebAction(WebEngineView.SavePage);});
-                        savePageDialog.canSaveAsHtml = (docContentType.indexOf("text/") === 0) && ! UrlUtils.isPdfViewerExtensionUrl(currentWebview.url);
+                        savePageDialog.canSaveAsHtml = (docContentType.startsWith("text/") || xmlTypes.includes(docContentType)) && ! UrlUtils.isPdfViewerExtensionUrl(currentWebview.url);
 
                         savePageDialog.download.connect( function() {currentWebview.runJavaScript("var link = document.createElement('a');link.download='';link.href='%1';link.click();".arg(UrlUtils.isPdfViewerExtensionUrl(currentWebview.url) ? currentWebview.url.toString().substr(UrlUtils.getPdfViewerExtensionUrlPrefix().length) : currentWebview.url));});
                         savePageDialog.canDownload = (docContentType !== "text/html") || (UrlUtils.isPdfViewerExtensionUrl(currentWebview.url) && ! currentWebview.url.toString().substr(UrlUtils.getPdfViewerExtensionUrlPrefix().length).indexOf("file://%1".arg(currentWebview.profile.downloadPath)) === 0);
@@ -888,7 +889,7 @@ Common.BrowserView {
                         // the filename of the PDF is determined from the title (replace not allowed / problematic chars with '_')
                         // the QtWebEngine does give the filename (.mhtml) for the SavePage action with that pattern as well
                         savePageDialog.saveAsPdf.connect( function() { currentWebview.printToPdf("%1/pdf_tmp/%2.pdf".arg(cacheLocation).arg(currentWebview.title.replace(/["/:*?\\<>|~]/g,'_')));});
-                        savePageDialog.canSaveAsPdf = ((docContentType.indexOf("text/") === 0) || (docContentType.indexOf("image/") === 0)) && ! UrlUtils.isPdfViewerExtensionUrl(currentWebview.url);
+                        savePageDialog.canSaveAsPdf = (docContentType.startsWith("text/") || docContentType.startsWith("image/") || xmlTypes.includes(docContentType)) && ! UrlUtils.isPdfViewerExtensionUrl(currentWebview.url);
                     });
                 }
             },

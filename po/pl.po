@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2024-01-04 16:35+0000\n"
+"PO-Revision-Date: 2025-10-26 08:53+0000\n"
 "Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/lomiri/morph-"
-"browser/pl/>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/lomiri/"
+"morph-browser/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"Plural-Forms: nplurals=3; plural="
+"(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.14.1-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -81,10 +81,8 @@ msgid "Clear Navigation History"
 msgstr "Wyczyść historię nawigacji"
 
 #: src/app/actions/CopyImageLink.qml:22
-#, fuzzy
-#| msgid "Copy image"
 msgid "Copy image link"
-msgstr "Kopiuj obraz"
+msgstr "Kopiuj link do obrazu"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
@@ -364,15 +362,13 @@ msgid "JavaScript Confirmation"
 msgstr "Potwierdzenie JavaScriptu"
 
 #: src/app/ContentExportDialog.qml:79
-#, fuzzy
-#| msgid "Open tabs"
 msgid "Open with"
-msgstr "Otwarte karty"
+msgstr "Otwórz za pomocą"
 
 #: src/app/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
-msgstr ""
+msgstr "Nazwa pliku: %1"
 
 #: src/app/ContentExportDialog.qml:91
 #: src/app/webcontainer/AccountErrorScreen.qml:50
@@ -380,16 +376,12 @@ msgid "Close"
 msgstr "Zamknij"
 
 #: src/app/ContentExportDialog.qml:100
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open link in browser"
-msgstr "Otwórz w domyślnej przeglądarce"
+msgstr "Otwórz link w przeglądarce"
 
 #: src/app/ContentExportDialog.qml:109
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open file in browser"
-msgstr "Otwórz w domyślnej przeglądarce"
+msgstr "Otwórz plik w przeglądarce"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"

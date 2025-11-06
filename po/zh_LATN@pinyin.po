@@ -8,27 +8,29 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-10 12:51+0000\n"
+"Last-Translator: Wenwen Luo <wenwenluo130@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"lomiri/morph-browser/zh_LATN@pinyin/>\n"
 "Language: zh_LATN@pinyin\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: morph-browser.desktop.in:4
 msgid "Morph Browser"
-msgstr ""
+msgstr "图像预览"
 
 #: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:111
 #: src/app/webcontainer/webapp-container.qml:78
 msgid "Morph Web Browser"
-msgstr ""
+msgstr "Morph浏览器"
 
 #: morph-browser.desktop.in:6
 msgid "Browse the World Wide Web using QtWebEngine"
-msgstr ""
+msgstr "用QtWebEngine浏览 World Wide Web"
 
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"

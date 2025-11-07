@@ -29,19 +29,7 @@ set(ASSETS
     assets/tab-artwork.png
     assets/bottom_edge_hint@27.png
     assets/broken_lock@27.png
-    assets/tab-active@27.png
-    assets/tab-active@27.sci
-    assets/tab-active-desktop@27.png
-    assets/tab-active-desktop@27.sci
     assets/tab-error@27.png
-    assets/tab-hover@27.png
-    assets/tab-hover@27.sci
-    assets/tab-hover-desktop@27.png
-    assets/tab-hover-desktop@27.sci
-    assets/tab-non-active@27.png
-    assets/tab-non-active@27.sci
-    assets/tab-non-active-desktop@27.png
-    assets/tab-non-active-desktop@27.sci
     assets/tab-shadow-narrow@27.png
 )
 

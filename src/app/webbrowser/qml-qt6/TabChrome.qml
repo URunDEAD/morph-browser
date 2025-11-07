@@ -39,7 +39,8 @@ Item {
             rightMargin: - units.dp(2)
             leftMargin: - units.dp(2)
         }
-        source: "assets/tab-shadow-narrow.png"
+        source: "assets/tab-shadow-narrow@27.png"
+        scale: units.gridUnit / 27
         asynchronous: true
     }
 

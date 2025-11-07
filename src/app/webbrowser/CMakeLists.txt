@@ -21,6 +21,30 @@ set(WEBBROWSER_APP_MODELS_SRC
 
 set(WEBBROWSER_APP_MODELS morph-browser-models)
 
+set(ASSETS
+    assets/private-browsing-exit.svg
+    assets/stock_link.svg
+    assets/stock_website.png
+    assets/toolbar-dropshadow.png
+    assets/tab-artwork.png
+    assets/bottom_edge_hint@27.png
+    assets/broken_lock@27.png
+    assets/tab-active@27.png
+    assets/tab-active@27.sci
+    assets/tab-active-desktop@27.png
+    assets/tab-active-desktop@27.sci
+    assets/tab-error@27.png
+    assets/tab-hover@27.png
+    assets/tab-hover@27.sci
+    assets/tab-hover-desktop@27.png
+    assets/tab-hover-desktop@27.sci
+    assets/tab-non-active@27.png
+    assets/tab-non-active@27.sci
+    assets/tab-non-active-desktop@27.png
+    assets/tab-non-active-desktop@27.sci
+    assets/tab-shadow-narrow@27.png
+)
+
 add_library(${WEBBROWSER_APP_MODELS} STATIC ${WEBBROWSER_APP_MODELS_SRC})
 target_link_libraries(${WEBBROWSER_APP_MODELS}
     Qt::Core
@@ -52,9 +76,8 @@ install(TARGETS ${WEBBROWSER_APP}
 
 install(DIRECTORY qml-qt${QT_VERSION_MAJOR}/ DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser)
 
-install(DIRECTORY assets
-        DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser
-        FILES_MATCHING PATTERN *.png PATTERN *.svg PATTERN *.sci)
+install(FILES ${ASSETS}
+        DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser)
 
 install(DIRECTORY searchengines
         DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser

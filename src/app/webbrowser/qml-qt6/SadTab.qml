@@ -33,7 +33,8 @@ Rectangle {
 
         Image {
             anchors.horizontalCenter: parent.horizontalCenter
-            source: "assets/tab-error.png"
+            source: "assets/tab-error@27.png"
+            scale: units.gridUnit / 27
         }
 
         Label {

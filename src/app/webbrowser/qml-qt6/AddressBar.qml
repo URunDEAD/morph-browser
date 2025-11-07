@@ -179,7 +179,8 @@ FocusScope {
 
                 Image {
                     id: insecure
-                    source: "assets/broken_lock.png"
+                    source: "assets/broken_lock@27.png"
+                    scale: units.gridUnit / 27
                     height: parent.height
                     fillMode: Image.PreserveAspectFit
                     visible: internal.idle && internal.securityError

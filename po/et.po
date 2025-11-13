@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2025-10-26 08:53+0000\n"
+"PO-Revision-Date: 2025-11-17 13:51+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/et/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -605,7 +605,7 @@ msgstr ""
 
 #: src/app/InvalidCertificateErrorSheet.qml:55
 msgid "This site security certificate is not trusted.\n"
-msgstr ""
+msgstr "Selle veebisaidi turvasertifikaat pole usaldusväärne.\n"
 
 #: src/app/InvalidCertificateErrorSheet.qml:63
 msgid "Learn more"
@@ -644,6 +644,8 @@ msgid ""
 "Issuer:\n"
 "%1"
 msgstr ""
+"Väljaandja:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer's address
 #: src/app/InvalidCertificateErrorSheet.qml:121
@@ -652,6 +654,8 @@ msgid ""
 "Issuer address:\n"
 "%1"
 msgstr ""
+"Väljaandja aadress:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's start date
 #: src/app/InvalidCertificateErrorSheet.qml:132
@@ -660,6 +664,8 @@ msgid ""
 "Valid from:\n"
 "%1"
 msgstr ""
+"Kehtib alates:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's expiry date
 #: src/app/InvalidCertificateErrorSheet.qml:139
@@ -668,6 +674,8 @@ msgid ""
 "Valid until:\n"
 "%1"
 msgstr ""
+"Kehtib kuni:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's SHA1 fingerprint
 #: src/app/InvalidCertificateErrorSheet.qml:146
@@ -676,6 +684,8 @@ msgid ""
 "Fingerprint (SHA1):\n"
 "%1"
 msgstr ""
+"Sõrmejälg (SHA1):\n"
+"%1"
 
 #: src/app/InvalidCertificateErrorSheet.qml:153
 msgid ""
@@ -984,21 +994,21 @@ msgstr ""
 
 #: src/app/webbrowser/SettingsDeviceSelector.qml:42
 msgid "Default"
-msgstr ""
+msgstr "Vaikimisi"
 
 #: src/app/webbrowser/SettingsPage.qml:74
 #: src/app/webbrowser/SettingsPage.qml:277
 msgid "Search engine"
-msgstr ""
+msgstr "Otsingumootor"
 
 #: src/app/webbrowser/SettingsPage.qml:91
 #: src/app/webbrowser/SettingsPage.qml:504
 msgid "New Tab Page"
-msgstr ""
+msgstr "Uue vahekaardi leht"
 
 #: src/app/webbrowser/SettingsPage.qml:119
 msgid "Restore previous session at startup"
-msgstr ""
+msgstr "Käivitamisel taasta eelmine sessioon"
 
 #: src/app/webbrowser/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
@@ -1017,24 +1027,24 @@ msgstr ""
 #: src/app/webbrowser/SettingsPage.qml:179
 #: src/app/webcontainer/WebappSettingsPage.qml:78
 msgid "Default Zoom"
-msgstr ""
+msgstr "Vaikimisi suum"
 
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Load Images"
-msgstr ""
+msgstr "Laadi pildid"
 
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
-msgstr ""
+msgstr "Laadi veebisaitide pildid automaatselt"
 
 #: src/app/webbrowser/SettingsPage.qml:238
 #: src/app/webbrowser/SettingsPage.qml:320
 #: src/app/webcontainer/WebappSettingsPage.qml:151
 #: src/app/webcontainer/WebappSettingsPage.qml:192
 msgid "Privacy & permissions"
-msgstr ""
+msgstr "Privaatsus ja õigused"
 
 #: src/app/webbrowser/SettingsPage.qml:249
 msgid "Reset browser settings"
@@ -1042,7 +1052,7 @@ msgstr "Lähtesta veebibrauseri seadistused"
 
 #: src/app/webbrowser/SettingsPage.qml:334
 msgid "Start in private mode"
-msgstr ""
+msgstr "Käivita privaatses režiimis"
 
 #: src/app/webbrowser/SettingsPage.qml:358
 #: src/app/webcontainer/WebappSettingsPage.qml:206

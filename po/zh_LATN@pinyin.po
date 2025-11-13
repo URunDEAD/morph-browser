@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2025-11-10 12:51+0000\n"
+"PO-Revision-Date: 2025-11-17 13:51+0000\n"
 "Last-Translator: Wenwen Luo <wenwenluo130@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "lomiri/morph-browser/zh_LATN@pinyin/>\n"
@@ -34,19 +34,19 @@ msgstr "用QtWebEngine浏览 World Wide Web"
 
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
-msgstr ""
+msgstr "互联网；万维网；浏览器；网站；资源管理器"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
-msgstr ""
+msgstr "新窗口"
 
 #: morph-browser.desktop.in:27
 msgid "New Private Window"
-msgstr ""
+msgstr "新增个人窗口"
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
-msgstr ""
+msgstr "返回"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.

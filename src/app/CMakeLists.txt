@@ -30,10 +30,8 @@ add_library(${COMMONLIB} STATIC ${COMMONLIB_SRC})
 include_directories(${LIBAPPARMOR_INCLUDE_DIRS})
 target_link_libraries(${COMMONLIB}
     Qt::Core
-    Qt::CorePrivate
     Qt::Gui
     Qt::Network
-    Qt::NetworkPrivate
     Qt::Qml
     Qt::Quick
     Qt::Sql
@@ -43,9 +41,9 @@ target_link_libraries(${COMMONLIB}
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    target_link_libraries(${COMMONLIB} Qt::WebEngineCore Qt::WebEngineQuick)
+    target_link_libraries(${COMMONLIB} Qt::CorePrivate Qt::NetworkPrivate Qt::WebEngineQuick)
 else()
-    target_link_libraries(${COMMONLIB} Qt::WebEngine Qt::WebEngineCore)
+    target_link_libraries(${COMMONLIB} Qt::WebEngine)
 endif()
 
 install(DIRECTORY qml-qt${QT_VERSION_MAJOR}/ DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser)

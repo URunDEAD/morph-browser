@@ -238,8 +238,12 @@ QString removeVersionFrom(const QString& appId)
 void handleInstalls(const WebappClickHookInstallDescription& alreadyProcessedClickHooks
                    , const WebappClickHookInstallDescription& installedClickHooks)
 {
-    QSet<QString> alreadyProcessedClickHooksSet(alreadyProcessedClickHooks.hookFiles.keys().begin(), alreadyProcessedClickHooks.hookFiles.keys().end());
-    QSet<QString> installedClickHooksSet(installedClickHooks.hookFiles.keys().begin(), installedClickHooks.hookFiles.keys().end());
+    QList<QString> alreadyProcessedClickHooksList = alreadyProcessedClickHooks.hookFiles.keys();
+    QSet<QString> alreadyProcessedClickHooksSet(alreadyProcessedClickHooksList.begin(), alreadyProcessedClickHooksList.end());
+
+    QList<QString> installedClickHooksList = installedClickHooks.hookFiles.keys();
+    QSet<QString> installedClickHooksSet(installedClickHooksList.begin(), installedClickHooksList.end());
+
     QStringList newlyInstalledClickPackages =
             installedClickHooksSet.subtract(
                 alreadyProcessedClickHooksSet).values();
@@ -275,8 +279,11 @@ void handleInstalls(const WebappClickHookInstallDescription& alreadyProcessedCli
 void handleUninstall(const WebappClickHookInstallDescription& alreadyProcessedClickHooks
                      , const WebappClickHookInstallDescription& currentClickHooks)
 {
-    QSet<QString> currentClickHooksSet(currentClickHooks.hookFiles.keys().begin(), currentClickHooks.hookFiles.keys().end());
-    QSet<QString> alreadyProcessedClickHooksSet(alreadyProcessedClickHooks.hookFiles.keys().begin(), alreadyProcessedClickHooks.hookFiles.keys().end());
+    QList<QString> currentClickHooksList = currentClickHooks.hookFiles.keys();
+    QSet<QString> currentClickHooksSet(currentClickHooksList.begin(), currentClickHooksList.end());
+
+    QList<QString> alreadyProcessedClickHooksList = alreadyProcessedClickHooks.hookFiles.keys();
+    QSet<QString> alreadyProcessedClickHooksSet(alreadyProcessedClickHooksList.begin(), alreadyProcessedClickHooksList.end());
 
     QStringList deletedClickPackages =
             alreadyProcessedClickHooksSet.subtract(currentClickHooksSet).values();
@@ -304,8 +311,11 @@ void handleUninstall(const WebappClickHookInstallDescription& alreadyProcessedCl
 void handleUpdates(const WebappClickHookInstallDescription& alreadyProcessedClickHooks
                    , const WebappClickHookInstallDescription& installedClickHooks)
 {
-    QSet<QString> alreadyProcessedClickHooksSet(alreadyProcessedClickHooks.hookFiles.keys().begin(), alreadyProcessedClickHooks.hookFiles.keys().end());
-    QSet<QString> installedClickHooksSet(installedClickHooks.hookFiles.keys().begin(), installedClickHooks.hookFiles.keys().end());
+    QList<QString> alreadyProcessedClickHooksList = alreadyProcessedClickHooks.hookFiles.keys();
+    QSet<QString> alreadyProcessedClickHooksSet(alreadyProcessedClickHooksList.begin(), alreadyProcessedClickHooksList.end());
+
+    QList<QString> installedClickHooksList = installedClickHooks.hookFiles.keys();
+    QSet<QString> installedClickHooksSet(installedClickHooksList.begin(), installedClickHooksList.end());
     QStringList foundClickHooks =
             alreadyProcessedClickHooksSet.intersect(
                 installedClickHooksSet).values();

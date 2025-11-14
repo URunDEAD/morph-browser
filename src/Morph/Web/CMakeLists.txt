@@ -1,10 +1,11 @@
 project(morph-web-plugin)
 
+set(MORPH_WEB_IMPORTS_DIR "${QT_INSTALL_QML}/Morph/Web")
 set(ASSETS
     assets/handle@27.png
+    assets/scrollbar-theme.js
 )
 
-set(ASSETS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/assets")
 set(ASSETS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/assets")
 
 set(PLUGIN morph-web-plugin)
@@ -20,7 +21,6 @@ target_link_libraries(${PLUGIN}
 
 install(TARGETS ${PLUGIN} DESTINATION ${MORPH_WEB_IMPORTS_DIR})
 install(DIRECTORY qml-qt${QT_VERSION_MAJOR}/ DESTINATION ${MORPH_WEB_IMPORTS_DIR})
-install(FILES ${ASSETS} DESTINATION ${MORPH_WEB_IMPORTS_DIR})
 
 if(NOT ${CMAKE_CURRENT_BINARY_DIR} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR})
   # copy qml files over to build dir to be able to import them uninstalled

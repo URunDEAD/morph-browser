@@ -183,6 +183,8 @@ src/app/qml-qt6/ZoomControls.qml
 src/app/session-storage.cpp
 src/app/single-instance-manager.cpp
 src/app/url-utils.cpp
+src/app/webbrowser/assets/readability.js
+src/app/webbrowser/assets/readability-readerable.js
 src/app/webbrowser/bookmarks-folderlist-model.cpp
 src/app/webbrowser/bookmarks-folder-model.cpp
 src/app/webbrowser/bookmarks-model.cpp
@@ -221,8 +223,6 @@ src/app/webbrowser/qml-qt5/NewPrivateTabView.qml
 src/app/webbrowser/qml-qt5/NewTabView.qml
 src/app/webbrowser/qml-qt5/NewTabViewWide.qml
 src/app/webbrowser/qml-qt5/PreviewManager.qml
-src/app/webbrowser/qml-qt5/readability.js
-src/app/webbrowser/qml-qt5/readability-readerable.js
 src/app/webbrowser/qml-qt5/SadTab.qml
 src/app/webbrowser/qml-qt5/SearchEngines.qml
 src/app/webbrowser/qml-qt5/SearchSuggestions.qml
@@ -273,8 +273,6 @@ src/app/webbrowser/qml-qt6/NewPrivateTabView.qml
 src/app/webbrowser/qml-qt6/NewTabView.qml
 src/app/webbrowser/qml-qt6/NewTabViewWide.qml
 src/app/webbrowser/qml-qt6/PreviewManager.qml
-src/app/webbrowser/qml-qt6/readability.js
-src/app/webbrowser/qml-qt6/readability-readerable.js
 src/app/webbrowser/qml-qt6/SadTab.qml
 src/app/webbrowser/qml-qt6/SearchEngines.qml
 src/app/webbrowser/qml-qt6/SearchSuggestions.qml
@@ -359,13 +357,13 @@ src/app/webcontainer/session-utils.cpp
 src/app/webcontainer/url-pattern-utils.cpp
 src/app/webcontainer/webapp-container.cpp
 src/app/webcontainer/webapp-container-helper.cpp
+src/Morph/Web/assets/scrollbar-theme.js
 src/Morph/Web/plugin.cpp
 src/Morph/Web/qml-qt5/ItemSelector02.qml
 src/Morph/Web/qml-qt5/MorphSelectOverrideDialog.qml
 src/Morph/Web/qml-qt5/MorphSharedWebContext.qml
 src/Morph/Web/qml-qt5/MorphWebContext.qml
 src/Morph/Web/qml-qt5/MorphWebView.qml
-src/Morph/Web/qml-qt5/scrollbar-theme.js
 src/Morph/Web/qml-qt5/select_overrides.js
 src/Morph/Web/qml-qt5/smartbanners.js
 src/Morph/Web/qml-qt5/UserAgent02.qml
@@ -374,7 +372,6 @@ src/Morph/Web/qml-qt6/MorphSelectOverrideDialog.qml
 src/Morph/Web/qml-qt6/MorphSharedWebContext.qml
 src/Morph/Web/qml-qt6/MorphWebContext.qml
 src/Morph/Web/qml-qt6/MorphWebView.qml
-src/Morph/Web/qml-qt6/scrollbar-theme.js
 src/Morph/Web/qml-qt6/select_overrides.js
 src/Morph/Web/qml-qt6/smartbanners.js
 src/Morph/Web/qml-qt6/UserAgent02.qml

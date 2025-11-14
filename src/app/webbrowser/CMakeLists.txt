@@ -31,6 +31,8 @@ set(ASSETS
     assets/broken_lock@27.png
     assets/tab-error@27.png
     assets/tab-shadow-narrow@27.png
+    assets/readability-readerable.js
+    assets/readability.js
 )
 
 add_library(${WEBBROWSER_APP_MODELS} STATIC ${WEBBROWSER_APP_MODELS_SRC})

@@ -116,12 +116,8 @@ bool TextSearchFilterModel::filterAcceptsRow(int source_row, const QModelIndex& 
     QModelIndex index = source->index(source_row, 0, source_parent);
 
     QSet<QString> foundTerms;
-#if QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
     QSet<QString> searchTerms(m_terms.begin(), m_terms.end());
     int searchTermsCount = searchTerms.count();
-#else
-    int searchTermsCount = QSet<QString>::fromList(m_terms).count();
-#endif
 
     Q_FOREACH(int role, m_searchRoles) {
         QString value = source->data(index, role).toString();

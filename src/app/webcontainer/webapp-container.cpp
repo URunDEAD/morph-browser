@@ -47,13 +47,6 @@
 
 static const char privateModuleUri[] = "webcontainer.private";
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
-  #define ENDL Qt::endl
-#else
-  #define ENDL endl
-#endif
-
-
 namespace
 {
 
@@ -65,7 +58,7 @@ namespace
 static void clearCookiesHack(const QString &provider)
 {
     if (provider.isEmpty()) {
-        qWarning() << "--clear-cookies only works with an accountProvider" << ENDL;
+        qWarning() << "--clear-cookies only works with an accountProvider" << Qt::endl;
         return;
     }
 
@@ -326,28 +319,28 @@ void WebappContainer::printUsage() const
        " [--user-agent-string=USER_AGENT]"
        " [--open-external-url-in-overlay]"
        " [--local-content-can-access-remote-urls]"
-       " [URL]" << ENDL;
-    out << "Options:" << ENDL;
-    out << "  -h, --help                          display this help message and exit" << ENDL;
-    out << "  --fullscreen                        display full screen" << ENDL;
-    out << "  --local-webapp-manifest             configure the webapp assuming that it has a local manifest.json file" << ENDL;
-    out << "  --maximized                         opens the application maximized" << ENDL;
-    out << "  --inspector[=PORT]                  run a remote inspector on a specified port or " << REMOTE_INSPECTOR_PORT << " as the default port" << ENDL;
-    out << "  --app-id=APP_ID                     run the application with a specific APP_ID" << ENDL;
-    out << "  --homepage=URL                      override any URL passed as an argument" << ENDL;
-    out << "  --webapp=name                       try to match the webapp by name with an installed integration script" << ENDL;
-    out << "  --name=NAME                         display name of the webapp, shown in the splash screen" << ENDL;
-    out << "  --icon=PATH                         Icon to be shown in the splash screen. PATH can be an absolute or path relative to CWD" << ENDL;
-    out << "  --webappModelSearchPath=PATH        alter the search path for installed webapps and set it to PATH. PATH can be an absolute or path relative to CWD" << ENDL;
-    out << "  --webappUrlPatterns=URL_PATTERNS    list of comma-separated url patterns (wildcard based) that the webapp is allowed to navigate to" << ENDL;
-    out << "  --user-scripts=USER_SCRIPTS         list of comma-separated user scripts to be loaded in the webapp" << ENDL;
-    out << "  --accountProvider=PROVIDER_NAME     Online account provider for the application if the application is to reuse a local account." << ENDL;
-    out << "  --accountSwitcher                   enable switching between different Online Accounts identities" << ENDL;
-    out << "  --store-session-cookies             store session cookies on disk" << ENDL;
-    out << "  --enable-media-hub-audio            enable media-hub for audio playback" << ENDL;
-    out << "  --user-agent-string=USER_AGENT      overrides the default User Agent with the provided one." << ENDL;
-    out << "  --open-external-url-in-overlay      if url patterns are defined, all external urls are opened in overlay instead of browser" << ENDL;
-    out << "  --local-content-can-access-remote-urls  allows locally loaded documents to access remote URLs" << ENDL;
+       " [URL]" << Qt::endl;
+    out << "Options:" << Qt::endl;
+    out << "  -h, --help                          display this help message and exit" << Qt::endl;
+    out << "  --fullscreen                        display full screen" << Qt::endl;
+    out << "  --local-webapp-manifest             configure the webapp assuming that it has a local manifest.json file" << Qt::endl;
+    out << "  --maximized                         opens the application maximized" << Qt::endl;
+    out << "  --inspector[=PORT]                  run a remote inspector on a specified port or " << REMOTE_INSPECTOR_PORT << " as the default port" << Qt::endl;
+    out << "  --app-id=APP_ID                     run the application with a specific APP_ID" << Qt::endl;
+    out << "  --homepage=URL                      override any URL passed as an argument" << Qt::endl;
+    out << "  --webapp=name                       try to match the webapp by name with an installed integration script" << Qt::endl;
+    out << "  --name=NAME                         display name of the webapp, shown in the splash screen" << Qt::endl;
+    out << "  --icon=PATH                         Icon to be shown in the splash screen. PATH can be an absolute or path relative to CWD" << Qt::endl;
+    out << "  --webappModelSearchPath=PATH        alter the search path for installed webapps and set it to PATH. PATH can be an absolute or path relative to CWD" << Qt::endl;
+    out << "  --webappUrlPatterns=URL_PATTERNS    list of comma-separated url patterns (wildcard based) that the webapp is allowed to navigate to" << Qt::endl;
+    out << "  --user-scripts=USER_SCRIPTS         list of comma-separated user scripts to be loaded in the webapp" << Qt::endl;
+    out << "  --accountProvider=PROVIDER_NAME     Online account provider for the application if the application is to reuse a local account." << Qt::endl;
+    out << "  --accountSwitcher                   enable switching between different Online Accounts identities" << Qt::endl;
+    out << "  --store-session-cookies             store session cookies on disk" << Qt::endl;
+    out << "  --enable-media-hub-audio            enable media-hub for audio playback" << Qt::endl;
+    out << "  --user-agent-string=USER_AGENT      overrides the default User Agent with the provided one." << Qt::endl;
+    out << "  --open-external-url-in-overlay      if url patterns are defined, all external urls are opened in overlay instead of browser" << Qt::endl;
+    out << "  --local-content-can-access-remote-urls  allows locally loaded documents to access remote URLs" << Qt::endl;
 
     // The options should be kept in sync with:
     // http://bazaar.launchpad.net/~oxide-developers/oxide/oxide.trunk/view/head:/qt/quick/api/oxideqquickglobal.cc#L43
@@ -355,11 +348,11 @@ void WebappContainer::printUsage() const
                                                  " 'frontface', 'backface' or 'none'. If 'none' is selected the default"
                                                  " selection mechanism applied in Oxide is used. If this command line option"
                                                  " is not used, the default is set to 'frontface'. If the position is not found"
-                                                 " the behavior is the same as if the option was not set."<< ENDL;
+                                                 " the behavior is the same as if the option was not set."<< Qt::endl;
 
-    out << "Chrome options (if none specified, no chrome is shown by default):" << ENDL;
-    out << "  --enable-back-forward               enable the display of the back and forward buttons (implies --enable-addressbar)" << ENDL;
-    out << "  --enable-addressbar                 enable the display of a minimal chrome (favicon and title)" << ENDL;
+    out << "Chrome options (if none specified, no chrome is shown by default):" << Qt::endl;
+    out << "  --enable-back-forward               enable the display of the back and forward buttons (implies --enable-addressbar)" << Qt::endl;
+    out << "  --enable-addressbar                 enable the display of a minimal chrome (favicon and title)" << Qt::endl;
 }
 
 void WebappContainer::earlyEnvironment()
@@ -408,7 +401,7 @@ void WebappContainer::parseCommandLine()
         } else if (argument == "--accountSwitcher") {
             m_accountSwitcher = true;
         } else if (argument == "--clear-cookies") {
-            qWarning() << argument << " is an unsupported option: it can be removed without notice..." << ENDL;
+            qWarning() << argument << " is an unsupported option: it can be removed without notice..." << Qt::endl;
             clearCookiesHack(m_accountProvider);
         } else if (argument == "--store-session-cookies") {
             m_storeSessionCookies = true;

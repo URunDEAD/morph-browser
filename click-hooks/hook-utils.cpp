@@ -238,13 +238,8 @@ QString removeVersionFrom(const QString& appId)
 void handleInstalls(const WebappClickHookInstallDescription& alreadyProcessedClickHooks
                    , const WebappClickHookInstallDescription& installedClickHooks)
 {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
     QSet<QString> alreadyProcessedClickHooksSet(alreadyProcessedClickHooks.hookFiles.keys().begin(), alreadyProcessedClickHooks.hookFiles.keys().end());
     QSet<QString> installedClickHooksSet(installedClickHooks.hookFiles.keys().begin(), installedClickHooks.hookFiles.keys().end());
-#else
-    QSet<QString> alreadyProcessedClickHooksSet = alreadyProcessedClickHooks.hookFiles.keys().toSet();
-    QSet<QString> installedClickHooksSet = installedClickHooks.hookFiles.keys().toSet();
-#endif
     QStringList newlyInstalledClickPackages =
             installedClickHooksSet.subtract(
                 alreadyProcessedClickHooksSet).values();
@@ -280,13 +275,8 @@ void handleInstalls(const WebappClickHookInstallDescription& alreadyProcessedCli
 void handleUninstall(const WebappClickHookInstallDescription& alreadyProcessedClickHooks
                      , const WebappClickHookInstallDescription& currentClickHooks)
 {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
     QSet<QString> currentClickHooksSet(currentClickHooks.hookFiles.keys().begin(), currentClickHooks.hookFiles.keys().end());
     QSet<QString> alreadyProcessedClickHooksSet(alreadyProcessedClickHooks.hookFiles.keys().begin(), alreadyProcessedClickHooks.hookFiles.keys().end());
-#else
-    QSet<QString> currentClickHooksSet = currentClickHooks.hookFiles.keys().toSet();
-    QSet<QString> alreadyProcessedClickHooksSet = alreadyProcessedClickHooks.hookFiles.keys().toSet();
-#endif
 
     QStringList deletedClickPackages =
             alreadyProcessedClickHooksSet.subtract(currentClickHooksSet).values();
@@ -314,13 +304,8 @@ void handleUninstall(const WebappClickHookInstallDescription& alreadyProcessedCl
 void handleUpdates(const WebappClickHookInstallDescription& alreadyProcessedClickHooks
                    , const WebappClickHookInstallDescription& installedClickHooks)
 {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
     QSet<QString> alreadyProcessedClickHooksSet(alreadyProcessedClickHooks.hookFiles.keys().begin(), alreadyProcessedClickHooks.hookFiles.keys().end());
     QSet<QString> installedClickHooksSet(installedClickHooks.hookFiles.keys().begin(), installedClickHooks.hookFiles.keys().end());
-#else
-    QSet<QString> alreadyProcessedClickHooksSet = alreadyProcessedClickHooks.hookFiles.keys().toSet();
-    QSet<QString> installedClickHooksSet = installedClickHooks.hookFiles.keys().toSet();
-#endif
     QStringList foundClickHooks =
             alreadyProcessedClickHooksSet.intersect(
                 installedClickHooksSet).values();

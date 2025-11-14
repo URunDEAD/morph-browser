@@ -55,12 +55,7 @@ ProfilePathParts getProfilePathPartsFromAppId(const QString& appId)
     QString profilePath =
             QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
 
-// QString::Splitbehavior is deprecated in Qt 5.15
-#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
     QStringList appIdParts = appId.split('_', Qt::SkipEmptyParts);
-#else
-    QStringList appIdParts = appId.split('_', QString::SkipEmptyParts);
-#endif
 
     QString appDesktopName;
 

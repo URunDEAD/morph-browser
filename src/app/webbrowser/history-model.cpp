@@ -405,11 +405,7 @@ void HistoryModel::removeEntryFromHiddenDatabaseByUrl(const QUrl& url)
 void HistoryModel::removeEntriesFromDatabaseByDate(const QDate& date)
 {
     QVariantList values;
-#if QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
     QDateTime dateTime = QDateTime(date.startOfDay());
-#else
-    QDateTime dateTime = QDateTime(date);
-#endif
     values << dateTime.currentSecsSinceEpoch();
     dateTime.setTime(QTime(23, 59, 59, 999));
     values << dateTime.currentSecsSinceEpoch();

@@ -116,7 +116,8 @@ bool TextSearchFilterModel::filterAcceptsRow(int source_row, const QModelIndex& 
     QModelIndex index = source->index(source_row, 0, source_parent);
 
     QSet<QString> foundTerms;
-    int searchTermsCount = QSet<QString>::fromList(m_terms).count();
+    QSet<QString> searchTerms(m_terms.begin(), m_terms.end());
+    int searchTermsCount = searchTerms.count();
 
     Q_FOREACH(int role, m_searchRoles) {
         QString value = source->data(index, role).toString();

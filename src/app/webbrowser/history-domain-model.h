@@ -24,6 +24,7 @@
 #include <QtCore/QSortFilterProxyModel>
 #include <QtCore/QString>
 #include <QtCore/QUrl>
+#include "history-model.h"
 
 class HistoryModel;
 

@@ -1,1 +1,1 @@
-../../Morph/Web/smartbanners.js
+../../Morph/Web/qml-qt5/smartbanners.js

@@ -371,7 +371,7 @@ void HistoryModel::insertNewEntryInDatabase(const HistoryEntry& entry)
     values << entry.domain;
     values << entry.title;
     values << entry.icon.toString();
-    values << entry.lastVisit.toTime_t();
+    values << entry.lastVisit.currentSecsSinceEpoch();
     Q_EMIT m_dbWorker->enqueue(DbWorker::InsertNewEntry, values);
 }
 
@@ -387,7 +387,7 @@ void HistoryModel::updateExistingEntryInDatabase(const HistoryEntry& entry)
     values << entry.title;
     values << entry.icon.toString();
     values << entry.visits;
-    values << entry.lastVisit.toTime_t();
+    values << entry.lastVisit.currentSecsSinceEpoch();
     values << entry.url.toString();
     Q_EMIT m_dbWorker->enqueue(DbWorker::UpdateExistingEntry, values);
 }
@@ -405,10 +405,10 @@ void HistoryModel::removeEntryFromHiddenDatabaseByUrl(const QUrl& url)
 void HistoryModel::removeEntriesFromDatabaseByDate(const QDate& date)
 {
     QVariantList values;
-    QDateTime dateTime = QDateTime(date);
-    values << dateTime.toTime_t();
+    QDateTime dateTime = QDateTime(date.startOfDay());
+    values << dateTime.currentSecsSinceEpoch();
     dateTime.setTime(QTime(23, 59, 59, 999));
-    values << dateTime.toTime_t();
+    values << dateTime.currentSecsSinceEpoch();
     Q_EMIT m_dbWorker->enqueue(DbWorker::RemoveEntriesByDate, values);
 }
 
@@ -458,7 +458,7 @@ void HistoryModel::hide(const QUrl& url)
             entry.hidden = true;
             Q_EMIT dataChanged(this->index(i, 0), this->index(i, 0), roles);
         }
-    }                                                                   
+    }
 
     insertNewEntryInHiddenDatabase(url);
 }
@@ -486,7 +486,7 @@ void HistoryModel::unHide(const QUrl& url)
             entry.hidden = false;
             Q_EMIT dataChanged(this->index(i, 0), this->index(i, 0), roles);
         }
-    }                                                                   
+    }
 
     removeEntryFromHiddenDatabaseByUrl(url);
 }
@@ -611,7 +611,7 @@ void DbWorker::doFetchEntries()
                             populateQuery.value(2).toString(),
                             populateQuery.value(3).toUrl(),
                             populateQuery.value(4).toInt(),
-                            QDateTime::fromTime_t(populateQuery.value(5).toInt()));
+                            QDateTime::fromSecsSinceEpoch(populateQuery.value(5).toInt()));
     }
     Q_EMIT loaded();
 }

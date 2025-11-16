@@ -34,11 +34,11 @@
     \brief List model that stores information about downloaded files.
 
     DownloadsModel is a list model that stores information about files that
-    have been downloaded by the browser and stored permanently 
+    have been downloaded by the browser and stored permanently
     (e.g. in ~/Downloads), as opposed to those that were sent directly to
     another application after download. For each download the original URL, the
-    path to the downloaded file, the file mimetype and the download time are 
-    stored. The model is sorted chronologically to display the most recent 
+    path to the downloaded file, the file mimetype and the download time are
+    stored. The model is sorted chronologically to display the most recent
     download first.
 
     The information is persistently stored on disk in a SQLite database.
@@ -111,7 +111,7 @@ void DownloadsModel::fetchMore(const QModelIndex &parent)
         entry.mimetype = populateQuery.value(3).toString();
         entry.complete = populateQuery.value(4).toBool();
         entry.error = populateQuery.value(5).toString();
-        entry.created = QDateTime::fromTime_t(populateQuery.value(6).toInt());
+        entry.created = QDateTime::fromSecsSinceEpoch(populateQuery.value(6).toInt());
         entry.paused = populateQuery.value(7).toBool();
         QFileInfo fileInfo(entry.path);
         if (fileInfo.exists()) {
@@ -252,7 +252,7 @@ void DownloadsModel::setComplete(const QString& downloadId, const bool complete)
             return;
         }
         QVector<int> updatedRoles;
-        
+
         entry.complete = complete;
         updatedRoles.append(Complete);
 
@@ -267,7 +267,7 @@ void DownloadsModel::setComplete(const QString& downloadId, const bool complete)
                 updatedRoles.append(Mimetype);
             }
         }
-        
+
         Q_EMIT dataChanged(this->index(index, 0), this->index(index, 0), QVector<int>() << updatedRoles);
         if (!entry.incognito) {
             QSqlQuery query(m_database);

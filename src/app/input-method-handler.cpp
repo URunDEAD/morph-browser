@@ -32,7 +32,7 @@ bool inputMethodHandler::eventFilter(QObject* obj, QEvent* event)
         QChar lastCharOfCommitString = inputevent->commitString()[inputevent->commitString().length() - 1];
 
         // numbers and special chars do automatically commit, no reset done here as it would change the keyboard mode
-        if ( (lastCharOfCommitString != "'") && (lastCharOfCommitString != " ") && ! lastCharOfCommitString.isLetter() )
+        if ( (lastCharOfCommitString != QStringLiteral("'")) && (lastCharOfCommitString != QStringLiteral(" ")) && ! lastCharOfCommitString.isLetter() )
         {
             return false;
         }

@@ -1,10 +1,12 @@
 project(morph-web-plugin)
 
-find_package(Qt5Core REQUIRED)
-find_package(Qt5Gui REQUIRED)
-find_package(Qt5Qml REQUIRED)
-
 set(MORPH_WEB_IMPORTS_DIR "${QT_INSTALL_QML}/Morph/Web")
+set(ASSETS
+    assets/handle@27.png
+    assets/scrollbar-theme.js
+)
+
+set(ASSETS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/assets")
 
 set(PLUGIN morph-web-plugin)
 
@@ -12,22 +14,13 @@ set(PLUGIN_SRC plugin.cpp)
 
 add_library(${PLUGIN} MODULE ${PLUGIN_SRC})
 target_link_libraries(${PLUGIN}
-    Qt5::Core
-    Qt5::Gui
-    Qt5::Qml
+    Qt::Core
+    Qt::Gui
+    Qt::Qml
 )
 
-file(GLOB UA_OVERRIDES_IN RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ua-overrides-*.js.in)
-foreach(_file ${UA_OVERRIDES_IN})
-  string(REGEX REPLACE "\\.in$" "" OUTFILE ${_file})
-  configure_file(${_file} ${CMAKE_CURRENT_BINARY_DIR}/${OUTFILE} @ONLY)
-  install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${OUTFILE}
-          DESTINATION ${MORPH_WEB_IMPORTS_DIR})
-endforeach(_file)
-
-file(GLOB PLUGIN_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.qml qmldir *.js *.png)
 install(TARGETS ${PLUGIN} DESTINATION ${MORPH_WEB_IMPORTS_DIR})
-install(FILES ${PLUGIN_FILES} DESTINATION ${MORPH_WEB_IMPORTS_DIR})
+install(DIRECTORY qml-qt${QT_VERSION_MAJOR}/ DESTINATION ${MORPH_WEB_IMPORTS_DIR})
 
 if(NOT ${CMAKE_CURRENT_BINARY_DIR} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR})
   # copy qml files over to build dir to be able to import them uninstalled

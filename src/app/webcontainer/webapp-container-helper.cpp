@@ -21,7 +21,7 @@
 #include <QColor>
 #include <QMetaObject>
 #include <QMetaProperty>
-#include <QRegExp>
+#include <QRegularExpression>
 #include <QDebug>
 
 WebappContainerHelper::WebappContainerHelper(QObject* parent)
@@ -59,12 +59,13 @@ QString WebappContainerHelper::rgbColorFromCSSColor(const QString& cssColor)
     }
     QString returnColorFormat = "%1,%2,%3";
     if (color.startsWith("rgb")) {
-        QRegExp rgbColorRe("rgb\\s*\\(\\s*(\\d+)\\s*,\\s*(\\d+)\\s*,\\s*(\\d+)\\s*\\)");
-        if (rgbColorRe.exactMatch(color)) {
-            return returnColorFormat
-                    .arg(rgbColorRe.cap(1).toInt())
-                    .arg(rgbColorRe.cap(2).toInt())
-                    .arg(rgbColorRe.cap(3).toInt());
+        QRegularExpression rgbColorRe("^rgb\\s*\\(\\s*(\\d+)\\s*,\\s*(\\d+)\\s*,\\s*(\\d+)\\s*\\)$");
+        auto matchResult = rgbColorRe.match(color);
+        if (matchResult.hasMatch()) {
+                    return returnColorFormat
+                            .arg(matchResult.captured(1).toInt())
+                            .arg(matchResult.captured(2).toInt())
+                            .arg(matchResult.captured(3).toInt());
         }
         return QString();
     } else if (color.startsWith("#")) {

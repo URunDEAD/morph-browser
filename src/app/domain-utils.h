@@ -24,10 +24,44 @@
 #include <QtCore/QStringList>
 #include <QtCore/QUrl>
 
+#if (QT_VERSION >= QT_VERSION_CHECK(6, 0, 0))
+#include <QtCore/private/qurl_p.h>
+#include <QtNetwork/private/qtldurl_p.h>
+#endif
+
 namespace DomainUtils {
 
 static const QString TOKEN_LOCAL = "(local)";
 static const QString TOKEN_NONE = "(none)";
+
+static QString getTopLevelDomain(const QUrl &url)
+{
+#if (QT_VERSION < QT_VERSION_CHECK(6, 0, 0))
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+    return url.topLevelDomain();
+#pragma GCC diagnostic pop
+#else
+    // QUrl::topLevelDomain() was removed in Qt6.
+    // The following is copied from the old "qTopLevelDomain" code in Qt6::Network.
+    // It was removed in this commit: https://github.com/qt/qtbase/commit/50b30976837be0969efdccced68cfb584d99981a
+    const QString domainLower = url.host().toLower();
+    QVector<QStringView> sections = QStringView{domainLower}.split(QLatin1Char('.'), Qt::SkipEmptyParts);
+    if (sections.isEmpty())
+        return QString();
+
+    QString level, tld;
+    for (int j = sections.count() - 1; j >= 0; --j) {
+        level.prepend(QLatin1Char('.') + sections.at(j).toString());
+        if (qIsEffectiveTLD(QStringView{level}.right(level.size() - 1)))
+            tld = level;
+    }
+
+    //return qt_ACE_do(tld, ToAceOnly, AllowLeadingDot, {});
+    // TODO - QUrl::toAce() uses ForbidLeadingDot, while the old QUrl::topLevelDomain() used AllowLeadingDot. Does this matter?
+    return QString(QUrl::toAce(tld));
+#endif
+}
 
 static QString extractTopLevelDomainName(const QUrl& url)
 {
@@ -39,7 +73,7 @@ static QString extractTopLevelDomainName(const QUrl& url)
         // XXX: (when) can this happen?
         return TOKEN_NONE;
     }
-    QString tld = url.topLevelDomain();
+    QString tld = getTopLevelDomain(url);
     if (tld.isEmpty()) {
         return host;
     }
@@ -52,7 +86,7 @@ static QString getDomainWithoutSubdomain(const QString& domain)
 {
     // e.g. ci.ubports.com (does handle domains like .co.uk correctly)
     // .com
-    QString topLevelDomain = QUrl("//" + domain).topLevelDomain();
+    QString topLevelDomain = getTopLevelDomain(QUrl("//" + domain));
 
     // invalid top level domain (e.g. local device or IP address)
     if (topLevelDomain.isEmpty())

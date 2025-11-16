@@ -247,7 +247,7 @@ void OxideCookieHelperTest::testSetCookies()
         cookies.append(domainData.cookies);
         expectedFailedCookies.append(domainData.failedCookies);
     }
-    qSort(cookies.begin(), cookies.end(), cookieCompare);
+    std::sort(cookies.begin(), cookies.end(), cookieCompare);
 
     helper.setCookies(cookies);
     QCOMPARE(setNetworkCookiesCalled.count(), domains.count());
@@ -261,9 +261,9 @@ void OxideCookieHelperTest::testSetCookies()
         /* Compare the cookies lists; we don't care about the order, so let's
          * sort them before comparing */
         const DomainData &domainData = domains[url.host()];
-        qSort(domainCookies.begin(), domainCookies.end(), cookieCompare);
+        std::sort(domainCookies.begin(), domainCookies.end(), cookieCompare);
         Cookies expectedCookies = domainData.cookies;
-        qSort(expectedCookies.begin(), expectedCookies.end(), cookieCompare);
+        std::sort(expectedCookies.begin(), expectedCookies.end(), cookieCompare);
         QCOMPARE(domainCookies, expectedCookies);
 
         QTimer* timer = new QTimer(&backend);
@@ -280,9 +280,9 @@ void OxideCookieHelperTest::testSetCookies()
     QCOMPARE(cookiesSet.count(), 1);
 
     /* Compare the failed cookies */
-    qSort(expectedFailedCookies.begin(), expectedFailedCookies.end(), cookieCompare);
+    std::sort(expectedFailedCookies.begin(), expectedFailedCookies.end(), cookieCompare);
     Cookies failedCookies = cookiesSet.at(0).at(0).value<Cookies>();
-    qSort(failedCookies.begin(), failedCookies.end(), cookieCompare);
+    std::sort(failedCookies.begin(), failedCookies.end(), cookieCompare);
     QCOMPARE(failedCookies, expectedFailedCookies);
 }
 
@@ -399,9 +399,9 @@ void OxideCookieHelperTest::testImmediateFailure()
     QCOMPARE(cookiesSet.count(), 1);
 
     /* Compare the failed cookies */
-    qSort(expectedFailedCookies.begin(), expectedFailedCookies.end(), cookieCompare);
+    std::sort(expectedFailedCookies.begin(), expectedFailedCookies.end(), cookieCompare);
     Cookies failedCookies = cookiesSet.at(0).at(0).value<Cookies>();
-    qSort(failedCookies.begin(), failedCookies.end(), cookieCompare);
+    std::sort(failedCookies.begin(), failedCookies.end(), cookieCompare);
     QCOMPARE(failedCookies, expectedFailedCookies);
 }
 

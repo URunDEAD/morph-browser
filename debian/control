@@ -31,6 +31,26 @@ Build-Depends: apparmor:native,
                qtdeclarative5-dev,
                qttools5-dev-tools,
                qtwebengine5-dev,
+               libqt5svg5-dev,
+               qml6-module-qt-labs-folderlistmodel,
+               qml6-module-qt-labs-settings,
+               qml6-module-qtquick,
+               qml6-module-qtquick-controls,
+               qml6-module-qtquick-layouts,
+               qml6-module-lomiri-systeminfo,
+               qml6-module-qttest,
+               qml6-module-qtwebengine,
+               qml6-module-lomiri-components,
+               qml6-module-lomiri-components-extras,
+               qml6-module-lomiri-test,
+               qt6-base-dev,
+               qt6-base-private-dev,
+               qt6-svg-dev,
+               qt6-5compat-dev,
+               qt6-declarative-dev,
+               qt6-tools-dev,
+               qt6-webengine-dev,
+               qt6-documentation-tools | qdoc-qt6,
                xauth,
                xvfb,
 Standards-Version: 3.9.7
@@ -60,7 +80,7 @@ Depends: ${misc:Depends},
          qml-module-lomiri-action,
 Replaces: morph-browser-assets,
           qtdeclarative5-ubuntu-ui-extras-browser-plugin (<< 0.22),
-Conflicts: morph-browser-assets, webbrowser-app
+Conflicts: morph-browser-assets, webbrowser-app, morph-browser-qt6
 Provides: morph-browser-assets, webbrowser-app
 Breaks: qtdeclarative5-ubuntu-ui-extras-browser-plugin (<< 0.22)
 Description: Web Browser for Ubuntu Touch
@@ -151,6 +171,67 @@ Description: transitional dummy package for the morph web QML module HTML docume
  A standalone QML module that contains the WebView component,
  in the morph.Web namespace. This package contains the public
  HTML documentation.
+
+Package: morph-browser-qt6
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         fonts-liberation,
+         qml6-module-qt-labs-folderlistmodel,
+         qml6-module-qt-labs-settings,
+         qml6-module-qtqml-workerscript,
+         qml6-module-qtquick,
+         qml6-module-qtquick-controls,
+         qml6-module-qtquick-layouts,
+         qml6-module-lomiri-systeminfo,
+         qml6-module-morph-web (= ${binary:Version}),
+         qml6-module-lomiri-content,
+         qml6-module-lomiri-components,
+         qml6-module-lomiri-components-extras,
+         qml6-module-lomiri-action,
+         qml6-module-qtquick-templates,
+Conflicts: webbrowser-app, morph-browser
+Provides: webbrowser-app
+Description: Web Browser for Ubuntu Touch (Qt 6 Version)
+ Lightweight web browser tailored for Ubuntu Touch, based on the Qt WebEngine
+ and using the Lomiri UI components.
+
+#Package: morph-webapp-container-qt6
+#Architecture: any
+#Multi-Arch: foreign
+#Depends: ${misc:Depends},
+#         ${shlibs:Depends},
+#         fonts-liberation,
+#         libqt6sql6-sqlite
+#         libqt6webenginecore6,
+#         libqt6webengine6-data,
+#         qml6-module-qtquick,
+#         qml6-module-qtquick-controls,
+#         qml6-module-sso-onlineaccounts,
+#         qml6-module-morph-web (= ${binary:Version}),
+#         qml6-module-lomiri-content,
+#         qml6-module-lomiri-components,
+#         qml6-module-lomiri-action,
+#         qml-module-lomiri-onlineaccounts-client,
+#         morph-browser-qt6 (= ${binary:Version}),
+#Description: Morph web applications container (Qt 6 Version)
+# A lightweight webapp container tailored for Ubuntu Touch, based on the Qt WebEngine
+# and using the Lomiri UI components.
+
+Package: qml6-module-morph-web
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         qml6-module-qtwebengine,
+         qml6-module-qtquick,
+         qml6-module-qtquick-controls,
+         qml6-module-lomiri-components,
+Description: Morph web QML module
+ A standalone QML module that contains the WebView component,
+ in the Morph.Web namespace.
 
 # Package: morph-browser-autopilot
 # Architecture: all

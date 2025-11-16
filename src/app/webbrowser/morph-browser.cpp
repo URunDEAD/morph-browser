@@ -41,7 +41,6 @@
 #include <QtQml/QtQml>
 #include <QtQuick/QQuickWindow>
 #include <QtCore/QLoggingCategory>
-//#include <QtWebEngine/qtwebengineglobal.h>
 
 #include <stdlib.h>
 
@@ -78,7 +77,7 @@ bool WebbrowserApp::initialize()
     QString qmlfile;
     const QString filePath = UbuntuBrowserDirectory() + "/webbrowser/morph-browser.qml";
     // QLatin1String("share/morph-browser/webbrowser/morph-browser.qml");
-    QStringList paths = QStandardPaths::standardLocations(QStandardPaths::DataLocation);
+    QStringList paths = QStandardPaths::standardLocations(QStandardPaths::AppDataLocation);
     paths.prepend(QDir::currentPath());
     paths.prepend(QCoreApplication::applicationDirPath());
     Q_FOREACH (const QString &path, paths) {
@@ -97,7 +96,7 @@ bool WebbrowserApp::initialize()
         //QtWebEngine::initialize();
 
         QStringList searchEnginesSearchPaths;
-        searchEnginesSearchPaths << QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/searchengines";
+        searchEnginesSearchPaths << QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/searchengines";
         searchEnginesSearchPaths << UbuntuBrowserDirectory() + "/webbrowser/searchengines";
         m_engine->rootContext()->setContextProperty("searchEnginesSearchPaths", searchEnginesSearchPaths);
 
@@ -127,14 +126,14 @@ void WebbrowserApp::printUsage() const
     QTextStream out(stdout);
     QString command = QFileInfo(QCoreApplication::applicationFilePath()).fileName();
     out << "Usage: " << command << " [-h|--help] [--inspector]"
-                                << " [--app-id=APP_ID] [--new-session] [URL]" << endl;
-    out << "Options:" << endl;
-    out << "  -h, --help         display this help message and exit" << endl;
-    out << "  --inspector[=PORT] run a remote inspector on a specified port or " << REMOTE_INSPECTOR_PORT << " as the default port" << endl;
-    out << "  --app-id=APP_ID    run the application with a specific APP_ID" << endl;
-    out << "  --new-session      do not restore open tabs from the last session" << endl;
-    out << "  --new-window       open (the passed URLs in) a new browser window" << endl;
-    out << "  --incognito        open (the passed URLs in) an incognito window" << endl;
+                                << " [--app-id=APP_ID] [--new-session] [URL]" << Qt::endl;
+    out << "Options:" << Qt::endl;
+    out << "  -h, --help         display this help message and exit" << Qt::endl;
+    out << "  --inspector[=PORT] run a remote inspector on a specified port or " << REMOTE_INSPECTOR_PORT << " as the default port" << Qt::endl;
+    out << "  --app-id=APP_ID    run the application with a specific APP_ID" << Qt::endl;
+    out << "  --new-session      do not restore open tabs from the last session" << Qt::endl;
+    out << "  --new-window       open (the passed URLs in) a new browser window" << Qt::endl;
+    out << "  --incognito        open (the passed URLs in) an incognito window" << Qt::endl;
 }
 
 void WebbrowserApp::onNewInstanceLaunched(const QStringList& arguments) const

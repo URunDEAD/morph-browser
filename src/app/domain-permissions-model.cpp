@@ -116,7 +116,7 @@ void DomainPermissionsModel::populateFromDatabase()
         entry.domain = populateQuery.value("domain").toString();
         entry.requestedByDomain = populateQuery.value("requestedByDomain").toString();
         entry.permission = static_cast<DomainPermission>(populateQuery.value("permission").toInt());
-        entry.lastRequested = QDateTime::fromTime_t(populateQuery.value("lastRequested").toUInt());
+        entry.lastRequested = QDateTime::fromSecsSinceEpoch(populateQuery.value("lastRequested").toUInt());
         beginInsertRows(QModelIndex(), count, count);
         m_entries.append(entry);
         endInsertRows();
@@ -203,7 +203,7 @@ void DomainPermissionsModel::setRequestedByDomain(const QString& domain, const Q
             static QString updateStatement = QLatin1String("UPDATE domainpermissions SET requestedByDomain=?, lastRequested=? WHERE domain=?;");
             query.prepare(updateStatement);
             query.addBindValue(entry.requestedByDomain.isEmpty() ? QString() : entry.requestedByDomain);
-            query.addBindValue(entry.lastRequested.toTime_t());
+            query.addBindValue(entry.lastRequested.currentSecsSinceEpoch());
             query.addBindValue(domain);
             query.exec();
         }
@@ -247,7 +247,7 @@ void DomainPermissionsModel::insertEntry(const QString &domain, bool incognito)
         query.prepare(insertStatement);
         query.addBindValue(entry.domain);
         query.addBindValue(entry.permission);
-        query.addBindValue(entry.lastRequested.toTime_t());
+        query.addBindValue(entry.lastRequested.currentSecsSinceEpoch());
         query.exec();
     }
 }

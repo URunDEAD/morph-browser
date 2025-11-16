@@ -1,8 +1,5 @@
 project(webbrowser-app)
 
-find_package(Qt5Concurrent REQUIRED)
-find_package(Qt5Sql REQUIRED)
-
 include_directories(
     ${CMAKE_BINARY_DIR}
     ${webbrowser-common_SOURCE_DIR}
@@ -24,12 +21,32 @@ set(WEBBROWSER_APP_MODELS_SRC
 
 set(WEBBROWSER_APP_MODELS morph-browser-models)
 
+set(ASSETS
+    assets/private-browsing-exit.svg
+    assets/stock_link.svg
+    assets/stock_website.png
+    assets/toolbar-dropshadow.png
+    assets/tab-artwork.png
+    assets/bottom_edge_hint@27.png
+    assets/broken_lock@27.png
+    assets/tab-error@27.png
+    assets/tab-shadow-narrow@27.png
+    assets/readability-readerable.js
+    assets/readability.js
+)
+
 add_library(${WEBBROWSER_APP_MODELS} STATIC ${WEBBROWSER_APP_MODELS_SRC})
 target_link_libraries(${WEBBROWSER_APP_MODELS}
-    Qt5::Core
-    Qt5::Sql
-#    Qt5::WebEngine
+    Qt::Core
+    Qt::Sql
 )
+
+if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
+target_link_libraries(${WEBBROWSER_APP_MODELS}
+    Qt::CorePrivate
+    Qt::NetworkPrivate
+)
+endif()
 
 set(WEBBROWSER_APP_SRC
     reparenter.cpp
@@ -41,10 +58,10 @@ set(WEBBROWSER_APP morph-browser)
 
 add_executable(${WEBBROWSER_APP} ${WEBBROWSER_APP_SRC})
 target_link_libraries(${WEBBROWSER_APP}
-    Qt5::Concurrent
-    Qt5::Core
-    Qt5::Qml
-    Qt5::Quick
+    Qt::Concurrent
+    Qt::Core
+    Qt::Qml
+    Qt::Quick
     ${COMMONLIB}
     ${WEBBROWSER_APP_MODELS}
 )
@@ -52,12 +69,10 @@ target_link_libraries(${WEBBROWSER_APP}
 install(TARGETS ${WEBBROWSER_APP}
         RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
-file(GLOB QML_FILES *.qml qmldir *.js)
-install(FILES ${QML_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser)
+install(DIRECTORY qml-qt${QT_VERSION_MAJOR}/ DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser)
 
-install(DIRECTORY assets
-        DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser
-        FILES_MATCHING PATTERN *.png PATTERN *.svg PATTERN *.sci)
+install(FILES ${ASSETS}
+        DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser)
 
 install(DIRECTORY searchengines
         DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser

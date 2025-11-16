@@ -24,7 +24,14 @@
 // Qtlangc
 #include <QtCore/QMetaObject>
 #include <QtCore/QtGlobal>
-#include <QtGui/QTouchDevice>
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    #define QTOUCHDEVICE QInputDevice
+    #define QDEVICETYPE QInputDevice::DeviceType
+#else
+    #include <QtGui/QTouchDevice>
+    #define QTOUCHDEVICE QTouchDevice
+    #define QDEVICETYPE QTouchDevice
+#endif
 #include <QtNetwork/QNetworkInterface>
 #include <QtQml/QQmlComponent>
 #include <QtQml/QQmlContext>
@@ -185,12 +192,15 @@ bool BrowserApplication::initialize(const QString& qmlFileSubPath
         qputenv("UBUNTU_WEBVIEW_DEVTOOLS_HOST", devtoolsHost.toUtf8());
         qputenv("UBUNTU_WEBVIEW_DEVTOOLS_PORT", devtoolsPort.toUtf8());
     }
-    
+
+    // FIXME re-enable Suru theme once it is available for Qt 6
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     // set suru style
     if (qgetenv("QT_QUICK_CONTROLS_STYLE") == QString())
     {
         qputenv("QT_QUICK_CONTROLS_STYLE", "Suru");
     }
+#endif
 
     const char* uri = "webbrowsercommon.private";
     qmlRegisterSingletonType<BrowserUtils>(uri, 0, 1, "BrowserUtils", BrowserUtils_singleton_factory);
@@ -230,8 +240,8 @@ bool BrowserApplication::initialize(const QString& qmlFileSubPath
     QQmlProperty::write(m_object, QStringLiteral("developerExtrasEnabled"), inspectorEnabled);
 
     bool hasTouchScreen = false;
-    Q_FOREACH(const QTouchDevice* device, QTouchDevice::devices()) {
-        if (device->type() == QTouchDevice::TouchScreen) {
+    Q_FOREACH(const QTOUCHDEVICE* device, QTOUCHDEVICE::devices()) {
+        if (device->type() == QDEVICETYPE::TouchScreen) {
             hasTouchScreen = true;
         }
     }

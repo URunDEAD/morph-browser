@@ -53,9 +53,9 @@ typedef QPair<QString, QString> ProfilePathParts;
 ProfilePathParts getProfilePathPartsFromAppId(const QString& appId)
 {
     QString profilePath =
-            QStandardPaths::writableLocation(QStandardPaths::DataLocation);
+            QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
 
-    QStringList appIdParts = appId.split('_', QString::SkipEmptyParts);
+    QStringList appIdParts = appId.split('_', Qt::SkipEmptyParts);
 
     QString appDesktopName;
 
@@ -163,7 +163,7 @@ bool SingleInstanceManager::run(const QStringList& arguments, const QString& app
                    << "behaviors in the application's cache management. To avoid that"
                    << "you could use a shorter application name.";
     }
-    
+
     if (!ensureNameProfilePathExists(profilePath)) {
         return false;
     }

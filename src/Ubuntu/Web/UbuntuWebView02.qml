@@ -1,1 +1,1 @@
-../../Morph/Web/MorphWebView.qml
+../../Morph/Web/qml-qt5/MorphWebView.qml

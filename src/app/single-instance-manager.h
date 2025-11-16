@@ -22,9 +22,7 @@
 // Qt
 #include <QtCore/QObject>
 #include <QtNetwork/QLocalServer>
-
-class QString;
-class QStringList;
+#include <QStringList>
 
 class SingleInstanceManager : public QObject
 {

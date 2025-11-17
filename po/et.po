@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2025-11-17 13:51+0000\n"
+"PO-Revision-Date: 2025-11-20 21:46+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/"
 "morph-browser/et/>\n"
@@ -1090,27 +1090,27 @@ msgstr ""
 #: src/app/webbrowser/SettingsPage.qml:433
 #: src/app/webcontainer/WebappSettingsPage.qml:261
 msgid "Clear all Cookies?"
-msgstr ""
+msgstr "Kas eemaldad kõik küpsised?"
 
 #: src/app/webbrowser/SettingsPage.qml:516
 msgid "Custom homepage"
-msgstr ""
+msgstr "Sinu määratud avaleht"
 
 #: src/app/webbrowser/SettingsPage.qml:601
 msgid "Microphone"
-msgstr ""
+msgstr "Mikrofon"
 
 #: src/app/webbrowser/SettingsPage.qml:622
 msgid "Camera"
-msgstr ""
+msgstr "Kaamera"
 
 #: src/app/webbrowser/TabComponent.qml:285
 msgid "Swipe Up To Exit Full Screen"
-msgstr ""
+msgstr "Täisekraanivaatest väljumiseks viipa üles"
 
 #: src/app/webbrowser/TabComponent.qml:286
 msgid "Press ESC To Exit Full Screen"
-msgstr ""
+msgstr "Täisekraanivaatest väljumiseks klõpsa ESC-klahvi"
 
 #: src/app/webbrowser/TabPreview.qml:113
 msgid "Tap to view"
@@ -1140,15 +1140,15 @@ msgstr ""
 
 #: src/app/webcontainer/AccountChooserDialog.qml:78
 msgid "Add account"
-msgstr ""
+msgstr "Lisa kasutajakonto"
 
 #: src/app/webcontainer/AccountChooserDialog.qml:87
 msgid "Don't use an account"
-msgstr ""
+msgstr "Ära kasuta kasutajakontot"
 
 #: src/app/webcontainer/AccountErrorScreen.qml:39
 msgid "Account error"
-msgstr ""
+msgstr "Kasutajakonto viga"
 
 #: src/app/webcontainer/AccountsLogic.qml:63
 msgid ""
@@ -1158,7 +1158,7 @@ msgstr ""
 
 #: src/app/webcontainer/AccountsLogic.qml:214
 msgid "Authentication failed"
-msgstr ""
+msgstr "Autentimine ei õnnestunud"
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
 #: src/app/webcontainer/AccountsSplashScreen.qml:45
@@ -1266,8 +1266,8 @@ msgstr ""
 
 #: src/app/ZoomControls.qml:206
 msgid "Save for domain"
-msgstr ""
+msgstr "Salvesta domeeni jaoks"
 
 #: src/app/ZoomControls.qml:219
 msgid "Save as default"
-msgstr ""
+msgstr "Salvesta vaikimisi väärtuseks"

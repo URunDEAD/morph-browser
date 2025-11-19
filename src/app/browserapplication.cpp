@@ -200,6 +200,13 @@ bool BrowserApplication::initialize(const QString& qmlFileSubPath
     {
         qputenv("QT_QUICK_CONTROLS_STYLE", "Suru");
     }
+#else
+    // This is a bit of a hack, as we don't seem to have a way to set QQC2 style
+    // per-Qt-version...
+    if (qgetenv("QT_QUICK_CONTROLS_STYLE") == "Suru")
+    {
+        qunsetenv("QT_QUICK_CONTROLS_STYLE");
+    }
 #endif
 
     const char* uri = "webbrowsercommon.private";

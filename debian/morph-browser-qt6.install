@@ -9,5 +9,4 @@ usr/share/applications/morph-browser.desktop
 usr/share/locale/*/LC_MESSAGES/morph-browser.mo
 usr/share/lomiri-url-dispatcher/
 usr/share/lomiri-content-hub/peers/morph-browser
-# FIXME re-enable after fixing the profile
-#etc/apparmor.d
+etc/apparmor.d

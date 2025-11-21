@@ -1,0 +1,3 @@
+debian/tmp-qt5/
+debian/tmp-qt6/
+debian/usr.bin.morph-browser

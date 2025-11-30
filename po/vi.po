@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2025-08-15 23:23+0000\n"
-"Last-Translator: \"Bảo Nam (Namm)\" <namb20994@gmail.com>\n"
+"PO-Revision-Date: 2025-12-03 05:00+0000\n"
+"Last-Translator: phmqXPD <phmq.xpd@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/vi/>\n"
 "Language: vi\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 5.15-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -34,7 +34,6 @@ msgid "Browse the World Wide Web using QtWebEngine"
 msgstr "Duyệt những trang web sử dụng QtWebEngine"
 
 #: morph-browser.desktop.in:7
-#, fuzzy
 msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr "Mạng;WWW;Trình duyệt;Trang web;Trình duyệt"
 
@@ -303,21 +302,21 @@ msgstr ""
 
 #: src/app/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
-msgstr ""
+msgstr "Cho phép tên miền"
 
 #: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
-msgstr ""
+msgstr "Yêu cầu xác thực."
 
 #. TRANSLATORS: %1 refers to the URL of the current website
 #: src/app/AuthenticationDialog.qml:26
 #, qt-format
 msgid "The website %1 requires authentication."
-msgstr ""
+msgstr "Trang web %1 yêu cầu xác thực."
 
 #: src/app/AuthenticationDialog.qml:34 src/app/HttpAuthenticationDialog.qml:50
 msgid "Username"
-msgstr ""
+msgstr "Tên người dùng"
 
 #: src/app/AuthenticationDialog.qml:41 src/app/HttpAuthenticationDialog.qml:60
 msgid "Password"
@@ -325,19 +324,19 @@ msgstr "Mật khẩu"
 
 #: src/app/BeforeUnloadDialog.qml:24
 msgid "Confirm Navigation"
-msgstr ""
+msgstr "Xác nhận điều hướng"
 
 #: src/app/BeforeUnloadDialog.qml:33
 msgid "Leave"
-msgstr ""
+msgstr "Thoát"
 
 #: src/app/BeforeUnloadDialog.qml:41
 msgid "Stay"
-msgstr ""
+msgstr "Ở lại"
 
 #: src/app/CertificateVerificationDialog.qml:24
 msgid "This connection is untrusted"
-msgstr ""
+msgstr "Kết nối này chưa được tin cậy"
 
 #. TRANSLATORS: %1 refers to the hostname
 #: src/app/CertificateVerificationDialog.qml:26
@@ -346,19 +345,21 @@ msgid ""
 "You are trying to securely reach %1, but the security certificate of this "
 "website is not trusted. Reason: %2"
 msgstr ""
+"Bạn đang cố gắng truy cập an toàn vào %1, nhưng chứng chỉ bảo mật của trang "
+"web này không được tin cậy. Lý do: %2"
 
 #: src/app/CertificateVerificationDialog.qml:39
 #: src/app/InvalidCertificateErrorSheet.qml:160
 msgid "Proceed anyway"
-msgstr ""
+msgstr "Cứ tiếp tục"
 
 #: src/app/ColorSelectDialog.qml:25
 msgid "Select Color"
-msgstr ""
+msgstr "Chọn màu"
 
 #: src/app/ConfirmDialog.qml:24
 msgid "JavaScript Confirmation"
-msgstr ""
+msgstr "Xác nhận JavaScript"
 
 #: src/app/ContentExportDialog.qml:79
 msgid "Open with"

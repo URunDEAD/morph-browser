@@ -26,6 +26,7 @@ endif()
 
 include(FindPkgConfig)
 pkg_check_modules(LIBAPPARMOR libapparmor REQUIRED)
+pkg_check_modules(LIBPSL libpsl REQUIRED)
 
 # Standard install paths
 include(GNUInstallDirs)

@@ -1,6 +1,310 @@
+2025-12-02 Mike Gabriel
+
+        * Release 1.99.0 (HEAD -> main, tag: 1.99.0)
+
+2025-11-21 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/fix-clean' into 'main'
+          (1d326e62)
+
+2025-11-20 Ratchanan Srirattanamet
+
+        * d/clean: clean tmp-qt{5,6}/ and usr.bin.morph-browser (AA profile)
+          (1c6818a0)
+
+2025-11-21 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/modernize-aa-profile' into
+          'main' (2c9949fb)
+
+2025-11-20 Ratchanan Srirattanamet
+
+        * debian/: install AppArmor profiles in Qt 6 variant also (40b5d502)
+        * d/morph-browser-apparmor.manifest: bump policy version to 2404.2
+          (4e0b13c9)
+
+2025-11-21 Mike Gabriel
+
+        * Merge branch 'personal/bshah/disable-favicon-qt6' into 'main'
+          (0853f559)
+
+2025-11-21 Bhushan Shah
+
+        * qml-qt6: disable favicon temporarily in qt6 (e3d61791)
+
+2025-11-17 Priit Jõerüüt
+
+        * Translated using Weblate (Estonian) (5ea6650f)
+
+2025-11-17 Wenwen Luo
+
+        * Translated using Weblate (Chinese (Simplified) (zh_LATN@pinyin))
+          (96c8edc4)
+
+2025-11-19 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/qt6-explicit-no-suru' into
+          'main' (573ada58)
+
+2025-11-19 Ratchanan Srirattanamet
+
+        * app: explicitly unset Suru QQC2 style if requested by environment
+          (e7fc642a)
+
+2025-11-13 Wenwen Luo
+
+        * Translated using Weblate (Chinese (Simplified) (zh_LATN@pinyin))
+          (5acd7dd2)
+
+2025-11-13 Priit Jõerüüt
+
+        * Translated using Weblate (Estonian) (29ac07ab)
+
+2025-11-17 Ratchanan Srirattanamet
+
+        * Merge branch 'personal/gberh/qt6' into 'main' (7c97fed8)
+
+2025-11-14 Guido Berhoerster
+
+        * Avoid duplicating assets shared by Qt 5 and 6 builds (7e0301ce)
+        * Only link against QtCorePrivate when building against Qt 6
+          (8ed9b694)
+
+2025-11-14 Ratchanan Srirattanamet
+
+        * Fix QHash/QList API usage (5bd48c5e)
+
+2025-11-14 Guido Berhoerster
+
+        * Remove all conditionals for Qt versions < 5.15 (c763ca4a)
+
+2025-11-07 Guido Berhoerster
+
+        * Remove unused images (c27b6d9d)
+        * Use suffixed icons directly and scale them correctly for Qt 6
+          (7da54de2)
+
+2025-10-22 Guido Berhoerster
+
+        * Download generated PDF instead of saving it to a hidden directory
+          (acfd5533)
+        * Allow saving XML and XHTML pages as PDF (772bd501)
+
+2025-10-21 Guido Berhoerster
+
+        * Switch from WebEngineDownloadItem to WebEngineDownloadRequest in Qt
+          6 (0d2b5e69)
+
+2025-09-23 Guido Berhoerster
+
+        * WebEngineDownloadItem has been renamed to WebEngineDownloadRequest
+          (ddb7ac97)
+
+2025-07-30 Guido Berhoerster
+
+        * Temporarily disable apparmor confinement for morph-browser-qt6
+          (4a160b2a)
+
+2025-08-13 Guido Berhoerster
+
+        * Remove broken system-level user-agent overrides (fb91d100)
+
+2025-08-08 Guido Berhoerster
+
+        * Get rid of unncecessary imports (cecc2af1)
+
+2025-08-07 Guido Berhoerster
+
+        * Port to lomiri-content-hub Qt 6 (ae95a921)
+        * Fix WebView context menu (e372d999)
+        * Add workaround until Suru has been ported to Qt 6 (aaf67c2f)
+        * Fix menu item icons (8719d53a)
+
+2025-07-17 Guido Berhoerster
+
+        * Convert WebEngineLoadRequest to WebEngineLoadingInfo (be64e407)
+        * Do not use deprecated WebEngineNavigationRequest.action property
+          (849a14be)
+        * Port Connections elements to new style (7072e873)
+        * Convert WebEngineLoadRequest to WebEngineView enum (3b702133)
+
+2025-07-16 Guido Berhoerster
+
+        * Do not try to set up singal handlers for non-existent component
+          (a6822ec0)
+        * Remove leftover signal handler (eb18c924)
+
+2025-07-08 Guido Berhoerster
+
+        * Add morph-browser-qt6 and qml6-module-morph-web subpackages
+          (9657f30b)
+
+2025-06-25 Guido Berhoerster
+
+        * Do not build deprecated components when building against Qt 6
+          (d22b8264)
+        * Fix building click-hooks against Qt 6 (d1f33597)
+        * Fix locating the qdoc executable when building against Qt 6
+          (bdff7f8e)
+
+2025-07-14 Guido Berhoerster
+
+        * Port QML to Qt 6 (b3181ad4)
+
+2025-07-11 Guido Berhoerster
+
+        * Move QML and associated files into Qt-Version specific
+          subdirectories (0f0d851e)
+        * Add support for building against Qt 6 (32f7e1fb)
+
+2025-02-24 Marius Gripsgard
+
+        * treewide: Fix deprication warnings (6482ef2e)
+        * CMakeLists: Add Werror option (c9f635ce)
+
+2025-11-06 Wenwen Luo
+
+        * Translated using Weblate (Chinese (Simplified) (zh_LATN@pinyin))
+          (45aedd8a)
+
+2025-10-23 Eryk Michalak
+
+        * Translated using Weblate (Polish) (e1575464)
+
+2025-10-22 Priit Jõerüüt
+
+        * Translated using Weblate (Estonian) (f11584d5)
+
+2025-10-01 Joana R
+
+        * Translated using Weblate (Basque) (dcdcc4df)
+
+2025-10-01 Jozef Mlich
+
+        * Translated using Weblate (Czech) (522a05c1)
+
+2025-09-21 Libre Fox
+
+        * Translated using Weblate (Ukrainian) (443b100b)
+
+2025-09-18 Milo Ivir
+
+        * Translated using Weblate (Croatian) (18ea76ae)
+
+2025-09-03 Milo Ivir
+
+        * Translated using Weblate (Croatian) (a06902d5)
+
+2025-08-31 Niko
+
+        * Translated using Weblate (Serbian) (48d282c7)
+
+2025-08-24 Ida Brenna
+
+        * Translated using Weblate (Norwegian Bokmål) (0c5df25b)
+
+2025-08-24 Priit Jõerüüt
+
+        * Translated using Weblate (Estonian) (19b00b0a)
+
+2025-08-19 Kristoffer Grundström
+
+        * Translated using Weblate (Swedish) (fb63822b)
+
+2025-08-16 Heimen Stoffels
+
+        * Translated using Weblate (Dutch) (0be1f734)
+
+2025-08-22 Nausi Llon
+
+        * Translated using Weblate (French) (6b79275e)
+
+2025-08-16 Priit Jõerüüt
+
+        * Translated using Weblate (Estonian) (2a673044)
+
+2025-08-17 Ettore Atalan
+
+        * Translated using Weblate (German) (b17734cd)
+
+2025-08-18 Valery Levanchuk
+
+        * Translated using Weblate (Belarusian) (73b9d775)
+
+2025-08-16 Hosted Weblate
+
+        * Update translation files (6fa89d7e)
+
+2025-08-11 Bảo Nam (Namm)
+
+        * Translated using Weblate (Vietnamese) (65393ab0)
+
+2025-08-16 Ratchanan Srirattanamet
+
+        * Merge branch 'personal/peat-psuwit/update-potfiles-202508' into
+          'main' (f76f40b8)
+
+2025-08-15 Ratchanan Srirattanamet
+
+        * po/: update .pot file (a0a7d133)
+        * po/: update POTFILES.in (9e4400a2)
+
+2025-08-15 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/fix-ci-armhf' into 'main'
+          (951c2e37)
+
+2025-08-16 Ratchanan Srirattanamet
+
+        * d/rules: workaround new libhybris causing problem in armhf build
+          (28abc30b)
+
+2025-06-27 தமிழ்நேரம்
+
+        * Translated using Weblate (Tamil) (260e1b71)
+
+2025-06-19 Øjvind Fritjof Arnfred
+
+        * Translated using Weblate (Danish) (fdefe092)
+
+2025-05-30 Mike Gabriel
+
+        * Merge branch 'missing_translations' into 'main' (3c5c15fa)
+
+2025-05-30 Adam Havelka
+
+        * webcontainer: add missiong translation in privacy settings
+          (d9766a36)
+
+2025-05-26 Priit Jõerüüt
+
+        * Translated using Weblate (Estonian) (49c817f8)
+
+2025-05-18 Ida Brenna
+
+        * Translated using Weblate (Norwegian Bokmål) (77ca04d1)
+
+2025-05-05 Priit Jõerüüt
+
+        * Translated using Weblate (Estonian) (b59073ee)
+
+2025-02-05 Milo Ivir
+
+        * Translated using Weblate (Croatian) (6b6f6e4a)
+
+2025-02-04 Milo Ivir
+
+        * Translated using Weblate (Croatian) (39cc1330)
+        * Translated using Weblate (Croatian) (c87ed9d2)
+        * Translated using Weblate (Croatian) (3456a8ef)
+
+2025-02-01 Milo Ivir
+
+        * Translated using Weblate (Croatian) (1579b2d8)
+
 2025-01-20 Mike Gabriel
 
-        * Release 1.1.2 (HEAD -> main, tag: 1.1.2)
+        * Release 1.1.2 (d4e2c2f2) (tag: 1.1.2)
         * Merge branch 'fix/typeString-timeout' into 'main' (e186d2e8)
 
 2025-01-14 OPNA2608

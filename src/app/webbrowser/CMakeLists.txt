@@ -41,13 +41,6 @@ target_link_libraries(${WEBBROWSER_APP_MODELS}
     Qt::Sql
 )
 
-if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-target_link_libraries(${WEBBROWSER_APP_MODELS}
-    Qt::CorePrivate
-    Qt::NetworkPrivate
-)
-endif()
-
 set(WEBBROWSER_APP_SRC
     reparenter.cpp
     searchengine.cpp

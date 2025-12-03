@@ -25,8 +25,7 @@
 #include <QtCore/QUrl>
 
 #if (QT_VERSION >= QT_VERSION_CHECK(6, 0, 0))
-#include <QtCore/private/qurl_p.h>
-#include <QtNetwork/private/qtldurl_p.h>
+#include <libpsl.h>
 #endif
 
 namespace DomainUtils {
@@ -42,24 +41,7 @@ static QString getTopLevelDomain(const QUrl &url)
     return url.topLevelDomain();
 #pragma GCC diagnostic pop
 #else
-    // QUrl::topLevelDomain() was removed in Qt6.
-    // The following is copied from the old "qTopLevelDomain" code in Qt6::Network.
-    // It was removed in this commit: https://github.com/qt/qtbase/commit/50b30976837be0969efdccced68cfb584d99981a
-    const QString domainLower = url.host().toLower();
-    QVector<QStringView> sections = QStringView{domainLower}.split(QLatin1Char('.'), Qt::SkipEmptyParts);
-    if (sections.isEmpty())
-        return QString();
-
-    QString level, tld;
-    for (int j = sections.count() - 1; j >= 0; --j) {
-        level.prepend(QLatin1Char('.') + sections.at(j).toString());
-        if (qIsEffectiveTLD(QStringView{level}.right(level.size() - 1)))
-            tld = level;
-    }
-
-    //return qt_ACE_do(tld, ToAceOnly, AllowLeadingDot, {});
-    // TODO - QUrl::toAce() uses ForbidLeadingDot, while the old QUrl::topLevelDomain() used AllowLeadingDot. Does this matter?
-    return QString(QUrl::toAce(tld));
+    return QString(psl_unregistrable_domain(psl_builtin(), QUrl::toAce(url.host()).constData()));
 #endif
 }
 

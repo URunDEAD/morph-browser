@@ -38,10 +38,11 @@ target_link_libraries(${COMMONLIB}
     Qt::Widgets
     Qt::WebEngineCore
     ${LIBAPPARMOR_LDFLAGS}
+    ${LIBPSL_LDFLAGS}
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    target_link_libraries(${COMMONLIB} Qt::CorePrivate Qt::NetworkPrivate Qt::WebEngineQuick)
+    target_link_libraries(${COMMONLIB} Qt::WebEngineQuick ${LIBPSL_LIBRARIES})
 else()
     target_link_libraries(${COMMONLIB} Qt::WebEngine)
 endif()

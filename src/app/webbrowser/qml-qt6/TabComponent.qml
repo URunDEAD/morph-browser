@@ -78,14 +78,14 @@ Component {
                 var readabilityScript = WebEngine.script();
                 readabilityScript.name = "readability";
                 readabilityScript.injectionPoint = WebEngineScript.DocumentReady;
-                readabilityScript.sourceUrl = Qt.resolvedUrl("readability.js")
+                readabilityScript.sourceUrl = Qt.resolvedUrl("assets/readability.js")
                 readabilityScript.runsOnSubframes = true;
                 readabilityScript.worldId = WebEngineScript.MainWorld;
                 userScripts.insert(readabilityScript);
 
                 var readabilityReaderableScript = WebEngine.script();
                 readabilityReaderableScript.injectionPoint = WebEngineScript.DocumentReady;
-                readabilityReaderableScript.sourceUrl = Qt.resolvedUrl("readability-readerable.js");
+                readabilityReaderableScript.sourceUrl = Qt.resolvedUrl("assets/readability-readerable.js");
                 readabilityReaderableScript.runsOnSubframes = true;
                 readabilityReaderableScript.worldId = WebEngineScript.MainWorld;
                 userScripts.insert(readabilityReaderableScript);

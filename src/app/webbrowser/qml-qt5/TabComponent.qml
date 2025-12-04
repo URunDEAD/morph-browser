@@ -77,14 +77,14 @@ Component {
                 WebEngineScript {
                     name: "readability"
                     injectionPoint: WebEngineScript.DocumentReady
-                    sourceUrl: Qt.resolvedUrl("readability.js")
+                    sourceUrl: Qt.resolvedUrl("assets/readability.js")
                     runOnSubframes: true
                     worldId: WebEngineScript.MainWorld
                 },
                 WebEngineScript {
                     name: "readability-readerable"
                     injectionPoint: WebEngineScript.DocumentReady
-                    sourceUrl: Qt.resolvedUrl("readability-readerable.js")
+                    sourceUrl: Qt.resolvedUrl("assets/readability-readerable.js")
                     runOnSubframes: true
                     worldId: WebEngineScript.MainWorld
                 }

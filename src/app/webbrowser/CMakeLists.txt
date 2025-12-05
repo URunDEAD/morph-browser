@@ -65,7 +65,7 @@ install(TARGETS ${WEBBROWSER_APP}
 install(DIRECTORY qml-qt${QT_VERSION_MAJOR}/ DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser)
 
 install(FILES ${ASSETS}
-        DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser)
+        DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser/assets)
 
 install(DIRECTORY searchengines
         DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser

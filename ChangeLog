@@ -1,6 +1,45 @@
+2025-12-08 Mike Gabriel
+
+        * Release 1.99.1 (HEAD -> main, tag: 1.99.1)
+
+2025-12-05 Guido Berhörster
+
+        * Merge branch 'personal/gberh/fix-assets' into 'main' (512a7dce)
+
+2025-12-04 Guido Berhoerster
+
+        * Fix asset loading path (9fe8e950)
+        * Fix asset installation path (428ae41a)
+
+2025-12-04 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/qt6-qwecontroldelegates' into
+          'main' (9af9b47c)
+
+2025-12-04 Ratchanan Srirattanamet
+
+        * d/control: depends on qml6-module-qtwebengine-controlsdelegates
+          (4bbfc913)
+          Fixes:
+          https://gitlab.com/ubports/development/core/morph-browser/-/issues/588
+
+2025-12-03 Mike Gabriel
+
+        * Merge branch 'personal/gberh/libpsl' into 'main' (b2260a13)
+
+2025-12-02 Guido Berhoerster
+
+        * debian: add dependency on libpsl (81c16f83)
+        * Use libpsl instead of QtNetwork private API for determining the top
+          level domain (1267e7ac)
+
+2025-11-30 phmqXPD
+
+        * Translated using Weblate (Vietnamese) (98b334b8)
+
 2025-12-02 Mike Gabriel
 
-        * Release 1.99.0 (HEAD -> main, tag: 1.99.0)
+        * Release 1.99.0 (dc63bf17) (tag: 1.99.0)
 
 2025-11-21 Mike Gabriel
 

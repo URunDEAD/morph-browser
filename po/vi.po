@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2025-12-03 05:00+0000\n"
+"PO-Revision-Date: 2025-12-09 17:53+0000\n"
 "Last-Translator: phmqXPD <phmq.xpd@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/vi/>\n"
@@ -80,10 +80,8 @@ msgid "Clear Navigation History"
 msgstr "Xóa lịch sử điều hướng"
 
 #: src/app/actions/CopyImageLink.qml:22
-#, fuzzy
-#| msgid "Copy image"
 msgid "Copy image link"
-msgstr "Sao chép ảnh"
+msgstr "Sao chép đường dẫn hình ảnh"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
@@ -112,7 +110,6 @@ msgstr "Tìm trong trang"
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/FindInPage.qml:26
-#, fuzzy
 msgid "Search in Page"
 msgstr "Tìm trong trang"
 
@@ -363,12 +360,12 @@ msgstr "Xác nhận JavaScript"
 
 #: src/app/ContentExportDialog.qml:79
 msgid "Open with"
-msgstr ""
+msgstr "Mở với"
 
 #: src/app/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
-msgstr ""
+msgstr "Tên tệp: %1"
 
 #: src/app/ContentExportDialog.qml:91
 #: src/app/webcontainer/AccountErrorScreen.qml:50
@@ -376,20 +373,16 @@ msgid "Close"
 msgstr "Đóng"
 
 #: src/app/ContentExportDialog.qml:100
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open link in browser"
-msgstr "Mở liên kết trong trình duyệt mặc định"
+msgstr "Mở liên kết trong trình duyệt"
 
 #: src/app/ContentExportDialog.qml:109
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open file in browser"
-msgstr "Mở liên kết trong trình duyệt mặc định"
+msgstr "Mở tệp trong trình duyệt"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
-msgstr ""
+msgstr "User Agents Tùy chỉnh"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
 #: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
@@ -398,92 +391,91 @@ msgstr "Xóa bỏ"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
-msgstr ""
+msgstr "User Agent Mới"
 
 #: src/app/CustomUserAgentsPage.qml:161
 msgid "Edit User Agent"
-msgstr ""
+msgstr "Chỉnh sửa User Agent"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
-msgstr ""
+msgstr "Không có User Agent tùy chỉnh nào"
 
 #: src/app/DomainPermissionsPage.qml:54
 #: src/app/webcontainer/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
-msgstr ""
+msgstr "Danh sách tên miền đen/trắng"
 
 #: src/app/DomainPermissionsPage.qml:113 src/app/DomainSettingsPage.qml:113
 msgid "Add domain"
-msgstr ""
+msgstr "Thêm tên miền"
 
 #: src/app/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
-msgstr ""
+msgstr "Nhập tên của tên miền, ví dụ: example.com (tên miền con sẽ bị loại bỏ)."
 
 #: src/app/DomainPermissionsPage.qml:222
 msgid "Not Set"
-msgstr ""
+msgstr "Chưa đặt"
 
 #: src/app/DomainPermissionsPage.qml:232
 msgid "Never allow access"
-msgstr ""
+msgstr "Không bao giờ cho phép truy cập"
 
 #: src/app/DomainPermissionsPage.qml:243
 msgid "Always allow access"
-msgstr ""
+msgstr "Luôn luôn cho phép truy cập"
 
 #: src/app/DomainPermissionsPage.qml:283
 msgid "No sites have been granted special permissions"
-msgstr ""
+msgstr "Không có trang nào được cấp quyền đặc biệt"
 
 #: src/app/DomainSettingsPage.qml:52
 #: src/app/webcontainer/WebappSettingsPage.qml:236
+#, fuzzy
 msgid "Domain specific settings"
-msgstr ""
+msgstr "Cài đặt theo miền"
 
 #: src/app/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
-msgstr ""
+msgstr "Nhập tên của tên miền, ví dụ: m.example.com"
 
 #: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
-msgstr ""
+msgstr "cho phép chạy ứng dụng khác"
 
 #: src/app/DomainSettingsPage.qml:226
 msgid "access your location"
-msgstr ""
+msgstr "truy cập vị trí của bạn"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "Hỏi mỗi lần"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "Cho phép"
+msgstr "Đã cho phép"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Đã từ chối"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
-msgstr ""
+msgstr "user agent tùy chỉnh"
 
 #: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
-msgstr ""
+msgstr "Thu phóng "
 
 #: src/app/DomainSettingsPage.qml:325
 msgid "not set"
-msgstr ""
+msgstr "chưa đặt"
 
 #: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
-msgstr ""
+msgstr "Không có cài đặt theo tên miền nào"
 
 #. TRANSLATORS: %1 is the percentage of the download completed so far
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
@@ -493,11 +485,11 @@ msgstr "%1%"
 
 #: src/app/DownloadDelegate.qml:170
 msgid "Download failed"
-msgstr ""
+msgstr "Tải xuống thất bại"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "Không xác định"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207

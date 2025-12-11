@@ -21,6 +21,8 @@ import Lomiri.Components
 
 SwipeArea {
     direction: SwipeArea.Upwards
+    // FIXME: remove once gesture recognition machinery in LUITK works again
+    immediateRecognition: true
 
     readonly property real dragFraction: dragging ? Math.min(1.0, Math.max(0.0, distance / parent.height)) : 0.0
     readonly property var thresholds: [0.05, 0.18, 0.36, 0.54, 1.0]

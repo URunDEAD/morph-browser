@@ -131,7 +131,7 @@ FocusScope {
                             anchors.verticalCenter: expandedIcon.verticalCenter
 
                             text: folderName ? folderName : i18n.tr("All Bookmarks")
-                            fontSize: "small"
+                            textSize: Label.Small
                         }
                     }
 

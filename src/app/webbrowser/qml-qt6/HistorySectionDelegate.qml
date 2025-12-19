@@ -51,7 +51,7 @@ Item {
             return Qt.formatDate(section, Qt.DefaultLocaleLongDate)
         }
 
-        fontSize: "small"
+        textSize: Label.Small
         color: theme.palette.normal.backgroundSecondaryText
     }
 

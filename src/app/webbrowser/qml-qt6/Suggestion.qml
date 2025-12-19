@@ -76,7 +76,7 @@ ListItem.Base {
                 leftMargin: units.gu(2)
                 right: parent.right
             }
-            fontSize: "small"
+            textSize: Label.Small
             elide: Text.ElideRight
             visible: text !== ""
             color: selected ? "#DB4923" : theme.palette.selected.backgroundText

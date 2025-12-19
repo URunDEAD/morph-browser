@@ -259,7 +259,7 @@ Common.BrowserPage {
                             return Qt.formatDate(lastVisitDate, Qt.DefaultLocaleLongDate)
                         }
 
-                        fontSize: "small"
+                        textSize: Label.Small
                         color: (!lastVisitDateListView.activeFocus && lastVisitDateDelegate.ListView.isCurrentItem) ? theme.palette.normal.positionText : theme.palette.normal.backgroundSecondaryText
                     }
 

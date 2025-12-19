@@ -67,7 +67,7 @@ Popups.Popover {
             }
             height: units.gu(5)
             visible: text
-            fontSize: "x-small"
+            textSize: Label.XSmall
             color: theme.palette.selected.base
             elide: Text.ElideRight
             verticalAlignment: Text.AlignVCenter
@@ -101,7 +101,7 @@ Popups.Popover {
                         rightMargin: units.gu(2)
                         verticalCenter: parent.verticalCenter
                     }
-                    fontSize: "small"
+                    textSize: Label.Small
                     text: action.text
                 }
 

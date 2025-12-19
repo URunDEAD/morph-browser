@@ -50,7 +50,7 @@ Rectangle {
 
             Label {
                 anchors.horizontalCenter: parent.horizontalCenter
-                fontSize: "x-large"
+                textSize: Label.XLarge
                 text: root.applicationName
             }
 

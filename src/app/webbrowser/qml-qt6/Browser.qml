@@ -1105,7 +1105,7 @@ Common.BrowserView {
                 horizontalCenter: parent.horizontalCenter
                 verticalCenterOffset: units.dp(2)
             }
-            fontSize: "small"
+            textSize: Label.Small
             color: theme.palette.normal.backgroundText
             // TRANSLATORS: %1 refers to the current number of tabs opened
             text: i18n.tr("(%1)").arg(tabsModel ? tabsModel.count : 0)

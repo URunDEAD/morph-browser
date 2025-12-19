@@ -38,7 +38,7 @@ Rectangle {
 
         Label {
             width: parent.width
-            fontSize: "x-large"
+            textSize: Label.XLarge
             text: (errorDomain === WebEngineView.CertificateErrorDomain) ? i18n.tr("Certificate Error") : i18n.tr("Network Error")
             color: theme.palette.normal.overlayText
         }

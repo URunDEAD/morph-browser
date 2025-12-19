@@ -55,14 +55,14 @@ Rectangle {
                 text: certificateError ? i18n.tr("This site security certificate is not trusted.\n") + textForError(certificateError.certError) : ""
                 wrapMode: Text.Wrap
                 horizontalAlignment: Text.AlignHCenter
-                fontSize: "x-small"
+                textSize: Label.XSmall
             }
 
             Label {
                 width: parent.width
                 text: i18n.tr("Learn more")
                 font.underline: true
-                fontSize: "x-small"
+                textSize: Label.XSmall
                 horizontalAlignment: Text.AlignHCenter
                 visible: !moreInfo.visible
                 MouseArea {
@@ -80,14 +80,14 @@ Rectangle {
                 spacing: units.gu(1)
 
                 Label {
-                    fontSize: "x-small"
+                    textSize: Label.XSmall
                     width: parent.width
                     wrapMode: Text.Wrap
                     // TRANSLATORS: %1 refers to the SSL certificate's serial number
                     text: i18n.tr("Serial number:\n%1").arg(certificateError ? certificateError.certificate.serialNumber : "")
                 }
                 Label {
-                    fontSize: "x-small"
+                    textSize: Label.XSmall
                     width: parent.width
                     wrapMode: Text.Wrap
                     // TRANSLATORS: %1 refers to the SSL certificate's subject display name
@@ -95,7 +95,7 @@ Rectangle {
                 }
                 Label {
                     id: subjectAddress
-                    fontSize: "x-small"
+                    textSize: Label.XSmall
                     width: parent.width
                     wrapMode: Text.Wrap
                     // TRANSLATORS: %1 refers to the SSL certificate's subject's address
@@ -106,7 +106,7 @@ Rectangle {
                     //        certificateError.certificate.getSubjectInfo(Oxide.SslCertificate.PrincipalAttrCountryName).join(", ")).replace(/\n+/g, "\n") : "")
                 }
                 Label {
-                    fontSize: "x-small"
+                    textSize: Label.XSmall
                     width: parent.width
                     wrapMode: Text.Wrap
                     // TRANSLATORS: %1 refers to the SSL certificate's issuer display name
@@ -114,7 +114,7 @@ Rectangle {
                 }
                 Label {
                     id: issuerAddress
-                    fontSize: "x-small"
+                    textSize: Label.XSmall
                     width: parent.width
                     wrapMode: Text.Wrap
                     // TRANSLATORS: %1 refers to the SSL certificate's issuer's address
@@ -125,21 +125,21 @@ Rectangle {
                         //    certificateError.certificate.getIssuerInfo(Oxide.SslCertificate.PrincipalAttrCountryName).join(", ")).replace(/\n+/g, "\n") : "")
                 }
                 Label {
-                    fontSize: "x-small"
+                    textSize: Label.XSmall
                     width: parent.width
                     wrapMode: Text.Wrap
                     // TRANSLATORS: %1 refers to the SSL certificate's start date
                     text: i18n.tr("Valid from:\n%1").arg(certificateError ? certificateError.certificate.effectiveDate.toLocaleString() : "")
                 }
                 Label {
-                    fontSize: "x-small"
+                    textSize: Label.XSmall
                     width: parent.width
                     wrapMode: Text.Wrap
                     // TRANSLATORS: %1 refers to the SSL certificate's expiry date
                     text: i18n.tr("Valid until:\n%1").arg(certificateError ? certificateError.certificate.expiryDate.toLocaleString() : "")
                 }
                 Label {
-                    fontSize: "x-small"
+                    textSize: Label.XSmall
                     width: parent.width
                     wrapMode: Text.Wrap
                     // TRANSLATORS: %1 refers to the SSL certificate's SHA1 fingerprint
@@ -152,7 +152,7 @@ Rectangle {
                 visible: certificateError ? certificateError.overridable : false
                 text: i18n.tr("You should not proceed, especially if you have never seen this warning before for this site.")
                 wrapMode: Text.Wrap
-                fontSize: "x-small"
+                textSize: Label.XSmall
                 horizontalAlignment: Text.AlignHCenter
             }
 

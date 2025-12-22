@@ -60,7 +60,7 @@ AbstractButton {
             horizontalCenter: parent.horizontalCenter
         }
         horizontalAlignment: Text.AlignHCenter
-        fontSize: "x-small"
+        textSize: Label.XSmall
         maximumLineCount: 1
         elide: Text.ElideMiddle
         color: toolbarAction.color

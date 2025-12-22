@@ -71,7 +71,7 @@ Item {
             left: parent.left
             right: (root.state == "expanded") ? undefined : parent.right
         }
-        fontSize: "small"
+        textSize: Label.Small
         elide: (root.state == "expanded") ? Text.ElideNone : Text.ElideRight
         text: ""
         onTextChanged: {

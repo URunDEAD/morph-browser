@@ -101,7 +101,7 @@ FocusScope {
                     rightMargin: units.gu(2)
                 }
 
-                fontSize: "small"
+                textSize: Label.Small
                 text: isAllBookmarksFolder ? i18n.tr("All Bookmarks") : folderItem.name
                 color: (isActiveFolder && !folders.activeFocus) ? theme.palette.normal.positionText : theme.palette.normal.backgroundSecondaryText
             }

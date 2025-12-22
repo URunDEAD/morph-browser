@@ -70,7 +70,7 @@ AbstractButton {
                 anchors.top: parent.top
                 text: preview.title
                 elide: Text.ElideRight
-                fontSize: "small"
+                textSize: Label.Small
             }
         }
 

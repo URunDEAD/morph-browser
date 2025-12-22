@@ -127,7 +127,7 @@ FocusScope {
                         anchors.verticalCenter: moreButton.verticalCenter
 
                         text: i18n.tr("Bookmarks")
-                        fontSize: "small"
+                        textSize: Label.Small
                     }
 
                     Button {
@@ -323,7 +323,7 @@ FocusScope {
                     Behavior on opacity { LomiriNumberAnimation {} }
 
                     text: i18n.tr("Top sites")
-                    fontSize: "small"
+                    textSize: Label.Small
                 }
             }
 

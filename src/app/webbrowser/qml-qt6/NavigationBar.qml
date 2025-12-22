@@ -489,7 +489,7 @@ FocusScope {
                             rightMargin: units.gu(1)
                         }
                         text: model.text
-                        fontSize: "small"
+                        textSize: Label.Small
                         color: root.fgColor
                         elide: Text.ElideRight
                     }

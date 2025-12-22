@@ -35,7 +35,7 @@ Rectangle {
 
         Label {
             width: parent.width
-            fontSize: "x-large"
+            textSize: Label.XLarge
             text: i18n.tr("Account error")
         }
 

@@ -74,7 +74,7 @@ Popups.Dialog {
                 topMargin: units.gu(2)
                 bottom: parent.bottom
             }
-            fontSize: "x-small"
+            textSize: Label.XSmall
             maximumLineCount: 2
             wrapMode: Text.Wrap
             height: contentHeight
@@ -109,7 +109,7 @@ Popups.Dialog {
                     rightMargin: units.gu(2)
                     verticalCenter: parent.verticalCenter
                 }
-                fontSize: "x-small"
+                textSize: Label.XSmall
                 text: action.text
             }
 
@@ -139,7 +139,7 @@ Popups.Dialog {
                 rightMargin: units.gu(2)
                 verticalCenter: parent.verticalCenter
             }
-            fontSize: "x-small"
+            textSize: Label.XSmall
             text: i18n.tr("Cancel")
         }
         onTriggered: contextMenu.hide()

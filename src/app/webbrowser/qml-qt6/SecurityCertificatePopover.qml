@@ -65,7 +65,7 @@ Popover {
                     Label {
                         width: parent.width
                         wrapMode: Text.WordWrap
-                        fontSize: "x-small"
+                        textSize: Label.XSmall
                         text: certificatePopover.isWarning ?
                                   i18n.tr("This site has insecure content") :
                                   i18n.tr("Identity Not Verified")
@@ -75,7 +75,7 @@ Popover {
                         width: parent.width
                         wrapMode: Text.WordWrap
                         visible: certificatePopover.isError
-                        fontSize: "x-small"
+                        textSize: Label.XSmall
                         text: i18n.tr("The identity of this website has not been verified.")
                     }
 
@@ -83,7 +83,7 @@ Popover {
                         width: parent.width
                         wrapMode: Text.WordWrap
                         visible: certificatePopover.isError
-                        fontSize: "x-small"
+                        textSize: Label.XSmall
                         text: certificatePopover.certificateError ? certificatePopover.certificateError.description : ""
                    }
 
@@ -107,7 +107,7 @@ Popover {
                 width: parent.width
                 wrapMode: Text.WordWrap
                 text: i18n.tr("You are connected to %1 via HTTPS. The certificate is valid.".arg(host))
-                fontSize: "x-small"
+                textSize: Label.XSmall
             }
         }
 

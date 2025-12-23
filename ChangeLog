@@ -1,6 +1,44 @@
+2025-12-23 Mike Gabriel
+
+        * Release 1.99.2 (HEAD -> main, tag: 1.99.2)
+
+2025-12-22 Guido Berhörster
+
+        * Merge branch 'personal/peat-psuwit/luitk-touchregistry-is-fixed'
+          into 'main' (04cdbda8)
+
+2025-12-20 Ratchanan Srirattanamet
+
+        * Revert "src/app: qml-qt6: Set immediateRecognition to true for
+          BottomEdgeHandle" (c452ebca)
+
+2025-12-22 Guido Berhörster
+
+        * Merge branch 'personal/peat-psuwit/qt6-fontSize' into 'main'
+          (2bf73937)
+
+2025-12-20 Ratchanan Srirattanamet
+
+        * src/**/qml-qt6: migrate from Label.fontSize to Label.textSize
+          (014759d0)
+
+2025-12-12 Ratchanan Srirattanamet
+
+        * Merge branch 'personal/fredldotme/qt6-swipearea' into 'main'
+          (03b50954)
+
+2025-12-08 Alfred Neumayer
+
+        * src/app: qml-qt6: Set immediateRecognition to true for
+          BottomEdgeHandle (a467bb9f)
+
+2025-12-09 phmqXPD
+
+        * Translated using Weblate (Vietnamese) (2ae79fc9)
+
 2025-12-08 Mike Gabriel
 
-        * Release 1.99.1 (HEAD -> main, tag: 1.99.1)
+        * Release 1.99.1 (bdf0da64) (tag: 1.99.1)
 
 2025-12-05 Guido Berhörster
 

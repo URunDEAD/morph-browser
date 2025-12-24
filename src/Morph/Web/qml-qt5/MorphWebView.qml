@@ -137,7 +137,7 @@ WebEngineView {
 //        readonly property int handleOrientation: orientation
 //        width: units.gu(1.5)
 //        height: units.gu(1.5)
-//        source: "handle.png"
+//        source: "assets/handle.png"
 //        Component.onCompleted: horizontalPaddingRatio = 0.5
 //    }
 

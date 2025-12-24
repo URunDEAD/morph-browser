@@ -64,7 +64,7 @@ WebEngineProfile {
         var scrollbarScript = WebEngine.script();
         scrollbarScript.injectionPoint = WebEngineScript.DocumentReady;
         scrollbarScript.worldId = WebEngineScript.MainWorld;
-        scrollbarScript.sourceUrl = Qt.resolvedUrl("scrollbar-theme.js");
+        scrollbarScript.sourceUrl = Qt.resolvedUrl("assets/scrollbar-theme.js");
         scrollbarScript.runsOnSubframes = true;
         userScripts.insert(scrollbarScript);
     }

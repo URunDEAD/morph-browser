@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2025-12-09 17:53+0000\n"
+"PO-Revision-Date: 2025-12-27 15:20+0000\n"
 "Last-Translator: phmqXPD <phmq.xpd@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/vi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -495,69 +495,66 @@ msgstr "Không xác định"
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
-msgstr "Xóa bỏ"
+msgstr "Xóa bỏ tệp"
 
 #: src/app/DownloadDelegate.qml:261
+#, fuzzy
 msgid "Remove from History"
-msgstr ""
+msgstr "Gỡ bỏ khỏi Lịch sử"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
 msgid "Copy Download Link"
-msgstr ""
+msgstr "Sao chép Đường dẫn tải về"
 
 #: src/app/DownloadsDialog.qml:68
 msgid "Recent Downloads"
-msgstr ""
+msgstr "Tải về gần đây"
 
 #: src/app/DownloadsDialog.qml:83
 msgid "No Recent Downloads"
-msgstr ""
+msgstr "Không có tải về gần đây nào"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Huỷ bỏ"
+msgstr "Đã hủy bỏ"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Đã hoàn thành"
 
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
 msgid "Clear"
-msgstr ""
+msgstr "Xóa"
 
 #: src/app/DownloadsDialog.qml:179
 msgid "View All"
-msgstr ""
+msgstr "Hiển thị tất cả"
 
 #: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:850
 #: src/app/webcontainer/WebappSettingsPage.qml:137
 msgid "Downloads"
-msgstr ""
+msgstr "Tải về"
 
 #: src/app/DownloadsPage.qml:60
 msgid "Confirm selection"
-msgstr ""
+msgstr "Xác nhận lựa chọn"
 
 #: src/app/DownloadsPage.qml:288
 msgid "No downloads available"
-msgstr ""
+msgstr "Không có tải về nào"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "tên user agent này đã được sử dụng"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
 msgid "Add the name for the user agent"
-msgstr ""
+msgstr "Thên tên cho user agent"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."

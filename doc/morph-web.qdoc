@@ -24,16 +24,6 @@
     This QML module exposes a WebView component that can be used to render
     web content in an application, as well as related components.
 
-    This is the preferred way of rendering web content in an Ubuntu application.
-    The rendering is performed by QtWebEngine.
-    The use of QtWebKit is deprecated and unsupported.
-
-    Note that the module was previously named
-    \c Ubuntu.Components.Extras.Browser, the old namespace has been kept around
-    for backwards compatibility but its use is discouraged, please update your
-    applications to import \c {Morph.Web 0.1}.
-
-    Also note that importing both \c com.canonical.Oxide (or \c QtWebKit) and
-    \c Morph.Web in the same QML file results in an undefined behaviour,
-    as both expose a \c WebView type.
+    This is the preferred way of rendering web content in an Ubuntu Touch
+    application. The rendering is performed by QtWebEngine.
  */

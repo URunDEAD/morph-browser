@@ -110,21 +110,6 @@ Description: Morph web applications container
  A lightweight webapp container tailored for Ubuntu Touch, based on the Qt WebEngine
  and using the Lomiri UI components.
 
-Package: qml-module-ubuntu-web-compat
-Architecture: any
-Multi-Arch: same
-Section: oldlibs
-Depends: qml-module-morph-web, ${misc:Depends}
-Replaces: qml-module-ubuntu-ui-extras-browser,
-          qtdeclarative5-ubuntu-ui-extras-browser-plugin,
-          qml-module-ubuntu-web,
-          qtdeclarative5-ubuntu-web-plugin
-Conflicts: qml-module-ubuntu-ui-extras-browser,
-          qtdeclarative5-ubuntu-ui-extras-browser-plugin,
-          qml-module-ubuntu-web,
-          qtdeclarative5-ubuntu-web-plugin
-Description: This provides a compat layer for Ubuntu.Web
-
 Package: qml-module-morph-web
 Architecture: any
 Multi-Arch: same
@@ -141,15 +126,6 @@ Description: Morph web QML module
  A standalone QML module that contains the WebView component,
  in the Morph.Web namespace.
 
-Package: qtdeclarative5-ubuntu-web-plugin
-Architecture: any
-Multi-Arch: same
-Section: oldlibs
-Depends: qml-module-morph-web, ${misc:Depends}
-Description: transitional dummy package for the Morph web QML module
- A standalone QML module that contains the WebView component,
- in the Morph.Web namespace.
-
 Package: qml-module-morph-web-doc
 Section: doc
 Architecture: all
@@ -160,16 +136,6 @@ Replaces: qtdeclarative5-ubuntu-web-plugin-doc (<< ${source:Version})
 Description: Morph web QML module HTML documentation
  A standalone QML module that contains the WebView component,
  in the Morph.Web namespace. This package contains the public
- HTML documentation.
-
-Package: qtdeclarative5-ubuntu-web-plugin-doc
-Section: oldlibs
-Architecture: all
-Multi-Arch: foreign
-Depends: qml-module-morph-web-doc, ${misc:Depends}
-Description: transitional dummy package for the morph web QML module HTML documentation
- A standalone QML module that contains the WebView component,
- in the morph.Web namespace. This package contains the public
  HTML documentation.
 
 Package: morph-browser-qt6

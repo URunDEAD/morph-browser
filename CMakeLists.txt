@@ -3,6 +3,7 @@ project(morph-browser VERSION 1.99.2 LANGUAGES CXX)
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
+include(CTest)
 find_package(Gettext REQUIRED)
 
 option(CLICK_MODE "Build as a click package" off)
@@ -84,8 +85,9 @@ add_custom_target(uninstall
 
 add_subdirectory(src)
 
-enable_testing()
-#add_subdirectory(tests)
+if(BUILD_TESTING)
+    add_subdirectory(tests)
+endif()
 
 # make non compiled files (QML, JS, images, etc.) visible in QtCreator
 file(GLOB NON_COMPILED_ROOT *.png .gitignore COPYING README snapcraft.yaml)

@@ -17,7 +17,8 @@ else()
 endif()
 
 find_package(QT NAMES Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Gui Qml Quick Svg Test Widgets Sql Network Concurrent DBus WebEngineCore)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS
+    Gui Qml Quick Svg Test QuickTest Widgets Sql Network Concurrent DBus WebEngineCore)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     find_package(Qt${QT_VERSION_MAJOR} COMPONENTS REQUIRED WebEngineCore WebEngineQuick WebEngineWidgets WebEngineQuickDelegatesQml Core5Compat)

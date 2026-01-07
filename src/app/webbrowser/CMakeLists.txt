@@ -41,6 +41,16 @@ target_link_libraries(${WEBBROWSER_APP_MODELS}
     Qt::Sql
 )
 
+if(QT_VERSION_MAJOR GREATER_EQUAL 6)
+    target_include_directories(${WEBBROWSER_APP_MODELS} PRIVATE
+        ${LIBPSL_INCLUDE_DIRS}
+    )
+    target_link_libraries(${WEBBROWSER_APP_MODELS}
+        ${LIBPSL_LDFLAGS}
+        ${LIBPSL_LIBRARIES}
+    )
+endif()
+
 set(WEBBROWSER_APP_SRC
     reparenter.cpp
     searchengine.cpp

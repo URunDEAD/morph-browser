@@ -22,7 +22,7 @@
 // Qt
 #include <QtCore/QDateTime>
 #include <QtCore/QDir>
-#include <QtCore/QRegExp>
+#include <QtCore/QRegularExpression>
 #include <QtCore/QString>
 #include <QtCore/QStringList>
 #include <QtCore/QTextStream>
@@ -84,7 +84,8 @@ private Q_SLOTS:
         if (!socket->canReadLine()) {
             return;
         }
-        QStringList tokens = QString(socket->readLine()).split(QRegExp("[ \r\n][ \r\n]*"));
+        QStringList tokens = QString(socket->readLine()).split(
+            QRegularExpression("[ \r\n][ \r\n]*"));
         if (tokens.isEmpty()) {
             return;
         }
@@ -95,23 +96,24 @@ private Q_SLOTS:
         Q_EMIT gotRequest(path);
         QTextStream response(socket);
         response.setAutoDetectUnicode(true);
-        QRegExp icon("/\\w+\\.ico");
-        QRegExp redirection("^/redirect/(\\d+)/(.*)");
-        if (icon.exactMatch(path)) {
+        QRegularExpression icon("^/\\w+\\.ico$");
+        QRegularExpression redirection("^/redirect/(\\d+)/(.*)$");
+        QRegularExpressionMatch match;
+        if (match = icon.match(path), match.hasMatch()) {
             response << "HTTP/1.0 200 OK\r\n"
                      << "Content-Length: " << icon_data_size << "\r\n"
                      << "Content-Type: image/x-icon\r\n\r\n"
                      << QString::fromLocal8Bit((const char*) icon_data, icon_data_size) << "\n";
-        } else if (redirection.exactMatch(path)) {
-            int n = redirection.cap(1).toInt();
+        } else if (match = redirection.match(path), match.hasMatch()) {
+            int n = match.capturedView(1).toInt();
             response << "HTTP/1.0 303 See Other\r\n"
                      << "Content-Length: 9\r\n"
                      << "Content-Type: text/plain\r\n"
                      << "Location: " << baseURL();
             if (n == 1) {
-                response << "/" << redirection.cap(2);
+                response << "/" << match.capturedView(2);
             } else {
-                response << "/redirect/" << (n - 1) << "/" << redirection.cap(2);
+                response << "/redirect/" << (n - 1) << "/" << match.capturedView(2);
             }
             response << "\r\n\r\n"
                      << "see other\n";
@@ -267,7 +269,8 @@ private Q_SLOTS:
         QVERIFY(fetcherSpy->wait());
         QUrl localUrl = fetcher->localUrl();
         struct utimbuf ubuf;
-        ubuf.modtime = QDateTime::currentDateTime().addYears(-1).toTime_t();
+        ubuf.modtime =
+            QDateTime::currentDateTime().addYears(-1).toSecsSinceEpoch();
         QCOMPARE(utime(localUrl.path().toUtf8().constData(), &ubuf), 0);
         // Then fetch another icon
         fetcher->setUrl(QUrl(server->baseURL() + "/favicon2.ico"));

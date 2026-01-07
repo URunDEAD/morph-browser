@@ -17,6 +17,7 @@
  */
 
 import QtQuick 2.4
+import QtQml
 import Lomiri.Components
 import ".."
 
@@ -66,11 +67,29 @@ Item {
         Favicon {
             id: favicon
             anchors {
-                left: tabItem.showCloseIcon ? parent.left : undefined
                 leftMargin: Math.min(tabItem.width / 4, units.gu(2))
-                horizontalCenter: tabItem.showCloseIcon ? undefined : parent.horizontalCenter
                 verticalCenter: parent.verticalCenter
             }
+
+            /*
+             * anchors.left and anchors.horizontalCenter cannot be set
+             * simultenously, or anchoring machenism will stretch the item.
+             * Because binding evaluation order is not defined, we have to
+             * set these anchors imperatively.
+             */
+            Connections {
+                target: tabItem
+                function onShowCloseIconChanged() {
+                    if (tabItem.showCloseIcon) {
+                        favicon.anchors.horizontalCenter = undefined;
+                        favicon.anchors.left = tabImage.left;
+                    } else {
+                        favicon.anchors.left = undefined;
+                        favicon.anchors.horizontalCenter = tabImage.horizontalCenter;
+                    }
+                }
+            }
+
             shouldCache: !incognito
 
             // Scale width and height of favicon when tabWidth becomes small

@@ -46,6 +46,18 @@ target_link_libraries(${TEST}
     Qt5::QuickTest
     Qt5::Sql
 )
+
+# Copy QML test files to build directory. This lets test files resolve import
+# path relatively independent of Qt version.
+file(GLOB QML_FILES *.qml)
+add_custom_target(unittests_qml-copy_files_to_build_dir
+    DEPENDS ${QML_FILES}
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            ${QML_FILES}
+            ${CMAKE_CURRENT_BINARY_DIR}/
+)
+add_dependencies(${TEST} unittests_qml-copy_files_to_build_dir)
+
 add_test(${TEST} ${XVFB_COMMAND} ${CMAKE_CURRENT_BINARY_DIR}/${TEST}
-         -input ${CMAKE_CURRENT_SOURCE_DIR}
+         -input ${CMAKE_CURRENT_BINARY_DIR}
          -import ${CMAKE_BINARY_DIR}/src)

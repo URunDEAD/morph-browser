@@ -20,6 +20,7 @@
 #define __DOMAIN_UTILS_H__
 
 // Qt
+#include <QtCore/QRegularExpression>
 #include <QtCore/QString>
 #include <QtCore/QStringList>
 #include <QtCore/QUrl>
@@ -41,7 +42,24 @@ static QString getTopLevelDomain(const QUrl &url)
     return url.topLevelDomain();
 #pragma GCC diagnostic pop
 #else
-    return QString(psl_unregistrable_domain(psl_builtin(), QUrl::toAce(url.host()).constData()));
+    /*
+     * Special case: reject IPv4 addresses which look like domains
+     * (e.g. http://127.0.0.1/, http://127.0.1/, http://127.1/).
+     * Other IPv4 notations (e.g.  http://2130706433/, http://0x7f000001/)
+     * and IPv6 addresses doesn't have to be caught, as they don't look like
+     * domains and so libpsl will reject them and return NULL anyway.
+     *
+     * (Regex adapted from https://stackoverflow.com/a/36760050, CC BY-SA 4.0.)
+     */
+    QRegularExpression regex("^(((?!25?[6-9])[12]\\d|[1-9])?\\d\\.?\\b){2,4}$");
+    if (regex.match(url.host()).hasMatch())
+        return QString();
+
+    QByteArray host = QUrl::toAce(url.host());
+    QString tld = QString::fromLocal8Bit(
+        psl_registrable_domain(psl_builtin(), host.constData()));
+
+    return tld;
 #endif
 }
 

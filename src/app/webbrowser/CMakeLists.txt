@@ -41,6 +41,16 @@ target_link_libraries(${WEBBROWSER_APP_MODELS}
     Qt::Sql
 )
 
+if(QT_VERSION_MAJOR GREATER_EQUAL 6)
+    target_include_directories(${WEBBROWSER_APP_MODELS} PRIVATE
+        ${LIBPSL_INCLUDE_DIRS}
+    )
+    target_link_libraries(${WEBBROWSER_APP_MODELS}
+        ${LIBPSL_LDFLAGS}
+        ${LIBPSL_LIBRARIES}
+    )
+endif()
+
 set(WEBBROWSER_APP_SRC
     reparenter.cpp
     searchengine.cpp
@@ -104,3 +114,19 @@ if(${CLICK_MODE})
   install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.json DESTINATION ${CMAKE_INSTALL_PREFIX})
   install(FILES morph-browser.apparmor DESTINATION ${CMAKE_INSTALL_PREFIX})
 endif()
+
+# Copy QML files for tests; mimic file structure once installed.
+add_custom_target(src_app_webbrowser-copy_files_to_build_dir ALL
+    DEPENDS qml-qt${QT_VERSION_MAJOR}/
+
+    COMMAND ${CMAKE_COMMAND} -E copy_directory_if_different
+                ${CMAKE_CURRENT_SOURCE_DIR}/qml-qt${QT_VERSION_MAJOR}/
+                ${CMAKE_CURRENT_BINARY_DIR}/
+
+    COMMAND ${CMAKE_COMMAND} -E make_directory
+                ${CMAKE_CURRENT_BINARY_DIR}/assets/
+
+    COMMAND ${CMAKE_COMMAND} -E copy_directory_if_different
+                ${CMAKE_CURRENT_SOURCE_DIR}/assets/
+                ${CMAKE_CURRENT_BINARY_DIR}/assets/
+)

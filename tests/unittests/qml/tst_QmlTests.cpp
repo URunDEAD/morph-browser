@@ -25,6 +25,10 @@
 #include <QtQml/QtQml>
 #include <QtQuickTest/QtQuickTest>
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+#include <QtWebEngineQuick/QtWebEngineQuick>
+#endif
+
 // local
 #include "bookmarks-model.h"
 #include "bookmarks-folderlist-model.h"
@@ -172,6 +176,10 @@ MAKE_SINGLETON_FACTORY(UrlUtils)
 
 int main(int argc, char** argv)
 {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    QtWebEngineQuick::initialize();
+#endif
+
     const char* commonUri = "webbrowsercommon.private";
     qmlRegisterType<FaviconFetcher>(commonUri, 0, 1, "FaviconFetcher");
     qmlRegisterSingletonType<FileOperations>(commonUri, 0, 1, "FileOperations", FileOperations_singleton_factory);

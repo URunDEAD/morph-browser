@@ -23,11 +23,19 @@ install(FILES ${ASSETS} DESTINATION ${MORPH_WEB_IMPORTS_DIR}/assets)
 
 if(NOT ${CMAKE_CURRENT_BINARY_DIR} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR})
   # copy qml files over to build dir to be able to import them uninstalled
-  foreach(_file ${PLUGIN_FILES})
-    add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/${_file}
-                       DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/${_file}
-                       COMMAND ${CMAKE_COMMAND} -E copy_if_different ${CMAKE_CURRENT_SOURCE_DIR}/${_file} ${CMAKE_CURRENT_BINARY_DIR}/${_file})
-  endforeach(_file)
-  add_custom_target(copy_files_to_build_dir DEPENDS ${PLUGIN_FILES})
-  add_dependencies(${PLUGIN} copy_files_to_build_dir)
+  add_custom_target(morph_web-copy_files_to_build_dir
+    DEPENDS qml-qt${QT_VERSION_MAJOR}/ ${ASSETS}
+
+    COMMAND ${CMAKE_COMMAND} -E copy_directory_if_different
+                ${CMAKE_CURRENT_SOURCE_DIR}/qml-qt${QT_VERSION_MAJOR}/
+                ${CMAKE_CURRENT_BINARY_DIR}/
+
+    COMMAND ${CMAKE_COMMAND} -E make_directory
+                ${CMAKE_CURRENT_BINARY_DIR}/assets/
+
+    COMMAND ${CMAKE_COMMAND} -E copy_directory_if_different
+                ${CMAKE_CURRENT_SOURCE_DIR}/assets/
+                ${CMAKE_CURRENT_BINARY_DIR}/assets/
+  )
+  add_dependencies(${PLUGIN} morph_web-copy_files_to_build_dir)
 endif()

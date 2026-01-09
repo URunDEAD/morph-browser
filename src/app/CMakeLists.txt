@@ -49,5 +49,14 @@ endif()
 
 install(DIRECTORY qml-qt${QT_VERSION_MAJOR}/ DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser)
 
+# Copy QML files for tests; mimic file structure once installed.
+add_custom_target(src_app-copy_files_to_build_dir ALL
+    DEPENDS qml-qt${QT_VERSION_MAJOR}/
+
+    COMMAND ${CMAKE_COMMAND} -E copy_directory_if_different
+                ${CMAKE_CURRENT_SOURCE_DIR}/qml-qt${QT_VERSION_MAJOR}/
+                ${CMAKE_CURRENT_BINARY_DIR}/
+)
+
 add_subdirectory(webbrowser)
 add_subdirectory(webcontainer)

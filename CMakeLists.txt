@@ -1,8 +1,9 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.26)
 project(morph-browser VERSION 1.99.2 LANGUAGES CXX)
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
+include(CTest)
 find_package(Gettext REQUIRED)
 
 option(CLICK_MODE "Build as a click package" off)
@@ -16,7 +17,8 @@ else()
 endif()
 
 find_package(QT NAMES Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Gui Qml Quick Svg Test Widgets Sql Network Concurrent DBus WebEngineCore)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS
+    Gui Qml Quick Svg Test QuickTest Widgets Sql Network Concurrent DBus WebEngineCore)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     find_package(Qt${QT_VERSION_MAJOR} COMPONENTS REQUIRED WebEngineCore WebEngineQuick WebEngineWidgets WebEngineQuickDelegatesQml Core5Compat)
@@ -84,8 +86,9 @@ add_custom_target(uninstall
 
 add_subdirectory(src)
 
-enable_testing()
-#add_subdirectory(tests)
+if(BUILD_TESTING)
+    add_subdirectory(tests)
+endif()
 
 # make non compiled files (QML, JS, images, etc.) visible in QtCreator
 file(GLOB NON_COMPILED_ROOT *.png .gitignore COPYING README snapcraft.yaml)

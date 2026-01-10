@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2023-01-04 19:47+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-01-10 11:04+0000\n"
+"Last-Translator: BoneNI <bounkirdni@gmail.com>\n"
 "Language-Team: Lao <https://hosted.weblate.org/projects/lomiri/morph-browser/"
 "lo/>\n"
 "Language: lo\n"
@@ -17,50 +17,47 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
-#, fuzzy
 msgid "Morph Browser"
-msgstr "ບາວເຊິ"
+msgstr "Morph ບຣາວເຊີ"
 
 #: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:111
 #: src/app/webcontainer/webapp-container.qml:78
-#, fuzzy
 msgid "Morph Web Browser"
-msgstr "ເວັບບາວເຊິ"
+msgstr "Morph ເວັບບຣາວເຊີ"
 
 #: morph-browser.desktop.in:6
-#, fuzzy
 msgid "Browse the World Wide Web using QtWebEngine"
-msgstr "ບາວເຊິ www"
+msgstr "ທ່ອງເວັບ World Wide Web ໂດຍໃຊ້ QtWebEngine"
 
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
-msgstr ""
+msgstr "ອິນເຕີເນັດ;WWW;ບຣາວເຊີ;ເວັບ;Explorer"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
-msgstr ""
+msgstr "ໜ້າຕ່າງໃໝ່"
 
 #: morph-browser.desktop.in:27
 msgid "New Private Window"
-msgstr ""
+msgstr "ໜ້າຕ່າງສ່ວນຕົວໃໝ່"
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
-msgstr "ກັບ"
+msgstr "ກັບຄືນ"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Back.qml:26
 msgid "Older Page"
-msgstr "ໜ້າເກົ່າ"
+msgstr "ໜ້າກ່ອນໜ້າ"
 
 #: src/app/actions/BookmarkLink.qml:22
 msgid "Bookmark link"
-msgstr "ບຸກມາກລີ້ງ"
+msgstr "ບຸກມາກລິ້ງ"
 
 #: src/app/actions/Bookmark.qml:23
 msgid "Bookmark"
@@ -70,7 +67,7 @@ msgstr "ບຸກມາກ"
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Bookmark.qml:26
 msgid "Add This Page to Bookmarks"
-msgstr "ເພີ່ມໜ້ານີ້ໃສ່ບຸກມາກ"
+msgstr "ເພີ່ມໜ້ານີ້ລົງໃນບຸກມາກ"
 
 #: src/app/actions/ClearHistory.qml:23
 msgid "Clear History"
@@ -80,44 +77,41 @@ msgstr "ລ້າງປະຫວັດ"
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/ClearHistory.qml:26
 msgid "Clear Navigation History"
-msgstr "ລ້າງປະຫວັດການເຂັ້າຫາ"
+msgstr "ລ້າງປະຫວັດການທ່ອງເວັບ"
 
 #: src/app/actions/CopyImageLink.qml:22
-#, fuzzy
-#| msgid "Copy image"
 msgid "Copy image link"
-msgstr "ສໍາເນົາລຮູບພາຍ"
+msgstr "ສຳເນົາລິ້ງຮູບພາບ"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
-msgstr "ສໍາເນົາລຮູບພາຍ"
+msgstr "ສຳເນົາຮູບພາບ"
 
 #: src/app/actions/CopyLink.qml:22
 msgid "Copy link"
-msgstr "ສໍາເນົາລີ້ງ"
+msgstr "ສຳເນົາລິ້ງ"
 
 #: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:418
-#, fuzzy
 msgid "Copy"
-msgstr "Copy"
+msgstr "ສຳເນົາ"
 
 #: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:407
 msgid "Cut"
-msgstr ""
+msgstr "ຕັດ"
 
 #: src/app/actions/Erase.qml:22
 msgid "Erase"
-msgstr ""
+msgstr "ລຶບ"
 
 #: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:843
 msgid "Find in page"
-msgstr ""
+msgstr "ຄົ້ນຫາໃນໜ້າ"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/FindInPage.qml:26
 msgid "Search in Page"
-msgstr ""
+msgstr "ຊອກຫາໃນໜ້າ"
 
 #: src/app/actions/Forward.qml:23
 msgid "Forward"
@@ -127,11 +121,11 @@ msgstr "ໄປໜ້າ"
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Forward.qml:26
 msgid "Newer Page"
-msgstr "ໜ້າໃໝ່"
+msgstr "ໜ້າຖັດໄປ"
 
 #: src/app/actions/GoTo.qml:23
 msgid "Goto"
-msgstr "ໄປເຖີງ"
+msgstr "ໄປທີ່"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
@@ -142,55 +136,54 @@ msgstr "ທີ່ຢູ່;URL;www"
 #: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:703
 #: src/app/webbrowser/TabsBar.qml:88
 msgid "New Tab"
-msgstr "ໜ້າໃມ່"
+msgstr "ແຖບໃໝ່"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'New Tab' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/NewTab.qml:26
 msgid "Open a New Tab"
-msgstr "ເປີດໜ້າໃໝ່"
+msgstr "ເປີດແຖບໃໝ່"
 
 #: src/app/actions/OpenImageInNewTab.qml:22
 msgid "Open image in new tab"
-msgstr "ເປີກຮູບພາບໃນໜ້າໃໝ່"
+msgstr "ເປີດຮູບພາບໃນແຖບໃໝ່"
 
 #: src/app/actions/OpenLinkInBrowser.qml:22
 msgid "Open link in default browser"
-msgstr ""
+msgstr "ເປີດລິ້ງໃນບຣາວເຊີເລີ່ມຕົ້ນ"
 
 #: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
 msgid "Open link in new background tab"
-msgstr ""
+msgstr "ເປີດລິ້ງໃນແຖບໃໝ່ເບື້ອງຫຼັງ"
 
 #: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
-#, fuzzy
 msgid "Open link in new private window"
-msgstr "ເປີດລີ້ງໃນໜ້າໃໝ່"
+msgstr "ເປີດລິ້ງໃນໜ້າຕ່າງສ່ວນຕົວໃໝ່"
 
 #: src/app/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
-msgstr "ເປີດລີ້ງໃນໜ້າໃໝ່"
+msgstr "ເປີດລິ້ງໃນແຖບໃໝ່"
 
 #: src/app/actions/OpenLinkInNewWindow.qml:22
 msgid "Open link in new window"
-msgstr ""
+msgstr "ເປີດລິ້ງໃນໜ້າຕ່າງໃໝ່"
 
 #: src/app/actions/OpenVideoInNewTab.qml:22
 msgid "Open video in new tab"
-msgstr ""
+msgstr "ເປີດວິດີໂອໃນແຖບໃໝ່"
 
 #: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:429
 msgid "Paste"
-msgstr ""
+msgstr "ວາງ"
 
 #: src/app/actions/Redo.qml:22
 msgid "Redo"
-msgstr ""
+msgstr "ເຮັດຄືນ"
 
 #: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
 #: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
 msgid "Reload"
-msgstr "ໂລດອີກ"
+msgstr "ໂຫຼດຄືນ"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Reload' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
@@ -200,33 +193,33 @@ msgstr "ອອກຈາກໜ້າ"
 
 #: src/app/actions/SaveImage.qml:22
 msgid "Save image"
-msgstr ""
+msgstr "ບັນທຶກຮູບພາບ"
 
 #: src/app/actions/SaveLink.qml:22
 msgid "Save link"
-msgstr ""
+msgstr "ບັນທຶກລິ້ງ"
 
 #: src/app/actions/SaveVideo.qml:22
 msgid "Save video"
-msgstr ""
+msgstr "ບັນທຶກວິດີໂອ"
 
 #: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
 #: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
 #: src/app/DownloadsPage.qml:85
 msgid "Select all"
-msgstr ""
+msgstr "ເລືອກທັງໝົດ"
 
 #: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:823
 msgid "Share"
-msgstr ""
+msgstr "ແບ່ງປັນ"
 
 #: src/app/actions/Undo.qml:22
 msgid "Undo"
-msgstr ""
+msgstr "ກັບຄືນຄຳສັ່ງ"
 
 #: src/app/AlertDialog.qml:24
 msgid "JavaScript Alert"
-msgstr "ຈາວາສະກິບ ຕົວເຕືອນ"
+msgstr "ການແຈ້ງເຕືອນ JavaScript"
 
 #: src/app/AlertDialog.qml:31 src/app/AuthenticationDialog.qml:47
 #: src/app/ColorSelectDialog.qml:73 src/app/ConfirmDialog.qml:33
@@ -238,21 +231,21 @@ msgstr "ຕົກລົງ"
 
 #: src/app/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
-msgstr ""
+msgstr "ຮູບແບບ URL ແບບກຳນົດເອງ"
 
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "ເວັບໄຊ '%1' ຕ້ອງການເປີດ URL ນີ້ຢູ່ນອກເວັບບຣາວເຊີ:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "ເປີດ URL ນີ້ດ້ວຍແອັບຂອງລະບົບຖ້າເປັນໄປໄດ້ບໍ່?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
-msgstr ""
+msgstr "ຈົດຈຳການຕັດສິນໃຈ"
 
 #: src/app/AllowCustomSchemesDialog.qml:50
 #: src/app/GeolocationPermissionRequest.qml:51
@@ -274,14 +267,13 @@ msgstr "ອະນຸຍາດ"
 #: src/app/webcontainer/AccountChooserDialog.qml:96
 #: src/app/webcontainer/ContextMenuMobile.qml:143
 #: src/app/webcontainer/WebappSettingsPage.qml:286 src/app/ZoomControls.qml:237
-#, fuzzy
 msgid "Cancel"
-msgstr "Cancel"
+msgstr "ຍົກເລີກ"
 
 #: src/app/AllowOrBlockDomainDialog.qml:25
 #: src/app/AllowOrBlockDomainDialog.qml:41
 msgid "Block domain"
-msgstr ""
+msgstr "ປິດກັ້ນໂດເມນ"
 
 #: src/app/AllowOrBlockDomainDialog.qml:30
 #, qt-format
@@ -290,6 +282,8 @@ msgid ""
 "Would you like to continue to block the domain, allow browsing to the "
 "domain, or go back?"
 msgstr ""
+"ທ່ານກຳລັງພະຍາຍາມເຂົ້າເຖິງ %1 ແຕ່ມັນບໍ່ຢູ່ໃນລາຍຊື່ໂດເມນທີ່ໄດ້ຮັບອະນຸຍາດຂອງທ່ານ. ທ່ານຕ້ອງການສືບຕໍ່ປິດກັ້ນໂ"
+"ດເມນ, ອະນຸຍາດໃຫ້ທ່ອງໄປຫາໂດເມນ, ຫຼື ກັບຄືນບໍ່?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:31
 #, qt-format
@@ -298,20 +292,22 @@ msgid ""
 "Would you like to continue to block the domain, allow loading data from the "
 "domain, or just ignore this request ?"
 msgstr ""
+"%1 ກຳລັງພະຍາຍາມເຂົ້າເຖິງ %2 ແຕ່ມັນບໍ່ຢູ່ໃນລາຍຊື່ໂດເມນທີ່ໄດ້ຮັບອະນຸຍາດຂອງທ່ານ. ທ່ານຕ້ອງການສືບຕໍ່ປິດກັ້ນໂ"
+"ດເມນ, ອະນຸຍາດໃຫ້ໂຫຼດຂໍ້ມູນຈາກໂດເມນ, ຫຼື ພຽງແຕ່ເມີນເສີຍຕໍ່ຄຳຮ້ອງຂໍນີ້?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
-msgstr ""
+msgstr "ອະນຸຍາດໂດເມນ"
 
 #: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
-msgstr "ຕ້ອງການພ່ານກວດສອບ"
+msgstr "ຕ້ອງການການຢືນຢັນຕົວຕົນ."
 
 #. TRANSLATORS: %1 refers to the URL of the current website
 #: src/app/AuthenticationDialog.qml:26
 #, qt-format
 msgid "The website %1 requires authentication."
-msgstr "ເວບໄຊ້ທ໌ %1ຕ້ອງການພ່ານກວດສອບ"
+msgstr "ເວັບໄຊ %1 ຕ້ອງການການຢືນຢັນຕົວຕົນ."
 
 #: src/app/AuthenticationDialog.qml:34 src/app/HttpAuthenticationDialog.qml:50
 msgid "Username"
@@ -323,291 +319,281 @@ msgstr "ລະຫັດຜ່ານ"
 
 #: src/app/BeforeUnloadDialog.qml:24
 msgid "Confirm Navigation"
-msgstr ""
+msgstr "ຢືນຢັນການນຳທາງ"
 
 #: src/app/BeforeUnloadDialog.qml:33
 msgid "Leave"
-msgstr ""
+msgstr "ອອກໄປ"
 
 #: src/app/BeforeUnloadDialog.qml:41
 msgid "Stay"
-msgstr ""
+msgstr "ຢູ່ຕໍ່"
 
 #: src/app/CertificateVerificationDialog.qml:24
 msgid "This connection is untrusted"
-msgstr "ການເຊື່ອມຕໍ່ນີ້ແມ່ນບໍ່ໜ້າເຊື່ອຖື"
+msgstr "ການເຊື່ອມຕໍ່ນີ້ບໍ່ໜ້າເຊື່ອຖື"
 
 #. TRANSLATORS: %1 refers to the hostname
 #: src/app/CertificateVerificationDialog.qml:26
-#, fuzzy, qt-format
+#, qt-format
 msgid ""
 "You are trying to securely reach %1, but the security certificate of this "
 "website is not trusted. Reason: %2"
 msgstr ""
-"ເຈົ້າກໍາລັງພະຍາຍາມເພື່ອບັນຄວາມລຸປອດໄພ %1, ແຕ່ວ່າໃບຢັ້ງຢືນຄວາມປອດໄພຂອງເວັບໄຊທ໌ນີ້ບໍ່ໄວ້ວາງໃຈ."
+"ທ່ານກຳລັງພະຍາຍາມເຂົ້າເຖິງ %1 ຢ່າງປອດໄພ, ແຕ່ໃບຢັ້ງຢືນຄວາມປອດໄພຂອງເວັບໄຊນີ້ບໍ່ໜ້າເຊື່ອຖື. ເຫດຜົນ: "
+"%2"
 
 #: src/app/CertificateVerificationDialog.qml:39
 #: src/app/InvalidCertificateErrorSheet.qml:160
 msgid "Proceed anyway"
-msgstr "ເເນວໃດກໍ່ດໍາເນີນ"
+msgstr "ດຳເນີນການຕໍ່"
 
 #: src/app/ColorSelectDialog.qml:25
 msgid "Select Color"
-msgstr ""
+msgstr "ເລືອກສີ"
 
 #: src/app/ConfirmDialog.qml:24
 msgid "JavaScript Confirmation"
-msgstr "ການຢັ້ງຢືນຈາວາສະກິບ"
+msgstr "ການຢືນຢັນ JavaScript"
 
 #: src/app/ContentExportDialog.qml:79
 msgid "Open with"
-msgstr ""
+msgstr "ເປີດດ້ວຍ"
 
 #: src/app/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
-msgstr ""
+msgstr "ຊື່ຟາຍ: %1"
 
 #: src/app/ContentExportDialog.qml:91
 #: src/app/webcontainer/AccountErrorScreen.qml:50
 msgid "Close"
-msgstr ""
+msgstr "ປິດ"
 
 #: src/app/ContentExportDialog.qml:100
-#, fuzzy
-#| msgid "Open link in new tab"
 msgid "Open link in browser"
-msgstr "ເປີດລີ້ງໃນໜ້າໃໝ່"
+msgstr "ເປີດລິ້ງໃນບຣາວເຊີ"
 
 #: src/app/ContentExportDialog.qml:109
 msgid "Open file in browser"
-msgstr ""
+msgstr "ເປີດຟາຍໃນບຣາວເຊີ"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
-msgstr ""
+msgstr "User Agents ແບບກຳນົດເອງ"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
 #: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
-#, fuzzy
 msgid "Delete"
-msgstr "Delete"
+msgstr "ລຶບ"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
-msgstr ""
+msgstr "User Agent ໃໝ່"
 
 #: src/app/CustomUserAgentsPage.qml:161
 msgid "Edit User Agent"
-msgstr ""
+msgstr "ແກ້ໄຂ User Agent"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
-msgstr ""
+msgstr "ບໍ່ມີ User Agents ແບບກຳນົດເອງ"
 
 #: src/app/DomainPermissionsPage.qml:54
 #: src/app/webcontainer/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
-msgstr ""
+msgstr "ບັນຊີດຳ/ບັນຊີຂາວ ຂອງໂດເມນ"
 
 #: src/app/DomainPermissionsPage.qml:113 src/app/DomainSettingsPage.qml:113
 msgid "Add domain"
-msgstr ""
+msgstr "ເພີ່ມໂດເມນ"
 
 #: src/app/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
-msgstr ""
+msgstr "ໃສ່ຊື່ຂອງໂດເມນ, ຕົວຢ່າງ: example.com (ຊັບໂດເມນຈະຖືກລຶບອອກ)."
 
 #: src/app/DomainPermissionsPage.qml:222
 msgid "Not Set"
-msgstr ""
+msgstr "ບໍ່ໄດ້ຕັ້ງຄ່າ"
 
 #: src/app/DomainPermissionsPage.qml:232
 msgid "Never allow access"
-msgstr ""
+msgstr "ບໍ່ອະນຸຍາດໃຫ້ເຂົ້າເຖິງຈັກເທື່ອ"
 
 #: src/app/DomainPermissionsPage.qml:243
 msgid "Always allow access"
-msgstr ""
+msgstr "ອະນຸຍາດໃຫ້ເຂົ້າເຖິງສະເໝີ"
 
 #: src/app/DomainPermissionsPage.qml:283
 msgid "No sites have been granted special permissions"
-msgstr ""
+msgstr "ບໍ່ມີເວັບໄຊໃດໄດ້ຮັບສິດອະນຸຍາດພິເສດ"
 
 #: src/app/DomainSettingsPage.qml:52
 #: src/app/webcontainer/WebappSettingsPage.qml:236
 msgid "Domain specific settings"
-msgstr ""
+msgstr "ການຕັ້ງຄ່າສະເພາະໂດເມນ"
 
 #: src/app/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
-msgstr ""
+msgstr "ໃສ່ຊື່ຂອງໂດເມນ, ຕົວຢ່າງ: m.example.com"
 
 #: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
-msgstr ""
+msgstr "ໄດ້ຮັບອະນຸຍາດໃຫ້ເປີດແອັບອື່ນ"
 
 #: src/app/DomainSettingsPage.qml:226
 msgid "access your location"
-msgstr ""
+msgstr "ເຂົ້າເຖິງຕຳແໜ່ງຂອງທ່ານ"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "ຖາມທຸກຄັ້ງ"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "ອະນຸຍາດ"
+msgstr "ໄດ້ຮັບອະນຸຍາດ"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "ຖືກປະຕິເສດ"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
-msgstr ""
+msgstr "user agent ແບບກຳນົດເອງ"
 
 #: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
-msgstr ""
+msgstr "ຂະຫຍາຍ: "
 
 #: src/app/DomainSettingsPage.qml:325
 msgid "not set"
-msgstr ""
+msgstr "ບໍ່ໄດ້ຕັ້ງຄ່າ"
 
 #: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
-msgstr ""
+msgstr "ບໍ່ມີການຕັ້ງຄ່າສະເພາະໂດເມນ"
 
 #. TRANSLATORS: %1 is the percentage of the download completed so far
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: src/app/DownloadDelegate.qml:170
 msgid "Download failed"
-msgstr ""
+msgstr "ການດາວໂຫຼດລົ້ມເຫຼວ"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "ບໍ່ຮູ້ຈັກ"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
 msgid "Delete File"
-msgstr ""
+msgstr "ລຶບຟາຍ"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
-msgstr "ລ້າງປະຫວັດ"
+msgstr "ລຶບອອກຈາກປະຫວັດ"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
-msgstr "ສໍາເນົາລີ້ງ"
+msgstr "ສຳເນົາລິ້ງດາວໂຫຼດ"
 
 #: src/app/DownloadsDialog.qml:68
 msgid "Recent Downloads"
-msgstr ""
+msgstr "ການດາວໂຫຼດຫຼ້າສຸດ"
 
 #: src/app/DownloadsDialog.qml:83
 msgid "No Recent Downloads"
-msgstr ""
+msgstr "ບໍ່ມີການດາວໂຫຼດຫຼ້າສຸດ"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "ຍົກເລີກ"
+msgstr "ຍົກເລີກແລ້ວ"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "ສຳເລັດແລ້ວ"
 
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
 msgid "Clear"
-msgstr ""
+msgstr "ລ້າງ"
 
 #: src/app/DownloadsDialog.qml:179
 msgid "View All"
-msgstr ""
+msgstr "ເບິ່ງທັງໝົດ"
 
 #: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:850
 #: src/app/webcontainer/WebappSettingsPage.qml:137
 msgid "Downloads"
-msgstr ""
+msgstr "ການດາວໂຫຼດ"
 
 #: src/app/DownloadsPage.qml:60
 msgid "Confirm selection"
-msgstr ""
+msgstr "ຢືນຢັນການເລືອກ"
 
 #: src/app/DownloadsPage.qml:288
 msgid "No downloads available"
-msgstr ""
+msgstr "ບໍ່ມີການດາວໂຫຼດ"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "ຊື່ user agent ນີ້ຖືກໃຊ້ແລ້ວ"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
 msgid "Add the name for the user agent"
-msgstr ""
+msgstr "ເພີ່ມຊື່ສຳລັບ user agent"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
-msgstr ""
+msgstr "ປ້ອນຂໍ້ຄວາມ user agent..."
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
-msgstr ""
+msgstr "ຂໍ້ຜິດພາດໃບຮັບຮອງ"
 
 #: src/app/ErrorSheet.qml:42
 msgid "Network Error"
-msgstr "ຄວາມຜິດພາດເຄືອຂ່າຍ"
+msgstr "ຂໍ້ຜິດພາດເຄືອຂ່າຍ"
 
 #. TRANSLATORS: %1 refers to the URL of the current page
 #: src/app/ErrorSheet.qml:49
 #, qt-format
 msgid "It appears you are having trouble viewing: %1."
-msgstr "ມັນປະກົດວ່າເຈົ້າກໍາລັງມີບັນຫາໃນການເບີ່ງ: %1."
+msgstr "ເບິ່ງຄືວ່າທ່ານກຳລັງມີບັນຫາໃນການເບິ່ງ: %1."
 
 #: src/app/ErrorSheet.qml:56
 #, qt-format
 msgid "Error: %1"
-msgstr ""
+msgstr "ຜິດພາດ: %1"
 
 #: src/app/ErrorSheet.qml:62 src/app/InvalidCertificateErrorSheet.qml:173
 msgid "Back to safety"
-msgstr "ກັບຄືນໄປບ່ອນປອດໄພ"
+msgstr "ກັບໄປເຂດປອດໄພ"
 
 #: src/app/ErrorSheet.qml:70
 msgid "Please check your network settings and try refreshing the page."
-msgstr ""
+msgstr "ກະລຸນາກວດສອບການຕັ້ງຄ່າເຄືອຂ່າຍຂອງທ່ານ ແລະ ລອງໂຫຼດໜ້າຄືນໃໝ່."
 
 #: src/app/ErrorSheet.qml:77
 msgid "Refresh page"
-msgstr "ໂລດໜ້າໃໝ່"
+msgstr "ໂຫຼດໜ້າຄືນໃໝ່"
 
 #: src/app/GeolocationPermissionRequest.qml:29
 msgid "Permission Request"
-msgstr "ຄໍາຮ້ອງຂໍອະນຸຍາດ"
+msgstr "ຄຳຮ້ອງຂໍສິດອະນຸຍາດ"
 
 #: src/app/GeolocationPermissionRequest.qml:30
 msgid "This page wants to know your device’s location."
-msgstr ""
+msgstr "ໜ້ານີ້ຕ້ອງການຮູ້ຕຳແໜ່ງອຸປະກອນຂອງທ່ານ."
 
 #: src/app/GeolocationPermissionRequest.qml:57
 msgid "Deny"
@@ -617,15 +603,15 @@ msgstr "ປະຕິເສດ"
 #: src/app/HttpAuthenticationDialog.qml:27
 #, qt-format
 msgid "The website at %1 requires authentication. The website says \"%2\""
-msgstr ""
+msgstr "ເວັບໄຊທີ່ %1 ຕ້ອງການການຢືນຢັນຕົວຕົນ. ເວັບໄຊແຈ້ງວ່າ \"%2\""
 
 #: src/app/InvalidCertificateErrorSheet.qml:55
 msgid "This site security certificate is not trusted.\n"
-msgstr ""
+msgstr "ໃບຮັບຮອງຄວາມປອດໄພຂອງເວັບໄຊນີ້ບໍ່ໜ້າເຊື່ອຖື.\n"
 
 #: src/app/InvalidCertificateErrorSheet.qml:63
 msgid "Learn more"
-msgstr ""
+msgstr "ຮຽນຮູ້ເພີ່ມເຕີມ"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's serial number
 #: src/app/InvalidCertificateErrorSheet.qml:87
@@ -634,6 +620,8 @@ msgid ""
 "Serial number:\n"
 "%1"
 msgstr ""
+"ໝາຍເລກຊີຣຽວ:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject display name
 #: src/app/InvalidCertificateErrorSheet.qml:94
@@ -642,6 +630,8 @@ msgid ""
 "Subject:\n"
 "%1"
 msgstr ""
+"ຫົວຂໍ້:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject's address
 #: src/app/InvalidCertificateErrorSheet.qml:102
@@ -650,6 +640,8 @@ msgid ""
 "Subject address:\n"
 "%1"
 msgstr ""
+"ທີ່ຢູ່ຫົວຂໍ້:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer display name
 #: src/app/InvalidCertificateErrorSheet.qml:113
@@ -658,6 +650,8 @@ msgid ""
 "Issuer:\n"
 "%1"
 msgstr ""
+"ຜູ້ອອກໃຫ້:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer's address
 #: src/app/InvalidCertificateErrorSheet.qml:121
@@ -666,6 +660,8 @@ msgid ""
 "Issuer address:\n"
 "%1"
 msgstr ""
+"ທີ່ຢູ່ຜູ້ອອກໃຫ້:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's start date
 #: src/app/InvalidCertificateErrorSheet.qml:132
@@ -674,6 +670,8 @@ msgid ""
 "Valid from:\n"
 "%1"
 msgstr ""
+"ໃຊ້ໄດ້ຕັ້ງແຕ່:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's expiry date
 #: src/app/InvalidCertificateErrorSheet.qml:139
@@ -682,6 +680,8 @@ msgid ""
 "Valid until:\n"
 "%1"
 msgstr ""
+"ໃຊ້ໄດ້ຈົນເຖິງ:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's SHA1 fingerprint
 #: src/app/InvalidCertificateErrorSheet.qml:146
@@ -690,128 +690,131 @@ msgid ""
 "Fingerprint (SHA1):\n"
 "%1"
 msgstr ""
+"ລາຍນິ້ວມື (SHA1):\n"
+"%1"
 
 #: src/app/InvalidCertificateErrorSheet.qml:153
 msgid ""
 "You should not proceed, especially if you have never seen this warning "
 "before for this site."
 msgstr ""
+"ທ່ານບໍ່ຄວນດຳເນີນການຕໍ່, ໂດຍສະເພາະຖ້າທ່ານບໍ່ເຄີຍເຫັນຄຳເຕືອນນີ້ມາກ່ອນສຳລັບເວັບໄຊນີ້."
 
 #: src/app/MediaAccessDialog.qml:39
 msgid "Permission"
-msgstr ""
+msgstr "ສິດອະນຸຍາດ"
 
 #: src/app/MediaAccessDialog.qml:46
 msgid "Allow this domain to access your camera and microphone?"
-msgstr ""
+msgstr "ອະນຸຍາດໃຫ້ໂດເມນນີ້ເຂົ້າເຖິງກ້ອງ ແລະ ໄມໂຄຣໂຟນຂອງທ່ານບໍ່?"
 
 #: src/app/MediaAccessDialog.qml:47
 msgid "Allow this domain to access your camera?"
-msgstr ""
+msgstr "ອະນຸຍາດໃຫ້ໂດເມນນີ້ເຂົ້າເຖິງກ້ອງຂອງທ່ານບໍ່?"
 
 #: src/app/MediaAccessDialog.qml:48
 msgid "Allow this domain to access your microphone?"
-msgstr ""
+msgstr "ອະນຸຍາດໃຫ້ໂດເມນນີ້ເຂົ້າເຖິງໄມໂຄຣໂຟນຂອງທ່ານບໍ່?"
 
 #: src/app/MediaAccessDialog.qml:77
 msgid "Yes"
-msgstr ""
+msgstr "ແມ່ນ"
 
 #: src/app/MediaAccessDialog.qml:85
 msgid "No"
-msgstr ""
+msgstr "ບໍ່"
 
 #: src/app/PromptDialog.qml:25
 msgid "JavaScript Prompt"
-msgstr "ຈາວາສະກິບລໍຖ້າ"
+msgstr "ຂໍ້ຄວາມແຈ້ງເຕືອນ JavaScript"
 
 #: src/app/ProxyAuthenticationDialog.qml:22
 msgid "Proxy authentication required."
-msgstr "ພຣອກຊີຕ້ອງກວດສອບຄວາມຖືກຕ້ອງ."
+msgstr "ຕ້ອງການການຢືນຢັນຕົວຕົນ Proxy."
 
 #. TRANSLATORS: %1 refers to the proxy address, %2 refers to the proxy port
 #: src/app/ProxyAuthenticationDialog.qml:24
 #, qt-format
 msgid "The website %1:%2 requires authentication."
-msgstr "ເວັບໄຊທ໌: %1: %2 ຮຽກຮ້ອງໃຫ້ກວດສອບໃຫ້ຖືກຕ້ອງ"
+msgstr "ເວັບໄຊ %1:%2 ຕ້ອງການການຢືນຢັນຕົວຕົນ."
 
 #: src/app/SavePageDialog.qml:24
 msgid "Save page as HTML / PDF"
-msgstr ""
+msgstr "ບັນທຶກໜ້າເປັນ HTML / PDF"
 
 #: src/app/SavePageDialog.qml:41
 msgid "No save actions are available"
-msgstr ""
+msgstr "ບໍ່ມີຄຳສັ່ງບັນທຶກໃຫ້ໃຊ້ງານ"
 
 #: src/app/SavePageDialog.qml:46
 msgid "Save as HTML"
-msgstr ""
+msgstr "ບັນທຶກເປັນ HTML"
 
 #: src/app/SavePageDialog.qml:54
 #: src/app/webbrowser/ContentDownloadDialog.qml:102
 msgid "Download"
-msgstr ""
+msgstr "ດາວໂຫຼດ"
 
 #: src/app/SavePageDialog.qml:64
 msgid "Save as PDF"
-msgstr ""
+msgstr "ບັນທຶກເປັນ PDF"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "ລຶບອອກຈາກລາຍການ"
 
 #: src/app/webbrowser/AddressBar.qml:287
 msgid "find in page"
-msgstr ""
+msgstr "ຄົ້ນຫາໃນໜ້າ"
 
 #: src/app/webbrowser/AddressBar.qml:288
 msgid "search or enter an address"
-msgstr ""
+msgstr "ຄົ້ນຫາ ຫຼື ປ້ອນທີ່ຢູ່"
 
 #: src/app/webbrowser/AddressBar.qml:440
 msgid "Paste and Go"
-msgstr ""
+msgstr "ວາງ ແລະ ໄປ"
 
 #: src/app/webbrowser/BookmarkOptions.qml:66
 msgid "Bookmark Added"
-msgstr ""
+msgstr "ເພີ່ມບຸກມາກແລ້ວ"
 
 #. TRANSLATORS: Field where the title of bookmarked URL can be changed
 #: src/app/webbrowser/BookmarkOptions.qml:71
 msgid "Name"
-msgstr ""
+msgstr "ຊື່"
 
 #. TRANSLATORS: Field to choose the folder where bookmarked URL will be saved in
 #: src/app/webbrowser/BookmarkOptions.qml:89
 msgid "Save in"
-msgstr ""
+msgstr "ບັນທຶກໃນ"
 
 #: src/app/webbrowser/BookmarkOptions.qml:96
 #: src/app/webbrowser/BookmarksFoldersView.qml:133
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:105
 msgid "All Bookmarks"
-msgstr ""
+msgstr "ບຸກມາກທັງໝົດ"
 
 #: src/app/webbrowser/BookmarkOptions.qml:114
 #: src/app/webbrowser/BookmarkOptions.qml:154
 msgid "New Folder"
-msgstr ""
+msgstr "ໂຟນເດີໃໝ່"
 
 #: src/app/webbrowser/BookmarkOptions.qml:136
 msgid "Create new folder"
-msgstr ""
+msgstr "ສ້າງໂຟນເດີໃໝ່"
 
 #: src/app/webbrowser/BookmarkOptions.qml:164
 #: src/app/webbrowser/SettingsPage.qml:550 src/app/ZoomControls.qml:82
 msgid "Save"
-msgstr ""
+msgstr "ບັນທຶກ"
 
 #: src/app/webbrowser/BookmarksFoldersView.qml:191
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
 #: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
 #: src/app/webbrowser/SettingsPage.qml:486
 msgid "Homepage"
-msgstr ""
+msgstr "ໜ້າຫຼັກ"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
@@ -823,95 +826,94 @@ msgstr "ບຸກມາກ"
 #: src/app/webbrowser/Browser.qml:242
 #: src/app/webcontainer/WebViewImplOxide.qml:302
 msgid "Blocked domain"
-msgstr ""
+msgstr "ໂດເມນທີ່ຖືກປິດກັ້ນ"
 
 #: src/app/webbrowser/Browser.qml:243
 #: src/app/webcontainer/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
-msgstr ""
+msgstr "ຄຳຮ້ອງຂໍການນຳທາງໄປຍັງໂດເມນ %1 ຖືກປິດກັ້ນ."
 
 #: src/app/webbrowser/Browser.qml:269
 #: src/app/webcontainer/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
-msgstr ""
+msgstr "ໂດເມນໃນບັນຊີຂາວ"
 
 #: src/app/webbrowser/Browser.qml:270
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
-msgstr ""
+msgstr "ໂດເມນ %1 ຢູ່ໃນບັນຊີຂາວແລ້ວ, ມັນຈະໃຊ້ງານໄດ້ເມື່ອໂຫຼດໜ້າຄືນໃໝ່."
 
 #: src/app/webbrowser/Browser.qml:660
 msgid "Done"
-msgstr ""
+msgstr "ສຳເລັດ"
 
 #: src/app/webbrowser/Browser.qml:685
 msgid "Reopen Tab"
-msgstr ""
+msgstr "ເປີດແຖບຄືນ"
 
 #: src/app/webbrowser/Browser.qml:811
 msgid "New window"
-msgstr ""
+msgstr "ໜ້າຕ່າງໃໝ່"
 
 #: src/app/webbrowser/Browser.qml:817
 msgid "New private window"
-msgstr ""
+msgstr "ໜ້າຕ່າງສ່ວນຕົວໃໝ່"
 
 #: src/app/webbrowser/Browser.qml:837 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
-msgstr ""
+msgstr "ປະຫວັດ"
 
 #: src/app/webbrowser/Browser.qml:857 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
-msgstr ""
+msgstr "ການຕັ້ງຄ່າ"
 
 #: src/app/webbrowser/Browser.qml:863
 msgid "View source"
-msgstr ""
+msgstr "ເບິ່ງຕົ້ນສະບັບ"
 
 #: src/app/webbrowser/Browser.qml:876
 msgid "Save / Print to PDF"
-msgstr ""
+msgstr "ບັນທຶກ / ພິມເປັນ PDF"
 
 #: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
 msgid "Zoom"
-msgstr ""
+msgstr "ຂະຫຍາຍ"
 
 #: src/app/webbrowser/Browser.qml:904 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
-msgstr ""
+msgstr "ຕັ້ງຄ່າໂໝດ Desktop"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
 #: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
 #, qt-format
 msgid "(%1)"
-msgstr ""
+msgstr "(%1)"
 
 #: src/app/webbrowser/Browser.qml:1985
 msgid "the file is already in the downloads folder."
-msgstr ""
+msgstr "ຟາຍມີຢູ່ໃນໂຟນເດີດາວໂຫຼດແລ້ວ."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:83
 msgid ""
 "Choose an application to open this file or add it to the downloads folder."
-msgstr ""
+msgstr "ເລືອກແອັບພລິເຄຊັນເພື່ອເປີດຟາຍນີ້ ຫຼື ເພີ່ມມັນລົງໃນໂຟນເດີດາວໂຫຼດ."
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:89
 msgid "Choose an application"
-msgstr ""
+msgstr "ເລືອກແອັບພລິເຄຊັນ"
 
 #: src/app/webbrowser/ExpandedHistoryView.qml:135
 #, qt-format
 msgid "%1 page"
 msgid_plural "%1 pages"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 ໜ້າ"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:26
 msgid "Last Visited"
-msgstr ""
+msgstr "ເຂົ້າຊົມຫຼ້າສຸດ"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:48
 #: src/app/webbrowser/HistoryViewWide.qml:258
@@ -920,340 +922,339 @@ msgstr "ມື້ວານນີ້"
 
 #: src/app/webbrowser/HistoryViewWide.qml:161
 msgid "search history"
-msgstr ""
+msgstr "ປະຫວັດການຄົ້ນຫາ"
 
 #: src/app/webbrowser/HistoryViewWide.qml:242
 msgid "All History"
-msgstr ""
+msgstr "ປະຫວັດທັງໝົດ"
 
 #: src/app/webbrowser/HistoryViewWide.qml:256
 #: src/app/webbrowser/HistoryViewWide.qml:343
 msgid "Today"
-msgstr ""
+msgstr "ມື້ນີ້"
 
 #. TRANSLATORS: %1 refers to the current page’s title
 #: src/app/webbrowser/morph-browser.qml:109
 #: src/app/webcontainer/webapp-container.qml:76
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 - Morph Web Browser"
-msgstr "%1 - ອູບັນຕູເວັບບາວເຊິ"
+msgstr "%1 - Morph ເວັບບຣາວເຊີ"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:41
 msgid "This is a private tab"
-msgstr ""
+msgstr "ນີ້ແມ່ນແຖບສ່ວນຕົວ"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:56
 msgid ""
 "Pages that you view in this tab won't appear in your browser history.\n"
 "Bookmarks you create will be preserved, however."
 msgstr ""
+"ໜ້າເວັບທີ່ທ່ານເບິ່ງໃນແຖບນີ້ຈະບໍ່ປາກົດໃນປະຫວັດບຣາວເຊີຂອງທ່ານ.\n"
+"ແຕ່ບຸກມາກທີ່ທ່ານສ້າງຈະຖືກເກັບຮັກສາໄວ້."
 
 #: src/app/webbrowser/NewTabView.qml:142
 msgid "Less"
-msgstr ""
+msgstr "ຫຍໍ້"
 
 #: src/app/webbrowser/NewTabView.qml:142
 msgid "More"
-msgstr ""
+msgstr "ເພີ່ມເຕີມ"
 
 #: src/app/webbrowser/NewTabView.qml:326
 #: src/app/webbrowser/NewTabViewWide.qml:138
 msgid "Top sites"
-msgstr ""
+msgstr "ເວັບໄຊຍອດນິຍົມ"
 
 #: src/app/webbrowser/NewTabView.qml:357
 msgid "You haven't visited any site yet"
-msgstr ""
+msgstr "ທ່ານຍັງບໍ່ໄດ້ເຂົ້າຊົມເວັບໄຊໃດເລີຍ"
 
 #: src/app/webbrowser/SadTab.qml:47
 msgid "The rendering process has been closed for this tab."
-msgstr ""
+msgstr "ຂະບວນການສະແດງຜົນໄດ້ຖືກປິດສຳລັບແຖບນີ້."
 
 #: src/app/webbrowser/SadTab.qml:60
 #, qt-format
 msgid "Something went wrong while displaying %1."
-msgstr ""
+msgstr "ມີບາງຢ່າງຜິດພາດຂະນະສະແດງ %1."
 
 #: src/app/webbrowser/SadTab.qml:70
 msgid "Close tab"
-msgstr ""
+msgstr "ປິດແຖບ"
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:70
 msgid "This site has insecure content"
-msgstr ""
+msgstr "ເວັບໄຊນີ້ມີເນື້ອຫາທີ່ບໍ່ປອດໄພ"
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:71
 msgid "Identity Not Verified"
-msgstr ""
+msgstr "ບໍ່ໄດ້ຢືນຢັນຕົວຕົນ"
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:79
 msgid "The identity of this website has not been verified."
-msgstr ""
+msgstr "ຕົວຕົນຂອງເວັບໄຊນີ້ຍັງບໍ່ໄດ້ຮັບການຢືນຢັນ."
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:109
 #, qt-format
 msgid "You are connected to %1 via HTTPS. The certificate is valid."
-msgstr ""
+msgstr "ທ່ານເຊື່ອມຕໍ່ກັບ %1 ຜ່ານ HTTPS. ໃບຮັບຮອງຖືກຕ້ອງ."
 
 #: src/app/webbrowser/SettingsDeviceSelector.qml:42
 msgid "Default"
-msgstr ""
+msgstr "ຄ່າເລີ່ມຕົ້ນ"
 
 #: src/app/webbrowser/SettingsPage.qml:74
 #: src/app/webbrowser/SettingsPage.qml:277
 msgid "Search engine"
-msgstr ""
+msgstr "ເຄື່ອງມືຄົ້ນຫາ"
 
 #: src/app/webbrowser/SettingsPage.qml:91
 #: src/app/webbrowser/SettingsPage.qml:504
-#, fuzzy
-#| msgid "New Tab"
 msgid "New Tab Page"
-msgstr "ໜ້າໃມ່"
+msgstr "ໜ້າແຖບໃໝ່"
 
 #: src/app/webbrowser/SettingsPage.qml:119
 msgid "Restore previous session at startup"
-msgstr ""
+msgstr "ກູ້ຄືນເຊດຊັນກ່ອນໜ້າເມື່ອເປີດເຄື່ອງ"
 
 #: src/app/webbrowser/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
-msgstr ""
+msgstr "ບໍ່ສາມາດໃຊ້ໄດ້ເນື່ອງຈາກການເລີ່ມຕົ້ນໃນໂໝດສ່ວນຕົວ"
 
 #: src/app/webbrowser/SettingsPage.qml:159
 #: src/app/webcontainer/WebappSettingsPage.qml:58
 msgid "Automatic fit to width"
-msgstr ""
+msgstr "ປັບຄວາມກວ້າງອັດຕະໂນມັດ"
 
 #: src/app/webbrowser/SettingsPage.qml:160
 #: src/app/webcontainer/WebappSettingsPage.qml:59
 msgid "Adjusts the width of the website to the window"
-msgstr ""
+msgstr "ປັບຄວາມກວ້າງຂອງເວັບໄຊໃຫ້ພໍດີກັບໜ້າຕ່າງ"
 
 #: src/app/webbrowser/SettingsPage.qml:179
 #: src/app/webcontainer/WebappSettingsPage.qml:78
 msgid "Default Zoom"
-msgstr ""
+msgstr "ການຂະຫຍາຍເລີ່ມຕົ້ນ"
 
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Load Images"
-msgstr ""
+msgstr "ໂຫຼດຮູບພາບ"
 
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
-msgstr ""
+msgstr "ໂຫຼດຮູບພາບໃນໜ້າເວັບອັດຕະໂນມັດ"
 
 #: src/app/webbrowser/SettingsPage.qml:238
 #: src/app/webbrowser/SettingsPage.qml:320
 #: src/app/webcontainer/WebappSettingsPage.qml:151
 #: src/app/webcontainer/WebappSettingsPage.qml:192
 msgid "Privacy & permissions"
-msgstr ""
+msgstr "ຄວາມເປັນສ່ວນຕົວ & ສິດອະນຸຍາດ"
 
 #: src/app/webbrowser/SettingsPage.qml:249
 msgid "Reset browser settings"
-msgstr ""
+msgstr "ຣີເຊັດການຕັ້ງຄ່າບຣາວເຊີ"
 
 #: src/app/webbrowser/SettingsPage.qml:334
 msgid "Start in private mode"
-msgstr ""
+msgstr "ເລີ່ມຕົ້ນໃນໂໝດສ່ວນຕົວ"
 
 #: src/app/webbrowser/SettingsPage.qml:358
 #: src/app/webcontainer/WebappSettingsPage.qml:206
 msgid "Only allow browsing to whitelisted websites"
-msgstr ""
+msgstr "ອະນຸຍາດໃຫ້ທ່ອງເວັບສະເພາະເວັບໄຊໃນບັນຊີຂາວເທົ່ານັ້ນ"
 
 #: src/app/webbrowser/SettingsPage.qml:398
 #: src/app/webbrowser/SettingsPage.qml:589
 msgid "Camera & microphone"
-msgstr ""
+msgstr "ກ້ອງ & ໄມໂຄຣໂຟນ"
 
 #: src/app/webbrowser/SettingsPage.qml:407
-#, fuzzy
-#| msgid "Clear History"
 msgid "Clear browsing history"
-msgstr "ລ້າງປະຫວັດ"
+msgstr "ລ້າງປະຫວັດການທ່ອງເວັບ"
 
 #: src/app/webbrowser/SettingsPage.qml:411
-#, fuzzy
-#| msgid "Clear History"
 msgid "Clear browsing history?"
-msgstr "ລ້າງປະຫວັດ"
+msgstr "ຕ້ອງການລ້າງປະຫວັດການທ່ອງເວັບບໍ່?"
 
 #: src/app/webbrowser/SettingsPage.qml:419
 #: src/app/webcontainer/WebappSettingsPage.qml:247
 msgid "Clear cache"
-msgstr ""
+msgstr "ລ້າງແຄຊ (Cache)"
 
 #: src/app/webbrowser/SettingsPage.qml:422
 #: src/app/webcontainer/WebappSettingsPage.qml:250
 msgid "Clear cache?"
-msgstr ""
+msgstr "ຕ້ອງການລ້າງແຄຊ (Cache) ບໍ່?"
 
 #: src/app/webbrowser/SettingsPage.qml:430
 #: src/app/webcontainer/WebappSettingsPage.qml:258
 msgid "Clear all cookies"
-msgstr ""
+msgstr "ລ້າງຄຸກກີ້ (Cookies) ທັງໝົດ"
 
 #: src/app/webbrowser/SettingsPage.qml:433
 #: src/app/webcontainer/WebappSettingsPage.qml:261
 msgid "Clear all Cookies?"
-msgstr ""
+msgstr "ຕ້ອງການລ້າງຄຸກກີ້ (Cookies) ທັງໝົດບໍ່?"
 
 #: src/app/webbrowser/SettingsPage.qml:516
 msgid "Custom homepage"
-msgstr ""
+msgstr "ໜ້າຫຼັກແບບກຳນົດເອງ"
 
 #: src/app/webbrowser/SettingsPage.qml:601
 msgid "Microphone"
-msgstr ""
+msgstr "ໄມໂຄຣໂຟນ"
 
 #: src/app/webbrowser/SettingsPage.qml:622
 msgid "Camera"
-msgstr ""
+msgstr "ກ້ອງ"
 
 #: src/app/webbrowser/TabComponent.qml:285
 msgid "Swipe Up To Exit Full Screen"
-msgstr ""
+msgstr "ປັດຂຶ້ນເພື່ອອອກຈາກເຕັມໜ້າຈໍ"
 
 #: src/app/webbrowser/TabComponent.qml:286
 msgid "Press ESC To Exit Full Screen"
-msgstr ""
+msgstr "ກົດ ESC ເພື່ອອອກຈາກເຕັມໜ້າຈໍ"
 
 #: src/app/webbrowser/TabPreview.qml:113
 msgid "Tap to view"
-msgstr ""
+msgstr "ແຕະເພື່ອເບິ່ງ"
 
 #: src/app/webbrowser/TabsBar.qml:64 src/app/webbrowser/TabsList.qml:100
 msgid "New tab"
-msgstr ""
+msgstr "ແຖບໃໝ່"
 
 #: src/app/webbrowser/TabsBar.qml:99
 msgid "Move to New Window"
-msgstr ""
+msgstr "ຍ້າຍໄປໜ້າຕ່າງໃໝ່"
 
 #: src/app/webbrowser/TabsBar.qml:116
 msgid "Close Tab"
-msgstr ""
+msgstr "ປິດແຖບ"
 
 #: src/app/webbrowser/UrlPreviewDelegate.qml:138
 msgid "Remove"
-msgstr ""
+msgstr "ລຶບອອກ"
 
 #: src/app/webcontainer/AccountChooserDialog.qml:62
 msgid ""
 "No accounts have been linked to this webapp; press the item below to add an "
 "account."
 msgstr ""
+"ບໍ່ມີບັນຊີໃດຖືກເຊື່ອມຕໍ່ກັບເວັບແອັບນີ້; ກົດທີ່ລາຍການດ້ານລຸ່ມເພື່ອເພີ່ມບັນຊີ."
 
 #: src/app/webcontainer/AccountChooserDialog.qml:78
 msgid "Add account"
-msgstr ""
+msgstr "ເພີ່ມບັນຊີ"
 
 #: src/app/webcontainer/AccountChooserDialog.qml:87
 msgid "Don't use an account"
-msgstr ""
+msgstr "ບໍ່ໃຊ້ບັນຊີ"
 
 #: src/app/webcontainer/AccountErrorScreen.qml:39
 msgid "Account error"
-msgstr ""
+msgstr "ບັນຊີຜິດພາດ"
 
 #: src/app/webcontainer/AccountsLogic.qml:63
 msgid ""
 "Account window could not be opened. You can only create one account at a "
 "time; please try again after closing all other account windows."
 msgstr ""
+"ບໍ່ສາມາດເປີດໜ້າຕ່າງບັນຊີໄດ້. ທ່ານສາມາດສ້າງໄດ້ເທື່ອລະໜຶ່ງບັນຊີເທົ່ານັ້ນ; ກະລຸນາລອງໃໝ່ອີກຄັ້ງຫຼັງຈາກປິດໜ້າຕ່າງ"
+"ບັນຊີອື່ນໆທັງໝົດແລ້ວ."
 
 #: src/app/webcontainer/AccountsLogic.qml:214
 msgid "Authentication failed"
-msgstr ""
+msgstr "ການຢືນຢັນຕົວຕົນລົ້ມເຫຼວ"
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
 #: src/app/webcontainer/AccountsSplashScreen.qml:45
 #, qt-format
 msgid "<b>%1</b> needs to access your %2 online account."
-msgstr ""
+msgstr "<b>%1</b> ຕ້ອງການເຂົ້າເຖິງບັນຊີອອນລາຍ %2 ຂອງທ່ານ."
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
 #: src/app/webcontainer/AccountsSplashScreen.qml:55
 #, qt-format
 msgid "<b>%1</b> would like to access your %2 online account."
-msgstr ""
+msgstr "<b>%1</b> ຂໍອະນຸຍາດເຂົ້າເຖິງບັນຊີອອນລາຍ %2 ຂອງທ່ານ."
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:64
 msgid ""
 "Choose an account now, or skip this step and choose an online account later."
-msgstr ""
+msgstr "ເລືອກບັນຊີດຽວນີ້, ຫຼື ຂ້າມຂັ້ນຕອນນີ້ແລ້ວເລືອກບັນຊີອອນລາຍໃນພາຍຫຼັງ."
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Close the app"
-msgstr ""
+msgstr "ປິດແອັບ"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Skip"
-msgstr ""
+msgstr "ຂ້າມ"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:84
 msgid "Choose account"
-msgstr ""
+msgstr "ເລືອກບັນຊີ"
 
 #: src/app/webcontainer/SadPage.qml:45
 msgid "Oops, something went wrong."
-msgstr ""
+msgstr "ອຸ໊ບ, ມີບາງຢ່າງຜິດພາດ."
 
 #: src/app/webcontainer/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
-msgstr ""
+msgstr "ການຕັ້ງຄ່າ WebappContainer"
 
 #: src/app/webcontainer/WebappSettingsPage.qml:163
 msgid "Reset webapp settings"
-msgstr ""
+msgstr "ຣີເຊັດການຕັ້ງຄ່າ Webapp"
 
 #: src/app/webcontainer/WebViewImplOxide.qml:330
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
-msgstr ""
+msgstr "ໂດເມນ %1 ຢູ່ໃນບັນຊີຂາວແລ້ວ, ກະລຸນາໂຫຼດໜ້າຄືນໃໝ່."
 
 #: src/app/ZoomControls.qml:61
 msgid "Zoom Out"
-msgstr ""
+msgstr "ຫຍໍ້ເຂົ້າ"
 
 #: src/app/ZoomControls.qml:68
 msgid "Reset"
-msgstr ""
+msgstr "ຣີເຊັດ"
 
 #: src/app/ZoomControls.qml:68
 msgid "fit"
-msgstr ""
+msgstr "ພໍດີ"
 
 #: src/app/ZoomControls.qml:75
 msgid "Zoom In"
-msgstr ""
+msgstr "ຂະຫຍາຍອອກ"
 
 #: src/app/ZoomControls.qml:100
 msgid "Current Zoom"
-msgstr ""
+msgstr "ການຂະຫຍາຍປັດຈຸບັນ"
 
 #: src/app/ZoomControls.qml:101
 msgid "domain"
-msgstr ""
+msgstr "ໂດເມນ"
 
 #: src/app/ZoomControls.qml:101
 msgid "default"
-msgstr ""
+msgstr "ຄ່າເລີ່ມຕົ້ນ"
 
 #: src/app/ZoomControls.qml:101
 msgid "auto-fit"
-msgstr ""
+msgstr "ພໍດີອັດຕະໂນມັດ"
 
 #: src/app/ZoomControls.qml:190
 msgid "Save Zoom"
-msgstr ""
+msgstr "ບັນທຶກການຂະຫຍາຍ"
 
 #: src/app/ZoomControls.qml:192
 msgid "the current web app"
-msgstr ""
+msgstr "ເວັບແອັບປັດຈຸບັນ"
 
 #: src/app/ZoomControls.qml:195
 #, qt-format
@@ -1261,25 +1262,28 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"ລະດັບການຂະຫຍາຍປັດຈຸບັນ (%1%) ສາມາດບັນທຶກໄວ້ໃນ %2 ສຳລັບໂດເມນປັດຈຸບັນ ຫຼື ເປັນລະດັບການຂະຫຍາຍເລີ່"
+"ມຕົ້ນ."
 
 #: src/app/ZoomControls.qml:197
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr ""
+msgstr "ລະດັບການຂະຫຍາຍປັດຈຸບັນ (%1%) ສາມາດບັນທຶກໄວ້ໃນ %2 ສຳລັບໂດເມນປັດຈຸບັນ."
 
 #: src/app/ZoomControls.qml:199
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
 msgstr ""
+"ລະດັບການຂະຫຍາຍປັດຈຸບັນ (%1%) ສາມາດບັນທຶກໄວ້ໃນ %2 ເປັນລະດັບການຂະຫຍາຍເລີ່ມຕົ້ນ."
 
 #: src/app/ZoomControls.qml:206
 msgid "Save for domain"
-msgstr ""
+msgstr "ບັນທຶກສຳລັບໂດເມນ"
 
 #: src/app/ZoomControls.qml:219
 msgid "Save as default"
-msgstr ""
+msgstr "ບັນທຶກເປັນຄ່າເລີ່ມຕົ້ນ"
 
 #~ msgid "Ubuntu Web Browser"
 #~ msgstr "ອູບັນຕູເວັບບາວເຊິ"

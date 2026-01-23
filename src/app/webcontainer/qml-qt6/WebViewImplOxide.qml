@@ -90,7 +90,7 @@ WebappWebview {
         Component.onCompleted: {
             var metadatCollectorScript = WebEngine.script();
             metadatCollectorScript.name = "oxide://webapp-specific-page-metadata-collector/";
-            metadatCollectorScript.sourceUrl = Qt.resolvedUrl("webapp-specific-page-metadata-collector.js");
+            metadatCollectorScript.sourceUrl = Qt.resolvedUrl("assets/webapp-specific-page-metadata-collector.js");
             metadatCollectorScript.runsOnSubframes = true;
             userScripts.insert(metadatCollectorScript);
         }

@@ -46,7 +46,7 @@ WebEngineProfile {
     userScripts: [
         WebEngineScript {
             name: "oxide://smartbanners/"
-            sourceUrl: Qt.resolvedUrl("smartbanners.js")
+            sourceUrl: Qt.resolvedUrl("assets/smartbanners.js")
             runOnSubframes: true
         },
         WebEngineScript {

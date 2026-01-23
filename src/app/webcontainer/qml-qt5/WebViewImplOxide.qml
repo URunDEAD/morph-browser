@@ -90,7 +90,7 @@ WebappWebview {
         userScripts: [
             WebEngineScript {
                 name: "oxide://webapp-specific-page-metadata-collector/"
-                sourceUrl: Qt.resolvedUrl("webapp-specific-page-metadata-collector.js")
+                sourceUrl: Qt.resolvedUrl("assets/webapp-specific-page-metadata-collector.js")
                 runOnSubframes: true
             }
         ]

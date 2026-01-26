@@ -1,7 +1,7 @@
 Source: morph-browser
 Section: x11
 Priority: optional
-Maintainer: UBports developers
+Maintainer: UBports Developers <developers@ubports.com>
 Build-Depends: apparmor:native,
                apparmor-easyprof,
                cmake,

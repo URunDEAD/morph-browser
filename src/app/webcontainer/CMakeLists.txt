@@ -39,5 +39,4 @@ install(TARGETS ${WEBAPP_CONTAINER}
 
 install(DIRECTORY qml-qt${QT_VERSION_MAJOR}/ DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webcontainer)
 install(DIRECTORY assets
-        DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webcontainer
-        FILES_MATCHING PATTERN *.png)
+        DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser/webcontainer)

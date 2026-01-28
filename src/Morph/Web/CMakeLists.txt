@@ -4,6 +4,8 @@ set(MORPH_WEB_IMPORTS_DIR "${QT_INSTALL_QML}/Morph/Web")
 set(ASSETS
     assets/handle@27.png
     assets/scrollbar-theme.js
+    assets/select_overrides.js
+    assets/smartbanners.js
 )
 
 set(PLUGIN morph-web-plugin)

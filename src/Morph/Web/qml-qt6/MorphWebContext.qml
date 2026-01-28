@@ -57,7 +57,7 @@ WebEngineProfile {
     Component.onCompleted: {
         var smartbannersScript = WebEngine.script();
         smartbannersScript.name = "oxide://smartbanners/";
-        smartbannersScript.sourceUrl = Qt.resolvedUrl("smartbanners.js");
+        smartbannersScript.sourceUrl = Qt.resolvedUrl("assets/smartbanners.js");
         smartbannersScript.runsOnSubframes = true;
         userScripts.insert(smartbannersScript);
 

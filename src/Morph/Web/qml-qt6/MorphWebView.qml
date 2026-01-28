@@ -133,14 +133,19 @@ WebEngineView {
         console.warn("WARNING: the copy() function is deprecated and does nothing.")
     }
 
-//    touchSelectionController.handle: Image {
-//        objectName: "touchSelectionHandle"
-//        readonly property int handleOrientation: orientation
-//        width: units.gu(1.5)
-//        height: units.gu(1.5)
-//        source: "assets/handle.png"
-//        Component.onCompleted: horizontalPaddingRatio = 0.5
-//    }
+    touchHandleDelegate: Image {
+        objectName: "touchSelectionHandle"
+        source: "assets/handle@27.png"
+        /*
+         * QWE sets position and size upon us.
+         * TODO: once touchHandleDelegate becomes more capable, implement handle
+         * offset so that the handle appears on the center, instead of on the
+         * left/right, of the selection.
+         * https://qt-project.atlassian.net/browse/QTBUG-143712
+         */
+
+        fillMode: Image.PreserveAspectFit
+    }
 //
 //    Connections {
 //        target: _webview.touchSelectionController

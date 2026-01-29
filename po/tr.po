@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2024-05-29 19:33+0000\n"
-"Last-Translator: Ali Beyaz <alipolatbeyaz@gmail.com>\n"
+"PO-Revision-Date: 2026-01-30 10:33+0000\n"
+"Last-Translator: mahmucan nahmudo <erenbalik76@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/tr/>\n"
 "Language: tr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -80,10 +80,8 @@ msgid "Clear Navigation History"
 msgstr "Gezinme Geçmişini Temizle"
 
 #: src/app/actions/CopyImageLink.qml:22
-#, fuzzy
-#| msgid "Copy image"
 msgid "Copy image link"
-msgstr "Resmi kopyala"
+msgstr "Resim bağlantısını kopyala"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
@@ -289,16 +287,19 @@ msgstr ""
 "yoksa geri dönmek mi istiyorsunuz?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:31
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "%1 is trying to access %2 but it is not on your approved domain whitelist. "
 "Would you like to continue to block the domain, allow loading data from the "
 "domain, or just ignore this request ?"
 msgstr ""
+"%1, %2'ye erişmeye çalışıyor ancak onaylı alan adı beyaz listenizde değil. "
+"Alanı engellemeye devam etmek mi, alandan veri yüklenmesine izin vermek mi "
+"yoksa bu isteği yoksaymak mı istiyorsunuz?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
-msgstr ""
+msgstr "Etki alanına izin ver"
 
 #: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
@@ -1262,61 +1263,59 @@ msgstr "Bir şeylerde bir terslik var."
 
 #: src/app/webcontainer/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
-msgstr ""
+msgstr "'Web Uygulaması Konteyneri Ayarları'"
 
 #: src/app/webcontainer/WebappSettingsPage.qml:163
-#, fuzzy
 msgid "Reset webapp settings"
-msgstr "Tarayıcı ayarlarını sıfırlayın"
+msgstr "'Web uygulaması ayarlarını sıfırla'"
 
 #: src/app/webcontainer/WebViewImplOxide.qml:330
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
 msgstr ""
+"'%1 alanı' artık 'beyaz listeye' eklendi, lütfen sayfayı yeniden yükleyin."
 
 #: src/app/ZoomControls.qml:61
 msgid "Zoom Out"
-msgstr ""
+msgstr "Uzaklaştır"
 
 #: src/app/ZoomControls.qml:68
 msgid "Reset"
-msgstr ""
+msgstr "Sıfırla"
 
 #: src/app/ZoomControls.qml:68
 msgid "fit"
-msgstr ""
+msgstr "'sığdır'"
 
 #: src/app/ZoomControls.qml:75
 msgid "Zoom In"
-msgstr ""
+msgstr "Yakınlaştır"
 
 #: src/app/ZoomControls.qml:100
 msgid "Current Zoom"
-msgstr ""
+msgstr "Geçerli Yakınlaştırma"
 
 #: src/app/ZoomControls.qml:101
 msgid "domain"
-msgstr ""
+msgstr "alan adı"
 
 #: src/app/ZoomControls.qml:101
-#, fuzzy
-#| msgid "Default"
 msgid "default"
-msgstr "Varsayılan"
+msgstr "varsayılan"
 
 #: src/app/ZoomControls.qml:101
 msgid "auto-fit"
-msgstr ""
+msgstr "'otomatik sığdır'"
 
 #: src/app/ZoomControls.qml:190
 #, fuzzy
 #| msgid "Save image"
 msgid "Save Zoom"
-msgstr "Resmi kaydet"
+msgstr "'Yakınlaştırmayı' Kaydet"
 
 #: src/app/ZoomControls.qml:192
 msgid "the current web app"
-msgstr ""
+msgstr "mevcut web uygulaması"
 
 #: src/app/ZoomControls.qml:195
 #, qt-format
@@ -1324,27 +1323,31 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"Güncel 'yakınlaştırma düzeyi' (%1%), %2 içerisine mevcut 'alan adı' için "
+"veya varsayılan 'yakınlaştırma düzeyi' olarak kaydedilebilir."
 
 #: src/app/ZoomControls.qml:197
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
 msgstr ""
+"Güncel 'yakınlaştırma düzeyi' (%1%), mevcut 'alan adı' için %2 içerisine "
+"kaydedilebilir."
 
 #: src/app/ZoomControls.qml:199
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
 msgstr ""
+"Güncel 'yakınlaştırma düzeyi' (%1%), varsayılan 'yakınlaştırma düzeyi' "
+"olarak %2 içerisine kaydedilebilir."
 
 #: src/app/ZoomControls.qml:206
-#, fuzzy
-#| msgid "Save in"
 msgid "Save for domain"
-msgstr "Kaydetme konumu"
+msgstr "'Alan adı' için kaydet"
 
 #: src/app/ZoomControls.qml:219
 msgid "Save as default"
-msgstr ""
+msgstr "Varsayılan olarak kaydet"
 
 #~ msgid "Resume"
 #~ msgstr "Sürdür"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2026-01-30 10:33+0000\n"
+"PO-Revision-Date: 2026-01-31 18:04+0000\n"
 "Last-Translator: mahmucan nahmudo <erenbalik76@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/tr/>\n"
@@ -1097,15 +1097,13 @@ msgid "Reset browser settings"
 msgstr "Tarayıcı ayarlarını sıfırlayın"
 
 #: src/app/webbrowser/SettingsPage.qml:334
-#, fuzzy
-#| msgid "Leave Private Mode"
 msgid "Start in private mode"
-msgstr "Gizli Moddan Çık"
+msgstr "Gizli modda başlat"
 
 #: src/app/webbrowser/SettingsPage.qml:358
 #: src/app/webcontainer/WebappSettingsPage.qml:206
 msgid "Only allow browsing to whitelisted websites"
-msgstr ""
+msgstr "Yalnızca beyaz listedeki web sitelerinde gezinmeye izin ver"
 
 #: src/app/webbrowser/SettingsPage.qml:398
 #: src/app/webbrowser/SettingsPage.qml:589
@@ -1113,50 +1111,36 @@ msgid "Camera & microphone"
 msgstr "Kamera & mikrofon"
 
 #: src/app/webbrowser/SettingsPage.qml:407
-#, fuzzy
-#| msgid "Clear Browsing History"
 msgid "Clear browsing history"
-msgstr "Tarama Geçmişini Temizle"
+msgstr "Tarama geçmişini temizle"
 
 #: src/app/webbrowser/SettingsPage.qml:411
-#, fuzzy
-#| msgid "Clear Browsing History?"
 msgid "Clear browsing history?"
-msgstr "Geçmiş Tarama Temizleme?"
+msgstr "Tarama geçmişini temizle?"
 
 #: src/app/webbrowser/SettingsPage.qml:419
 #: src/app/webcontainer/WebappSettingsPage.qml:247
-#, fuzzy
-#| msgid "Clear Cache"
 msgid "Clear cache"
-msgstr "Önbelleği Temizle"
+msgstr "Önbelleği temizle"
 
 #: src/app/webbrowser/SettingsPage.qml:422
 #: src/app/webcontainer/WebappSettingsPage.qml:250
-#, fuzzy
-#| msgid "Clear Cache?"
 msgid "Clear cache?"
-msgstr "Önbellek Temizleme?"
+msgstr "Önbelleği temizle?"
 
 #: src/app/webbrowser/SettingsPage.qml:430
 #: src/app/webcontainer/WebappSettingsPage.qml:258
-#, fuzzy
-#| msgid "Clear Cache"
 msgid "Clear all cookies"
-msgstr "Önbelleği Temizle"
+msgstr "Tüm çerezleri temizle"
 
 #: src/app/webbrowser/SettingsPage.qml:433
 #: src/app/webcontainer/WebappSettingsPage.qml:261
-#, fuzzy
-#| msgid "Clear Cache?"
 msgid "Clear all Cookies?"
-msgstr "Önbellek Temizleme?"
+msgstr "Tüm Çerezleri Temizle?"
 
 #: src/app/webbrowser/SettingsPage.qml:516
-#, fuzzy
-#| msgid "Homepage"
 msgid "Custom homepage"
-msgstr "Anasayfa"
+msgstr "Özel ana sayfa"
 
 #: src/app/webbrowser/SettingsPage.qml:601
 msgid "Microphone"
@@ -1184,7 +1168,7 @@ msgstr "Yeni sekme"
 
 #: src/app/webbrowser/TabsBar.qml:99
 msgid "Move to New Window"
-msgstr ""
+msgstr "Yeni Pencereye Taşı"
 
 #: src/app/webbrowser/TabsBar.qml:116
 msgid "Close Tab"
@@ -1308,10 +1292,8 @@ msgid "auto-fit"
 msgstr "'otomatik sığdır'"
 
 #: src/app/ZoomControls.qml:190
-#, fuzzy
-#| msgid "Save image"
 msgid "Save Zoom"
-msgstr "'Yakınlaştırmayı' Kaydet"
+msgstr "Yakınlaştırmayı Kaydet"
 
 #: src/app/ZoomControls.qml:192
 msgid "the current web app"

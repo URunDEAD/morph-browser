@@ -1,6 +1,138 @@
+2026-02-02 Mike Gabriel
+
+        * Release 1.99.3 (HEAD -> main, tag: 1.99.3)
+
+2026-01-31 Daniel Wiik
+
+        * Translated using Weblate (Swedish) (eb767c76)
+
+2026-01-30 mahmucan nahmudo
+
+        * Translated using Weblate (Turkish) (0b13b6c9)
+
+2026-01-29 mahmucan nahmudo
+
+        * Translated using Weblate (Turkish) (baa580a0)
+
+2026-01-28 Guido Berhörster
+
+        * Merge branch 'personal/peat-psuwit/more-assets' into 'main'
+          (971b37fb)
+
+2026-01-24 Ratchanan Srirattanamet
+
+        * src/: move more .js user scripts to be assets (27df368a)
+          Fixes:
+          https://gitlab.com/ubports/development/core/morph-browser/-/issues/599
+
+2026-01-26 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/fix-control-maintainer' into
+          'main' (2ce5c083)
+
+2026-01-27 Ratchanan Srirattanamet
+
+        * d/control: correct Maintainer: field format; fix build on Debian
+          testing (f12ace8d)
+
+2026-01-25 Jiri Grönroos
+
+        * Translated using Weblate (Finnish) (2d7b28ed)
+
+2026-01-20 Jozef Mlich
+
+        * Translated using Weblate (Czech) (4c56ea5d)
+
+2026-01-13 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/remove-ubuntu.web' into 'main'
+          (2cd99086)
+
+2026-01-05 Ratchanan Srirattanamet
+
+        * doc/: remove mentions to no-longer-relevant legacy QML types
+          (250d3662)
+        * src/: remove never-working Ubuntu.Web compat type entirely
+          (0f66fdd6)
+          Fixes:
+          https://gitlab.com/ubports/development/core/morph-browser/-/issues/598
+
+2026-01-12 Jozef Mlich
+
+        * Translated using Weblate (Czech) (d20d4986)
+
+2026-01-10 BoneNI
+
+        * Translated using Weblate (Lao) (6a69f4c4)
+
+2026-01-09 Guido Berhörster
+
+        * Merge branch 'personal/peat-psuwit/fix-gettopleveldomain-qt6' into
+          'main' (d1f405fd)
+
+2026-01-08 Ratchanan Srirattanamet
+
+        * DomainUtils: fix multiple mistakes in getTopLevelDomain()
+          (fab10389)
+
+2026-01-09 Guido Berhörster
+
+        * Merge branch 'personal/peat-psuwit/reenable-tests-after-qt6' into
+          'main' (596ffd5c)
+
+2026-01-09 Ratchanan Srirattanamet
+
+        * d/rules: run but ignore result of tests on Qt 6 (03c63f59)
+
+2026-01-08 Ratchanan Srirattanamet
+
+        * tests/unittest: make tests build under Qt 6 (764ad135)
+        * src/, tests/: fix QML tests refering to QML files/modules
+          (32a7535d)
+
+2026-01-07 Ratchanan Srirattanamet
+
+        * CMakeLists.txt: re-enable tests and add CTest's BUILD_TESTING
+          option (902de563)
+
+2026-01-07 Guido Berhörster
+
+        * Merge branch 'personal/peat-psuwit/qt6-tab-favicon-size' into
+          'main' (0371cb16)
+
+2026-01-06 Ratchanan Srirattanamet
+
+        * webbrowser/qml-qt6: fix anchors stretching Favicon item in interim
+          state (e86625f1)
+          Fixes:
+          https://gitlab.com/ubports/development/core/morph-browser/-/issues/600
+
+2025-12-31 Purushotham N
+
+        * Translated using Weblate (Tamil) (c9cc9bab)
+
+2025-12-27 phmqXPD
+
+        * Translated using Weblate (Vietnamese) (e19a71a0)
+
+2025-12-25 Guido Berhörster
+
+        * Merge branch 'personal/peat-psuwit/fix-install-assets-morph.web'
+          into 'main' (5c119117)
+
+2025-12-25 Ratchanan Srirattanamet
+
+        * src/Morph/Web: fix installation of assets (5d4b3f0e)
+          Fixes:
+          https://gitlab.com/ubports/development/core/morph-browser/-/issues/597
+
+2025-12-19 Temuri Doghonadze
+
+        * Translated using Weblate (Georgian) (2980eca9)
+
 2025-12-23 Mike Gabriel
 
-        * Release 1.99.2 (HEAD -> main, tag: 1.99.2)
+        * Release 1.99.2 (ed1aa434) (tag: 1.99.2)
 
 2025-12-22 Guido Berhörster
 

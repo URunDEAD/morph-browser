@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2026-01-25 15:46+0000\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"PO-Revision-Date: 2026-02-10 04:08+0000\n"
+"Last-Translator: Midrielen <jimitoivo.jaakkola@outlook.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/fi/>\n"
 "Language: fi\n"
@@ -448,10 +448,8 @@ msgid "allowed to launch other apps"
 msgstr "lupa avata muita sovelluksia"
 
 #: src/app/DomainSettingsPage.qml:226
-#, fuzzy
-#| msgid "allowed to access your location"
 msgid "access your location"
-msgstr "lupa käyttää sijaintiasi"
+msgstr "käytä sijaintia"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
@@ -612,7 +610,7 @@ msgstr "Estä"
 msgid "The website at %1 requires authentication. The website says \"%2\""
 msgstr ""
 "Sivusto osoitteessa %1 pyytää tunnistautumista. Sivusto kertoo seuraavan "
-"viestin: ”%2”."
+"viestin: ”%2”"
 
 #: src/app/InvalidCertificateErrorSheet.qml:55
 msgid "This site security certificate is not trusted.\n"
@@ -1000,7 +998,7 @@ msgstr "Tämä sivusto sisältää suojaamatonta sisältöä"
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:71
 msgid "Identity Not Verified"
-msgstr "Identiteettiä ei vahvistettu."
+msgstr "Identiteettiä ei vahvistettu"
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:79
 msgid "The identity of this website has not been verified."

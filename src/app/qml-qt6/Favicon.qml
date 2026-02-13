@@ -39,9 +39,7 @@ Item {
 
     FaviconFetcher {
         id: fetcher
-        // FIXME: Qt6: this causes infinite recursion in QtWebEngine. So temp disable favicons.
-        // url: favicon.visible ? favicon.source : ""
-        url: ""
+        url: favicon.visible ? favicon.source : ""
     }
 
     Icon {

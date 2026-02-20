@@ -8,219 +8,218 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2013-05-25 18:58+0000\n"
-"Last-Translator: Sambit <sambit.mishra.me@gmail.com>\n"
-"Language-Team: Hindi <hi@li.org>\n"
+"PO-Revision-Date: 2026-02-20 16:27+0000\n"
+"Last-Translator: Satyaakam Goswami <satyaakam@gmail.com>\n"
+"Language-Team: Hindi <https://hosted.weblate.org/projects/lomiri/morph-"
+"browser/hi/>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: morph-browser.desktop.in:4
 msgid "Morph Browser"
-msgstr ""
+msgstr "मोर्फ ब्राउज़र"
 
 #: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:111
 #: src/app/webcontainer/webapp-container.qml:78
 msgid "Morph Web Browser"
-msgstr ""
+msgstr "मॉर्फ वेब ब्राउज़र"
 
 #: morph-browser.desktop.in:6
 msgid "Browse the World Wide Web using QtWebEngine"
-msgstr ""
+msgstr "QtWeb Engine का उपयोग करके वर्ल्ड वाइड वेब ब्राउज़ करें"
 
 #: morph-browser.desktop.in:7
 msgid "Internet;WWW;Browser;Web;Explorer"
-msgstr ""
+msgstr "इंटरनेट;वेब वेव;ब्राउزر;वेब;इंटर्नेट एक्सप्लोरर"
 
 #: morph-browser.desktop.in:23
 msgid "New Window"
-msgstr ""
+msgstr "न्यू विंडो"
 
 #: morph-browser.desktop.in:27
 msgid "New Private Window"
-msgstr ""
+msgstr "नया खाली जानचक्र"
 
 #: src/app/actions/Back.qml:23
 msgid "Back"
-msgstr "वापस"
+msgstr "पीछे"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Back.qml:26
 msgid "Older Page"
-msgstr ""
+msgstr "पुरानी पृष्ठ"
 
 #: src/app/actions/BookmarkLink.qml:22
 msgid "Bookmark link"
-msgstr ""
+msgstr "बुकमार्क लिंक (Bookmark link)"
 
 #: src/app/actions/Bookmark.qml:23
 msgid "Bookmark"
-msgstr ""
+msgstr "मार्कअप"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Bookmark' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Bookmark.qml:26
 msgid "Add This Page to Bookmarks"
-msgstr ""
+msgstr "\"यह पृष्ठ किताबों में याद रखने वाला सूची में जोड़ें\""
 
 #: src/app/actions/ClearHistory.qml:23
 msgid "Clear History"
-msgstr ""
+msgstr "साफ़ इतिहास"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/ClearHistory.qml:26
 msgid "Clear Navigation History"
-msgstr ""
+msgstr "स्पष्ट नेविगेशन इतिहास"
 
 #: src/app/actions/CopyImageLink.qml:22
-#, fuzzy
-#| msgid "Download"
 msgid "Copy image link"
-msgstr "डाउनलोड"
+msgstr "कॉपी इमेज लिंक"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
-msgstr ""
+msgstr "कॉपी छवि"
 
 #: src/app/actions/CopyLink.qml:22
 msgid "Copy link"
-msgstr ""
+msgstr "कॉपी लिंक"
 
 #: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:418
 msgid "Copy"
-msgstr ""
+msgstr "कॉपी"
 
 #: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:407
 msgid "Cut"
-msgstr ""
+msgstr "काटना"
 
 #: src/app/actions/Erase.qml:22
 msgid "Erase"
-msgstr ""
+msgstr "मिटाएं"
 
 #: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:843
 msgid "Find in page"
-msgstr ""
+msgstr "पृष्ठ पर खोज करें"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/FindInPage.qml:26
 msgid "Search in Page"
-msgstr ""
+msgstr "खोज पृष्ठ"
 
 #: src/app/actions/Forward.qml:23
 msgid "Forward"
-msgstr ""
+msgstr "अग्र"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Forward' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Forward.qml:26
 msgid "Newer Page"
-msgstr ""
+msgstr "नया पेज"
 
 #: src/app/actions/GoTo.qml:23
 msgid "Goto"
-msgstr ""
+msgstr "जाना"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/GoTo.qml:26
 msgid "Address;URL;www"
-msgstr ""
+msgstr "स्थान;वेबसाइट;वेब"
 
 #: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:703
 #: src/app/webbrowser/TabsBar.qml:88
 msgid "New Tab"
-msgstr ""
+msgstr "नया टैब"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'New Tab' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/NewTab.qml:26
 msgid "Open a New Tab"
-msgstr "एक नया टैब खोलें"
+msgstr "नया टैब खोलें"
 
 #: src/app/actions/OpenImageInNewTab.qml:22
 msgid "Open image in new tab"
-msgstr ""
+msgstr "अपने चित्र को नई टैब में खोलें।"
 
 #: src/app/actions/OpenLinkInBrowser.qml:22
 msgid "Open link in default browser"
-msgstr ""
+msgstr "खोलें लिंक डिफॉल्ट ब्राउज़र में।"
 
 #: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
 msgid "Open link in new background tab"
-msgstr ""
+msgstr "नया पृष्ठ खोलने के लिए नई बैकग्राउंड टैबलेट में खोलना।"
 
 #: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
 msgid "Open link in new private window"
-msgstr ""
+msgstr "खोलें लिंक नया प्राइवेट विंडो में।"
 
 #: src/app/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
-msgstr ""
+msgstr "नया टैब में लिंक खोलें।"
 
 #: src/app/actions/OpenLinkInNewWindow.qml:22
 msgid "Open link in new window"
-msgstr ""
+msgstr "खुला लिंक नई जान्छक में खोलें।"
 
 #: src/app/actions/OpenVideoInNewTab.qml:22
 msgid "Open video in new tab"
-msgstr ""
+msgstr "वीडियो खोलने के लिए नया टैब"
 
 #: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:429
 msgid "Paste"
-msgstr ""
+msgstr "पेस्ट"
 
 #: src/app/actions/Redo.qml:22
 msgid "Redo"
-msgstr ""
+msgstr "फिर से"
 
 #: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
 #: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
 msgid "Reload"
-msgstr ""
+msgstr "पुनर्लोड"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Reload' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Reload.qml:26
 msgid "Leave Page"
-msgstr "पृष्ठ के बाहर जाएँ"
+msgstr "पृष्ठ छोड़ दो।"
 
 #: src/app/actions/SaveImage.qml:22
 msgid "Save image"
-msgstr ""
+msgstr "बचाएं तस्वीर"
 
 #: src/app/actions/SaveLink.qml:22
 msgid "Save link"
-msgstr ""
+msgstr "बैकअप लिंक सेव करें"
 
 #: src/app/actions/SaveVideo.qml:22
 msgid "Save video"
-msgstr ""
+msgstr "बखIRA वीडियो"
 
 #: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
 #: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
 #: src/app/DownloadsPage.qml:85
 msgid "Select all"
-msgstr ""
+msgstr "चुनने का सभी"
 
 #: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:823
 msgid "Share"
-msgstr ""
+msgstr "साझा करें"
 
 #: src/app/actions/Undo.qml:22
 msgid "Undo"
-msgstr ""
+msgstr "वापस करना"
 
 #: src/app/AlertDialog.qml:24
 msgid "JavaScript Alert"
-msgstr "JavaScript अलर्ट"
+msgstr "नोटिफिकेशन आहार"
 
 #: src/app/AlertDialog.qml:31 src/app/AuthenticationDialog.qml:47
 #: src/app/ColorSelectDialog.qml:73 src/app/ConfirmDialog.qml:33
@@ -228,30 +227,35 @@ msgstr "JavaScript अलर्ट"
 #: src/app/HttpAuthenticationDialog.qml:70 src/app/PromptDialog.qml:50
 #: src/app/webbrowser/BookmarkOptions.qml:122
 msgid "OK"
-msgstr "ठीक"
+msgstr "ठीक है"
 
 #: src/app/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
-msgstr ""
+msgstr "नियमित रूप से उपयोग किए जाने वाले यूआरएल स्कीम"
 
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "द '%1' वेबसाइट यह URL बाहरी ब्राउज़र के भीतर खोलना चाहती है।"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "ओपन करें ये यूआरएल सिस्टम ऐप के साथ यदि संभव हो तो"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
 msgstr ""
+"Yaad rakhen.\n"
+"\n"
+"(Note: \"Remember\" is used instead of \"Decision\" because \"decision\" "
+"typically implies a choice or action taken, whereas \"remember\" is a more "
+"natural translation for the phrase.)"
 
 #: src/app/AllowCustomSchemesDialog.qml:50
 #: src/app/GeolocationPermissionRequest.qml:51
 msgid "Allow"
-msgstr "स्वीकारें"
+msgstr "अधिकृत"
 
 #: src/app/AllowCustomSchemesDialog.qml:57
 #: src/app/AllowOrBlockDomainDialog.qml:53 src/app/AuthenticationDialog.qml:53
@@ -269,12 +273,12 @@ msgstr "स्वीकारें"
 #: src/app/webcontainer/ContextMenuMobile.qml:143
 #: src/app/webcontainer/WebappSettingsPage.qml:286 src/app/ZoomControls.qml:237
 msgid "Cancel"
-msgstr ""
+msgstr "રद्द"
 
 #: src/app/AllowOrBlockDomainDialog.qml:25
 #: src/app/AllowOrBlockDomainDialog.qml:41
 msgid "Block domain"
-msgstr ""
+msgstr "ब्लॉक डोमेन"
 
 #: src/app/AllowOrBlockDomainDialog.qml:30
 #, qt-format
@@ -283,6 +287,8 @@ msgid ""
 "Would you like to continue to block the domain, allow browsing to the "
 "domain, or go back?"
 msgstr ""
+"आप %1 तक पहुंचा प्रयास कर रहे हैं, लेकिन यह अपनी अनुमति वाली डोमेन व्हाइटलिस्ट में नहीं है। "
+"आपको इस डोमेन को ब्लॉक करना, इसे देखने की अनुमति देना, या वापस जाना चाहते हैं?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:31
 #, qt-format
@@ -291,44 +297,47 @@ msgid ""
 "Would you like to continue to block the domain, allow loading data from the "
 "domain, or just ignore this request ?"
 msgstr ""
+"%1 की जांच कर रहा है कि %2 को पहुँचाने की कोशिश कर रहा है, लेकिन यह आपके प्राधिकृत "
+"डोमेन व्हाइटलिस्ट में नहीं है। आप इस डोमेन पर आगे से ब्लॉक करना चाहते हैं या डेटा लोड करने "
+"देना चाहते हैं, या केवल इस अनुरोध को नजरअंदाज करना चाहेंगे?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
-msgstr ""
+msgstr "अपना डोमेन"
 
 #: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
-msgstr ""
+msgstr "पुनरावृत्ति की आवश्यकता है।"
 
 #. TRANSLATORS: %1 refers to the URL of the current website
 #: src/app/AuthenticationDialog.qml:26
 #, qt-format
 msgid "The website %1 requires authentication."
-msgstr ""
+msgstr "द वेबसाइट %1 की सुरक्षा के लिए पहचान प्रदान करने की आवश्यकता है।"
 
 #: src/app/AuthenticationDialog.qml:34 src/app/HttpAuthenticationDialog.qml:50
 msgid "Username"
-msgstr ""
+msgstr "नाम"
 
 #: src/app/AuthenticationDialog.qml:41 src/app/HttpAuthenticationDialog.qml:60
 msgid "Password"
-msgstr ""
+msgstr "पासवर्ड"
 
 #: src/app/BeforeUnloadDialog.qml:24
 msgid "Confirm Navigation"
-msgstr ""
+msgstr "नेविगेशन सत्यापित करना"
 
 #: src/app/BeforeUnloadDialog.qml:33
 msgid "Leave"
-msgstr ""
+msgstr "चलो (Chalo)"
 
 #: src/app/BeforeUnloadDialog.qml:41
 msgid "Stay"
-msgstr ""
+msgstr "रुकना"
 
 #: src/app/CertificateVerificationDialog.qml:24
 msgid "This connection is untrusted"
-msgstr ""
+msgstr "ये कनेक्शन अनिश्चित है"
 
 #. TRANSLATORS: %1 refers to the hostname
 #: src/app/CertificateVerificationDialog.qml:26
@@ -337,282 +346,301 @@ msgid ""
 "You are trying to securely reach %1, but the security certificate of this "
 "website is not trusted. Reason: %2"
 msgstr ""
+"आप %1 सुरक्षित रूप से पहुंचने की कोशिश कर रहे हैं, लेकिन इस वेबसाइट का सुरक्षा प्रमाणपत्र इस "
+"बात पर शक नहीं करता है। कारण: %2"
 
 #: src/app/CertificateVerificationDialog.qml:39
 #: src/app/InvalidCertificateErrorSheet.qml:160
 msgid "Proceed anyway"
-msgstr "फिर भी आगे बढ़ें"
+msgstr "सब कुछ जल्दी करें।"
 
 #: src/app/ColorSelectDialog.qml:25
 msgid "Select Color"
-msgstr ""
+msgstr "रंग चुनें"
 
 #: src/app/ConfirmDialog.qml:24
 msgid "JavaScript Confirmation"
-msgstr ""
+msgstr "पुष्टि के लिए सत्यापित करें"
 
 #: src/app/ContentExportDialog.qml:79
 msgid "Open with"
-msgstr ""
+msgstr "Khुलna shuru kare"
 
 #: src/app/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
-msgstr ""
+msgstr "फ़ाइल नाम: %1"
 
 #: src/app/ContentExportDialog.qml:91
 #: src/app/webcontainer/AccountErrorScreen.qml:50
 msgid "Close"
-msgstr ""
+msgstr "बंद कर दें।"
 
 #: src/app/ContentExportDialog.qml:100
 msgid "Open link in browser"
-msgstr ""
+msgstr "ओपन लिंक़ इन ब्राउज़र में खोलें"
 
 #: src/app/ContentExportDialog.qml:109
 msgid "Open file in browser"
-msgstr ""
+msgstr "खोलें डाउनलोड फ़ाइल ब्राउज़र में"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
-msgstr ""
+msgstr "व्यक्तिगत उपयोगकर्ता एजेंट"
 
 #: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
 #: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
 msgid "Delete"
-msgstr ""
+msgstr "मिटाएं"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
 msgstr ""
+"नया उपयोगकर्ता\n"
+"\n"
+"(or)\n"
+"\n"
+"नया उपयोगकर्ता एजेंट"
 
 #: src/app/CustomUserAgentsPage.qml:161
 msgid "Edit User Agent"
-msgstr ""
+msgstr "संपादित उपयोगकर्ता एजेंट"
 
 #: src/app/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
-msgstr ""
+msgstr "कोई विशेष यूजर एजेंट उपलब्ध नहीं हैं"
 
 #: src/app/DomainPermissionsPage.qml:54
 #: src/app/webcontainer/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
-msgstr ""
+msgstr "अभdom blacklist/व्हाइटलिस्ट"
 
 #: src/app/DomainPermissionsPage.qml:113 src/app/DomainSettingsPage.qml:113
 msgid "Add domain"
-msgstr ""
+msgstr "दोमेन जोड़"
 
 #: src/app/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
 msgstr ""
+"प्रामाणिक हिंदी में अनुवाद:\n"
+"\n"
+"डोमेन का नाम दर्ज करें, उदाहरण के लिए - example.com (उपसंस्थान शामिल नहीं होंगे।"
 
 #: src/app/DomainPermissionsPage.qml:222
 msgid "Not Set"
-msgstr ""
+msgstr "निर्धारित नहीं"
 
 #: src/app/DomainPermissionsPage.qml:232
 msgid "Never allow access"
-msgstr ""
+msgstr "नहीं कभी अनुमति दें"
 
 #: src/app/DomainPermissionsPage.qml:243
 msgid "Always allow access"
-msgstr ""
+msgstr "हमेशा पहुंच की अनुमति दें"
 
 #: src/app/DomainPermissionsPage.qml:283
 msgid "No sites have been granted special permissions"
-msgstr ""
+msgstr "कोई भी साइट विशेष अधिकारों को प्राप्त नहीं हुई है"
 
 #: src/app/DomainSettingsPage.qml:52
 #: src/app/webcontainer/WebappSettingsPage.qml:236
 msgid "Domain specific settings"
-msgstr ""
+msgstr "नेटवर्क सेटिंग्स"
 
 #: src/app/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
 msgstr ""
+"प्रामाणिक हिंदी में अनुवाद:\n"
+"\n"
+"क्षेत्र का नाम दर्ज करें, उदाहरण के लिए म.उदाहरण.कम"
 
 #: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
-msgstr ""
+msgstr "अन्य ऐप्स चलाने की अनुमति दी गई है।"
 
 #: src/app/DomainSettingsPage.qml:226
 msgid "access your location"
-msgstr ""
+msgstr "Your स्थान पर पहुँच"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "प्रत्येक बार"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
-msgstr "स्वीकारें"
+msgstr "मान्य"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "निन्दित"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
-msgstr ""
+msgstr "विशिष्ट उपयोगकर्ता एजेंट"
 
 #: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
 msgid "Zoom: "
-msgstr ""
+msgstr "ज़ाम: "
 
 #: src/app/DomainSettingsPage.qml:325
 msgid "not set"
-msgstr ""
+msgstr "निर्धारित नहीं है"
 
 #: src/app/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
-msgstr ""
+msgstr "कोई डोमेन विशिष्ट सेटिंगें नहीं उपलब्ध हैं"
 
 #. TRANSLATORS: %1 is the percentage of the download completed so far
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
 msgstr ""
+"%१%\n"
+"\n"
+"(Note: In Devanagari script, the number \"1\" is represented as \"१\")"
 
 #: src/app/DownloadDelegate.qml:170
 msgid "Download failed"
-msgstr ""
+msgstr "व्यथित डाउनलोड"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "अज्ञात"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%१/स"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
 msgid "Delete File"
-msgstr ""
+msgstr "निकाल निकालना फ़ाइल"
 
 #: src/app/DownloadDelegate.qml:261
 msgid "Remove from History"
-msgstr ""
+msgstr "पिछले इतिहास से हटाएं"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Download"
 msgid "Copy Download Link"
-msgstr "डाउनलोड"
+msgstr "कॉपी डाउनलोड लिंक"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Download"
 msgid "Recent Downloads"
-msgstr "डाउनलोड"
+msgstr "नयी डाउनलोडें"
 
 #: src/app/DownloadsDialog.qml:83
 msgid "No Recent Downloads"
-msgstr ""
+msgstr "नहीं हाल ही में डाउनलोड किए गए"
 
 #: src/app/DownloadsDialog.qml:106
 msgid "Cancelled"
-msgstr ""
+msgstr "बताया गया है"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "पूरा"
 
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
 msgid "Clear"
-msgstr ""
+msgstr "साफ़"
 
 #: src/app/DownloadsDialog.qml:179
 msgid "View All"
-msgstr ""
+msgstr "दिखाएं सभी"
 
 #: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:850
 #: src/app/webcontainer/WebappSettingsPage.qml:137
 msgid "Downloads"
-msgstr ""
+msgstr "ดาวनलॉड्स = Downloads"
 
 #: src/app/DownloadsPage.qml:60
 msgid "Confirm selection"
-msgstr ""
+msgstr "पुष्टि करना"
 
 #: src/app/DownloadsPage.qml:288
 msgid "No downloads available"
-msgstr ""
+msgstr "नो डाउनलोड उपलब्ध नहीं हैं"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "उपयोगकर्ता नाम यह पहले ही लिया गया है"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
 msgid "Add the name for the user agent"
 msgstr ""
+"I can't translate the UI string directly without seeing its content. Could "
+"you please provide the UI string you'd like me to translate? Additionally, "
+"who is the intended audience for this translation? \n"
+"\n"
+"Once I have the content, I'll do my best to translate it into natural Hindi "
+"(Devanagari) with maximum coverage and English words when necessary.\n"
+"\n"
+"Please paste the UI string, and I'll get started!"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
-msgstr ""
+msgstr "उपयोगकर्ता एजेंसी स्ट्रिंग दर्ज करें।"
 
 #: src/app/ErrorSheet.qml:42
 msgid "Certificate Error"
-msgstr ""
+msgstr "प्रमाण पत्र त्रुटि"
 
 #: src/app/ErrorSheet.qml:42
 msgid "Network Error"
-msgstr ""
+msgstr "नेटवर्क त्रुटि"
 
 #. TRANSLATORS: %1 refers to the URL of the current page
 #: src/app/ErrorSheet.qml:49
 #, qt-format
 msgid "It appears you are having trouble viewing: %1."
-msgstr ""
+msgstr "यह स्पष्ट है कि आप देखने में परेशानी कर रहे हैं: %1।"
 
 #: src/app/ErrorSheet.qml:56
 #, qt-format
 msgid "Error: %1"
-msgstr ""
+msgstr "अपेक्षित प्रसंस्करण अथवा डेटा नहीं मिला।"
 
 #: src/app/ErrorSheet.qml:62 src/app/InvalidCertificateErrorSheet.qml:173
 msgid "Back to safety"
-msgstr ""
+msgstr "सुरक्षित परतने"
 
 #: src/app/ErrorSheet.qml:70
 msgid "Please check your network settings and try refreshing the page."
 msgstr ""
+"नेटवर्क सेटिंग्स की जांच करें और पृष्ठ फिर से अपडेट करने का प्रयास करें।"
 
 #: src/app/ErrorSheet.qml:77
 msgid "Refresh page"
-msgstr ""
+msgstr "पुनर्प्राप्ति"
 
 #: src/app/GeolocationPermissionRequest.qml:29
 msgid "Permission Request"
-msgstr ""
+msgstr "स्वीकृति की अनुमति मांग"
 
 #: src/app/GeolocationPermissionRequest.qml:30
 msgid "This page wants to know your device’s location."
-msgstr ""
+msgstr "यह पृष्ठ आपके डिवाइस की स्थानीयता जानना चाहता है।"
 
 #: src/app/GeolocationPermissionRequest.qml:57
 msgid "Deny"
-msgstr "अस्वीकार करें"
+msgstr "नहीं दिया जाना"
 
 #. TRANSLATORS: %1 refers to the URL of the current website and %2 is a string that the website sends with more information about the authentication challenge (technically called "realm")
 #: src/app/HttpAuthenticationDialog.qml:27
 #, qt-format
 msgid "The website at %1 requires authentication. The website says \"%2\""
-msgstr ""
+msgstr "वेबसाइट पर %1 आवश्यकता है। वेबसाइट कहती है, \"%2\""
 
 #: src/app/InvalidCertificateErrorSheet.qml:55
 msgid "This site security certificate is not trusted.\n"
-msgstr ""
+msgstr "अपने साइट की सुरक्षा प्रमाणपत्र को विश्वसनीय नहीं माना जाता।\n"
 
 #: src/app/InvalidCertificateErrorSheet.qml:63
 msgid "Learn more"
-msgstr "अधिक जानें"
+msgstr "सीखने के लिए अधिक"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's serial number
 #: src/app/InvalidCertificateErrorSheet.qml:87
@@ -620,7 +648,7 @@ msgstr "अधिक जानें"
 msgid ""
 "Serial number:\n"
 "%1"
-msgstr ""
+msgstr "सीरियल नंबर: %1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject display name
 #: src/app/InvalidCertificateErrorSheet.qml:94
@@ -629,6 +657,8 @@ msgid ""
 "Subject:\n"
 "%1"
 msgstr ""
+"विषय:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject's address
 #: src/app/InvalidCertificateErrorSheet.qml:102
@@ -636,7 +666,7 @@ msgstr ""
 msgid ""
 "Subject address:\n"
 "%1"
-msgstr ""
+msgstr "विषय संबंधित पता: %1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer display name
 #: src/app/InvalidCertificateErrorSheet.qml:113
@@ -645,6 +675,9 @@ msgid ""
 "Issuer:\n"
 "%1"
 msgstr ""
+"ਇਸੁਅਰ ਦਾ:\n"
+"\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer's address
 #: src/app/InvalidCertificateErrorSheet.qml:121
@@ -652,7 +685,7 @@ msgstr ""
 msgid ""
 "Issuer address:\n"
 "%1"
-msgstr ""
+msgstr "आधिकारिक पता: %1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's start date
 #: src/app/InvalidCertificateErrorSheet.qml:132
@@ -660,7 +693,7 @@ msgstr ""
 msgid ""
 "Valid from:\n"
 "%1"
-msgstr ""
+msgstr "प्रभावी है: %1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's expiry date
 #: src/app/InvalidCertificateErrorSheet.qml:139
@@ -668,7 +701,7 @@ msgstr ""
 msgid ""
 "Valid until:\n"
 "%1"
-msgstr ""
+msgstr "ਵੱਲ ਤਕ: %1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's SHA1 fingerprint
 #: src/app/InvalidCertificateErrorSheet.qml:146
@@ -677,592 +710,643 @@ msgid ""
 "Fingerprint (SHA1):\n"
 "%1"
 msgstr ""
+"अंगूठे की छाप (शेयर हैश):\n"
+"%1"
 
 #: src/app/InvalidCertificateErrorSheet.qml:153
 msgid ""
 "You should not proceed, especially if you have never seen this warning "
 "before for this site."
 msgstr ""
+"आपको आगे बढ़ना न चाहिए, खासकर यदि आपको कभी भी इस साइट पर इनसे मिलने वाली यह "
+"सावधानी का अनुभव नहीं हुआ है।"
 
 #: src/app/MediaAccessDialog.qml:39
 msgid "Permission"
-msgstr ""
+msgstr "अनुमति"
 
 #: src/app/MediaAccessDialog.qml:46
 msgid "Allow this domain to access your camera and microphone?"
-msgstr ""
+msgstr "अपने कैमरा और माइक्रोफोन को यह डोमेन अपनाने की अनुमति दें?"
 
 #: src/app/MediaAccessDialog.qml:47
 msgid "Allow this domain to access your camera?"
 msgstr ""
+"अपने कैमरे तक पहुंच प्रदान करें?\n"
+"\n"
+"(Note: I've used a natural Hindi translation, but kept English words like "
+"\"camera\" intact for clarity)"
 
 #: src/app/MediaAccessDialog.qml:48
 msgid "Allow this domain to access your microphone?"
 msgstr ""
+"परतंत्रित करने की अनुमति देने के लिए इस डोमेन तक माइक्रोफोन का स्वागत करें।"
 
 #: src/app/MediaAccessDialog.qml:77
 msgid "Yes"
-msgstr ""
+msgstr "ज़ीस"
 
 #: src/app/MediaAccessDialog.qml:85
 msgid "No"
-msgstr ""
+msgstr "नहीं"
 
 #: src/app/PromptDialog.qml:25
 msgid "JavaScript Prompt"
 msgstr ""
+"जावा प्रोम्प्ट\n"
+"\n"
+"Note: I've used the Devanagari script to translate the UI string to Hindi. "
+"However, in some cases, English words are necessary for clarity, which is "
+"why they have been included in the translation."
 
 #: src/app/ProxyAuthenticationDialog.qml:22
 msgid "Proxy authentication required."
-msgstr ""
+msgstr "सेटेलाइट विश्लेषण में प्रॉक्सी ऑथेंटिकेशन की आवश्यकता है।"
 
 #. TRANSLATORS: %1 refers to the proxy address, %2 refers to the proxy port
 #: src/app/ProxyAuthenticationDialog.qml:24
 #, qt-format
 msgid "The website %1:%2 requires authentication."
-msgstr ""
+msgstr "वेबसाइट %1:%2 की पुष्टिकरण आवश्यकता है।"
 
 #: src/app/SavePageDialog.qml:24
 msgid "Save page as HTML / PDF"
-msgstr ""
+msgstr "बेछोड़ बिल्ड वेब पेज के रूप में बचाएं / पीडीएफ"
 
 #: src/app/SavePageDialog.qml:41
 msgid "No save actions are available"
-msgstr ""
+msgstr "कोई बैकअप लेने की कार्रवाई उपलब्ध नहीं है"
 
 #: src/app/SavePageDialog.qml:46
 msgid "Save as HTML"
-msgstr ""
+msgstr "बचाएं के रूप में"
 
 #: src/app/SavePageDialog.qml:54
 #: src/app/webbrowser/ContentDownloadDialog.qml:102
 msgid "Download"
-msgstr "डाउनलोड"
+msgstr "डाउनलोड करें"
 
 #: src/app/SavePageDialog.qml:64
 msgid "Save as PDF"
-msgstr ""
+msgstr "बचाएं के पीडीएफ में सेव करें"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
 msgstr ""
+"\"सूची से हटाना\"\n"
+"\n"
+"OR \n"
+"\n"
+"\"सूची को हटाओ\"\n"
+"\n"
+"Note: The first option is more literal translation of \"remove from list\", "
+"while the second option uses a more common Hindi idiom \"हटाओ\" which means "
+"\"do it yourself\" or \"take action\"."
 
 #: src/app/webbrowser/AddressBar.qml:287
 msgid "find in page"
-msgstr ""
+msgstr "पृष्ठ पर खोज करें"
 
 #: src/app/webbrowser/AddressBar.qml:288
 msgid "search or enter an address"
-msgstr ""
+msgstr "निर्देशिका खोजें या पता दर्ज करें"
 
 #: src/app/webbrowser/AddressBar.qml:440
 msgid "Paste and Go"
-msgstr ""
+msgstr "पेस्ट करें और जाने"
 
 #: src/app/webbrowser/BookmarkOptions.qml:66
 msgid "Bookmark Added"
-msgstr ""
+msgstr "दिस्ता जोड़ा गया है।"
 
 #. TRANSLATORS: Field where the title of bookmarked URL can be changed
 #: src/app/webbrowser/BookmarkOptions.qml:71
 msgid "Name"
-msgstr ""
+msgstr "नाम"
 
 #. TRANSLATORS: Field to choose the folder where bookmarked URL will be saved in
 #: src/app/webbrowser/BookmarkOptions.qml:89
 msgid "Save in"
-msgstr ""
+msgstr "बचाएं"
 
 #: src/app/webbrowser/BookmarkOptions.qml:96
 #: src/app/webbrowser/BookmarksFoldersView.qml:133
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:105
 msgid "All Bookmarks"
-msgstr ""
+msgstr "सारे बुकमार्क"
 
 #: src/app/webbrowser/BookmarkOptions.qml:114
 #: src/app/webbrowser/BookmarkOptions.qml:154
 msgid "New Folder"
-msgstr ""
+msgstr "नया फ़ोल्डर"
 
 #: src/app/webbrowser/BookmarkOptions.qml:136
 msgid "Create new folder"
-msgstr ""
+msgstr "नया फोल्डर बनाएं"
 
 #: src/app/webbrowser/BookmarkOptions.qml:164
 #: src/app/webbrowser/SettingsPage.qml:550 src/app/ZoomControls.qml:82
 msgid "Save"
-msgstr ""
+msgstr "बचाए"
 
 #: src/app/webbrowser/BookmarksFoldersView.qml:191
 #: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
 #: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
 #: src/app/webbrowser/SettingsPage.qml:486
 msgid "Homepage"
-msgstr ""
+msgstr "घटना पृष्ठ"
 
 #: src/app/webbrowser/BookmarksView.qml:33
 #: src/app/webbrowser/BookmarksViewWide.qml:33
 #: src/app/webbrowser/Browser.qml:831 src/app/webbrowser/NewTabView.qml:130
 #: src/app/webbrowser/NewTabViewWide.qml:139
 msgid "Bookmarks"
-msgstr ""
+msgstr "बुकमार्क्स"
 
 #: src/app/webbrowser/Browser.qml:242
 #: src/app/webcontainer/WebViewImplOxide.qml:302
 msgid "Blocked domain"
-msgstr ""
+msgstr "निर्बाध क्षेत्र"
 
 #: src/app/webbrowser/Browser.qml:243
 #: src/app/webcontainer/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
-msgstr ""
+msgstr "विलयित नेविगेशन अनुरोध दomenția `%1` के लिए।"
 
 #: src/app/webbrowser/Browser.qml:269
 #: src/app/webcontainer/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
-msgstr ""
+msgstr "दायर्यित क्षेत्र (Dairyit Kshetri)"
 
 #: src/app/webbrowser/Browser.qml:270
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
 msgstr ""
+"दomen है अब व्हाइटलिस्टेड है, इसका उपयोग अगले पेज रिलोड पर सक्षम हो जाएगा।"
 
 #: src/app/webbrowser/Browser.qml:660
 msgid "Done"
-msgstr ""
+msgstr "Karega."
 
 #: src/app/webbrowser/Browser.qml:685
 msgid "Reopen Tab"
-msgstr ""
+msgstr "वापस खोलें टेबल"
 
 #: src/app/webbrowser/Browser.qml:811
 msgid "New window"
-msgstr ""
+msgstr "न्यू विंडो"
 
 #: src/app/webbrowser/Browser.qml:817
 msgid "New private window"
-msgstr ""
+msgstr "नया खाली पर्दा"
 
 #: src/app/webbrowser/Browser.qml:837 src/app/webbrowser/HistoryView.qml:31
 #: src/app/webbrowser/HistoryViewWide.qml:36
 msgid "History"
-msgstr ""
+msgstr "Itihaas"
 
 #: src/app/webbrowser/Browser.qml:857 src/app/webbrowser/SettingsPage.qml:45
 msgid "Settings"
-msgstr ""
+msgstr "निर्देश"
 
 #: src/app/webbrowser/Browser.qml:863
 msgid "View source"
-msgstr ""
+msgstr "देखें स्रोत"
 
 #: src/app/webbrowser/Browser.qml:876
 msgid "Save / Print to PDF"
-msgstr ""
+msgstr "बंद करो/डाउनलोड करो पीडीएफ"
 
 #: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
 msgid "Zoom"
-msgstr ""
+msgstr "ज़ूम"
 
 #: src/app/webbrowser/Browser.qml:904 src/app/webbrowser/SettingsPage.qml:140
 msgid "Set Desktop mode"
-msgstr ""
+msgstr "देश्टॉप मोड सेट करें"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
 #: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
 #, qt-format
 msgid "(%1)"
-msgstr ""
+msgstr "(%1) = (%1)"
 
 #: src/app/webbrowser/Browser.qml:1985
 msgid "the file is already in the downloads folder."
-msgstr ""
+msgstr "द डाउनलोड फ़ोल्डर में यह फ़ाइल पहले से ही है।"
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:83
 msgid ""
 "Choose an application to open this file or add it to the downloads folder."
 msgstr ""
+"चुनें एक ऐप को इस फ़ाइल को खोलने के लिए या डाउनलोड्स फोल्डर में इसको जोड़ने के लिए।"
 
 #: src/app/webbrowser/ContentDownloadDialog.qml:89
 msgid "Choose an application"
-msgstr ""
+msgstr "चुनें एक अनुप्रयोग"
 
 #: src/app/webbrowser/ExpandedHistoryView.qml:135
 #, qt-format
 msgid "%1 page"
 msgid_plural "%1 pages"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "पृष्ठ %1"
+msgstr[1] "पृष्ठ %1"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:26
 msgid "Last Visited"
-msgstr ""
+msgstr "अंतिम देखा"
 
 #: src/app/webbrowser/HistorySectionDelegate.qml:48
 #: src/app/webbrowser/HistoryViewWide.qml:258
 msgid "Yesterday"
-msgstr ""
+msgstr "कल"
 
 #: src/app/webbrowser/HistoryViewWide.qml:161
 msgid "search history"
-msgstr ""
+msgstr "अनुसंधान की इतिहास"
 
 #: src/app/webbrowser/HistoryViewWide.qml:242
 msgid "All History"
-msgstr ""
+msgstr "इतिहास का सभी"
 
 #: src/app/webbrowser/HistoryViewWide.qml:256
 #: src/app/webbrowser/HistoryViewWide.qml:343
 msgid "Today"
-msgstr ""
+msgstr "आज"
 
 #. TRANSLATORS: %1 refers to the current page’s title
 #: src/app/webbrowser/morph-browser.qml:109
 #: src/app/webcontainer/webapp-container.qml:76
 #, qt-format
 msgid "%1 - Morph Web Browser"
-msgstr ""
+msgstr "मॉर्फ वेब ब्राउज़र"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:41
 msgid "This is a private tab"
-msgstr ""
+msgstr "इस एक निजी टैबलिट है।"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:56
 msgid ""
 "Pages that you view in this tab won't appear in your browser history.\n"
 "Bookmarks you create will be preserved, however."
 msgstr ""
+"पृष्ठ जो आप इस टैब में देखते हैं, ब्राउज़र इतिहास में नहीं दिखाई देंगे।\n"
+"किताबों को बनाएंगी जिनका संचय होगा, हालांकि।"
 
 #: src/app/webbrowser/NewTabView.qml:142
 msgid "Less"
-msgstr ""
+msgstr "निम्न"
 
 #: src/app/webbrowser/NewTabView.qml:142
 msgid "More"
-msgstr ""
+msgstr "अधिक"
 
 #: src/app/webbrowser/NewTabView.qml:326
 #: src/app/webbrowser/NewTabViewWide.qml:138
 msgid "Top sites"
-msgstr ""
+msgstr "टॉप साइट्स"
 
 #: src/app/webbrowser/NewTabView.qml:357
 msgid "You haven't visited any site yet"
-msgstr ""
+msgstr "आप किसी भी साइट का दौरा नहीं कर चुके हैं"
 
 #: src/app/webbrowser/SadTab.qml:47
 msgid "The rendering process has been closed for this tab."
-msgstr ""
+msgstr "प्रेरक प्रक्रिया इस टैब के लिए बंद कर दी गई है।"
 
 #: src/app/webbrowser/SadTab.qml:60
 #, qt-format
 msgid "Something went wrong while displaying %1."
-msgstr ""
+msgstr "कुछ ऐसा गलत हो गया था जब सामग्री दिखाने के दौरान।"
 
 #: src/app/webbrowser/SadTab.qml:70
 msgid "Close tab"
-msgstr ""
+msgstr "बंद करें टेब"
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:70
 msgid "This site has insecure content"
-msgstr ""
+msgstr "इस साइट में अनसेफ कंटेंट है"
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:71
 msgid "Identity Not Verified"
-msgstr ""
+msgstr "अनिश्चितता के साथ पहचान निर्धारित नहीं हुई है"
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:79
 msgid "The identity of this website has not been verified."
-msgstr ""
+msgstr "इस वेबसाइट का पहचान पत्र स्थायित्व नहीं है।"
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:109
 #, qt-format
 msgid "You are connected to %1 via HTTPS. The certificate is valid."
 msgstr ""
+"आपसे %1 को HTTPS में जुड़ा हुआ है। सर्टिफिकेट वैध है।\n"
+"\n"
+"Note: I've used the phrase \"वैध है\" (va'id hai) instead of a direct English "
+"translation, as it's more natural in Hindi।"
 
 #: src/app/webbrowser/SettingsDeviceSelector.qml:42
 msgid "Default"
-msgstr ""
+msgstr "स्थापित"
 
 #: src/app/webbrowser/SettingsPage.qml:74
 #: src/app/webbrowser/SettingsPage.qml:277
 msgid "Search engine"
-msgstr ""
+msgstr "खोज इंजन"
 
 #: src/app/webbrowser/SettingsPage.qml:91
 #: src/app/webbrowser/SettingsPage.qml:504
-#, fuzzy
-#| msgid "Leave Page"
 msgid "New Tab Page"
-msgstr "पृष्ठ के बाहर जाएँ"
+msgstr "नई टैबलेट पृष्ठ"
 
 #: src/app/webbrowser/SettingsPage.qml:119
 msgid "Restore previous session at startup"
-msgstr ""
+msgstr "पिछले सत्र को शुरुआत में पुनर्स्थापित करें।"
 
 #: src/app/webbrowser/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
-msgstr ""
+msgstr "नॉन-एवेलेबिलिटी क्योंकि शुरुआत में निजी प्रारंभिक अवस्था में है"
 
 #: src/app/webbrowser/SettingsPage.qml:159
 #: src/app/webcontainer/WebappSettingsPage.qml:58
 msgid "Automatic fit to width"
-msgstr ""
+msgstr "अनुकूलित फिट टू वाइड"
 
 #: src/app/webbrowser/SettingsPage.qml:160
 #: src/app/webcontainer/WebappSettingsPage.qml:59
 msgid "Adjusts the width of the website to the window"
-msgstr ""
+msgstr "वेबसाइट के आकार को गुद्री में बदल दिया जाता है"
 
 #: src/app/webbrowser/SettingsPage.qml:179
 #: src/app/webcontainer/WebappSettingsPage.qml:78
 msgid "Default Zoom"
 msgstr ""
+"આધારિત અને સંપૂર્ણપણે ભાષાઓમાં વિશ્લેષણ કરતા, આ સ્ટ્રિંગ નું અનુવાદ એટલું હતું:\n"
+"\n"
+"પરિબળ"
 
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Load Images"
-msgstr ""
+msgstr "चार्ज करें इमेज"
 
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
-msgstr ""
+msgstr "अटोमेटिकली लोड करो तस्वीरें वेब पेज पर।"
 
 #: src/app/webbrowser/SettingsPage.qml:238
 #: src/app/webbrowser/SettingsPage.qml:320
 #: src/app/webcontainer/WebappSettingsPage.qml:151
 #: src/app/webcontainer/WebappSettingsPage.qml:192
 msgid "Privacy & permissions"
-msgstr ""
+msgstr "गोपनीयता और अनुमतियाँ"
 
 #: src/app/webbrowser/SettingsPage.qml:249
 msgid "Reset browser settings"
 msgstr ""
+"\"निर्माण सर्च इंगिज भाउट्स को फिर से सेट करें\"\n"
+"\n"
+"or more natural:\n"
+"\"सर्च इंगिज सर्टिफिकेट्स को रीसेट करें\" \n"
+"\n"
+"(For clarity: \"सर्च इंगिज\" translates to 'Search Engine')"
 
 #: src/app/webbrowser/SettingsPage.qml:334
 msgid "Start in private mode"
-msgstr ""
+msgstr "शुरू करें निजी modo में।"
 
 #: src/app/webbrowser/SettingsPage.qml:358
 #: src/app/webcontainer/WebappSettingsPage.qml:206
 msgid "Only allow browsing to whitelisted websites"
-msgstr ""
+msgstr "केवल प्रतिबंधित वेबसाइटों को ही ब्राउज़ करना अनुमति दें।"
 
 #: src/app/webbrowser/SettingsPage.qml:398
 #: src/app/webbrowser/SettingsPage.qml:589
 msgid "Camera & microphone"
-msgstr ""
+msgstr "कैमरा और माइक्रोफोन"
 
 #: src/app/webbrowser/SettingsPage.qml:407
 msgid "Clear browsing history"
-msgstr ""
+msgstr "স্পষ্ট ব্রাউজিং ইতিহাস মুছে ফেলা"
 
 #: src/app/webbrowser/SettingsPage.qml:411
 msgid "Clear browsing history?"
-msgstr ""
+msgstr "साफ़ सर्च रिकॉर्ड क्या करें?"
 
 #: src/app/webbrowser/SettingsPage.qml:419
 #: src/app/webcontainer/WebappSettingsPage.qml:247
 msgid "Clear cache"
-msgstr ""
+msgstr "साफ़ कैश करें"
 
 #: src/app/webbrowser/SettingsPage.qml:422
 #: src/app/webcontainer/WebappSettingsPage.qml:250
 msgid "Clear cache?"
-msgstr ""
+msgstr "साफ़ कैश चाहिए?"
 
 #: src/app/webbrowser/SettingsPage.qml:430
 #: src/app/webcontainer/WebappSettingsPage.qml:258
 msgid "Clear all cookies"
-msgstr ""
+msgstr "मिटाओ सर्वर स्थायी कुकीज"
 
 #: src/app/webbrowser/SettingsPage.qml:433
 #: src/app/webcontainer/WebappSettingsPage.qml:261
 msgid "Clear all Cookies?"
-msgstr ""
+msgstr "मिटाने की इच्छा वाले कुकीज़ को साफ करें?"
 
 #: src/app/webbrowser/SettingsPage.qml:516
 msgid "Custom homepage"
-msgstr ""
+msgstr "निर्देशिका"
 
 #: src/app/webbrowser/SettingsPage.qml:601
 msgid "Microphone"
-msgstr ""
+msgstr "माइक्रोफ़ोन"
 
 #: src/app/webbrowser/SettingsPage.qml:622
 msgid "Camera"
-msgstr ""
+msgstr "कैमरा"
 
 #: src/app/webbrowser/TabComponent.qml:285
 msgid "Swipe Up To Exit Full Screen"
-msgstr ""
+msgstr "स्वाइप आफ़ हैंडले से पूरा स्क्रीन बंद करें।"
 
 #: src/app/webbrowser/TabComponent.qml:286
 msgid "Press ESC To Exit Full Screen"
-msgstr ""
+msgstr "प्रेस ESC की टैप करने से पूर्ण स्क्रीन मोड विकल्प बंद हो जाएंगे।"
 
 #: src/app/webbrowser/TabPreview.qml:113
 msgid "Tap to view"
-msgstr ""
+msgstr "प्रत्येक टैप पर दिखाई देने वाली जानकारी को देखने के लिए।"
 
 #: src/app/webbrowser/TabsBar.qml:64 src/app/webbrowser/TabsList.qml:100
 msgid "New tab"
-msgstr ""
+msgstr "नई टैब"
 
 #: src/app/webbrowser/TabsBar.qml:99
 msgid "Move to New Window"
-msgstr ""
+msgstr "नया खंड में जाना"
 
 #: src/app/webbrowser/TabsBar.qml:116
 msgid "Close Tab"
-msgstr ""
+msgstr "बंद करें"
 
 #: src/app/webbrowser/UrlPreviewDelegate.qml:138
 msgid "Remove"
-msgstr ""
+msgstr "निकाल लें"
 
 #: src/app/webcontainer/AccountChooserDialog.qml:62
 msgid ""
 "No accounts have been linked to this webapp; press the item below to add an "
 "account."
 msgstr ""
+"कोई खाता इस वेबएप्प के साथ जोड़ा नहीं गया है; नीचे दिए गएアイटम पर दबाएं और एक खाता "
+"जोड़ें।"
 
 #: src/app/webcontainer/AccountChooserDialog.qml:78
 msgid "Add account"
-msgstr ""
+msgstr "अकाउंट जोड़ें"
 
 #: src/app/webcontainer/AccountChooserDialog.qml:87
 msgid "Don't use an account"
-msgstr ""
+msgstr "नहीं खाता उपयोग कर"
 
 #: src/app/webcontainer/AccountErrorScreen.qml:39
 msgid "Account error"
-msgstr ""
+msgstr "खाता विवाद"
 
 #: src/app/webcontainer/AccountsLogic.qml:63
 msgid ""
 "Account window could not be opened. You can only create one account at a "
 "time; please try again after closing all other account windows."
 msgstr ""
+"कस्टमर विंडो खोलने में असमर्थ है। एक बार केवल एक खाता बनाया जा सकता है; कृपया सभी अन्य "
+"खाता विंदुओं को बंद करके फिर से प्रयास करें।"
 
 #: src/app/webcontainer/AccountsLogic.qml:214
 msgid "Authentication failed"
-msgstr ""
+msgstr "पुनर्वार्द्धन नहीं हो सका"
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
 #: src/app/webcontainer/AccountsSplashScreen.qml:45
 #, qt-format
 msgid "<b>%1</b> needs to access your %2 online account."
-msgstr ""
+msgstr "<%1> को आपके %2 ऑनलाइन खाते तक पहुंच की आवश्यकता है।"
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
 #: src/app/webcontainer/AccountsSplashScreen.qml:55
 #, qt-format
 msgid "<b>%1</b> would like to access your %2 online account."
-msgstr ""
+msgstr "चेक करें कि आपका खाता सुरक्षित है और अपने लॉगिन विवरण को सुरक्षित रखें।"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:64
 msgid ""
 "Choose an account now, or skip this step and choose an online account later."
 msgstr ""
+"चुनें एक खाता अब या इस कदम को चुनने से पहले बंद करें और बाद में ऑनलाइन खाता चुनें।"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Close the app"
-msgstr ""
+msgstr "बंद करें।"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Skip"
-msgstr ""
+msgstr "नीचे देखें"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:84
 msgid "Choose account"
-msgstr ""
+msgstr "वैकल्पिक खाता चुनें"
 
 #: src/app/webcontainer/SadPage.qml:45
 msgid "Oops, something went wrong."
-msgstr ""
+msgstr "खेद है, कुछ गलत हुआ।"
 
 #: src/app/webcontainer/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
-msgstr ""
+msgstr "वेब ऐप कंटेनर सेटिंग्स"
 
 #: src/app/webcontainer/WebappSettingsPage.qml:163
 msgid "Reset webapp settings"
-msgstr ""
+msgstr "निर्माण वेबएप्स सेटिंग्स को रीसेट करें"
 
 #: src/app/webcontainer/WebViewImplOxide.qml:330
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
-msgstr ""
+msgstr "दोमेन %1 अब स्वीकृत है, कृपया पृष्ठ को फिर से लोड करें।"
 
 #: src/app/ZoomControls.qml:61
 msgid "Zoom Out"
-msgstr ""
+msgstr "જોડ (આઉટ)"
 
 #: src/app/ZoomControls.qml:68
 msgid "Reset"
-msgstr ""
+msgstr "रीसेट करना"
 
 #: src/app/ZoomControls.qml:68
 msgid "fit"
-msgstr ""
+msgstr "मेंदिमर्दन"
 
 #: src/app/ZoomControls.qml:75
 msgid "Zoom In"
 msgstr ""
+"મોડ વધારો\n"
+"\n"
+"or \n"
+"જીવંતિક (zoom) વધારો"
 
 #: src/app/ZoomControls.qml:100
 msgid "Current Zoom"
-msgstr ""
+msgstr "मौजूदा जूम"
 
 #: src/app/ZoomControls.qml:101
 msgid "domain"
-msgstr ""
+msgstr "दomen"
 
 #: src/app/ZoomControls.qml:101
 msgid "default"
-msgstr ""
+msgstr "स्थिर"
 
 #: src/app/ZoomControls.qml:101
 msgid "auto-fit"
-msgstr ""
+msgstr "स्वाभाविक"
 
 #: src/app/ZoomControls.qml:190
 msgid "Save Zoom"
-msgstr ""
+msgstr "बंद कर दिखाएं"
 
 #: src/app/ZoomControls.qml:192
 msgid "the current web app"
-msgstr ""
+msgstr "द हाली वेब ऐप"
 
 #: src/app/ZoomControls.qml:195
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
-msgstr ""
+msgstr "स्थानीय जालसाजी को रोकने के लिए न्यूनतम सुरक्षा मानकों का पालन करें।"
 
 #: src/app/ZoomControls.qml:197
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
 msgstr ""
+"दिए गए प्रारूप के हिसाब से हिंदी अनुवाद:\n"
+"\n"
+"वर्तमान जूम लेवल (%) %1%) वर्तमान डोमेन के लिए बचाया जा सकता है %2 में ।"
 
 #: src/app/ZoomControls.qml:199
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
 msgstr ""
+"ग्राहक निवेश नीति और कानूनी विनियमों के अनुसार आपको यह जानकारी प्रदान करना होगा।"
 
 #: src/app/ZoomControls.qml:206
 msgid "Save for domain"
-msgstr ""
+msgstr "ब्लॉक के लिए सेव करें"
 
 #: src/app/ZoomControls.qml:219
 msgid "Save as default"
-msgstr ""
+msgstr "बनाने के प्राथमिक विकल्प के रूप में सेव करें"
 
 #~ msgid ""
 #~ "Ubuntu suggests you check your network settings and try refreshing the "

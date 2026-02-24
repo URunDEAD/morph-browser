@@ -20,7 +20,7 @@ import QtQuick 2.4
 import QtQuick.Window 2.2
 import Lomiri.Components
 import Lomiri.Components.Popups
-import QtWebEngine 1.10
+import QtWebEngine
 import Morph.Web 0.1
 import webbrowsercommon.private 0.1
 import "actions" as Actions
@@ -291,11 +291,58 @@ WebView {
                     quickMenu.visible = true;
                 }
 
-                getContextMenuInfo(request.position.x, request.position.y)
+                getContextMenuInfo(
+                    request.position.x,
+                    request.position.y,
+                    /* ignoreBounds */ false
+                )
 
     }
 
-    function getContextMenuInfo(x, y) {
+
+    onTouchSelectionMenuRequested: function (request) {
+        request.accepted = true;
+
+        zoomMenu.visible = false;
+
+        contextMenuStartScroll.x = webview.scrollPosition.x;
+        contextMenuStartScroll.y = webview.scrollPosition.y;
+
+        let flags = request.touchSelectionCommandFlags;
+        
+        quickMenu.isContentEditable =
+            (flags & (TouchSelectionMenuRequest.Cut | TouchSelectionMenuRequest.Paste)) != 0;
+        quickMenu.canSelectAll = true; // TouchSelectionMenu is for selection, doh!
+        quickMenu.canPaste = (flags & TouchSelectionMenuRequest.Paste) != 0;
+
+        // Anything > 0 has the same meaning.
+        quickMenu.selectedTextLength =
+            (flags & (TouchSelectionMenuRequest.Cut | TouchSelectionMenuRequest.Copy)) ? 1 : 0;
+
+        quickMenu.textSelectionLevels = [];
+        quickMenu.textSelectionIsAtRootLevel = false;
+
+        // Include touch handle into the bounds. Even though we have a custom
+        // touch handle, its height is managed by Qt and eventually boils down
+        // to the height of Chromium's stock touch handle.
+        // https://github.com/qt/qtwebengine-chromium/blob/122-based/chromium/ui/touch_selection/vector_icons/text_selection_handle_left.icon
+        const touchHandleHeight = 32;
+        quickMenu.bounds = Qt.rect(
+            request.selectionBounds.x, request.selectionBounds.y,
+            request.selectionBounds.width,
+            request.selectionBounds.height + touchHandleHeight
+        );
+
+        quickMenu.visible = true;
+
+        getContextMenuInfo(
+            request.selectionBounds.x,
+            request.selectionBounds.y,
+            /* ignoreBounds */ true
+        );
+    }
+
+    function getContextMenuInfo(x, y, ignoreBounds) {
                 var commandGetContextMenuInfo = "
                 var morphElemContextMenu = document.elementFromPoint(%1, %2);
                 var morphContextMenuIsDocumentElement = false;
@@ -315,13 +362,19 @@ WebView {
                 ".arg(x / webview.zoomFactor).arg(y / webview.zoomFactor)
 
                 webview.runJavaScript(commandGetContextMenuInfo, function(result)
-                                                            {
-                                                               console.log("commandGetContextMenuInfo returned array " + JSON.stringify(result))
-                                                               quickMenu.bounds = Qt.rect(result[0] * webview.zoomFactor, result[1] * webview.zoomFactor, result[2] * webview.zoomFactor, result[3] * webview.zoomFactor)
-                                                               domElementOfContextMenu.isDocumentElement = result[4]
-                                                               domElementOfContextMenu.hasSelectMethod = result[5]
-                                                            }
-                                         );
+                {
+                    console.log("commandGetContextMenuInfo returned array " + JSON.stringify(result))
+                    if (!ignoreBounds) {
+                        quickMenu.bounds = Qt.rect(
+                            result[0] * webview.zoomFactor,
+                            result[1] * webview.zoomFactor,
+                            result[2] * webview.zoomFactor,
+                            result[3] * webview.zoomFactor
+                        )
+                    }
+                    domElementOfContextMenu.isDocumentElement = result[4]
+                    domElementOfContextMenu.hasSelectMethod = result[5]
+                });
    }
 
     ActionList {

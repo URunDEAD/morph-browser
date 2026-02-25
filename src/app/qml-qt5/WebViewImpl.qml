@@ -48,9 +48,6 @@ WebView {
 
     enableSelectOverride: true //let Morph.Web handle the dropdowns overlay
 
-    //property real contextMenux: contextMenuRequest.x + (webview.scrollPosition.x - contextMenuStartScroll.x)
-    //property real contextMenuy: contextMenuRequest.y + (webview.scrollPosition.y - contextMenuStartScroll.y)
-
     //enable using plugins, such as widevine or flash, to be installed separate
     settings.pluginsEnabled: true
 
@@ -266,7 +263,6 @@ WebView {
 
     onContextMenuRequested: function(request) {
 
-                contextMenuRequest = request;
                 //console.log("onContextMenuRequested, request: " + JSON.stringify(request))
                 request.accepted = true;
                 quickMenu.visible = false
@@ -274,6 +270,8 @@ WebView {
 
                 if (request.linkUrl.toString() || request.mediaType)
                 {
+                    contextMenuRequest = request;
+
                     var contextMenu = PopupUtils.open(Qt.resolvedUrl("webbrowser/ContextMenuMobile.qml"), this);
                     contextMenu.actions = contextualactions;
                     contextMenu.titleContent = request.linkUrl;
@@ -282,12 +280,21 @@ WebView {
                 {
                     contextMenuStartScroll.x = webview.scrollPosition.x;
                     contextMenuStartScroll.y = webview.scrollPosition.y;
-                    quickMenu.selectedTextLength = contextMenuRequest.selectedText.length
+
+                    quickMenu.isContentEditable = request.isContentEditable;
+                    quickMenu.canSelectAll = request.editFlags & ContextMenuRequest.CanSelectAll;
+                    quickMenu.canPaste = request.editFlags & ContextMenuRequest.CanPaste;
+
+                    quickMenu.selectedTextLength = request.selectedText.length
                     quickMenu.textSelectionLevels = []
                     quickMenu.textSelectionIsAtRootLevel = false
                     quickMenu.visible = true;
                 }
 
+                getContextMenuInfo(request.x, request.y)
+    }
+
+    function getContextMenuInfo(x, y) {
                 var commandGetContextMenuInfo = "
                 var morphElemContextMenu = document.elementFromPoint(%1, %2);
                 var morphContextMenuIsDocumentElement = false;
@@ -304,7 +311,7 @@ WebView {
                 //    false: context menu for a specific element (e.g. input, span, ...)
                 // [5] : boolean variable morphContextMenuElementHasSelectMethod
                 [morphElemContextMenu.offsetLeft, morphElemContextMenu.offsetTop, morphElemContextMenu.offsetWidth, morphElemContextMenu.offsetHeight, morphContextMenuIsDocumentElement, morphContextMenuElementHasSelectMethod];
-                ".arg(request.x / webview.zoomFactor).arg(request.y / webview.zoomFactor)
+                ".arg(x / webview.zoomFactor).arg(y / webview.zoomFactor)
 
                 webview.runJavaScript(commandGetContextMenuInfo, function(result)
                                                             {
@@ -448,6 +455,11 @@ WebView {
             readonly property bool fitsBelow: (bounds.y - contextMenuStartScroll.y / scaleFactor + bounds.height + handleHeight + spacing + height - (webViewScrollPosition.y - contextMenuStartScroll.y) / scaleFactor) <= webview.height - Qt.inputMethod.keyboardRectangle.height / scaleFactor
             readonly property bool fitsAbove: (bounds.y - contextMenuStartScroll.y / scaleFactor - spacing - height - (webViewScrollPosition.y - contextMenuStartScroll.y) / scaleFactor) >= 0
             readonly property real xCentered: bounds.x + (bounds.width - width) / 2
+
+            property bool isContentEditable: false
+            property bool canSelectAll: false
+            property bool canPaste: false
+
             property int selectedTextLength: 0
             // remember previous text selection levels in an first in - first out array
             property var textSelectionLevels: []
@@ -586,7 +598,7 @@ WebView {
                     // after one action we do no longer know if further Undo actions are possible
                     // if we keep the button enabled, the user can use Undo/Redo multiple times
                     enabled: visible // && (contextMenuRequest.editFlags & ContextMenuRequest.CanUndo)
-                    visible: contextMenuRequest && contextMenuRequest.isContentEditable
+                    visible: quickMenu.isContentEditable
                     onTriggered: {
                         webview.triggerWebAction(WebEngineView.Undo)
                         // ToDo: might there be a way to refresh / recreate the context menu again (for the same element) without user interaction,
@@ -601,7 +613,7 @@ WebView {
                     // with the editFlags we would have to close the context menu after one "Redo" step (desktop way)
                     // see comment for "Undo"
                     enabled: visible // && (contextMenuRequest.editFlags & ContextMenuRequest.CanRedo)
-                    visible: contextMenuRequest && contextMenuRequest.isContentEditable
+                    visible: quickMenu.isContentEditable
                     onTriggered: {
                         webview.triggerWebAction(WebEngineView.Redo)
                     }
@@ -611,7 +623,7 @@ WebView {
                     text: i18n.dtr('lomiri-ui-toolkit', "Select Less")
                     iconName: "edit-select-all"
                     enabled: visible && quickMenu.textSelectionLevels.length > 1
-                    visible: contextMenuRequest && ! domElementOfContextMenu.isDocumentElement && ! domElementOfContextMenu.hasSelectMethod
+                    visible: ! domElementOfContextMenu.isDocumentElement && ! domElementOfContextMenu.hasSelectMethod
                     onTriggered: touchSelectionActions.setTextSelection("morphElemContextMenu", quickMenu.textSelectionLevels[quickMenu.textSelectionLevels.length - 2])
                 }
                 Action {
@@ -620,7 +632,7 @@ WebView {
                                                                          :  i18n.dtr('lomiri-ui-toolkit', "Select More")
                     iconName: "edit-select-all"
                     enabled: visible && ! quickMenu.textSelectionIsAtRootLevel
-                    visible: contextMenuRequest && ! domElementOfContextMenu.isDocumentElement && ! domElementOfContextMenu.hasSelectMethod
+                    visible: ! domElementOfContextMenu.isDocumentElement && ! domElementOfContextMenu.hasSelectMethod
                     onTriggered: touchSelectionActions.extendSelectionUpTheDom("morphElemContextMenu")
                 }
                 Action {
@@ -628,7 +640,7 @@ WebView {
                     text: i18n.dtr('lomiri-ui-toolkit', "Select All")
                     iconName: "edit-select-all"
                     // can we make it so that it only appears for non-empty inputs ?
-                    enabled: contextMenuRequest && (contextMenuRequest.editFlags & ContextMenuRequest.CanSelectAll)
+                    enabled: quickMenu.canSelectAll
                     visible: enabled
                     onTriggered: {
                         // prevent creation of new context menu request
@@ -648,7 +660,7 @@ WebView {
                     name: "cut"
                     text: i18n.dtr('lomiri-ui-toolkit', "Cut")
                     iconName: "edit-cut"
-                    enabled: contextMenuRequest && contextMenuRequest.isContentEditable && quickMenu.selectedTextLength > 0
+                    enabled: quickMenu.isContentEditable && quickMenu.selectedTextLength > 0
                     visible: enabled
                     onTriggered: {
                        quickMenu.visible = false;
@@ -659,7 +671,7 @@ WebView {
                     name: "copy"
                     text: i18n.dtr('lomiri-ui-toolkit', "Copy")
                     iconName: "edit-copy"
-                    enabled: contextMenuRequest && quickMenu.selectedTextLength > 0
+                    enabled: quickMenu.selectedTextLength > 0
                     visible: enabled
                     onTriggered: {
                         quickMenu.visible = false;
@@ -670,7 +682,7 @@ WebView {
                     name: "paste"
                     text: i18n.dtr('lomiri-ui-toolkit', "Paste")
                     iconName: "edit-paste"
-                    enabled: contextMenuRequest && contextMenuRequest.isContentEditable && (contextMenuRequest.editFlags & ContextMenuRequest.CanPaste)
+                    enabled: quickMenu.isContentEditable && quickMenu.canPaste
                     visible: enabled
                     onTriggered: {
                         quickMenu.visible = false;
@@ -681,7 +693,7 @@ WebView {
                     name: "share"
                     text: i18n.dtr('lomiri-ui-toolkit', "Share")
                     iconName: "share"
-                    enabled: !isWebApp && browserTab.contentHandlerLoader && browserTab.contentHandlerLoader.status === Loader.Ready && contextMenuRequest && quickMenu.selectedTextLength > 0
+                    enabled: !isWebApp && browserTab.contentHandlerLoader && browserTab.contentHandlerLoader.status === Loader.Ready && quickMenu.selectedTextLength > 0
                     visible: enabled
                     onTriggered: webview.runJavaScript("window.getSelection().toString()", function(result) { browser.shareTextRequested(result) })
                 }

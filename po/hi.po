@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2026-02-20 16:27+0000\n"
+"PO-Revision-Date: 2026-03-02 15:09+0000\n"
 "Last-Translator: Satyaakam Goswami <satyaakam@gmail.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/hi/>\n"
@@ -146,15 +146,15 @@ msgstr "नया टैब खोलें"
 
 #: src/app/actions/OpenImageInNewTab.qml:22
 msgid "Open image in new tab"
-msgstr "अपने चित्र को नई टैब में खोलें।"
+msgstr "छवि को नए टैब में खोलें"
 
 #: src/app/actions/OpenLinkInBrowser.qml:22
 msgid "Open link in default browser"
-msgstr "खोलें लिंक डिफॉल्ट ब्राउज़र में।"
+msgstr "लिंक को डिफ़ॉल्ट ब्राउज़र में खोलें"
 
 #: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
 msgid "Open link in new background tab"
-msgstr "नया पृष्ठ खोलने के लिए नई बैकग्राउंड टैबलेट में खोलना।"
+msgstr "लिंक को नए बैकग्राउंड टैब में खोलें"
 
 #: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
 msgid "Open link in new private window"

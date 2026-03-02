@@ -26,6 +26,7 @@
 #include "session-utils.h"
 #include "url-pattern-utils.h"
 #include "webapp-container-helper.h"
+#include "widevine-plugin-helper.h"
 
 
 // Qt
@@ -538,6 +539,8 @@ int main(int argc, char** argv)
     /* Workaround QTBUG-85043 in UT-specific way. Other distro than UT
      * shouldn't be affected by this. */
     qputenv("QTWEBENGINE_DISABLE_TOUCH_SELECTION_MENU_UT", "1");
+    QByteArray chromiumFlags = qgetenv("QTWEBENGINE_CHROMIUM_FLAGS");
+    qputenv("QTWEBENGINE_CHROMIUM_FLAGS", chromiumFlags + (" --widevine-path=" + WidevinePluginHelper::widevineLibPath).toUtf8());
 
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);

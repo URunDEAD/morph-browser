@@ -28,6 +28,7 @@
 #include "text-search-filter-model.h"
 #include "tabs-model.h"
 #include "morph-browser.h"
+#include "widevine-plugin-helper.h"
 
 // Qt
 #include <QtCore/QCoreApplication>
@@ -41,6 +42,7 @@
 #include <QtQml/QtQml>
 #include <QtQuick/QQuickWindow>
 #include <QtCore/QLoggingCategory>
+#include <QSettings>
 
 #include <stdlib.h>
 
@@ -94,6 +96,12 @@ bool WebbrowserApp::initialize()
 
     if (BrowserApplication::initialize(filePath, QStringLiteral("morph-browser"))) {
         //QtWebEngine::initialize();
+
+        QSettings settings;
+        if (settings.value(WidevinePluginHelper::settingName, false).toBool()) {
+            QByteArray chromiumFlags = qgetenv("QTWEBENGINE_CHROMIUM_FLAGS");
+            qputenv("QTWEBENGINE_CHROMIUM_FLAGS", chromiumFlags + (" --widevine-path=" + WidevinePluginHelper::widevineLibPath).toUtf8());
+        }
 
         QStringList searchEnginesSearchPaths;
         searchEnginesSearchPaths << QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/searchengines";

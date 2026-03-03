@@ -18,7 +18,7 @@
 
 import QtQuick 2.5
 import QtQuick.Window 2.2
-import Qt5Compat.GraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects
 import Lomiri.SystemInfo
 import QtWebEngine 1.10
 import Qt.labs.settings 1.0

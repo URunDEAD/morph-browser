@@ -22,66 +22,24 @@ terms.
 
 ## Building
 
-The build system uses cmake. Please see debian/control for the complete list of
-build requirements.  To compile, simply invoke cmake and then make:
+The build system uses CMake. Please see [debian/control](debian/control) for the
+complete list of build requirements. To build and run a morph debug build with
+Qt6, run the following commands:
 
 ```sh
-mkdir build
-cd build
-cmake ..
-make
+cmake -S . -B build -DCLICK_MODE=ON -DENABLE_QT6=ON -DBUILD_TESTING=OFF -DCMAKE_BUILD_TYPE=Debug
+cmake --build build -j $(nproc)
+DESTDIR=install cmake --install build
+cd install
+./morph-browser
 ```
 
-The application can also be cross compiled for an ARM target on a X86 host.
-To do that, just pass this additional parameter to cmake:
+### Building with clickable
 
-```sh
-cmake -DCMAKE_TOOLCHAIN_FILE=cmake/ubuntu-arm-linux-gnueabihf.cmake .
-```
-
-### Building for Ubuntu Touch
-
-Use the [clickable](https://clickable-ut.dev/en/latest/) command line tool:
-
-```sh
-clickable
-```
-
-### Build with docker
-
-First we need to build the image
-
-```sh
-docker build -t ubports_xenial .
-```
-
-Then we can build the app
-
-```sh
-docker run --privileged -ti --rm -e DISPLAY=:0 -v /var/run/dbus:/var/run/dbus -v /tmp/.X11-unix:/tmp/.X11-unix -v `pwd`:/home/developer/ubports_build ubports_xenial bash -c "cmake . && make"
-```
-
-Now we can run the app
-
-```sh
-docker run --privileged -ti --rm -e DISPLAY=:0 -v /var/run/dbus:/var/run/dbus -v /tmp/.X11-unix:/tmp/.X11-unix -v `pwd`:/home/developer/ubports_build ubports_xenial bash -c "./src/app/webbrowser/webbrowser-app"
-```
-
-## Running
-
-webbrowser-app can be run from the development branch without the need to
-install any files. Just run:
-
-```sh
-./src/app/webbrowser/webbrowser-app
-```
-
-The executable accepts command line switches and parameters. To find out which,
-just run:
-
-```sh
-./src/app/webbrowser/webbrowser-app --help
-```
+As an alternative to setting up a build environment and running CMake commands
+manually, the [clickable](https://clickable-ut.dev/en/latest/) command line tool
+can be used to build morph with Qt5. For building morph with Qt6 and clickable,
+see [morph-browser-qt6-click](https://gitlab.com/ubports/development/apps/morph-browser-qt6-click).
 
 ## Unit tests
 

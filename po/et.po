@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2025-11-20 21:46+0000\n"
+"PO-Revision-Date: 2026-03-10 11:09+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
-"Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/"
-"morph-browser/et/>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/morph-"
+"browser/et/>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -692,10 +692,12 @@ msgid ""
 "You should not proceed, especially if you have never seen this warning "
 "before for this site."
 msgstr ""
+"Sa ei peaks jätkama, seda eriti siis, kui sa pole selles saidis varem "
+"sarnast hoiatust näinud."
 
 #: src/app/MediaAccessDialog.qml:39
 msgid "Permission"
-msgstr ""
+msgstr "Õigused"
 
 #: src/app/MediaAccessDialog.qml:46
 msgid "Allow this domain to access your camera and microphone?"
@@ -720,7 +722,7 @@ msgstr "Ei"
 
 #: src/app/PromptDialog.qml:25
 msgid "JavaScript Prompt"
-msgstr ""
+msgstr "JavaScripti viip"
 
 #: src/app/ProxyAuthenticationDialog.qml:22
 msgid "Proxy authentication required."
@@ -831,13 +833,13 @@ msgstr ""
 #: src/app/webbrowser/Browser.qml:269
 #: src/app/webcontainer/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
-msgstr ""
+msgstr "Lubatud domeen"
 
 #: src/app/webbrowser/Browser.qml:270
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
-msgstr ""
+msgstr "%1 domeen on nüüd lubatud ja lehe järgmisel laadimisel on ta kasutatav."
 
 #: src/app/webbrowser/Browser.qml:660
 msgid "Done"
@@ -947,37 +949,37 @@ msgstr ""
 
 #: src/app/webbrowser/NewTabView.qml:142
 msgid "Less"
-msgstr ""
+msgstr "Vähem"
 
 #: src/app/webbrowser/NewTabView.qml:142
 msgid "More"
-msgstr ""
+msgstr "Rohkem"
 
 #: src/app/webbrowser/NewTabView.qml:326
 #: src/app/webbrowser/NewTabViewWide.qml:138
 msgid "Top sites"
-msgstr ""
+msgstr "Populaarsemad saidid"
 
 #: src/app/webbrowser/NewTabView.qml:357
 msgid "You haven't visited any site yet"
-msgstr ""
+msgstr "Sa pole veel ühtegi saiti vaadanud"
 
 #: src/app/webbrowser/SadTab.qml:47
 msgid "The rendering process has been closed for this tab."
-msgstr ""
+msgstr "Selle vahekaardi puhul on renderdamine (esitusvalmendus) lõppenud."
 
 #: src/app/webbrowser/SadTab.qml:60
 #, qt-format
 msgid "Something went wrong while displaying %1."
-msgstr ""
+msgstr "%1 kuvamisel läks midagi valesti."
 
 #: src/app/webbrowser/SadTab.qml:70
 msgid "Close tab"
-msgstr ""
+msgstr "Sulge vahekaart"
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:70
 msgid "This site has insecure content"
-msgstr ""
+msgstr "Selles veebisaidis on ebaturvalist sisu"
 
 #: src/app/webbrowser/SecurityCertificatePopover.qml:71
 msgid "Identity Not Verified"
@@ -1017,12 +1019,12 @@ msgstr ""
 #: src/app/webbrowser/SettingsPage.qml:159
 #: src/app/webcontainer/WebappSettingsPage.qml:58
 msgid "Automatic fit to width"
-msgstr ""
+msgstr "Kohenda laiust automaatselt"
 
 #: src/app/webbrowser/SettingsPage.qml:160
 #: src/app/webcontainer/WebappSettingsPage.qml:59
 msgid "Adjusts the width of the website to the window"
-msgstr ""
+msgstr "Kohendab veebisaidi laiuse aknale sobivaks"
 
 #: src/app/webbrowser/SettingsPage.qml:179
 #: src/app/webcontainer/WebappSettingsPage.qml:78
@@ -1057,7 +1059,7 @@ msgstr "Käivita privaatses režiimis"
 #: src/app/webbrowser/SettingsPage.qml:358
 #: src/app/webcontainer/WebappSettingsPage.qml:206
 msgid "Only allow browsing to whitelisted websites"
-msgstr ""
+msgstr "Võimalda veebisirvimine vaid eelnevalt lubatud saitides"
 
 #: src/app/webbrowser/SettingsPage.qml:398
 #: src/app/webbrowser/SettingsPage.qml:589
@@ -1066,26 +1068,26 @@ msgstr "Kaamera ja mikrofon"
 
 #: src/app/webbrowser/SettingsPage.qml:407
 msgid "Clear browsing history"
-msgstr ""
+msgstr "Kustuta veebisrirvimise ajalugu"
 
 #: src/app/webbrowser/SettingsPage.qml:411
 msgid "Clear browsing history?"
-msgstr ""
+msgstr "Kas kustutad veebisrirvimise ajaloo?"
 
 #: src/app/webbrowser/SettingsPage.qml:419
 #: src/app/webcontainer/WebappSettingsPage.qml:247
 msgid "Clear cache"
-msgstr ""
+msgstr "Kustuta vahemälu"
 
 #: src/app/webbrowser/SettingsPage.qml:422
 #: src/app/webcontainer/WebappSettingsPage.qml:250
 msgid "Clear cache?"
-msgstr ""
+msgstr "Kas kustutad vahemälu?"
 
 #: src/app/webbrowser/SettingsPage.qml:430
 #: src/app/webcontainer/WebappSettingsPage.qml:258
 msgid "Clear all cookies"
-msgstr ""
+msgstr "Eemalda kõik küpsised"
 
 #: src/app/webbrowser/SettingsPage.qml:433
 #: src/app/webcontainer/WebappSettingsPage.qml:261
@@ -1114,7 +1116,7 @@ msgstr "Täisekraanivaatest väljumiseks klõpsa ESC-klahvi"
 
 #: src/app/webbrowser/TabPreview.qml:113
 msgid "Tap to view"
-msgstr ""
+msgstr "Vaatamiseks klõpsa"
 
 #: src/app/webbrowser/TabsBar.qml:64 src/app/webbrowser/TabsList.qml:100
 msgid "New tab"

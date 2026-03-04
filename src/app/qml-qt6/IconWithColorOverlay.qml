@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.6
-import Qt5Compat.GraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects
 import Lomiri.Components
 
 Item {

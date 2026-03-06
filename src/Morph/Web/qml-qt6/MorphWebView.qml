@@ -76,7 +76,7 @@ WebEngineView {
 
     Component.onCompleted: {
         var selectOverrideScript = WebEngine.script();
-        selectOverrideScript.sourceUrl = enableSelectOverride && (screenDiagonal > 0 && screenDiagonal < 190)  ? Qt.resolvedUrl("select_overrides.js") : "";
+        selectOverrideScript.sourceUrl = enableSelectOverride && (screenDiagonal > 0 && screenDiagonal < 190)  ? Qt.resolvedUrl("assets/select_overrides.js") : "";
         selectOverrideScript.runsOnSubframes = true;
         selectOverrideScript.injectionPoint = WebEngineScript.DocumentCreation;
         selectOverrideScript.worldId = WebEngineScript.MainWorld;

@@ -1,4 +1,5 @@
 import QtQuick 2.4
+import QtQuick.Layouts
 import Lomiri.Components                  // For LomiriShape.
 import Lomiri.Components.Popups as Popups // For saveDialog.
 import QtWebEngine 1.7
@@ -28,7 +29,7 @@ LomiriShape {
         anchors.fill: menu
     }
 
-    Row {
+    RowLayout {
         id: zoomActionsRow
         x: parent.padding
         y: parent.padding
@@ -38,10 +39,7 @@ LomiriShape {
             model: zoomActions.children
             AbstractButton {
                 objectName: "pageAction_" + action.name
-                anchors {
-                    top: parent.top
-                    bottom: parent.bottom
-                }
+                Layout.fillHeight: true
                 width: Math.max(units.gu(4), implicitWidth) + units.gu(1)
                 action: modelData
                 styleName: "ToolbarButtonStyle"

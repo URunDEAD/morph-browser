@@ -21,7 +21,7 @@ import QtQuick.Window 2.2
 import Qt5Compat.GraphicalEffects
 import Lomiri.SystemInfo
 import QtWebEngine 1.10
-import Qt.labs.settings 1.0
+import QtCore
 import Morph.Web 0.1
 import Lomiri.Components
 import Lomiri.Components.Popups

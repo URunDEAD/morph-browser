@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2026-03-02 15:09+0000\n"
+"PO-Revision-Date: 2026-03-10 11:09+0000\n"
 "Last-Translator: Satyaakam Goswami <satyaakam@gmail.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/hi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16.1-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -158,15 +158,15 @@ msgstr "लिंक को नए बैकग्राउंड टैब म�
 
 #: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
 msgid "Open link in new private window"
-msgstr "खोलें लिंक नया प्राइवेट विंडो में।"
+msgstr "लिंक को नई निजी विंडो में खोलें"
 
 #: src/app/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
-msgstr "नया टैब में लिंक खोलें।"
+msgstr "नए टैब में लिंक खोलें"
 
 #: src/app/actions/OpenLinkInNewWindow.qml:22
 msgid "Open link in new window"
-msgstr "खुला लिंक नई जान्छक में खोलें।"
+msgstr "नई विंडो में लिंक खोलें"
 
 #: src/app/actions/OpenVideoInNewTab.qml:22
 msgid "Open video in new tab"
@@ -189,7 +189,7 @@ msgstr "पुनर्लोड"
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/actions/Reload.qml:26
 msgid "Leave Page"
-msgstr "पृष्ठ छोड़ दो।"
+msgstr "पेज छोड़ें"
 
 #: src/app/actions/SaveImage.qml:22
 msgid "Save image"
@@ -201,7 +201,7 @@ msgstr "बैकअप लिंक सेव करें"
 
 #: src/app/actions/SaveVideo.qml:22
 msgid "Save video"
-msgstr "बखIRA वीडियो"
+msgstr "वीडियो सेव करें"
 
 #: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
 #: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
@@ -236,21 +236,16 @@ msgstr "नियमित रूप से उपयोग किए जान�
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr "द '%1' वेबसाइट यह URL बाहरी ब्राउज़र के भीतर खोलना चाहती है।"
+msgstr "'%1' वेबसाइट इस URL को वेब ब्राउज़र के बाहर खोलना चाहती है:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr "ओपन करें ये यूआरएल सिस्टम ऐप के साथ यदि संभव हो तो"
+msgstr "यदि संभव हो तो इस URL को किसी सिस्टम ऐप से खोलें ?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
-msgstr ""
-"Yaad rakhen.\n"
-"\n"
-"(Note: \"Remember\" is used instead of \"Decision\" because \"decision\" "
-"typically implies a choice or action taken, whereas \"remember\" is a more "
-"natural translation for the phrase.)"
+msgstr "निर्णय याद रखें"
 
 #: src/app/AllowCustomSchemesDialog.qml:50
 #: src/app/GeolocationPermissionRequest.qml:51
@@ -352,7 +347,7 @@ msgstr ""
 #: src/app/CertificateVerificationDialog.qml:39
 #: src/app/InvalidCertificateErrorSheet.qml:160
 msgid "Proceed anyway"
-msgstr "सब कुछ जल्दी करें।"
+msgstr "सब कुछ जल्दी करें"
 
 #: src/app/ColorSelectDialog.qml:25
 msgid "Select Color"
@@ -395,12 +390,7 @@ msgstr "मिटाएं"
 
 #: src/app/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
-msgstr ""
-"नया उपयोगकर्ता\n"
-"\n"
-"(or)\n"
-"\n"
-"नया उपयोगकर्ता एजेंट"
+msgstr "नया उपयोगकर्ता एजेंट"
 
 #: src/app/CustomUserAgentsPage.qml:161
 msgid "Edit User Agent"
@@ -422,10 +412,7 @@ msgstr "दोमेन जोड़"
 #: src/app/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
-msgstr ""
-"प्रामाणिक हिंदी में अनुवाद:\n"
-"\n"
-"डोमेन का नाम दर्ज करें, उदाहरण के लिए - example.com (उपसंस्थान शामिल नहीं होंगे।"
+msgstr "डोमेन का नाम दर्ज करें, उदाहरण के लिए.com (subdomains हटाया जाएगा)।"
 
 #: src/app/DomainPermissionsPage.qml:222
 msgid "Not Set"
@@ -450,10 +437,7 @@ msgstr "नेटवर्क सेटिंग्स"
 
 #: src/app/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
-msgstr ""
-"प्रामाणिक हिंदी में अनुवाद:\n"
-"\n"
-"क्षेत्र का नाम दर्ज करें, उदाहरण के लिए म.उदाहरण.कम"
+msgstr "डोमेन का नाम दर्ज करें, उदाहरण के लिए m.example.com"
 
 #: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
@@ -495,10 +479,7 @@ msgstr "कोई डोमेन विशिष्ट सेटिंगें
 #: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
-msgstr ""
-"%१%\n"
-"\n"
-"(Note: In Devanagari script, the number \"1\" is represented as \"१\")"
+msgstr "%१%"
 
 #: src/app/DownloadDelegate.qml:170
 msgid "Download failed"
@@ -570,15 +551,7 @@ msgstr "उपयोगकर्ता नाम यह पहले ही ल�
 
 #: src/app/EditCustomUserAgentDialog.qml:48
 msgid "Add the name for the user agent"
-msgstr ""
-"I can't translate the UI string directly without seeing its content. Could "
-"you please provide the UI string you'd like me to translate? Additionally, "
-"who is the intended audience for this translation? \n"
-"\n"
-"Once I have the content, I'll do my best to translate it into natural Hindi "
-"(Devanagari) with maximum coverage and English words when necessary.\n"
-"\n"
-"Please paste the UI string, and I'll get started!"
+msgstr "उपयोगकर्ता एजेंट के लिए नाम जोड़ें"
 
 #: src/app/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
@@ -648,7 +621,9 @@ msgstr "सीखने के लिए अधिक"
 msgid ""
 "Serial number:\n"
 "%1"
-msgstr "सीरियल नंबर: %1"
+msgstr ""
+"सीरियल नंबर: \n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject display name
 #: src/app/InvalidCertificateErrorSheet.qml:94
@@ -666,7 +641,9 @@ msgstr ""
 msgid ""
 "Subject address:\n"
 "%1"
-msgstr "विषय संबंधित पता: %1"
+msgstr ""
+"विषय संबंधित पता:\n"
+" %1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer display name
 #: src/app/InvalidCertificateErrorSheet.qml:113
@@ -675,8 +652,7 @@ msgid ""
 "Issuer:\n"
 "%1"
 msgstr ""
-"ਇਸੁਅਰ ਦਾ:\n"
-"\n"
+"जारीकर्ता:\n"
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer's address
@@ -685,7 +661,9 @@ msgstr ""
 msgid ""
 "Issuer address:\n"
 "%1"
-msgstr "आधिकारिक पता: %1"
+msgstr ""
+"जारीकर्ता पता:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's start date
 #: src/app/InvalidCertificateErrorSheet.qml:132
@@ -693,7 +671,9 @@ msgstr "आधिकारिक पता: %1"
 msgid ""
 "Valid from:\n"
 "%1"
-msgstr "प्रभावी है: %1"
+msgstr ""
+"प्रभावी है: \n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's expiry date
 #: src/app/InvalidCertificateErrorSheet.qml:139
@@ -701,7 +681,9 @@ msgstr "प्रभावी है: %1"
 msgid ""
 "Valid until:\n"
 "%1"
-msgstr "ਵੱਲ ਤਕ: %1"
+msgstr ""
+"जब तक मान्य:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's SHA1 fingerprint
 #: src/app/InvalidCertificateErrorSheet.qml:146
@@ -731,11 +713,7 @@ msgstr "अपने कैमरा और माइक्रोफोन क�
 
 #: src/app/MediaAccessDialog.qml:47
 msgid "Allow this domain to access your camera?"
-msgstr ""
-"अपने कैमरे तक पहुंच प्रदान करें?\n"
-"\n"
-"(Note: I've used a natural Hindi translation, but kept English words like "
-"\"camera\" intact for clarity)"
+msgstr "इस डोमेन को अपने कैमरे तक पहुंचने की अनुमति देता है?"
 
 #: src/app/MediaAccessDialog.qml:48
 msgid "Allow this domain to access your microphone?"
@@ -752,12 +730,7 @@ msgstr "नहीं"
 
 #: src/app/PromptDialog.qml:25
 msgid "JavaScript Prompt"
-msgstr ""
-"जावा प्रोम्प्ट\n"
-"\n"
-"Note: I've used the Devanagari script to translate the UI string to Hindi. "
-"However, in some cases, English words are necessary for clarity, which is "
-"why they have been included in the translation."
+msgstr "जावा प्रोम्प्ट"
 
 #: src/app/ProxyAuthenticationDialog.qml:22
 msgid "Proxy authentication required."
@@ -792,16 +765,7 @@ msgstr "बचाएं के पीडीएफ में सेव करे�
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
-"\"सूची से हटाना\"\n"
-"\n"
-"OR \n"
-"\n"
-"\"सूची को हटाओ\"\n"
-"\n"
-"Note: The first option is more literal translation of \"remove from list\", "
-"while the second option uses a more common Hindi idiom \"हटाओ\" which means "
-"\"do it yourself\" or \"take action\"."
+msgstr "सूची से निकालें"
 
 #: src/app/webbrowser/AddressBar.qml:287
 msgid "find in page"
@@ -1040,11 +1004,7 @@ msgstr "इस वेबसाइट का पहचान पत्र स्�
 #: src/app/webbrowser/SecurityCertificatePopover.qml:109
 #, qt-format
 msgid "You are connected to %1 via HTTPS. The certificate is valid."
-msgstr ""
-"आपसे %1 को HTTPS में जुड़ा हुआ है। सर्टिफिकेट वैध है।\n"
-"\n"
-"Note: I've used the phrase \"वैध है\" (va'id hai) instead of a direct English "
-"translation, as it's more natural in Hindi।"
+msgstr "आप HTTPS के माध्यम से %1 से जुड़े हुए हैं। प्रमाण पत्र मान्य है।।"
 
 #: src/app/webbrowser/SettingsDeviceSelector.qml:42
 msgid "Default"
@@ -1081,10 +1041,7 @@ msgstr "वेबसाइट के आकार को गुद्री म�
 #: src/app/webbrowser/SettingsPage.qml:179
 #: src/app/webcontainer/WebappSettingsPage.qml:78
 msgid "Default Zoom"
-msgstr ""
-"આધારિત અને સંપૂર્ણપણે ભાષાઓમાં વિશ્લેષણ કરતા, આ સ્ટ્રિંગ નું અનુવાદ એટલું હતું:\n"
-"\n"
-"પરિબળ"
+msgstr "डिफ़ॉल्ट ज़ूम"
 
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
@@ -1105,13 +1062,7 @@ msgstr "गोपनीयता और अनुमतियाँ"
 
 #: src/app/webbrowser/SettingsPage.qml:249
 msgid "Reset browser settings"
-msgstr ""
-"\"निर्माण सर्च इंगिज भाउट्स को फिर से सेट करें\"\n"
-"\n"
-"or more natural:\n"
-"\"सर्च इंगिज सर्टिफिकेट्स को रीसेट करें\" \n"
-"\n"
-"(For clarity: \"सर्च इंगिज\" translates to 'Search Engine')"
+msgstr "ब्राउज़र सेटिंग्स को रीसेट करें"
 
 #: src/app/webbrowser/SettingsPage.qml:334
 msgid "Start in private mode"
@@ -1231,13 +1182,13 @@ msgstr "पुनर्वार्द्धन नहीं हो सका"
 #: src/app/webcontainer/AccountsSplashScreen.qml:45
 #, qt-format
 msgid "<b>%1</b> needs to access your %2 online account."
-msgstr "<%1> को आपके %2 ऑनलाइन खाते तक पहुंच की आवश्यकता है।"
+msgstr "<b>%1</b> को आपके %2 ऑनलाइन खाते तक पहुंच की आवश्यकता है।"
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
 #: src/app/webcontainer/AccountsSplashScreen.qml:55
 #, qt-format
 msgid "<b>%1</b> would like to access your %2 online account."
-msgstr "चेक करें कि आपका खाता सुरक्षित है और अपने लॉगिन विवरण को सुरक्षित रखें।"
+msgstr "<b>%1>/b> आपके %2 ऑनलाइन खाते तक पहुंचना चाहेंगे"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:64
 msgid ""
@@ -1288,11 +1239,7 @@ msgstr "मेंदिमर्दन"
 
 #: src/app/ZoomControls.qml:75
 msgid "Zoom In"
-msgstr ""
-"મોડ વધારો\n"
-"\n"
-"or \n"
-"જીવંતિક (zoom) વધારો"
+msgstr "ज़ूम इन"
 
 #: src/app/ZoomControls.qml:100
 msgid "Current Zoom"
@@ -1329,9 +1276,7 @@ msgstr "स्थानीय जालसाजी को रोकने क�
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
 msgstr ""
-"दिए गए प्रारूप के हिसाब से हिंदी अनुवाद:\n"
-"\n"
-"वर्तमान जूम लेवल (%) %1%) वर्तमान डोमेन के लिए बचाया जा सकता है %2 में ।"
+"वर्तमान ज़ूम स्तर (%1%) को वर्तमान डोमेन के लिए %2 में बचाया जा सकता है।।"
 
 #: src/app/ZoomControls.qml:199
 #, qt-format

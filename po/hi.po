@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2026-03-11 04:18+0000\n"
+"PO-Revision-Date: 2026-03-11 21:29+0000\n"
 "Last-Translator: Satyaakam Goswami <satyaakam@gmail.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/hi/>\n"
@@ -369,7 +369,7 @@ msgstr "फ़ाइल नाम: %1"
 #: src/app/ContentExportDialog.qml:91
 #: src/app/webcontainer/AccountErrorScreen.qml:50
 msgid "Close"
-msgstr "बंद कर दें।"
+msgstr "बंद"
 
 #: src/app/ContentExportDialog.qml:100
 msgid "Open link in browser"
@@ -441,7 +441,7 @@ msgstr "डोमेन का नाम दर्ज करें, उदाह
 
 #: src/app/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
-msgstr "अन्य ऐप्स चलाने की अनुमति दी गई है।"
+msgstr "अन्य एप्लिकेशन लॉन्च करने की अनुमति देता है"
 
 #: src/app/DomainSettingsPage.qml:226
 msgid "access your location"

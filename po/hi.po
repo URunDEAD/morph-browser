@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2026-03-10 11:09+0000\n"
+"PO-Revision-Date: 2026-03-11 04:18+0000\n"
 "Last-Translator: Satyaakam Goswami <satyaakam@gmail.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/hi/>\n"
@@ -493,7 +493,7 @@ msgstr "अज्ञात"
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr "%१/स"
+msgstr "%1/स"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
 msgid "Delete File"
@@ -574,7 +574,7 @@ msgstr "यह स्पष्ट है कि आप देखने में
 #: src/app/ErrorSheet.qml:56
 #, qt-format
 msgid "Error: %1"
-msgstr "अपेक्षित प्रसंस्करण अथवा डेटा नहीं मिला।"
+msgstr "त्रुटि: %1"
 
 #: src/app/ErrorSheet.qml:62 src/app/InvalidCertificateErrorSheet.qml:173
 msgid "Back to safety"
@@ -717,8 +717,7 @@ msgstr "इस डोमेन को अपने कैमरे तक पह
 
 #: src/app/MediaAccessDialog.qml:48
 msgid "Allow this domain to access your microphone?"
-msgstr ""
-"परतंत्रित करने की अनुमति देने के लिए इस डोमेन तक माइक्रोफोन का स्वागत करें।"
+msgstr "इस डोमेन को अपने माइक्रोफोन तक पहुंचने की अनुमति देता है?"
 
 #: src/app/MediaAccessDialog.qml:77
 msgid "Yes"
@@ -895,7 +894,7 @@ msgstr "देश्टॉप मोड सेट करें"
 #: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
 #, qt-format
 msgid "(%1)"
-msgstr "(%1) = (%1)"
+msgstr "(X1X)"
 
 #: src/app/webbrowser/Browser.qml:1985
 msgid "the file is already in the downloads folder."
@@ -945,7 +944,7 @@ msgstr "आज"
 #: src/app/webcontainer/webapp-container.qml:76
 #, qt-format
 msgid "%1 - Morph Web Browser"
-msgstr "मॉर्फ वेब ब्राउज़र"
+msgstr "%1 - Morph Web Browser"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:41
 msgid "This is a private tab"
@@ -983,7 +982,7 @@ msgstr "प्रेरक प्रक्रिया इस टैब के �
 #: src/app/webbrowser/SadTab.qml:60
 #, qt-format
 msgid "Something went wrong while displaying %1."
-msgstr "कुछ ऐसा गलत हो गया था जब सामग्री दिखाने के दौरान।"
+msgstr "%1 प्रदर्शित करते समय कुछ गलत हो गया।।"
 
 #: src/app/webbrowser/SadTab.qml:70
 msgid "Close tab"
@@ -1270,7 +1269,9 @@ msgstr "द हाली वेब ऐप"
 msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
-msgstr "स्थानीय जालसाजी को रोकने के लिए न्यूनतम सुरक्षा मानकों का पालन करें।"
+msgstr ""
+"वर्तमान ज़ूम स्तर (%1%) को वर्तमान डोमेन के लिए या डिफ़ॉल्ट ज़ूम स्तर के रूप में %2 में बचाया "
+"जा सकता है।।"
 
 #: src/app/ZoomControls.qml:197
 #, qt-format
@@ -1283,7 +1284,7 @@ msgstr ""
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
 msgstr ""
-"ग्राहक निवेश नीति और कानूनी विनियमों के अनुसार आपको यह जानकारी प्रदान करना होगा।"
+"वर्तमान ज़ूम स्तर (%1%) को %2 में डिफ़ॉल्ट ज़ूम स्तर के रूप में बचाया जा सकता है।।"
 
 #: src/app/ZoomControls.qml:206
 msgid "Save for domain"

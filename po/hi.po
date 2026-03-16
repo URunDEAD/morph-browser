@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2026-03-11 21:29+0000\n"
+"PO-Revision-Date: 2026-03-23 04:09+0000\n"
 "Last-Translator: Satyaakam Goswami <satyaakam@gmail.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/hi/>\n"
@@ -780,7 +780,7 @@ msgstr "पेस्ट करें और जाने"
 
 #: src/app/webbrowser/BookmarkOptions.qml:66
 msgid "Bookmark Added"
-msgstr "दिस्ता जोड़ा गया है।"
+msgstr "बुकमार्क जोड़ा गया"
 
 #. TRANSLATORS: Field where the title of bookmarked URL can be changed
 #: src/app/webbrowser/BookmarkOptions.qml:71
@@ -948,7 +948,7 @@ msgstr "%1 - Morph Web Browser"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:41
 msgid "This is a private tab"
-msgstr "इस एक निजी टैबलिट है।"
+msgstr "यह एक निजी टैब है"
 
 #: src/app/webbrowser/NewPrivateTabView.qml:56
 msgid ""
@@ -1021,7 +1021,7 @@ msgstr "नई टैबलेट पृष्ठ"
 
 #: src/app/webbrowser/SettingsPage.qml:119
 msgid "Restore previous session at startup"
-msgstr "पिछले सत्र को शुरुआत में पुनर्स्थापित करें।"
+msgstr "स्टार्टअप पर पिछले सत्र को पुनर्स्थापित करें"
 
 #: src/app/webbrowser/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
@@ -1050,7 +1050,7 @@ msgstr "चार्ज करें इमेज"
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
-msgstr "अटोमेटिकली लोड करो तस्वीरें वेब पेज पर।"
+msgstr "स्वचालित रूप से वेब पृष्ठों पर छवियों को लोड करें"
 
 #: src/app/webbrowser/SettingsPage.qml:238
 #: src/app/webbrowser/SettingsPage.qml:320
@@ -1065,12 +1065,12 @@ msgstr "ब्राउज़र सेटिंग्स को रीसेट
 
 #: src/app/webbrowser/SettingsPage.qml:334
 msgid "Start in private mode"
-msgstr "शुरू करें निजी modo में।"
+msgstr "निजी मोड में शुरू"
 
 #: src/app/webbrowser/SettingsPage.qml:358
 #: src/app/webcontainer/WebappSettingsPage.qml:206
 msgid "Only allow browsing to whitelisted websites"
-msgstr "केवल प्रतिबंधित वेबसाइटों को ही ब्राउज़ करना अनुमति दें।"
+msgstr "केवल श्वेतसूचीबद्ध वेबसाइटों को ब्राउज़ करने की अनुमति देता है"
 
 #: src/app/webbrowser/SettingsPage.qml:398
 #: src/app/webbrowser/SettingsPage.qml:589
@@ -1119,15 +1119,15 @@ msgstr "कैमरा"
 
 #: src/app/webbrowser/TabComponent.qml:285
 msgid "Swipe Up To Exit Full Screen"
-msgstr "स्वाइप आफ़ हैंडले से पूरा स्क्रीन बंद करें।"
+msgstr "पूर्ण स्क्रीन से बाहर निकलने के लिए स्वाइप करें"
 
 #: src/app/webbrowser/TabComponent.qml:286
 msgid "Press ESC To Exit Full Screen"
-msgstr "प्रेस ESC की टैप करने से पूर्ण स्क्रीन मोड विकल्प बंद हो जाएंगे।"
+msgstr "प्रेस ESC टू एग्जिट फुल स्क्रीन"
 
 #: src/app/webbrowser/TabPreview.qml:113
 msgid "Tap to view"
-msgstr "प्रत्येक टैप पर दिखाई देने वाली जानकारी को देखने के लिए।"
+msgstr "देखने के लिए टैप करें"
 
 #: src/app/webbrowser/TabsBar.qml:64 src/app/webbrowser/TabsList.qml:100
 msgid "New tab"
@@ -1197,7 +1197,7 @@ msgstr ""
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Close the app"
-msgstr "बंद करें।"
+msgstr "ऐप बंद करें"
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Skip"

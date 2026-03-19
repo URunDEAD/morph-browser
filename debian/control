@@ -104,7 +104,7 @@ Depends: ${misc:Depends},
          qml-module-lomiri-action,
          qml-module-lomiri-onlineaccounts-client,
          morph-browser (= ${binary:Version}),
-Conflicts: ubuntu-html5-container, webapp-container
+Conflicts: ubuntu-html5-container, webapp-container, morph-webapp-container-qt6
 Replaces: ubuntu-html5-container, webapp-container
 Description: Morph web applications container
  A lightweight webapp container tailored for Ubuntu Touch, based on the Qt WebEngine
@@ -163,27 +163,29 @@ Description: Web Browser for Ubuntu Touch (Qt 6 Version)
  Lightweight web browser tailored for Ubuntu Touch, based on the Qt WebEngine
  and using the Lomiri UI components.
 
-#Package: morph-webapp-container-qt6
-#Architecture: any
-#Multi-Arch: foreign
-#Depends: ${misc:Depends},
-#         ${shlibs:Depends},
-#         fonts-liberation,
-#         libqt6sql6-sqlite
-#         libqt6webenginecore6,
-#         libqt6webengine6-data,
-#         qml6-module-qtquick,
-#         qml6-module-qtquick-controls,
-#         qml6-module-sso-onlineaccounts,
-#         qml6-module-morph-web (= ${binary:Version}),
-#         qml6-module-lomiri-content,
-#         qml6-module-lomiri-components,
-#         qml6-module-lomiri-action,
-#         qml-module-lomiri-onlineaccounts-client,
-#         morph-browser-qt6 (= ${binary:Version}),
-#Description: Morph web applications container (Qt 6 Version)
-# A lightweight webapp container tailored for Ubuntu Touch, based on the Qt WebEngine
-# and using the Lomiri UI components.
+Package: morph-webapp-container-qt6
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         fonts-liberation,
+         libqt6sql6-sqlite,
+         libqt6webenginecore6,
+         libqt6webengine6-data,
+         qml6-module-qtquick,
+         qml6-module-qtquick-controls,
+         qml6-module-sso-onlineaccounts,
+         qml6-module-morph-web (= ${binary:Version}),
+         qml6-module-lomiri-content,
+         qml6-module-lomiri-components,
+         qml6-module-lomiri-action,
+         qml6-module-lomiri-onlineaccounts-client,
+         morph-browser-qt6 (= ${binary:Version}),
+Conflicts: ubuntu-html5-container, webapp-container, morph-webapp-container
+Replaces: ubuntu-html5-container, webapp-container
+Description: Morph web applications container (Qt 6 Version)
+ A lightweight webapp container tailored for Ubuntu Touch, based on the Qt WebEngine
+ and using the Lomiri UI components.
 
 Package: qml6-module-morph-web
 Architecture: any

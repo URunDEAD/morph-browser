@@ -59,7 +59,7 @@ WebProcessMonitor {
             tryCompare(monitor, "killedRetries", 1)
             tryCompare(webviewMock, "reloadCalled", 1)
             
-            webviewMock.loadingChanged({status: WebEngineLoadRequest.LoadFailedStatus})
+            webviewMock.loadingChanged({status: WebEngineView.LoadFailedStatus})
             verify(!monitor.killed)
             verify(!monitor.crashed)
             compare(monitor.killedRetries, 1)
@@ -81,7 +81,7 @@ WebProcessMonitor {
             compare(monitor.killedRetries, 0)
             compare(webviewMock.reloadCalled, 0)
 
-            webviewMock.loadingChanged({status: WebEngineLoadRequest.LoadSucceededStatus})
+            webviewMock.loadingChanged({status: WebEngineView.LoadSucceededStatus})
             verify(!monitor.killed)
             verify(!monitor.crashed)
             compare(monitor.killedRetries, 0)

@@ -53,13 +53,36 @@ endif()
 
 # Copy QML test files to build directory. This lets test files resolve import
 # path relatively independent of Qt version.
-file(GLOB QML_FILES *.qml)
-add_custom_target(unittests_qml-copy_files_to_build_dir
-    DEPENDS ${QML_FILES}
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different
-            ${QML_FILES}
-            ${CMAKE_CURRENT_BINARY_DIR}/
-)
+if(QT_VERSION_MAJOR GREATER_EQUAL 6)
+    # Post-process QML files to not have versions after imports.
+    file(GLOB QML_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.qml)
+    set(QML_FILES_OUT "")
+
+    foreach(FILE ${QML_FILES})
+        add_custom_command(
+            DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/${FILE}
+            OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/${FILE}
+            VERBATIM
+            COMMAND sed -E
+                -e "s/^(import [a-zA-Z0-9.]+) [0-9]+\\.[0-9]+/\\1/"
+                ${CMAKE_CURRENT_SOURCE_DIR}/${FILE}
+                > ${CMAKE_CURRENT_BINARY_DIR}/${FILE}
+        )
+        list(APPEND QML_FILES_OUT ${CMAKE_CURRENT_BINARY_DIR}/${FILE})
+    endforeach()
+
+    add_custom_target(unittests_qml-copy_files_to_build_dir
+        DEPENDS ${QML_FILES_OUT}
+    )
+else()
+    file(GLOB QML_FILES *.qml)
+    add_custom_target(unittests_qml-copy_files_to_build_dir
+        DEPENDS ${QML_FILES}
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+                ${QML_FILES}
+                ${CMAKE_CURRENT_BINARY_DIR}/
+    )
+endif()
 add_dependencies(${TEST} unittests_qml-copy_files_to_build_dir)
 
 add_test(${TEST} ${XVFB_COMMAND} ${CMAKE_CURRENT_BINARY_DIR}/${TEST}

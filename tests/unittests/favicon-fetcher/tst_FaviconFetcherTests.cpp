@@ -71,7 +71,7 @@ private Q_SLOTS:
             QTcpSocket* socket = nextPendingConnection();
             connect(socket, SIGNAL(readyRead()), SLOT(readClient()));
             connect(socket, SIGNAL(disconnected()), SLOT(discardClient()));
-            connect(socket, SIGNAL(error(QAbstractSocket::SocketError)), SIGNAL(gotError()));
+            connect(socket, SIGNAL(errorOccurred(QAbstractSocket::SocketError)), SIGNAL(gotError()));
         }
     }
 

@@ -180,6 +180,7 @@ FocusScope {
             clickItem(topsite, Qt.RightButton)
             var contextMenu = findChild(root, "urlPreviewDelegate.contextMenu")
             var action = findChild(contextMenu, "delete_button")
+            waitForRendering(action)
             clickItem(action)
             compare(grid.count, 4)
         }

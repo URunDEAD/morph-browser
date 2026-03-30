@@ -23,9 +23,25 @@ set(COMMONLIB_SRC
     session-storage.cpp
     single-instance-manager.cpp
     url-utils.cpp
+    widevine-plugin-helper.cpp
 )
 
 add_library(${COMMONLIB} STATIC ${COMMONLIB_SRC})
+
+if(CMAKE_SYSTEM_PROCESSOR MATCHES "x86_64")
+    target_compile_definitions(${COMMONLIB} PRIVATE
+        "WIDEVINE_SOURCE_FILE_URL=\"https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb\"")
+    target_compile_definitions(${COMMONLIB} PRIVATE
+        "WIDEVINE_LIB_PATH=\"/morph-browser/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so\"")
+elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "aarch64" OR CMAKE_SYSTEM_PROCESSOR MATCHES "arm64")
+    target_compile_definitions(${COMMONLIB} PRIVATE
+        "WIDEVINE_SOURCE_FILE_URL=\"https://commondatastorage.googleapis.com/chromeos-localmirror/distfiles/chromeos-lacros-arm64-squash-zstd-120.0.6098.0\"")
+    target_compile_definitions(${COMMONLIB} PRIVATE
+        "WIDEVINE_LIB_PATH=\"/morph-browser/WidevineCdm/_platform_specific/cros_arm64/libwidevinecdm.so\"")
+else()
+    target_compile_definitions(${COMMONLIB} PRIVATE "WIDEVINE_SOURCE_FILE_URL=\"\"")
+    target_compile_definitions(${COMMONLIB} PRIVATE "WIDEVINE_LIB_PATH=\"\"")
+endif()
 
 include_directories(${LIBAPPARMOR_INCLUDE_DIRS})
 target_link_libraries(${COMMONLIB}

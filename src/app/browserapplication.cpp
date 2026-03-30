@@ -55,6 +55,7 @@
 #include "mime-database.h"
 #include "session-storage.h"
 #include "url-utils.h"
+#include "widevine-plugin-helper.h"
 
 BrowserApplication::BrowserApplication(int& argc, char** argv)
     : QApplication(argc, argv)
@@ -118,6 +119,7 @@ MAKE_SINGLETON_FACTORY(MemInfo)
 MAKE_SINGLETON_FACTORY(MimeDatabase)
 MAKE_SINGLETON_FACTORY(UrlUtils)
 MAKE_SINGLETON_FACTORY(UserAgentsModel)
+MAKE_SINGLETON_FACTORY(WidevinePluginHelper)
 
 bool BrowserApplication::initialize(const QString& qmlFileSubPath
                                     , const QString& appId)
@@ -222,6 +224,7 @@ bool BrowserApplication::initialize(const QString& qmlFileSubPath
     qmlRegisterType<SessionStorage>(uri, 0, 1, "SessionStorage");
     qmlRegisterSingletonType<UserAgentsModel>(uri, 0, 1, "UserAgentsModel", UserAgentsModel_singleton_factory);
     qmlRegisterSingletonType<UrlUtils>(uri, 0, 1, "UrlUtils", UrlUtils_singleton_factory);
+    qmlRegisterSingletonType<WidevinePluginHelper>(uri, 0, 1, "WidevinePluginHelper", WidevinePluginHelper_singleton_factory);
 
     m_engine = new QQmlEngine;
     connect(m_engine, SIGNAL(quit()), SLOT(quit()));

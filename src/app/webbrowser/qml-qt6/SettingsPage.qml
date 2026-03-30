@@ -232,6 +232,17 @@ FocusScope {
                 }
 
                 ListItem {
+                    objectName: "plugins"
+
+                    ListItemLayout {
+                        title.text: i18n.tr("Plugins")
+                        subtitle.text: i18n.tr("Widevine")
+                    }
+
+                    onClicked: pluginsComponent.createObject(subpageContainer)
+                }
+
+                ListItem {
                     objectName: "privacy"
 
                     ListItemLayout {
@@ -304,6 +315,17 @@ FocusScope {
                         }
                     }
                 }
+            }
+        }
+
+        Component {
+            id: pluginsComponent
+
+            SettingsPluginsPage {
+                id: pluginsItem
+                objectName: "pluginsSettings"
+                anchors.fill: parent
+                onBack: pluginsItem.destroy()
             }
         }
 

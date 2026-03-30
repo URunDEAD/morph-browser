@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2026-03-23 04:09+0000\n"
+"PO-Revision-Date: 2026-04-06 16:09+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
 "lomiri/morph-browser/en_GB/>\n"
@@ -445,9 +445,8 @@ msgid "allowed to launch other apps"
 msgstr ""
 
 #: src/app/DomainSettingsPage.qml:226
-#, fuzzy
 msgid "access your location"
-msgstr "Allow this domain to access your camera?"
+msgstr "access your location"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"

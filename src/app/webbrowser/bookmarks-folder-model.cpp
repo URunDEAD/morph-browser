@@ -40,6 +40,14 @@
 BookmarksFolderModel::BookmarksFolderModel(QObject* parent)
     : QSortFilterProxyModel(parent)
 {
+    connect(this, &QAbstractItemModel::modelReset,
+            this, &BookmarksFolderModel::countChanged);
+    connect(this, &QAbstractItemModel::rowsInserted,
+            this, &BookmarksFolderModel::countChanged);
+    connect(this, &QAbstractItemModel::rowsMoved,
+            this, &BookmarksFolderModel::countChanged);
+    connect(this, &QAbstractItemModel::rowsRemoved,
+            this, &BookmarksFolderModel::countChanged);
 }
 
 BookmarksModel* BookmarksFolderModel::sourceModel() const
@@ -52,7 +60,6 @@ void BookmarksFolderModel::setSourceModel(BookmarksModel* sourceModel)
     if (sourceModel != this->sourceModel()) {
         QSortFilterProxyModel::setSourceModel(sourceModel);
         Q_EMIT sourceModelChanged();
-        Q_EMIT countChanged();
     }
 }
 

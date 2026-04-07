@@ -1,6 +1,151 @@
+2026-04-07 Mike Gabriel
+
+        * Release 1.99.4 (HEAD -> main, tag: 1.99.4)
+
+2026-03-30 Andi Chandler
+
+        * Translated using Weblate (English (United Kingdom)) (676d73a0)
+
+2026-03-16 Satyaakam Goswami
+
+        * Translated using Weblate (Hindi) (e317bd25)
+
+2026-03-18 Andi Chandler
+
+        * Translated using Weblate (English (United Kingdom)) (9cdbc8dc)
+
+2026-03-19 Serhii Horichenko
+
+        * Translated using Weblate (Ukrainian) (1c4e6441)
+
+2026-03-19 ButterflyOfFire
+
+        * Translated using Weblate (Kabyle) (8d82241d)
+
+2026-03-20 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/morph-webapp-container-qt6' into
+          'main' (1023df94)
+
+2026-03-19 Ratchanan Srirattanamet
+
+        * debian/: enable bin:pkg morph-webapp-container-qt6 (d819525c)
+          Fixes:
+          https://gitlab.com/ubports/development/core/morph-browser/-/work_items/602
+
+2026-03-13 Mike Gabriel
+
+        * Merge branch 'personal/fredldotme/scrollbars' into 'main'
+          (2acbfd40)
+
+2026-03-09 Alfred Neumayer
+
+        * src/Morph/Web: Increase scroll bar width & height for mouse use
+          (825ab295)
+
+2026-03-11 Satyaakam Goswami
+
+        * Translated using Weblate (Hindi) (c534f05c)
+        * Translated using Weblate (Hindi) (14018bea)
+
+2026-03-10 Satyaakam Goswami
+
+        * Translated using Weblate (Hindi) (5fa4db11)
+
+2026-03-04 Priit Jõerüüt
+
+        * Translated using Weblate (Estonian) (921edcc9)
+
+2026-03-06 Mike Gabriel
+
+        * Merge branch 'personal/henrikschnor/update-readme' into 'main'
+          (4f20c943)
+
+2026-03-03 Henrik Schnor
+
+        * README.md: update build instructions (d0159bd1)
+
+2026-03-06 Guido Berhörster
+
+        * Merge branch 'personal/lduboeuf/fix_dropdowns' into 'main'
+          (553a18b1)
+
+2026-03-05 Lionel Duboeuf
+
+        * Follow .js files to assets/ folder fixes
+          https://gitlab.com/ubports/development/core/morph-browser/-/issues/607
+          (101d49e3)
+
+2026-03-04 Ratchanan Srirattanamet
+
+        * Merge branch 'personal/henrikschnor/fix-qt5compat-import' into
+          'main' (9e682b14)
+
+2026-03-03 Henrik Schnor
+
+        * qml-qt6: fix Qt5Compat.GraphicalEffects import (7b65ae6f)
+
+2026-03-02 Andi Chandler
+
+        * Translated using Weblate (English (United Kingdom)) (c6b1f73c)
+
+2026-03-02 Satyaakam Goswami
+
+        * Translated using Weblate (Hindi) (2d3b73a8)
+
+2026-02-23 தமிழ்நேரம்
+
+        * Translated using Weblate (Tamil) (429cd20c)
+
+2026-02-25 Guido Berhörster
+
+        * Merge branch 'personal/peat-psuwit/qt6-touchSelectionMenu' into
+          'main' (3c7909cb)
+
+2026-02-25 Ratchanan Srirattanamet
+
+        * app/qml-qt6: implement onTouchSelectionMenuRequested
+          (69c87fa3)
+          Fixes:
+          https://gitlab.com/ubports/development/core/morph-browser/-/issues/593
+
+2026-01-30 Ratchanan Srirattanamet
+
+        * app/qml-qt{5,6}: abstract usage of ContextMenuRequest in quickMenu
+          (aae17c42)
+
+2026-02-20 Satyaakam Goswami
+
+        * Translated using Weblate (Hindi) (81c4b5c8)
+
+2026-02-13 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/fix-favicon' into 'main'
+          (51e5a54c)
+
+2026-01-27 Ratchanan Srirattanamet
+
+        * Revert "qml-qt6: disable favicon temporarily in qt6"
+          (c4b8dd34)
+          Fixes:
+          https://gitlab.com/ubports/development/core/morph-browser/-/issues/592
+
+2026-02-03 Midrielen
+
+        * Translated using Weblate (Finnish) (05893d08)
+
+2026-02-03 Alfred Neumayer
+
+        * Merge branch 'personal/peat-psuwit/qt6-touchhandle' into 'main'
+          (b056b354)
+
+2026-01-28 Ratchanan Srirattanamet
+
+        * Morph.Web/qml-qt6: implement touchHandleDelegate (f1f62a43)
+
 2026-02-02 Mike Gabriel
 
-        * Release 1.99.3 (HEAD -> main, tag: 1.99.3)
+        * Release 1.99.3 (5f19477a) (tag: 1.99.3)
 
 2026-01-31 Daniel Wiik
 

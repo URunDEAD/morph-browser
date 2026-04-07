@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.26)
-project(morph-browser VERSION 1.99.3 LANGUAGES CXX)
+project(morph-browser VERSION 1.99.4 LANGUAGES CXX)
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 

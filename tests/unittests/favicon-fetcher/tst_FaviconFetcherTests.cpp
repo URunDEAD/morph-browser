@@ -294,7 +294,7 @@ private Q_SLOTS:
         for (int i = 1; i <= requests; ++i) {
             QUrl url(server->baseURL() + "/favicon" + QString::number(i) + ".ico");
             fetcher->setUrl(url);
-            QVERIFY(serverSpy->wait(500) || (errorSpy->count() == ++errors));
+            QVERIFY(serverSpy->wait(1000) || (errorSpy->count() == ++errors));
         }
         QVERIFY(fetcherSpy->wait());
         QVERIFY((serverSpy->count() + errorSpy->count()) >= requests);

@@ -51,11 +51,11 @@ FocusScope {
         delegate: Loader {
             objectName: "bookmarkFolderDelegateLoader"
             anchors {
-                left: parent.left
-                right: parent.right
+                left: parent ? parent.left : undefined
+                right: parent ? parent.right : undefined
             }
 
-            height: active ? item.height : 0
+            height: item ? item.childrenRectHeight : 0
             active: (entries.count > 0) || !folder
 
             readonly property Item currentItem: active ? item.currentItem : null
@@ -83,10 +83,14 @@ FocusScope {
 
                 anchors {
                     left: parent ? parent.left : undefined
-                    right: parent ? parent.right : undefined
+                    // Do not specify right anchor as that will set width but
+                    // we want Loader to set our width.
+                    // https://doc.qt.io/qt-6/qml-qtquick-loader.html#loader-sizing-behavior
                 }
 
-                height: childrenRect.height
+                // Intermediate binding to workaround
+                // https://qt-project.atlassian.net/browse/QTBUG-145730
+                readonly property double childrenRectHeight: childrenRect.height
 
                 property bool expanded: folderName ? false : true
 

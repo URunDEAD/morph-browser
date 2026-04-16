@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2026-03-10 11:09+0000\n"
+"PO-Revision-Date: 2026-04-17 21:01+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/et/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -233,7 +233,7 @@ msgstr "Sobib"
 
 #: src/app/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
-msgstr ""
+msgstr "Kohandatud URL-iskeem"
 
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
@@ -286,6 +286,9 @@ msgid ""
 "Would you like to continue to block the domain, allow browsing to the "
 "domain, or go back?"
 msgstr ""
+"Sa proovid vaadata %1 domeeni, aga ta ei leidu sinu lubatud domeenide "
+"loendis. Kas tahaksid ligipääsu jätkavalt keelata, pigem hoopis lubada või "
+"minna tagasi?"
 
 #: src/app/AllowOrBlockDomainDialog.qml:31
 #, qt-format
@@ -409,11 +412,11 @@ msgstr "Lisa domeen"
 #: src/app/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
-msgstr ""
+msgstr "Sisesta domeeni nimi, nt. saidinimi.ee (alamdomeenid eemaldatakse)."
 
 #: src/app/DomainPermissionsPage.qml:222
 msgid "Not Set"
-msgstr ""
+msgstr "Määratlemata"
 
 #: src/app/DomainPermissionsPage.qml:232
 msgid "Never allow access"
@@ -566,7 +569,7 @@ msgstr "Võrguviga"
 #: src/app/ErrorSheet.qml:49
 #, qt-format
 msgid "It appears you are having trouble viewing: %1."
-msgstr ""
+msgstr "Tundub, et sul on probleem selle lehe vaatamisel: %1."
 
 #: src/app/ErrorSheet.qml:56
 #, qt-format
@@ -580,6 +583,7 @@ msgstr ""
 #: src/app/ErrorSheet.qml:70
 msgid "Please check your network settings and try refreshing the page."
 msgstr ""
+"Palun kontrolli võrguühenduse seadistusi ja/või proovi lehte uuesti laadida."
 
 #: src/app/ErrorSheet.qml:77
 msgid "Refresh page"
@@ -1177,7 +1181,7 @@ msgstr ""
 #: src/app/webcontainer/AccountsSplashScreen.qml:64
 msgid ""
 "Choose an account now, or skip this step and choose an online account later."
-msgstr ""
+msgstr "Vali kasutajakonto nüüd või jäta see samm vahele ja vali konto hiljem."
 
 #: src/app/webcontainer/AccountsSplashScreen.qml:77
 msgid "Close the app"
@@ -1206,7 +1210,7 @@ msgstr "Lähtesta veebirakenduste konteineri seadistused"
 #: src/app/webcontainer/WebViewImplOxide.qml:330
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
-msgstr ""
+msgstr "„%1“ domeen on nüüd lubatud, palun laadi leht uuesti."
 
 #: src/app/ZoomControls.qml:61
 msgid "Zoom Out"
@@ -1254,17 +1258,19 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"Praegust suumi (%1%) saad salvestada vaikimisi suumina või selle domeeni "
+"jaoks siin: %2."
 
 #: src/app/ZoomControls.qml:197
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr ""
+msgstr "Praegust suumi (%1%) saad salvestada selle domeeni jaoks siin: %2."
 
 #: src/app/ZoomControls.qml:199
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr ""
+msgstr "Praegust suumi (%1%) saad salvestada vaikimisi suumina siin: %2."
 
 #: src/app/ZoomControls.qml:206
 msgid "Save for domain"

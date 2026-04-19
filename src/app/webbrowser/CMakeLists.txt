@@ -101,6 +101,16 @@ install(FILES "morph-browser-content-hub.json"
     RENAME morph-browser
     )
 
+set(WIDEVINE_TOOL_AVAILABLE FALSE)
+set(WIDEVINE_ARCH "")
+if(TARGET_ARCH MATCHES "x86_64|amd64")
+    set(WIDEVINE_TOOL_AVAILABLE TRUE)
+    set(WIDEVINE_ARCH "x86_64")
+elseif(TARGET_ARCH MATCHES "aarch64|arm64")
+    set(WIDEVINE_TOOL_AVAILABLE TRUE)
+    set(WIDEVINE_ARCH "aarch64")
+endif()
+
 if(${CLICK_MODE})
   message("-- Configuring manifest.json")
 
@@ -129,4 +139,38 @@ add_custom_target(src_app_webbrowser-copy_files_to_build_dir ALL
     COMMAND ${CMAKE_COMMAND} -E copy_directory_if_different
                 ${CMAKE_CURRENT_SOURCE_DIR}/assets/
                 ${CMAKE_CURRENT_BINARY_DIR}/assets/
+
+    COMMAND ${CMAKE_COMMAND} -E make_directory
+                ${CMAKE_CURRENT_BINARY_DIR}/scripts/
+
+    COMMAND ${CMAKE_COMMAND} -E copy_directory_if_different
+                ${CMAKE_CURRENT_SOURCE_DIR}/scripts/
+                ${CMAKE_CURRENT_BINARY_DIR}/scripts/
 )
+
+if(WIDEVINE_TOOL_AVAILABLE)
+    configure_file(
+        ${CMAKE_CURRENT_SOURCE_DIR}/scripts/widevine_tool.sh.in
+        ${CMAKE_CURRENT_BINARY_DIR}/widevine_tool.sh.in
+        @ONLY
+    )
+    file(GENERATE
+        OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/scripts/widevine_tool.sh
+        INPUT ${CMAKE_CURRENT_BINARY_DIR}/widevine_tool.sh.in
+    )
+
+    if(CLICK_MODE)
+        set(WIDEVINE_TOOL_DEST scripts)
+    else()
+        set(WIDEVINE_TOOL_DEST ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser/scripts)
+    endif()
+
+    install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/scripts/widevine_tool.sh
+            DESTINATION "${WIDEVINE_TOOL_DEST}")
+
+    # The python script needed only for ARM64 lib.
+    if(TARGET_ARCH MATCHES "aarch64|arm64")
+        install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/scripts/widevine_fixup.py
+                DESTINATION "${WIDEVINE_TOOL_DEST}")
+    endif()
+endif()

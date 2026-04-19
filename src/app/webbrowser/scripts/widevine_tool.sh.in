@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ -z "${1:-}" ]; then
+    echo "Command argument is empty"
+    echo "Choose: extract, install, uninstall, clean, license"
+
+    exit 127
+fi
+
+if [ -z "${XDG_CACHE_HOME:-}" ]; then
+    XDG_CACHE_HOME="$HOME/.cache"
+fi
+
+if [ -z "${XDG_DATA_HOME:-}" ]; then
+    XDG_DATA_HOME="$HOME/.local/share"
+fi
+
+WIDEVINE_FILES_DIR="$XDG_CACHE_HOME/morph-browser/widevine-files"
+
+cleanup() {
+    rm -rf "$WIDEVINE_FILES_DIR"
+}
+
+if [ "$1" = "extract" ]; then
+    if [ -z "${2:-}" ]; then
+        echo "Command extract requires second argument with the source archive path"
+        exit 2
+    fi
+
+    mkdir -p "$WIDEVINE_FILES_DIR"
+$<$<STREQUAL:@WIDEVINE_ARCH@,x86_64>:
+    mv "$2" "$WIDEVINE_FILES_DIR/browser.deb"
+    mkdir -p "$WIDEVINE_FILES_DIR/UnpackedBrowser"
+    ar x "$WIDEVINE_FILES_DIR/browser.deb" --output="$WIDEVINE_FILES_DIR/"
+    tar xvf "$WIDEVINE_FILES_DIR/data.tar.xz" -C "$WIDEVINE_FILES_DIR/UnpackedBrowser"
+    mv "$WIDEVINE_FILES_DIR/UnpackedBrowser/opt/google/chrome/WidevineCdm" "$WIDEVINE_FILES_DIR/WidevineCdm"
+>
+$<$<STREQUAL:@WIDEVINE_ARCH@,aarch64>:
+    mv "$2" "$WIDEVINE_FILES_DIR/lacros.squashfs"
+    mkdir -p "$WIDEVINE_FILES_DIR/squashfs-root"
+    unsquashfs -d "$WIDEVINE_FILES_DIR/squashfs-root" "$WIDEVINE_FILES_DIR/lacros.squashfs" "WidevineCdm/*"
+    python3 "$(dirname "$0")/widevine_fixup.py" "$WIDEVINE_FILES_DIR/squashfs-root/WidevineCdm/_platform_specific/cros_arm64/libwidevinecdm.so" "$WIDEVINE_FILES_DIR/squashfs-root/WidevineCdm/_platform_specific/cros_arm64/libwidevinecdm.so"
+    mv "$WIDEVINE_FILES_DIR/squashfs-root/WidevineCdm" "$WIDEVINE_FILES_DIR/WidevineCdm"
+>
+elif [ "$1" = "clean" ]; then
+    cleanup
+elif [ "$1" = "install" ]; then
+    mv "$WIDEVINE_FILES_DIR/WidevineCdm" "$XDG_DATA_HOME/morph-browser/WidevineCdm"
+    cleanup
+elif [ "$1" = "uninstall" ]; then
+    rm -rf "$XDG_DATA_HOME/morph-browser/WidevineCdm"
+elif [ "$1" = "license" ]; then
+    cat "$WIDEVINE_FILES_DIR/WidevineCdm/LICENSE"
+fi

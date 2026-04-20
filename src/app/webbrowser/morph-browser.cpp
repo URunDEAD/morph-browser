@@ -171,9 +171,11 @@ int main(int argc, char** argv)
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     WebbrowserApp app(argc, argv);
 
+#ifndef QT_DEBUG
     // Reduce the amount of logging to the console
     QLoggingCategory::setFilterRules(QStringLiteral("*.debug=false\n"
                                                     "*.info=false\n"));
+#endif
     if (app.initialize()) {
         return app.run();
     } else {

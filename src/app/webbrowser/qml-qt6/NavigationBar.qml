@@ -205,7 +205,9 @@ FocusScope {
 
             Connections {
                 target: tab
-                onUrlChanged: addressbar.actualUrl = tab.url
+                function onUrlChanged() {
+                    addressbar.actualUrl = tab.url
+                }
             }
         }
 
@@ -287,7 +289,7 @@ FocusScope {
                 Connections {
                     target: root
 
-                    onDownloadNotifyChanged: {
+                    function onDownloadNotifyChanged() {
                         if (downloadNotify) {
                             shakeAnimation.start()
                         }

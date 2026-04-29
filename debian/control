@@ -79,6 +79,7 @@ Depends: ${misc:Depends},
          qml-module-lomiri-components-extras,
          qml-module-lomiri-components,
          qml-module-lomiri-action,
+         qml-module-qtquick-controls2-suru,
 Replaces: morph-browser-assets,
           qtdeclarative5-ubuntu-ui-extras-browser-plugin (<< 0.22),
 Conflicts: morph-browser-assets, webbrowser-app, morph-browser-qt6
@@ -162,6 +163,7 @@ Depends: ${misc:Depends},
          qml6-module-lomiri-action,
          qml6-module-lomiri-downloadmanager,
          qml6-module-qtquick-templates,
+         qml6-module-qtquick-controls2-suru,
 Conflicts: webbrowser-app, morph-browser
 Provides: webbrowser-app
 Description: Web Browser for Ubuntu Touch (Qt 6 Version)

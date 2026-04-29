@@ -21,9 +21,7 @@ import Lomiri.Components
 import Lomiri.Components.Popups
 import Lomiri.Content 2.0
 import QtQuick.Controls 2.5 as QQC2
-/* FIXME: re-enable once Suru has been ported to Qt 6
 import QtQuick.Controls.Suru 2.2
-*/
 
 import webbrowsercommon.private 0.1
 
@@ -57,15 +55,9 @@ QQC2.Dialog {
     closePolicy: QQC2.Popup.CloseOnEscape | QQC2.Popup.CloseOnPressOutside
     modal: true
 
-    /* FIXME: re-enable once Suru has been ported to Qt 6
     QQC2.Overlay.modal: Rectangle {
         color: Suru.overlayColor
         Behavior on opacity { NumberAnimation { duration: Suru.animations.FastDuration } }
-    }
-    */
-    QQC2.Overlay.modal: Rectangle {
-        color: Qt.rgba(0, 0, 0, 0.85)
-        Behavior on opacity { NumberAnimation { duration: 165 } }
     }
 
     function openDialog(_downloadPath, _contentType, _mimeType, _downloadURL, _fileName){

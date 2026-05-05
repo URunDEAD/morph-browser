@@ -8,29 +8,27 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2025-08-23 09:02+0000\n"
-"Last-Translator: Valery Levanchuk <levanchuk@gmail.com>\n"
-"Language-Team: Belarusian <https://hosted.weblate.org/projects/lomiri/"
-"morph-browser/be/>\n"
+"PO-Revision-Date: 2026-05-11 09:45+0000\n"
+"Last-Translator: Alyaksandr Koshal <alyaksandr.koshal@gmail.com>\n"
+"Language-Team: Belarusian <https://hosted.weblate.org/projects/lomiri/morph-"
+"browser/be/>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 2026.5-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
-#, fuzzy
 msgid "Morph Browser"
-msgstr "Браўзэр"
+msgstr "Браўзер Morph"
 
 #: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:111
 #: src/app/webcontainer/webapp-container.qml:78
-#, fuzzy
 msgid "Morph Web Browser"
-msgstr "Гартач Сеціва"
+msgstr "Вэб-браўзер Morph"
 
 #: morph-browser.desktop.in:6
 #, fuzzy

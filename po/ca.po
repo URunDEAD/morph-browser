@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2026-05-11 15:04+0000\n"
+"PO-Revision-Date: 2026-05-18 15:11+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.5-dev\n"
+"X-Generator: Weblate 2026.6.dev0\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -236,11 +236,11 @@ msgstr "Esquemes personalitzats per URL"
 #: src/app/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
-msgstr ""
+msgstr "El lloc web «%1» vol obrir aquest URL fora del navegador web:"
 
 #: src/app/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
-msgstr ""
+msgstr "Obre aquest URL amb una aplicació del sistema si és possible?"
 
 #: src/app/AllowCustomSchemesDialog.qml:44
 #: src/app/GeolocationPermissionRequest.qml:44
@@ -359,15 +359,13 @@ msgid "JavaScript Confirmation"
 msgstr "Confirmació del JavaScript"
 
 #: src/app/ContentExportDialog.qml:79
-#, fuzzy
-#| msgid "Open tabs"
 msgid "Open with"
 msgstr "Pestanyes obertes"
 
 #: src/app/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
-msgstr ""
+msgstr "Nom del fitxer: %1"
 
 #: src/app/ContentExportDialog.qml:91
 #: src/app/webcontainer/AccountErrorScreen.qml:50
@@ -375,14 +373,10 @@ msgid "Close"
 msgstr "Tanca"
 
 #: src/app/ContentExportDialog.qml:100
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open link in browser"
 msgstr "Obre l'enllaç al navegador predeterminat"
 
 #: src/app/ContentExportDialog.qml:109
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open file in browser"
 msgstr "Obre l'enllaç al navegador predeterminat"
 
@@ -400,8 +394,6 @@ msgid "New User Agent"
 msgstr "Agent d'usuari nou"
 
 #: src/app/CustomUserAgentsPage.qml:161
-#, fuzzy
-#| msgid "New User Agent"
 msgid "Edit User Agent"
 msgstr "Agent d'usuari nou"
 
@@ -455,24 +447,20 @@ msgid "allowed to launch other apps"
 msgstr "pot iniciar altres aplicacions"
 
 #: src/app/DomainSettingsPage.qml:226
-#, fuzzy
-#| msgid "allowed to access your location"
 msgid "access your location"
 msgstr "pot conèixer la vostra ubicació"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "Pregunta cada vegada"
 
 #: src/app/DomainSettingsPage.qml:231
-#, fuzzy
-#| msgid "Allow"
 msgid "Allowed"
 msgstr "Permet"
 
 #: src/app/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Denegat"
 
 #: src/app/DomainSettingsPage.qml:245
 msgid "custom user agent"
@@ -502,53 +490,41 @@ msgstr "Ha fallat la baixada"
 
 #: src/app/DownloadDelegate.qml:199
 msgid "Unknown"
-msgstr ""
+msgstr "Desconegut"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
 #: src/app/DownloadDelegate.qml:207
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
 msgstr "Elimina"
 
 #: src/app/DownloadDelegate.qml:261
-#, fuzzy
-#| msgid "Clear History"
 msgid "Remove from History"
 msgstr "Neteja l'historial"
 
 #: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
-#, fuzzy
-#| msgid "Copy link"
 msgid "Copy Download Link"
 msgstr "Copia l'enllaç"
 
 #: src/app/DownloadsDialog.qml:68
-#, fuzzy
-#| msgid "Downloads"
 msgid "Recent Downloads"
 msgstr "Baixades"
 
 #: src/app/DownloadsDialog.qml:83
-#, fuzzy
-#| msgid "Downloads"
 msgid "No Recent Downloads"
 msgstr "Baixades"
 
 #: src/app/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
 msgstr "Cancel·la"
 
 #: src/app/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Completat"
 
 #: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
 #: src/app/webcontainer/WebappSettingsPage.qml:293
@@ -557,7 +533,7 @@ msgstr "Neteja-ho"
 
 #: src/app/DownloadsDialog.qml:179
 msgid "View All"
-msgstr ""
+msgstr "Mostra-ho tot"
 
 #: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:850
 #: src/app/webcontainer/WebappSettingsPage.qml:137
@@ -574,11 +550,9 @@ msgstr "No hi ha cap baixada disponible"
 
 #: src/app/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "ja s'ha pres aquest nom d'agent d'usuari"
 
 #: src/app/EditCustomUserAgentDialog.qml:48
-#, fuzzy
-#| msgid "Add the name for the new user agent"
 msgid "Add the name for the user agent"
 msgstr "Afegeix un nom pel agent d'usuari nou"
 
@@ -793,7 +767,7 @@ msgstr "Desa com a PDF"
 
 #: src/app/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Elimina de la llista"
 
 #: src/app/webbrowser/AddressBar.qml:287
 msgid "find in page"
@@ -884,8 +858,6 @@ msgid "Done"
 msgstr "Fet"
 
 #: src/app/webbrowser/Browser.qml:685
-#, fuzzy
-#| msgid "Close Tab"
 msgid "Reopen Tab"
 msgstr "Tanca la pestanya"
 
@@ -1079,12 +1051,12 @@ msgstr "Ampliació per defecte"
 #: src/app/webbrowser/SettingsPage.qml:218
 #: src/app/webcontainer/WebappSettingsPage.qml:117
 msgid "Load Images"
-msgstr ""
+msgstr "Carrega imatges"
 
 #: src/app/webbrowser/SettingsPage.qml:219
 #: src/app/webcontainer/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
-msgstr ""
+msgstr "Carrega automàticament les imatges a les pàgines web"
 
 #: src/app/webbrowser/SettingsPage.qml:238
 #: src/app/webbrowser/SettingsPage.qml:320
@@ -1140,8 +1112,6 @@ msgid "Clear all Cookies?"
 msgstr "Voleu netejar totes les galetes?"
 
 #: src/app/webbrowser/SettingsPage.qml:516
-#, fuzzy
-#| msgid "Custom hompage"
 msgid "Custom homepage"
 msgstr "Pàgina d'inici personalitzada"
 
@@ -1306,19 +1276,21 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
+"El nivell de zoom actual (%1%) es pot desar a %2 ja sigui per al domini "
+"actual o com a nivell de zoom predeterminat."
 
 #: src/app/ZoomControls.qml:197
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "L'ampliació actual (%1%) pot desar-se per a %2 com "
+msgstr "L'ampliació actual (%1%) pot desar-se a %2 per al domini actual."
 
 #: src/app/ZoomControls.qml:199
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
+#, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr "L'ampliació actual (%1%) pot desar-se per a %2 com "
+msgstr ""
+"L'ampliació actual (%1%) pot desar-se per a %2 com nivell d'ampliació "
+"predeterminada."
 
 #: src/app/ZoomControls.qml:206
 msgid "Save for domain"

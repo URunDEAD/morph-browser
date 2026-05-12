@@ -23,9 +23,35 @@ set(COMMONLIB_SRC
     session-storage.cpp
     single-instance-manager.cpp
     url-utils.cpp
+    widevine-plugin-helper.cpp
 )
 
 add_library(${COMMONLIB} STATIC ${COMMONLIB_SRC})
+
+if(DEFINED ENV{ARCH})
+    set(TARGET_ARCH "$ENV{ARCH}")
+else()
+    execute_process(
+        COMMAND dpkg-architecture -qDEB_HOST_ARCH
+        OUTPUT_VARIABLE TARGET_ARCH
+        OUTPUT_STRIP_TRAILING_WHITESPACE
+    )
+endif()
+if(TARGET_ARCH MATCHES "x86_64|amd64")
+    set(WIDEVINE_SOURCE_FILE_URL "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb")
+    set(WIDEVINE_LIB_PATH "/morph-browser/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so")
+elseif(TARGET_ARCH MATCHES "aarch64|arm64")
+    set(WIDEVINE_SOURCE_FILE_URL "https://commondatastorage.googleapis.com/chromeos-localmirror/distfiles/chromeos-lacros-arm64-squash-zstd-120.0.6098.0")
+    set(WIDEVINE_LIB_PATH "/morph-browser/WidevineCdm/_platform_specific/cros_arm64/libwidevinecdm.so")
+else()
+    set(WIDEVINE_SOURCE_FILE_URL "")
+    set(WIDEVINE_LIB_PATH "")
+endif()
+
+configure_file(
+    widevine-plugin-helper-consts.h.in
+    ${CMAKE_CURRENT_BINARY_DIR}/widevine-plugin-helper-consts.h
+    @ONLY)
 
 include_directories(${LIBAPPARMOR_INCLUDE_DIRS})
 target_link_libraries(${COMMONLIB}

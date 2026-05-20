@@ -94,7 +94,7 @@ Common.BrowserPage {
                             } else {
                                 // It will be true after installation
                                 checked = false
-                                PopupUtils.open(installationQuestionDialogComponent, pluginsItem)
+                                widevineWizardPageSubpageComponent.createObject(pluginsItem.parent)
                             }
                         }
 
@@ -105,144 +105,30 @@ Common.BrowserPage {
                 }
             }
 
-            Component {
-                id: installationQuestionDialogComponent
-
-                Dialog {
-                    id: installationQuestionDialog
-
-                    title: i18n.tr("Installing Widevine")
-                    text: i18n.tr("Widevine is not licensed for Morph Browser. We can download and extract it from proprietary binary file, but please do so at your own risk. ")
-
-                    Button {
-                        text: i18n.tr("Agree")
-                        color: theme.palette.normal.positive
-                        onClicked: {
-                            PopupUtils.open(warningDialogComponent, pluginsItem)
-                            PopupUtils.close(installationQuestionDialog)
-                        }
-                    }
-
-                    Button {
-                        text: i18n.tr("Cancel")
-                        onClicked: {
-                            PopupUtils.close(installationQuestionDialog)
-                        }
-                    }
-                }
-            }
-
-            Component {
-                id: warningDialogComponent
-
-                Dialog {
-                    id: warningDialog
-
-                    title: i18n.tr("Warning!")
-                    text: i18n.tr("The widevine installation requires downloading about 150 MB of data. It require good Internet connection and will take some time. Do you agree to download?")
-
-                    Button {
-                        text: i18n.tr("Agree")
-                        color: theme.palette.normal.positive
-                        onClicked: {
-                            downloadWidevineSrc.download(WidevinePluginHelper.widevineUrlSource)
-                            PopupUtils.open(installingDialogComponent, pluginsItem, {
-                                                "text": i18n.tr("Download...")
-                                            })
-                            PopupUtils.close(warningDialog)
-                        }
-                    }
-
-                    Button {
-                        text: i18n.tr("Cancel")
-                        onClicked: {
-                            PopupUtils.close(warningDialog)
-                        }
-                    }
-                }
-            }
-
-            SingleDownload {
-                id: downloadWidevineSrc
-
-                allowMobileDownload: true
-
-                onFinished: {
-                    WidevinePluginHelper.saveFilePath(path)
-                }
-            }
-
-            Component {
-                id: installingDialogComponent
-
-                Widevine.InstallingDialog {
-                    id: installingDialog
-
-                    value: downloadWidevineSrc.progress
-                }
-            }
-
             Connections {
                 target: WidevinePluginHelper
-
-                function onExtractingFinished() {
-                    PopupUtils.open(licenseDialogComponent, pluginsItem)
-                }
-
-                function onInstallingFinished() {
-                    if (WidevinePluginHelper.isPluginInstalled) {
-                        WidevinePluginHelper.isWidevineEnabled = true
-                        widevineCheckbox.checked = true
-                        PopupUtils.open(widevineReloadTheAppDialogComponent, pluginsItem)
-                    }
-                }
-
-                function onErrorOccurred(errorText, isInstalling) {
-                    PopupUtils.open(widevineErrorDialogComponent, pluginsItem,
-                                    { "isInstalling": isInstalling, "text": errorText })
-                }
 
                 function onUninstallingFinished() {
                     widevineCheckbox.checked = false
                     PopupUtils.open(widevineReloadTheAppDialogComponent, pluginsItem)
                 }
-            }
 
-            Component {
-                id: licenseDialogComponent
-
-                Widevine.LicenseDialog {
-                    id: licenseDialog
-
-                    internalText: WidevinePluginHelper.licenseText
-
-                    onAborted: {
-                        WidevinePluginHelper.abortInstallation()
-                    }
-
-                    onAccepted: {
-                        WidevinePluginHelper.continueInstallation()
+                function onErrorOccurred(errorText, isInstalling) {
+                    if (isInstalling) {
+                        PopupUtils.open(widevineUninstallationErrorDialogComponent, pluginsItem,
+                                        { "text": errorText })
                     }
                 }
             }
 
             Component {
-                id: widevineErrorDialogComponent
+                id: widevineWizardPageSubpageComponent
 
-                Dialog {
-                    id: widevineErrorDialog
+                Widevine.WidevineInstallerWizard {
+                    anchors.fill: parent
 
-                    property bool isInstalling: true
-
-                    title: isInstalling ? i18n.tr("Installing is failed.") : i18n.tr("Uninstalling is failed.")
-
-                    Button {
-                        text: i18n.tr("Close")
-                        onClicked: {
-                            PopupUtils.close(widevineErrorDialog)
-                            // Trigger clean up
-                            WidevinePluginHelper.abortInstallation()
-                        }
+                    onInstallationFinished: {
+                        widevineCheckbox.checked = true
                     }
                 }
             }
@@ -293,6 +179,25 @@ Common.BrowserPage {
                         text: i18n.tr("Cancel")
                         onClicked: {
                             PopupUtils.close(widevineUninstallationConfirmationDialog)
+                        }
+                    }
+                }
+            }
+
+            Component {
+                id: widevineUninstallationErrorDialogComponent
+
+                Dialog {
+                    id: widevineUninstallationErrorDialog
+
+                    title: i18n.tr("Uninstalling failed.")
+
+                    Button {
+                        text: i18n.tr("Close")
+                        onClicked: {
+                            PopupUtils.close(widevineUninstallationErrorDialog)
+                            // Trigger clean up
+                            WidevinePluginHelper.abortInstallation()
                         }
                     }
                 }

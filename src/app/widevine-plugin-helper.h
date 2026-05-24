@@ -42,6 +42,7 @@ public:
     Q_INVOKABLE void abortInstallation();
     Q_INVOKABLE void continueInstallation();
     Q_INVOKABLE void saveFilePath(QString path);
+    Q_INVOKABLE void copyToClipboard(QString text);
 
 signals:
     void isPluginInstalledChanged();
@@ -74,7 +75,11 @@ private:
 private slots:
     void extractLib();
     void requestLicenseText();
-    void onLicenseProcessFinished(int);
+    void onLicenseProcessFinished(int, QProcess::ExitStatus exitStatus);
     void checkInstallation();
     void checkUninstallation();
+
+    void onExtractingFinished(int, QProcess::ExitStatus exitStatus);
+    void onInstallingProcessFinished(int, QProcess::ExitStatus exitStatus);
+    void onUninstallProcessFinished(int, QProcess::ExitStatus exitStatus);
 };

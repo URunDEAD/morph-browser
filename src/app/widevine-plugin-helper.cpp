@@ -21,8 +21,10 @@
 #include <QFile>
 #include <QSettings>
 #include <QCoreApplication>
+#include <QGuiApplication>
 #include <QStandardPaths>
 #include <QDebug>
+#include <QClipboard>
 
 #include "widevine-plugin-helper-consts.h"
 
@@ -37,10 +39,10 @@ WidevinePluginHelper::WidevinePluginHelper(QObject *parent)
     , m_installProcess(QProcess())
     , m_uninstallProcess(QProcess())
 {
-    connect(&m_extractProcess, qOverload<int, QProcess::ExitStatus>(&QProcess::finished), this, &WidevinePluginHelper::extractingFinished);
+    connect(&m_extractProcess, qOverload<int, QProcess::ExitStatus>(&QProcess::finished), this, &WidevinePluginHelper::onExtractingFinished);
     connect(this, &WidevinePluginHelper::extractingFinished, this, &WidevinePluginHelper::requestLicenseText);
-    connect(&m_installProcess, qOverload<int, QProcess::ExitStatus>(&QProcess::finished), this, &WidevinePluginHelper::installingFinished);
-    connect(&m_uninstallProcess, qOverload<int, QProcess::ExitStatus>(&QProcess::finished), this, &WidevinePluginHelper::uninstallingFinished);
+    connect(&m_installProcess, qOverload<int, QProcess::ExitStatus>(&QProcess::finished), this, &WidevinePluginHelper::onInstallingProcessFinished);
+    connect(&m_uninstallProcess, qOverload<int, QProcess::ExitStatus>(&QProcess::finished), this, &WidevinePluginHelper::onUninstallProcessFinished);
     connect(&m_licenseProcess, qOverload<int, QProcess::ExitStatus>(&QProcess::finished), this, &WidevinePluginHelper::onLicenseProcessFinished);
 
     connect(this, &WidevinePluginHelper::downloadFinished, this, &WidevinePluginHelper::extractLib);
@@ -48,7 +50,7 @@ WidevinePluginHelper::WidevinePluginHelper(QObject *parent)
     connect(this, &WidevinePluginHelper::installingFinished, this, &WidevinePluginHelper::checkInstallation);
     connect(this, &WidevinePluginHelper::uninstallingFinished, this, &WidevinePluginHelper::isPluginInstalledChanged);
     connect(this, &WidevinePluginHelper::uninstallingFinished, this, &WidevinePluginHelper::checkUninstallation);
-    connect(this, &WidevinePluginHelper::errorOccurred, this, [](QString err, bool){ qDebug() << err; });
+    connect(this, &WidevinePluginHelper::errorOccurred, this, [](QString err, bool){ qDebug() << "Widevine error occurred: " << err; });
 }
 
 void WidevinePluginHelper::uninstallPlugin()
@@ -79,6 +81,11 @@ void WidevinePluginHelper::saveFilePath(QString path)
 {
     m_downloadedFilePath = path;
     emit downloadFinished();
+}
+
+void WidevinePluginHelper::copyToClipboard(QString text)
+{
+    QGuiApplication::clipboard()->setText(text, QClipboard::Clipboard);
 }
 
 bool WidevinePluginHelper::isPluginInstalled() const
@@ -133,23 +140,54 @@ void WidevinePluginHelper::requestLicenseText()
     m_licenseProcess.start("bash", args);
 }
 
-void WidevinePluginHelper::onLicenseProcessFinished(int)
+void WidevinePluginHelper::onLicenseProcessFinished(int, QProcess::ExitStatus exitStatus)
 {
-    QByteArray output = m_licenseProcess.readAllStandardOutput();
-    m_licenseText = QString(output);
-    emit licenseTextChanged();
+    if (exitStatus == QProcess::NormalExit) {
+        QByteArray output = m_licenseProcess.readAllStandardOutput();
+        m_licenseText = QString(output);
+        emit licenseTextChanged();
+    } else {
+        emit errorOccurred(tr("Failed to get license. Please check the application logs for details"), true);
+    }
 }
 
 void WidevinePluginHelper::checkInstallation()
 {
     if (!isPluginInstalled()) {
-        emit errorOccurred(tr("Failed to copy files."), true);
+        emit errorOccurred(tr("Failed to copy files"), true);
     }
 }
 
 void WidevinePluginHelper::checkUninstallation()
 {
     if (isPluginInstalled()) {
-        emit errorOccurred(tr("Failed to delete files."), false);
+        emit errorOccurred(tr("Failed to delete files"), false);
+    }
+}
+
+void WidevinePluginHelper::onExtractingFinished(int, QProcess::ExitStatus exitStatus)
+{
+    if (exitStatus == QProcess::NormalExit) {
+        emit extractingFinished();
+    } else {
+        emit errorOccurred(tr("Failed to extract widevine. Please check the application logs for details"), true);
+    }
+}
+
+void WidevinePluginHelper::onInstallingProcessFinished(int, QProcess::ExitStatus exitStatus)
+{
+    if (exitStatus == QProcess::NormalExit) {
+        emit installingFinished();
+    } else {
+        emit errorOccurred(tr("Failed to install widevine. Please check the application logs for details"), true);
+    }
+}
+
+void WidevinePluginHelper::onUninstallProcessFinished(int, QProcess::ExitStatus exitStatus)
+{
+    if (exitStatus == QProcess::NormalExit) {
+        emit uninstallingFinished();
+    } else {
+        emit errorOccurred(tr("Failed to uninstall widevine. Please check the application logs for details"), false);
     }
 }

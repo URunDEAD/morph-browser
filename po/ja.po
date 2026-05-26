@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-14 17:32+0000\n"
-"PO-Revision-Date: 2024-08-14 12:07+0000\n"
-"Last-Translator: umesaburo sagawa <atowa-notonare-yamatonare427@pm.me>\n"
+"PO-Revision-Date: 2026-05-27 15:22+0000\n"
+"Last-Translator: Hosted Weblate user 151872 <653989kou@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/ja/>\n"
 "Language: ja\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 2026.6.dev0\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -82,10 +82,8 @@ msgid "Clear Navigation History"
 msgstr "閲覧履歴をクリア"
 
 #: src/app/actions/CopyImageLink.qml:22
-#, fuzzy
-#| msgid "Copy image"
 msgid "Copy image link"
-msgstr "画像をコピー"
+msgstr "画像のリンクをコピー"
 
 #: src/app/actions/CopyImage.qml:22
 msgid "Copy image"
@@ -371,7 +369,7 @@ msgstr "タブを表示"
 #: src/app/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
-msgstr ""
+msgstr "ファイル名: %1"
 
 #: src/app/ContentExportDialog.qml:91
 #: src/app/webcontainer/AccountErrorScreen.qml:50
@@ -379,16 +377,12 @@ msgid "Close"
 msgstr "閉じる"
 
 #: src/app/ContentExportDialog.qml:100
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open link in browser"
-msgstr "既定のブラウザでリンクを開く"
+msgstr "ブラウザでリンクを開く"
 
 #: src/app/ContentExportDialog.qml:109
-#, fuzzy
-#| msgid "Open link in default browser"
 msgid "Open file in browser"
-msgstr "既定のブラウザでリンクを開く"
+msgstr "ブラウザでファイルを開く"
 
 #: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
 msgid "Custom User Agents"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 17:32+0000\n"
+"POT-Creation-Date: 2026-05-27 15:21+0000\n"
 "PO-Revision-Date: 2026-05-27 15:22+0000\n"
 "Last-Translator: Hosted Weblate user 151872 <653989kou@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/lomiri/morph-"
@@ -24,8 +24,10 @@ msgstr ""
 msgid "Morph Browser"
 msgstr "ブラウザ"
 
-#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:111
-#: src/app/webcontainer/webapp-container.qml:78
+#: morph-browser.desktop.in:5 src/app/webbrowser/qml-qt5/morph-browser.qml:111
+#: src/app/webbrowser/qml-qt6/morph-browser.qml:110
+#: src/app/webcontainer/qml-qt5/webapp-container.qml:78
+#: src/app/webcontainer/qml-qt6/webapp-container.qml:78
 msgid "Morph Web Browser"
 msgstr "Morph ウェブブラウザ"
 
@@ -47,237 +49,329 @@ msgstr "新しいウィンドウ"
 msgid "New Private Window"
 msgstr "新しいプライベートウィンドウ"
 
-#: src/app/actions/Back.qml:23
+#: src/app/qml-qt5/actions/Back.qml:23 src/app/qml-qt6/actions/Back.qml:23
 msgid "Back"
 msgstr "戻る"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Back.qml:26
+#: src/app/qml-qt5/actions/Back.qml:26 src/app/qml-qt6/actions/Back.qml:26
 msgid "Older Page"
 msgstr "前のページ"
 
-#: src/app/actions/BookmarkLink.qml:22
+#: src/app/qml-qt5/actions/BookmarkLink.qml:22
+#: src/app/qml-qt6/actions/BookmarkLink.qml:22
 msgid "Bookmark link"
 msgstr "リンクをブックマーク"
 
-#: src/app/actions/Bookmark.qml:23
+#: src/app/qml-qt5/actions/Bookmark.qml:23
+#: src/app/qml-qt6/actions/Bookmark.qml:23
 msgid "Bookmark"
 msgstr "ブックマーク"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Bookmark' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Bookmark.qml:26
+#: src/app/qml-qt5/actions/Bookmark.qml:26
+#: src/app/qml-qt6/actions/Bookmark.qml:26
 msgid "Add This Page to Bookmarks"
 msgstr "このページをブックマークに追加"
 
-#: src/app/actions/ClearHistory.qml:23
+#: src/app/qml-qt5/actions/ClearHistory.qml:23
+#: src/app/qml-qt6/actions/ClearHistory.qml:23
 msgid "Clear History"
 msgstr "履歴をクリア"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/ClearHistory.qml:26
+#: src/app/qml-qt5/actions/ClearHistory.qml:26
+#: src/app/qml-qt6/actions/ClearHistory.qml:26
 msgid "Clear Navigation History"
 msgstr "閲覧履歴をクリア"
 
-#: src/app/actions/CopyImageLink.qml:22
+#: src/app/qml-qt5/actions/CopyImageLink.qml:22
+#: src/app/qml-qt6/actions/CopyImageLink.qml:22
 msgid "Copy image link"
 msgstr "画像のリンクをコピー"
 
-#: src/app/actions/CopyImage.qml:22
+#: src/app/qml-qt5/actions/CopyImage.qml:22
+#: src/app/qml-qt6/actions/CopyImage.qml:22
 msgid "Copy image"
 msgstr "画像をコピー"
 
-#: src/app/actions/CopyLink.qml:22
+#: src/app/qml-qt5/actions/CopyLink.qml:22
+#: src/app/qml-qt6/actions/CopyLink.qml:22
 msgid "Copy link"
 msgstr "リンクをコピー"
 
-#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:418
+#: src/app/qml-qt5/actions/Copy.qml:22 src/app/qml-qt6/actions/Copy.qml:22
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:418
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:419
 msgid "Copy"
 msgstr "コピー"
 
-#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:407
+#: src/app/qml-qt5/actions/Cut.qml:22 src/app/qml-qt6/actions/Cut.qml:22
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:407
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:408
 msgid "Cut"
 msgstr "切り取り"
 
-#: src/app/actions/Erase.qml:22
+#: src/app/qml-qt5/actions/Erase.qml:22 src/app/qml-qt6/actions/Erase.qml:22
 msgid "Erase"
 msgstr "削除"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:843
+#: src/app/qml-qt5/actions/FindInPage.qml:23
+#: src/app/qml-qt6/actions/FindInPage.qml:23
+#: src/app/webbrowser/qml-qt5/Browser.qml:843
+#: src/app/webbrowser/qml-qt6/Browser.qml:843
 msgid "Find in page"
 msgstr "ページ内検索"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/FindInPage.qml:26
+#: src/app/qml-qt5/actions/FindInPage.qml:26
+#: src/app/qml-qt6/actions/FindInPage.qml:26
 msgid "Search in Page"
 msgstr "ページ内を検索"
 
-#: src/app/actions/Forward.qml:23
+#: src/app/qml-qt5/actions/Forward.qml:23
+#: src/app/qml-qt6/actions/Forward.qml:23
 msgid "Forward"
 msgstr "進む"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Forward' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Forward.qml:26
+#: src/app/qml-qt5/actions/Forward.qml:26
+#: src/app/qml-qt6/actions/Forward.qml:26
 msgid "Newer Page"
 msgstr "次のページ"
 
-#: src/app/actions/GoTo.qml:23
+#: src/app/qml-qt5/actions/GoTo.qml:23 src/app/qml-qt6/actions/GoTo.qml:23
 msgid "Goto"
 msgstr "移動"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/GoTo.qml:26
+#: src/app/qml-qt5/actions/GoTo.qml:26 src/app/qml-qt6/actions/GoTo.qml:26
 msgid "Address;URL;www"
 msgstr "アドレス;Address;URL;www"
 
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:703
-#: src/app/webbrowser/TabsBar.qml:88
+#: src/app/qml-qt5/actions/NewTab.qml:23 src/app/qml-qt6/actions/NewTab.qml:23
+#: src/app/webbrowser/qml-qt5/Browser.qml:703
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:88
+#: src/app/webbrowser/qml-qt6/Browser.qml:703
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:87
 msgid "New Tab"
 msgstr "新しいタブ"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'New Tab' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/NewTab.qml:26
+#: src/app/qml-qt5/actions/NewTab.qml:26 src/app/qml-qt6/actions/NewTab.qml:26
 msgid "Open a New Tab"
 msgstr "新しいタブを開く"
 
-#: src/app/actions/OpenImageInNewTab.qml:22
+#: src/app/qml-qt5/actions/OpenImageInNewTab.qml:22
+#: src/app/qml-qt6/actions/OpenImageInNewTab.qml:22
 msgid "Open image in new tab"
 msgstr "新しいタブで画像を開く"
 
-#: src/app/actions/OpenLinkInBrowser.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInBrowser.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInBrowser.qml:22
 msgid "Open link in default browser"
 msgstr "既定のブラウザでリンクを開く"
 
-#: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInNewBackgroundTab.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInNewBackgroundTab.qml:22
 msgid "Open link in new background tab"
 msgstr "新しいバックグラウンドタブでリンクを開く"
 
-#: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInNewPrivateWindow.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInNewPrivateWindow.qml:22
 msgid "Open link in new private window"
 msgstr "新しいプライベートウィンドウでリンクを開く"
 
-#: src/app/actions/OpenLinkInNewTab.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInNewTab.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
 msgstr "新しいタブでリンクを開く"
 
-#: src/app/actions/OpenLinkInNewWindow.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInNewWindow.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInNewWindow.qml:22
 msgid "Open link in new window"
 msgstr "新しいウィンドウでリンクを開く"
 
-#: src/app/actions/OpenVideoInNewTab.qml:22
+#: src/app/qml-qt5/actions/OpenVideoInNewTab.qml:22
+#: src/app/qml-qt6/actions/OpenVideoInNewTab.qml:22
 msgid "Open video in new tab"
 msgstr "新しいタブで動画で開く"
 
-#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:429
+#: src/app/qml-qt5/actions/Paste.qml:22 src/app/qml-qt6/actions/Paste.qml:22
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:429
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:430
 msgid "Paste"
 msgstr "貼り付け"
 
-#: src/app/actions/Redo.qml:22
+#: src/app/qml-qt5/actions/Redo.qml:22 src/app/qml-qt6/actions/Redo.qml:22
 msgid "Redo"
 msgstr "やり直す"
 
-#: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
-#: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
+#: src/app/qml-qt5/actions/Reload.qml:23 src/app/qml-qt6/actions/Reload.qml:23
+#: src/app/webbrowser/qml-qt5/SadTab.qml:76
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:93
+#: src/app/webbrowser/qml-qt6/SadTab.qml:77
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:92
+#: src/app/webcontainer/qml-qt5/SadPage.qml:51
+#: src/app/webcontainer/qml-qt6/SadPage.qml:52
 msgid "Reload"
 msgstr "再読み込み"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Reload' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Reload.qml:26
+#: src/app/qml-qt5/actions/Reload.qml:26 src/app/qml-qt6/actions/Reload.qml:26
 msgid "Leave Page"
 msgstr "ページを維持"
 
-#: src/app/actions/SaveImage.qml:22
+#: src/app/qml-qt5/actions/SaveImage.qml:22
+#: src/app/qml-qt6/actions/SaveImage.qml:22
 msgid "Save image"
 msgstr "画像を保存"
 
-#: src/app/actions/SaveLink.qml:22
+#: src/app/qml-qt5/actions/SaveLink.qml:22
+#: src/app/qml-qt6/actions/SaveLink.qml:22
 msgid "Save link"
 msgstr "リンクを保存"
 
-#: src/app/actions/SaveVideo.qml:22
+#: src/app/qml-qt5/actions/SaveVideo.qml:22
+#: src/app/qml-qt6/actions/SaveVideo.qml:22
 msgid "Save video"
 msgstr "動画を保存"
 
-#: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
-#: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
-#: src/app/DownloadsPage.qml:85
+#: src/app/qml-qt5/actions/SelectAll.qml:22
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:47
+#: src/app/qml-qt5/DomainPermissionsPage.qml:68
+#: src/app/qml-qt5/DomainSettingsPage.qml:66
+#: src/app/qml-qt5/DownloadsPage.qml:85
+#: src/app/qml-qt6/actions/SelectAll.qml:22
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:47
+#: src/app/qml-qt6/DomainPermissionsPage.qml:68
+#: src/app/qml-qt6/DomainSettingsPage.qml:66
+#: src/app/qml-qt6/DownloadsPage.qml:85
 msgid "Select all"
 msgstr "すべて選択"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:823
+#: src/app/qml-qt5/actions/Share.qml:22 src/app/qml-qt6/actions/Share.qml:22
+#: src/app/webbrowser/qml-qt5/Browser.qml:823
+#: src/app/webbrowser/qml-qt6/Browser.qml:823
 msgid "Share"
 msgstr "共有"
 
-#: src/app/actions/Undo.qml:22
+#: src/app/qml-qt5/actions/Undo.qml:22 src/app/qml-qt6/actions/Undo.qml:22
 msgid "Undo"
 msgstr "戻る"
 
-#: src/app/AlertDialog.qml:24
+#: src/app/qml-qt5/AlertDialog.qml:24 src/app/qml-qt6/AlertDialog.qml:24
 msgid "JavaScript Alert"
 msgstr "JavaScriptのアラート"
 
-#: src/app/AlertDialog.qml:31 src/app/AuthenticationDialog.qml:47
-#: src/app/ColorSelectDialog.qml:73 src/app/ConfirmDialog.qml:33
-#: src/app/EditCustomUserAgentDialog.qml:62
-#: src/app/HttpAuthenticationDialog.qml:70 src/app/PromptDialog.qml:50
-#: src/app/webbrowser/BookmarkOptions.qml:122
+#: src/app/qml-qt5/AlertDialog.qml:31
+#: src/app/qml-qt5/AuthenticationDialog.qml:47
+#: src/app/qml-qt5/ColorSelectDialog.qml:73
+#: src/app/qml-qt5/ConfirmDialog.qml:33
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:62
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:70
+#: src/app/qml-qt5/PromptDialog.qml:50 src/app/qml-qt6/AlertDialog.qml:31
+#: src/app/qml-qt6/AuthenticationDialog.qml:47
+#: src/app/qml-qt6/ColorSelectDialog.qml:73
+#: src/app/qml-qt6/ConfirmDialog.qml:33
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:62
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:70
+#: src/app/qml-qt6/PromptDialog.qml:50
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:122
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:122
 msgid "OK"
 msgstr "OK"
 
-#: src/app/AllowCustomSchemesDialog.qml:24
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:24
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
 msgstr "カスタムURLスキーマ"
 
-#: src/app/AllowCustomSchemesDialog.qml:30
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:30
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
 msgstr "'%1'のウェブサイトがウェブブラウザ外でURLを開こうとしています："
 
-#: src/app/AllowCustomSchemesDialog.qml:32
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:32
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
 msgstr "可能であればシステムアプリでURLを開きますか？"
 
-#: src/app/AllowCustomSchemesDialog.qml:44
-#: src/app/GeolocationPermissionRequest.qml:44
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:44
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:44
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:44
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
 msgstr "次回以降質問しない"
 
-#: src/app/AllowCustomSchemesDialog.qml:50
-#: src/app/GeolocationPermissionRequest.qml:51
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:50
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:51
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:50
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:51
 msgid "Allow"
 msgstr "許可"
 
-#: src/app/AllowCustomSchemesDialog.qml:57
-#: src/app/AllowOrBlockDomainDialog.qml:53 src/app/AuthenticationDialog.qml:53
-#: src/app/CertificateVerificationDialog.qml:46
-#: src/app/ColorSelectDialog.qml:84 src/app/ConfirmDialog.qml:41
-#: src/app/DownloadDelegate.qml:271 src/app/EditCustomUserAgentDialog.qml:69
-#: src/app/HttpAuthenticationDialog.qml:80 src/app/PromptDialog.qml:61
-#: src/app/SavePageDialog.qml:73 src/app/SimpleDownloadDelegate.qml:136
-#: src/app/webbrowser/BookmarkOptions.qml:182
-#: src/app/webbrowser/ContentDownloadDialog.qml:114
-#: src/app/webbrowser/ContextMenuMobile.qml:143
-#: src/app/webbrowser/SettingsPage.qml:458
-#: src/app/webbrowser/SettingsPage.qml:574
-#: src/app/webcontainer/AccountChooserDialog.qml:96
-#: src/app/webcontainer/ContextMenuMobile.qml:143
-#: src/app/webcontainer/WebappSettingsPage.qml:286 src/app/ZoomControls.qml:237
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:57
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:53
+#: src/app/qml-qt5/AuthenticationDialog.qml:53
+#: src/app/qml-qt5/CertificateVerificationDialog.qml:46
+#: src/app/qml-qt5/ColorSelectDialog.qml:84
+#: src/app/qml-qt5/ConfirmDialog.qml:41
+#: src/app/qml-qt5/DownloadDelegate.qml:271
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:69
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:80
+#: src/app/qml-qt5/PromptDialog.qml:61 src/app/qml-qt5/SavePageDialog.qml:73
+#: src/app/qml-qt5/SimpleDownloadDelegate.qml:136
+#: src/app/qml-qt5/ZoomControls.qml:237
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:57
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:53
+#: src/app/qml-qt6/AuthenticationDialog.qml:53
+#: src/app/qml-qt6/CertificateVerificationDialog.qml:46
+#: src/app/qml-qt6/ColorSelectDialog.qml:84
+#: src/app/qml-qt6/ConfirmDialog.qml:41
+#: src/app/qml-qt6/DownloadDelegate.qml:270
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:69
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:80
+#: src/app/qml-qt6/PromptDialog.qml:61 src/app/qml-qt6/SavePageDialog.qml:73
+#: src/app/qml-qt6/SimpleDownloadDelegate.qml:136
+#: src/app/qml-qt6/ZoomControls.qml:235
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:182
+#: src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml:114
+#: src/app/webbrowser/qml-qt5/ContextMenuMobile.qml:143
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:458
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:574
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:182
+#: src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml:114
+#: src/app/webbrowser/qml-qt6/ContextMenuMobile.qml:143
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:480
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:596
+#: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:96
+#: src/app/webcontainer/qml-qt5/ContextMenuMobile.qml:143
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:286
+#: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:96
+#: src/app/webcontainer/qml-qt6/ContextMenuMobile.qml:143
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:286
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/app/AllowOrBlockDomainDialog.qml:25
-#: src/app/AllowOrBlockDomainDialog.qml:41
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:25
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:41
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:25
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:41
 msgid "Block domain"
 msgstr "ドメインをブロック"
 
-#: src/app/AllowOrBlockDomainDialog.qml:30
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:30
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:30
 #, qt-format
 msgid ""
 "You're trying to access %1 but it is not on your approved domain whitelist. "
@@ -288,7 +382,8 @@ msgstr ""
 "をブロックしたままにしますか、ブロックを解除しますか、前のページに戻ります"
 "か？"
 
-#: src/app/AllowOrBlockDomainDialog.qml:31
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:31
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:31
 #, qt-format
 msgid ""
 "%1 is trying to access %2 but it is not on your approved domain whitelist. "
@@ -299,46 +394,62 @@ msgstr ""
 "ンをブロックしたままにしますか、ブロックを解除しますか、前のページに戻ります"
 "か？"
 
-#: src/app/AllowOrBlockDomainDialog.qml:47
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:47
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
 msgstr "ドメインを許可"
 
-#: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
+#: src/app/qml-qt5/AuthenticationDialog.qml:24
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:25
+#: src/app/qml-qt6/AuthenticationDialog.qml:24
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
 msgstr "認証が必要です。"
 
 #. TRANSLATORS: %1 refers to the URL of the current website
-#: src/app/AuthenticationDialog.qml:26
+#: src/app/qml-qt5/AuthenticationDialog.qml:26
+#: src/app/qml-qt6/AuthenticationDialog.qml:26
 #, qt-format
 msgid "The website %1 requires authentication."
 msgstr "ウェブサイト %1 は認証が必要です。"
 
-#: src/app/AuthenticationDialog.qml:34 src/app/HttpAuthenticationDialog.qml:50
+#: src/app/qml-qt5/AuthenticationDialog.qml:34
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:50
+#: src/app/qml-qt6/AuthenticationDialog.qml:34
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:50
 msgid "Username"
 msgstr "ユーザー名"
 
-#: src/app/AuthenticationDialog.qml:41 src/app/HttpAuthenticationDialog.qml:60
+#: src/app/qml-qt5/AuthenticationDialog.qml:41
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:60
+#: src/app/qml-qt6/AuthenticationDialog.qml:41
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:60
 msgid "Password"
 msgstr "パスワード"
 
-#: src/app/BeforeUnloadDialog.qml:24
+#: src/app/qml-qt5/BeforeUnloadDialog.qml:24
+#: src/app/qml-qt6/BeforeUnloadDialog.qml:24
 msgid "Confirm Navigation"
 msgstr "操作の確認"
 
-#: src/app/BeforeUnloadDialog.qml:33
+#: src/app/qml-qt5/BeforeUnloadDialog.qml:33
+#: src/app/qml-qt6/BeforeUnloadDialog.qml:33
 msgid "Leave"
 msgstr "削除する"
 
-#: src/app/BeforeUnloadDialog.qml:41
+#: src/app/qml-qt5/BeforeUnloadDialog.qml:41
+#: src/app/qml-qt6/BeforeUnloadDialog.qml:41
 msgid "Stay"
 msgstr "そのままにする"
 
-#: src/app/CertificateVerificationDialog.qml:24
+#: src/app/qml-qt5/CertificateVerificationDialog.qml:24
+#: src/app/qml-qt6/CertificateVerificationDialog.qml:24
 msgid "This connection is untrusted"
 msgstr "この接続の安全性は確認できません"
 
 #. TRANSLATORS: %1 refers to the hostname
-#: src/app/CertificateVerificationDialog.qml:26
+#: src/app/qml-qt5/CertificateVerificationDialog.qml:26
+#: src/app/qml-qt6/CertificateVerificationDialog.qml:26
 #, qt-format
 msgid ""
 "You are trying to securely reach %1, but the security certificate of this "
@@ -347,284 +458,367 @@ msgstr ""
 "安全に %1 にアクセスしようとしていますが、このウェブサイトのセキュリティ証明"
 "書は信頼できません。理由: %2"
 
-#: src/app/CertificateVerificationDialog.qml:39
-#: src/app/InvalidCertificateErrorSheet.qml:160
+#: src/app/qml-qt5/CertificateVerificationDialog.qml:39
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:160
+#: src/app/qml-qt6/CertificateVerificationDialog.qml:39
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:160
 msgid "Proceed anyway"
 msgstr "とにかく続行する"
 
-#: src/app/ColorSelectDialog.qml:25
+#: src/app/qml-qt5/ColorSelectDialog.qml:25
+#: src/app/qml-qt6/ColorSelectDialog.qml:25
 msgid "Select Color"
 msgstr "色を選択"
 
-#: src/app/ConfirmDialog.qml:24
+#: src/app/qml-qt5/ConfirmDialog.qml:24 src/app/qml-qt6/ConfirmDialog.qml:24
 msgid "JavaScript Confirmation"
 msgstr "JavaScriptの確認"
 
-#: src/app/ContentExportDialog.qml:79
+#: src/app/qml-qt5/ContentExportDialog.qml:79
+#: src/app/qml-qt6/ContentExportDialog.qml:87
 #, fuzzy
 #| msgid "Open tabs"
 msgid "Open with"
 msgstr "タブを表示"
 
-#: src/app/ContentExportDialog.qml:80
+#: src/app/qml-qt5/ContentExportDialog.qml:80
+#: src/app/qml-qt6/ContentExportDialog.qml:88
 #, qt-format
 msgid "File name: %1"
 msgstr "ファイル名: %1"
 
-#: src/app/ContentExportDialog.qml:91
-#: src/app/webcontainer/AccountErrorScreen.qml:50
+#: src/app/qml-qt5/ContentExportDialog.qml:91
+#: src/app/qml-qt6/ContentExportDialog.qml:99
+#: src/app/webcontainer/qml-qt5/AccountErrorScreen.qml:50
+#: src/app/webcontainer/qml-qt6/AccountErrorScreen.qml:50
 msgid "Close"
 msgstr "閉じる"
 
-#: src/app/ContentExportDialog.qml:100
+#: src/app/qml-qt5/ContentExportDialog.qml:100
+#: src/app/qml-qt6/ContentExportDialog.qml:108
 msgid "Open link in browser"
 msgstr "ブラウザでリンクを開く"
 
-#: src/app/ContentExportDialog.qml:109
+#: src/app/qml-qt5/ContentExportDialog.qml:109
+#: src/app/qml-qt6/ContentExportDialog.qml:117
 msgid "Open file in browser"
 msgstr "ブラウザでファイルを開く"
 
-#: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:33
+#: src/app/qml-qt5/DomainSettingsPage.qml:150
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:33
+#: src/app/qml-qt6/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
 msgstr "カスタムユーザーエージェント"
 
-#: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
-#: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:63
+#: src/app/qml-qt5/DomainPermissionsPage.qml:84
+#: src/app/qml-qt5/DomainSettingsPage.qml:82
+#: src/app/qml-qt5/DownloadsPage.qml:101
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:63
+#: src/app/qml-qt6/DomainPermissionsPage.qml:84
+#: src/app/qml-qt6/DomainSettingsPage.qml:82
+#: src/app/qml-qt6/DownloadsPage.qml:101
 msgid "Delete"
 msgstr "削除"
 
-#: src/app/CustomUserAgentsPage.qml:94
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:94
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
 msgstr "新しいユーザーエージェント"
 
-#: src/app/CustomUserAgentsPage.qml:161
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:161
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:161
 msgid "Edit User Agent"
 msgstr "ユーザーエージェントを編集"
 
-#: src/app/CustomUserAgentsPage.qml:187
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:187
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
 msgstr "利用可能なユーザーエージェントはありません"
 
-#: src/app/DomainPermissionsPage.qml:54
-#: src/app/webcontainer/WebappSettingsPage.qml:225
+#: src/app/qml-qt5/DomainPermissionsPage.qml:54
+#: src/app/qml-qt6/DomainPermissionsPage.qml:54
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:225
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
 msgstr "ドメインブラック/ホワイトリスト"
 
-#: src/app/DomainPermissionsPage.qml:113 src/app/DomainSettingsPage.qml:113
+#: src/app/qml-qt5/DomainPermissionsPage.qml:113
+#: src/app/qml-qt5/DomainSettingsPage.qml:113
+#: src/app/qml-qt6/DomainPermissionsPage.qml:113
+#: src/app/qml-qt6/DomainSettingsPage.qml:113
 msgid "Add domain"
 msgstr "ドメインを追加"
 
-#: src/app/DomainPermissionsPage.qml:114
+#: src/app/qml-qt5/DomainPermissionsPage.qml:114
+#: src/app/qml-qt6/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
 msgstr ""
 "example.comといった形でドメイン名を入力してください（サブドメインは削除されま"
 "す）。"
 
-#: src/app/DomainPermissionsPage.qml:222
+#: src/app/qml-qt5/DomainPermissionsPage.qml:222
+#: src/app/qml-qt6/DomainPermissionsPage.qml:222
 msgid "Not Set"
 msgstr "設定されていません"
 
-#: src/app/DomainPermissionsPage.qml:232
+#: src/app/qml-qt5/DomainPermissionsPage.qml:232
+#: src/app/qml-qt6/DomainPermissionsPage.qml:232
 msgid "Never allow access"
 msgstr "アクセスを許可しない"
 
-#: src/app/DomainPermissionsPage.qml:243
+#: src/app/qml-qt5/DomainPermissionsPage.qml:243
+#: src/app/qml-qt6/DomainPermissionsPage.qml:243
 msgid "Always allow access"
 msgstr "常にアクセスを許可する"
 
-#: src/app/DomainPermissionsPage.qml:283
+#: src/app/qml-qt5/DomainPermissionsPage.qml:283
+#: src/app/qml-qt6/DomainPermissionsPage.qml:283
 msgid "No sites have been granted special permissions"
 msgstr "特別な許可を付与されたサイトはありません"
 
-#: src/app/DomainSettingsPage.qml:52
-#: src/app/webcontainer/WebappSettingsPage.qml:236
+#: src/app/qml-qt5/DomainSettingsPage.qml:52
+#: src/app/qml-qt6/DomainSettingsPage.qml:52
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:236
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:236
 msgid "Domain specific settings"
 msgstr "ドメイン固有の設定"
 
-#: src/app/DomainSettingsPage.qml:114
+#: src/app/qml-qt5/DomainSettingsPage.qml:114
+#: src/app/qml-qt6/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
 msgstr "example.comのようにドメイン名を入力してください"
 
-#: src/app/DomainSettingsPage.qml:207
+#: src/app/qml-qt5/DomainSettingsPage.qml:207
+#: src/app/qml-qt6/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
 msgstr "他のアプリで開くことを許可されています"
 
-#: src/app/DomainSettingsPage.qml:226
+#: src/app/qml-qt5/DomainSettingsPage.qml:226
+#: src/app/qml-qt6/DomainSettingsPage.qml:226
 msgid "access your location"
 msgstr "現在地にアクセス"
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/qml-qt5/DomainSettingsPage.qml:231
+#: src/app/qml-qt6/DomainSettingsPage.qml:231
 msgid "Ask each time"
 msgstr "毎回尋ねる"
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/qml-qt5/DomainSettingsPage.qml:231
+#: src/app/qml-qt6/DomainSettingsPage.qml:231
 msgid "Allowed"
 msgstr "許可"
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/qml-qt5/DomainSettingsPage.qml:231
+#: src/app/qml-qt6/DomainSettingsPage.qml:231
 msgid "Denied"
 msgstr "拒否"
 
-#: src/app/DomainSettingsPage.qml:245
+#: src/app/qml-qt5/DomainSettingsPage.qml:245
+#: src/app/qml-qt6/DomainSettingsPage.qml:245
 msgid "custom user agent"
 msgstr "カスタムユーザーエージェント"
 
-#: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
+#: src/app/qml-qt5/DomainSettingsPage.qml:320
+#: src/app/qml-qt5/DomainSettingsPage.qml:325
+#: src/app/qml-qt6/DomainSettingsPage.qml:320
+#: src/app/qml-qt6/DomainSettingsPage.qml:325
 msgid "Zoom: "
 msgstr "拡大率: "
 
-#: src/app/DomainSettingsPage.qml:325
+#: src/app/qml-qt5/DomainSettingsPage.qml:325
+#: src/app/qml-qt6/DomainSettingsPage.qml:325
 msgid "not set"
 msgstr "設定されていません"
 
-#: src/app/DomainSettingsPage.qml:361
+#: src/app/qml-qt5/DomainSettingsPage.qml:361
+#: src/app/qml-qt6/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
 msgstr "利用可能なドメイン固有の設定はありません"
 
 #. TRANSLATORS: %1 is the percentage of the download completed so far
-#: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
+#: src/app/qml-qt5/DownloadDelegate.qml:105
+#: src/app/qml-qt5/DownloadsDialog.qml:109
+#: src/app/qml-qt6/DownloadDelegate.qml:104
+#: src/app/qml-qt6/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/app/DownloadDelegate.qml:170
+#: src/app/qml-qt5/DownloadDelegate.qml:170
+#: src/app/qml-qt6/DownloadDelegate.qml:169
 msgid "Download failed"
 msgstr "ダウンロードに失敗しました"
 
-#: src/app/DownloadDelegate.qml:199
+#: src/app/qml-qt5/DownloadDelegate.qml:199
+#: src/app/qml-qt6/DownloadDelegate.qml:198
 msgid "Unknown"
 msgstr "不明"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
-#: src/app/DownloadDelegate.qml:207
+#: src/app/qml-qt5/DownloadDelegate.qml:207
+#: src/app/qml-qt6/DownloadDelegate.qml:206
 #, qt-format
 msgid "%1/s"
 msgstr "%1/秒"
 
-#: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
+#: src/app/qml-qt5/DownloadDelegate.qml:251
+#: src/app/qml-qt5/SimpleDownloadDelegate.qml:117
+#: src/app/qml-qt6/DownloadDelegate.qml:250
+#: src/app/qml-qt6/SimpleDownloadDelegate.qml:117
 msgid "Delete File"
 msgstr "ファイルを削除"
 
-#: src/app/DownloadDelegate.qml:261
+#: src/app/qml-qt5/DownloadDelegate.qml:261
+#: src/app/qml-qt6/DownloadDelegate.qml:260
 msgid "Remove from History"
 msgstr "履歴から削除"
 
-#: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
+#: src/app/qml-qt5/DownloadDelegate.qml:290
+#: src/app/qml-qt5/SimpleDownloadDelegate.qml:157
+#: src/app/qml-qt6/DownloadDelegate.qml:289
+#: src/app/qml-qt6/SimpleDownloadDelegate.qml:157
 msgid "Copy Download Link"
 msgstr "リンクをコピー"
 
-#: src/app/DownloadsDialog.qml:68
+#: src/app/qml-qt5/DownloadsDialog.qml:68
+#: src/app/qml-qt6/DownloadsDialog.qml:68
 msgid "Recent Downloads"
 msgstr "最新のダウンロード"
 
-#: src/app/DownloadsDialog.qml:83
+#: src/app/qml-qt5/DownloadsDialog.qml:83
+#: src/app/qml-qt6/DownloadsDialog.qml:83
 msgid "No Recent Downloads"
 msgstr "最近のダウンロードがありません"
 
-#: src/app/DownloadsDialog.qml:106
+#: src/app/qml-qt5/DownloadsDialog.qml:106
+#: src/app/qml-qt6/DownloadsDialog.qml:106
 msgid "Cancelled"
 msgstr "キャンセル"
 
-#: src/app/DownloadsDialog.qml:109
+#: src/app/qml-qt5/DownloadsDialog.qml:109
+#: src/app/qml-qt6/DownloadsDialog.qml:109
 msgid "Completed"
 msgstr "完了済み"
 
-#: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
-#: src/app/webcontainer/WebappSettingsPage.qml:293
+#: src/app/qml-qt5/DownloadsDialog.qml:169
+#: src/app/qml-qt6/DownloadsDialog.qml:169
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:465
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:487
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:293
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:293
 msgid "Clear"
 msgstr "削除"
 
-#: src/app/DownloadsDialog.qml:179
+#: src/app/qml-qt5/DownloadsDialog.qml:179
+#: src/app/qml-qt6/DownloadsDialog.qml:179
 msgid "View All"
 msgstr "すべて表示"
 
-#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:850
-#: src/app/webcontainer/WebappSettingsPage.qml:137
+#: src/app/qml-qt5/DownloadsPage.qml:46 src/app/qml-qt6/DownloadsPage.qml:46
+#: src/app/webbrowser/qml-qt5/Browser.qml:850
+#: src/app/webbrowser/qml-qt6/Browser.qml:850
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:137
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:137
 msgid "Downloads"
 msgstr "ダウンロード"
 
-#: src/app/DownloadsPage.qml:60
+#: src/app/qml-qt5/DownloadsPage.qml:60 src/app/qml-qt6/DownloadsPage.qml:60
 msgid "Confirm selection"
 msgstr "選択を確認"
 
-#: src/app/DownloadsPage.qml:288
+#: src/app/qml-qt5/DownloadsPage.qml:288 src/app/qml-qt6/DownloadsPage.qml:288
 msgid "No downloads available"
 msgstr "ダウンロードはありません"
 
-#: src/app/EditCustomUserAgentDialog.qml:42
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:42
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
 msgstr "このユーザーエージェント名はすでに取得済みです"
 
-#: src/app/EditCustomUserAgentDialog.qml:48
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:48
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:48
 msgid "Add the name for the user agent"
 msgstr "ユーザーエージェント名を追加"
 
-#: src/app/EditCustomUserAgentDialog.qml:54
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:54
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
 msgstr "ユーザーエージェントの文字列を入力…"
 
-#: src/app/ErrorSheet.qml:42
+#: src/app/qml-qt5/ErrorSheet.qml:42 src/app/qml-qt6/ErrorSheet.qml:42
 msgid "Certificate Error"
 msgstr "認証エラー"
 
-#: src/app/ErrorSheet.qml:42
+#: src/app/qml-qt5/ErrorSheet.qml:42 src/app/qml-qt6/ErrorSheet.qml:42
 msgid "Network Error"
 msgstr "ネットワークエラー"
 
 #. TRANSLATORS: %1 refers to the URL of the current page
-#: src/app/ErrorSheet.qml:49
+#: src/app/qml-qt5/ErrorSheet.qml:49 src/app/qml-qt6/ErrorSheet.qml:49
 #, qt-format
 msgid "It appears you are having trouble viewing: %1."
 msgstr "次のページを表示する際に問題が発生しました: %1."
 
-#: src/app/ErrorSheet.qml:56
+#: src/app/qml-qt5/ErrorSheet.qml:56 src/app/qml-qt6/ErrorSheet.qml:56
 #, qt-format
 msgid "Error: %1"
 msgstr "エラー：%1"
 
-#: src/app/ErrorSheet.qml:62 src/app/InvalidCertificateErrorSheet.qml:173
+#: src/app/qml-qt5/ErrorSheet.qml:62
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:173
+#: src/app/qml-qt6/ErrorSheet.qml:62
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:173
 msgid "Back to safety"
 msgstr "セキュリティで保護されたページに戻る"
 
-#: src/app/ErrorSheet.qml:70
+#: src/app/qml-qt5/ErrorSheet.qml:70 src/app/qml-qt6/ErrorSheet.qml:70
 msgid "Please check your network settings and try refreshing the page."
 msgstr "ネットワーク設定を確認して、ページを更新してください。"
 
-#: src/app/ErrorSheet.qml:77
+#: src/app/qml-qt5/ErrorSheet.qml:77 src/app/qml-qt6/ErrorSheet.qml:77
 msgid "Refresh page"
 msgstr "ページを更新"
 
-#: src/app/GeolocationPermissionRequest.qml:29
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:29
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:29
 msgid "Permission Request"
 msgstr "許可を求めています"
 
-#: src/app/GeolocationPermissionRequest.qml:30
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:30
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:30
 msgid "This page wants to know your device’s location."
 msgstr "このページはデバイスの位置情報を要求しています。"
 
-#: src/app/GeolocationPermissionRequest.qml:57
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:57
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:57
 msgid "Deny"
 msgstr "拒否"
 
 #. TRANSLATORS: %1 refers to the URL of the current website and %2 is a string that the website sends with more information about the authentication challenge (technically called "realm")
-#: src/app/HttpAuthenticationDialog.qml:27
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:27
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:27
 #, qt-format
 msgid "The website at %1 requires authentication. The website says \"%2\""
 msgstr ""
 "%1のウェブサイトが認証を要求しています。ウェブサイトから「%2」と通知されてい"
 "ます"
 
-#: src/app/InvalidCertificateErrorSheet.qml:55
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:55
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:55
 msgid "This site security certificate is not trusted.\n"
 msgstr "このサイトのセキュリティ証明書は信頼できません。\n"
 
-#: src/app/InvalidCertificateErrorSheet.qml:63
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:63
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:63
 msgid "Learn more"
 msgstr "もっと詳しく"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's serial number
-#: src/app/InvalidCertificateErrorSheet.qml:87
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:87
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:87
 #, qt-format
 msgid ""
 "Serial number:\n"
@@ -634,7 +828,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject display name
-#: src/app/InvalidCertificateErrorSheet.qml:94
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:94
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:94
 #, qt-format
 msgid ""
 "Subject:\n"
@@ -644,7 +839,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject's address
-#: src/app/InvalidCertificateErrorSheet.qml:102
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:102
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:102
 #, qt-format
 msgid ""
 "Subject address:\n"
@@ -654,7 +850,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer display name
-#: src/app/InvalidCertificateErrorSheet.qml:113
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:113
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:113
 #, qt-format
 msgid ""
 "Issuer:\n"
@@ -664,7 +861,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer's address
-#: src/app/InvalidCertificateErrorSheet.qml:121
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:121
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:121
 #, qt-format
 msgid ""
 "Issuer address:\n"
@@ -674,7 +872,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's start date
-#: src/app/InvalidCertificateErrorSheet.qml:132
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:132
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:132
 #, qt-format
 msgid ""
 "Valid from:\n"
@@ -684,7 +883,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's expiry date
-#: src/app/InvalidCertificateErrorSheet.qml:139
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:139
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:139
 #, qt-format
 msgid ""
 "Valid until:\n"
@@ -694,7 +894,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's SHA1 fingerprint
-#: src/app/InvalidCertificateErrorSheet.qml:146
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:146
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:146
 #, qt-format
 msgid ""
 "Fingerprint (SHA1):\n"
@@ -703,7 +904,8 @@ msgstr ""
 "フィンガープリント(SHA1):\n"
 "%1"
 
-#: src/app/InvalidCertificateErrorSheet.qml:153
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:153
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:153
 msgid ""
 "You should not proceed, especially if you have never seen this warning "
 "before for this site."
@@ -711,571 +913,134 @@ msgstr ""
 "特に、あなたが以前このサイトでこの警告を目にしたことがない場合は、先に進むべ"
 "きではありません。"
 
-#: src/app/MediaAccessDialog.qml:39
+#: src/app/qml-qt5/MediaAccessDialog.qml:39
+#: src/app/qml-qt6/MediaAccessDialog.qml:39
 msgid "Permission"
 msgstr "権限"
 
-#: src/app/MediaAccessDialog.qml:46
+#: src/app/qml-qt5/MediaAccessDialog.qml:46
+#: src/app/qml-qt6/MediaAccessDialog.qml:46
 msgid "Allow this domain to access your camera and microphone?"
 msgstr "このドメインがカメラとマイクにアクセスすることを許可しますか?"
 
-#: src/app/MediaAccessDialog.qml:47
+#: src/app/qml-qt5/MediaAccessDialog.qml:47
+#: src/app/qml-qt6/MediaAccessDialog.qml:47
 msgid "Allow this domain to access your camera?"
 msgstr "このドメインがカメラにアクセスすることを許可しますか?"
 
-#: src/app/MediaAccessDialog.qml:48
+#: src/app/qml-qt5/MediaAccessDialog.qml:48
+#: src/app/qml-qt6/MediaAccessDialog.qml:48
 msgid "Allow this domain to access your microphone?"
 msgstr "このドメインがマイクにアクセスすることを許可しますか?"
 
-#: src/app/MediaAccessDialog.qml:77
+#: src/app/qml-qt5/MediaAccessDialog.qml:77
+#: src/app/qml-qt6/MediaAccessDialog.qml:77
 msgid "Yes"
 msgstr "はい"
 
-#: src/app/MediaAccessDialog.qml:85
+#: src/app/qml-qt5/MediaAccessDialog.qml:85
+#: src/app/qml-qt6/MediaAccessDialog.qml:85
 msgid "No"
 msgstr "いいえ"
 
-#: src/app/PromptDialog.qml:25
+#: src/app/qml-qt5/PromptDialog.qml:25 src/app/qml-qt6/PromptDialog.qml:25
 msgid "JavaScript Prompt"
 msgstr "JavaScriptのプロンプト"
 
-#: src/app/ProxyAuthenticationDialog.qml:22
+#: src/app/qml-qt5/ProxyAuthenticationDialog.qml:22
+#: src/app/qml-qt6/ProxyAuthenticationDialog.qml:22
 msgid "Proxy authentication required."
 msgstr "プロキシ認証が必要です。"
 
 #. TRANSLATORS: %1 refers to the proxy address, %2 refers to the proxy port
-#: src/app/ProxyAuthenticationDialog.qml:24
+#: src/app/qml-qt5/ProxyAuthenticationDialog.qml:24
+#: src/app/qml-qt6/ProxyAuthenticationDialog.qml:24
 #, qt-format
 msgid "The website %1:%2 requires authentication."
 msgstr "%1:%2 は認証が必要です。"
 
-#: src/app/SavePageDialog.qml:24
+#: src/app/qml-qt5/SavePageDialog.qml:24 src/app/qml-qt6/SavePageDialog.qml:24
 msgid "Save page as HTML / PDF"
 msgstr "HTML/PDF形式で保存"
 
-#: src/app/SavePageDialog.qml:41
+#: src/app/qml-qt5/SavePageDialog.qml:41 src/app/qml-qt6/SavePageDialog.qml:41
 msgid "No save actions are available"
 msgstr "利用可能な保存方式はありません"
 
-#: src/app/SavePageDialog.qml:46
+#: src/app/qml-qt5/SavePageDialog.qml:46 src/app/qml-qt6/SavePageDialog.qml:46
 msgid "Save as HTML"
 msgstr "HTML形式で保存"
 
-#: src/app/SavePageDialog.qml:54
-#: src/app/webbrowser/ContentDownloadDialog.qml:102
+#: src/app/qml-qt5/SavePageDialog.qml:54 src/app/qml-qt6/SavePageDialog.qml:54
+#: src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml:102
+#: src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml:102
 msgid "Download"
 msgstr "ダウンロード"
 
-#: src/app/SavePageDialog.qml:64
+#: src/app/qml-qt5/SavePageDialog.qml:64 src/app/qml-qt6/SavePageDialog.qml:64
 msgid "Save as PDF"
 msgstr "PDF形式で保存"
 
-#: src/app/SimpleDownloadDelegate.qml:128
+#: src/app/qml-qt5/SimpleDownloadDelegate.qml:128
+#: src/app/qml-qt6/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
 msgstr "リストから削除"
 
-#: src/app/webbrowser/AddressBar.qml:287
-msgid "find in page"
-msgstr "ページ内検索"
-
-#: src/app/webbrowser/AddressBar.qml:288
-msgid "search or enter an address"
-msgstr "検索 / アドレスの入力"
-
-#: src/app/webbrowser/AddressBar.qml:440
-msgid "Paste and Go"
-msgstr "貼り付けて開く"
-
-#: src/app/webbrowser/BookmarkOptions.qml:66
-msgid "Bookmark Added"
-msgstr "ブックマークを追加しました"
-
-#. TRANSLATORS: Field where the title of bookmarked URL can be changed
-#: src/app/webbrowser/BookmarkOptions.qml:71
-msgid "Name"
-msgstr "名前"
-
-#. TRANSLATORS: Field to choose the folder where bookmarked URL will be saved in
-#: src/app/webbrowser/BookmarkOptions.qml:89
-msgid "Save in"
-msgstr "保存先"
-
-#: src/app/webbrowser/BookmarkOptions.qml:96
-#: src/app/webbrowser/BookmarksFoldersView.qml:133
-#: src/app/webbrowser/BookmarksFoldersViewWide.qml:105
-msgid "All Bookmarks"
-msgstr "すべてのブックマーク"
-
-#: src/app/webbrowser/BookmarkOptions.qml:114
-#: src/app/webbrowser/BookmarkOptions.qml:154
-msgid "New Folder"
-msgstr "新しいフォルダー"
-
-#: src/app/webbrowser/BookmarkOptions.qml:136
-msgid "Create new folder"
-msgstr "新しいフォルダーを作成"
-
-#: src/app/webbrowser/BookmarkOptions.qml:164
-#: src/app/webbrowser/SettingsPage.qml:550 src/app/ZoomControls.qml:82
-msgid "Save"
-msgstr "保存"
-
-#: src/app/webbrowser/BookmarksFoldersView.qml:191
-#: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
-#: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
-#: src/app/webbrowser/SettingsPage.qml:486
-msgid "Homepage"
-msgstr "ホームページ"
-
-#: src/app/webbrowser/BookmarksView.qml:33
-#: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:831 src/app/webbrowser/NewTabView.qml:130
-#: src/app/webbrowser/NewTabViewWide.qml:139
-msgid "Bookmarks"
-msgstr "ブックマーク"
-
-#: src/app/webbrowser/Browser.qml:242
-#: src/app/webcontainer/WebViewImplOxide.qml:302
-msgid "Blocked domain"
-msgstr "ブロックされたドメイン"
-
-#: src/app/webbrowser/Browser.qml:243
-#: src/app/webcontainer/WebViewImplOxide.qml:303
-#, qt-format
-msgid "Blocked navigation request to domain %1."
-msgstr "ドメイン%1の操作リクエストをブロックしました。"
-
-#: src/app/webbrowser/Browser.qml:269
-#: src/app/webcontainer/WebViewImplOxide.qml:329
-msgid "Whitelisted domain"
-msgstr "ホワイトリストドメイン"
-
-#: src/app/webbrowser/Browser.qml:270
-#, qt-format
-msgid ""
-"domain %1 is now whitelisted, it will be active on the next page reload."
-msgstr ""
-"ドメイン%1がホワイトリスト化され、次回ページ読み込み時に有効になります。"
-
-#: src/app/webbrowser/Browser.qml:660
-msgid "Done"
-msgstr "完了"
-
-#: src/app/webbrowser/Browser.qml:685
-msgid "Reopen Tab"
-msgstr "タブを開き直す"
-
-#: src/app/webbrowser/Browser.qml:811
-msgid "New window"
-msgstr "新しいウィンドウ"
-
-#: src/app/webbrowser/Browser.qml:817
-msgid "New private window"
-msgstr "新しいプライベートウィンドウ"
-
-#: src/app/webbrowser/Browser.qml:837 src/app/webbrowser/HistoryView.qml:31
-#: src/app/webbrowser/HistoryViewWide.qml:36
-msgid "History"
-msgstr "履歴"
-
-#: src/app/webbrowser/Browser.qml:857 src/app/webbrowser/SettingsPage.qml:45
-msgid "Settings"
-msgstr "設定"
-
-#: src/app/webbrowser/Browser.qml:863
-msgid "View source"
-msgstr "ソースを見る"
-
-#: src/app/webbrowser/Browser.qml:876
-msgid "Save / Print to PDF"
-msgstr "PDFに保存/印刷"
-
-#: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
+#: src/app/qml-qt5/WebViewImpl.qml:702 src/app/qml-qt6/WebViewImpl.qml:756
+#: src/app/webbrowser/qml-qt5/Browser.qml:897
+#: src/app/webbrowser/qml-qt6/Browser.qml:904
 msgid "Zoom"
 msgstr "ズーム"
 
-#: src/app/webbrowser/Browser.qml:904 src/app/webbrowser/SettingsPage.qml:140
-msgid "Set Desktop mode"
-msgstr "デスクトップモードに設定する"
-
-#. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
-#, qt-format
-msgid "(%1)"
-msgstr "(%1)"
-
-#: src/app/webbrowser/Browser.qml:1985
-msgid "the file is already in the downloads folder."
-msgstr "ファイルはすでにダウンロードフォルダに存在します。"
-
-#: src/app/webbrowser/ContentDownloadDialog.qml:83
-msgid ""
-"Choose an application to open this file or add it to the downloads folder."
-msgstr ""
-"このファイルを開くアプリケーションを選択するか、downloadsフォルダーに追加して"
-"ください。"
-
-#: src/app/webbrowser/ContentDownloadDialog.qml:89
-msgid "Choose an application"
-msgstr "アプリケーションを選択"
-
-#: src/app/webbrowser/ExpandedHistoryView.qml:135
-#, qt-format
-msgid "%1 page"
-msgid_plural "%1 pages"
-msgstr[0] "%1ページ"
-
-#: src/app/webbrowser/HistorySectionDelegate.qml:26
-msgid "Last Visited"
-msgstr "直近の訪問"
-
-#: src/app/webbrowser/HistorySectionDelegate.qml:48
-#: src/app/webbrowser/HistoryViewWide.qml:258
-msgid "Yesterday"
-msgstr "昨日"
-
-#: src/app/webbrowser/HistoryViewWide.qml:161
-msgid "search history"
-msgstr "検索履歴"
-
-#: src/app/webbrowser/HistoryViewWide.qml:242
-msgid "All History"
-msgstr "すべての履歴"
-
-#: src/app/webbrowser/HistoryViewWide.qml:256
-#: src/app/webbrowser/HistoryViewWide.qml:343
-msgid "Today"
-msgstr "今日"
-
-#. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:109
-#: src/app/webcontainer/webapp-container.qml:76
-#, qt-format
-msgid "%1 - Morph Web Browser"
-msgstr "%1 - Morph ウェブブラウザ"
-
-#: src/app/webbrowser/NewPrivateTabView.qml:41
-msgid "This is a private tab"
-msgstr "これはプライベートタブです"
-
-#: src/app/webbrowser/NewPrivateTabView.qml:56
-msgid ""
-"Pages that you view in this tab won't appear in your browser history.\n"
-"Bookmarks you create will be preserved, however."
-msgstr ""
-"このタブで見ているページはブラウザ履歴には表示されません。\n"
-"ただし、作成したブックマークについては保存されます。"
-
-#: src/app/webbrowser/NewTabView.qml:142
-msgid "Less"
-msgstr "隠す"
-
-#: src/app/webbrowser/NewTabView.qml:142
-msgid "More"
-msgstr "もっと表示する"
-
-#: src/app/webbrowser/NewTabView.qml:326
-#: src/app/webbrowser/NewTabViewWide.qml:138
-msgid "Top sites"
-msgstr "よく訪れるサイト"
-
-#: src/app/webbrowser/NewTabView.qml:357
-msgid "You haven't visited any site yet"
-msgstr "まだどのサイトも訪れていません"
-
-#: src/app/webbrowser/SadTab.qml:47
-msgid "The rendering process has been closed for this tab."
-msgstr "このタブのレンダリングプロセスは閉じられています。"
-
-#: src/app/webbrowser/SadTab.qml:60
-#, qt-format
-msgid "Something went wrong while displaying %1."
-msgstr "%1 の表示中にエラーが発生しました。"
-
-#: src/app/webbrowser/SadTab.qml:70
-msgid "Close tab"
-msgstr "タブを閉じる"
-
-#: src/app/webbrowser/SecurityCertificatePopover.qml:70
-msgid "This site has insecure content"
-msgstr "このサイトには安全でないコンテンツが含まれています"
-
-#: src/app/webbrowser/SecurityCertificatePopover.qml:71
-msgid "Identity Not Verified"
-msgstr "IDが認証されていません"
-
-#: src/app/webbrowser/SecurityCertificatePopover.qml:79
-msgid "The identity of this website has not been verified."
-msgstr "このウェブサイトのIDは確認されていません。"
-
-#: src/app/webbrowser/SecurityCertificatePopover.qml:109
-#, qt-format
-msgid "You are connected to %1 via HTTPS. The certificate is valid."
-msgstr "HTTPS経由で%1に接続されています。証明書は有効です。"
-
-#: src/app/webbrowser/SettingsDeviceSelector.qml:42
-msgid "Default"
-msgstr "デフォルト"
-
-#: src/app/webbrowser/SettingsPage.qml:74
-#: src/app/webbrowser/SettingsPage.qml:277
-msgid "Search engine"
-msgstr "検索エンジン"
-
-#: src/app/webbrowser/SettingsPage.qml:91
-#: src/app/webbrowser/SettingsPage.qml:504
-msgid "New Tab Page"
-msgstr "新しいタブページ"
-
-#: src/app/webbrowser/SettingsPage.qml:119
-msgid "Restore previous session at startup"
-msgstr "起動時に前回のセッションを復元する"
-
-#: src/app/webbrowser/SettingsPage.qml:120
-msgid "not available because of startup in private mode"
-msgstr "プライベートモードで起動しているため利用できません"
-
-#: src/app/webbrowser/SettingsPage.qml:159
-#: src/app/webcontainer/WebappSettingsPage.qml:58
-msgid "Automatic fit to width"
-msgstr "自動で横幅に合わせる"
-
-#: src/app/webbrowser/SettingsPage.qml:160
-#: src/app/webcontainer/WebappSettingsPage.qml:59
-msgid "Adjusts the width of the website to the window"
-msgstr "ウェブサイトの幅をウィンドウに合わせて調整する"
-
-#: src/app/webbrowser/SettingsPage.qml:179
-#: src/app/webcontainer/WebappSettingsPage.qml:78
-msgid "Default Zoom"
-msgstr "既定のズーム"
-
-#: src/app/webbrowser/SettingsPage.qml:218
-#: src/app/webcontainer/WebappSettingsPage.qml:117
-msgid "Load Images"
-msgstr "画像の読み込み"
-
-#: src/app/webbrowser/SettingsPage.qml:219
-#: src/app/webcontainer/WebappSettingsPage.qml:118
-msgid "Automatically load images on web pages"
-msgstr "ウェブページの画像を自動で読み込む"
-
-#: src/app/webbrowser/SettingsPage.qml:238
-#: src/app/webbrowser/SettingsPage.qml:320
-#: src/app/webcontainer/WebappSettingsPage.qml:151
-#: src/app/webcontainer/WebappSettingsPage.qml:192
-msgid "Privacy & permissions"
-msgstr "プライバシーとアクセス許可"
-
-#: src/app/webbrowser/SettingsPage.qml:249
-msgid "Reset browser settings"
-msgstr "ブラウザの設定をリセットする"
-
-#: src/app/webbrowser/SettingsPage.qml:334
-msgid "Start in private mode"
-msgstr "プライベートモードではじめる"
-
-#: src/app/webbrowser/SettingsPage.qml:358
-#: src/app/webcontainer/WebappSettingsPage.qml:206
-msgid "Only allow browsing to whitelisted websites"
-msgstr "ホワイトリストのウェブサイトのみ閲覧可能にする"
-
-#: src/app/webbrowser/SettingsPage.qml:398
-#: src/app/webbrowser/SettingsPage.qml:589
-msgid "Camera & microphone"
-msgstr "カメラとマイク"
-
-#: src/app/webbrowser/SettingsPage.qml:407
-msgid "Clear browsing history"
-msgstr "ブラウジング履歴を消去する"
-
-#: src/app/webbrowser/SettingsPage.qml:411
-msgid "Clear browsing history?"
-msgstr "ブラウジング履歴を消去しますか？"
-
-#: src/app/webbrowser/SettingsPage.qml:419
-#: src/app/webcontainer/WebappSettingsPage.qml:247
-msgid "Clear cache"
-msgstr "キャッシュをクリアする"
-
-#: src/app/webbrowser/SettingsPage.qml:422
-#: src/app/webcontainer/WebappSettingsPage.qml:250
-msgid "Clear cache?"
-msgstr "キャッシュを消去しますか？"
-
-#: src/app/webbrowser/SettingsPage.qml:430
-#: src/app/webcontainer/WebappSettingsPage.qml:258
-msgid "Clear all cookies"
-msgstr "すべてのCockieを削除する"
-
-#: src/app/webbrowser/SettingsPage.qml:433
-#: src/app/webcontainer/WebappSettingsPage.qml:261
-msgid "Clear all Cookies?"
-msgstr "すべてのCookieを削除しますか？"
-
-#: src/app/webbrowser/SettingsPage.qml:516
-msgid "Custom homepage"
-msgstr "カスタムホームページ"
-
-#: src/app/webbrowser/SettingsPage.qml:601
-msgid "Microphone"
-msgstr "マイク"
-
-#: src/app/webbrowser/SettingsPage.qml:622
-msgid "Camera"
-msgstr "カメラ"
-
-#: src/app/webbrowser/TabComponent.qml:285
-msgid "Swipe Up To Exit Full Screen"
-msgstr "フルスクリーン表示を終了するには上にスワイプしてください"
-
-#: src/app/webbrowser/TabComponent.qml:286
-msgid "Press ESC To Exit Full Screen"
-msgstr "フルスクリーン表示を終了するにはESCキーを押してください"
-
-#: src/app/webbrowser/TabPreview.qml:113
-msgid "Tap to view"
-msgstr "表示するにはタップ"
-
-#: src/app/webbrowser/TabsBar.qml:64 src/app/webbrowser/TabsList.qml:100
-msgid "New tab"
-msgstr "新しいタブ"
-
-#: src/app/webbrowser/TabsBar.qml:99
-msgid "Move to New Window"
-msgstr "新しいウィンドウに移動"
-
-#: src/app/webbrowser/TabsBar.qml:116
-msgid "Close Tab"
-msgstr "タブを閉じる"
-
-#: src/app/webbrowser/UrlPreviewDelegate.qml:138
-msgid "Remove"
-msgstr "削除"
-
-#: src/app/webcontainer/AccountChooserDialog.qml:62
-msgid ""
-"No accounts have been linked to this webapp; press the item below to add an "
-"account."
-msgstr ""
-"このウェブアプリにリンクされたアカウントはありません。アカウントを追加するた"
-"めに以下の項目から選んで下さい。"
-
-#: src/app/webcontainer/AccountChooserDialog.qml:78
-msgid "Add account"
-msgstr "アカウントの追加"
-
-#: src/app/webcontainer/AccountChooserDialog.qml:87
-msgid "Don't use an account"
-msgstr "アカウントを利用しない"
-
-#: src/app/webcontainer/AccountErrorScreen.qml:39
-msgid "Account error"
-msgstr "アカウントエラー"
-
-#: src/app/webcontainer/AccountsLogic.qml:63
-msgid ""
-"Account window could not be opened. You can only create one account at a "
-"time; please try again after closing all other account windows."
-msgstr ""
-"アカウントウィンドウを開けませんでした。1度に1つのアカウントのみを作成するこ"
-"とができます。他のすべてのアカウントウィンドウを閉じた後で、もう一度試してく"
-"ださい。"
-
-#: src/app/webcontainer/AccountsLogic.qml:214
-msgid "Authentication failed"
-msgstr "認証に失敗しました"
-
-#. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
-#: src/app/webcontainer/AccountsSplashScreen.qml:45
-#, qt-format
-msgid "<b>%1</b> needs to access your %2 online account."
-msgstr "<b>%1</b> はあなたの %2 アカウントへのアクセスを必要としています。"
-
-#. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
-#: src/app/webcontainer/AccountsSplashScreen.qml:55
-#, qt-format
-msgid "<b>%1</b> would like to access your %2 online account."
-msgstr "<b>%1</b> はあなたの %2 アカウントにアクセスしようとしています。"
-
-#: src/app/webcontainer/AccountsSplashScreen.qml:64
-msgid ""
-"Choose an account now, or skip this step and choose an online account later."
-msgstr ""
-"アカウントを今すぐ選ぶか、このステップを飛ばして後でオンラインアカウントを選"
-"んでください。"
-
-#: src/app/webcontainer/AccountsSplashScreen.qml:77
-msgid "Close the app"
-msgstr "アプリケーションを閉じる"
-
-#: src/app/webcontainer/AccountsSplashScreen.qml:77
-msgid "Skip"
-msgstr "スキップ"
-
-#: src/app/webcontainer/AccountsSplashScreen.qml:84
-msgid "Choose account"
-msgstr "アカウントを選択してください"
-
-#: src/app/webcontainer/SadPage.qml:45
-msgid "Oops, something went wrong."
-msgstr "エラーが発生しました。"
-
-#: src/app/webcontainer/WebappSettingsPage.qml:38
-msgid "WebappContainer Settings"
-msgstr "Webappコンテナ設定"
-
-#: src/app/webcontainer/WebappSettingsPage.qml:163
-msgid "Reset webapp settings"
-msgstr "Webapp設定をリセットする"
-
-#: src/app/webcontainer/WebViewImplOxide.qml:330
-#, qt-format
-msgid "domain %1 is now whitelisted, please reload the page."
-msgstr ""
-"ドメイン%1がホワイトリスト化されました。ページを再読み込みしてください。"
-
-#: src/app/ZoomControls.qml:61
+#: src/app/qml-qt5/ZoomControls.qml:61 src/app/qml-qt6/ZoomControls.qml:59
 msgid "Zoom Out"
 msgstr "ズームアウト"
 
-#: src/app/ZoomControls.qml:68
+#: src/app/qml-qt5/ZoomControls.qml:68 src/app/qml-qt6/ZoomControls.qml:66
 msgid "Reset"
 msgstr "リセット"
 
-#: src/app/ZoomControls.qml:68
+#: src/app/qml-qt5/ZoomControls.qml:68 src/app/qml-qt6/ZoomControls.qml:66
 msgid "fit"
 msgstr "フィット"
 
-#: src/app/ZoomControls.qml:75
+#: src/app/qml-qt5/ZoomControls.qml:75 src/app/qml-qt6/ZoomControls.qml:73
 msgid "Zoom In"
 msgstr "ズームイン"
 
-#: src/app/ZoomControls.qml:100
+#: src/app/qml-qt5/ZoomControls.qml:82 src/app/qml-qt6/ZoomControls.qml:80
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:164
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:550
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:164
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:572
+msgid "Save"
+msgstr "保存"
+
+#: src/app/qml-qt5/ZoomControls.qml:100 src/app/qml-qt6/ZoomControls.qml:98
 msgid "Current Zoom"
 msgstr "現在の拡大率"
 
-#: src/app/ZoomControls.qml:101
+#: src/app/qml-qt5/ZoomControls.qml:101 src/app/qml-qt6/ZoomControls.qml:99
 msgid "domain"
 msgstr "ドメイン"
 
-#: src/app/ZoomControls.qml:101
+#: src/app/qml-qt5/ZoomControls.qml:101 src/app/qml-qt6/ZoomControls.qml:99
 msgid "default"
 msgstr "デフォルト"
 
-#: src/app/ZoomControls.qml:101
+#: src/app/qml-qt5/ZoomControls.qml:101 src/app/qml-qt6/ZoomControls.qml:99
 msgid "auto-fit"
 msgstr "オートフィット"
 
-#: src/app/ZoomControls.qml:190
+#: src/app/qml-qt5/ZoomControls.qml:190 src/app/qml-qt6/ZoomControls.qml:188
 msgid "Save Zoom"
 msgstr "ズームを保存"
 
-#: src/app/ZoomControls.qml:192
+#: src/app/qml-qt5/ZoomControls.qml:192 src/app/qml-qt6/ZoomControls.qml:190
 msgid "the current web app"
 msgstr "現在のWebアプリ"
 
-#: src/app/ZoomControls.qml:195
+#: src/app/qml-qt5/ZoomControls.qml:195 src/app/qml-qt6/ZoomControls.qml:193
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
@@ -1284,24 +1049,626 @@ msgstr ""
 "現在の拡大率（%）は現在のドメインのみかデフォルトの拡大率として%に保存できま"
 "す。"
 
-#: src/app/ZoomControls.qml:197
+#: src/app/qml-qt5/ZoomControls.qml:197 src/app/qml-qt6/ZoomControls.qml:195
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
 msgstr "現在の拡大率（%）は現在のドメイン向けに%へ保存できます。"
 
-#: src/app/ZoomControls.qml:199
+#: src/app/qml-qt5/ZoomControls.qml:199 src/app/qml-qt6/ZoomControls.qml:197
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
 msgstr "現在の拡大率（%1%）はデフォルトの拡大率として%2に保存できます。"
 
-#: src/app/ZoomControls.qml:206
+#: src/app/qml-qt5/ZoomControls.qml:206 src/app/qml-qt6/ZoomControls.qml:204
 msgid "Save for domain"
 msgstr "ドメイン保存"
 
-#: src/app/ZoomControls.qml:219
+#: src/app/qml-qt5/ZoomControls.qml:219 src/app/qml-qt6/ZoomControls.qml:217
 msgid "Save as default"
 msgstr "デフォルトとして保存"
+
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:287
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:288
+msgid "find in page"
+msgstr "ページ内検索"
+
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:288
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:289
+msgid "search or enter an address"
+msgstr "検索 / アドレスの入力"
+
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:440
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:441
+msgid "Paste and Go"
+msgstr "貼り付けて開く"
+
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:66
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:66
+msgid "Bookmark Added"
+msgstr "ブックマークを追加しました"
+
+#. TRANSLATORS: Field where the title of bookmarked URL can be changed
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:71
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:71
+msgid "Name"
+msgstr "名前"
+
+#. TRANSLATORS: Field to choose the folder where bookmarked URL will be saved in
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:89
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:89
+msgid "Save in"
+msgstr "保存先"
+
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:96
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersView.qml:133
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersViewWide.qml:105
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:96
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersView.qml:133
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersViewWide.qml:105
+msgid "All Bookmarks"
+msgstr "すべてのブックマーク"
+
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:114
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:154
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:114
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:154
+msgid "New Folder"
+msgstr "新しいフォルダー"
+
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:136
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:136
+msgid "Create new folder"
+msgstr "新しいフォルダーを作成"
+
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersView.qml:191
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersViewWide.qml:148
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:252
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:90
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:486
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersView.qml:191
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersViewWide.qml:148
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:251
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:90
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:508
+msgid "Homepage"
+msgstr "ホームページ"
+
+#: src/app/webbrowser/qml-qt5/BookmarksView.qml:33
+#: src/app/webbrowser/qml-qt5/BookmarksViewWide.qml:33
+#: src/app/webbrowser/qml-qt5/Browser.qml:831
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:130
+#: src/app/webbrowser/qml-qt5/NewTabViewWide.qml:139
+#: src/app/webbrowser/qml-qt6/BookmarksView.qml:32
+#: src/app/webbrowser/qml-qt6/BookmarksViewWide.qml:32
+#: src/app/webbrowser/qml-qt6/Browser.qml:831
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:129
+#: src/app/webbrowser/qml-qt6/NewTabViewWide.qml:138
+msgid "Bookmarks"
+msgstr "ブックマーク"
+
+#: src/app/webbrowser/qml-qt5/Browser.qml:242
+#: src/app/webbrowser/qml-qt6/Browser.qml:242
+#: src/app/webcontainer/qml-qt5/WebViewImplOxide.qml:302
+#: src/app/webcontainer/qml-qt6/WebViewImplOxide.qml:302
+msgid "Blocked domain"
+msgstr "ブロックされたドメイン"
+
+#: src/app/webbrowser/qml-qt5/Browser.qml:243
+#: src/app/webbrowser/qml-qt6/Browser.qml:243
+#: src/app/webcontainer/qml-qt5/WebViewImplOxide.qml:303
+#: src/app/webcontainer/qml-qt6/WebViewImplOxide.qml:303
+#, qt-format
+msgid "Blocked navigation request to domain %1."
+msgstr "ドメイン%1の操作リクエストをブロックしました。"
+
+#: src/app/webbrowser/qml-qt5/Browser.qml:269
+#: src/app/webbrowser/qml-qt6/Browser.qml:269
+#: src/app/webcontainer/qml-qt5/WebViewImplOxide.qml:329
+#: src/app/webcontainer/qml-qt6/WebViewImplOxide.qml:329
+msgid "Whitelisted domain"
+msgstr "ホワイトリストドメイン"
+
+#: src/app/webbrowser/qml-qt5/Browser.qml:270
+#: src/app/webbrowser/qml-qt6/Browser.qml:270
+#, qt-format
+msgid ""
+"domain %1 is now whitelisted, it will be active on the next page reload."
+msgstr ""
+"ドメイン%1がホワイトリスト化され、次回ページ読み込み時に有効になります。"
+
+#: src/app/webbrowser/qml-qt5/Browser.qml:660
+#: src/app/webbrowser/qml-qt6/Browser.qml:660
+msgid "Done"
+msgstr "完了"
+
+#: src/app/webbrowser/qml-qt5/Browser.qml:685
+#: src/app/webbrowser/qml-qt6/Browser.qml:685
+msgid "Reopen Tab"
+msgstr "タブを開き直す"
+
+#: src/app/webbrowser/qml-qt5/Browser.qml:811
+#: src/app/webbrowser/qml-qt6/Browser.qml:811
+msgid "New window"
+msgstr "新しいウィンドウ"
+
+#: src/app/webbrowser/qml-qt5/Browser.qml:817
+#: src/app/webbrowser/qml-qt6/Browser.qml:817
+msgid "New private window"
+msgstr "新しいプライベートウィンドウ"
+
+#: src/app/webbrowser/qml-qt5/Browser.qml:837
+#: src/app/webbrowser/qml-qt5/HistoryView.qml:31
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:36
+#: src/app/webbrowser/qml-qt6/Browser.qml:837
+#: src/app/webbrowser/qml-qt6/HistoryView.qml:30
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:35
+msgid "History"
+msgstr "履歴"
+
+#: src/app/webbrowser/qml-qt5/Browser.qml:857
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:45
+#: src/app/webbrowser/qml-qt6/Browser.qml:857
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:45
+msgid "Settings"
+msgstr "設定"
+
+#: src/app/webbrowser/qml-qt5/Browser.qml:863
+#: src/app/webbrowser/qml-qt6/Browser.qml:863
+msgid "View source"
+msgstr "ソースを見る"
+
+#: src/app/webbrowser/qml-qt5/Browser.qml:876
+#: src/app/webbrowser/qml-qt6/Browser.qml:876
+msgid "Save / Print to PDF"
+msgstr "PDFに保存/印刷"
+
+#: src/app/webbrowser/qml-qt5/Browser.qml:904
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:140
+#: src/app/webbrowser/qml-qt6/Browser.qml:911
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:140
+msgid "Set Desktop mode"
+msgstr "デスクトップモードに設定する"
+
+#. TRANSLATORS: %1 refers to the current number of tabs opened
+#: src/app/webbrowser/qml-qt5/Browser.qml:1104
+#: src/app/webbrowser/qml-qt5/Browser.qml:1142
+#: src/app/webbrowser/qml-qt6/Browser.qml:1111
+#: src/app/webbrowser/qml-qt6/Browser.qml:1149
+#, qt-format
+msgid "(%1)"
+msgstr "(%1)"
+
+#: src/app/webbrowser/qml-qt5/Browser.qml:1985
+#: src/app/webbrowser/qml-qt6/Browser.qml:1992
+msgid "the file is already in the downloads folder."
+msgstr "ファイルはすでにダウンロードフォルダに存在します。"
+
+#: src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml:83
+#: src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml:83
+msgid ""
+"Choose an application to open this file or add it to the downloads folder."
+msgstr ""
+"このファイルを開くアプリケーションを選択するか、downloadsフォルダーに追加して"
+"ください。"
+
+#: src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml:89
+#: src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml:89
+msgid "Choose an application"
+msgstr "アプリケーションを選択"
+
+#: src/app/webbrowser/qml-qt5/ExpandedHistoryView.qml:135
+#: src/app/webbrowser/qml-qt6/ExpandedHistoryView.qml:135
+#, qt-format
+msgid "%1 page"
+msgid_plural "%1 pages"
+msgstr[0] "%1ページ"
+
+#: src/app/webbrowser/qml-qt5/HistorySectionDelegate.qml:26
+#: src/app/webbrowser/qml-qt6/HistorySectionDelegate.qml:26
+msgid "Last Visited"
+msgstr "直近の訪問"
+
+#: src/app/webbrowser/qml-qt5/HistorySectionDelegate.qml:48
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:258
+#: src/app/webbrowser/qml-qt6/HistorySectionDelegate.qml:48
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:257
+msgid "Yesterday"
+msgstr "昨日"
+
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:161
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:160
+msgid "search history"
+msgstr "検索履歴"
+
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:242
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:241
+msgid "All History"
+msgstr "すべての履歴"
+
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:256
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:343
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:255
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:342
+msgid "Today"
+msgstr "今日"
+
+#. TRANSLATORS: %1 refers to the current page’s title
+#: src/app/webbrowser/qml-qt5/morph-browser.qml:109
+#: src/app/webbrowser/qml-qt6/morph-browser.qml:108
+#: src/app/webcontainer/qml-qt5/webapp-container.qml:76
+#: src/app/webcontainer/qml-qt6/webapp-container.qml:76
+#, qt-format
+msgid "%1 - Morph Web Browser"
+msgstr "%1 - Morph ウェブブラウザ"
+
+#: src/app/webbrowser/qml-qt5/NewPrivateTabView.qml:41
+#: src/app/webbrowser/qml-qt6/NewPrivateTabView.qml:41
+msgid "This is a private tab"
+msgstr "これはプライベートタブです"
+
+#: src/app/webbrowser/qml-qt5/NewPrivateTabView.qml:56
+#: src/app/webbrowser/qml-qt6/NewPrivateTabView.qml:56
+msgid ""
+"Pages that you view in this tab won't appear in your browser history.\n"
+"Bookmarks you create will be preserved, however."
+msgstr ""
+"このタブで見ているページはブラウザ履歴には表示されません。\n"
+"ただし、作成したブックマークについては保存されます。"
+
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:142
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:141
+msgid "Less"
+msgstr "隠す"
+
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:142
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:141
+msgid "More"
+msgstr "もっと表示する"
+
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:326
+#: src/app/webbrowser/qml-qt5/NewTabViewWide.qml:138
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:325
+#: src/app/webbrowser/qml-qt6/NewTabViewWide.qml:137
+msgid "Top sites"
+msgstr "よく訪れるサイト"
+
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:357
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:356
+msgid "You haven't visited any site yet"
+msgstr "まだどのサイトも訪れていません"
+
+#: src/app/webbrowser/qml-qt5/SadTab.qml:47
+#: src/app/webbrowser/qml-qt6/SadTab.qml:48
+msgid "The rendering process has been closed for this tab."
+msgstr "このタブのレンダリングプロセスは閉じられています。"
+
+#: src/app/webbrowser/qml-qt5/SadTab.qml:60
+#: src/app/webbrowser/qml-qt6/SadTab.qml:61
+#, qt-format
+msgid "Something went wrong while displaying %1."
+msgstr "%1 の表示中にエラーが発生しました。"
+
+#: src/app/webbrowser/qml-qt5/SadTab.qml:70
+#: src/app/webbrowser/qml-qt6/SadTab.qml:71
+msgid "Close tab"
+msgstr "タブを閉じる"
+
+#: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:70
+#: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:70
+msgid "This site has insecure content"
+msgstr "このサイトには安全でないコンテンツが含まれています"
+
+#: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:71
+#: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:71
+msgid "Identity Not Verified"
+msgstr "IDが認証されていません"
+
+#: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:79
+#: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:79
+msgid "The identity of this website has not been verified."
+msgstr "このウェブサイトのIDは確認されていません。"
+
+#: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:109
+#: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:109
+#, qt-format
+msgid "You are connected to %1 via HTTPS. The certificate is valid."
+msgstr "HTTPS経由で%1に接続されています。証明書は有効です。"
+
+#: src/app/webbrowser/qml-qt5/SettingsDeviceSelector.qml:42
+#: src/app/webbrowser/qml-qt6/SettingsDeviceSelector.qml:42
+msgid "Default"
+msgstr "デフォルト"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:74
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:277
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:74
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:288
+msgid "Search engine"
+msgstr "検索エンジン"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:91
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:504
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:91
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:526
+msgid "New Tab Page"
+msgstr "新しいタブページ"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:119
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:119
+msgid "Restore previous session at startup"
+msgstr "起動時に前回のセッションを復元する"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:120
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:120
+msgid "not available because of startup in private mode"
+msgstr "プライベートモードで起動しているため利用できません"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:159
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:159
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:58
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:58
+msgid "Automatic fit to width"
+msgstr "自動で横幅に合わせる"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:160
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:160
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:59
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:59
+msgid "Adjusts the width of the website to the window"
+msgstr "ウェブサイトの幅をウィンドウに合わせて調整する"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:179
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:179
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:78
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:78
+msgid "Default Zoom"
+msgstr "既定のズーム"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:218
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:218
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:117
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:117
+msgid "Load Images"
+msgstr "画像の読み込み"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:219
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:219
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:118
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:118
+msgid "Automatically load images on web pages"
+msgstr "ウェブページの画像を自動で読み込む"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:238
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:320
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:249
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:342
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:151
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:192
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:151
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:192
+msgid "Privacy & permissions"
+msgstr "プライバシーとアクセス許可"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:249
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:260
+msgid "Reset browser settings"
+msgstr "ブラウザの設定をリセットする"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:334
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:356
+msgid "Start in private mode"
+msgstr "プライベートモードではじめる"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:358
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:380
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:206
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:206
+msgid "Only allow browsing to whitelisted websites"
+msgstr "ホワイトリストのウェブサイトのみ閲覧可能にする"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:398
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:589
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:420
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:611
+msgid "Camera & microphone"
+msgstr "カメラとマイク"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:407
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:429
+msgid "Clear browsing history"
+msgstr "ブラウジング履歴を消去する"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:411
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:433
+msgid "Clear browsing history?"
+msgstr "ブラウジング履歴を消去しますか？"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:419
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:441
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:247
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:247
+msgid "Clear cache"
+msgstr "キャッシュをクリアする"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:422
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:444
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:250
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:250
+msgid "Clear cache?"
+msgstr "キャッシュを消去しますか？"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:430
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:452
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:258
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:258
+msgid "Clear all cookies"
+msgstr "すべてのCockieを削除する"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:433
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:455
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:261
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:261
+msgid "Clear all Cookies?"
+msgstr "すべてのCookieを削除しますか？"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:516
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:538
+msgid "Custom homepage"
+msgstr "カスタムホームページ"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:601
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:623
+msgid "Microphone"
+msgstr "マイク"
+
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:622
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:644
+msgid "Camera"
+msgstr "カメラ"
+
+#: src/app/webbrowser/qml-qt5/TabComponent.qml:285
+#: src/app/webbrowser/qml-qt6/TabComponent.qml:286
+msgid "Swipe Up To Exit Full Screen"
+msgstr "フルスクリーン表示を終了するには上にスワイプしてください"
+
+#: src/app/webbrowser/qml-qt5/TabComponent.qml:286
+#: src/app/webbrowser/qml-qt6/TabComponent.qml:287
+msgid "Press ESC To Exit Full Screen"
+msgstr "フルスクリーン表示を終了するにはESCキーを押してください"
+
+#: src/app/webbrowser/qml-qt5/TabPreview.qml:113
+#: src/app/webbrowser/qml-qt6/TabPreview.qml:113
+msgid "Tap to view"
+msgstr "表示するにはタップ"
+
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:64
+#: src/app/webbrowser/qml-qt5/TabsList.qml:100
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:63
+#: src/app/webbrowser/qml-qt6/TabsList.qml:100
+msgid "New tab"
+msgstr "新しいタブ"
+
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:99
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:98
+msgid "Move to New Window"
+msgstr "新しいウィンドウに移動"
+
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:116
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:115
+msgid "Close Tab"
+msgstr "タブを閉じる"
+
+#: src/app/webbrowser/qml-qt5/UrlPreviewDelegate.qml:138
+#: src/app/webbrowser/qml-qt6/UrlPreviewDelegate.qml:137
+msgid "Remove"
+msgstr "削除"
+
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:238
+msgid "Plugins"
+msgstr ""
+
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:239
+msgid "Widevine"
+msgstr ""
+
+#: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:62
+#: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:62
+msgid ""
+"No accounts have been linked to this webapp; press the item below to add an "
+"account."
+msgstr ""
+"このウェブアプリにリンクされたアカウントはありません。アカウントを追加するた"
+"めに以下の項目から選んで下さい。"
+
+#: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:78
+#: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:78
+msgid "Add account"
+msgstr "アカウントの追加"
+
+#: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:87
+#: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:87
+msgid "Don't use an account"
+msgstr "アカウントを利用しない"
+
+#: src/app/webcontainer/qml-qt5/AccountErrorScreen.qml:39
+#: src/app/webcontainer/qml-qt6/AccountErrorScreen.qml:39
+msgid "Account error"
+msgstr "アカウントエラー"
+
+#: src/app/webcontainer/qml-qt5/AccountsLogic.qml:63
+#: src/app/webcontainer/qml-qt6/AccountsLogic.qml:63
+msgid ""
+"Account window could not be opened. You can only create one account at a "
+"time; please try again after closing all other account windows."
+msgstr ""
+"アカウントウィンドウを開けませんでした。1度に1つのアカウントのみを作成するこ"
+"とができます。他のすべてのアカウントウィンドウを閉じた後で、もう一度試してく"
+"ださい。"
+
+#: src/app/webcontainer/qml-qt5/AccountsLogic.qml:214
+#: src/app/webcontainer/qml-qt6/AccountsLogic.qml:214
+msgid "Authentication failed"
+msgstr "認証に失敗しました"
+
+#. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:45
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:45
+#, qt-format
+msgid "<b>%1</b> needs to access your %2 online account."
+msgstr "<b>%1</b> はあなたの %2 アカウントへのアクセスを必要としています。"
+
+#. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:55
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:55
+#, qt-format
+msgid "<b>%1</b> would like to access your %2 online account."
+msgstr "<b>%1</b> はあなたの %2 アカウントにアクセスしようとしています。"
+
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:64
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:64
+msgid ""
+"Choose an account now, or skip this step and choose an online account later."
+msgstr ""
+"アカウントを今すぐ選ぶか、このステップを飛ばして後でオンラインアカウントを選"
+"んでください。"
+
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:77
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:77
+msgid "Close the app"
+msgstr "アプリケーションを閉じる"
+
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:77
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:77
+msgid "Skip"
+msgstr "スキップ"
+
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:84
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:84
+msgid "Choose account"
+msgstr "アカウントを選択してください"
+
+#: src/app/webcontainer/qml-qt5/SadPage.qml:45
+#: src/app/webcontainer/qml-qt6/SadPage.qml:46
+msgid "Oops, something went wrong."
+msgstr "エラーが発生しました。"
+
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:38
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:38
+msgid "WebappContainer Settings"
+msgstr "Webappコンテナ設定"
+
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:163
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:163
+msgid "Reset webapp settings"
+msgstr "Webapp設定をリセットする"
+
+#: src/app/webcontainer/qml-qt5/WebViewImplOxide.qml:330
+#: src/app/webcontainer/qml-qt6/WebViewImplOxide.qml:330
+#, qt-format
+msgid "domain %1 is now whitelisted, please reload the page."
+msgstr ""
+"ドメイン%1がホワイトリスト化されました。ページを再読み込みしてください。"
 
 #~ msgid "/usr/share/morph-browser/morph-browser.svg"
 #~ msgstr "/usr/share/morph-browser/morph-browser.svg"

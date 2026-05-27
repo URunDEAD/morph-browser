@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 17:32+0000\n"
+"POT-Creation-Date: 2026-05-27 15:21+0000\n"
 "PO-Revision-Date: 2020-08-08 07:21+0000\n"
 "Last-Translator: Adria <adriamartinmor@gmail.com>\n"
 "Language-Team: Sardinian <https://translate.ubports.com/projects/ubports/"
@@ -23,8 +23,10 @@ msgstr ""
 msgid "Morph Browser"
 msgstr "Navigadore Morph"
 
-#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:111
-#: src/app/webcontainer/webapp-container.qml:78
+#: morph-browser.desktop.in:5 src/app/webbrowser/qml-qt5/morph-browser.qml:111
+#: src/app/webbrowser/qml-qt6/morph-browser.qml:110
+#: src/app/webcontainer/qml-qt5/webapp-container.qml:78
+#: src/app/webcontainer/qml-qt6/webapp-container.qml:78
 msgid "Morph Web Browser"
 msgstr "Navigadore web Morph"
 
@@ -44,239 +46,331 @@ msgstr "Ventana noa"
 msgid "New Private Window"
 msgstr "Ventana privada noa"
 
-#: src/app/actions/Back.qml:23
+#: src/app/qml-qt5/actions/Back.qml:23 src/app/qml-qt6/actions/Back.qml:23
 msgid "Back"
 msgstr "In segus"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Back.qml:26
+#: src/app/qml-qt5/actions/Back.qml:26 src/app/qml-qt6/actions/Back.qml:26
 msgid "Older Page"
 msgstr "Pàgina betza"
 
-#: src/app/actions/BookmarkLink.qml:22
+#: src/app/qml-qt5/actions/BookmarkLink.qml:22
+#: src/app/qml-qt6/actions/BookmarkLink.qml:22
 msgid "Bookmark link"
 msgstr "Agiunghe su ligàmene a is marcadores"
 
-#: src/app/actions/Bookmark.qml:23
+#: src/app/qml-qt5/actions/Bookmark.qml:23
+#: src/app/qml-qt6/actions/Bookmark.qml:23
 msgid "Bookmark"
 msgstr "Agiunghe a is marcadores"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Bookmark' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Bookmark.qml:26
+#: src/app/qml-qt5/actions/Bookmark.qml:26
+#: src/app/qml-qt6/actions/Bookmark.qml:26
 msgid "Add This Page to Bookmarks"
 msgstr "Agiunghe custa pàgina a is marcadores"
 
-#: src/app/actions/ClearHistory.qml:23
+#: src/app/qml-qt5/actions/ClearHistory.qml:23
+#: src/app/qml-qt6/actions/ClearHistory.qml:23
 msgid "Clear History"
 msgstr "Lìmpia sa cronologia"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/ClearHistory.qml:26
+#: src/app/qml-qt5/actions/ClearHistory.qml:26
+#: src/app/qml-qt6/actions/ClearHistory.qml:26
 msgid "Clear Navigation History"
 msgstr "Lìmpia sa cronologia de navigatzione"
 
-#: src/app/actions/CopyImageLink.qml:22
+#: src/app/qml-qt5/actions/CopyImageLink.qml:22
+#: src/app/qml-qt6/actions/CopyImageLink.qml:22
 #, fuzzy
 #| msgid "Copy image"
 msgid "Copy image link"
 msgstr "Còpia s'immàgine"
 
-#: src/app/actions/CopyImage.qml:22
+#: src/app/qml-qt5/actions/CopyImage.qml:22
+#: src/app/qml-qt6/actions/CopyImage.qml:22
 msgid "Copy image"
 msgstr "Còpia s'immàgine"
 
-#: src/app/actions/CopyLink.qml:22
+#: src/app/qml-qt5/actions/CopyLink.qml:22
+#: src/app/qml-qt6/actions/CopyLink.qml:22
 msgid "Copy link"
 msgstr "Còpia su ligàmene"
 
-#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:418
+#: src/app/qml-qt5/actions/Copy.qml:22 src/app/qml-qt6/actions/Copy.qml:22
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:418
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:419
 msgid "Copy"
 msgstr "Còpia"
 
-#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:407
+#: src/app/qml-qt5/actions/Cut.qml:22 src/app/qml-qt6/actions/Cut.qml:22
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:407
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:408
 msgid "Cut"
 msgstr "Sega"
 
-#: src/app/actions/Erase.qml:22
+#: src/app/qml-qt5/actions/Erase.qml:22 src/app/qml-qt6/actions/Erase.qml:22
 msgid "Erase"
 msgstr "Cantzella"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:843
+#: src/app/qml-qt5/actions/FindInPage.qml:23
+#: src/app/qml-qt6/actions/FindInPage.qml:23
+#: src/app/webbrowser/qml-qt5/Browser.qml:843
+#: src/app/webbrowser/qml-qt6/Browser.qml:843
 msgid "Find in page"
 msgstr "Chirca in sa pàgina"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/FindInPage.qml:26
+#: src/app/qml-qt5/actions/FindInPage.qml:26
+#: src/app/qml-qt6/actions/FindInPage.qml:26
 msgid "Search in Page"
 msgstr "Chirca in sa pàgina"
 
-#: src/app/actions/Forward.qml:23
+#: src/app/qml-qt5/actions/Forward.qml:23
+#: src/app/qml-qt6/actions/Forward.qml:23
 msgid "Forward"
 msgstr "Torra a imbiare"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Forward' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Forward.qml:26
+#: src/app/qml-qt5/actions/Forward.qml:26
+#: src/app/qml-qt6/actions/Forward.qml:26
 msgid "Newer Page"
 msgstr "Pàgina noa"
 
-#: src/app/actions/GoTo.qml:23
+#: src/app/qml-qt5/actions/GoTo.qml:23 src/app/qml-qt6/actions/GoTo.qml:23
 msgid "Goto"
 msgstr "Bae"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/GoTo.qml:26
+#: src/app/qml-qt5/actions/GoTo.qml:26 src/app/qml-qt6/actions/GoTo.qml:26
 msgid "Address;URL;www"
 msgstr "Indiritzu;URL;www"
 
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:703
-#: src/app/webbrowser/TabsBar.qml:88
+#: src/app/qml-qt5/actions/NewTab.qml:23 src/app/qml-qt6/actions/NewTab.qml:23
+#: src/app/webbrowser/qml-qt5/Browser.qml:703
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:88
+#: src/app/webbrowser/qml-qt6/Browser.qml:703
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:87
 msgid "New Tab"
 msgstr "Ischeda noa"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'New Tab' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/NewTab.qml:26
+#: src/app/qml-qt5/actions/NewTab.qml:26 src/app/qml-qt6/actions/NewTab.qml:26
 msgid "Open a New Tab"
 msgstr "Aberi un'ischeda noa"
 
-#: src/app/actions/OpenImageInNewTab.qml:22
+#: src/app/qml-qt5/actions/OpenImageInNewTab.qml:22
+#: src/app/qml-qt6/actions/OpenImageInNewTab.qml:22
 msgid "Open image in new tab"
 msgstr "Aberi s'immàgine in un'ischeda noa"
 
-#: src/app/actions/OpenLinkInBrowser.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInBrowser.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInBrowser.qml:22
 msgid "Open link in default browser"
 msgstr "Aberi su ligàmene in su navigadore predefinidu"
 
-#: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInNewBackgroundTab.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInNewBackgroundTab.qml:22
 msgid "Open link in new background tab"
 msgstr "Aberi su ligàmene in un'ischeda de segundu pranu"
 
-#: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInNewPrivateWindow.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInNewPrivateWindow.qml:22
 msgid "Open link in new private window"
 msgstr "Aberi su ligàmene in una ventana privada noa"
 
-#: src/app/actions/OpenLinkInNewTab.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInNewTab.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
 msgstr "Aberi su ligàmene in un'ischeda noa"
 
-#: src/app/actions/OpenLinkInNewWindow.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInNewWindow.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInNewWindow.qml:22
 msgid "Open link in new window"
 msgstr "Aberi su ligàmene in una ventana noa"
 
-#: src/app/actions/OpenVideoInNewTab.qml:22
+#: src/app/qml-qt5/actions/OpenVideoInNewTab.qml:22
+#: src/app/qml-qt6/actions/OpenVideoInNewTab.qml:22
 msgid "Open video in new tab"
 msgstr "Aberi su vìdeu in un'ischeda noa"
 
-#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:429
+#: src/app/qml-qt5/actions/Paste.qml:22 src/app/qml-qt6/actions/Paste.qml:22
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:429
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:430
 msgid "Paste"
 msgstr "Incolla"
 
-#: src/app/actions/Redo.qml:22
+#: src/app/qml-qt5/actions/Redo.qml:22 src/app/qml-qt6/actions/Redo.qml:22
 msgid "Redo"
 msgstr "Torra a fàghere"
 
-#: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
-#: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
+#: src/app/qml-qt5/actions/Reload.qml:23 src/app/qml-qt6/actions/Reload.qml:23
+#: src/app/webbrowser/qml-qt5/SadTab.qml:76
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:93
+#: src/app/webbrowser/qml-qt6/SadTab.qml:77
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:92
+#: src/app/webcontainer/qml-qt5/SadPage.qml:51
+#: src/app/webcontainer/qml-qt6/SadPage.qml:52
 msgid "Reload"
 msgstr "Torra a carrigare"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Reload' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Reload.qml:26
+#: src/app/qml-qt5/actions/Reload.qml:26 src/app/qml-qt6/actions/Reload.qml:26
 msgid "Leave Page"
 msgstr "Essi de sa pàgina"
 
-#: src/app/actions/SaveImage.qml:22
+#: src/app/qml-qt5/actions/SaveImage.qml:22
+#: src/app/qml-qt6/actions/SaveImage.qml:22
 msgid "Save image"
 msgstr "Sarva s'immàgine"
 
-#: src/app/actions/SaveLink.qml:22
+#: src/app/qml-qt5/actions/SaveLink.qml:22
+#: src/app/qml-qt6/actions/SaveLink.qml:22
 msgid "Save link"
 msgstr "Sarva su ligàmene"
 
-#: src/app/actions/SaveVideo.qml:22
+#: src/app/qml-qt5/actions/SaveVideo.qml:22
+#: src/app/qml-qt6/actions/SaveVideo.qml:22
 msgid "Save video"
 msgstr "Sarva su vìdeu"
 
-#: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
-#: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
-#: src/app/DownloadsPage.qml:85
+#: src/app/qml-qt5/actions/SelectAll.qml:22
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:47
+#: src/app/qml-qt5/DomainPermissionsPage.qml:68
+#: src/app/qml-qt5/DomainSettingsPage.qml:66
+#: src/app/qml-qt5/DownloadsPage.qml:85
+#: src/app/qml-qt6/actions/SelectAll.qml:22
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:47
+#: src/app/qml-qt6/DomainPermissionsPage.qml:68
+#: src/app/qml-qt6/DomainSettingsPage.qml:66
+#: src/app/qml-qt6/DownloadsPage.qml:85
 msgid "Select all"
 msgstr "Seletziona totu"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:823
+#: src/app/qml-qt5/actions/Share.qml:22 src/app/qml-qt6/actions/Share.qml:22
+#: src/app/webbrowser/qml-qt5/Browser.qml:823
+#: src/app/webbrowser/qml-qt6/Browser.qml:823
 msgid "Share"
 msgstr "Cumpartzi"
 
-#: src/app/actions/Undo.qml:22
+#: src/app/qml-qt5/actions/Undo.qml:22 src/app/qml-qt6/actions/Undo.qml:22
 msgid "Undo"
 msgstr "Iscontza"
 
-#: src/app/AlertDialog.qml:24
+#: src/app/qml-qt5/AlertDialog.qml:24 src/app/qml-qt6/AlertDialog.qml:24
 msgid "JavaScript Alert"
 msgstr "Avisu de JavaScript"
 
-#: src/app/AlertDialog.qml:31 src/app/AuthenticationDialog.qml:47
-#: src/app/ColorSelectDialog.qml:73 src/app/ConfirmDialog.qml:33
-#: src/app/EditCustomUserAgentDialog.qml:62
-#: src/app/HttpAuthenticationDialog.qml:70 src/app/PromptDialog.qml:50
-#: src/app/webbrowser/BookmarkOptions.qml:122
+#: src/app/qml-qt5/AlertDialog.qml:31
+#: src/app/qml-qt5/AuthenticationDialog.qml:47
+#: src/app/qml-qt5/ColorSelectDialog.qml:73
+#: src/app/qml-qt5/ConfirmDialog.qml:33
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:62
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:70
+#: src/app/qml-qt5/PromptDialog.qml:50 src/app/qml-qt6/AlertDialog.qml:31
+#: src/app/qml-qt6/AuthenticationDialog.qml:47
+#: src/app/qml-qt6/ColorSelectDialog.qml:73
+#: src/app/qml-qt6/ConfirmDialog.qml:33
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:62
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:70
+#: src/app/qml-qt6/PromptDialog.qml:50
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:122
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:122
 msgid "OK"
 msgstr "AB"
 
-#: src/app/AllowCustomSchemesDialog.qml:24
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:24
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
 msgstr "Ischemas personalizados pro URL"
 
-#: src/app/AllowCustomSchemesDialog.qml:30
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:30
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
 msgstr ""
 
-#: src/app/AllowCustomSchemesDialog.qml:32
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:32
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
 msgstr ""
 
-#: src/app/AllowCustomSchemesDialog.qml:44
-#: src/app/GeolocationPermissionRequest.qml:44
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:44
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:44
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:44
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
 msgstr "Regorda custa detzisione"
 
-#: src/app/AllowCustomSchemesDialog.qml:50
-#: src/app/GeolocationPermissionRequest.qml:51
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:50
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:51
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:50
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:51
 msgid "Allow"
 msgstr "Permite"
 
-#: src/app/AllowCustomSchemesDialog.qml:57
-#: src/app/AllowOrBlockDomainDialog.qml:53 src/app/AuthenticationDialog.qml:53
-#: src/app/CertificateVerificationDialog.qml:46
-#: src/app/ColorSelectDialog.qml:84 src/app/ConfirmDialog.qml:41
-#: src/app/DownloadDelegate.qml:271 src/app/EditCustomUserAgentDialog.qml:69
-#: src/app/HttpAuthenticationDialog.qml:80 src/app/PromptDialog.qml:61
-#: src/app/SavePageDialog.qml:73 src/app/SimpleDownloadDelegate.qml:136
-#: src/app/webbrowser/BookmarkOptions.qml:182
-#: src/app/webbrowser/ContentDownloadDialog.qml:114
-#: src/app/webbrowser/ContextMenuMobile.qml:143
-#: src/app/webbrowser/SettingsPage.qml:458
-#: src/app/webbrowser/SettingsPage.qml:574
-#: src/app/webcontainer/AccountChooserDialog.qml:96
-#: src/app/webcontainer/ContextMenuMobile.qml:143
-#: src/app/webcontainer/WebappSettingsPage.qml:286 src/app/ZoomControls.qml:237
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:57
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:53
+#: src/app/qml-qt5/AuthenticationDialog.qml:53
+#: src/app/qml-qt5/CertificateVerificationDialog.qml:46
+#: src/app/qml-qt5/ColorSelectDialog.qml:84
+#: src/app/qml-qt5/ConfirmDialog.qml:41
+#: src/app/qml-qt5/DownloadDelegate.qml:271
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:69
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:80
+#: src/app/qml-qt5/PromptDialog.qml:61 src/app/qml-qt5/SavePageDialog.qml:73
+#: src/app/qml-qt5/SimpleDownloadDelegate.qml:136
+#: src/app/qml-qt5/ZoomControls.qml:237
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:57
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:53
+#: src/app/qml-qt6/AuthenticationDialog.qml:53
+#: src/app/qml-qt6/CertificateVerificationDialog.qml:46
+#: src/app/qml-qt6/ColorSelectDialog.qml:84
+#: src/app/qml-qt6/ConfirmDialog.qml:41
+#: src/app/qml-qt6/DownloadDelegate.qml:270
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:69
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:80
+#: src/app/qml-qt6/PromptDialog.qml:61 src/app/qml-qt6/SavePageDialog.qml:73
+#: src/app/qml-qt6/SimpleDownloadDelegate.qml:136
+#: src/app/qml-qt6/ZoomControls.qml:235
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:182
+#: src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml:114
+#: src/app/webbrowser/qml-qt5/ContextMenuMobile.qml:143
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:458
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:574
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:182
+#: src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml:114
+#: src/app/webbrowser/qml-qt6/ContextMenuMobile.qml:143
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:480
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:596
+#: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:96
+#: src/app/webcontainer/qml-qt5/ContextMenuMobile.qml:143
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:286
+#: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:96
+#: src/app/webcontainer/qml-qt6/ContextMenuMobile.qml:143
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:286
 msgid "Cancel"
 msgstr "Annulla"
 
-#: src/app/AllowOrBlockDomainDialog.qml:25
-#: src/app/AllowOrBlockDomainDialog.qml:41
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:25
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:41
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:25
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:41
 msgid "Block domain"
 msgstr "Bloca su domìniu"
 
-#: src/app/AllowOrBlockDomainDialog.qml:30
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:30
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:30
 #, qt-format
 msgid ""
 "You're trying to access %1 but it is not on your approved domain whitelist. "
@@ -287,7 +381,8 @@ msgstr ""
 "aprovadu. Boles sighire a blocare custu domìniu, permìtere sa navigatzione o "
 "torrare in segus?"
 
-#: src/app/AllowOrBlockDomainDialog.qml:31
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:31
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:31
 #, qt-format
 msgid ""
 "%1 is trying to access %2 but it is not on your approved domain whitelist. "
@@ -298,46 +393,62 @@ msgstr ""
 "aprovadu. Boles sighire a blocare custu domìniu, permìtere s'iscarrigamentu "
 "de datos o inniorare custa dimanda?"
 
-#: src/app/AllowOrBlockDomainDialog.qml:47
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:47
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
 msgstr "Permite su domìniu"
 
-#: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
+#: src/app/qml-qt5/AuthenticationDialog.qml:24
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:25
+#: src/app/qml-qt6/AuthenticationDialog.qml:24
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
 msgstr "Autenticatzione rechèdida."
 
 #. TRANSLATORS: %1 refers to the URL of the current website
-#: src/app/AuthenticationDialog.qml:26
+#: src/app/qml-qt5/AuthenticationDialog.qml:26
+#: src/app/qml-qt6/AuthenticationDialog.qml:26
 #, qt-format
 msgid "The website %1 requires authentication."
 msgstr "Su situ web %1 rechedet autenticatzione."
 
-#: src/app/AuthenticationDialog.qml:34 src/app/HttpAuthenticationDialog.qml:50
+#: src/app/qml-qt5/AuthenticationDialog.qml:34
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:50
+#: src/app/qml-qt6/AuthenticationDialog.qml:34
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:50
 msgid "Username"
 msgstr "Nòmine usuàriu"
 
-#: src/app/AuthenticationDialog.qml:41 src/app/HttpAuthenticationDialog.qml:60
+#: src/app/qml-qt5/AuthenticationDialog.qml:41
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:60
+#: src/app/qml-qt6/AuthenticationDialog.qml:41
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:60
 msgid "Password"
 msgstr "Crae"
 
-#: src/app/BeforeUnloadDialog.qml:24
+#: src/app/qml-qt5/BeforeUnloadDialog.qml:24
+#: src/app/qml-qt6/BeforeUnloadDialog.qml:24
 msgid "Confirm Navigation"
 msgstr "Cunfirma sa navigatzione"
 
-#: src/app/BeforeUnloadDialog.qml:33
+#: src/app/qml-qt5/BeforeUnloadDialog.qml:33
+#: src/app/qml-qt6/BeforeUnloadDialog.qml:33
 msgid "Leave"
 msgstr "Essi·nche"
 
-#: src/app/BeforeUnloadDialog.qml:41
+#: src/app/qml-qt5/BeforeUnloadDialog.qml:41
+#: src/app/qml-qt6/BeforeUnloadDialog.qml:41
 msgid "Stay"
 msgstr "Abarra"
 
-#: src/app/CertificateVerificationDialog.qml:24
+#: src/app/qml-qt5/CertificateVerificationDialog.qml:24
+#: src/app/qml-qt6/CertificateVerificationDialog.qml:24
 msgid "This connection is untrusted"
 msgstr "Custa connessione no est de cunfiantza"
 
 #. TRANSLATORS: %1 refers to the hostname
-#: src/app/CertificateVerificationDialog.qml:26
+#: src/app/qml-qt5/CertificateVerificationDialog.qml:26
+#: src/app/qml-qt6/CertificateVerificationDialog.qml:26
 #, qt-format
 msgid ""
 "You are trying to securely reach %1, but the security certificate of this "
@@ -346,304 +457,387 @@ msgstr ""
 "Ses proende de atzèdere de manera segura a %1, però su tzertificadu de "
 "seguresa de su situ web no est de cunfiantza. Resone: %2"
 
-#: src/app/CertificateVerificationDialog.qml:39
-#: src/app/InvalidCertificateErrorSheet.qml:160
+#: src/app/qml-qt5/CertificateVerificationDialog.qml:39
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:160
+#: src/app/qml-qt6/CertificateVerificationDialog.qml:39
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:160
 msgid "Proceed anyway"
 msgstr "Atzede su pròpiu"
 
-#: src/app/ColorSelectDialog.qml:25
+#: src/app/qml-qt5/ColorSelectDialog.qml:25
+#: src/app/qml-qt6/ColorSelectDialog.qml:25
 msgid "Select Color"
 msgstr "Seletziona colore"
 
-#: src/app/ConfirmDialog.qml:24
+#: src/app/qml-qt5/ConfirmDialog.qml:24 src/app/qml-qt6/ConfirmDialog.qml:24
 msgid "JavaScript Confirmation"
 msgstr "Cunfirmatzione de JavaScript"
 
-#: src/app/ContentExportDialog.qml:79
+#: src/app/qml-qt5/ContentExportDialog.qml:79
+#: src/app/qml-qt6/ContentExportDialog.qml:87
 msgid "Open with"
 msgstr ""
 
-#: src/app/ContentExportDialog.qml:80
+#: src/app/qml-qt5/ContentExportDialog.qml:80
+#: src/app/qml-qt6/ContentExportDialog.qml:88
 #, qt-format
 msgid "File name: %1"
 msgstr ""
 
-#: src/app/ContentExportDialog.qml:91
-#: src/app/webcontainer/AccountErrorScreen.qml:50
+#: src/app/qml-qt5/ContentExportDialog.qml:91
+#: src/app/qml-qt6/ContentExportDialog.qml:99
+#: src/app/webcontainer/qml-qt5/AccountErrorScreen.qml:50
+#: src/app/webcontainer/qml-qt6/AccountErrorScreen.qml:50
 msgid "Close"
 msgstr "Serra"
 
-#: src/app/ContentExportDialog.qml:100
+#: src/app/qml-qt5/ContentExportDialog.qml:100
+#: src/app/qml-qt6/ContentExportDialog.qml:108
 #, fuzzy
 #| msgid "Open link in default browser"
 msgid "Open link in browser"
 msgstr "Aberi su ligàmene in su navigadore predefinidu"
 
-#: src/app/ContentExportDialog.qml:109
+#: src/app/qml-qt5/ContentExportDialog.qml:109
+#: src/app/qml-qt6/ContentExportDialog.qml:117
 #, fuzzy
 #| msgid "Open link in default browser"
 msgid "Open file in browser"
 msgstr "Aberi su ligàmene in su navigadore predefinidu"
 
-#: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:33
+#: src/app/qml-qt5/DomainSettingsPage.qml:150
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:33
+#: src/app/qml-qt6/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
 msgstr "Agentes de usuàriu personalizadu"
 
-#: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
-#: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:63
+#: src/app/qml-qt5/DomainPermissionsPage.qml:84
+#: src/app/qml-qt5/DomainSettingsPage.qml:82
+#: src/app/qml-qt5/DownloadsPage.qml:101
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:63
+#: src/app/qml-qt6/DomainPermissionsPage.qml:84
+#: src/app/qml-qt6/DomainSettingsPage.qml:82
+#: src/app/qml-qt6/DownloadsPage.qml:101
 msgid "Delete"
 msgstr "Cantzella"
 
-#: src/app/CustomUserAgentsPage.qml:94
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:94
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
 msgstr "Agente de usuàriu nou"
 
-#: src/app/CustomUserAgentsPage.qml:161
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:161
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:161
 #, fuzzy
 #| msgid "New User Agent"
 msgid "Edit User Agent"
 msgstr "Agente de usuàriu nou"
 
-#: src/app/CustomUserAgentsPage.qml:187
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:187
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
 msgstr "Perunu agente de usuàriu personalizadu a disponimentu"
 
-#: src/app/DomainPermissionsPage.qml:54
-#: src/app/webcontainer/WebappSettingsPage.qml:225
+#: src/app/qml-qt5/DomainPermissionsPage.qml:54
+#: src/app/qml-qt6/DomainPermissionsPage.qml:54
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:225
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
 msgstr "Domìnios blocados/permìtidos"
 
-#: src/app/DomainPermissionsPage.qml:113 src/app/DomainSettingsPage.qml:113
+#: src/app/qml-qt5/DomainPermissionsPage.qml:113
+#: src/app/qml-qt5/DomainSettingsPage.qml:113
+#: src/app/qml-qt6/DomainPermissionsPage.qml:113
+#: src/app/qml-qt6/DomainSettingsPage.qml:113
 msgid "Add domain"
 msgstr "Agiunghe domìniu"
 
-#: src/app/DomainPermissionsPage.qml:114
+#: src/app/qml-qt5/DomainPermissionsPage.qml:114
+#: src/app/qml-qt6/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
 msgstr ""
 "Inserta·nche su nòmine de domìniu, comente esempru.cat (is sub-domìnios ant "
 "a èssere cantzellados)."
 
-#: src/app/DomainPermissionsPage.qml:222
+#: src/app/qml-qt5/DomainPermissionsPage.qml:222
+#: src/app/qml-qt6/DomainPermissionsPage.qml:222
 msgid "Not Set"
 msgstr "No cunfiguradu"
 
-#: src/app/DomainPermissionsPage.qml:232
+#: src/app/qml-qt5/DomainPermissionsPage.qml:232
+#: src/app/qml-qt6/DomainPermissionsPage.qml:232
 msgid "Never allow access"
 msgstr "No permitas mai s'atzessu"
 
-#: src/app/DomainPermissionsPage.qml:243
+#: src/app/qml-qt5/DomainPermissionsPage.qml:243
+#: src/app/qml-qt6/DomainPermissionsPage.qml:243
 msgid "Always allow access"
 msgstr "Permite semper s'atzessu"
 
-#: src/app/DomainPermissionsPage.qml:283
+#: src/app/qml-qt5/DomainPermissionsPage.qml:283
+#: src/app/qml-qt6/DomainPermissionsPage.qml:283
 msgid "No sites have been granted special permissions"
 msgstr "Perunu situ cun permissos ispetziales"
 
-#: src/app/DomainSettingsPage.qml:52
-#: src/app/webcontainer/WebappSettingsPage.qml:236
+#: src/app/qml-qt5/DomainSettingsPage.qml:52
+#: src/app/qml-qt6/DomainSettingsPage.qml:52
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:236
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:236
 msgid "Domain specific settings"
 msgstr "Cunfiguratziones ispetzìficas de domìniu"
 
-#: src/app/DomainSettingsPage.qml:114
+#: src/app/qml-qt5/DomainSettingsPage.qml:114
+#: src/app/qml-qt6/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
 msgstr "Inserta·nche su nòmine de su domìniu, comente m.esempru.cat"
 
-#: src/app/DomainSettingsPage.qml:207
+#: src/app/qml-qt5/DomainSettingsPage.qml:207
+#: src/app/qml-qt6/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
 msgstr "podet incarrerare àteras aplicatziones"
 
-#: src/app/DomainSettingsPage.qml:226
+#: src/app/qml-qt5/DomainSettingsPage.qml:226
+#: src/app/qml-qt6/DomainSettingsPage.qml:226
 #, fuzzy
 #| msgid "allowed to access your location"
 msgid "access your location"
 msgstr "podet atzèdere a sa positzione"
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/qml-qt5/DomainSettingsPage.qml:231
+#: src/app/qml-qt6/DomainSettingsPage.qml:231
 msgid "Ask each time"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/qml-qt5/DomainSettingsPage.qml:231
+#: src/app/qml-qt6/DomainSettingsPage.qml:231
 #, fuzzy
 #| msgid "Allow"
 msgid "Allowed"
 msgstr "Permite"
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/qml-qt5/DomainSettingsPage.qml:231
+#: src/app/qml-qt6/DomainSettingsPage.qml:231
 msgid "Denied"
 msgstr ""
 
-#: src/app/DomainSettingsPage.qml:245
+#: src/app/qml-qt5/DomainSettingsPage.qml:245
+#: src/app/qml-qt6/DomainSettingsPage.qml:245
 msgid "custom user agent"
 msgstr "agente de usuàriu personalizadu"
 
-#: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
+#: src/app/qml-qt5/DomainSettingsPage.qml:320
+#: src/app/qml-qt5/DomainSettingsPage.qml:325
+#: src/app/qml-qt6/DomainSettingsPage.qml:320
+#: src/app/qml-qt6/DomainSettingsPage.qml:325
 msgid "Zoom: "
 msgstr "Ingrandimentu: "
 
-#: src/app/DomainSettingsPage.qml:325
+#: src/app/qml-qt5/DomainSettingsPage.qml:325
+#: src/app/qml-qt6/DomainSettingsPage.qml:325
 msgid "not set"
 msgstr "no cunfiguradu"
 
-#: src/app/DomainSettingsPage.qml:361
+#: src/app/qml-qt5/DomainSettingsPage.qml:361
+#: src/app/qml-qt6/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
 msgstr "Peruna cunfiguratzione ispetzìfica de domìniu a disponimentu"
 
 #. TRANSLATORS: %1 is the percentage of the download completed so far
-#: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
+#: src/app/qml-qt5/DownloadDelegate.qml:105
+#: src/app/qml-qt5/DownloadsDialog.qml:109
+#: src/app/qml-qt6/DownloadDelegate.qml:104
+#: src/app/qml-qt6/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/app/DownloadDelegate.qml:170
+#: src/app/qml-qt5/DownloadDelegate.qml:170
+#: src/app/qml-qt6/DownloadDelegate.qml:169
 msgid "Download failed"
 msgstr "Iscarrigamentu faddidu"
 
-#: src/app/DownloadDelegate.qml:199
+#: src/app/qml-qt5/DownloadDelegate.qml:199
+#: src/app/qml-qt6/DownloadDelegate.qml:198
 msgid "Unknown"
 msgstr ""
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
-#: src/app/DownloadDelegate.qml:207
+#: src/app/qml-qt5/DownloadDelegate.qml:207
+#: src/app/qml-qt6/DownloadDelegate.qml:206
 #, qt-format
 msgid "%1/s"
 msgstr ""
 
-#: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
+#: src/app/qml-qt5/DownloadDelegate.qml:251
+#: src/app/qml-qt5/SimpleDownloadDelegate.qml:117
+#: src/app/qml-qt6/DownloadDelegate.qml:250
+#: src/app/qml-qt6/SimpleDownloadDelegate.qml:117
 #, fuzzy
 #| msgid "Delete"
 msgid "Delete File"
 msgstr "Cantzella"
 
-#: src/app/DownloadDelegate.qml:261
+#: src/app/qml-qt5/DownloadDelegate.qml:261
+#: src/app/qml-qt6/DownloadDelegate.qml:260
 #, fuzzy
 #| msgid "Clear History"
 msgid "Remove from History"
 msgstr "Lìmpia sa cronologia"
 
-#: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
+#: src/app/qml-qt5/DownloadDelegate.qml:290
+#: src/app/qml-qt5/SimpleDownloadDelegate.qml:157
+#: src/app/qml-qt6/DownloadDelegate.qml:289
+#: src/app/qml-qt6/SimpleDownloadDelegate.qml:157
 #, fuzzy
 #| msgid "Copy link"
 msgid "Copy Download Link"
 msgstr "Còpia su ligàmene"
 
-#: src/app/DownloadsDialog.qml:68
+#: src/app/qml-qt5/DownloadsDialog.qml:68
+#: src/app/qml-qt6/DownloadsDialog.qml:68
 #, fuzzy
 #| msgid "Downloads"
 msgid "Recent Downloads"
 msgstr "Iscarrigamentos"
 
-#: src/app/DownloadsDialog.qml:83
+#: src/app/qml-qt5/DownloadsDialog.qml:83
+#: src/app/qml-qt6/DownloadsDialog.qml:83
 #, fuzzy
 #| msgid "Downloads"
 msgid "No Recent Downloads"
 msgstr "Iscarrigamentos"
 
-#: src/app/DownloadsDialog.qml:106
+#: src/app/qml-qt5/DownloadsDialog.qml:106
+#: src/app/qml-qt6/DownloadsDialog.qml:106
 #, fuzzy
 #| msgid "Cancel"
 msgid "Cancelled"
 msgstr "Annulla"
 
-#: src/app/DownloadsDialog.qml:109
+#: src/app/qml-qt5/DownloadsDialog.qml:109
+#: src/app/qml-qt6/DownloadsDialog.qml:109
 msgid "Completed"
 msgstr ""
 
-#: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
-#: src/app/webcontainer/WebappSettingsPage.qml:293
+#: src/app/qml-qt5/DownloadsDialog.qml:169
+#: src/app/qml-qt6/DownloadsDialog.qml:169
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:465
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:487
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:293
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:293
 msgid "Clear"
 msgstr "Lìmpia"
 
-#: src/app/DownloadsDialog.qml:179
+#: src/app/qml-qt5/DownloadsDialog.qml:179
+#: src/app/qml-qt6/DownloadsDialog.qml:179
 msgid "View All"
 msgstr ""
 
-#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:850
-#: src/app/webcontainer/WebappSettingsPage.qml:137
+#: src/app/qml-qt5/DownloadsPage.qml:46 src/app/qml-qt6/DownloadsPage.qml:46
+#: src/app/webbrowser/qml-qt5/Browser.qml:850
+#: src/app/webbrowser/qml-qt6/Browser.qml:850
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:137
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:137
 msgid "Downloads"
 msgstr "Iscarrigamentos"
 
-#: src/app/DownloadsPage.qml:60
+#: src/app/qml-qt5/DownloadsPage.qml:60 src/app/qml-qt6/DownloadsPage.qml:60
 msgid "Confirm selection"
 msgstr "Cunfirma sa seletzione"
 
-#: src/app/DownloadsPage.qml:288
+#: src/app/qml-qt5/DownloadsPage.qml:288 src/app/qml-qt6/DownloadsPage.qml:288
 msgid "No downloads available"
 msgstr "Perunu iscarrigamentu a disponimentu"
 
-#: src/app/EditCustomUserAgentDialog.qml:42
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:42
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
 msgstr ""
 
-#: src/app/EditCustomUserAgentDialog.qml:48
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:48
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:48
 #, fuzzy
 #| msgid "Add the name for the new user agent"
 msgid "Add the name for the user agent"
 msgstr "Agiunghe unu nòmine pro s'agente de usuàriu nou"
 
-#: src/app/EditCustomUserAgentDialog.qml:54
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:54
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
 msgstr "Inserta·nche sa cadena de agente de usuàriu..."
 
-#: src/app/ErrorSheet.qml:42
+#: src/app/qml-qt5/ErrorSheet.qml:42 src/app/qml-qt6/ErrorSheet.qml:42
 msgid "Certificate Error"
 msgstr "Faddina de su tzertificadu"
 
-#: src/app/ErrorSheet.qml:42
+#: src/app/qml-qt5/ErrorSheet.qml:42 src/app/qml-qt6/ErrorSheet.qml:42
 msgid "Network Error"
 msgstr "Faddina de rete"
 
 #. TRANSLATORS: %1 refers to the URL of the current page
-#: src/app/ErrorSheet.qml:49
+#: src/app/qml-qt5/ErrorSheet.qml:49 src/app/qml-qt6/ErrorSheet.qml:49
 #, qt-format
 msgid "It appears you are having trouble viewing: %1."
 msgstr "Paret chi tenes problemas in sa visualizatzione de %1."
 
-#: src/app/ErrorSheet.qml:56
+#: src/app/qml-qt5/ErrorSheet.qml:56 src/app/qml-qt6/ErrorSheet.qml:56
 #, qt-format
 msgid "Error: %1"
 msgstr "Faddina: %1"
 
-#: src/app/ErrorSheet.qml:62 src/app/InvalidCertificateErrorSheet.qml:173
+#: src/app/qml-qt5/ErrorSheet.qml:62
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:173
+#: src/app/qml-qt6/ErrorSheet.qml:62
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:173
 msgid "Back to safety"
 msgstr "Torra a s'àrea segura"
 
-#: src/app/ErrorSheet.qml:70
+#: src/app/qml-qt5/ErrorSheet.qml:70 src/app/qml-qt6/ErrorSheet.qml:70
 msgid "Please check your network settings and try refreshing the page."
 msgstr "Controlla sa cunfiguratzione de rete e proa a atualizare sa pàgina."
 
-#: src/app/ErrorSheet.qml:77
+#: src/app/qml-qt5/ErrorSheet.qml:77 src/app/qml-qt6/ErrorSheet.qml:77
 msgid "Refresh page"
 msgstr "Atualiza sa pàgina"
 
-#: src/app/GeolocationPermissionRequest.qml:29
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:29
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:29
 msgid "Permission Request"
 msgstr "Rechesta de permissu"
 
-#: src/app/GeolocationPermissionRequest.qml:30
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:30
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:30
 msgid "This page wants to know your device’s location."
 msgstr "Custa pàgina bolet connòschere sa positzione tua."
 
-#: src/app/GeolocationPermissionRequest.qml:57
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:57
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:57
 msgid "Deny"
 msgstr "Refuda"
 
 #. TRANSLATORS: %1 refers to the URL of the current website and %2 is a string that the website sends with more information about the authentication challenge (technically called "realm")
-#: src/app/HttpAuthenticationDialog.qml:27
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:27
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:27
 #, qt-format
 msgid "The website at %1 requires authentication. The website says \"%2\""
 msgstr "Su situ web %1 rechedet autenticatzione. Su situ narat «%2»"
 
-#: src/app/InvalidCertificateErrorSheet.qml:55
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:55
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:55
 msgid "This site security certificate is not trusted.\n"
 msgstr "Su tzertificadu de seguresa de su situ no est de cunfiantza.\n"
 
-#: src/app/InvalidCertificateErrorSheet.qml:63
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:63
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:63
 msgid "Learn more"
 msgstr "Leghe àteru"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's serial number
-#: src/app/InvalidCertificateErrorSheet.qml:87
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:87
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:87
 #, qt-format
 msgid ""
 "Serial number:\n"
@@ -653,7 +847,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject display name
-#: src/app/InvalidCertificateErrorSheet.qml:94
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:94
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:94
 #, qt-format
 msgid ""
 "Subject:\n"
@@ -663,7 +858,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject's address
-#: src/app/InvalidCertificateErrorSheet.qml:102
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:102
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:102
 #, qt-format
 msgid ""
 "Subject address:\n"
@@ -673,7 +869,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer display name
-#: src/app/InvalidCertificateErrorSheet.qml:113
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:113
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:113
 #, qt-format
 msgid ""
 "Issuer:\n"
@@ -683,7 +880,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer's address
-#: src/app/InvalidCertificateErrorSheet.qml:121
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:121
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:121
 #, qt-format
 msgid ""
 "Issuer address:\n"
@@ -693,7 +891,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's start date
-#: src/app/InvalidCertificateErrorSheet.qml:132
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:132
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:132
 #, qt-format
 msgid ""
 "Valid from:\n"
@@ -703,7 +902,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's expiry date
-#: src/app/InvalidCertificateErrorSheet.qml:139
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:139
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:139
 #, qt-format
 msgid ""
 "Valid until:\n"
@@ -713,7 +913,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's SHA1 fingerprint
-#: src/app/InvalidCertificateErrorSheet.qml:146
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:146
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:146
 #, qt-format
 msgid ""
 "Fingerprint (SHA1):\n"
@@ -722,7 +923,8 @@ msgstr ""
 "Imprenta digitale (SHA1):\n"
 "%1"
 
-#: src/app/InvalidCertificateErrorSheet.qml:153
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:153
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:153
 msgid ""
 "You should not proceed, especially if you have never seen this warning "
 "before for this site."
@@ -730,207 +932,341 @@ msgstr ""
 "Non dias dèpere sighire, mescamente si est sa prima borta chi ses bidende "
 "custu avisu pro custu situ."
 
-#: src/app/MediaAccessDialog.qml:39
+#: src/app/qml-qt5/MediaAccessDialog.qml:39
+#: src/app/qml-qt6/MediaAccessDialog.qml:39
 msgid "Permission"
 msgstr "Permissu"
 
-#: src/app/MediaAccessDialog.qml:46
+#: src/app/qml-qt5/MediaAccessDialog.qml:46
+#: src/app/qml-qt6/MediaAccessDialog.qml:46
 msgid "Allow this domain to access your camera and microphone?"
 msgstr ""
 "Boles permìtere a custu domìniu de atzèdere a sa càmera e su micròfonu tuo?"
 
-#: src/app/MediaAccessDialog.qml:47
+#: src/app/qml-qt5/MediaAccessDialog.qml:47
+#: src/app/qml-qt6/MediaAccessDialog.qml:47
 msgid "Allow this domain to access your camera?"
 msgstr "Boles permìtere a custu domìniu de atzèdere a sa càmera tua?"
 
-#: src/app/MediaAccessDialog.qml:48
+#: src/app/qml-qt5/MediaAccessDialog.qml:48
+#: src/app/qml-qt6/MediaAccessDialog.qml:48
 msgid "Allow this domain to access your microphone?"
 msgstr "Boles permìtere a custu domìniu de atzèdere a su micròfonu tuo?"
 
-#: src/app/MediaAccessDialog.qml:77
+#: src/app/qml-qt5/MediaAccessDialog.qml:77
+#: src/app/qml-qt6/MediaAccessDialog.qml:77
 msgid "Yes"
 msgstr "Eja"
 
-#: src/app/MediaAccessDialog.qml:85
+#: src/app/qml-qt5/MediaAccessDialog.qml:85
+#: src/app/qml-qt6/MediaAccessDialog.qml:85
 msgid "No"
 msgstr "Nono"
 
-#: src/app/PromptDialog.qml:25
+#: src/app/qml-qt5/PromptDialog.qml:25 src/app/qml-qt6/PromptDialog.qml:25
 msgid "JavaScript Prompt"
 msgstr "Indicadore de JavaScript"
 
-#: src/app/ProxyAuthenticationDialog.qml:22
+#: src/app/qml-qt5/ProxyAuthenticationDialog.qml:22
+#: src/app/qml-qt6/ProxyAuthenticationDialog.qml:22
 msgid "Proxy authentication required."
 msgstr "Autenticatzione de proxy rechèdida."
 
 #. TRANSLATORS: %1 refers to the proxy address, %2 refers to the proxy port
-#: src/app/ProxyAuthenticationDialog.qml:24
+#: src/app/qml-qt5/ProxyAuthenticationDialog.qml:24
+#: src/app/qml-qt6/ProxyAuthenticationDialog.qml:24
 #, qt-format
 msgid "The website %1:%2 requires authentication."
 msgstr "Su situ web %1:%2 rechedet autenticatzione."
 
-#: src/app/SavePageDialog.qml:24
+#: src/app/qml-qt5/SavePageDialog.qml:24 src/app/qml-qt6/SavePageDialog.qml:24
 msgid "Save page as HTML / PDF"
 msgstr "Sarva sa pàgina comente HTML/PDF"
 
-#: src/app/SavePageDialog.qml:41
+#: src/app/qml-qt5/SavePageDialog.qml:41 src/app/qml-qt6/SavePageDialog.qml:41
 #, fuzzy
 #| msgid "No custom user agents available"
 msgid "No save actions are available"
 msgstr "Perunu agente de usuàriu personalizadu a disponimentu"
 
-#: src/app/SavePageDialog.qml:46
+#: src/app/qml-qt5/SavePageDialog.qml:46 src/app/qml-qt6/SavePageDialog.qml:46
 msgid "Save as HTML"
 msgstr "Sarva comente HTML"
 
-#: src/app/SavePageDialog.qml:54
-#: src/app/webbrowser/ContentDownloadDialog.qml:102
+#: src/app/qml-qt5/SavePageDialog.qml:54 src/app/qml-qt6/SavePageDialog.qml:54
+#: src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml:102
+#: src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml:102
 msgid "Download"
 msgstr "Iscàrriga"
 
-#: src/app/SavePageDialog.qml:64
+#: src/app/qml-qt5/SavePageDialog.qml:64 src/app/qml-qt6/SavePageDialog.qml:64
 msgid "Save as PDF"
 msgstr "Sarva comente PDF"
 
-#: src/app/SimpleDownloadDelegate.qml:128
+#: src/app/qml-qt5/SimpleDownloadDelegate.qml:128
+#: src/app/qml-qt6/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
 msgstr ""
 
-#: src/app/webbrowser/AddressBar.qml:287
+#: src/app/qml-qt5/WebViewImpl.qml:702 src/app/qml-qt6/WebViewImpl.qml:756
+#: src/app/webbrowser/qml-qt5/Browser.qml:897
+#: src/app/webbrowser/qml-qt6/Browser.qml:904
+msgid "Zoom"
+msgstr "Ingrandimentu"
+
+#: src/app/qml-qt5/ZoomControls.qml:61 src/app/qml-qt6/ZoomControls.qml:59
+msgid "Zoom Out"
+msgstr "Istèsia"
+
+#: src/app/qml-qt5/ZoomControls.qml:68 src/app/qml-qt6/ZoomControls.qml:66
+msgid "Reset"
+msgstr "Reseta"
+
+#: src/app/qml-qt5/ZoomControls.qml:68 src/app/qml-qt6/ZoomControls.qml:66
+msgid "fit"
+msgstr "adata"
+
+#: src/app/qml-qt5/ZoomControls.qml:75 src/app/qml-qt6/ZoomControls.qml:73
+msgid "Zoom In"
+msgstr "Acùrtzia"
+
+#: src/app/qml-qt5/ZoomControls.qml:82 src/app/qml-qt6/ZoomControls.qml:80
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:164
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:550
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:164
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:572
+msgid "Save"
+msgstr "Sarva"
+
+#: src/app/qml-qt5/ZoomControls.qml:100 src/app/qml-qt6/ZoomControls.qml:98
+msgid "Current Zoom"
+msgstr "Ingrandimentu presente"
+
+#: src/app/qml-qt5/ZoomControls.qml:101 src/app/qml-qt6/ZoomControls.qml:99
+msgid "domain"
+msgstr "domìniu"
+
+#: src/app/qml-qt5/ZoomControls.qml:101 src/app/qml-qt6/ZoomControls.qml:99
+msgid "default"
+msgstr "predefinidu"
+
+#: src/app/qml-qt5/ZoomControls.qml:101 src/app/qml-qt6/ZoomControls.qml:99
+msgid "auto-fit"
+msgstr "adatamentu automàticu"
+
+#: src/app/qml-qt5/ZoomControls.qml:190 src/app/qml-qt6/ZoomControls.qml:188
+msgid "Save Zoom"
+msgstr "Sarva s'ingrandimentu"
+
+#: src/app/qml-qt5/ZoomControls.qml:192 src/app/qml-qt6/ZoomControls.qml:190
+msgid "the current web app"
+msgstr "s'aplicatzione web presente"
+
+#: src/app/qml-qt5/ZoomControls.qml:195 src/app/qml-qt6/ZoomControls.qml:193
+#, qt-format
+msgid ""
+"The current zoom level (%1%) can be saved in %2 either for the current "
+"domain or as the default zoom level."
+msgstr ""
+
+#: src/app/qml-qt5/ZoomControls.qml:197 src/app/qml-qt6/ZoomControls.qml:195
+#, fuzzy, qt-format
+#| msgid "Current zoom (%1%) can be saved for %2 as "
+msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
+msgstr "S'ingrandimentu atuale (%1%) podet èssere sarvadu pro %2 comente . "
+
+#: src/app/qml-qt5/ZoomControls.qml:199 src/app/qml-qt6/ZoomControls.qml:197
+#, fuzzy, qt-format
+#| msgid "Current zoom (%1%) can be saved for %2 as "
+msgid ""
+"The current zoom level (%1%) can be saved in %2 as the default zoom level."
+msgstr "S'ingrandimentu atuale (%1%) podet èssere sarvadu pro %2 comente . "
+
+#: src/app/qml-qt5/ZoomControls.qml:206 src/app/qml-qt6/ZoomControls.qml:204
+msgid "Save for domain"
+msgstr "Sarva pro su domìniu"
+
+#: src/app/qml-qt5/ZoomControls.qml:219 src/app/qml-qt6/ZoomControls.qml:217
+msgid "Save as default"
+msgstr "Sarva comente predefinidu"
+
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:287
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:288
 msgid "find in page"
 msgstr "chirca in sa pàgina"
 
-#: src/app/webbrowser/AddressBar.qml:288
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:288
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:289
 msgid "search or enter an address"
 msgstr "Chirca o iscrie un'indiritzu"
 
-#: src/app/webbrowser/AddressBar.qml:440
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:440
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:441
 msgid "Paste and Go"
 msgstr "Incolla e bae"
 
-#: src/app/webbrowser/BookmarkOptions.qml:66
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:66
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:66
 msgid "Bookmark Added"
 msgstr "Agiuntu a is marcadores"
 
 #. TRANSLATORS: Field where the title of bookmarked URL can be changed
-#: src/app/webbrowser/BookmarkOptions.qml:71
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:71
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:71
 msgid "Name"
 msgstr "Nòmine"
 
 #. TRANSLATORS: Field to choose the folder where bookmarked URL will be saved in
-#: src/app/webbrowser/BookmarkOptions.qml:89
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:89
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:89
 msgid "Save in"
 msgstr "Sarva in"
 
-#: src/app/webbrowser/BookmarkOptions.qml:96
-#: src/app/webbrowser/BookmarksFoldersView.qml:133
-#: src/app/webbrowser/BookmarksFoldersViewWide.qml:105
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:96
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersView.qml:133
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersViewWide.qml:105
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:96
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersView.qml:133
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersViewWide.qml:105
 msgid "All Bookmarks"
 msgstr "Totu is marcadores"
 
-#: src/app/webbrowser/BookmarkOptions.qml:114
-#: src/app/webbrowser/BookmarkOptions.qml:154
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:114
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:154
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:114
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:154
 msgid "New Folder"
 msgstr "Cartella noa"
 
-#: src/app/webbrowser/BookmarkOptions.qml:136
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:136
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:136
 msgid "Create new folder"
 msgstr "Crea una cartella noa"
 
-#: src/app/webbrowser/BookmarkOptions.qml:164
-#: src/app/webbrowser/SettingsPage.qml:550 src/app/ZoomControls.qml:82
-msgid "Save"
-msgstr "Sarva"
-
-#: src/app/webbrowser/BookmarksFoldersView.qml:191
-#: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
-#: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
-#: src/app/webbrowser/SettingsPage.qml:486
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersView.qml:191
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersViewWide.qml:148
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:252
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:90
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:486
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersView.qml:191
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersViewWide.qml:148
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:251
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:90
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:508
 msgid "Homepage"
 msgstr "Pàgina initziale"
 
-#: src/app/webbrowser/BookmarksView.qml:33
-#: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:831 src/app/webbrowser/NewTabView.qml:130
-#: src/app/webbrowser/NewTabViewWide.qml:139
+#: src/app/webbrowser/qml-qt5/BookmarksView.qml:33
+#: src/app/webbrowser/qml-qt5/BookmarksViewWide.qml:33
+#: src/app/webbrowser/qml-qt5/Browser.qml:831
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:130
+#: src/app/webbrowser/qml-qt5/NewTabViewWide.qml:139
+#: src/app/webbrowser/qml-qt6/BookmarksView.qml:32
+#: src/app/webbrowser/qml-qt6/BookmarksViewWide.qml:32
+#: src/app/webbrowser/qml-qt6/Browser.qml:831
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:129
+#: src/app/webbrowser/qml-qt6/NewTabViewWide.qml:138
 msgid "Bookmarks"
 msgstr "Marcadores"
 
-#: src/app/webbrowser/Browser.qml:242
-#: src/app/webcontainer/WebViewImplOxide.qml:302
+#: src/app/webbrowser/qml-qt5/Browser.qml:242
+#: src/app/webbrowser/qml-qt6/Browser.qml:242
+#: src/app/webcontainer/qml-qt5/WebViewImplOxide.qml:302
+#: src/app/webcontainer/qml-qt6/WebViewImplOxide.qml:302
 msgid "Blocked domain"
 msgstr "Domìniu blocadu"
 
-#: src/app/webbrowser/Browser.qml:243
-#: src/app/webcontainer/WebViewImplOxide.qml:303
+#: src/app/webbrowser/qml-qt5/Browser.qml:243
+#: src/app/webbrowser/qml-qt6/Browser.qml:243
+#: src/app/webcontainer/qml-qt5/WebViewImplOxide.qml:303
+#: src/app/webcontainer/qml-qt6/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr "Petitzione de navigatzione blocada pro su domìniu %1."
 
-#: src/app/webbrowser/Browser.qml:269
-#: src/app/webcontainer/WebViewImplOxide.qml:329
+#: src/app/webbrowser/qml-qt5/Browser.qml:269
+#: src/app/webbrowser/qml-qt6/Browser.qml:269
+#: src/app/webcontainer/qml-qt5/WebViewImplOxide.qml:329
+#: src/app/webcontainer/qml-qt6/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
 msgstr "Domìniu permìtidu"
 
-#: src/app/webbrowser/Browser.qml:270
+#: src/app/webbrowser/qml-qt5/Browser.qml:270
+#: src/app/webbrowser/qml-qt6/Browser.qml:270
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
 msgstr ""
 "domìniu permìtidu pro %1, at a èssere ativu cando as a atualizare sa pàgina."
 
-#: src/app/webbrowser/Browser.qml:660
+#: src/app/webbrowser/qml-qt5/Browser.qml:660
+#: src/app/webbrowser/qml-qt6/Browser.qml:660
 msgid "Done"
 msgstr "Fatu"
 
-#: src/app/webbrowser/Browser.qml:685
+#: src/app/webbrowser/qml-qt5/Browser.qml:685
+#: src/app/webbrowser/qml-qt6/Browser.qml:685
 #, fuzzy
 #| msgid "Close Tab"
 msgid "Reopen Tab"
 msgstr "Serra s'ischeda"
 
-#: src/app/webbrowser/Browser.qml:811
+#: src/app/webbrowser/qml-qt5/Browser.qml:811
+#: src/app/webbrowser/qml-qt6/Browser.qml:811
 msgid "New window"
 msgstr "Ventana noa"
 
-#: src/app/webbrowser/Browser.qml:817
+#: src/app/webbrowser/qml-qt5/Browser.qml:817
+#: src/app/webbrowser/qml-qt6/Browser.qml:817
 msgid "New private window"
 msgstr "Ventana privada noa"
 
-#: src/app/webbrowser/Browser.qml:837 src/app/webbrowser/HistoryView.qml:31
-#: src/app/webbrowser/HistoryViewWide.qml:36
+#: src/app/webbrowser/qml-qt5/Browser.qml:837
+#: src/app/webbrowser/qml-qt5/HistoryView.qml:31
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:36
+#: src/app/webbrowser/qml-qt6/Browser.qml:837
+#: src/app/webbrowser/qml-qt6/HistoryView.qml:30
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:35
 msgid "History"
 msgstr "Cronologia"
 
-#: src/app/webbrowser/Browser.qml:857 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/qml-qt5/Browser.qml:857
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:45
+#: src/app/webbrowser/qml-qt6/Browser.qml:857
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:45
 msgid "Settings"
 msgstr "Cunfiguratziones"
 
-#: src/app/webbrowser/Browser.qml:863
+#: src/app/webbrowser/qml-qt5/Browser.qml:863
+#: src/app/webbrowser/qml-qt6/Browser.qml:863
 msgid "View source"
 msgstr "Ammustra su còdighe de orìgine"
 
-#: src/app/webbrowser/Browser.qml:876
+#: src/app/webbrowser/qml-qt5/Browser.qml:876
+#: src/app/webbrowser/qml-qt6/Browser.qml:876
 #, fuzzy
 #| msgid "Save as PDF"
 msgid "Save / Print to PDF"
 msgstr "Sarva comente PDF"
 
-#: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
-msgid "Zoom"
-msgstr "Ingrandimentu"
-
-#: src/app/webbrowser/Browser.qml:904 src/app/webbrowser/SettingsPage.qml:140
+#: src/app/webbrowser/qml-qt5/Browser.qml:904
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:140
+#: src/app/webbrowser/qml-qt6/Browser.qml:911
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:140
 msgid "Set Desktop mode"
 msgstr "Modalidade de iscrivania"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
+#: src/app/webbrowser/qml-qt5/Browser.qml:1104
+#: src/app/webbrowser/qml-qt5/Browser.qml:1142
+#: src/app/webbrowser/qml-qt6/Browser.qml:1111
+#: src/app/webbrowser/qml-qt6/Browser.qml:1149
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1985
+#: src/app/webbrowser/qml-qt5/Browser.qml:1985
+#: src/app/webbrowser/qml-qt6/Browser.qml:1992
 #, fuzzy
 #| msgid ""
 #| "Choose an application to open this file or add it to the downloads folder."
@@ -939,58 +1275,72 @@ msgstr ""
 "Sèbera un'aplicatzione pro abèrrere custu archìviu o agiunghe·ddu a sa "
 "cartella de iscarrigamentos."
 
-#: src/app/webbrowser/ContentDownloadDialog.qml:83
+#: src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml:83
+#: src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml:83
 msgid ""
 "Choose an application to open this file or add it to the downloads folder."
 msgstr ""
 "Sèbera un'aplicatzione pro abèrrere custu archìviu o agiunghe·ddu a sa "
 "cartella de iscarrigamentos."
 
-#: src/app/webbrowser/ContentDownloadDialog.qml:89
+#: src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml:89
+#: src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml:89
 msgid "Choose an application"
 msgstr "Sèbera un'aplicatzione"
 
-#: src/app/webbrowser/ExpandedHistoryView.qml:135
+#: src/app/webbrowser/qml-qt5/ExpandedHistoryView.qml:135
+#: src/app/webbrowser/qml-qt6/ExpandedHistoryView.qml:135
 #, qt-format
 msgid "%1 page"
 msgid_plural "%1 pages"
 msgstr[0] "%1 pàgina"
 msgstr[1] "%1 pàginas"
 
-#: src/app/webbrowser/HistorySectionDelegate.qml:26
+#: src/app/webbrowser/qml-qt5/HistorySectionDelegate.qml:26
+#: src/app/webbrowser/qml-qt6/HistorySectionDelegate.qml:26
 msgid "Last Visited"
 msgstr "Visitas reghentes"
 
-#: src/app/webbrowser/HistorySectionDelegate.qml:48
-#: src/app/webbrowser/HistoryViewWide.qml:258
+#: src/app/webbrowser/qml-qt5/HistorySectionDelegate.qml:48
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:258
+#: src/app/webbrowser/qml-qt6/HistorySectionDelegate.qml:48
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:257
 msgid "Yesterday"
 msgstr "Eris"
 
-#: src/app/webbrowser/HistoryViewWide.qml:161
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:161
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:160
 msgid "search history"
 msgstr "Cronologia de chircas"
 
-#: src/app/webbrowser/HistoryViewWide.qml:242
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:242
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:241
 msgid "All History"
 msgstr "Totu sa cronologia"
 
-#: src/app/webbrowser/HistoryViewWide.qml:256
-#: src/app/webbrowser/HistoryViewWide.qml:343
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:256
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:343
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:255
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:342
 msgid "Today"
 msgstr "Oe"
 
 #. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:109
-#: src/app/webcontainer/webapp-container.qml:76
+#: src/app/webbrowser/qml-qt5/morph-browser.qml:109
+#: src/app/webbrowser/qml-qt6/morph-browser.qml:108
+#: src/app/webcontainer/qml-qt5/webapp-container.qml:76
+#: src/app/webcontainer/qml-qt6/webapp-container.qml:76
 #, qt-format
 msgid "%1 - Morph Web Browser"
 msgstr "%1 - Morph, navigadore web"
 
-#: src/app/webbrowser/NewPrivateTabView.qml:41
+#: src/app/webbrowser/qml-qt5/NewPrivateTabView.qml:41
+#: src/app/webbrowser/qml-qt6/NewPrivateTabView.qml:41
 msgid "This is a private tab"
 msgstr "Ses in un'ischeda privada"
 
-#: src/app/webbrowser/NewPrivateTabView.qml:56
+#: src/app/webbrowser/qml-qt5/NewPrivateTabView.qml:56
+#: src/app/webbrowser/qml-qt6/NewPrivateTabView.qml:56
 msgid ""
 "Pages that you view in this tab won't appear in your browser history.\n"
 "Bookmarks you create will be preserved, however."
@@ -999,198 +1349,268 @@ msgstr ""
 "de navigatzione.\n"
 "Is marcadores chi apas a creare, però, ant a èssere sarvados."
 
-#: src/app/webbrowser/NewTabView.qml:142
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:142
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:141
 msgid "Less"
 msgstr "Prus pagu"
 
-#: src/app/webbrowser/NewTabView.qml:142
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:142
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:141
 msgid "More"
 msgstr "Àteru"
 
-#: src/app/webbrowser/NewTabView.qml:326
-#: src/app/webbrowser/NewTabViewWide.qml:138
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:326
+#: src/app/webbrowser/qml-qt5/NewTabViewWide.qml:138
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:325
+#: src/app/webbrowser/qml-qt6/NewTabViewWide.qml:137
 msgid "Top sites"
 msgstr "Sitos prus visitados"
 
-#: src/app/webbrowser/NewTabView.qml:357
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:357
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:356
 msgid "You haven't visited any site yet"
 msgstr "Ancora no as visitadu perunu situ"
 
-#: src/app/webbrowser/SadTab.qml:47
+#: src/app/webbrowser/qml-qt5/SadTab.qml:47
+#: src/app/webbrowser/qml-qt6/SadTab.qml:48
 msgid "The rendering process has been closed for this tab."
 msgstr "Protzessu de rendering serradu pro custa ischeda."
 
-#: src/app/webbrowser/SadTab.qml:60
+#: src/app/webbrowser/qml-qt5/SadTab.qml:60
+#: src/app/webbrowser/qml-qt6/SadTab.qml:61
 #, qt-format
 msgid "Something went wrong while displaying %1."
 msgstr "Carchi cosa no est andada bene in sa visualizatzione de %1."
 
-#: src/app/webbrowser/SadTab.qml:70
+#: src/app/webbrowser/qml-qt5/SadTab.qml:70
+#: src/app/webbrowser/qml-qt6/SadTab.qml:71
 msgid "Close tab"
 msgstr "Serra s'ischeda"
 
-#: src/app/webbrowser/SecurityCertificatePopover.qml:70
+#: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:70
+#: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:70
 msgid "This site has insecure content"
 msgstr "Custu situ tenet cuntenutos chi no sunt seguros"
 
-#: src/app/webbrowser/SecurityCertificatePopover.qml:71
+#: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:71
+#: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:71
 msgid "Identity Not Verified"
 msgstr "Identidade non verificada"
 
-#: src/app/webbrowser/SecurityCertificatePopover.qml:79
+#: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:79
+#: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:79
 msgid "The identity of this website has not been verified."
 msgstr "S'identidade de custu situ web no est istada verificada."
 
-#: src/app/webbrowser/SecurityCertificatePopover.qml:109
+#: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:109
+#: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:109
 #, qt-format
 msgid "You are connected to %1 via HTTPS. The certificate is valid."
 msgstr ""
 "Ses in connessione cun %1 pro mèdiu de HTTPS. Su tzertificadu est vàlidu."
 
-#: src/app/webbrowser/SettingsDeviceSelector.qml:42
+#: src/app/webbrowser/qml-qt5/SettingsDeviceSelector.qml:42
+#: src/app/webbrowser/qml-qt6/SettingsDeviceSelector.qml:42
 msgid "Default"
 msgstr "Predefinidu"
 
-#: src/app/webbrowser/SettingsPage.qml:74
-#: src/app/webbrowser/SettingsPage.qml:277
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:74
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:277
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:74
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:288
 msgid "Search engine"
 msgstr "Motore de chirca"
 
-#: src/app/webbrowser/SettingsPage.qml:91
-#: src/app/webbrowser/SettingsPage.qml:504
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:91
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:504
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:91
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:526
 msgid "New Tab Page"
 msgstr "Pàgina de ischeda noa"
 
-#: src/app/webbrowser/SettingsPage.qml:119
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:119
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:119
 msgid "Restore previous session at startup"
 msgstr "Recùpera s'ùrtima sessione in s'aviu"
 
-#: src/app/webbrowser/SettingsPage.qml:120
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:120
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
 msgstr ""
 "no a disponimentu proite ca s'aviu est cunfiguradu in modalidade privada"
 
-#: src/app/webbrowser/SettingsPage.qml:159
-#: src/app/webcontainer/WebappSettingsPage.qml:58
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:159
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:159
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:58
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:58
 msgid "Automatic fit to width"
 msgstr "Adata a sa larghesa in automàticu"
 
-#: src/app/webbrowser/SettingsPage.qml:160
-#: src/app/webcontainer/WebappSettingsPage.qml:59
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:160
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:160
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:59
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:59
 msgid "Adjusts the width of the website to the window"
 msgstr "Adata sa larghesa de su situ web a sa ventana"
 
-#: src/app/webbrowser/SettingsPage.qml:179
-#: src/app/webcontainer/WebappSettingsPage.qml:78
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:179
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:179
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:78
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:78
 msgid "Default Zoom"
 msgstr "Ingrandimentu predefinidu"
 
-#: src/app/webbrowser/SettingsPage.qml:218
-#: src/app/webcontainer/WebappSettingsPage.qml:117
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:218
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:218
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:117
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:117
 msgid "Load Images"
 msgstr ""
 
-#: src/app/webbrowser/SettingsPage.qml:219
-#: src/app/webcontainer/WebappSettingsPage.qml:118
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:219
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:219
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:118
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
 msgstr ""
 
-#: src/app/webbrowser/SettingsPage.qml:238
-#: src/app/webbrowser/SettingsPage.qml:320
-#: src/app/webcontainer/WebappSettingsPage.qml:151
-#: src/app/webcontainer/WebappSettingsPage.qml:192
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:238
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:320
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:249
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:342
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:151
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:192
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:151
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:192
 msgid "Privacy & permissions"
 msgstr "Riservadesa e permissos"
 
-#: src/app/webbrowser/SettingsPage.qml:249
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:249
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:260
 msgid "Reset browser settings"
 msgstr "Reseta sa cunfiguratzione de su navigadore"
 
-#: src/app/webbrowser/SettingsPage.qml:334
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:334
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:356
 msgid "Start in private mode"
 msgstr "Avia in modalidade privada"
 
-#: src/app/webbrowser/SettingsPage.qml:358
-#: src/app/webcontainer/WebappSettingsPage.qml:206
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:358
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:380
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:206
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:206
 msgid "Only allow browsing to whitelisted websites"
 msgstr "Permite sa navigatzione isceti a is sitos permìtidos"
 
-#: src/app/webbrowser/SettingsPage.qml:398
-#: src/app/webbrowser/SettingsPage.qml:589
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:398
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:589
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:420
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:611
 msgid "Camera & microphone"
 msgstr "Càmera e micròfonu"
 
-#: src/app/webbrowser/SettingsPage.qml:407
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:407
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:429
 msgid "Clear browsing history"
 msgstr "Lìmpia sa cronologia de navigatzione"
 
-#: src/app/webbrowser/SettingsPage.qml:411
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:411
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:433
 msgid "Clear browsing history?"
 msgstr "Boles limpiare sa cronologia de navigatzione?"
 
-#: src/app/webbrowser/SettingsPage.qml:419
-#: src/app/webcontainer/WebappSettingsPage.qml:247
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:419
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:441
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:247
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:247
 msgid "Clear cache"
 msgstr "Isbòida sa memòria temporànea"
 
-#: src/app/webbrowser/SettingsPage.qml:422
-#: src/app/webcontainer/WebappSettingsPage.qml:250
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:422
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:444
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:250
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:250
 msgid "Clear cache?"
 msgstr "Boles isboidare sa memòria temporànea?"
 
-#: src/app/webbrowser/SettingsPage.qml:430
-#: src/app/webcontainer/WebappSettingsPage.qml:258
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:430
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:452
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:258
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:258
 msgid "Clear all cookies"
 msgstr "Lìmpia totu is boboetos"
 
-#: src/app/webbrowser/SettingsPage.qml:433
-#: src/app/webcontainer/WebappSettingsPage.qml:261
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:433
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:455
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:261
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:261
 msgid "Clear all Cookies?"
 msgstr "Boles isboidare totu is boboetos?"
 
-#: src/app/webbrowser/SettingsPage.qml:516
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:516
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:538
 #, fuzzy
 #| msgid "Custom hompage"
 msgid "Custom homepage"
 msgstr "Pàgina printzipale personalizada"
 
-#: src/app/webbrowser/SettingsPage.qml:601
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:601
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:623
 msgid "Microphone"
 msgstr "Micròfonu"
 
-#: src/app/webbrowser/SettingsPage.qml:622
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:622
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:644
 msgid "Camera"
 msgstr "Fotocàmera"
 
-#: src/app/webbrowser/TabComponent.qml:285
+#: src/app/webbrowser/qml-qt5/TabComponent.qml:285
+#: src/app/webbrowser/qml-qt6/TabComponent.qml:286
 msgid "Swipe Up To Exit Full Screen"
 msgstr "Iscurre a susu pro essire de s'ischermu intreu"
 
-#: src/app/webbrowser/TabComponent.qml:286
+#: src/app/webbrowser/qml-qt5/TabComponent.qml:286
+#: src/app/webbrowser/qml-qt6/TabComponent.qml:287
 msgid "Press ESC To Exit Full Screen"
 msgstr "Preme ESC pro essire de s'ischermu intreu"
 
-#: src/app/webbrowser/TabPreview.qml:113
+#: src/app/webbrowser/qml-qt5/TabPreview.qml:113
+#: src/app/webbrowser/qml-qt6/TabPreview.qml:113
 msgid "Tap to view"
 msgstr "Toca pro visualizare"
 
-#: src/app/webbrowser/TabsBar.qml:64 src/app/webbrowser/TabsList.qml:100
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:64
+#: src/app/webbrowser/qml-qt5/TabsList.qml:100
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:63
+#: src/app/webbrowser/qml-qt6/TabsList.qml:100
 msgid "New tab"
 msgstr "Ischeda noa"
 
-#: src/app/webbrowser/TabsBar.qml:99
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:99
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:98
 msgid "Move to New Window"
 msgstr "Moe in una ventana noa"
 
-#: src/app/webbrowser/TabsBar.qml:116
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:116
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:115
 msgid "Close Tab"
 msgstr "Serra s'ischeda"
 
-#: src/app/webbrowser/UrlPreviewDelegate.qml:138
+#: src/app/webbrowser/qml-qt5/UrlPreviewDelegate.qml:138
+#: src/app/webbrowser/qml-qt6/UrlPreviewDelegate.qml:137
 msgid "Remove"
 msgstr "Boga"
 
-#: src/app/webcontainer/AccountChooserDialog.qml:62
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:238
+msgid "Plugins"
+msgstr ""
+
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:239
+msgid "Widevine"
+msgstr ""
+
+#: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:62
+#: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:62
 msgid ""
 "No accounts have been linked to this webapp; press the item below to add an "
 "account."
@@ -1198,19 +1618,23 @@ msgstr ""
 "Perunu contu connètidu a custa aplicatzione web. Preme su butone in bàsciu "
 "pro nd'agiùnghere."
 
-#: src/app/webcontainer/AccountChooserDialog.qml:78
+#: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:78
+#: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:78
 msgid "Add account"
 msgstr "Agiunghe contu"
 
-#: src/app/webcontainer/AccountChooserDialog.qml:87
+#: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:87
+#: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:87
 msgid "Don't use an account"
 msgstr "No imprees perunu contu"
 
-#: src/app/webcontainer/AccountErrorScreen.qml:39
+#: src/app/webcontainer/qml-qt5/AccountErrorScreen.qml:39
+#: src/app/webcontainer/qml-qt6/AccountErrorScreen.qml:39
 msgid "Account error"
 msgstr "Faddina in su contu"
 
-#: src/app/webcontainer/AccountsLogic.qml:63
+#: src/app/webcontainer/qml-qt5/AccountsLogic.qml:63
+#: src/app/webcontainer/qml-qt6/AccountsLogic.qml:63
 msgid ""
 "Account window could not be opened. You can only create one account at a "
 "time; please try again after closing all other account windows."
@@ -1219,123 +1643,66 @@ msgstr ""
 "unu contu a sa borta, serra totu is àteras ventanas de contos e torra·bi a "
 "proare."
 
-#: src/app/webcontainer/AccountsLogic.qml:214
+#: src/app/webcontainer/qml-qt5/AccountsLogic.qml:214
+#: src/app/webcontainer/qml-qt6/AccountsLogic.qml:214
 msgid "Authentication failed"
 msgstr "Autenticatzione faddida"
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
-#: src/app/webcontainer/AccountsSplashScreen.qml:45
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:45
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:45
 #, qt-format
 msgid "<b>%1</b> needs to access your %2 online account."
 msgstr "S'aplicatzione <b>%1</b> rechedet atzessu a su contu %2."
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
-#: src/app/webcontainer/AccountsSplashScreen.qml:55
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:55
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:55
 #, qt-format
 msgid "<b>%1</b> would like to access your %2 online account."
 msgstr "<b>%1</b> bolet atzèdere a su contu tuo de %2."
 
-#: src/app/webcontainer/AccountsSplashScreen.qml:64
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:64
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:64
 msgid ""
 "Choose an account now, or skip this step and choose an online account later."
 msgstr "Sèbera unu contu, o brinca custu passu e sèbera·ddu a pustis."
 
-#: src/app/webcontainer/AccountsSplashScreen.qml:77
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:77
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:77
 msgid "Close the app"
 msgstr "Serra custa aplicatzione"
 
-#: src/app/webcontainer/AccountsSplashScreen.qml:77
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:77
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:77
 msgid "Skip"
 msgstr "Brinca"
 
-#: src/app/webcontainer/AccountsSplashScreen.qml:84
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:84
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:84
 msgid "Choose account"
 msgstr "Sèbera su contu"
 
-#: src/app/webcontainer/SadPage.qml:45
+#: src/app/webcontainer/qml-qt5/SadPage.qml:45
+#: src/app/webcontainer/qml-qt6/SadPage.qml:46
 msgid "Oops, something went wrong."
 msgstr "B'est istada una faddina."
 
-#: src/app/webcontainer/WebappSettingsPage.qml:38
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:38
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
 msgstr "Cunfiguratzione de su WebappContainer"
 
-#: src/app/webcontainer/WebappSettingsPage.qml:163
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:163
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:163
 msgid "Reset webapp settings"
 msgstr "Reseta sa cunfiguratzione de s'aplicatzione web"
 
-#: src/app/webcontainer/WebViewImplOxide.qml:330
+#: src/app/webcontainer/qml-qt5/WebViewImplOxide.qml:330
+#: src/app/webcontainer/qml-qt6/WebViewImplOxide.qml:330
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
 msgstr "domìniu permìtidu pro %1. Atualiza sa pàgina."
-
-#: src/app/ZoomControls.qml:61
-msgid "Zoom Out"
-msgstr "Istèsia"
-
-#: src/app/ZoomControls.qml:68
-msgid "Reset"
-msgstr "Reseta"
-
-#: src/app/ZoomControls.qml:68
-msgid "fit"
-msgstr "adata"
-
-#: src/app/ZoomControls.qml:75
-msgid "Zoom In"
-msgstr "Acùrtzia"
-
-#: src/app/ZoomControls.qml:100
-msgid "Current Zoom"
-msgstr "Ingrandimentu presente"
-
-#: src/app/ZoomControls.qml:101
-msgid "domain"
-msgstr "domìniu"
-
-#: src/app/ZoomControls.qml:101
-msgid "default"
-msgstr "predefinidu"
-
-#: src/app/ZoomControls.qml:101
-msgid "auto-fit"
-msgstr "adatamentu automàticu"
-
-#: src/app/ZoomControls.qml:190
-msgid "Save Zoom"
-msgstr "Sarva s'ingrandimentu"
-
-#: src/app/ZoomControls.qml:192
-msgid "the current web app"
-msgstr "s'aplicatzione web presente"
-
-#: src/app/ZoomControls.qml:195
-#, qt-format
-msgid ""
-"The current zoom level (%1%) can be saved in %2 either for the current "
-"domain or as the default zoom level."
-msgstr ""
-
-#: src/app/ZoomControls.qml:197
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
-msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "S'ingrandimentu atuale (%1%) podet èssere sarvadu pro %2 comente . "
-
-#: src/app/ZoomControls.qml:199
-#, fuzzy, qt-format
-#| msgid "Current zoom (%1%) can be saved for %2 as "
-msgid ""
-"The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr "S'ingrandimentu atuale (%1%) podet èssere sarvadu pro %2 comente . "
-
-#: src/app/ZoomControls.qml:206
-msgid "Save for domain"
-msgstr "Sarva pro su domìniu"
-
-#: src/app/ZoomControls.qml:219
-msgid "Save as default"
-msgstr "Sarva comente predefinidu"
 
 #, qt-format
 #~ msgid ""

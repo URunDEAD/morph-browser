@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 17:32+0000\n"
+"POT-Creation-Date: 2026-05-27 15:21+0000\n"
 "PO-Revision-Date: 2024-04-23 12:06+0000\n"
 "Last-Translator: 复予 <clonewith@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -24,8 +24,10 @@ msgstr ""
 msgid "Morph Browser"
 msgstr "Morph 浏览器"
 
-#: morph-browser.desktop.in:5 src/app/webbrowser/morph-browser.qml:111
-#: src/app/webcontainer/webapp-container.qml:78
+#: morph-browser.desktop.in:5 src/app/webbrowser/qml-qt5/morph-browser.qml:111
+#: src/app/webbrowser/qml-qt6/morph-browser.qml:110
+#: src/app/webcontainer/qml-qt5/webapp-container.qml:78
+#: src/app/webcontainer/qml-qt6/webapp-container.qml:78
 msgid "Morph Web Browser"
 msgstr "Morph网页浏览器"
 
@@ -45,239 +47,331 @@ msgstr "新建窗口"
 msgid "New Private Window"
 msgstr "新建隐私窗口"
 
-#: src/app/actions/Back.qml:23
+#: src/app/qml-qt5/actions/Back.qml:23 src/app/qml-qt6/actions/Back.qml:23
 msgid "Back"
 msgstr "返回"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Back' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Back.qml:26
+#: src/app/qml-qt5/actions/Back.qml:26 src/app/qml-qt6/actions/Back.qml:26
 msgid "Older Page"
 msgstr "较早页面"
 
-#: src/app/actions/BookmarkLink.qml:22
+#: src/app/qml-qt5/actions/BookmarkLink.qml:22
+#: src/app/qml-qt6/actions/BookmarkLink.qml:22
 msgid "Bookmark link"
 msgstr "书签链接"
 
-#: src/app/actions/Bookmark.qml:23
+#: src/app/qml-qt5/actions/Bookmark.qml:23
+#: src/app/qml-qt6/actions/Bookmark.qml:23
 msgid "Bookmark"
 msgstr "书签"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Bookmark' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Bookmark.qml:26
+#: src/app/qml-qt5/actions/Bookmark.qml:26
+#: src/app/qml-qt6/actions/Bookmark.qml:26
 msgid "Add This Page to Bookmarks"
 msgstr "将该页面加入书签"
 
-#: src/app/actions/ClearHistory.qml:23
+#: src/app/qml-qt5/actions/ClearHistory.qml:23
+#: src/app/qml-qt6/actions/ClearHistory.qml:23
 msgid "Clear History"
 msgstr "清除历史记录"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Clear History' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/ClearHistory.qml:26
+#: src/app/qml-qt5/actions/ClearHistory.qml:26
+#: src/app/qml-qt6/actions/ClearHistory.qml:26
 msgid "Clear Navigation History"
 msgstr "清空浏览历史记录"
 
-#: src/app/actions/CopyImageLink.qml:22
+#: src/app/qml-qt5/actions/CopyImageLink.qml:22
+#: src/app/qml-qt6/actions/CopyImageLink.qml:22
 #, fuzzy
 #| msgid "Copy image"
 msgid "Copy image link"
 msgstr "复制图像"
 
-#: src/app/actions/CopyImage.qml:22
+#: src/app/qml-qt5/actions/CopyImage.qml:22
+#: src/app/qml-qt6/actions/CopyImage.qml:22
 msgid "Copy image"
 msgstr "复制图像"
 
-#: src/app/actions/CopyLink.qml:22
+#: src/app/qml-qt5/actions/CopyLink.qml:22
+#: src/app/qml-qt6/actions/CopyLink.qml:22
 msgid "Copy link"
 msgstr "复制链接"
 
-#: src/app/actions/Copy.qml:22 src/app/webbrowser/AddressBar.qml:418
+#: src/app/qml-qt5/actions/Copy.qml:22 src/app/qml-qt6/actions/Copy.qml:22
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:418
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:419
 msgid "Copy"
 msgstr "复制"
 
-#: src/app/actions/Cut.qml:22 src/app/webbrowser/AddressBar.qml:407
+#: src/app/qml-qt5/actions/Cut.qml:22 src/app/qml-qt6/actions/Cut.qml:22
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:407
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:408
 msgid "Cut"
 msgstr "剪切"
 
-#: src/app/actions/Erase.qml:22
+#: src/app/qml-qt5/actions/Erase.qml:22 src/app/qml-qt6/actions/Erase.qml:22
 msgid "Erase"
 msgstr "清除"
 
-#: src/app/actions/FindInPage.qml:23 src/app/webbrowser/Browser.qml:843
+#: src/app/qml-qt5/actions/FindInPage.qml:23
+#: src/app/qml-qt6/actions/FindInPage.qml:23
+#: src/app/webbrowser/qml-qt5/Browser.qml:843
+#: src/app/webbrowser/qml-qt6/Browser.qml:843
 msgid "Find in page"
 msgstr "在页面中查找"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Find in Page' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/FindInPage.qml:26
+#: src/app/qml-qt5/actions/FindInPage.qml:26
+#: src/app/qml-qt6/actions/FindInPage.qml:26
 msgid "Search in Page"
 msgstr "在页面中搜索"
 
-#: src/app/actions/Forward.qml:23
+#: src/app/qml-qt5/actions/Forward.qml:23
+#: src/app/qml-qt6/actions/Forward.qml:23
 msgid "Forward"
 msgstr "转发"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Forward' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Forward.qml:26
+#: src/app/qml-qt5/actions/Forward.qml:26
+#: src/app/qml-qt6/actions/Forward.qml:26
 msgid "Newer Page"
 msgstr "较新页面"
 
-#: src/app/actions/GoTo.qml:23
+#: src/app/qml-qt5/actions/GoTo.qml:23 src/app/qml-qt6/actions/GoTo.qml:23
 msgid "Goto"
 msgstr "转到"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/GoTo.qml:26
+#: src/app/qml-qt5/actions/GoTo.qml:26 src/app/qml-qt6/actions/GoTo.qml:26
 msgid "Address;URL;www"
 msgstr "Address;URL;www;地址"
 
-#: src/app/actions/NewTab.qml:23 src/app/webbrowser/Browser.qml:703
-#: src/app/webbrowser/TabsBar.qml:88
+#: src/app/qml-qt5/actions/NewTab.qml:23 src/app/qml-qt6/actions/NewTab.qml:23
+#: src/app/webbrowser/qml-qt5/Browser.qml:703
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:88
+#: src/app/webbrowser/qml-qt6/Browser.qml:703
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:87
 msgid "New Tab"
 msgstr "新标签"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'New Tab' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/NewTab.qml:26
+#: src/app/qml-qt5/actions/NewTab.qml:26 src/app/qml-qt6/actions/NewTab.qml:26
 msgid "Open a New Tab"
 msgstr "打开新标签"
 
-#: src/app/actions/OpenImageInNewTab.qml:22
+#: src/app/qml-qt5/actions/OpenImageInNewTab.qml:22
+#: src/app/qml-qt6/actions/OpenImageInNewTab.qml:22
 msgid "Open image in new tab"
 msgstr "在新标签打开图像"
 
-#: src/app/actions/OpenLinkInBrowser.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInBrowser.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInBrowser.qml:22
 msgid "Open link in default browser"
 msgstr "在默认浏览器中打开链接"
 
-#: src/app/actions/OpenLinkInNewBackgroundTab.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInNewBackgroundTab.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInNewBackgroundTab.qml:22
 msgid "Open link in new background tab"
 msgstr "在新后台标签打开链接"
 
-#: src/app/actions/OpenLinkInNewPrivateWindow.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInNewPrivateWindow.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInNewPrivateWindow.qml:22
 msgid "Open link in new private window"
 msgstr "在隐私窗口中打开链接"
 
-#: src/app/actions/OpenLinkInNewTab.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInNewTab.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
 msgstr "在新标签打开链接"
 
-#: src/app/actions/OpenLinkInNewWindow.qml:22
+#: src/app/qml-qt5/actions/OpenLinkInNewWindow.qml:22
+#: src/app/qml-qt6/actions/OpenLinkInNewWindow.qml:22
 msgid "Open link in new window"
 msgstr "在新窗口中打开链接"
 
-#: src/app/actions/OpenVideoInNewTab.qml:22
+#: src/app/qml-qt5/actions/OpenVideoInNewTab.qml:22
+#: src/app/qml-qt6/actions/OpenVideoInNewTab.qml:22
 msgid "Open video in new tab"
 msgstr "在新标签页打开视频"
 
-#: src/app/actions/Paste.qml:22 src/app/webbrowser/AddressBar.qml:429
+#: src/app/qml-qt5/actions/Paste.qml:22 src/app/qml-qt6/actions/Paste.qml:22
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:429
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:430
 msgid "Paste"
 msgstr "粘贴"
 
-#: src/app/actions/Redo.qml:22
+#: src/app/qml-qt5/actions/Redo.qml:22 src/app/qml-qt6/actions/Redo.qml:22
 msgid "Redo"
 msgstr "还原"
 
-#: src/app/actions/Reload.qml:23 src/app/webbrowser/SadTab.qml:76
-#: src/app/webbrowser/TabsBar.qml:93 src/app/webcontainer/SadPage.qml:51
+#: src/app/qml-qt5/actions/Reload.qml:23 src/app/qml-qt6/actions/Reload.qml:23
+#: src/app/webbrowser/qml-qt5/SadTab.qml:76
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:93
+#: src/app/webbrowser/qml-qt6/SadTab.qml:77
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:92
+#: src/app/webcontainer/qml-qt5/SadPage.qml:51
+#: src/app/webcontainer/qml-qt6/SadPage.qml:52
 msgid "Reload"
 msgstr "重新加载"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Reload' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
-#: src/app/actions/Reload.qml:26
+#: src/app/qml-qt5/actions/Reload.qml:26 src/app/qml-qt6/actions/Reload.qml:26
 msgid "Leave Page"
 msgstr "离开页面"
 
-#: src/app/actions/SaveImage.qml:22
+#: src/app/qml-qt5/actions/SaveImage.qml:22
+#: src/app/qml-qt6/actions/SaveImage.qml:22
 msgid "Save image"
 msgstr "保存图像"
 
-#: src/app/actions/SaveLink.qml:22
+#: src/app/qml-qt5/actions/SaveLink.qml:22
+#: src/app/qml-qt6/actions/SaveLink.qml:22
 msgid "Save link"
 msgstr "保存链接"
 
-#: src/app/actions/SaveVideo.qml:22
+#: src/app/qml-qt5/actions/SaveVideo.qml:22
+#: src/app/qml-qt6/actions/SaveVideo.qml:22
 msgid "Save video"
 msgstr "保存视频"
 
-#: src/app/actions/SelectAll.qml:22 src/app/CustomUserAgentsPage.qml:47
-#: src/app/DomainPermissionsPage.qml:68 src/app/DomainSettingsPage.qml:66
-#: src/app/DownloadsPage.qml:85
+#: src/app/qml-qt5/actions/SelectAll.qml:22
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:47
+#: src/app/qml-qt5/DomainPermissionsPage.qml:68
+#: src/app/qml-qt5/DomainSettingsPage.qml:66
+#: src/app/qml-qt5/DownloadsPage.qml:85
+#: src/app/qml-qt6/actions/SelectAll.qml:22
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:47
+#: src/app/qml-qt6/DomainPermissionsPage.qml:68
+#: src/app/qml-qt6/DomainSettingsPage.qml:66
+#: src/app/qml-qt6/DownloadsPage.qml:85
 msgid "Select all"
 msgstr "全选"
 
-#: src/app/actions/Share.qml:22 src/app/webbrowser/Browser.qml:823
+#: src/app/qml-qt5/actions/Share.qml:22 src/app/qml-qt6/actions/Share.qml:22
+#: src/app/webbrowser/qml-qt5/Browser.qml:823
+#: src/app/webbrowser/qml-qt6/Browser.qml:823
 msgid "Share"
 msgstr "分享"
 
-#: src/app/actions/Undo.qml:22
+#: src/app/qml-qt5/actions/Undo.qml:22 src/app/qml-qt6/actions/Undo.qml:22
 msgid "Undo"
 msgstr "撤销"
 
-#: src/app/AlertDialog.qml:24
+#: src/app/qml-qt5/AlertDialog.qml:24 src/app/qml-qt6/AlertDialog.qml:24
 msgid "JavaScript Alert"
 msgstr "JavaScript 警告"
 
-#: src/app/AlertDialog.qml:31 src/app/AuthenticationDialog.qml:47
-#: src/app/ColorSelectDialog.qml:73 src/app/ConfirmDialog.qml:33
-#: src/app/EditCustomUserAgentDialog.qml:62
-#: src/app/HttpAuthenticationDialog.qml:70 src/app/PromptDialog.qml:50
-#: src/app/webbrowser/BookmarkOptions.qml:122
+#: src/app/qml-qt5/AlertDialog.qml:31
+#: src/app/qml-qt5/AuthenticationDialog.qml:47
+#: src/app/qml-qt5/ColorSelectDialog.qml:73
+#: src/app/qml-qt5/ConfirmDialog.qml:33
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:62
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:70
+#: src/app/qml-qt5/PromptDialog.qml:50 src/app/qml-qt6/AlertDialog.qml:31
+#: src/app/qml-qt6/AuthenticationDialog.qml:47
+#: src/app/qml-qt6/ColorSelectDialog.qml:73
+#: src/app/qml-qt6/ConfirmDialog.qml:33
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:62
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:70
+#: src/app/qml-qt6/PromptDialog.qml:50
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:122
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:122
 msgid "OK"
 msgstr "确定"
 
-#: src/app/AllowCustomSchemesDialog.qml:24
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:24
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:24
 msgid "Custom URL schemes"
 msgstr "自定义URL路径"
 
-#: src/app/AllowCustomSchemesDialog.qml:30
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:30
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:30
 #, qt-format
 msgid "The '%1' website wants to open this URL outside of the web browser:"
 msgstr "“%1”网站想在浏览器外部打开此 URL："
 
-#: src/app/AllowCustomSchemesDialog.qml:32
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:32
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:32
 msgid "Open this URL with a system app if possible?"
 msgstr "若有可能，要用系统应用打开此 URL 吗？"
 
-#: src/app/AllowCustomSchemesDialog.qml:44
-#: src/app/GeolocationPermissionRequest.qml:44
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:44
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:44
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:44
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:44
 msgid "Remember decision"
 msgstr "记住选择"
 
-#: src/app/AllowCustomSchemesDialog.qml:50
-#: src/app/GeolocationPermissionRequest.qml:51
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:50
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:51
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:50
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:51
 msgid "Allow"
 msgstr "允许"
 
-#: src/app/AllowCustomSchemesDialog.qml:57
-#: src/app/AllowOrBlockDomainDialog.qml:53 src/app/AuthenticationDialog.qml:53
-#: src/app/CertificateVerificationDialog.qml:46
-#: src/app/ColorSelectDialog.qml:84 src/app/ConfirmDialog.qml:41
-#: src/app/DownloadDelegate.qml:271 src/app/EditCustomUserAgentDialog.qml:69
-#: src/app/HttpAuthenticationDialog.qml:80 src/app/PromptDialog.qml:61
-#: src/app/SavePageDialog.qml:73 src/app/SimpleDownloadDelegate.qml:136
-#: src/app/webbrowser/BookmarkOptions.qml:182
-#: src/app/webbrowser/ContentDownloadDialog.qml:114
-#: src/app/webbrowser/ContextMenuMobile.qml:143
-#: src/app/webbrowser/SettingsPage.qml:458
-#: src/app/webbrowser/SettingsPage.qml:574
-#: src/app/webcontainer/AccountChooserDialog.qml:96
-#: src/app/webcontainer/ContextMenuMobile.qml:143
-#: src/app/webcontainer/WebappSettingsPage.qml:286 src/app/ZoomControls.qml:237
+#: src/app/qml-qt5/AllowCustomSchemesDialog.qml:57
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:53
+#: src/app/qml-qt5/AuthenticationDialog.qml:53
+#: src/app/qml-qt5/CertificateVerificationDialog.qml:46
+#: src/app/qml-qt5/ColorSelectDialog.qml:84
+#: src/app/qml-qt5/ConfirmDialog.qml:41
+#: src/app/qml-qt5/DownloadDelegate.qml:271
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:69
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:80
+#: src/app/qml-qt5/PromptDialog.qml:61 src/app/qml-qt5/SavePageDialog.qml:73
+#: src/app/qml-qt5/SimpleDownloadDelegate.qml:136
+#: src/app/qml-qt5/ZoomControls.qml:237
+#: src/app/qml-qt6/AllowCustomSchemesDialog.qml:57
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:53
+#: src/app/qml-qt6/AuthenticationDialog.qml:53
+#: src/app/qml-qt6/CertificateVerificationDialog.qml:46
+#: src/app/qml-qt6/ColorSelectDialog.qml:84
+#: src/app/qml-qt6/ConfirmDialog.qml:41
+#: src/app/qml-qt6/DownloadDelegate.qml:270
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:69
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:80
+#: src/app/qml-qt6/PromptDialog.qml:61 src/app/qml-qt6/SavePageDialog.qml:73
+#: src/app/qml-qt6/SimpleDownloadDelegate.qml:136
+#: src/app/qml-qt6/ZoomControls.qml:235
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:182
+#: src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml:114
+#: src/app/webbrowser/qml-qt5/ContextMenuMobile.qml:143
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:458
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:574
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:182
+#: src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml:114
+#: src/app/webbrowser/qml-qt6/ContextMenuMobile.qml:143
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:480
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:596
+#: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:96
+#: src/app/webcontainer/qml-qt5/ContextMenuMobile.qml:143
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:286
+#: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:96
+#: src/app/webcontainer/qml-qt6/ContextMenuMobile.qml:143
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:286
 msgid "Cancel"
 msgstr "取消"
 
-#: src/app/AllowOrBlockDomainDialog.qml:25
-#: src/app/AllowOrBlockDomainDialog.qml:41
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:25
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:41
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:25
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:41
 msgid "Block domain"
 msgstr "阻止域名"
 
-#: src/app/AllowOrBlockDomainDialog.qml:30
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:30
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:30
 #, qt-format
 msgid ""
 "You're trying to access %1 but it is not on your approved domain whitelist. "
@@ -287,7 +381,8 @@ msgstr ""
 "你正尝试访问的 %1 不 在你允许的域名白名单，你要继续阻止此域名，允许访问此域"
 "名，或者返回？"
 
-#: src/app/AllowOrBlockDomainDialog.qml:31
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:31
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:31
 #, qt-format
 msgid ""
 "%1 is trying to access %2 but it is not on your approved domain whitelist. "
@@ -297,330 +392,429 @@ msgstr ""
 "%1 正尝试访问的 %2 不 在你允许的域名白名单，你要继续阻止此域名，允许从这个域"
 "名载入数据，或者忽略这个请求？"
 
-#: src/app/AllowOrBlockDomainDialog.qml:47
+#: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:47
+#: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:47
 msgid "Allow domain"
 msgstr "允许域名"
 
-#: src/app/AuthenticationDialog.qml:24 src/app/HttpAuthenticationDialog.qml:25
+#: src/app/qml-qt5/AuthenticationDialog.qml:24
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:25
+#: src/app/qml-qt6/AuthenticationDialog.qml:24
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:25
 msgid "Authentication required."
 msgstr "需要授权。"
 
 #. TRANSLATORS: %1 refers to the URL of the current website
-#: src/app/AuthenticationDialog.qml:26
+#: src/app/qml-qt5/AuthenticationDialog.qml:26
+#: src/app/qml-qt6/AuthenticationDialog.qml:26
 #, qt-format
 msgid "The website %1 requires authentication."
 msgstr "网站 %1 需要认证。"
 
-#: src/app/AuthenticationDialog.qml:34 src/app/HttpAuthenticationDialog.qml:50
+#: src/app/qml-qt5/AuthenticationDialog.qml:34
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:50
+#: src/app/qml-qt6/AuthenticationDialog.qml:34
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:50
 msgid "Username"
 msgstr "用户名"
 
-#: src/app/AuthenticationDialog.qml:41 src/app/HttpAuthenticationDialog.qml:60
+#: src/app/qml-qt5/AuthenticationDialog.qml:41
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:60
+#: src/app/qml-qt6/AuthenticationDialog.qml:41
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:60
 msgid "Password"
 msgstr "密码"
 
-#: src/app/BeforeUnloadDialog.qml:24
+#: src/app/qml-qt5/BeforeUnloadDialog.qml:24
+#: src/app/qml-qt6/BeforeUnloadDialog.qml:24
 msgid "Confirm Navigation"
 msgstr "确认导航"
 
-#: src/app/BeforeUnloadDialog.qml:33
+#: src/app/qml-qt5/BeforeUnloadDialog.qml:33
+#: src/app/qml-qt6/BeforeUnloadDialog.qml:33
 msgid "Leave"
 msgstr "离开"
 
-#: src/app/BeforeUnloadDialog.qml:41
+#: src/app/qml-qt5/BeforeUnloadDialog.qml:41
+#: src/app/qml-qt6/BeforeUnloadDialog.qml:41
 msgid "Stay"
 msgstr "停留"
 
-#: src/app/CertificateVerificationDialog.qml:24
+#: src/app/qml-qt5/CertificateVerificationDialog.qml:24
+#: src/app/qml-qt6/CertificateVerificationDialog.qml:24
 msgid "This connection is untrusted"
 msgstr "该通信不可信"
 
 #. TRANSLATORS: %1 refers to the hostname
-#: src/app/CertificateVerificationDialog.qml:26
+#: src/app/qml-qt5/CertificateVerificationDialog.qml:26
+#: src/app/qml-qt6/CertificateVerificationDialog.qml:26
 #, qt-format
 msgid ""
 "You are trying to securely reach %1, but the security certificate of this "
 "website is not trusted. Reason: %2"
 msgstr "你正试图打开安全网页 %1，但此网站的安全证书不受信任。原因：%2"
 
-#: src/app/CertificateVerificationDialog.qml:39
-#: src/app/InvalidCertificateErrorSheet.qml:160
+#: src/app/qml-qt5/CertificateVerificationDialog.qml:39
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:160
+#: src/app/qml-qt6/CertificateVerificationDialog.qml:39
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:160
 msgid "Proceed anyway"
 msgstr "仍然继续"
 
-#: src/app/ColorSelectDialog.qml:25
+#: src/app/qml-qt5/ColorSelectDialog.qml:25
+#: src/app/qml-qt6/ColorSelectDialog.qml:25
 msgid "Select Color"
 msgstr "选择颜色"
 
-#: src/app/ConfirmDialog.qml:24
+#: src/app/qml-qt5/ConfirmDialog.qml:24 src/app/qml-qt6/ConfirmDialog.qml:24
 msgid "JavaScript Confirmation"
 msgstr "JavaScript 确认"
 
-#: src/app/ContentExportDialog.qml:79
+#: src/app/qml-qt5/ContentExportDialog.qml:79
+#: src/app/qml-qt6/ContentExportDialog.qml:87
 #, fuzzy
 #| msgid "Open tabs"
 msgid "Open with"
 msgstr "打开的标签"
 
-#: src/app/ContentExportDialog.qml:80
+#: src/app/qml-qt5/ContentExportDialog.qml:80
+#: src/app/qml-qt6/ContentExportDialog.qml:88
 #, qt-format
 msgid "File name: %1"
 msgstr ""
 
-#: src/app/ContentExportDialog.qml:91
-#: src/app/webcontainer/AccountErrorScreen.qml:50
+#: src/app/qml-qt5/ContentExportDialog.qml:91
+#: src/app/qml-qt6/ContentExportDialog.qml:99
+#: src/app/webcontainer/qml-qt5/AccountErrorScreen.qml:50
+#: src/app/webcontainer/qml-qt6/AccountErrorScreen.qml:50
 msgid "Close"
 msgstr "关闭"
 
-#: src/app/ContentExportDialog.qml:100
+#: src/app/qml-qt5/ContentExportDialog.qml:100
+#: src/app/qml-qt6/ContentExportDialog.qml:108
 #, fuzzy
 #| msgid "Open link in default browser"
 msgid "Open link in browser"
 msgstr "在默认浏览器中打开链接"
 
-#: src/app/ContentExportDialog.qml:109
+#: src/app/qml-qt5/ContentExportDialog.qml:109
+#: src/app/qml-qt6/ContentExportDialog.qml:117
 #, fuzzy
 #| msgid "Open link in default browser"
 msgid "Open file in browser"
 msgstr "在默认浏览器中打开链接"
 
-#: src/app/CustomUserAgentsPage.qml:33 src/app/DomainSettingsPage.qml:150
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:33
+#: src/app/qml-qt5/DomainSettingsPage.qml:150
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:33
+#: src/app/qml-qt6/DomainSettingsPage.qml:150
 msgid "Custom User Agents"
 msgstr "自定义用户标识"
 
-#: src/app/CustomUserAgentsPage.qml:63 src/app/DomainPermissionsPage.qml:84
-#: src/app/DomainSettingsPage.qml:82 src/app/DownloadsPage.qml:101
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:63
+#: src/app/qml-qt5/DomainPermissionsPage.qml:84
+#: src/app/qml-qt5/DomainSettingsPage.qml:82
+#: src/app/qml-qt5/DownloadsPage.qml:101
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:63
+#: src/app/qml-qt6/DomainPermissionsPage.qml:84
+#: src/app/qml-qt6/DomainSettingsPage.qml:82
+#: src/app/qml-qt6/DownloadsPage.qml:101
 msgid "Delete"
 msgstr "删除"
 
-#: src/app/CustomUserAgentsPage.qml:94
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:94
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:94
 msgid "New User Agent"
 msgstr "新用户标识"
 
-#: src/app/CustomUserAgentsPage.qml:161
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:161
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:161
 msgid "Edit User Agent"
 msgstr "编辑用户标识"
 
-#: src/app/CustomUserAgentsPage.qml:187
+#: src/app/qml-qt5/CustomUserAgentsPage.qml:187
+#: src/app/qml-qt6/CustomUserAgentsPage.qml:187
 msgid "No custom user agents available"
 msgstr "没有自定义用户标识"
 
-#: src/app/DomainPermissionsPage.qml:54
-#: src/app/webcontainer/WebappSettingsPage.qml:225
+#: src/app/qml-qt5/DomainPermissionsPage.qml:54
+#: src/app/qml-qt6/DomainPermissionsPage.qml:54
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:225
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:225
 msgid "Domain blacklist/whitelist"
 msgstr "域名 黑名单/白名单"
 
-#: src/app/DomainPermissionsPage.qml:113 src/app/DomainSettingsPage.qml:113
+#: src/app/qml-qt5/DomainPermissionsPage.qml:113
+#: src/app/qml-qt5/DomainSettingsPage.qml:113
+#: src/app/qml-qt6/DomainPermissionsPage.qml:113
+#: src/app/qml-qt6/DomainSettingsPage.qml:113
 msgid "Add domain"
 msgstr "添加域名"
 
-#: src/app/DomainPermissionsPage.qml:114
+#: src/app/qml-qt5/DomainPermissionsPage.qml:114
+#: src/app/qml-qt6/DomainPermissionsPage.qml:114
 msgid ""
 "Enter the name of the domain, e.g. example.com (subdomains will be removed)."
 msgstr "输入域名，例如：example.com（忽略子域）。"
 
-#: src/app/DomainPermissionsPage.qml:222
+#: src/app/qml-qt5/DomainPermissionsPage.qml:222
+#: src/app/qml-qt6/DomainPermissionsPage.qml:222
 msgid "Not Set"
 msgstr "未设置"
 
-#: src/app/DomainPermissionsPage.qml:232
+#: src/app/qml-qt5/DomainPermissionsPage.qml:232
+#: src/app/qml-qt6/DomainPermissionsPage.qml:232
 msgid "Never allow access"
 msgstr "禁止访问"
 
-#: src/app/DomainPermissionsPage.qml:243
+#: src/app/qml-qt5/DomainPermissionsPage.qml:243
+#: src/app/qml-qt6/DomainPermissionsPage.qml:243
 msgid "Always allow access"
 msgstr "允许访问"
 
-#: src/app/DomainPermissionsPage.qml:283
+#: src/app/qml-qt5/DomainPermissionsPage.qml:283
+#: src/app/qml-qt6/DomainPermissionsPage.qml:283
 msgid "No sites have been granted special permissions"
 msgstr "没有网站授予了特殊权限"
 
-#: src/app/DomainSettingsPage.qml:52
-#: src/app/webcontainer/WebappSettingsPage.qml:236
+#: src/app/qml-qt5/DomainSettingsPage.qml:52
+#: src/app/qml-qt6/DomainSettingsPage.qml:52
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:236
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:236
 msgid "Domain specific settings"
 msgstr "域名特殊配置"
 
-#: src/app/DomainSettingsPage.qml:114
+#: src/app/qml-qt5/DomainSettingsPage.qml:114
+#: src/app/qml-qt6/DomainSettingsPage.qml:114
 msgid "Enter the name of the domain, e.g. m.example.com"
 msgstr "输入域名名称，例如：example.com"
 
-#: src/app/DomainSettingsPage.qml:207
+#: src/app/qml-qt5/DomainSettingsPage.qml:207
+#: src/app/qml-qt6/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
 msgstr "允许启动其他应用"
 
-#: src/app/DomainSettingsPage.qml:226
+#: src/app/qml-qt5/DomainSettingsPage.qml:226
+#: src/app/qml-qt6/DomainSettingsPage.qml:226
 msgid "access your location"
 msgstr "访问你的位置信息"
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/qml-qt5/DomainSettingsPage.qml:231
+#: src/app/qml-qt6/DomainSettingsPage.qml:231
 msgid "Ask each time"
 msgstr "每次询问"
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/qml-qt5/DomainSettingsPage.qml:231
+#: src/app/qml-qt6/DomainSettingsPage.qml:231
 msgid "Allowed"
 msgstr "允许"
 
-#: src/app/DomainSettingsPage.qml:231
+#: src/app/qml-qt5/DomainSettingsPage.qml:231
+#: src/app/qml-qt6/DomainSettingsPage.qml:231
 msgid "Denied"
 msgstr "拒绝"
 
-#: src/app/DomainSettingsPage.qml:245
+#: src/app/qml-qt5/DomainSettingsPage.qml:245
+#: src/app/qml-qt6/DomainSettingsPage.qml:245
 msgid "custom user agent"
 msgstr "自定义用户标识"
 
-#: src/app/DomainSettingsPage.qml:320 src/app/DomainSettingsPage.qml:325
+#: src/app/qml-qt5/DomainSettingsPage.qml:320
+#: src/app/qml-qt5/DomainSettingsPage.qml:325
+#: src/app/qml-qt6/DomainSettingsPage.qml:320
+#: src/app/qml-qt6/DomainSettingsPage.qml:325
 msgid "Zoom: "
 msgstr "缩放： "
 
-#: src/app/DomainSettingsPage.qml:325
+#: src/app/qml-qt5/DomainSettingsPage.qml:325
+#: src/app/qml-qt6/DomainSettingsPage.qml:325
 msgid "not set"
 msgstr "未设置"
 
-#: src/app/DomainSettingsPage.qml:361
+#: src/app/qml-qt5/DomainSettingsPage.qml:361
+#: src/app/qml-qt6/DomainSettingsPage.qml:361
 msgid "No domain specific settings available"
 msgstr "没有域名的特殊配置"
 
 #. TRANSLATORS: %1 is the percentage of the download completed so far
-#: src/app/DownloadDelegate.qml:105 src/app/DownloadsDialog.qml:109
+#: src/app/qml-qt5/DownloadDelegate.qml:105
+#: src/app/qml-qt5/DownloadsDialog.qml:109
+#: src/app/qml-qt6/DownloadDelegate.qml:104
+#: src/app/qml-qt6/DownloadsDialog.qml:109
 #, qt-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/app/DownloadDelegate.qml:170
+#: src/app/qml-qt5/DownloadDelegate.qml:170
+#: src/app/qml-qt6/DownloadDelegate.qml:169
 msgid "Download failed"
 msgstr "下载失败"
 
-#: src/app/DownloadDelegate.qml:199
+#: src/app/qml-qt5/DownloadDelegate.qml:199
+#: src/app/qml-qt6/DownloadDelegate.qml:198
 msgid "Unknown"
 msgstr "未知"
 
 #. TRANSLATORS: %1 is the number of bytes i.e. 2bytes, 5KB, 1MB
-#: src/app/DownloadDelegate.qml:207
+#: src/app/qml-qt5/DownloadDelegate.qml:207
+#: src/app/qml-qt6/DownloadDelegate.qml:206
 #, qt-format
 msgid "%1/s"
 msgstr "%1/秒"
 
-#: src/app/DownloadDelegate.qml:251 src/app/SimpleDownloadDelegate.qml:117
+#: src/app/qml-qt5/DownloadDelegate.qml:251
+#: src/app/qml-qt5/SimpleDownloadDelegate.qml:117
+#: src/app/qml-qt6/DownloadDelegate.qml:250
+#: src/app/qml-qt6/SimpleDownloadDelegate.qml:117
 msgid "Delete File"
 msgstr "删除文件"
 
-#: src/app/DownloadDelegate.qml:261
+#: src/app/qml-qt5/DownloadDelegate.qml:261
+#: src/app/qml-qt6/DownloadDelegate.qml:260
 msgid "Remove from History"
 msgstr "从历史记录中删除"
 
-#: src/app/DownloadDelegate.qml:290 src/app/SimpleDownloadDelegate.qml:157
+#: src/app/qml-qt5/DownloadDelegate.qml:290
+#: src/app/qml-qt5/SimpleDownloadDelegate.qml:157
+#: src/app/qml-qt6/DownloadDelegate.qml:289
+#: src/app/qml-qt6/SimpleDownloadDelegate.qml:157
 msgid "Copy Download Link"
 msgstr "复制下载链接"
 
-#: src/app/DownloadsDialog.qml:68
+#: src/app/qml-qt5/DownloadsDialog.qml:68
+#: src/app/qml-qt6/DownloadsDialog.qml:68
 msgid "Recent Downloads"
 msgstr "最近下载"
 
-#: src/app/DownloadsDialog.qml:83
+#: src/app/qml-qt5/DownloadsDialog.qml:83
+#: src/app/qml-qt6/DownloadsDialog.qml:83
 msgid "No Recent Downloads"
 msgstr "无最近下载"
 
-#: src/app/DownloadsDialog.qml:106
+#: src/app/qml-qt5/DownloadsDialog.qml:106
+#: src/app/qml-qt6/DownloadsDialog.qml:106
 msgid "Cancelled"
 msgstr "已取消"
 
-#: src/app/DownloadsDialog.qml:109
+#: src/app/qml-qt5/DownloadsDialog.qml:109
+#: src/app/qml-qt6/DownloadsDialog.qml:109
 msgid "Completed"
 msgstr "已完成"
 
-#: src/app/DownloadsDialog.qml:169 src/app/webbrowser/SettingsPage.qml:465
-#: src/app/webcontainer/WebappSettingsPage.qml:293
+#: src/app/qml-qt5/DownloadsDialog.qml:169
+#: src/app/qml-qt6/DownloadsDialog.qml:169
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:465
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:487
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:293
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:293
 msgid "Clear"
 msgstr "清除"
 
-#: src/app/DownloadsDialog.qml:179
+#: src/app/qml-qt5/DownloadsDialog.qml:179
+#: src/app/qml-qt6/DownloadsDialog.qml:179
 msgid "View All"
 msgstr "查看全部"
 
-#: src/app/DownloadsPage.qml:46 src/app/webbrowser/Browser.qml:850
-#: src/app/webcontainer/WebappSettingsPage.qml:137
+#: src/app/qml-qt5/DownloadsPage.qml:46 src/app/qml-qt6/DownloadsPage.qml:46
+#: src/app/webbrowser/qml-qt5/Browser.qml:850
+#: src/app/webbrowser/qml-qt6/Browser.qml:850
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:137
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:137
 msgid "Downloads"
 msgstr "下载"
 
-#: src/app/DownloadsPage.qml:60
+#: src/app/qml-qt5/DownloadsPage.qml:60 src/app/qml-qt6/DownloadsPage.qml:60
 msgid "Confirm selection"
 msgstr "确定选择"
 
-#: src/app/DownloadsPage.qml:288
+#: src/app/qml-qt5/DownloadsPage.qml:288 src/app/qml-qt6/DownloadsPage.qml:288
 msgid "No downloads available"
 msgstr "没有可用的下载"
 
-#: src/app/EditCustomUserAgentDialog.qml:42
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:42
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
 msgstr "用户标识名已被占用"
 
-#: src/app/EditCustomUserAgentDialog.qml:48
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:48
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:48
 msgid "Add the name for the user agent"
 msgstr "添加用户标识名称"
 
-#: src/app/EditCustomUserAgentDialog.qml:54
+#: src/app/qml-qt5/EditCustomUserAgentDialog.qml:54
+#: src/app/qml-qt6/EditCustomUserAgentDialog.qml:54
 msgid "enter user agent string..."
 msgstr "输入用户标识..."
 
-#: src/app/ErrorSheet.qml:42
+#: src/app/qml-qt5/ErrorSheet.qml:42 src/app/qml-qt6/ErrorSheet.qml:42
 msgid "Certificate Error"
 msgstr "证书错误"
 
-#: src/app/ErrorSheet.qml:42
+#: src/app/qml-qt5/ErrorSheet.qml:42 src/app/qml-qt6/ErrorSheet.qml:42
 msgid "Network Error"
 msgstr "网络错误"
 
 #. TRANSLATORS: %1 refers to the URL of the current page
-#: src/app/ErrorSheet.qml:49
+#: src/app/qml-qt5/ErrorSheet.qml:49 src/app/qml-qt6/ErrorSheet.qml:49
 #, qt-format
 msgid "It appears you are having trouble viewing: %1."
 msgstr "浏览时可能遇到麻烦：%1。"
 
-#: src/app/ErrorSheet.qml:56
+#: src/app/qml-qt5/ErrorSheet.qml:56 src/app/qml-qt6/ErrorSheet.qml:56
 #, qt-format
 msgid "Error: %1"
 msgstr "错误：%1"
 
-#: src/app/ErrorSheet.qml:62 src/app/InvalidCertificateErrorSheet.qml:173
+#: src/app/qml-qt5/ErrorSheet.qml:62
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:173
+#: src/app/qml-qt6/ErrorSheet.qml:62
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:173
 msgid "Back to safety"
 msgstr "返回安全连接"
 
-#: src/app/ErrorSheet.qml:70
+#: src/app/qml-qt5/ErrorSheet.qml:70 src/app/qml-qt6/ErrorSheet.qml:70
 msgid "Please check your network settings and try refreshing the page."
 msgstr "请检查你的网络设置，并试着刷新本页面。"
 
-#: src/app/ErrorSheet.qml:77
+#: src/app/qml-qt5/ErrorSheet.qml:77 src/app/qml-qt6/ErrorSheet.qml:77
 msgid "Refresh page"
 msgstr "刷新页面"
 
-#: src/app/GeolocationPermissionRequest.qml:29
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:29
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:29
 msgid "Permission Request"
 msgstr "权限请求"
 
-#: src/app/GeolocationPermissionRequest.qml:30
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:30
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:30
 msgid "This page wants to know your device’s location."
 msgstr "此页面要求取得您的设备位置。"
 
-#: src/app/GeolocationPermissionRequest.qml:57
+#: src/app/qml-qt5/GeolocationPermissionRequest.qml:57
+#: src/app/qml-qt6/GeolocationPermissionRequest.qml:57
 msgid "Deny"
 msgstr "拒绝"
 
 #. TRANSLATORS: %1 refers to the URL of the current website and %2 is a string that the website sends with more information about the authentication challenge (technically called "realm")
-#: src/app/HttpAuthenticationDialog.qml:27
+#: src/app/qml-qt5/HttpAuthenticationDialog.qml:27
+#: src/app/qml-qt6/HttpAuthenticationDialog.qml:27
 #, qt-format
 msgid "The website at %1 requires authentication. The website says \"%2\""
 msgstr "%1 的网站需要身份验证。 网站要求是 \"%2\""
 
-#: src/app/InvalidCertificateErrorSheet.qml:55
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:55
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:55
 msgid "This site security certificate is not trusted.\n"
 msgstr "此网站的安全证书不被信任。\n"
 
-#: src/app/InvalidCertificateErrorSheet.qml:63
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:63
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:63
 msgid "Learn more"
 msgstr "了解详情"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's serial number
-#: src/app/InvalidCertificateErrorSheet.qml:87
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:87
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:87
 #, qt-format
 msgid ""
 "Serial number:\n"
@@ -630,7 +824,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject display name
-#: src/app/InvalidCertificateErrorSheet.qml:94
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:94
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:94
 #, qt-format
 msgid ""
 "Subject:\n"
@@ -640,7 +835,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject's address
-#: src/app/InvalidCertificateErrorSheet.qml:102
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:102
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:102
 #, qt-format
 msgid ""
 "Subject address:\n"
@@ -650,7 +846,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer display name
-#: src/app/InvalidCertificateErrorSheet.qml:113
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:113
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:113
 #, qt-format
 msgid ""
 "Issuer:\n"
@@ -660,7 +857,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer's address
-#: src/app/InvalidCertificateErrorSheet.qml:121
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:121
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:121
 #, qt-format
 msgid ""
 "Issuer address:\n"
@@ -670,7 +868,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's start date
-#: src/app/InvalidCertificateErrorSheet.qml:132
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:132
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:132
 #, qt-format
 msgid ""
 "Valid from:\n"
@@ -680,7 +879,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's expiry date
-#: src/app/InvalidCertificateErrorSheet.qml:139
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:139
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:139
 #, qt-format
 msgid ""
 "Valid until:\n"
@@ -690,7 +890,8 @@ msgstr ""
 "%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's SHA1 fingerprint
-#: src/app/InvalidCertificateErrorSheet.qml:146
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:146
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:146
 #, qt-format
 msgid ""
 "Fingerprint (SHA1):\n"
@@ -699,257 +900,404 @@ msgstr ""
 "指纹（SHA1）：\n"
 "%1"
 
-#: src/app/InvalidCertificateErrorSheet.qml:153
+#: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:153
+#: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:153
 msgid ""
 "You should not proceed, especially if you have never seen this warning "
 "before for this site."
 msgstr "您应该停止操作，特别是当您从未在此网站看到过此警告。"
 
-#: src/app/MediaAccessDialog.qml:39
+#: src/app/qml-qt5/MediaAccessDialog.qml:39
+#: src/app/qml-qt6/MediaAccessDialog.qml:39
 msgid "Permission"
 msgstr "权限"
 
-#: src/app/MediaAccessDialog.qml:46
+#: src/app/qml-qt5/MediaAccessDialog.qml:46
+#: src/app/qml-qt6/MediaAccessDialog.qml:46
 msgid "Allow this domain to access your camera and microphone?"
 msgstr "是否允许这个网域使用本机的相机和麦克风？"
 
-#: src/app/MediaAccessDialog.qml:47
+#: src/app/qml-qt5/MediaAccessDialog.qml:47
+#: src/app/qml-qt6/MediaAccessDialog.qml:47
 msgid "Allow this domain to access your camera?"
 msgstr "是否允许这个网域使用本机的相机？"
 
-#: src/app/MediaAccessDialog.qml:48
+#: src/app/qml-qt5/MediaAccessDialog.qml:48
+#: src/app/qml-qt6/MediaAccessDialog.qml:48
 msgid "Allow this domain to access your microphone?"
 msgstr "是否允许这个网域使用本机的麦克风？"
 
-#: src/app/MediaAccessDialog.qml:77
+#: src/app/qml-qt5/MediaAccessDialog.qml:77
+#: src/app/qml-qt6/MediaAccessDialog.qml:77
 msgid "Yes"
 msgstr "是"
 
-#: src/app/MediaAccessDialog.qml:85
+#: src/app/qml-qt5/MediaAccessDialog.qml:85
+#: src/app/qml-qt6/MediaAccessDialog.qml:85
 msgid "No"
 msgstr "否"
 
-#: src/app/PromptDialog.qml:25
+#: src/app/qml-qt5/PromptDialog.qml:25 src/app/qml-qt6/PromptDialog.qml:25
 msgid "JavaScript Prompt"
 msgstr "JavaScript 提示"
 
-#: src/app/ProxyAuthenticationDialog.qml:22
+#: src/app/qml-qt5/ProxyAuthenticationDialog.qml:22
+#: src/app/qml-qt6/ProxyAuthenticationDialog.qml:22
 msgid "Proxy authentication required."
 msgstr "需要代理身份认证。"
 
 #. TRANSLATORS: %1 refers to the proxy address, %2 refers to the proxy port
-#: src/app/ProxyAuthenticationDialog.qml:24
+#: src/app/qml-qt5/ProxyAuthenticationDialog.qml:24
+#: src/app/qml-qt6/ProxyAuthenticationDialog.qml:24
 #, qt-format
 msgid "The website %1:%2 requires authentication."
 msgstr "网站 %1:%2 需要身份认证。"
 
-#: src/app/SavePageDialog.qml:24
+#: src/app/qml-qt5/SavePageDialog.qml:24 src/app/qml-qt6/SavePageDialog.qml:24
 msgid "Save page as HTML / PDF"
 msgstr "保存页面为 HTML/PDF"
 
-#: src/app/SavePageDialog.qml:41
+#: src/app/qml-qt5/SavePageDialog.qml:41 src/app/qml-qt6/SavePageDialog.qml:41
 msgid "No save actions are available"
 msgstr "没有可用的保存操作"
 
-#: src/app/SavePageDialog.qml:46
+#: src/app/qml-qt5/SavePageDialog.qml:46 src/app/qml-qt6/SavePageDialog.qml:46
 msgid "Save as HTML"
 msgstr "保存为HTML"
 
-#: src/app/SavePageDialog.qml:54
-#: src/app/webbrowser/ContentDownloadDialog.qml:102
+#: src/app/qml-qt5/SavePageDialog.qml:54 src/app/qml-qt6/SavePageDialog.qml:54
+#: src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml:102
+#: src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml:102
 msgid "Download"
 msgstr "下载"
 
-#: src/app/SavePageDialog.qml:64
+#: src/app/qml-qt5/SavePageDialog.qml:64 src/app/qml-qt6/SavePageDialog.qml:64
 msgid "Save as PDF"
 msgstr "保存为PDF"
 
-#: src/app/SimpleDownloadDelegate.qml:128
+#: src/app/qml-qt5/SimpleDownloadDelegate.qml:128
+#: src/app/qml-qt6/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
 msgstr "从列表中删除"
 
-#: src/app/webbrowser/AddressBar.qml:287
+#: src/app/qml-qt5/WebViewImpl.qml:702 src/app/qml-qt6/WebViewImpl.qml:756
+#: src/app/webbrowser/qml-qt5/Browser.qml:897
+#: src/app/webbrowser/qml-qt6/Browser.qml:904
+msgid "Zoom"
+msgstr "缩放"
+
+#: src/app/qml-qt5/ZoomControls.qml:61 src/app/qml-qt6/ZoomControls.qml:59
+msgid "Zoom Out"
+msgstr "缩小"
+
+#: src/app/qml-qt5/ZoomControls.qml:68 src/app/qml-qt6/ZoomControls.qml:66
+msgid "Reset"
+msgstr "重置"
+
+#: src/app/qml-qt5/ZoomControls.qml:68 src/app/qml-qt6/ZoomControls.qml:66
+msgid "fit"
+msgstr "重置缩放"
+
+#: src/app/qml-qt5/ZoomControls.qml:75 src/app/qml-qt6/ZoomControls.qml:73
+msgid "Zoom In"
+msgstr "放大"
+
+#: src/app/qml-qt5/ZoomControls.qml:82 src/app/qml-qt6/ZoomControls.qml:80
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:164
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:550
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:164
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:572
+msgid "Save"
+msgstr "保存"
+
+#: src/app/qml-qt5/ZoomControls.qml:100 src/app/qml-qt6/ZoomControls.qml:98
+msgid "Current Zoom"
+msgstr "当前缩放"
+
+#: src/app/qml-qt5/ZoomControls.qml:101 src/app/qml-qt6/ZoomControls.qml:99
+msgid "domain"
+msgstr "添加域名"
+
+#: src/app/qml-qt5/ZoomControls.qml:101 src/app/qml-qt6/ZoomControls.qml:99
+msgid "default"
+msgstr "默认"
+
+#: src/app/qml-qt5/ZoomControls.qml:101 src/app/qml-qt6/ZoomControls.qml:99
+msgid "auto-fit"
+msgstr "自动适应"
+
+#: src/app/qml-qt5/ZoomControls.qml:190 src/app/qml-qt6/ZoomControls.qml:188
+msgid "Save Zoom"
+msgstr "保存缩放"
+
+#: src/app/qml-qt5/ZoomControls.qml:192 src/app/qml-qt6/ZoomControls.qml:190
+msgid "the current web app"
+msgstr "当前web应用"
+
+#: src/app/qml-qt5/ZoomControls.qml:195 src/app/qml-qt6/ZoomControls.qml:193
+#, qt-format
+msgid ""
+"The current zoom level (%1%) can be saved in %2 either for the current "
+"domain or as the default zoom level."
+msgstr "当前缩放大小（%1%）可在 %2 中为当前域名保存，或保存为默认缩放大小。"
+
+#: src/app/qml-qt5/ZoomControls.qml:197 src/app/qml-qt6/ZoomControls.qml:195
+#, qt-format
+msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
+msgstr "当前缩放大小（%1%）可在 %2 中为当前域名保存。"
+
+#: src/app/qml-qt5/ZoomControls.qml:199 src/app/qml-qt6/ZoomControls.qml:197
+#, qt-format
+msgid ""
+"The current zoom level (%1%) can be saved in %2 as the default zoom level."
+msgstr "当前缩放大小（%1%）可在 %2 中保存为默认缩放大小。"
+
+#: src/app/qml-qt5/ZoomControls.qml:206 src/app/qml-qt6/ZoomControls.qml:204
+msgid "Save for domain"
+msgstr "保存域名"
+
+#: src/app/qml-qt5/ZoomControls.qml:219 src/app/qml-qt6/ZoomControls.qml:217
+msgid "Save as default"
+msgstr "保存为默认"
+
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:287
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:288
 msgid "find in page"
 msgstr "在页面中查找"
 
-#: src/app/webbrowser/AddressBar.qml:288
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:288
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:289
 msgid "search or enter an address"
 msgstr "搜索或输入一个地址"
 
-#: src/app/webbrowser/AddressBar.qml:440
+#: src/app/webbrowser/qml-qt5/AddressBar.qml:440
+#: src/app/webbrowser/qml-qt6/AddressBar.qml:441
 msgid "Paste and Go"
 msgstr "粘贴并继续"
 
-#: src/app/webbrowser/BookmarkOptions.qml:66
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:66
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:66
 msgid "Bookmark Added"
 msgstr "已添加书签"
 
 #. TRANSLATORS: Field where the title of bookmarked URL can be changed
-#: src/app/webbrowser/BookmarkOptions.qml:71
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:71
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:71
 msgid "Name"
 msgstr "名称"
 
 #. TRANSLATORS: Field to choose the folder where bookmarked URL will be saved in
-#: src/app/webbrowser/BookmarkOptions.qml:89
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:89
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:89
 msgid "Save in"
 msgstr "保存在"
 
-#: src/app/webbrowser/BookmarkOptions.qml:96
-#: src/app/webbrowser/BookmarksFoldersView.qml:133
-#: src/app/webbrowser/BookmarksFoldersViewWide.qml:105
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:96
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersView.qml:133
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersViewWide.qml:105
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:96
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersView.qml:133
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersViewWide.qml:105
 msgid "All Bookmarks"
 msgstr "全部书签"
 
-#: src/app/webbrowser/BookmarkOptions.qml:114
-#: src/app/webbrowser/BookmarkOptions.qml:154
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:114
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:154
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:114
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:154
 msgid "New Folder"
 msgstr "新建文件夹"
 
-#: src/app/webbrowser/BookmarkOptions.qml:136
+#: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:136
+#: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:136
 msgid "Create new folder"
 msgstr "创建新文件夹"
 
-#: src/app/webbrowser/BookmarkOptions.qml:164
-#: src/app/webbrowser/SettingsPage.qml:550 src/app/ZoomControls.qml:82
-msgid "Save"
-msgstr "保存"
-
-#: src/app/webbrowser/BookmarksFoldersView.qml:191
-#: src/app/webbrowser/BookmarksFoldersViewWide.qml:148
-#: src/app/webbrowser/NewTabView.qml:252 src/app/webbrowser/SettingsPage.qml:90
-#: src/app/webbrowser/SettingsPage.qml:486
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersView.qml:191
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersViewWide.qml:148
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:252
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:90
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:486
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersView.qml:191
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersViewWide.qml:148
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:251
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:90
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:508
 msgid "Homepage"
 msgstr "主页"
 
-#: src/app/webbrowser/BookmarksView.qml:33
-#: src/app/webbrowser/BookmarksViewWide.qml:33
-#: src/app/webbrowser/Browser.qml:831 src/app/webbrowser/NewTabView.qml:130
-#: src/app/webbrowser/NewTabViewWide.qml:139
+#: src/app/webbrowser/qml-qt5/BookmarksView.qml:33
+#: src/app/webbrowser/qml-qt5/BookmarksViewWide.qml:33
+#: src/app/webbrowser/qml-qt5/Browser.qml:831
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:130
+#: src/app/webbrowser/qml-qt5/NewTabViewWide.qml:139
+#: src/app/webbrowser/qml-qt6/BookmarksView.qml:32
+#: src/app/webbrowser/qml-qt6/BookmarksViewWide.qml:32
+#: src/app/webbrowser/qml-qt6/Browser.qml:831
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:129
+#: src/app/webbrowser/qml-qt6/NewTabViewWide.qml:138
 msgid "Bookmarks"
 msgstr "书签"
 
-#: src/app/webbrowser/Browser.qml:242
-#: src/app/webcontainer/WebViewImplOxide.qml:302
+#: src/app/webbrowser/qml-qt5/Browser.qml:242
+#: src/app/webbrowser/qml-qt6/Browser.qml:242
+#: src/app/webcontainer/qml-qt5/WebViewImplOxide.qml:302
+#: src/app/webcontainer/qml-qt6/WebViewImplOxide.qml:302
 msgid "Blocked domain"
 msgstr "阻止域名"
 
-#: src/app/webbrowser/Browser.qml:243
-#: src/app/webcontainer/WebViewImplOxide.qml:303
+#: src/app/webbrowser/qml-qt5/Browser.qml:243
+#: src/app/webbrowser/qml-qt6/Browser.qml:243
+#: src/app/webcontainer/qml-qt5/WebViewImplOxide.qml:303
+#: src/app/webcontainer/qml-qt6/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
 msgstr "阻止浏览请求到域名 %1 。"
 
-#: src/app/webbrowser/Browser.qml:269
-#: src/app/webcontainer/WebViewImplOxide.qml:329
+#: src/app/webbrowser/qml-qt5/Browser.qml:269
+#: src/app/webbrowser/qml-qt6/Browser.qml:269
+#: src/app/webcontainer/qml-qt5/WebViewImplOxide.qml:329
+#: src/app/webcontainer/qml-qt6/WebViewImplOxide.qml:329
 msgid "Whitelisted domain"
 msgstr "域名白名单"
 
-#: src/app/webbrowser/Browser.qml:270
+#: src/app/webbrowser/qml-qt5/Browser.qml:270
+#: src/app/webbrowser/qml-qt6/Browser.qml:270
 #, qt-format
 msgid ""
 "domain %1 is now whitelisted, it will be active on the next page reload."
 msgstr "域名 %1 现在不在白名单，这个操作将会在页面重新载入后生效。"
 
-#: src/app/webbrowser/Browser.qml:660
+#: src/app/webbrowser/qml-qt5/Browser.qml:660
+#: src/app/webbrowser/qml-qt6/Browser.qml:660
 msgid "Done"
 msgstr "完成"
 
-#: src/app/webbrowser/Browser.qml:685
+#: src/app/webbrowser/qml-qt5/Browser.qml:685
+#: src/app/webbrowser/qml-qt6/Browser.qml:685
 msgid "Reopen Tab"
 msgstr "重新打开标签页"
 
-#: src/app/webbrowser/Browser.qml:811
+#: src/app/webbrowser/qml-qt5/Browser.qml:811
+#: src/app/webbrowser/qml-qt6/Browser.qml:811
 msgid "New window"
 msgstr "新窗口"
 
-#: src/app/webbrowser/Browser.qml:817
+#: src/app/webbrowser/qml-qt5/Browser.qml:817
+#: src/app/webbrowser/qml-qt6/Browser.qml:817
 msgid "New private window"
 msgstr "新建隐私窗口"
 
-#: src/app/webbrowser/Browser.qml:837 src/app/webbrowser/HistoryView.qml:31
-#: src/app/webbrowser/HistoryViewWide.qml:36
+#: src/app/webbrowser/qml-qt5/Browser.qml:837
+#: src/app/webbrowser/qml-qt5/HistoryView.qml:31
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:36
+#: src/app/webbrowser/qml-qt6/Browser.qml:837
+#: src/app/webbrowser/qml-qt6/HistoryView.qml:30
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:35
 msgid "History"
 msgstr "历史"
 
-#: src/app/webbrowser/Browser.qml:857 src/app/webbrowser/SettingsPage.qml:45
+#: src/app/webbrowser/qml-qt5/Browser.qml:857
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:45
+#: src/app/webbrowser/qml-qt6/Browser.qml:857
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:45
 msgid "Settings"
 msgstr "设置"
 
-#: src/app/webbrowser/Browser.qml:863
+#: src/app/webbrowser/qml-qt5/Browser.qml:863
+#: src/app/webbrowser/qml-qt6/Browser.qml:863
 msgid "View source"
 msgstr "查看源代码"
 
-#: src/app/webbrowser/Browser.qml:876
+#: src/app/webbrowser/qml-qt5/Browser.qml:876
+#: src/app/webbrowser/qml-qt6/Browser.qml:876
 msgid "Save / Print to PDF"
 msgstr "保存/打印为PDF"
 
-#: src/app/webbrowser/Browser.qml:897 src/app/WebViewImpl.qml:690
-msgid "Zoom"
-msgstr "缩放"
-
-#: src/app/webbrowser/Browser.qml:904 src/app/webbrowser/SettingsPage.qml:140
+#: src/app/webbrowser/qml-qt5/Browser.qml:904
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:140
+#: src/app/webbrowser/qml-qt6/Browser.qml:911
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:140
 msgid "Set Desktop mode"
 msgstr "电脑模式"
 
 #. TRANSLATORS: %1 refers to the current number of tabs opened
-#: src/app/webbrowser/Browser.qml:1104 src/app/webbrowser/Browser.qml:1142
+#: src/app/webbrowser/qml-qt5/Browser.qml:1104
+#: src/app/webbrowser/qml-qt5/Browser.qml:1142
+#: src/app/webbrowser/qml-qt6/Browser.qml:1111
+#: src/app/webbrowser/qml-qt6/Browser.qml:1149
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
-#: src/app/webbrowser/Browser.qml:1985
+#: src/app/webbrowser/qml-qt5/Browser.qml:1985
+#: src/app/webbrowser/qml-qt6/Browser.qml:1992
 msgid "the file is already in the downloads folder."
 msgstr "文件已经在下载目录了。"
 
-#: src/app/webbrowser/ContentDownloadDialog.qml:83
+#: src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml:83
+#: src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml:83
 msgid ""
 "Choose an application to open this file or add it to the downloads folder."
 msgstr "选择一个应用来打开这个文件或者将它添加到下载文件夹中。"
 
-#: src/app/webbrowser/ContentDownloadDialog.qml:89
+#: src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml:89
+#: src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml:89
 msgid "Choose an application"
 msgstr "选择一个应用程序"
 
-#: src/app/webbrowser/ExpandedHistoryView.qml:135
+#: src/app/webbrowser/qml-qt5/ExpandedHistoryView.qml:135
+#: src/app/webbrowser/qml-qt6/ExpandedHistoryView.qml:135
 #, qt-format
 msgid "%1 page"
 msgid_plural "%1 pages"
 msgstr[0] "第 %1 页"
 
-#: src/app/webbrowser/HistorySectionDelegate.qml:26
+#: src/app/webbrowser/qml-qt5/HistorySectionDelegate.qml:26
+#: src/app/webbrowser/qml-qt6/HistorySectionDelegate.qml:26
 msgid "Last Visited"
 msgstr "最近访问"
 
-#: src/app/webbrowser/HistorySectionDelegate.qml:48
-#: src/app/webbrowser/HistoryViewWide.qml:258
+#: src/app/webbrowser/qml-qt5/HistorySectionDelegate.qml:48
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:258
+#: src/app/webbrowser/qml-qt6/HistorySectionDelegate.qml:48
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:257
 msgid "Yesterday"
 msgstr "昨天"
 
-#: src/app/webbrowser/HistoryViewWide.qml:161
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:161
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:160
 msgid "search history"
 msgstr "搜索历史"
 
-#: src/app/webbrowser/HistoryViewWide.qml:242
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:242
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:241
 msgid "All History"
 msgstr "全部历史"
 
-#: src/app/webbrowser/HistoryViewWide.qml:256
-#: src/app/webbrowser/HistoryViewWide.qml:343
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:256
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:343
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:255
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:342
 msgid "Today"
 msgstr "今天"
 
 #. TRANSLATORS: %1 refers to the current page’s title
-#: src/app/webbrowser/morph-browser.qml:109
-#: src/app/webcontainer/webapp-container.qml:76
+#: src/app/webbrowser/qml-qt5/morph-browser.qml:109
+#: src/app/webbrowser/qml-qt6/morph-browser.qml:108
+#: src/app/webcontainer/qml-qt5/webapp-container.qml:76
+#: src/app/webcontainer/qml-qt6/webapp-container.qml:76
 #, qt-format
 msgid "%1 - Morph Web Browser"
 msgstr "%1 - Morph网页浏览器"
 
-#: src/app/webbrowser/NewPrivateTabView.qml:41
+#: src/app/webbrowser/qml-qt5/NewPrivateTabView.qml:41
+#: src/app/webbrowser/qml-qt6/NewPrivateTabView.qml:41
 msgid "This is a private tab"
 msgstr "这是一个匿名标签"
 
-#: src/app/webbrowser/NewPrivateTabView.qml:56
+#: src/app/webbrowser/qml-qt5/NewPrivateTabView.qml:56
+#: src/app/webbrowser/qml-qt6/NewPrivateTabView.qml:56
 msgid ""
 "Pages that you view in this tab won't appear in your browser history.\n"
 "Bookmarks you create will be preserved, however."
@@ -957,333 +1305,352 @@ msgstr ""
 "您在本标签内访问的页面将不会出现在浏览器历史中。\n"
 "但在这里创建的书签将会被保留。"
 
-#: src/app/webbrowser/NewTabView.qml:142
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:142
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:141
 msgid "Less"
 msgstr "收起"
 
-#: src/app/webbrowser/NewTabView.qml:142
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:142
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:141
 msgid "More"
 msgstr "更多"
 
-#: src/app/webbrowser/NewTabView.qml:326
-#: src/app/webbrowser/NewTabViewWide.qml:138
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:326
+#: src/app/webbrowser/qml-qt5/NewTabViewWide.qml:138
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:325
+#: src/app/webbrowser/qml-qt6/NewTabViewWide.qml:137
 msgid "Top sites"
 msgstr "热门网站"
 
-#: src/app/webbrowser/NewTabView.qml:357
+#: src/app/webbrowser/qml-qt5/NewTabView.qml:357
+#: src/app/webbrowser/qml-qt6/NewTabView.qml:356
 msgid "You haven't visited any site yet"
 msgstr "您尚未访问任何站点"
 
-#: src/app/webbrowser/SadTab.qml:47
+#: src/app/webbrowser/qml-qt5/SadTab.qml:47
+#: src/app/webbrowser/qml-qt6/SadTab.qml:48
 msgid "The rendering process has been closed for this tab."
 msgstr "该标签的渲染过程已被关闭。"
 
-#: src/app/webbrowser/SadTab.qml:60
+#: src/app/webbrowser/qml-qt5/SadTab.qml:60
+#: src/app/webbrowser/qml-qt6/SadTab.qml:61
 #, qt-format
 msgid "Something went wrong while displaying %1."
 msgstr "在显示 %1 时发生错误。"
 
-#: src/app/webbrowser/SadTab.qml:70
+#: src/app/webbrowser/qml-qt5/SadTab.qml:70
+#: src/app/webbrowser/qml-qt6/SadTab.qml:71
 msgid "Close tab"
 msgstr "关闭标签页"
 
-#: src/app/webbrowser/SecurityCertificatePopover.qml:70
+#: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:70
+#: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:70
 msgid "This site has insecure content"
 msgstr "这个网站含有不安全的内容"
 
-#: src/app/webbrowser/SecurityCertificatePopover.qml:71
+#: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:71
+#: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:71
 msgid "Identity Not Verified"
 msgstr "身份未验证"
 
-#: src/app/webbrowser/SecurityCertificatePopover.qml:79
+#: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:79
+#: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:79
 msgid "The identity of this website has not been verified."
 msgstr "此网站的身份尚未得到验证。"
 
-#: src/app/webbrowser/SecurityCertificatePopover.qml:109
+#: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:109
+#: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:109
 #, qt-format
 msgid "You are connected to %1 via HTTPS. The certificate is valid."
 msgstr "你通过HTTPS连接到 %1，证书有效。"
 
-#: src/app/webbrowser/SettingsDeviceSelector.qml:42
+#: src/app/webbrowser/qml-qt5/SettingsDeviceSelector.qml:42
+#: src/app/webbrowser/qml-qt6/SettingsDeviceSelector.qml:42
 msgid "Default"
 msgstr "默认"
 
-#: src/app/webbrowser/SettingsPage.qml:74
-#: src/app/webbrowser/SettingsPage.qml:277
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:74
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:277
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:74
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:288
 msgid "Search engine"
 msgstr "搜索引擎"
 
-#: src/app/webbrowser/SettingsPage.qml:91
-#: src/app/webbrowser/SettingsPage.qml:504
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:91
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:504
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:91
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:526
 msgid "New Tab Page"
 msgstr "新标签页"
 
-#: src/app/webbrowser/SettingsPage.qml:119
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:119
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:119
 msgid "Restore previous session at startup"
 msgstr "在启动时恢复上次会话"
 
-#: src/app/webbrowser/SettingsPage.qml:120
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:120
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
 msgstr "以隐私模式启动而不可使用"
 
-#: src/app/webbrowser/SettingsPage.qml:159
-#: src/app/webcontainer/WebappSettingsPage.qml:58
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:159
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:159
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:58
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:58
 msgid "Automatic fit to width"
 msgstr "自动适应宽度"
 
-#: src/app/webbrowser/SettingsPage.qml:160
-#: src/app/webcontainer/WebappSettingsPage.qml:59
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:160
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:160
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:59
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:59
 msgid "Adjusts the width of the website to the window"
 msgstr "调整网站的窗口宽度"
 
-#: src/app/webbrowser/SettingsPage.qml:179
-#: src/app/webcontainer/WebappSettingsPage.qml:78
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:179
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:179
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:78
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:78
 msgid "Default Zoom"
 msgstr "默认"
 
-#: src/app/webbrowser/SettingsPage.qml:218
-#: src/app/webcontainer/WebappSettingsPage.qml:117
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:218
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:218
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:117
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:117
 msgid "Load Images"
 msgstr "加载图像"
 
-#: src/app/webbrowser/SettingsPage.qml:219
-#: src/app/webcontainer/WebappSettingsPage.qml:118
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:219
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:219
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:118
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:118
 msgid "Automatically load images on web pages"
 msgstr "自动加载网页上的图像"
 
-#: src/app/webbrowser/SettingsPage.qml:238
-#: src/app/webbrowser/SettingsPage.qml:320
-#: src/app/webcontainer/WebappSettingsPage.qml:151
-#: src/app/webcontainer/WebappSettingsPage.qml:192
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:238
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:320
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:249
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:342
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:151
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:192
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:151
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:192
 msgid "Privacy & permissions"
 msgstr "隐私与许可"
 
-#: src/app/webbrowser/SettingsPage.qml:249
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:249
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:260
 msgid "Reset browser settings"
 msgstr "重置浏览器设置"
 
-#: src/app/webbrowser/SettingsPage.qml:334
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:334
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:356
 msgid "Start in private mode"
 msgstr "进入匿名模式"
 
-#: src/app/webbrowser/SettingsPage.qml:358
-#: src/app/webcontainer/WebappSettingsPage.qml:206
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:358
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:380
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:206
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:206
 msgid "Only allow browsing to whitelisted websites"
 msgstr "仅允许浏览在白名单里的网站"
 
-#: src/app/webbrowser/SettingsPage.qml:398
-#: src/app/webbrowser/SettingsPage.qml:589
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:398
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:589
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:420
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:611
 msgid "Camera & microphone"
 msgstr "相机与麦克风"
 
-#: src/app/webbrowser/SettingsPage.qml:407
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:407
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:429
 msgid "Clear browsing history"
 msgstr "清除浏览历史"
 
-#: src/app/webbrowser/SettingsPage.qml:411
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:411
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:433
 msgid "Clear browsing history?"
 msgstr "清除浏览历史？"
 
-#: src/app/webbrowser/SettingsPage.qml:419
-#: src/app/webcontainer/WebappSettingsPage.qml:247
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:419
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:441
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:247
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:247
 msgid "Clear cache"
 msgstr "清除缓存"
 
-#: src/app/webbrowser/SettingsPage.qml:422
-#: src/app/webcontainer/WebappSettingsPage.qml:250
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:422
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:444
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:250
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:250
 msgid "Clear cache?"
 msgstr "清除缓存？"
 
-#: src/app/webbrowser/SettingsPage.qml:430
-#: src/app/webcontainer/WebappSettingsPage.qml:258
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:430
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:452
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:258
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:258
 msgid "Clear all cookies"
 msgstr "清除所有cookies"
 
-#: src/app/webbrowser/SettingsPage.qml:433
-#: src/app/webcontainer/WebappSettingsPage.qml:261
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:433
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:455
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:261
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:261
 msgid "Clear all Cookies?"
 msgstr "清除所有cookies？"
 
-#: src/app/webbrowser/SettingsPage.qml:516
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:516
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:538
 msgid "Custom homepage"
 msgstr "自定义主页"
 
-#: src/app/webbrowser/SettingsPage.qml:601
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:601
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:623
 msgid "Microphone"
 msgstr "麦克风"
 
-#: src/app/webbrowser/SettingsPage.qml:622
+#: src/app/webbrowser/qml-qt5/SettingsPage.qml:622
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:644
 msgid "Camera"
 msgstr "相机"
 
-#: src/app/webbrowser/TabComponent.qml:285
+#: src/app/webbrowser/qml-qt5/TabComponent.qml:285
+#: src/app/webbrowser/qml-qt6/TabComponent.qml:286
 msgid "Swipe Up To Exit Full Screen"
 msgstr "上划以退出全屏"
 
-#: src/app/webbrowser/TabComponent.qml:286
+#: src/app/webbrowser/qml-qt5/TabComponent.qml:286
+#: src/app/webbrowser/qml-qt6/TabComponent.qml:287
 msgid "Press ESC To Exit Full Screen"
 msgstr "按ESC退出全屏"
 
-#: src/app/webbrowser/TabPreview.qml:113
+#: src/app/webbrowser/qml-qt5/TabPreview.qml:113
+#: src/app/webbrowser/qml-qt6/TabPreview.qml:113
 msgid "Tap to view"
 msgstr "点击查看"
 
-#: src/app/webbrowser/TabsBar.qml:64 src/app/webbrowser/TabsList.qml:100
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:64
+#: src/app/webbrowser/qml-qt5/TabsList.qml:100
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:63
+#: src/app/webbrowser/qml-qt6/TabsList.qml:100
 msgid "New tab"
 msgstr "新建标签"
 
-#: src/app/webbrowser/TabsBar.qml:99
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:99
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:98
 msgid "Move to New Window"
 msgstr "移至新窗口"
 
-#: src/app/webbrowser/TabsBar.qml:116
+#: src/app/webbrowser/qml-qt5/TabsBar.qml:116
+#: src/app/webbrowser/qml-qt6/TabsBar.qml:115
 msgid "Close Tab"
 msgstr "关闭标签页"
 
-#: src/app/webbrowser/UrlPreviewDelegate.qml:138
+#: src/app/webbrowser/qml-qt5/UrlPreviewDelegate.qml:138
+#: src/app/webbrowser/qml-qt6/UrlPreviewDelegate.qml:137
 msgid "Remove"
 msgstr "移除"
 
-#: src/app/webcontainer/AccountChooserDialog.qml:62
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:238
+msgid "Plugins"
+msgstr ""
+
+#: src/app/webbrowser/qml-qt6/SettingsPage.qml:239
+msgid "Widevine"
+msgstr ""
+
+#: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:62
+#: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:62
 msgid ""
 "No accounts have been linked to this webapp; press the item below to add an "
 "account."
 msgstr "这个Web应用没有关联帐号；点击下方项目来添加帐号。"
 
-#: src/app/webcontainer/AccountChooserDialog.qml:78
+#: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:78
+#: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:78
 msgid "Add account"
 msgstr "添加帐户"
 
-#: src/app/webcontainer/AccountChooserDialog.qml:87
+#: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:87
+#: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:87
 msgid "Don't use an account"
 msgstr "不使用帐号"
 
-#: src/app/webcontainer/AccountErrorScreen.qml:39
+#: src/app/webcontainer/qml-qt5/AccountErrorScreen.qml:39
+#: src/app/webcontainer/qml-qt6/AccountErrorScreen.qml:39
 msgid "Account error"
 msgstr "帐号错误"
 
-#: src/app/webcontainer/AccountsLogic.qml:63
+#: src/app/webcontainer/qml-qt5/AccountsLogic.qml:63
+#: src/app/webcontainer/qml-qt6/AccountsLogic.qml:63
 msgid ""
 "Account window could not be opened. You can only create one account at a "
 "time; please try again after closing all other account windows."
 msgstr ""
 "帐号窗口无法打开。您只能一次创建一个帐号；请关闭所有其他帐号窗口后重试。"
 
-#: src/app/webcontainer/AccountsLogic.qml:214
+#: src/app/webcontainer/qml-qt5/AccountsLogic.qml:214
+#: src/app/webcontainer/qml-qt6/AccountsLogic.qml:214
 msgid "Authentication failed"
 msgstr "验证失败"
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
-#: src/app/webcontainer/AccountsSplashScreen.qml:45
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:45
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:45
 #, qt-format
 msgid "<b>%1</b> needs to access your %2 online account."
 msgstr "<b>%1</b> 需要访问您的 %2 在线帐号。"
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
-#: src/app/webcontainer/AccountsSplashScreen.qml:55
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:55
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:55
 #, qt-format
 msgid "<b>%1</b> would like to access your %2 online account."
 msgstr "<b>%1</b> 想要访问您的 %2 在线帐号。"
 
-#: src/app/webcontainer/AccountsSplashScreen.qml:64
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:64
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:64
 msgid ""
 "Choose an account now, or skip this step and choose an online account later."
 msgstr "现在选择一个帐号，或者跳过稍后选择一个在线帐号。"
 
-#: src/app/webcontainer/AccountsSplashScreen.qml:77
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:77
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:77
 msgid "Close the app"
 msgstr "关闭应用"
 
-#: src/app/webcontainer/AccountsSplashScreen.qml:77
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:77
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:77
 msgid "Skip"
 msgstr "跳过"
 
-#: src/app/webcontainer/AccountsSplashScreen.qml:84
+#: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:84
+#: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:84
 msgid "Choose account"
 msgstr "选择一个帐号"
 
-#: src/app/webcontainer/SadPage.qml:45
+#: src/app/webcontainer/qml-qt5/SadPage.qml:45
+#: src/app/webcontainer/qml-qt6/SadPage.qml:46
 msgid "Oops, something went wrong."
 msgstr "糟糕，出了点问题。"
 
-#: src/app/webcontainer/WebappSettingsPage.qml:38
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:38
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
 msgstr "Web应用容器配置"
 
-#: src/app/webcontainer/WebappSettingsPage.qml:163
+#: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:163
+#: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:163
 msgid "Reset webapp settings"
 msgstr "重置web应用设置"
 
-#: src/app/webcontainer/WebViewImplOxide.qml:330
+#: src/app/webcontainer/qml-qt5/WebViewImplOxide.qml:330
+#: src/app/webcontainer/qml-qt6/WebViewImplOxide.qml:330
 #, qt-format
 msgid "domain %1 is now whitelisted, please reload the page."
 msgstr "域名 %1 已加入白名单，请重新载入此页面。"
-
-#: src/app/ZoomControls.qml:61
-msgid "Zoom Out"
-msgstr "缩小"
-
-#: src/app/ZoomControls.qml:68
-msgid "Reset"
-msgstr "重置"
-
-#: src/app/ZoomControls.qml:68
-msgid "fit"
-msgstr "重置缩放"
-
-#: src/app/ZoomControls.qml:75
-msgid "Zoom In"
-msgstr "放大"
-
-#: src/app/ZoomControls.qml:100
-msgid "Current Zoom"
-msgstr "当前缩放"
-
-#: src/app/ZoomControls.qml:101
-msgid "domain"
-msgstr "添加域名"
-
-#: src/app/ZoomControls.qml:101
-msgid "default"
-msgstr "默认"
-
-#: src/app/ZoomControls.qml:101
-msgid "auto-fit"
-msgstr "自动适应"
-
-#: src/app/ZoomControls.qml:190
-msgid "Save Zoom"
-msgstr "保存缩放"
-
-#: src/app/ZoomControls.qml:192
-msgid "the current web app"
-msgstr "当前web应用"
-
-#: src/app/ZoomControls.qml:195
-#, qt-format
-msgid ""
-"The current zoom level (%1%) can be saved in %2 either for the current "
-"domain or as the default zoom level."
-msgstr "当前缩放大小（%1%）可在 %2 中为当前域名保存，或保存为默认缩放大小。"
-
-#: src/app/ZoomControls.qml:197
-#, qt-format
-msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr "当前缩放大小（%1%）可在 %2 中为当前域名保存。"
-
-#: src/app/ZoomControls.qml:199
-#, qt-format
-msgid ""
-"The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr "当前缩放大小（%1%）可在 %2 中保存为默认缩放大小。"
-
-#: src/app/ZoomControls.qml:206
-msgid "Save for domain"
-msgstr "保存域名"
-
-#: src/app/ZoomControls.qml:219
-msgid "Save as default"
-msgstr "保存为默认"
 
 #, qt-format
 #~ msgid ""

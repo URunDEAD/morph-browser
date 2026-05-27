@@ -12,6 +12,7 @@ src/app/file-operations.cpp
 src/app/input-method-handler.cpp
 src/app/meminfo.cpp
 src/app/mime-database.cpp
+src/app/widevine-plugin-helper.cpp
 src/app/qml-qt5/actions/Back.qml
 src/app/qml-qt5/actions/BookmarkLink.qml
 src/app/qml-qt5/actions/Bookmark.qml
@@ -279,6 +280,7 @@ src/app/webbrowser/qml-qt6/SearchSuggestions.qml
 src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml
 src/app/webbrowser/qml-qt6/SettingsDeviceSelector.qml
 src/app/webbrowser/qml-qt6/SettingsPage.qml
+src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml
 src/app/webbrowser/qml-qt6/Suggestion.qml
 src/app/webbrowser/qml-qt6/Suggestions.qml
 src/app/webbrowser/qml-qt6/TabChrome.qml
@@ -294,6 +296,7 @@ src/app/webbrowser/qml-qt6/UrlDelegate.qml
 src/app/webbrowser/qml-qt6/UrlDelegateWide.qml
 src/app/webbrowser/qml-qt6/UrlPreviewDelegate.qml
 src/app/webbrowser/qml-qt6/UrlPreviewGrid.qml
+src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml
 src/app/webbrowser/reparenter.cpp
 src/app/webbrowser/searchengine.cpp
 src/app/webbrowser/tabs-model.cpp

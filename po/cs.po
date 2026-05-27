@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-27 15:21+0000\n"
-"PO-Revision-Date: 2026-01-22 18:10+0000\n"
-"Last-Translator: Jozef Mlich <jmlich83@gmail.com>\n"
+"PO-Revision-Date: 2026-05-27 23:44+0000\n"
+"Last-Translator: Adam Havelka <adam@uxes.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/cs/>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 2026.6.dev0\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -1562,11 +1562,11 @@ msgstr "Odstranit"
 
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:238
 msgid "Plugins"
-msgstr ""
+msgstr "Pluginy"
 
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:239
 msgid "Widevine"
-msgstr ""
+msgstr "Widevine"
 
 #: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:62
 #: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:62

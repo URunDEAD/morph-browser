@@ -50,7 +50,13 @@ WidevinePluginHelper::WidevinePluginHelper(QObject *parent)
     connect(this, &WidevinePluginHelper::installingFinished, this, &WidevinePluginHelper::checkInstallation);
     connect(this, &WidevinePluginHelper::uninstallingFinished, this, &WidevinePluginHelper::isPluginInstalledChanged);
     connect(this, &WidevinePluginHelper::uninstallingFinished, this, &WidevinePluginHelper::checkUninstallation);
-    connect(this, &WidevinePluginHelper::errorOccurred, this, [](QString err, bool){ qDebug() << "Widevine error occurred: " << err; });
+    connect(this, &WidevinePluginHelper::errorOccurred, this, [](QString err, bool){ qCritical() << "Widevine error occurred: " << err; });
+
+    connect(&m_licenseProcess, &QProcess::errorOccurred, this, &WidevinePluginHelper::checkError);
+    connect(&m_extractProcess, &QProcess::errorOccurred, this, &WidevinePluginHelper::checkError);
+    connect(&m_cleanProcess, &QProcess::errorOccurred, this, &WidevinePluginHelper::checkError);
+    connect(&m_installProcess, &QProcess::errorOccurred, this, &WidevinePluginHelper::checkError);
+    connect(&m_uninstallProcess, &QProcess::errorOccurred, this, &WidevinePluginHelper::checkError);
 }
 
 void WidevinePluginHelper::uninstallPlugin()
@@ -154,6 +160,7 @@ void WidevinePluginHelper::onLicenseProcessFinished(int, QProcess::ExitStatus ex
 void WidevinePluginHelper::checkInstallation()
 {
     if (!isPluginInstalled()) {
+        qCritical() << "Failed to copy files";
         emit errorOccurred(tr("Failed to copy files"), true);
     }
 }
@@ -161,6 +168,7 @@ void WidevinePluginHelper::checkInstallation()
 void WidevinePluginHelper::checkUninstallation()
 {
     if (isPluginInstalled()) {
+        qCritical() << "Failed to delete files";
         emit errorOccurred(tr("Failed to delete files"), false);
     }
 }
@@ -191,3 +199,21 @@ void WidevinePluginHelper::onUninstallProcessFinished(int, QProcess::ExitStatus 
         emit errorOccurred(tr("Failed to uninstall widevine. Please check the application logs for details"), false);
     }
 }
+
+void WidevinePluginHelper::checkError()
+{
+    QProcess *target = qobject_cast<QProcess *>(sender());
+    if (!target) {
+        return;
+    }
+    if (target->error() != QProcess::UnknownError) {
+        qCritical() << "running" << target->program() << "failed:" << target->error();
+    }
+    if (target->exitStatus() == QProcess::CrashExit) {
+        qCritical() << target->program() << "crashed";
+    }
+    if (target->exitCode() != 0) {
+        qCritical() << target->program() << "failed, exit code:" << target->exitCode();
+    }
+}
+

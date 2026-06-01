@@ -30,7 +30,17 @@ apparmor:
 	egrep -v '^\s*deny /dev/ r,\s*$$' | \
 	sed 's#^\(\s*\)deny\(\s\+/{run,dev}/shm/pulse-shm\*\s\+w,\).*$$#\1owner\2#g' | \
 	sed 's#^}$$#\n  /dev/dri/ r,\n  /sys/devices/pci[0-9]*/**/config r,\n}#g' | \
-	sed 's#^}$$#\n  @{HOME}/@{XDG_DOWNLOAD_DIR}/** rwk,\n}#g' \
+	sed 's#^}$$#\n  @{HOME}/@{XDG_DOWNLOAD_DIR}/** rwk,\n}#g' | \
+	sed 's#^}$$#\n  /usr/bin/bash ix,\n}#g' | \
+	sed 's#^}$$#\n  /usr/bin/mkdir ix,\n}#g' | \
+	sed 's#^}$$#\n  /usr/bin/cat ix,\n}#g' | \
+	sed 's#^}$$#\n  /usr/bin/mv ix,\n}#g' | \
+	sed 's#^}$$#\n  /usr/bin/python3** ix,\n}#g' | \
+	sed 's#^}$$#\n  /usr/bin/unsquashfs ix,\n}#g' | \
+	sed 's#^}$$#\n  /usr/bin/rm ix,\n}#g' | \
+	sed 's#^}$$#\n  /usr/bin/ar ix,\n}#g' | \
+	sed 's#^}$$#\n  /usr/bin/tar ix,\n}#g' | \
+	sed 's#^}$$#\n  /usr/bin/dirname ix,\n}#g' \
 	> ./debian/usr.bin.morph-browser
 ifeq ($(DEB_BUILD_GNU_TYPE),$(DEB_HOST_GNU_TYPE))
 	apparmor_parser -QTK ./debian/usr.bin.morph-browser

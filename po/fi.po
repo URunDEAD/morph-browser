@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-27 23:02+0000\n"
-"PO-Revision-Date: 2026-02-10 04:08+0000\n"
-"Last-Translator: Midrielen <jimitoivo.jaakkola@outlook.com>\n"
+"PO-Revision-Date: 2026-06-08 07:01+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/fi/>\n"
 "Language: fi\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 2026.6\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -53,11 +53,11 @@ msgstr ""
 
 #: src/app/widevine-plugin-helper.cpp:157
 msgid "Failed to copy files"
-msgstr ""
+msgstr "Tiedostojen kopiointi epäonnistui"
 
 #: src/app/widevine-plugin-helper.cpp:164
 msgid "Failed to delete files"
-msgstr ""
+msgstr "Tiedostojen poisto epäonnistui"
 
 #: src/app/widevine-plugin-helper.cpp:173
 msgid ""
@@ -1596,51 +1596,49 @@ msgstr "Poista"
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:238
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:32
 msgid "Plugins"
-msgstr ""
+msgstr "Liitännäiset"
 
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:239
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:79
 msgid "Widevine"
-msgstr ""
+msgstr "Widevine"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:81
 msgid "DRM content"
-msgstr ""
+msgstr "DRM-sisältö"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:82
 msgid "Widevine package is not available for this architecture"
-msgstr ""
+msgstr "Widevine-paketti ei ole saatavilla tälle arkkitehtuurille"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:142
 msgid "Need to reload the app for changes to take effect."
-msgstr ""
+msgstr "Sovellus tulee ladata uudelleen, jotta muutokset tulevat voimaan."
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:145
-#, fuzzy
-#| msgid "Close the app"
 msgid "Close app now"
-msgstr "Sulje sovellus"
+msgstr "Sulje sovellus nyt"
 
 #. TRANSLATORS: Later is in response to "Close the app now"
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:152
 msgid "Later"
-msgstr ""
+msgstr "Myöhemmin"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:166
 msgid "Uninstall Widevine"
-msgstr ""
+msgstr "Poista Widevine-asennus"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:167
 msgid "Are you sure you want to uninstall the plugin?"
-msgstr ""
+msgstr "Haluatko varmasti poistaa liitännäisen?"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:170
 msgid "Uninstall"
-msgstr ""
+msgstr "Poista asennus"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:193
 msgid "Uninstalling failed."
-msgstr ""
+msgstr "Asennuksen poisto epäonnistui."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:34
 msgid "Widevine install wizard"
@@ -1648,15 +1646,15 @@ msgstr ""
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:48
 msgid "Continue"
-msgstr ""
+msgstr "Jatka"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:75
 msgid "Agree"
-msgstr ""
+msgstr "Hyväksy"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:155
 msgid "Install Widevine"
-msgstr ""
+msgstr "Asenna Widevine"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:162
 msgid ""
@@ -1688,21 +1686,19 @@ msgstr ""
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:215
 msgid "Widevine license"
-msgstr ""
+msgstr "Widevine-lisenssi"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:243
-#, fuzzy
-#| msgid "Download"
 msgid "Downloading"
-msgstr "Lataa"
+msgstr "Ladataan"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:267
 msgid "Installing"
-msgstr ""
+msgstr "Asennetaan"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:295
 msgid "Installation completed."
-msgstr ""
+msgstr "Asennus valmistui."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:302
 msgid "Morph has to be restarted for the changes to take effect."
@@ -1710,7 +1706,7 @@ msgstr ""
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:399
 msgid "Next"
-msgstr ""
+msgstr "Seuraava"
 
 #: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:62
 #: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:62

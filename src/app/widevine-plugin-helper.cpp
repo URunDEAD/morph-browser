@@ -25,6 +25,7 @@
 #include <QStandardPaths>
 #include <QDebug>
 #include <QClipboard>
+#include "config.h"
 
 #include "widevine-plugin-helper-consts.h"
 
@@ -62,7 +63,7 @@ WidevinePluginHelper::WidevinePluginHelper(QObject *parent)
 void WidevinePluginHelper::uninstallPlugin()
 {
     QStringList args;
-    args << QCoreApplication::applicationDirPath() + "/scripts/widevine_tool.sh"
+    args << UbuntuBrowserDirectory() + "/webbrowser/scripts/widevine_tool.sh"
          << "uninstall";
     m_uninstallProcess.start("bash", args);
 }
@@ -70,7 +71,7 @@ void WidevinePluginHelper::uninstallPlugin()
 void WidevinePluginHelper::abortInstallation()
 {
     QStringList args;
-    args << QCoreApplication::applicationDirPath() + "/scripts/widevine_tool.sh"
+    args << UbuntuBrowserDirectory() + "/webbrowser/scripts/widevine_tool.sh"
          << "clean";
     m_cleanProcess.start("bash", args);
 }
@@ -78,7 +79,7 @@ void WidevinePluginHelper::abortInstallation()
 void WidevinePluginHelper::continueInstallation()
 {
     QStringList args;
-    args << QCoreApplication::applicationDirPath() + "/scripts/widevine_tool.sh"
+    args << UbuntuBrowserDirectory() + "/webbrowser/scripts/widevine_tool.sh"
          << "install";
     m_installProcess.start("bash", args);
 }
@@ -133,7 +134,7 @@ QString WidevinePluginHelper::getWidevineUrlSource() const
 void WidevinePluginHelper::extractLib()
 {
     QStringList extractArgs;
-    extractArgs << QCoreApplication::applicationDirPath() + "/scripts/widevine_tool.sh"
+    extractArgs << UbuntuBrowserDirectory() + "/webbrowser/scripts/widevine_tool.sh"
                 << "extract" << m_downloadedFilePath;
     m_extractProcess.start("bash", extractArgs);
 }
@@ -141,7 +142,7 @@ void WidevinePluginHelper::extractLib()
 void WidevinePluginHelper::requestLicenseText()
 {
     QStringList args;
-    args << QCoreApplication::applicationDirPath() + "/scripts/widevine_tool.sh"
+    args << UbuntuBrowserDirectory() + "/webbrowser/scripts/widevine_tool.sh"
          << "license";
     m_licenseProcess.start("bash", args);
 }

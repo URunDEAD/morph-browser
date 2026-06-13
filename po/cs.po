@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-27 23:02+0000\n"
-"PO-Revision-Date: 2026-05-27 23:44+0000\n"
+"PO-Revision-Date: 2026-06-13 15:49+0000\n"
 "Last-Translator: Adam Havelka <adam@uxes.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.6.dev0\n"
+"X-Generator: Weblate 2026.7.dev0\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -50,29 +50,36 @@ msgstr "Nové anonymní okno"
 #: src/app/widevine-plugin-helper.cpp:150
 msgid "Failed to get license. Please check the application logs for details"
 msgstr ""
+"Nepodařilo se získat licenci. Podrobnosti naleznete v protokolech aplikace"
 
 #: src/app/widevine-plugin-helper.cpp:157
 msgid "Failed to copy files"
-msgstr ""
+msgstr "Nepodařilo se zkopírovat soubory"
 
 #: src/app/widevine-plugin-helper.cpp:164
 msgid "Failed to delete files"
-msgstr ""
+msgstr "Nepodařilo se smazat soubory"
 
 #: src/app/widevine-plugin-helper.cpp:173
 msgid ""
 "Failed to extract widevine. Please check the application logs for details"
 msgstr ""
+"Nepodařilo se extrahovat Widevine. Podrobnosti naleznete v protokolech "
+"aplikace"
 
 #: src/app/widevine-plugin-helper.cpp:182
 msgid ""
 "Failed to install widevine. Please check the application logs for details"
 msgstr ""
+"Nepodařilo se nainstalovat Widevine. Podrobnosti naleznete v protokolech "
+"aplikace"
 
 #: src/app/widevine-plugin-helper.cpp:191
 msgid ""
 "Failed to uninstall widevine. Please check the application logs for details"
 msgstr ""
+"Nepodařilo se odinstalovat Widevine. Podrobnosti naleznete v protokolech "
+"aplikace"
 
 #: src/app/qml-qt5/actions/Back.qml:23 src/app/qml-qt6/actions/Back.qml:23
 msgid "Back"

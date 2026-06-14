@@ -49,6 +49,7 @@ FocusScope {
         function init() {
             BookmarksModel.databasePath = ":memory:"
             populate()
+            waitForRendering(view);
             verify(view.activeFocus)
             compare(bookmarkEntryClickedSpy.count, 0)
         }

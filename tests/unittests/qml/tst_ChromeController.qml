@@ -209,10 +209,9 @@ ChromeController {
         }
 
         function test_load_event(data) {
-            // WebEngineLoadRequest status enum
-            var started = WebEngineLoadRequest.LoadStartedStatus;
-            var succeeded = WebEngineLoadRequest.LoadSucceededStatus;
-            var failed = WebEngineLoadRequest.LoadFailedStatus;
+            var started = WebEngineView.LoadStartedStatus;
+            var succeeded = WebEngineView.LoadSucceededStatus;
+            var failed = WebEngineView.LoadFailedStatus;
 
             controller.forceHide = data.forceHide;
             controller.forceShow = data.forceShow;

@@ -183,7 +183,7 @@ Item {
             var closeButton = findChild(historyViewWide, "close_button")
             verify(closeButton.visible)
             clickItem(closeButton)
-            verify(closeButton.visible)
+            tryVerify(() => !closeButton.visible)
             searchButton = findChild(historyViewWide, "search_button")
             tryCompare(searchButton, "visible", true)
             compare(urlsList.count, 3)

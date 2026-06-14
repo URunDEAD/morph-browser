@@ -31,7 +31,7 @@ Item {
         model: searchEngines.searchPaths
         delegate: Item {
             property var folder: FolderListModel {
-                folder: modelData
+                folder: `file://${modelData}`
                 showDirs: false
                 nameFilters: ["*.xml"]
                 sortField: FolderListModel.Name

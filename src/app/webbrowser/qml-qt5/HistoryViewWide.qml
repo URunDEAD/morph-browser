@@ -324,7 +324,13 @@ Common.BrowserPage {
 
                 clip: true
 
-                onModelChanged: urlsListView.currentIndex = -1
+                onModelChanged: {
+                    if (!activeFocus) {
+                        urlsListView.currentIndex = -1
+                    } else {
+                        urlsListView.currentIndex = 0
+                    }
+                }
 
                 onActiveFocusChanged: {
                     if (!activeFocus) {

@@ -83,6 +83,12 @@ WebEngineView {
         userScripts.insert(selectOverrideScript);
     }
 
+    Binding {
+        target: WebEngine.settings
+        property: "forceDarkMode"
+        value : (theme.name === "Lomiri.Components.Themes.SuruDark")
+    }
+
     onJavaScriptDialogRequested: function(request) {
 
         if (enableSelectOverride && isASelectRequest(request)) {

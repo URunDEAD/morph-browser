@@ -65,4 +65,17 @@ Window {
             }
         }
     }
+
+    // Workaround for QtWebEngine 6.10 with libhybris ANGLE & Ozone buffer sharing
+    // The current web page would turn black if the
+    // app gets resumed from suspend. Enqueueing a
+    // redraw through visibility changes restores the page,
+    // just the same as interacting with the black page.
+    onActiveChanged: {
+        if (active) {
+            const v = currentWebview.visible;
+            currentWebview.visible = false;
+            currentWebview.visible = v;
+        }
+    }
 }

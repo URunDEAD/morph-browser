@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-27 23:02+0000\n"
 "PO-Revision-Date: 2026-06-20 16:01+0000\n"
-"Last-Translator: Adam Havelka <adam@uxes.cz>\n"
+"Last-Translator: Jozef Mlich <jmlich83@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/cs/>\n"
 "Language: cs\n"
@@ -1634,10 +1634,8 @@ msgid "Later"
 msgstr "Později"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:166
-#, fuzzy
-#| msgid "Widevine"
 msgid "Uninstall Widevine"
-msgstr "Widevine"
+msgstr "Odinstalovat Widevine"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:167
 msgid "Are you sure you want to uninstall the plugin?"

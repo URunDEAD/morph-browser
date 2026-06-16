@@ -162,6 +162,7 @@ Depends: ${misc:Depends},
          qml6-module-lomiri-components-extras,
          qml6-module-lomiri-action,
          qml6-module-lomiri-downloadmanager,
+         qml6-module-lomiri-thumbnailer,
          qml6-module-qtquick-templates,
          qml6-module-qtquick-controls2-suru,
 Conflicts: webbrowser-app, morph-browser

@@ -31,7 +31,6 @@ Window {
     property var currentWebview: null
     property bool hasTouchScreen: false
 
-
     minimumWidth: units.gu(40)
     minimumHeight: units.gu(20)
 
@@ -66,16 +65,65 @@ Window {
         }
     }
 
+    // Show a snapshot of the window, created when suspending
+    Image {
+        id: windowSnapshot
+        anchors.fill: window.contentItem
+        visible: false
+        z: window.contentItem.z + 1
+    }
+
+    Timer {
+        id: hideSnapshotTimer
+        repeat: false
+        running: false
+        interval: 500
+        onTriggered: {
+            windowSnapshot.visible = false;
+            windowSnapshot.source = "";
+        }
+    }
+
     // Workaround for QtWebEngine 6.10 with libhybris ANGLE & Ozone buffer sharing
     // The current web page would turn black if the
     // app gets resumed from suspend. Enqueueing a
-    // redraw through visibility changes restores the page,
-    // just the same as interacting with the black page.
+    // redraw through visibility changes restores the page.
+    // Ensure we fill a snapshot image in for flicker-free visuals.
+    property bool prevVisible : true;
+    property bool grabbing : false;
+
+    // Force redraw once process is  again
+    Connections {
+        target: Application
+        function onStateChanged() {
+            orchestrateRedraw();
+        }
+    }
+
     onActiveChanged: {
-        if (active) {
-            const v = currentWebview.visible;
-            currentWebview.visible = false;
-            currentWebview.visible = v;
+        if (active)
+            orchestrateRedraw();
+    }
+
+    function orchestrateRedraw() {
+        if ((Application.state === Qt.ApplicatonHidden ||
+            Application.state === Qt.ApplicationSuspended) &&
+            !window.grabbing &&
+            !windowSnapshot.visible)
+        {
+            window.prevVisible = currentWebview.visible;
+            window.grabbing = true;
+            const success = window.contentItem.grabToImage(function(result) {
+                windowSnapshot.source = result.url;
+                windowSnapshot.visible = true;
+                window.grabbing = false;
+                currentWebview.visible = false;
+            }, Qt.size(window.contentItem.width, window.contentItem.height));
+            window.grabbing = success;
+        } else if (Application.state === Qt.ApplicationActive &&
+                   windowSnapshot.visible) {
+            hideSnapshotTimer.restart();
+            currentWebview.visible = window.prevVisible;
         }
     }
 }

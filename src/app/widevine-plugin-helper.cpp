@@ -208,13 +208,13 @@ void WidevinePluginHelper::checkError()
         return;
     }
     if (target->error() != QProcess::UnknownError) {
-        qCritical() << "running" << target->program() << "failed:" << target->error();
+        qCritical() << "running" << target->program() << target->arguments() << "failed:" << target->error();
     }
     if (target->exitStatus() == QProcess::CrashExit) {
-        qCritical() << target->program() << "crashed";
+        qCritical() << target->program() << target->arguments() << "crashed";
     }
     if (target->exitCode() != 0) {
-        qCritical() << target->program() << "failed, exit code:" << target->exitCode();
+        qCritical() << target->program() << target->arguments() << "failed, exit code:" << target->exitCode();
     }
 }
 

@@ -159,11 +159,7 @@ if(WIDEVINE_TOOL_AVAILABLE)
         INPUT ${CMAKE_CURRENT_BINARY_DIR}/widevine_tool.sh.in
     )
 
-    if(CLICK_MODE)
-        set(WIDEVINE_TOOL_DEST scripts)
-    else()
-        set(WIDEVINE_TOOL_DEST ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser/scripts)
-    endif()
+    set(WIDEVINE_TOOL_DEST ${CMAKE_INSTALL_DATADIR}/morph-browser/webbrowser/scripts)
 
     install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/scripts/widevine_tool.sh
             DESTINATION "${WIDEVINE_TOOL_DEST}")

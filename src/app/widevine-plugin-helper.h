@@ -82,4 +82,6 @@ private slots:
     void onExtractingFinished(int, QProcess::ExitStatus exitStatus);
     void onInstallingProcessFinished(int, QProcess::ExitStatus exitStatus);
     void onUninstallProcessFinished(int, QProcess::ExitStatus exitStatus);
+
+    void checkError();
 };

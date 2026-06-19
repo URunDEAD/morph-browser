@@ -440,7 +440,6 @@ Common.BrowserPage {
     function handleError(newErrorText) {
         root.errorText = newErrorText
         state = "error"
-        imageFailed.start()
     }
 
     function handleCancel() {

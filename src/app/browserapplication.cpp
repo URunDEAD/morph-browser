@@ -195,21 +195,15 @@ bool BrowserApplication::initialize(const QString& qmlFileSubPath
         qputenv("UBUNTU_WEBVIEW_DEVTOOLS_PORT", devtoolsPort.toUtf8());
     }
 
-    // FIXME re-enable Suru theme once it is available for Qt 6
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     // set suru style
     if (qgetenv("QT_QUICK_CONTROLS_STYLE") == QString())
     {
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
         qputenv("QT_QUICK_CONTROLS_STYLE", "Suru");
-    }
 #else
-    // This is a bit of a hack, as we don't seem to have a way to set QQC2 style
-    // per-Qt-version...
-    if (qgetenv("QT_QUICK_CONTROLS_STYLE") == "Suru")
-    {
-        qunsetenv("QT_QUICK_CONTROLS_STYLE");
-    }
+        qputenv("QT_QUICK_CONTROLS_STYLE", "QtQuick.Controls.Suru");
 #endif
+    }
 
     const char* uri = "webbrowsercommon.private";
     qmlRegisterSingletonType<BrowserUtils>(uri, 0, 1, "BrowserUtils", BrowserUtils_singleton_factory);

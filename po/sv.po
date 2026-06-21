@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-27 23:02+0000\n"
-"PO-Revision-Date: 2026-02-01 06:03+0000\n"
-"Last-Translator: Daniel Wiik <d.wiik@outlook.com>\n"
+"PO-Revision-Date: 2026-06-28 08:01+0000\n"
+"Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/sv/>\n"
 "Language: sv\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 2026.7.dev0\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -50,29 +50,37 @@ msgstr "Nytt privat fönster"
 #: src/app/widevine-plugin-helper.cpp:150
 msgid "Failed to get license. Please check the application logs for details"
 msgstr ""
+"Misslyckades med att hämta licensen. Kontrollera apploggarna för mer "
+"information"
 
 #: src/app/widevine-plugin-helper.cpp:157
 msgid "Failed to copy files"
-msgstr ""
+msgstr "Misslyckades med att kopiera filer"
 
 #: src/app/widevine-plugin-helper.cpp:164
 msgid "Failed to delete files"
-msgstr ""
+msgstr "Misslyckades med att radera filer"
 
 #: src/app/widevine-plugin-helper.cpp:173
 msgid ""
 "Failed to extract widevine. Please check the application logs for details"
 msgstr ""
+"Misslyckades med att extrahera widevine. Kontrollera apploggarna för mer "
+"information"
 
 #: src/app/widevine-plugin-helper.cpp:182
 msgid ""
 "Failed to install widevine. Please check the application logs for details"
 msgstr ""
+"Misslyckades med att installera widevine. Kontrollera apploggarna för mer "
+"information"
 
 #: src/app/widevine-plugin-helper.cpp:191
 msgid ""
 "Failed to uninstall widevine. Please check the application logs for details"
 msgstr ""
+"Misslyckades med att avinstallera widevine. Kontrollera apploggarna för mer "
+"information"
 
 #: src/app/qml-qt5/actions/Back.qml:23 src/app/qml-qt6/actions/Back.qml:23
 msgid "Back"
@@ -1596,121 +1604,126 @@ msgstr "Ta bort"
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:238
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:32
 msgid "Plugins"
-msgstr ""
+msgstr "Plugins"
 
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:239
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:79
 msgid "Widevine"
-msgstr ""
+msgstr "Widevine"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:81
 msgid "DRM content"
-msgstr ""
+msgstr "DRM-innehåll"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:82
 msgid "Widevine package is not available for this architecture"
-msgstr ""
+msgstr "Widevine-paket är inte tillgängligt för den här arkitekturen"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:142
 msgid "Need to reload the app for changes to take effect."
-msgstr ""
+msgstr "Måste ladda om appen för att ändringarna ska träda i kraft."
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:145
-#, fuzzy
-#| msgid "Close the app"
 msgid "Close app now"
-msgstr "Stäng programmet"
+msgstr "Stäng app nu"
 
 #. TRANSLATORS: Later is in response to "Close the app now"
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:152
 msgid "Later"
-msgstr ""
+msgstr "Senare"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:166
 msgid "Uninstall Widevine"
-msgstr ""
+msgstr "Avinstallera Widevine"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:167
 msgid "Are you sure you want to uninstall the plugin?"
-msgstr ""
+msgstr "Är du säker på att du vill avinstallera plugin?"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:170
 msgid "Uninstall"
-msgstr ""
+msgstr "Avinstallera"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:193
 msgid "Uninstalling failed."
-msgstr ""
+msgstr "Avinstallation misslyckades."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:34
 msgid "Widevine install wizard"
-msgstr ""
+msgstr "Widevine installationsguide"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:48
 msgid "Continue"
-msgstr ""
+msgstr "Fortsätt"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:75
 msgid "Agree"
-msgstr ""
+msgstr "Samtycka"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:155
 msgid "Install Widevine"
-msgstr ""
+msgstr "Installera Widevine"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:162
 msgid ""
 "Widevine is a plugin that lets you play DRM-protected content, such as music "
 "and movies from streaming services."
 msgstr ""
+"Widevine är ett plugin som låter dig spela upp DRM-skyddat innehåll, till "
+"exempel musik och filmer från streamingtjänster."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:168
 msgid ""
 "Widevine is not licensed for use with Morph Browser. The plugin will be "
 "extracted from a proprietary package. Proceed only if you accept this risk."
 msgstr ""
+"Widevine är inte licensierat för användning med Morph Browser. Plugin-appen "
+"kommer att extraheras från ett proprietärt paket. Fortsätt endast om du "
+"accepterar denna risk."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:175
 msgid ""
 "Installing Widevine requires downloading about 150 MB of data. A stable "
 "Internet connection is required and the download may take some time."
 msgstr ""
+"Installationen av Widevine kräver nedladdning av cirka 150 MB data. En "
+"stabil internetanslutning krävs och nedladdningen kan ta lite tid."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:201
 msgid "License agreement"
-msgstr ""
+msgstr "Licensavtal"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:208
 msgid ""
 "The download is complete. Please read the following license agreement "
 "carefully before installing Widevine."
 msgstr ""
+"Nedladdningen är klar. Läs följande licensavtal noggrant innan du "
+"installerar Widevine."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:215
 msgid "Widevine license"
-msgstr ""
+msgstr "Widevine licens"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:243
-#, fuzzy
-#| msgid "Download"
 msgid "Downloading"
-msgstr "Hämta"
+msgstr "Hämtar"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:267
 msgid "Installing"
-msgstr ""
+msgstr "Installerar"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:295
 msgid "Installation completed."
-msgstr ""
+msgstr "Installationen är klar."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:302
 msgid "Morph has to be restarted for the changes to take effect."
-msgstr ""
+msgstr "Morph måste startas om för att ändringarna ska träda i kraft."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:399
 msgid "Next"
-msgstr ""
+msgstr "Nästa"
 
 #: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:62
 #: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:62

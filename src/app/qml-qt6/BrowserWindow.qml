@@ -77,7 +77,7 @@ Window {
         id: hideSnapshotTimer
         repeat: false
         running: false
-        interval: 500
+        interval: 750
         onTriggered: {
             windowSnapshot.visible = false;
             windowSnapshot.source = "";
@@ -101,8 +101,7 @@ Window {
     }
 
     onActiveChanged: {
-        if (active)
-            orchestrateRedraw();
+        orchestrateRedraw();
     }
 
     function orchestrateRedraw() {
@@ -111,10 +110,12 @@ Window {
         }
 
         if (Application.state === Qt.ApplicatonHidden ||
-            Application.state === Qt.ApplicationSuspended)
+            Application.state === Qt.ApplicationSuspended ||
+            !active)
         {
             if (hideSnapshotTimer.running) {
                 hideSnapshotTimer.stop();
+                currentWebview.visible = false;
             } else if (!window.grabbing && !windowSnapshot.visible) {
                 window.prevVisible = currentWebview.visible;
                 window.grabbing = true;
@@ -126,7 +127,8 @@ Window {
                 }, Qt.size(window.contentItem.width, window.contentItem.height));
                 window.grabbing = success;
             }
-        } else if (Application.state === Qt.ApplicationActive &&
+        } else if ((Application.state === Qt.ApplicationActive ||
+                    active) &&
                    windowSnapshot.visible) {
             hideSnapshotTimer.restart();
             currentWebview.visible = window.prevVisible;

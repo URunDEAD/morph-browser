@@ -106,20 +106,26 @@ Window {
     }
 
     function orchestrateRedraw() {
-        if ((Application.state === Qt.ApplicatonHidden ||
-            Application.state === Qt.ApplicationSuspended) &&
-            !window.grabbing &&
-            !windowSnapshot.visible)
+        if (!__onHybris) {
+            return;
+        }
+
+        if (Application.state === Qt.ApplicatonHidden ||
+            Application.state === Qt.ApplicationSuspended)
         {
-            window.prevVisible = currentWebview.visible;
-            window.grabbing = true;
-            const success = window.contentItem.grabToImage(function(result) {
-                windowSnapshot.source = result.url;
-                windowSnapshot.visible = true;
-                window.grabbing = false;
-                currentWebview.visible = false;
-            }, Qt.size(window.contentItem.width, window.contentItem.height));
-            window.grabbing = success;
+            if (hideSnapshotTimer.running) {
+                hideSnapshotTimer.stop();
+            } else if (!window.grabbing && !windowSnapshot.visible) {
+                window.prevVisible = currentWebview.visible;
+                window.grabbing = true;
+                const success = window.contentItem.grabToImage(function(result) {
+                    windowSnapshot.source = result.url;
+                    windowSnapshot.visible = true;
+                    window.grabbing = false;
+                    currentWebview.visible = false;
+                }, Qt.size(window.contentItem.width, window.contentItem.height));
+                window.grabbing = success;
+            }
         } else if (Application.state === Qt.ApplicationActive &&
                    windowSnapshot.visible) {
             hideSnapshotTimer.restart();

@@ -195,12 +195,16 @@ bool BrowserApplication::initialize(const QString& qmlFileSubPath
         qputenv("UBUNTU_WEBVIEW_DEVTOOLS_PORT", devtoolsPort.toUtf8());
     }
 
+    // FIXME: special handling for Qt 6 should not be necessary once Suru is fixed
+    //        ref: https://gitlab.com/ubports/development/core/morph-browser/-/work_items/629
+    //        ref: https://gitlab.com/ubports/development/core/qqc2-suru-style/-/work_items/61
     // set suru style
-    if (qgetenv("QT_QUICK_CONTROLS_STYLE") == QString())
-    {
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
         qputenv("QT_QUICK_CONTROLS_STYLE", "Suru");
 #else
+    // On Qt6, make sure the system didn't already set the Qt5 name and fix if it did
+    if (qEnvironmentVariable("QT_QUICK_CONTROLS_STYLE", "Suru") == "Suru") {
         qputenv("QT_QUICK_CONTROLS_STYLE", "QtQuick.Controls.Suru");
 #endif
     }

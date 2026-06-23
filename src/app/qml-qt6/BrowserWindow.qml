@@ -96,27 +96,42 @@ Window {
     Connections {
         target: Application
         function onStateChanged() {
-            orchestrateRedraw();
+            if (Application.state === Qt.ApplicatonHidden ||
+                Application.state === Qt.ApplicationSuspended)
+            {
+                orchestrateRedraw(false);
+            }
+            else if (Application.state === Qt.ApplicationActive)
+            {
+                orchestrateRedraw(true);
+            }
         }
     }
 
     onActiveChanged: {
-        orchestrateRedraw();
+        orchestrateRedraw(active);
     }
 
-    function orchestrateRedraw() {
+    onWidthChanged: {
+        orchestrateRedraw(true);
+    }
+    onHeightChanged: {
+        orchestrateRedraw(true);
+    }
+
+    function orchestrateRedraw(finalize) {
         if (!__onHybris) {
             return;
         }
 
-        if (Application.state === Qt.ApplicatonHidden ||
-            Application.state === Qt.ApplicationSuspended ||
-            !active)
+        if (!finalize)
         {
             if (hideSnapshotTimer.running) {
                 hideSnapshotTimer.stop();
-                currentWebview.visible = false;
-            } else if (!window.grabbing && !windowSnapshot.visible) {
+            }
+
+            if (!window.grabbing && !windowSnapshot.visible
+                    && currentWebview.visible) {
                 window.prevVisible = currentWebview.visible;
                 window.grabbing = true;
                 const success = window.contentItem.grabToImage(function(result) {
@@ -125,11 +140,8 @@ Window {
                     window.grabbing = false;
                     currentWebview.visible = false;
                 }, Qt.size(window.contentItem.width, window.contentItem.height));
-                window.grabbing = success;
             }
-        } else if ((Application.state === Qt.ApplicationActive ||
-                    active) &&
-                   windowSnapshot.visible) {
+        } else {
             hideSnapshotTimer.restart();
             currentWebview.visible = window.prevVisible;
         }

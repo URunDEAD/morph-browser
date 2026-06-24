@@ -91,6 +91,7 @@ Window {
     // Ensure we fill a snapshot image in for flicker-free visuals.
     property bool prevVisible : true;
     property bool grabbing : false;
+    property bool grabInterrupted : false;
 
     // Force redraw once process is  again
     Connections {
@@ -135,15 +136,24 @@ Window {
                 window.prevVisible = currentWebview.visible;
                 window.grabbing = true;
                 const success = window.contentItem.grabToImage(function(result) {
+                    if (window.grabInterrupted) {
+                        window.grabInterrupted = false;
+                        window.grabbing = false;
+                        return;
+                    }
                     windowSnapshot.source = result.url;
                     windowSnapshot.visible = true;
                     window.grabbing = false;
                     currentWebview.visible = false;
                 }, Qt.size(window.contentItem.width, window.contentItem.height));
+                window.grabbing = success;
             }
         } else {
             hideSnapshotTimer.restart();
             currentWebview.visible = window.prevVisible;
+            if (window.grabbing) {
+                window.grabInterrupted = true;
+            }
         }
     }
 }

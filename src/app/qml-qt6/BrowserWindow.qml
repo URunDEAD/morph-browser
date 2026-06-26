@@ -80,7 +80,6 @@ Window {
         interval: 750
         onTriggered: {
             windowSnapshot.visible = false;
-            windowSnapshot.source = "";
         }
     }
 

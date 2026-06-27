@@ -63,6 +63,7 @@ src/app/qml-qt5/ContentExportDialog.qml
 src/app/qml-qt5/ContentHandler.qml
 src/app/qml-qt5/ContentPickerDialog.qml
 src/app/qml-qt5/ContentShareDialog.qml
+src/app/qml-qt5/ContextMenuMobile.qml
 src/app/qml-qt5/CustomizedRadioButton.qml
 src/app/qml-qt5/CustomUserAgentsPage.qml
 src/app/qml-qt5/DomainPermissionsPage.qml
@@ -147,6 +148,7 @@ src/app/qml-qt6/ContentExportDialog.qml
 src/app/qml-qt6/ContentHandler.qml
 src/app/qml-qt6/ContentPickerDialog.qml
 src/app/qml-qt6/ContentShareDialog.qml
+src/app/qml-qt6/ContextMenuMobile.qml
 src/app/qml-qt6/CustomizedRadioButton.qml
 src/app/qml-qt6/CustomUserAgentsPage.qml
 src/app/qml-qt6/DomainPermissionsPage.qml
@@ -207,7 +209,6 @@ src/app/webbrowser/qml-qt5/Browser.qml
 src/app/webbrowser/qml-qt5/BrowserTab.qml
 src/app/webbrowser/qml-qt5/Chrome.qml
 src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml
-src/app/webbrowser/qml-qt5/ContextMenuMobile.qml
 src/app/webbrowser/qml-qt5/ContextMenuWide.qml
 src/app/webbrowser/qml-qt5/DraggableUrlDelegateWide.qml
 src/app/webbrowser/qml-qt5/ExpandedHistoryView.qml
@@ -257,7 +258,6 @@ src/app/webbrowser/qml-qt6/Browser.qml
 src/app/webbrowser/qml-qt6/BrowserTab.qml
 src/app/webbrowser/qml-qt6/Chrome.qml
 src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml
-src/app/webbrowser/qml-qt6/ContextMenuMobile.qml
 src/app/webbrowser/qml-qt6/ContextMenuWide.qml
 src/app/webbrowser/qml-qt6/DraggableUrlDelegateWide.qml
 src/app/webbrowser/qml-qt6/ExpandedHistoryView.qml

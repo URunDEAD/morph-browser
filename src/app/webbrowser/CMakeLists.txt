@@ -23,7 +23,6 @@ set(WEBBROWSER_APP_MODELS morph-browser-models)
 
 set(ASSETS
     assets/private-browsing-exit.svg
-    assets/stock_link.svg
     assets/stock_website.png
     assets/toolbar-dropshadow.png
     assets/tab-artwork.png

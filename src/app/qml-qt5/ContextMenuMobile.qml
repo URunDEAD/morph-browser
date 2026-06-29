@@ -58,7 +58,7 @@ Popups.Dialog {
             // work around the lack of a standard stock_link symbolic icon in the theme
             Component.onCompleted: {
                 if (!name) {
-                    source = "assets/stock_link.svg"
+                    source = Qt.resolvedUrl("assets/stock_link.svg");
                 }
             }
         }

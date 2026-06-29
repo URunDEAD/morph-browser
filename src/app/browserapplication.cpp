@@ -122,6 +122,13 @@ MAKE_SINGLETON_FACTORY(UrlUtils)
 MAKE_SINGLETON_FACTORY(UserAgentsModel)
 MAKE_SINGLETON_FACTORY(WidevinePluginHelper)
 
+static bool SnapshottingOff()
+{
+    const auto envvar = getenv("MORPH_BROWSER_DISABLE_WINDOW_SNAPSHOTTING");
+    const auto str = !!envvar ? std::string(envvar) : "";
+    return (str == "1" || str == "true");
+}
+
 static bool RunningOnHybris()
 {
     return QFile::exists("/usr/share/glvnd/egl_vendor.d/10_libhybris.json");
@@ -242,6 +249,7 @@ bool BrowserApplication::initialize(const QString& qmlFileSubPath
     context->setContextProperty("unversionedAppId", unversionedAppId);
     context->setContextProperty("i18nDirectory", I18nDirectory());
     context->setContextProperty("__onHybris", RunningOnHybris());
+    context->setContextProperty("__disableWindowSnapshots", SnapshottingOff());
 
     m_component = new QQmlComponent(m_engine);
     m_component->loadUrl(QUrl::fromLocalFile(qmlFileSubPath));

@@ -120,7 +120,7 @@ Window {
     }
 
     function orchestrateRedraw(finalize) {
-        if (!__onHybris) {
+        if (!__onHybris || __disableWindowSnapshots) {
             return;
         }
 

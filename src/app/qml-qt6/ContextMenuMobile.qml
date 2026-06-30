@@ -17,9 +17,9 @@
  */
 
 import QtQuick 2.4
-import Lomiri.Components 1.3
-import Lomiri.Components.ListItems 1.3 as ListItems
-import Lomiri.Components.Popups 1.3 as Popups
+import Lomiri.Components
+import Lomiri.Components.ListItems as ListItems
+import Lomiri.Components.Popups as Popups
 import QtWebEngine 1.5
 
 Popups.Dialog {
@@ -58,7 +58,7 @@ Popups.Dialog {
             // work around the lack of a standard stock_link symbolic icon in the theme
             Component.onCompleted: {
                 if (!name) {
-                    source = "assets/stock_link.svg"
+                    source = Qt.resolvedUrl("assets/stock_link.svg");
                 }
             }
         }
@@ -74,7 +74,7 @@ Popups.Dialog {
                 topMargin: units.gu(2)
                 bottom: parent.bottom
             }
-            fontSize: "x-small"
+            textSize: Label.XSmall
             maximumLineCount: 2
             wrapMode: Text.Wrap
             height: contentHeight
@@ -109,7 +109,7 @@ Popups.Dialog {
                     rightMargin: units.gu(2)
                     verticalCenter: parent.verticalCenter
                 }
-                fontSize: "x-small"
+                textSize: Label.XSmall
                 text: action.text
             }
 
@@ -139,7 +139,7 @@ Popups.Dialog {
                 rightMargin: units.gu(2)
                 verticalCenter: parent.verticalCenter
             }
-            fontSize: "x-small"
+            textSize: Label.XSmall
             text: i18n.tr("Cancel")
         }
         onTriggered: contextMenu.hide()

@@ -74,6 +74,7 @@ else()
 endif()
 
 install(DIRECTORY qml-qt${QT_VERSION_MAJOR}/ DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser)
+install(DIRECTORY assets DESTINATION ${CMAKE_INSTALL_DATADIR}/morph-browser)
 
 # Copy QML files for tests; mimic file structure once installed.
 add_custom_target(src_app-copy_files_to_build_dir ALL

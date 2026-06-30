@@ -272,7 +272,7 @@ WebView {
                 {
                     contextMenuRequest = request;
 
-                    var contextMenu = PopupUtils.open(Qt.resolvedUrl("webbrowser/ContextMenuMobile.qml"), this);
+                    var contextMenu = PopupUtils.open(Qt.resolvedUrl("ContextMenuMobile.qml"), this);
                     contextMenu.actions = contextualactions;
                     contextMenu.titleContent = request.linkUrl;
                 }

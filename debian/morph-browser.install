@@ -1,4 +1,5 @@
 usr/bin/morph-browser
+usr/share/morph-browser/assets/
 usr/share/morph-browser/*.qml
 usr/share/morph-browser/qmldir
 usr/share/morph-browser/*.js

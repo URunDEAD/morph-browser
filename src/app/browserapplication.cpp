@@ -24,6 +24,7 @@
 // Qtlangc
 #include <QtCore/QMetaObject>
 #include <QtCore/QtGlobal>
+#include <QtCore/QFile>
 #if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
     #define QTOUCHDEVICE QInputDevice
     #define QDEVICETYPE QInputDevice::DeviceType
@@ -120,6 +121,18 @@ MAKE_SINGLETON_FACTORY(MimeDatabase)
 MAKE_SINGLETON_FACTORY(UrlUtils)
 MAKE_SINGLETON_FACTORY(UserAgentsModel)
 MAKE_SINGLETON_FACTORY(WidevinePluginHelper)
+
+static bool SnapshottingOff()
+{
+    const auto envvar = getenv("MORPH_BROWSER_DISABLE_WINDOW_SNAPSHOTTING");
+    const auto str = !!envvar ? std::string(envvar) : "";
+    return (str == "1" || str == "true");
+}
+
+static bool RunningOnHybris()
+{
+    return QFile::exists("/usr/share/glvnd/egl_vendor.d/10_libhybris.json");
+}
 
 bool BrowserApplication::initialize(const QString& qmlFileSubPath
                                     , const QString& appId)
@@ -235,6 +248,8 @@ bool BrowserApplication::initialize(const QString& qmlFileSubPath
     context->setContextProperty("__runningConfined", runningConfined);
     context->setContextProperty("unversionedAppId", unversionedAppId);
     context->setContextProperty("i18nDirectory", I18nDirectory());
+    context->setContextProperty("__onHybris", RunningOnHybris());
+    context->setContextProperty("__disableWindowSnapshots", SnapshottingOff());
 
     m_component = new QQmlComponent(m_engine);
     m_component->loadUrl(QUrl::fromLocalFile(qmlFileSubPath));

@@ -31,7 +31,6 @@ Window {
     property var currentWebview: null
     property bool hasTouchScreen: false
 
-
     minimumWidth: units.gu(40)
     minimumHeight: units.gu(20)
 
@@ -62,6 +61,97 @@ Window {
                 }
             } else {
                 window.visibility = internal.currentWindowState
+            }
+        }
+    }
+
+    // Show a snapshot of the window, created when suspending
+    Image {
+        id: windowSnapshot
+        anchors.fill: window.contentItem
+        visible: false
+        z: window.contentItem.z + 1
+    }
+
+    Timer {
+        id: hideSnapshotTimer
+        repeat: false
+        running: false
+        interval: 750
+        onTriggered: {
+            windowSnapshot.visible = false;
+        }
+    }
+
+    // Workaround for QtWebEngine 6.10 with libhybris ANGLE & Ozone buffer sharing
+    // The current web page would turn black if the
+    // app gets resumed from suspend. Enqueueing a
+    // redraw through visibility changes restores the page.
+    // Ensure we fill a snapshot image in for flicker-free visuals.
+    property bool prevVisible : true;
+    property bool grabbing : false;
+    property bool grabInterrupted : false;
+
+    // Force redraw once process is  again
+    Connections {
+        target: Application
+        function onStateChanged() {
+            if (Application.state === Qt.ApplicatonHidden ||
+                Application.state === Qt.ApplicationSuspended)
+            {
+                orchestrateRedraw(false);
+            }
+            else if (Application.state === Qt.ApplicationActive)
+            {
+                orchestrateRedraw(true);
+            }
+        }
+    }
+
+    onActiveChanged: {
+        orchestrateRedraw(active);
+    }
+
+    onWidthChanged: {
+        orchestrateRedraw(true);
+    }
+    onHeightChanged: {
+        orchestrateRedraw(true);
+    }
+
+    function orchestrateRedraw(finalize) {
+        if (!__onHybris || __disableWindowSnapshots) {
+            return;
+        }
+
+        if (!finalize)
+        {
+            if (hideSnapshotTimer.running) {
+                hideSnapshotTimer.stop();
+            }
+
+            if (!window.grabbing && !windowSnapshot.visible
+                    && currentWebview.visible) {
+                window.prevVisible = currentWebview.visible;
+                window.grabbing = true;
+                const success = window.contentItem.grabToImage(function(result) {
+                    if (window.grabInterrupted) {
+                        window.grabInterrupted = false;
+                        window.grabbing = false;
+                        return;
+                    }
+                    windowSnapshot.source = result.url;
+                    windowSnapshot.visible = true;
+                    window.grabbing = false;
+                    currentWebview.visible = false;
+                }, Qt.size(window.contentItem.width, window.contentItem.height));
+                window.grabbing = success;
+            }
+        } else {
+            hideSnapshotTimer.restart();
+            currentWebview.visible = window.prevVisible;
+            if (window.grabbing) {
+                window.grabInterrupted = true;
             }
         }
     }

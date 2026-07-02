@@ -298,6 +298,15 @@ QtObject {
                 tabsModel.add(tab)
                 return tab
             }
+
+            // Workaround for QtWebEngine 6.10 with libhybris ANGLE & Ozone buffer sharing
+            Loader {
+                anchors.fill: parent
+                active: __onHybris && !__disableWindowSnapshots
+                sourceComponent: Component {
+                    RedrawOrchestrator { browserWindow: window }
+                }
+            }
         }
     }
 

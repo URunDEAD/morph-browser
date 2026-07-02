@@ -403,4 +403,13 @@ BrowserWindow {
         target: UriHandler
         function onOpened(uris) { root.openUrls(uris) }
     }
+
+    // Workaround for QtWebEngine 6.10 with libhybris ANGLE & Ozone buffer sharing
+    Loader {
+        anchors.fill: parent
+        active: __onHybris && !__disableWindowSnapshots
+        sourceComponent: Component {
+            RedrawOrchestrator { browserWindow: root }
+        }
+    }
 }

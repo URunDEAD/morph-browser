@@ -84,17 +84,14 @@ Item {
     function orchestrateRedraw(finalize) {
         if (!finalize)
         {
-            if (hideSnapshotTimer.running) {
-                hideSnapshotTimer.stop();
-            }
+            hideSnapshotTimer.stop();
 
             if (!grabbing && !windowSnapshot.visible
                     && currentWebview.visible) {
                 prevVisible = currentWebview.visible;
-                grabbing = true;
-                const success = browserWindow.contentItem.grabToImage(function(result) {
+                grabInterrupted = false;
+                grabbing = browserWindow.contentItem.grabToImage(function(result) {
                     if (grabInterrupted) {
-                        grabInterrupted = false;
                         grabbing = false;
                         return;
                     }
@@ -106,14 +103,11 @@ Item {
                     browserWindow.contentItem.width,
                     browserWindow.contentItem.height
                 ));
-                grabbing = success;
             }
         } else {
             hideSnapshotTimer.restart();
             currentWebview.visible = prevVisible;
-            if (grabbing) {
-                grabInterrupted = true;
-            }
+            grabInterrupted = true;
         }
     }
 }

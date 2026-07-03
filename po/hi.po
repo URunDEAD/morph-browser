@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-27 23:02+0000\n"
-"PO-Revision-Date: 2026-03-23 04:09+0000\n"
+"PO-Revision-Date: 2026-07-10 12:01+0000\n"
 "Last-Translator: Satyaakam Goswami <satyaakam@gmail.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/hi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 2026.7.1.dev0\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:4
@@ -1598,21 +1598,19 @@ msgstr ""
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:81
 msgid "DRM content"
-msgstr ""
+msgstr "DRM content"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:82
 msgid "Widevine package is not available for this architecture"
-msgstr ""
+msgstr "इस आर्किटेक्चर के लिए Widevine पैकेज उपलब्ध नहीं है"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:142
 msgid "Need to reload the app for changes to take effect."
-msgstr ""
+msgstr "बदलाव लागू करने के लिए ऐप को रीलोड करना होगा।"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:145
-#, fuzzy
-#| msgid "Close the app"
 msgid "Close app now"
-msgstr "ऐप बंद करें"
+msgstr "अब ऐप बंद करें"
 
 #. TRANSLATORS: Later is in response to "Close the app now"
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:152
@@ -1633,11 +1631,11 @@ msgstr ""
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:193
 msgid "Uninstalling failed."
-msgstr ""
+msgstr "अनइंस्टॉल करना विफल रहा।"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:34
 msgid "Widevine install wizard"
-msgstr ""
+msgstr "Widevine इंस्टाल विज़ार्ड"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:48
 msgid "Continue"
@@ -1649,7 +1647,7 @@ msgstr ""
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:155
 msgid "Install Widevine"
-msgstr ""
+msgstr "Widevine इंस्टॉल करें"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:162
 msgid ""

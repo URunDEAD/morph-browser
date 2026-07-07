@@ -404,7 +404,12 @@ Common.BrowserPage {
     SingleDownload {
         id: downloadWidevineSrc
 
+        // FIXME: ask the user if they allow this
         allowMobileDownload: true
+        metadata: Metadata {
+            showInIndicator: true
+            title: i18n.tr("Widevine")
+        }
 
         onFinished: function(path) {
             WidevinePluginHelper.saveFilePath(path)

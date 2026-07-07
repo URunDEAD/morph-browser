@@ -282,25 +282,44 @@ Common.BrowserView {
             if (isMainFrame)
             {
                 currentWebview.hideContextMenu();
-                var newUserAgentId = (UserAgentsModel.count > 0) ? DomainSettingsModel.getUserAgentId(requestDomain) : 0;
 
-                // change of the custom user agent
+                // Newer version of QWE crashes when trying to change user agent from this handler.
+                // So defer this handling after we leave this handler as a workaround.
+                // https://qt-project.atlassian.net/browse/QTBUG-148069
+                // https://gitlab.com/ubports/development/core/morph-browser/-/work_items/633
+
+                var newUserAgentId = (UserAgentsModel.count > 0) ? DomainSettingsModel.getUserAgentId(requestDomain) : 0;
+                Qt.callLater(delayedUserAgentHandling, newUserAgentId, url);
+
                 if (newUserAgentId !== currentWebview.context.userAgentId)
                 {
-                    currentWebview.context.userAgentId = newUserAgentId;
-                    currentWebview.context.customUserAgent = (newUserAgentId > 0) ? UserAgentsModel.getUserAgentString(newUserAgentId) : "";
-
-		    // for some reason when letting through the request, another navigation request will take us back to the
+                    // for some reason when letting through the request, another navigation request will take us back to the
                     // to the previous page. Therefore we block it first and navigate to the new url with the correct user agent.
                     request.reject();
-                    currentWebview.url = url;
-                    return;
                 }
-                else
-                {
-                    currentWebview.context.__ua.setDesktopMode(browser.settings ? browser.settings.setDesktopMode : false);
-                    console.log("user agent: " + currentWebview.context.httpUserAgent);
-                }
+            }
+        }
+    }
+
+    function delayedUserAgentHandling(newUserAgentId, url) {
+        // change of the custom user agent
+        if (newUserAgentId !== currentWebview.context.userAgentId)
+        {
+            currentWebview.context.userAgentId = newUserAgentId;
+            currentWebview.context.customUserAgent = (newUserAgentId > 0) ? UserAgentsModel.getUserAgentString(newUserAgentId) : "";
+
+            currentWebview.url = url;
+        }
+        else
+        {
+            let oldUa = currentWebview.context.httpUserAgent;
+
+            currentWebview.context.__ua.setDesktopMode(browser.settings ? browser.settings.setDesktopMode : false);
+            console.log("user agent: " + currentWebview.context.httpUserAgent);
+
+            if (oldUa !== currentWebview.context.httpUserAgent)
+            {
+                currentWebview.url = url;
             }
         }
     }

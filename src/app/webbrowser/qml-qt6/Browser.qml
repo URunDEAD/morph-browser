@@ -314,7 +314,7 @@ Common.BrowserView {
         {
             let oldUa = currentWebview.context.httpUserAgent;
 
-            currentWebview.context.__ua.setDesktopMode(browser.settings ? browser.settings.setDesktopMode : false);
+            currentWebview.context.__ua.setDesktopMode(browser.settings?.setDesktopMode ?? false);
             console.log("user agent: " + currentWebview.context.httpUserAgent);
 
             if (oldUa !== currentWebview.context.httpUserAgent)

@@ -139,7 +139,8 @@ QQC2.Dialog {
                 onPeerSelected: {
                     var transfer = peer.request()
                     if (transfer.state === ContentTransfer.InProgress) {
-                        transfer.items = [contentItemComponent.createObject(contentExportDialog, {"url": path})]
+                        transfer.items = [contentItemComponent.createObject(
+                            contentExportDialog, {"url": `file://${path}`})]
                         transfer.state = ContentTransfer.Charged
                     }
                     contentExportDialog.close()

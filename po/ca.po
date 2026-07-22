@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-27 23:02+0000\n"
+"POT-Creation-Date: 2026-07-23 01:16+0200\n"
 "PO-Revision-Date: 2026-05-29 20:43+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/lomiri/morph-"
@@ -20,62 +20,62 @@ msgstr ""
 "X-Generator: Weblate 2026.6.dev0\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
-#: morph-browser.desktop.in:4
+#: morph-browser.desktop.in:3
 msgid "Morph Browser"
 msgstr "Navegador Morph"
 
-#: morph-browser.desktop.in:5 src/app/webbrowser/qml-qt5/morph-browser.qml:111
+#: morph-browser.desktop.in:4 src/app/webbrowser/qml-qt5/morph-browser.qml:111
 #: src/app/webbrowser/qml-qt6/morph-browser.qml:110
 #: src/app/webcontainer/qml-qt5/webapp-container.qml:78
 #: src/app/webcontainer/qml-qt6/webapp-container.qml:78
 msgid "Morph Web Browser"
 msgstr "Navegador web Morph"
 
-#: morph-browser.desktop.in:6
+#: morph-browser.desktop.in:5
 msgid "Browse the World Wide Web using QtWebEngine"
 msgstr "Navegueu per la web fent servir el QtWebEngine"
 
-#: morph-browser.desktop.in:7
+#: morph-browser.desktop.in:6
 msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr "Internet;WWW;Navegador;Web;Explorer"
 
-#: morph-browser.desktop.in:23
+#: morph-browser.desktop.in:22
 msgid "New Window"
 msgstr "Finestra nova"
 
-#: morph-browser.desktop.in:27
+#: morph-browser.desktop.in:26
 msgid "New Private Window"
 msgstr "Finestra privada nova"
 
-#: src/app/widevine-plugin-helper.cpp:150
+#: src/app/widevine-plugin-helper.cpp:157
 msgid "Failed to get license. Please check the application logs for details"
 msgstr ""
 "No s'ha pogut obtenir la llicència. Si us plau comproveu els registres de "
 "l'aplicació per a més detalls"
 
-#: src/app/widevine-plugin-helper.cpp:157
+#: src/app/widevine-plugin-helper.cpp:165
 msgid "Failed to copy files"
 msgstr "No s'han pogut copiar els fitxers"
 
-#: src/app/widevine-plugin-helper.cpp:164
+#: src/app/widevine-plugin-helper.cpp:173
 msgid "Failed to delete files"
 msgstr "No s'han pogut eliminar els fitxers"
 
-#: src/app/widevine-plugin-helper.cpp:173
+#: src/app/widevine-plugin-helper.cpp:182
 msgid ""
 "Failed to extract widevine. Please check the application logs for details"
 msgstr ""
 "No s'ha pogut extraure widevine. Si us plau comproveu els registres de "
 "l'aplicació per a més detalls"
 
-#: src/app/widevine-plugin-helper.cpp:182
+#: src/app/widevine-plugin-helper.cpp:191
 msgid ""
 "Failed to install widevine. Please check the application logs for details"
 msgstr ""
 "No s'ha pogut instal·lar widevine. Si us plau comproveu els registres de "
 "l'aplicació per a més detalls"
 
-#: src/app/widevine-plugin-helper.cpp:191
+#: src/app/widevine-plugin-helper.cpp:200
 msgid ""
 "Failed to uninstall widevine. Please check the application logs for details"
 msgstr ""
@@ -155,7 +155,7 @@ msgstr "Suprimeix"
 #: src/app/qml-qt5/actions/FindInPage.qml:23
 #: src/app/qml-qt6/actions/FindInPage.qml:23
 #: src/app/webbrowser/qml-qt5/Browser.qml:843
-#: src/app/webbrowser/qml-qt6/Browser.qml:843
+#: src/app/webbrowser/qml-qt6/Browser.qml:862
 msgid "Find in page"
 msgstr "Cerca a la pàgina"
 
@@ -191,7 +191,7 @@ msgstr "Adreça;URL;www"
 #: src/app/qml-qt5/actions/NewTab.qml:23 src/app/qml-qt6/actions/NewTab.qml:23
 #: src/app/webbrowser/qml-qt5/Browser.qml:703
 #: src/app/webbrowser/qml-qt5/TabsBar.qml:88
-#: src/app/webbrowser/qml-qt6/Browser.qml:703
+#: src/app/webbrowser/qml-qt6/Browser.qml:722
 #: src/app/webbrowser/qml-qt6/TabsBar.qml:87
 msgid "New Tab"
 msgstr "Pestanya nova"
@@ -293,7 +293,7 @@ msgstr "Selecciona-ho tot"
 
 #: src/app/qml-qt5/actions/Share.qml:22 src/app/qml-qt6/actions/Share.qml:22
 #: src/app/webbrowser/qml-qt5/Browser.qml:823
-#: src/app/webbrowser/qml-qt6/Browser.qml:823
+#: src/app/webbrowser/qml-qt6/Browser.qml:842
 msgid "Share"
 msgstr "Comparteix"
 
@@ -359,6 +359,7 @@ msgstr "Permet"
 #: src/app/qml-qt5/CertificateVerificationDialog.qml:46
 #: src/app/qml-qt5/ColorSelectDialog.qml:84
 #: src/app/qml-qt5/ConfirmDialog.qml:41
+#: src/app/qml-qt5/ContextMenuMobile.qml:143
 #: src/app/qml-qt5/DownloadDelegate.qml:271
 #: src/app/qml-qt5/EditCustomUserAgentDialog.qml:69
 #: src/app/qml-qt5/HttpAuthenticationDialog.qml:80
@@ -371,6 +372,7 @@ msgstr "Permet"
 #: src/app/qml-qt6/CertificateVerificationDialog.qml:46
 #: src/app/qml-qt6/ColorSelectDialog.qml:84
 #: src/app/qml-qt6/ConfirmDialog.qml:41
+#: src/app/qml-qt6/ContextMenuMobile.qml:143
 #: src/app/qml-qt6/DownloadDelegate.qml:270
 #: src/app/qml-qt6/EditCustomUserAgentDialog.qml:69
 #: src/app/qml-qt6/HttpAuthenticationDialog.qml:80
@@ -379,16 +381,14 @@ msgstr "Permet"
 #: src/app/qml-qt6/ZoomControls.qml:235
 #: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:182
 #: src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml:114
-#: src/app/webbrowser/qml-qt5/ContextMenuMobile.qml:143
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:458
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:574
 #: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:182
 #: src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml:114
-#: src/app/webbrowser/qml-qt6/ContextMenuMobile.qml:143
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:480
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:596
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:179
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:374
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:392
 #: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:96
 #: src/app/webcontainer/qml-qt5/ContextMenuMobile.qml:143
 #: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:286
@@ -510,18 +510,18 @@ msgid "JavaScript Confirmation"
 msgstr "Confirmació del JavaScript"
 
 #: src/app/qml-qt5/ContentExportDialog.qml:79
-#: src/app/qml-qt6/ContentExportDialog.qml:87
+#: src/app/qml-qt6/ContentExportDialog.qml:79
 msgid "Open with"
 msgstr "Pestanyes obertes"
 
 #: src/app/qml-qt5/ContentExportDialog.qml:80
-#: src/app/qml-qt6/ContentExportDialog.qml:88
+#: src/app/qml-qt6/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
 msgstr "Nom del fitxer: %1"
 
 #: src/app/qml-qt5/ContentExportDialog.qml:91
-#: src/app/qml-qt6/ContentExportDialog.qml:99
+#: src/app/qml-qt6/ContentExportDialog.qml:91
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:196
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:120
 #: src/app/webcontainer/qml-qt5/AccountErrorScreen.qml:50
@@ -530,12 +530,12 @@ msgid "Close"
 msgstr "Tanca"
 
 #: src/app/qml-qt5/ContentExportDialog.qml:100
-#: src/app/qml-qt6/ContentExportDialog.qml:108
+#: src/app/qml-qt6/ContentExportDialog.qml:100
 msgid "Open link in browser"
 msgstr "Obre l'enllaç al navegador predeterminat"
 
 #: src/app/qml-qt5/ContentExportDialog.qml:109
-#: src/app/qml-qt6/ContentExportDialog.qml:117
+#: src/app/qml-qt6/ContentExportDialog.qml:109
 msgid "Open file in browser"
 msgstr "Obre l'enllaç al navegador predeterminat"
 
@@ -755,7 +755,7 @@ msgstr "Mostra-ho tot"
 
 #: src/app/qml-qt5/DownloadsPage.qml:46 src/app/qml-qt6/DownloadsPage.qml:46
 #: src/app/webbrowser/qml-qt5/Browser.qml:850
-#: src/app/webbrowser/qml-qt6/Browser.qml:850
+#: src/app/webbrowser/qml-qt6/Browser.qml:869
 #: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:137
 #: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:137
 msgid "Downloads"
@@ -1023,7 +1023,7 @@ msgstr "Elimina de la llista"
 
 #: src/app/qml-qt5/WebViewImpl.qml:702 src/app/qml-qt6/WebViewImpl.qml:756
 #: src/app/webbrowser/qml-qt5/Browser.qml:897
-#: src/app/webbrowser/qml-qt6/Browser.qml:904
+#: src/app/webbrowser/qml-qt6/Browser.qml:923
 msgid "Zoom"
 msgstr "Ampliació"
 
@@ -1138,10 +1138,10 @@ msgid "Save in"
 msgstr "Desa-la a"
 
 #: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:96
-#: src/app/webbrowser/qml-qt5/BookmarksFoldersView.qml:133
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersView.qml:137
 #: src/app/webbrowser/qml-qt5/BookmarksFoldersViewWide.qml:105
 #: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:96
-#: src/app/webbrowser/qml-qt6/BookmarksFoldersView.qml:133
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersView.qml:137
 #: src/app/webbrowser/qml-qt6/BookmarksFoldersViewWide.qml:105
 msgid "All Bookmarks"
 msgstr "Totes les adreces d'interès"
@@ -1158,12 +1158,12 @@ msgstr "Carpeta nova"
 msgid "Create new folder"
 msgstr "Crea una carpeta nova"
 
-#: src/app/webbrowser/qml-qt5/BookmarksFoldersView.qml:191
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersView.qml:195
 #: src/app/webbrowser/qml-qt5/BookmarksFoldersViewWide.qml:148
 #: src/app/webbrowser/qml-qt5/NewTabView.qml:252
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:90
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:486
-#: src/app/webbrowser/qml-qt6/BookmarksFoldersView.qml:191
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersView.qml:195
 #: src/app/webbrowser/qml-qt6/BookmarksFoldersViewWide.qml:148
 #: src/app/webbrowser/qml-qt6/NewTabView.qml:251
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:90
@@ -1178,7 +1178,7 @@ msgstr "Pàgina d'inici"
 #: src/app/webbrowser/qml-qt5/NewTabViewWide.qml:139
 #: src/app/webbrowser/qml-qt6/BookmarksView.qml:32
 #: src/app/webbrowser/qml-qt6/BookmarksViewWide.qml:32
-#: src/app/webbrowser/qml-qt6/Browser.qml:831
+#: src/app/webbrowser/qml-qt6/Browser.qml:850
 #: src/app/webbrowser/qml-qt6/NewTabView.qml:129
 #: src/app/webbrowser/qml-qt6/NewTabViewWide.qml:138
 msgid "Bookmarks"
@@ -1216,30 +1216,30 @@ msgstr ""
 "pàgina."
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:660
-#: src/app/webbrowser/qml-qt6/Browser.qml:660
+#: src/app/webbrowser/qml-qt6/Browser.qml:679
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:105
 msgid "Done"
 msgstr "Fet"
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:685
-#: src/app/webbrowser/qml-qt6/Browser.qml:685
+#: src/app/webbrowser/qml-qt6/Browser.qml:704
 msgid "Reopen Tab"
 msgstr "Tanca la pestanya"
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:811
-#: src/app/webbrowser/qml-qt6/Browser.qml:811
+#: src/app/webbrowser/qml-qt6/Browser.qml:830
 msgid "New window"
 msgstr "Finestra nova"
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:817
-#: src/app/webbrowser/qml-qt6/Browser.qml:817
+#: src/app/webbrowser/qml-qt6/Browser.qml:836
 msgid "New private window"
 msgstr "Finestra privada nova"
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:837
 #: src/app/webbrowser/qml-qt5/HistoryView.qml:31
 #: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:36
-#: src/app/webbrowser/qml-qt6/Browser.qml:837
+#: src/app/webbrowser/qml-qt6/Browser.qml:856
 #: src/app/webbrowser/qml-qt6/HistoryView.qml:30
 #: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:35
 msgid "History"
@@ -1247,24 +1247,24 @@ msgstr "Historial"
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:857
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:45
-#: src/app/webbrowser/qml-qt6/Browser.qml:857
+#: src/app/webbrowser/qml-qt6/Browser.qml:876
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:45
 msgid "Settings"
 msgstr "Configuració"
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:863
-#: src/app/webbrowser/qml-qt6/Browser.qml:863
+#: src/app/webbrowser/qml-qt6/Browser.qml:882
 msgid "View source"
 msgstr "Mostra el codi"
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:876
-#: src/app/webbrowser/qml-qt6/Browser.qml:876
+#: src/app/webbrowser/qml-qt6/Browser.qml:895
 msgid "Save / Print to PDF"
 msgstr "Desa o imprimeix com a PDF"
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:904
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:140
-#: src/app/webbrowser/qml-qt6/Browser.qml:911
+#: src/app/webbrowser/qml-qt6/Browser.qml:930
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:140
 msgid "Set Desktop mode"
 msgstr "Mode d'escriptori"
@@ -1272,14 +1272,14 @@ msgstr "Mode d'escriptori"
 #. TRANSLATORS: %1 refers to the current number of tabs opened
 #: src/app/webbrowser/qml-qt5/Browser.qml:1104
 #: src/app/webbrowser/qml-qt5/Browser.qml:1142
-#: src/app/webbrowser/qml-qt6/Browser.qml:1111
-#: src/app/webbrowser/qml-qt6/Browser.qml:1149
+#: src/app/webbrowser/qml-qt6/Browser.qml:1130
+#: src/app/webbrowser/qml-qt6/Browser.qml:1168
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:1985
-#: src/app/webbrowser/qml-qt6/Browser.qml:1992
+#: src/app/webbrowser/qml-qt6/Browser.qml:2011
 msgid "the file is already in the downloads folder."
 msgstr "el fitxer ja és a la carpeta de baixades."
 
@@ -1327,9 +1327,9 @@ msgid "All History"
 msgstr "Tot l'historial"
 
 #: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:256
-#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:343
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:349
 #: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:255
-#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:342
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:348
 msgid "Today"
 msgstr "Avui"
 
@@ -1612,6 +1612,7 @@ msgstr "Connectors"
 
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:239
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:79
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:429
 msgid "Widevine"
 msgstr "Widevine"
 
@@ -1676,7 +1677,7 @@ msgstr ""
 "Widevine és un connector que us permet reproduir contingut protegit per DRM, "
 "com ara música i pel·lícules de serveis de transmissió."
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:168
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:169
 msgid ""
 "Widevine is not licensed for use with Morph Browser. The plugin will be "
 "extracted from a proprietary package. Proceed only if you accept this risk."
@@ -1685,6 +1686,10 @@ msgstr ""
 "s'ha d'extraure de un paquest propietari. Continueu sols si accepteu el risc."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:175
+msgid "Warning!"
+msgstr ""
+
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:183
 msgid ""
 "Installing Widevine requires downloading about 150 MB of data. A stable "
 "Internet connection is required and the download may take some time."
@@ -1692,11 +1697,16 @@ msgstr ""
 "La instal·lació de Widevine requereix baixar aproximadament 150 MB de dades. "
 "Cal una connexió estable d'Internet i la descàrrega pot trigar una mica."
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:201
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:192
+#, qt-format
+msgid "The file containing the Widevine plugin will be downloaded from %1."
+msgstr ""
+
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:219
 msgid "License agreement"
 msgstr "Acord de llicència"
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:208
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:226
 msgid ""
 "The download is complete. Please read the following license agreement "
 "carefully before installing Widevine."
@@ -1704,27 +1714,27 @@ msgstr ""
 "S'ha completat la descàrrega. Si us plau llegiu atentament l'acord següent "
 "de llicència abans d'instal·lar Widevine."
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:215
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:233
 msgid "Widevine license"
 msgstr "Llicència de Widevine"
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:243
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:261
 msgid "Downloading"
 msgstr "S'està descarregant"
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:267
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:285
 msgid "Installing"
 msgstr "S'està instal·lant"
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:295
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:313
 msgid "Installation completed."
 msgstr "Instal·lació completada."
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:302
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:320
 msgid "Morph has to be restarted for the changes to take effect."
 msgstr "S'ha de reiniciar Morph perquè els canvis tinguin efecte."
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:399
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:417
 msgid "Next"
 msgstr "Següent"
 

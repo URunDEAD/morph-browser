@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-27 23:02+0000\n"
+"POT-Creation-Date: 2026-07-23 01:16+0200\n"
 "PO-Revision-Date: 2023-01-04 19:47+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Nepali <https://hosted.weblate.org/projects/lomiri/morph-"
@@ -20,12 +20,12 @@ msgstr ""
 "X-Generator: Weblate 4.15.1-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
-#: morph-browser.desktop.in:4
+#: morph-browser.desktop.in:3
 #, fuzzy
 msgid "Morph Browser"
 msgstr "ब्राउजर"
 
-#: morph-browser.desktop.in:5 src/app/webbrowser/qml-qt5/morph-browser.qml:111
+#: morph-browser.desktop.in:4 src/app/webbrowser/qml-qt5/morph-browser.qml:111
 #: src/app/webbrowser/qml-qt6/morph-browser.qml:110
 #: src/app/webcontainer/qml-qt5/webapp-container.qml:78
 #: src/app/webcontainer/qml-qt6/webapp-container.qml:78
@@ -33,46 +33,46 @@ msgstr "ब्राउजर"
 msgid "Morph Web Browser"
 msgstr "वेब ब्राउजर"
 
-#: morph-browser.desktop.in:6
+#: morph-browser.desktop.in:5
 #, fuzzy
 msgid "Browse the World Wide Web using QtWebEngine"
 msgstr "वर्ल्ड वाइड वेब ब्राउज गर्नुहोस्"
 
-#: morph-browser.desktop.in:7
+#: morph-browser.desktop.in:6
 msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr "इन्टरनेट;WWW; ब्राउजर; वेब; एक्सप्लोरर"
 
-#: morph-browser.desktop.in:23
+#: morph-browser.desktop.in:22
 msgid "New Window"
 msgstr ""
 
-#: morph-browser.desktop.in:27
+#: morph-browser.desktop.in:26
 msgid "New Private Window"
 msgstr ""
 
-#: src/app/widevine-plugin-helper.cpp:150
+#: src/app/widevine-plugin-helper.cpp:157
 msgid "Failed to get license. Please check the application logs for details"
 msgstr ""
 
-#: src/app/widevine-plugin-helper.cpp:157
+#: src/app/widevine-plugin-helper.cpp:165
 msgid "Failed to copy files"
 msgstr ""
 
-#: src/app/widevine-plugin-helper.cpp:164
-msgid "Failed to delete files"
-msgstr ""
-
 #: src/app/widevine-plugin-helper.cpp:173
-msgid ""
-"Failed to extract widevine. Please check the application logs for details"
+msgid "Failed to delete files"
 msgstr ""
 
 #: src/app/widevine-plugin-helper.cpp:182
 msgid ""
-"Failed to install widevine. Please check the application logs for details"
+"Failed to extract widevine. Please check the application logs for details"
 msgstr ""
 
 #: src/app/widevine-plugin-helper.cpp:191
+msgid ""
+"Failed to install widevine. Please check the application logs for details"
+msgstr ""
+
+#: src/app/widevine-plugin-helper.cpp:200
 msgid ""
 "Failed to uninstall widevine. Please check the application logs for details"
 msgstr ""
@@ -153,7 +153,7 @@ msgstr "मेटनुहोस्"
 #: src/app/qml-qt5/actions/FindInPage.qml:23
 #: src/app/qml-qt6/actions/FindInPage.qml:23
 #: src/app/webbrowser/qml-qt5/Browser.qml:843
-#: src/app/webbrowser/qml-qt6/Browser.qml:843
+#: src/app/webbrowser/qml-qt6/Browser.qml:862
 msgid "Find in page"
 msgstr "पानामा खोज्नुहोस्"
 
@@ -189,7 +189,7 @@ msgstr "ठेगाना; URL;www"
 #: src/app/qml-qt5/actions/NewTab.qml:23 src/app/qml-qt6/actions/NewTab.qml:23
 #: src/app/webbrowser/qml-qt5/Browser.qml:703
 #: src/app/webbrowser/qml-qt5/TabsBar.qml:88
-#: src/app/webbrowser/qml-qt6/Browser.qml:703
+#: src/app/webbrowser/qml-qt6/Browser.qml:722
 #: src/app/webbrowser/qml-qt6/TabsBar.qml:87
 msgid "New Tab"
 msgstr "नयाँ ट्याब"
@@ -292,7 +292,7 @@ msgstr "सबै चयन गर्नुहोस्"
 
 #: src/app/qml-qt5/actions/Share.qml:22 src/app/qml-qt6/actions/Share.qml:22
 #: src/app/webbrowser/qml-qt5/Browser.qml:823
-#: src/app/webbrowser/qml-qt6/Browser.qml:823
+#: src/app/webbrowser/qml-qt6/Browser.qml:842
 msgid "Share"
 msgstr "सेयर गर्नुहोस्"
 
@@ -358,6 +358,7 @@ msgstr "अनुमति दिनुहोस्"
 #: src/app/qml-qt5/CertificateVerificationDialog.qml:46
 #: src/app/qml-qt5/ColorSelectDialog.qml:84
 #: src/app/qml-qt5/ConfirmDialog.qml:41
+#: src/app/qml-qt5/ContextMenuMobile.qml:143
 #: src/app/qml-qt5/DownloadDelegate.qml:271
 #: src/app/qml-qt5/EditCustomUserAgentDialog.qml:69
 #: src/app/qml-qt5/HttpAuthenticationDialog.qml:80
@@ -370,6 +371,7 @@ msgstr "अनुमति दिनुहोस्"
 #: src/app/qml-qt6/CertificateVerificationDialog.qml:46
 #: src/app/qml-qt6/ColorSelectDialog.qml:84
 #: src/app/qml-qt6/ConfirmDialog.qml:41
+#: src/app/qml-qt6/ContextMenuMobile.qml:143
 #: src/app/qml-qt6/DownloadDelegate.qml:270
 #: src/app/qml-qt6/EditCustomUserAgentDialog.qml:69
 #: src/app/qml-qt6/HttpAuthenticationDialog.qml:80
@@ -378,16 +380,14 @@ msgstr "अनुमति दिनुहोस्"
 #: src/app/qml-qt6/ZoomControls.qml:235
 #: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:182
 #: src/app/webbrowser/qml-qt5/ContentDownloadDialog.qml:114
-#: src/app/webbrowser/qml-qt5/ContextMenuMobile.qml:143
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:458
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:574
 #: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:182
 #: src/app/webbrowser/qml-qt6/ContentDownloadDialog.qml:114
-#: src/app/webbrowser/qml-qt6/ContextMenuMobile.qml:143
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:480
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:596
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:179
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:374
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:392
 #: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:96
 #: src/app/webcontainer/qml-qt5/ContextMenuMobile.qml:143
 #: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:286
@@ -504,20 +504,20 @@ msgid "JavaScript Confirmation"
 msgstr "जाबास्क्रिप्ट निश्चित"
 
 #: src/app/qml-qt5/ContentExportDialog.qml:79
-#: src/app/qml-qt6/ContentExportDialog.qml:87
+#: src/app/qml-qt6/ContentExportDialog.qml:79
 #, fuzzy
 #| msgid "Open tabs"
 msgid "Open with"
 msgstr "खुल्ला ट्याबहरू"
 
 #: src/app/qml-qt5/ContentExportDialog.qml:80
-#: src/app/qml-qt6/ContentExportDialog.qml:88
+#: src/app/qml-qt6/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
 msgstr ""
 
 #: src/app/qml-qt5/ContentExportDialog.qml:91
-#: src/app/qml-qt6/ContentExportDialog.qml:99
+#: src/app/qml-qt6/ContentExportDialog.qml:91
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:196
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:120
 #: src/app/webcontainer/qml-qt5/AccountErrorScreen.qml:50
@@ -526,14 +526,14 @@ msgid "Close"
 msgstr "बन्दगर्नुहोस्"
 
 #: src/app/qml-qt5/ContentExportDialog.qml:100
-#: src/app/qml-qt6/ContentExportDialog.qml:108
+#: src/app/qml-qt6/ContentExportDialog.qml:100
 #, fuzzy
 #| msgid "Open link in default browser"
 msgid "Open link in browser"
 msgstr "पूर्व निर्धारित ब्राउजरमा लिङ्क खोल्नुहोस्"
 
 #: src/app/qml-qt5/ContentExportDialog.qml:109
-#: src/app/qml-qt6/ContentExportDialog.qml:117
+#: src/app/qml-qt6/ContentExportDialog.qml:109
 #, fuzzy
 #| msgid "Open link in default browser"
 msgid "Open file in browser"
@@ -770,7 +770,7 @@ msgstr ""
 
 #: src/app/qml-qt5/DownloadsPage.qml:46 src/app/qml-qt6/DownloadsPage.qml:46
 #: src/app/webbrowser/qml-qt5/Browser.qml:850
-#: src/app/webbrowser/qml-qt6/Browser.qml:850
+#: src/app/webbrowser/qml-qt6/Browser.qml:869
 #: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:137
 #: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:137
 msgid "Downloads"
@@ -1038,7 +1038,7 @@ msgstr ""
 
 #: src/app/qml-qt5/WebViewImpl.qml:702 src/app/qml-qt6/WebViewImpl.qml:756
 #: src/app/webbrowser/qml-qt5/Browser.qml:897
-#: src/app/webbrowser/qml-qt6/Browser.qml:904
+#: src/app/webbrowser/qml-qt6/Browser.qml:923
 msgid "Zoom"
 msgstr ""
 
@@ -1155,10 +1155,10 @@ msgid "Save in"
 msgstr "यहाँ सङ्ग्रह गर्नुहोस्"
 
 #: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:96
-#: src/app/webbrowser/qml-qt5/BookmarksFoldersView.qml:133
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersView.qml:137
 #: src/app/webbrowser/qml-qt5/BookmarksFoldersViewWide.qml:105
 #: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:96
-#: src/app/webbrowser/qml-qt6/BookmarksFoldersView.qml:133
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersView.qml:137
 #: src/app/webbrowser/qml-qt6/BookmarksFoldersViewWide.qml:105
 msgid "All Bookmarks"
 msgstr "सबै पुस्तकचिनोहरू"
@@ -1175,12 +1175,12 @@ msgstr "नयाँ फोल्डर"
 msgid "Create new folder"
 msgstr "नयाँ फोल्डर बनाउनुहोस्"
 
-#: src/app/webbrowser/qml-qt5/BookmarksFoldersView.qml:191
+#: src/app/webbrowser/qml-qt5/BookmarksFoldersView.qml:195
 #: src/app/webbrowser/qml-qt5/BookmarksFoldersViewWide.qml:148
 #: src/app/webbrowser/qml-qt5/NewTabView.qml:252
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:90
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:486
-#: src/app/webbrowser/qml-qt6/BookmarksFoldersView.qml:191
+#: src/app/webbrowser/qml-qt6/BookmarksFoldersView.qml:195
 #: src/app/webbrowser/qml-qt6/BookmarksFoldersViewWide.qml:148
 #: src/app/webbrowser/qml-qt6/NewTabView.qml:251
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:90
@@ -1195,7 +1195,7 @@ msgstr "गृह पृष्ठ"
 #: src/app/webbrowser/qml-qt5/NewTabViewWide.qml:139
 #: src/app/webbrowser/qml-qt6/BookmarksView.qml:32
 #: src/app/webbrowser/qml-qt6/BookmarksViewWide.qml:32
-#: src/app/webbrowser/qml-qt6/Browser.qml:831
+#: src/app/webbrowser/qml-qt6/Browser.qml:850
 #: src/app/webbrowser/qml-qt6/NewTabView.qml:129
 #: src/app/webbrowser/qml-qt6/NewTabViewWide.qml:138
 msgid "Bookmarks"
@@ -1231,32 +1231,32 @@ msgid ""
 msgstr ""
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:660
-#: src/app/webbrowser/qml-qt6/Browser.qml:660
+#: src/app/webbrowser/qml-qt6/Browser.qml:679
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:105
 msgid "Done"
 msgstr "सम्पन्न भयो"
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:685
-#: src/app/webbrowser/qml-qt6/Browser.qml:685
+#: src/app/webbrowser/qml-qt6/Browser.qml:704
 #, fuzzy
 #| msgid "Close Tab"
 msgid "Reopen Tab"
 msgstr "ट्याब बन्द गर्नुहोस्"
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:811
-#: src/app/webbrowser/qml-qt6/Browser.qml:811
+#: src/app/webbrowser/qml-qt6/Browser.qml:830
 msgid "New window"
 msgstr ""
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:817
-#: src/app/webbrowser/qml-qt6/Browser.qml:817
+#: src/app/webbrowser/qml-qt6/Browser.qml:836
 msgid "New private window"
 msgstr ""
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:837
 #: src/app/webbrowser/qml-qt5/HistoryView.qml:31
 #: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:36
-#: src/app/webbrowser/qml-qt6/Browser.qml:837
+#: src/app/webbrowser/qml-qt6/Browser.qml:856
 #: src/app/webbrowser/qml-qt6/HistoryView.qml:30
 #: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:35
 msgid "History"
@@ -1264,24 +1264,24 @@ msgstr "इतिहास"
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:857
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:45
-#: src/app/webbrowser/qml-qt6/Browser.qml:857
+#: src/app/webbrowser/qml-qt6/Browser.qml:876
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:45
 msgid "Settings"
 msgstr "सेटिङ्"
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:863
-#: src/app/webbrowser/qml-qt6/Browser.qml:863
+#: src/app/webbrowser/qml-qt6/Browser.qml:882
 msgid "View source"
 msgstr ""
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:876
-#: src/app/webbrowser/qml-qt6/Browser.qml:876
+#: src/app/webbrowser/qml-qt6/Browser.qml:895
 msgid "Save / Print to PDF"
 msgstr ""
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:904
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:140
-#: src/app/webbrowser/qml-qt6/Browser.qml:911
+#: src/app/webbrowser/qml-qt6/Browser.qml:930
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:140
 msgid "Set Desktop mode"
 msgstr ""
@@ -1289,14 +1289,14 @@ msgstr ""
 #. TRANSLATORS: %1 refers to the current number of tabs opened
 #: src/app/webbrowser/qml-qt5/Browser.qml:1104
 #: src/app/webbrowser/qml-qt5/Browser.qml:1142
-#: src/app/webbrowser/qml-qt6/Browser.qml:1111
-#: src/app/webbrowser/qml-qt6/Browser.qml:1149
+#: src/app/webbrowser/qml-qt6/Browser.qml:1130
+#: src/app/webbrowser/qml-qt6/Browser.qml:1168
 #, qt-format
 msgid "(%1)"
 msgstr "(%1)"
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:1985
-#: src/app/webbrowser/qml-qt6/Browser.qml:1992
+#: src/app/webbrowser/qml-qt6/Browser.qml:2011
 #, fuzzy
 #| msgid ""
 #| "Choose an application to open this file or add it to the downloads folder."
@@ -1347,9 +1347,9 @@ msgid "All History"
 msgstr "सबै इतिहास"
 
 #: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:256
-#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:343
+#: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:349
 #: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:255
-#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:342
+#: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:348
 msgid "Today"
 msgstr "आज"
 
@@ -1650,6 +1650,7 @@ msgstr ""
 
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:239
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:79
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:429
 msgid "Widevine"
 msgstr ""
 
@@ -1714,51 +1715,60 @@ msgid ""
 "and movies from streaming services."
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:168
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:169
 msgid ""
 "Widevine is not licensed for use with Morph Browser. The plugin will be "
 "extracted from a proprietary package. Proceed only if you accept this risk."
 msgstr ""
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:175
+msgid "Warning!"
+msgstr ""
+
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:183
 msgid ""
 "Installing Widevine requires downloading about 150 MB of data. A stable "
 "Internet connection is required and the download may take some time."
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:201
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:192
+#, qt-format
+msgid "The file containing the Widevine plugin will be downloaded from %1."
+msgstr ""
+
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:219
 msgid "License agreement"
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:208
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:226
 msgid ""
 "The download is complete. Please read the following license agreement "
 "carefully before installing Widevine."
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:215
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:233
 msgid "Widevine license"
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:243
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:261
 #, fuzzy
 #| msgid "Download"
 msgid "Downloading"
 msgstr "डाउनलोड"
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:267
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:285
 msgid "Installing"
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:295
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:313
 msgid "Installation completed."
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:302
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:320
 msgid "Morph has to be restarted for the changes to take effect."
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:399
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:417
 msgid "Next"
 msgstr ""
 

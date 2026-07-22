@@ -164,6 +164,7 @@ Common.BrowserPage {
 
                 Label {
                     Layout.fillWidth: true
+                    horizontalAlignment: Text.AlignLeft
                     wrapMode: Text.WordWrap
                     text: i18n.tr("Widevine is not licensed for use with Morph Browser. The plugin will be extracted from a proprietary package. Proceed only if you accept this risk.")
                 }
@@ -171,8 +172,25 @@ Common.BrowserPage {
                 Label {
                     Layout.fillWidth: true
                     horizontalAlignment: Text.AlignLeft
+                    text: i18n.tr("Warning!")
+                    font.bold: true
+                }
+
+                Label {
+                    Layout.fillWidth: true
+                    horizontalAlignment: Text.AlignLeft
                     wrapMode: Text.WordWrap
                     text: i18n.tr("Installing Widevine requires downloading about 150 MB of data. A stable Internet connection is required and the download may take some time.")
+                }
+
+                Label {
+                    Layout.fillWidth: true
+                    horizontalAlignment: Text.AlignLeft
+                    wrapMode: Text.WordWrap
+                    text: {
+                        const url = new URL(WidevinePluginHelper.widevineUrlSource);
+                        return i18n.tr("The file containing the Widevine plugin will be downloaded from %1.").arg(url.hostname)
+                    }
                 }
             }
         }

@@ -23,8 +23,28 @@
 #include <QtCore/QDir>
 #include <QtCore/QString>
 #include <QtCore/QtGlobal>
+#include <QObject>
 
 #define REMOTE_INSPECTOR_PORT 9221
+
+#cmakedefine CONNECTIVITY_CHECK
+
+class Defines : public QObject
+{
+    Q_OBJECT
+    Q_PROPERTY(bool connectivityCheckEnabled READ connectivityCheckEnabled CONSTANT)
+
+private:
+
+    bool connectivityCheckEnabled() const
+    {
+#ifdef CONNECTIVITY_CHECK
+        return true;
+#else
+        return false;
+#endif // CONNECTIVITY_CHECK
+    }
+};
 
 inline bool isClick() {
 #if defined(CLICK_MODE)

@@ -19,6 +19,7 @@
 import QtQuick
 import QtQuick.Layouts
 import Lomiri.Components
+import Lomiri.Connectivity
 import Lomiri.DownloadManager 1.2
 import webbrowsercommon.private 0.1
 
@@ -190,6 +191,30 @@ Common.BrowserPage {
                     text: {
                         const url = new URL(WidevinePluginHelper.widevineUrlSource);
                         return i18n.tr("The file containing the Widevine plugin will be downloaded from %1.").arg(url.hostname)
+                    }
+                }
+
+                Label {
+                    visible: Defines.connectivityCheckEnabled && Connectivity.modemAvailable
+                    Layout.fillWidth: true
+                    horizontalAlignment: Text.AlignLeft
+                    text: i18n.tr("Warning!")
+                    font.bold: true
+                }
+
+                RowLayout {
+                    visible: Defines.connectivityCheckEnabled && Connectivity.modemAvailable
+
+                    Label {
+                        Layout.fillWidth: true
+                        horizontalAlignment: Text.AlignLeft
+                        wrapMode: Text.WordWrap
+                        text: i18n.tr("Download on any data connection (including mobile). Data charges may apply.")
+                    }
+
+                    Switch {
+                        id: allowToUseMobileDataCheckBox
+                        checked: false
                     }
                 }
             }
@@ -422,8 +447,7 @@ Common.BrowserPage {
     SingleDownload {
         id: downloadWidevineSrc
 
-        // FIXME: ask the user if they allow this
-        allowMobileDownload: true
+        allowMobileDownload: allowToUseMobileDataCheckBox.checked
         metadata: Metadata {
             showInIndicator: true
             title: i18n.tr("Widevine")

@@ -45,6 +45,7 @@ Build-Depends: apparmor:native,
                qml6-module-lomiri-components-extras,
                qml6-module-lomiri-downloadmanager,
                qml6-module-lomiri-test,
+               qml6-module-lomiri-connectivity,
                qt6-base-dev,
                qt6-svg-dev,
                qt6-5compat-dev,
@@ -165,6 +166,7 @@ Depends: ${misc:Depends},
          qml6-module-lomiri-thumbnailer,
          qml6-module-qtquick-templates,
          qml6-module-qtquick-controls2-suru,
+         qml6-module-lomiri-connectivity,
 Conflicts: webbrowser-app, morph-browser
 Provides: webbrowser-app
 Description: Web Browser for Ubuntu Touch (Qt 6 Version)

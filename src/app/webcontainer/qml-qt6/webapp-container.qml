@@ -205,7 +205,7 @@ BrowserWindow {
             var i;
             for (i = 0; i < customScripts.length; i++)
             {
-              var script = Qt.createQmlObject('import QtWebEngine 1.10; WebEngineScript {}', webappViewLoader);
+              var script = WebEngine.script();
               script.sourceUrl = customScripts[i];
               script.injectionPoint = WebEngineScript.DocumentCreation;
               script.worldId = WebEngineScript.MainWorld;
@@ -213,12 +213,7 @@ BrowserWindow {
               scripts.push(script);
             }
 
-            // global user scripts
-            for (i = 0; i < item.currentWebview.profile.userScripts.length; i++) {
-              scripts.push(item.currentWebview.profile.userScripts[i]);
-            }
-
-            item.currentWebview.profile.userScripts = scripts;
+            item.currentWebview.profile.userScripts.insert(scripts);
         }
     }
 

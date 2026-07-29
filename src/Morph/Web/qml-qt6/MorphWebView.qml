@@ -74,13 +74,27 @@ WebEngineView {
         return (request.type === JavaScriptDialogRequest.DialogTypePrompt && request.message==='XX-MORPH-SELECT-OVERRIDE-XX')
     }
 
-    Component.onCompleted: {
+    readonly property var selectOverrideScript: {
         var selectOverrideScript = WebEngine.script();
-        selectOverrideScript.sourceUrl = enableSelectOverride && (screenDiagonal > 0 && screenDiagonal < 190)  ? Qt.resolvedUrl("assets/select_overrides.js") : "";
+        selectOverrideScript.name = "select_overrides.js";
+        selectOverrideScript.sourceUrl = Qt.resolvedUrl("assets/select_overrides.js");
         selectOverrideScript.runsOnSubframes = true;
         selectOverrideScript.injectionPoint = WebEngineScript.DocumentCreation;
         selectOverrideScript.worldId = WebEngineScript.MainWorld;
-        userScripts.insert(selectOverrideScript);
+        return selectOverrideScript;
+    }
+
+    property bool wantSelectOverride: enableSelectOverride && (screenDiagonal > 0 && screenDiagonal < 190)
+    onWantSelectOverrideChanged: {
+        let containsSelectOverride = userScripts.contains(selectOverrideScript);
+
+        if (wantSelectOverride && !containsSelectOverride) {
+            userScripts.insert(selectOverrideScript);
+        } else if (!wantSelectOverride && containsSelectOverride) {
+            // XXX: I'm not sure how removing a userScript works for an
+            // already-loaded page.
+            userScripts.remove(selectOverrideScript);
+        }
     }
 
     Binding {

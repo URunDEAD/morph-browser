@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-23 01:16+0200\n"
-"PO-Revision-Date: 2023-10-17 05:51+0000\n"
-"Last-Translator: Império Linux <kevendoria86@gmail.com>\n"
+"PO-Revision-Date: 2026-07-30 09:01+0000\n"
+"Last-Translator: Diego Siqueira <diegopereirasiqueira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "lomiri/morph-browser/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.1\n"
+"X-Generator: Weblate 2026.8.dev0\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:3
@@ -49,30 +49,30 @@ msgstr "Nova Janela Privativa"
 
 #: src/app/widevine-plugin-helper.cpp:157
 msgid "Failed to get license. Please check the application logs for details"
-msgstr ""
+msgstr "Erro ao obter licença. Por favor, verifique os logs do aplicativo"
 
 #: src/app/widevine-plugin-helper.cpp:165
 msgid "Failed to copy files"
-msgstr ""
+msgstr "Erro ao copiar arquivos"
 
 #: src/app/widevine-plugin-helper.cpp:173
 msgid "Failed to delete files"
-msgstr ""
+msgstr "Erro ao deletar arquivos"
 
 #: src/app/widevine-plugin-helper.cpp:182
 msgid ""
 "Failed to extract widevine. Please check the application logs for details"
-msgstr ""
+msgstr "Erro ao extrair o widevine. Por favor, verifique os logs do aplicativo"
 
 #: src/app/widevine-plugin-helper.cpp:191
 msgid ""
 "Failed to install widevine. Please check the application logs for details"
-msgstr ""
+msgstr "Erro ao instalar o widevine. Por favor, verifique os logs do aplicativo"
 
 #: src/app/widevine-plugin-helper.cpp:200
 msgid ""
 "Failed to uninstall widevine. Please check the application logs for details"
-msgstr ""
+msgstr "Erro ao instalar o widevine. Por favor, verifique os logs do aplicativo"
 
 #: src/app/qml-qt5/actions/Back.qml:23 src/app/qml-qt6/actions/Back.qml:23
 msgid "Back"
@@ -514,7 +514,7 @@ msgstr "Abrir abas"
 #: src/app/qml-qt6/ContentExportDialog.qml:80
 #, qt-format
 msgid "File name: %1"
-msgstr ""
+msgstr "Nome do arquivo: %1"
 
 #: src/app/qml-qt5/ContentExportDialog.qml:91
 #: src/app/qml-qt6/ContentExportDialog.qml:91
@@ -643,7 +643,7 @@ msgstr "Permitido para acessar sua localização"
 #: src/app/qml-qt5/DomainSettingsPage.qml:231
 #: src/app/qml-qt6/DomainSettingsPage.qml:231
 msgid "Ask each time"
-msgstr ""
+msgstr "Sempre perguntar"
 
 #: src/app/qml-qt5/DomainSettingsPage.qml:231
 #: src/app/qml-qt6/DomainSettingsPage.qml:231
@@ -655,7 +655,7 @@ msgstr "Permitir"
 #: src/app/qml-qt5/DomainSettingsPage.qml:231
 #: src/app/qml-qt6/DomainSettingsPage.qml:231
 msgid "Denied"
-msgstr ""
+msgstr "Negado"
 
 #: src/app/qml-qt5/DomainSettingsPage.qml:245
 #: src/app/qml-qt6/DomainSettingsPage.qml:245
@@ -703,14 +703,12 @@ msgstr "Desconhecido"
 #: src/app/qml-qt6/DownloadDelegate.qml:206
 #, qt-format
 msgid "%1/s"
-msgstr ""
+msgstr "%1/s"
 
 #: src/app/qml-qt5/DownloadDelegate.qml:251
 #: src/app/qml-qt5/SimpleDownloadDelegate.qml:117
 #: src/app/qml-qt6/DownloadDelegate.qml:250
 #: src/app/qml-qt6/SimpleDownloadDelegate.qml:117
-#, fuzzy
-#| msgid "Delete"
 msgid "Delete File"
 msgstr "Excluir"
 
@@ -746,15 +744,13 @@ msgstr "Downloads"
 
 #: src/app/qml-qt5/DownloadsDialog.qml:106
 #: src/app/qml-qt6/DownloadsDialog.qml:106
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Cancelar"
+msgstr "Cancelado"
 
 #: src/app/qml-qt5/DownloadsDialog.qml:109
 #: src/app/qml-qt6/DownloadsDialog.qml:109
 msgid "Completed"
-msgstr ""
+msgstr "Completo"
 
 #: src/app/qml-qt5/DownloadsDialog.qml:169
 #: src/app/qml-qt6/DownloadsDialog.qml:169
@@ -768,7 +764,7 @@ msgstr "Limpar"
 #: src/app/qml-qt5/DownloadsDialog.qml:179
 #: src/app/qml-qt6/DownloadsDialog.qml:179
 msgid "View All"
-msgstr ""
+msgstr "Ver todos"
 
 #: src/app/qml-qt5/DownloadsPage.qml:46 src/app/qml-qt6/DownloadsPage.qml:46
 #: src/app/webbrowser/qml-qt5/Browser.qml:850
@@ -789,7 +785,7 @@ msgstr "Não há downloads disponíveis"
 #: src/app/qml-qt5/EditCustomUserAgentDialog.qml:42
 #: src/app/qml-qt6/EditCustomUserAgentDialog.qml:42
 msgid "this user agent name is already taken"
-msgstr ""
+msgstr "esse nome de usuário já está em uso"
 
 #: src/app/qml-qt5/EditCustomUserAgentDialog.qml:48
 #: src/app/qml-qt6/EditCustomUserAgentDialog.qml:48
@@ -1040,7 +1036,7 @@ msgstr "Salvar como PDF"
 #: src/app/qml-qt5/SimpleDownloadDelegate.qml:128
 #: src/app/qml-qt6/SimpleDownloadDelegate.qml:128
 msgid "Remove from List"
-msgstr ""
+msgstr "Remova da lista"
 
 #: src/app/qml-qt5/WebViewImpl.qml:702 src/app/qml-qt6/WebViewImpl.qml:756
 #: src/app/webbrowser/qml-qt5/Browser.qml:897
@@ -1121,10 +1117,8 @@ msgid "Save for domain"
 msgstr "Salvar em"
 
 #: src/app/qml-qt5/ZoomControls.qml:219 src/app/qml-qt6/ZoomControls.qml:217
-#, fuzzy
-#| msgid "Save as PDF"
 msgid "Save as default"
-msgstr "Salvar como PDF"
+msgstr "Salvar como padrão"
 
 #: src/app/webbrowser/qml-qt5/AddressBar.qml:287
 #: src/app/webbrowser/qml-qt6/AddressBar.qml:288
@@ -1601,10 +1595,8 @@ msgstr "Limpar cache?"
 
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:516
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:538
-#, fuzzy
-#| msgid "Custom URL schemes"
 msgid "Custom homepage"
-msgstr "Esquemas de URL persolnalizadas"
+msgstr "Página inicial personalizada"
 
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:601
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:623

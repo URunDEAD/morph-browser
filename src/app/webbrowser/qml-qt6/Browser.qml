@@ -1704,7 +1704,7 @@ Common.BrowserView {
 
     // Ctrl+Tab or Ctrl+PageDown: cycle through open tabs
     Shortcut {
-        sequence: StandardKey.NextChild
+        sequences: [ StandardKey.NextChild ]
         enabled: contentsContainer.visible || recentView.visible
         onActivated: internal.switchToNextTab()
     }
@@ -1716,7 +1716,7 @@ Common.BrowserView {
 
     // Ctrl+Shift+Tab or Ctrl+PageUp: cycle through open tabs in reverse order
     Shortcut {
-        sequence: StandardKey.PreviousChild
+        sequences: [ StandardKey.PreviousChild ]
         enabled: contentsContainer.visible || recentView.visible
         onActivated: internal.switchToPreviousTab()
     }
@@ -1733,7 +1733,7 @@ Common.BrowserView {
 
     // Ctrl+W or Ctrl+F4: Close the current tab
     Shortcut {
-        sequence: StandardKey.Close
+        sequences: [ StandardKey.Close ]
         enabled: contentsContainer.visible || recentView.visible
         onActivated: internal.closeCurrentTab()
     }
@@ -1818,14 +1818,14 @@ Common.BrowserView {
 
     // Alt+← or Backspace: Goes to the previous page in history
     Shortcut {
-        sequence: StandardKey.Back
+        sequences: [ StandardKey.Back ]
         enabled: contentsContainer.visible
         onActivated: internal.historyGoBack()
     }
 
     // Alt+→ or Shift+Backspace: Goes to the next page in history
     Shortcut {
-        sequence: StandardKey.Forward
+        sequences: [ StandardKey.Forward ]
         enabled: contentsContainer.visible
         onActivated: internal.historyGoForward()
     }
@@ -1844,7 +1844,7 @@ Common.BrowserView {
 
     // Ctrl+F: Find in Page
     Shortcut {
-        sequence: StandardKey.Find
+        sequences: [ StandardKey.Find ]
         enabled: contentsContainer.visible && !newTabViewLoader.active
         onActivated: chrome.findInPageMode = true
     }
@@ -1860,21 +1860,21 @@ Common.BrowserView {
 
     // Ctrl+G: Find next
     Shortcut {
-        sequence: StandardKey.FindNext
+        sequences: [ StandardKey.FindNext ]
         enabled: currentWebview && chrome.findInPageMode
         onActivated: currentWebview.findController.next()
     }
 
     // Ctrl+Shift+G: Find previous
     Shortcut {
-        sequence: StandardKey.FindPrevious
+        sequences: [ StandardKey.FindPrevious ]
         enabled: currentWebview && chrome.findInPageMode
         onActivated: currentWebview.findController.previous()
     }
 
     // Ctrl+Plus: zoom in
     Shortcut {
-        sequence: StandardKey.ZoomIn
+        sequences: [ StandardKey.ZoomIn ]
         enabled: currentWebview
         onActivated: currentWebview.zoomController.zoomIn()
     }
@@ -1888,7 +1888,7 @@ Common.BrowserView {
 
     // Ctrl+Minus: zoom out
     Shortcut {
-        sequence: StandardKey.ZoomOut
+        sequences: [ StandardKey.ZoomOut ]
         enabled: currentWebview
         onActivated: currentWebview.zoomController.zoomOut()
     }

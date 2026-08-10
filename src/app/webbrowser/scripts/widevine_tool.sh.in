@@ -46,6 +46,7 @@ $<$<STREQUAL:@WIDEVINE_ARCH@,aarch64>:
 elif [ "$1" = "clean" ]; then
     cleanup
 elif [ "$1" = "install" ]; then
+    rm -rf "$XDG_DATA_HOME/morph-browser/WidevineCdm"
     mv "$WIDEVINE_FILES_DIR/WidevineCdm" "$XDG_DATA_HOME/morph-browser/WidevineCdm"
     cleanup
 elif [ "$1" = "uninstall" ]; then

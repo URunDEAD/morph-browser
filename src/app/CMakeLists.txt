@@ -24,6 +24,7 @@ set(COMMONLIB_SRC
     single-instance-manager.cpp
     url-utils.cpp
     widevine-plugin-helper.cpp
+    ${CMAKE_CURRENT_BINARY_DIR}/config.h
 )
 
 add_library(${COMMONLIB} STATIC ${COMMONLIB_SRC})

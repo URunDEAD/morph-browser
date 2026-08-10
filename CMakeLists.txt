@@ -9,6 +9,7 @@ find_package(Gettext REQUIRED)
 option(CLICK_MODE "Build as a click package" off)
 option(WERROR "Enable -Werror" off)
 option(ENABLE_QT6 "Enable building with Qt6" OFF)
+option(CONNECTIVITY_CHECK "Enable checking device has modem or not (needs lomiri-indicator-network)" ON)
 
 if (ENABLE_QT6)
     set(QT_VERSION_MAJOR 6)

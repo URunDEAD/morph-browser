@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 01:16+0200\n"
+"POT-Creation-Date: 2026-08-13 17:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -377,7 +377,7 @@ msgstr ""
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:480
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:596
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:179
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:392
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:417
 #: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:96
 #: src/app/webcontainer/qml-qt5/ContextMenuMobile.qml:143
 #: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:286
@@ -504,7 +504,7 @@ msgstr ""
 #: src/app/qml-qt5/ContentExportDialog.qml:91
 #: src/app/qml-qt6/ContentExportDialog.qml:91
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:196
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:120
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:121
 #: src/app/webcontainer/qml-qt5/AccountErrorScreen.qml:50
 #: src/app/webcontainer/qml-qt6/AccountErrorScreen.qml:50
 msgid "Close"
@@ -1171,7 +1171,7 @@ msgstr ""
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:660
 #: src/app/webbrowser/qml-qt6/Browser.qml:679
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:105
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:106
 msgid "Done"
 msgstr ""
 
@@ -1561,7 +1561,7 @@ msgstr ""
 
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:239
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:79
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:429
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:453
 msgid "Widevine"
 msgstr ""
 
@@ -1602,80 +1602,86 @@ msgstr ""
 msgid "Uninstalling failed."
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:34
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:35
 msgid "Widevine install wizard"
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:48
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:49
 msgid "Continue"
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:75
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:76
 msgid "Agree"
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:155
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:156
 msgid "Install Widevine"
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:162
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:163
 msgid ""
 "Widevine is a plugin that lets you play DRM-protected content, such as music "
 "and movies from streaming services."
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:169
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:170
 msgid ""
 "Widevine is not licensed for use with Morph Browser. The plugin will be "
 "extracted from a proprietary package. Proceed only if you accept this risk."
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:175
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:176
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:201
 msgid "Warning!"
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:183
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:184
 msgid ""
 "Installing Widevine requires downloading about 150 MB of data. A stable "
 "Internet connection is required and the download may take some time."
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:192
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:193
 #, qt-format
 msgid "The file containing the Widevine plugin will be downloaded from %1."
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:219
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:212
+msgid ""
+"Download on any data connection (including mobile). Data charges may apply."
+msgstr ""
+
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:244
 msgid "License agreement"
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:226
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:251
 msgid ""
 "The download is complete. Please read the following license agreement "
 "carefully before installing Widevine."
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:233
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:258
 msgid "Widevine license"
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:261
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:286
 msgid "Downloading"
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:285
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:310
 msgid "Installing"
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:313
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:338
 msgid "Installation completed."
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:320
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:345
 msgid "Morph has to be restarted for the changes to take effect."
 msgstr ""
 
-#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:417
+#: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:442
 msgid "Next"
 msgstr ""
 

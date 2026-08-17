@@ -40,6 +40,7 @@ WebEngineProfile {
     maxCacheSizeHint: cacheSizeHint
 
     userAgent: (customUserAgent !== "") ? customUserAgent : defaultUserAgent
+    httpAcceptLanguage: Qt.locale().uiLanguages.join(",")
 
     persistentCookiesPolicy: WebEngineProfile.ForcePersistentCookies
 

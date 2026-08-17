@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-13 17:30+0200\n"
-"PO-Revision-Date: 2026-06-13 15:42+0000\n"
+"PO-Revision-Date: 2026-08-21 09:39+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/et/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.7.dev0\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:3
@@ -50,29 +50,36 @@ msgstr "Uus privaatne aken"
 #: src/app/widevine-plugin-helper.cpp:157
 msgid "Failed to get license. Please check the application logs for details"
 msgstr ""
+"Litsentsi tuvastamine ei õnnestunud. Täpsemat teavet leiad rakenduse logidest"
 
 #: src/app/widevine-plugin-helper.cpp:165
 msgid "Failed to copy files"
-msgstr ""
+msgstr "Failide kopeerimine ei õnnestunud"
 
 #: src/app/widevine-plugin-helper.cpp:173
 msgid "Failed to delete files"
-msgstr ""
+msgstr "Failide kustutamine ei õnnestunud"
 
 #: src/app/widevine-plugin-helper.cpp:182
 msgid ""
 "Failed to extract widevine. Please check the application logs for details"
 msgstr ""
+"Widevine'i teegi lahtipakkimine ei õnnestunud. Täpsemat teavet leiad "
+"rakenduse logidest"
 
 #: src/app/widevine-plugin-helper.cpp:191
 msgid ""
 "Failed to install widevine. Please check the application logs for details"
 msgstr ""
+"Widevine'i paigaldamine ei õnnestunud. Täpsemat teavet leiad rakenduse "
+"logidest"
 
 #: src/app/widevine-plugin-helper.cpp:200
 msgid ""
 "Failed to uninstall widevine. Please check the application logs for details"
 msgstr ""
+"Widevine'i eemaldamine ei õnnestunud. Täpsemat teavet leiad rakenduse "
+"logidest"
 
 #: src/app/qml-qt5/actions/Back.qml:23 src/app/qml-qt6/actions/Back.qml:23
 msgid "Back"
@@ -1379,18 +1386,20 @@ msgstr "Selles veebisaidis on ebaturvalist sisu"
 #: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:71
 #: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:71
 msgid "Identity Not Verified"
-msgstr ""
+msgstr "Identiteet pole kinnitatud"
 
 #: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:79
 #: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:79
 msgid "The identity of this website has not been verified."
-msgstr ""
+msgstr "Selle veebisaidi identiteet pole kinnitatud."
 
 #: src/app/webbrowser/qml-qt5/SecurityCertificatePopover.qml:109
 #: src/app/webbrowser/qml-qt6/SecurityCertificatePopover.qml:109
 #, qt-format
 msgid "You are connected to %1 via HTTPS. The certificate is valid."
 msgstr ""
+"Vaatad %1 saiti kasutades HTTPS-protokolli. Kasutatav sertifikaat on "
+"korrektne."
 
 #: src/app/webbrowser/qml-qt5/SettingsDeviceSelector.qml:42
 #: src/app/webbrowser/qml-qt6/SettingsDeviceSelector.qml:42
@@ -1419,7 +1428,7 @@ msgstr "Käivitamisel taasta eelmine sessioon"
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:120
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:120
 msgid "not available because of startup in private mode"
-msgstr ""
+msgstr "pole saadaval, sest rakendus on käivitatud privaatses režiimis"
 
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:159
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:159
@@ -1584,25 +1593,25 @@ msgstr "Eemalda"
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:238
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:32
 msgid "Plugins"
-msgstr ""
+msgstr "Lisamoodulid"
 
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:239
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:79
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:453
 msgid "Widevine"
-msgstr ""
+msgstr "Widevine"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:81
 msgid "DRM content"
-msgstr ""
+msgstr "DRM-iga kaitstud sisu"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:82
 msgid "Widevine package is not available for this architecture"
-msgstr ""
+msgstr "Selle arhitektuuri jaoks ei leidu Widevine'i paketti"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:142
 msgid "Need to reload the app for changes to take effect."
-msgstr ""
+msgstr "Muudatuste jõustumiseks palun käivita rakendus uuesti."
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:145
 msgid "Close app now"
@@ -1611,86 +1620,97 @@ msgstr "Sulge nüüd rakendus"
 #. TRANSLATORS: Later is in response to "Close the app now"
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:152
 msgid "Later"
-msgstr ""
+msgstr "Hiljem"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:166
 msgid "Uninstall Widevine"
-msgstr ""
+msgstr "Eemalda Widevine"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:167
 msgid "Are you sure you want to uninstall the plugin?"
-msgstr ""
+msgstr "Kas oled kindel, et soovid selle lisamooduli eemaldada?"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:170
 msgid "Uninstall"
-msgstr ""
+msgstr "Eemalda"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:193
 msgid "Uninstalling failed."
-msgstr ""
+msgstr "Eemaldamine ei õnnestunud."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:35
 msgid "Widevine install wizard"
-msgstr ""
+msgstr "Widevine'i paigalduse viisard"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:49
 msgid "Continue"
-msgstr ""
+msgstr "Jätka"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:76
 msgid "Agree"
-msgstr ""
+msgstr "Nõustun"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:156
 msgid "Install Widevine"
-msgstr ""
+msgstr "Paigalda Widevine"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:163
 msgid ""
 "Widevine is a plugin that lets you play DRM-protected content, such as music "
 "and movies from streaming services."
 msgstr ""
+"Widevine on lisamoodul, mis lubab voogedastusteenustest esitada DRM-iga "
+"kaitstud sisu, nagu muusikat või filme."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:170
 msgid ""
 "Widevine is not licensed for use with Morph Browser. The plugin will be "
 "extracted from a proprietary package. Proceed only if you accept this risk."
 msgstr ""
+"Widevine pole Morph brauseris kasutamiseks litsentseeritud. Lisamoodul "
+"paigaldatakse suletud/omanduslikust paketist. Jätka vaid siis, kui oled "
+"selle riskiga nõus."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:176
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:201
 msgid "Warning!"
-msgstr ""
+msgstr "Hoiatus!"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:184
 msgid ""
 "Installing Widevine requires downloading about 150 MB of data. A stable "
 "Internet connection is required and the download may take some time."
 msgstr ""
+"Widevine'i paigaldamine eeldab umbes 150 MB andmete allalaadimist. See vajab "
+"toimivat internetiühendust ja võib kuluda natuke aega."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:193
 #, qt-format
 msgid "The file containing the Widevine plugin will be downloaded from %1."
-msgstr ""
+msgstr "Widevine'i lisamooduliga fail laaditakse alla teenusest %1."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:212
 msgid ""
 "Download on any data connection (including mobile). Data charges may apply."
 msgstr ""
+"Laadi alla ükspuha missuguse võrguühendusega (sh mobiilne andmeside). "
+"Sellega võivad kaasneda teenustasud."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:244
 msgid "License agreement"
-msgstr ""
+msgstr "Litsentsileping"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:251
 msgid ""
 "The download is complete. Please read the following license agreement "
 "carefully before installing Widevine."
 msgstr ""
+"Allalaadimine on lõppenud. Enne Widevine'i paigaldamist palun loe läbi "
+"järgnev litsentsileping."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:258
 msgid "Widevine license"
-msgstr ""
+msgstr "Widevine'i litsents"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:286
 msgid "Downloading"
@@ -1698,19 +1718,19 @@ msgstr "Allalaadimisel"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:310
 msgid "Installing"
-msgstr ""
+msgstr "Paigaldan"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:338
 msgid "Installation completed."
-msgstr ""
+msgstr "Paigaldamine on lõppenud."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:345
 msgid "Morph has to be restarted for the changes to take effect."
-msgstr ""
+msgstr "Muudatuste jõustumiseks palun käivita Morph uuesti."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:442
 msgid "Next"
-msgstr ""
+msgstr "Edasi"
 
 #: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:62
 #: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:62

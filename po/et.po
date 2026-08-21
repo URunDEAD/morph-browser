@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-13 17:30+0200\n"
-"PO-Revision-Date: 2026-08-21 09:39+0000\n"
+"PO-Revision-Date: 2026-08-22 15:23+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/et/>\n"
@@ -1186,7 +1186,7 @@ msgstr "Blokeeritud domeen"
 #: src/app/webcontainer/qml-qt6/WebViewImplOxide.qml:303
 #, qt-format
 msgid "Blocked navigation request to domain %1."
-msgstr ""
+msgstr "Ligipääs „%1“ domeenile on blokeeritud."
 
 #: src/app/webbrowser/qml-qt5/Browser.qml:269
 #: src/app/webbrowser/qml-qt6/Browser.qml:269
@@ -1339,6 +1339,9 @@ msgid ""
 "Pages that you view in this tab won't appear in your browser history.\n"
 "Bookmarks you create will be preserved, however."
 msgstr ""
+"Selles vahekaardis vaadatavate lehtede ajalugu ei jäädvustu veebibrauseri "
+"ajaloos.\n"
+"Kui peaksid lisama järjehoidjaid, siis need jäävad alles tavapärasel viisil."
 
 #: src/app/webbrowser/qml-qt5/NewTabView.qml:142
 #: src/app/webbrowser/qml-qt6/NewTabView.qml:141
@@ -1738,6 +1741,8 @@ msgid ""
 "No accounts have been linked to this webapp; press the item below to add an "
 "account."
 msgstr ""
+"Ükski kasutajakonto pole selle veebirakendusega seotud. Konto lisamiseks "
+"klõpsa järgnevat valikut."
 
 #: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:78
 #: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:78
@@ -1760,6 +1765,8 @@ msgid ""
 "Account window could not be opened. You can only create one account at a "
 "time; please try again after closing all other account windows."
 msgstr ""
+"Kasutajakonto akna avamine ei õnnestu. Korraga saad lisada vaid ühte "
+"kasutajakontot. Palun sulge muud sarnased aknad ja proovi uuesti."
 
 #: src/app/webcontainer/qml-qt5/AccountsLogic.qml:214
 #: src/app/webcontainer/qml-qt6/AccountsLogic.qml:214
@@ -1771,14 +1778,14 @@ msgstr "Autentimine ei õnnestunud"
 #: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:45
 #, qt-format
 msgid "<b>%1</b> needs to access your %2 online account."
-msgstr ""
+msgstr "<b>%1</b> vajab ligipääsu sinu kasutajakontole teenuses %2."
 
 #. TRANSLATORS: %1 refers to the application name, %2 refers to the account provider
 #: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:55
 #: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:55
 #, qt-format
 msgid "<b>%1</b> would like to access your %2 online account."
-msgstr ""
+msgstr "<b>%1</b> soovib ligipääsu sinu kasutajakontole teenuses %2."
 
 #: src/app/webcontainer/qml-qt5/AccountsSplashScreen.qml:64
 #: src/app/webcontainer/qml-qt6/AccountsSplashScreen.qml:64

@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-13 17:30+0200\n"
-"PO-Revision-Date: 2026-03-02 15:09+0000\n"
-"Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
+"PO-Revision-Date: 2026-08-22 15:23+0000\n"
+"Last-Translator: Alagirisamy Rengaraj <radhaalagirisamy@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/ta/>\n"
 "Language: ta\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16.1-dev\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:3
@@ -50,29 +50,34 @@ msgstr "புதிய தனியார் சாளரம்"
 #: src/app/widevine-plugin-helper.cpp:157
 msgid "Failed to get license. Please check the application logs for details"
 msgstr ""
+"உரிமம் பெற தவறியது.விவரங்களுக்கு தயவு செய்து செயலிகள் லாக்கை சரிபார்க்கவும்"
 
 #: src/app/widevine-plugin-helper.cpp:165
 msgid "Failed to copy files"
-msgstr ""
+msgstr "கோப்புக்களை நகலெடுக்க தவறியது"
 
 #: src/app/widevine-plugin-helper.cpp:173
 msgid "Failed to delete files"
-msgstr ""
+msgstr "கோப்புக்களை நீக்கத் தவறியது"
 
 #: src/app/widevine-plugin-helper.cpp:182
 msgid ""
 "Failed to extract widevine. Please check the application logs for details"
 msgstr ""
+"ஒய்டுவைன் ஐ பிரித்தெடுத்தல் தோல்வியுற்றது.விவரங்களுக்கு தயவு செய்து செயலிகள் லாக்கை "
+"சரிபார்க்கவும்"
 
 #: src/app/widevine-plugin-helper.cpp:191
 msgid ""
 "Failed to install widevine. Please check the application logs for details"
 msgstr ""
+"ஒய்டுவைன் நிறுவுதல் தோல்வியுற்றது.விவரங்களுக்கு தயவு செய்து செயலிகள் லாக்கை சரிபார்க்கவும்"
 
 #: src/app/widevine-plugin-helper.cpp:200
 msgid ""
 "Failed to uninstall widevine. Please check the application logs for details"
 msgstr ""
+"ஒய்டுவைன் நிறுவல்நீக்கம் தோல்வியுற்றது.விவரங்களுக்கு தயவு செய்து செயலிகள் லாக்கை சரிபார்க்கவும்"
 
 #: src/app/qml-qt5/actions/Back.qml:23 src/app/qml-qt6/actions/Back.qml:23
 msgid "Back"
@@ -1595,137 +1600,142 @@ msgstr "அகற்று"
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:238
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:32
 msgid "Plugins"
-msgstr ""
+msgstr "சொருகு நிரல்"
 
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:239
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:79
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:453
 msgid "Widevine"
-msgstr ""
+msgstr "ஒய்டுவைன்"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:81
 msgid "DRM content"
-msgstr ""
+msgstr "இலக்கமுறை உரிமைகள் மேலாண்மை உள்ளடக்கம்"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:82
 msgid "Widevine package is not available for this architecture"
-msgstr ""
+msgstr "இந்த கட்டமைப்பிற்கு ஒய்டுவைன் தொகுப்பு கையிருப்பு இல்லை"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:142
 msgid "Need to reload the app for changes to take effect."
-msgstr ""
+msgstr "மாற்றங்கள் செயல்பாட்டிற்கு வருவதற்கு செயலி மீளேற்றம் தேவை."
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:145
-#, fuzzy
-#| msgid "Close the app"
 msgid "Close app now"
-msgstr "பயன்பாட்டை மூடு"
+msgstr "இப்பொழுது செயலியை மூடு"
 
 #. TRANSLATORS: Later is in response to "Close the app now"
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:152
 msgid "Later"
-msgstr ""
+msgstr "பின்னர்"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:166
 msgid "Uninstall Widevine"
-msgstr ""
+msgstr "ஒய்டுவைன் நிறுவல்நீக்கு"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:167
 msgid "Are you sure you want to uninstall the plugin?"
-msgstr ""
+msgstr "சொருகு நிரல் ஐ நிறுவல் நீக்க நீங்கள்உறுதியாக வேண்டுகிறீர்களா?"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:170
 msgid "Uninstall"
-msgstr ""
+msgstr "நிறுவல் நீக்கு"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:193
 msgid "Uninstalling failed."
-msgstr ""
+msgstr "நிறுவல் நீக்கம் தோல்வியுற்றது."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:35
 msgid "Widevine install wizard"
-msgstr ""
+msgstr "ஒய்டுவைன் நிறுவல் வழிகாட்டி"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:49
 msgid "Continue"
-msgstr ""
+msgstr "தொடர்க"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:76
 msgid "Agree"
-msgstr ""
+msgstr "ஏற்றுக்கொள்"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:156
 msgid "Install Widevine"
-msgstr ""
+msgstr "ஒய்டுவைன் நிறுவு"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:163
 msgid ""
 "Widevine is a plugin that lets you play DRM-protected content, such as music "
 "and movies from streaming services."
 msgstr ""
+"-ஒய்டுவைன் என்ற சொருகு நிரல், இலக்க உரிமைகள் மேலாண்மையால் பாதுகாக்கப்பட்ட உள்ளடக்கத்தை -இசை "
+"மற்றும் இணையவழி சேவையிலிருந்து திரைப்படங்கள் ஆகியவற்றை இயக்க அனுமதிக்கிறது."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:170
 msgid ""
 "Widevine is not licensed for use with Morph Browser. The plugin will be "
 "extracted from a proprietary package. Proceed only if you accept this risk."
 msgstr ""
+"மார்ப் உலாவியுடன் இயக்க ஒய்டுவைன் க்கு உரிமம் வழங்கப்படவில்லை.தனிஉரிமை பொதியிலிருந்து "
+"சொருகு நிரல் பிரித்தெடுக்கப்படும்."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:176
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:201
 msgid "Warning!"
-msgstr ""
+msgstr "எச்சரிக்கை!"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:184
 msgid ""
 "Installing Widevine requires downloading about 150 MB of data. A stable "
 "Internet connection is required and the download may take some time."
 msgstr ""
+"ஒய்டுவைன் நிறுவ 150 மெகா பைட் அளவுக்கு தரவு பதிவிறக்க வேண்டும்.நிலையான இணைய இணைப்பு "
+"தேவை மற்றும் பதிவிறக்க சிறிது நேரமாகலாம்."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:193
 #, qt-format
 msgid "The file containing the Widevine plugin will be downloaded from %1."
-msgstr ""
+msgstr "ஒய்டுவைன் சொருகுநிரல் கொண்டுள்ள கோப்பு%1 இல் இருந்து பதிவிறக்கப்படும்."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:212
 msgid ""
 "Download on any data connection (including mobile). Data charges may apply."
 msgstr ""
+"எந்த தரவு இணைப்பிலிருந்தும் (அலைபேசி உள்பட)பதிவிறக்கு.தரவுக்கட்டணம் பொருந்தலாம்."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:244
 msgid "License agreement"
-msgstr ""
+msgstr "உரிமை ஒப்பந்தம்"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:251
 msgid ""
 "The download is complete. Please read the following license agreement "
 "carefully before installing Widevine."
 msgstr ""
+"பதிவிறக்கம் முழுமையுற்றது.ஒய்டுவைன் நிறுவுமுன் தயவு செய்து பின்வரும் உரிமை ஒப்பந்தத்தை "
+"கவனமுடன் படிக்கவும்."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:258
 msgid "Widevine license"
-msgstr ""
+msgstr "ஒய்டுவைன் உரிமை"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:286
-#, fuzzy
-#| msgid "Download"
 msgid "Downloading"
-msgstr "பதிவிறக்கம்"
+msgstr "பதிவிறங்குகிறது"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:310
 msgid "Installing"
-msgstr ""
+msgstr "நிறுவுகிறது"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:338
 msgid "Installation completed."
-msgstr ""
+msgstr "நிறுவுதல் நிறைவுற்றது."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:345
 msgid "Morph has to be restarted for the changes to take effect."
-msgstr ""
+msgstr "மாற்றங்கள் செயலாக்க மார்ப் உலாவியை மீள்தொடங்கவேண்டும்."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:442
 msgid "Next"
-msgstr ""
+msgstr "அடுத்து"
 
 #: src/app/webcontainer/qml-qt5/AccountChooserDialog.qml:62
 #: src/app/webcontainer/qml-qt6/AccountChooserDialog.qml:62

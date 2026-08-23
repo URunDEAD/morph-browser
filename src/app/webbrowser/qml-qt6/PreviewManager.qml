@@ -26,7 +26,26 @@ import Morph.Web 0.1
 
 Item {
     property string capturesDir:  cacheLocation + "/captures"
+    // path -> page url, for captures currently being encoded/written on a
+    // background thread (see saveToDisk() below).
+    property var pendingSaves: ({})
     signal previewSaved(url pageUrl, url previewUrl)
+
+    Connections {
+        target: FileOperations
+        function onImageSaved(path, success) {
+            if (!(path in pendingSaves)) return
+            var pageUrl = pendingSaves[path]
+            delete pendingSaves[path]
+            var previewUrl = ""
+            if (success) {
+                previewUrl = Qt.resolvedUrl(path)
+            } else {
+                console.warn("Failed to save preview to disk for %1 (path is %2)".arg(pageUrl).arg(path))
+            }
+            previewSaved(pageUrl, previewUrl)
+        }
+    }
 
     LimitProxyModel {
         id: topSites
@@ -52,17 +71,17 @@ Item {
         return "%1/%2.png".arg(capturesDir).arg(Qt.md5(url))
     }
 
+    // Encoding a capture to PNG and writing it to disk is not cheap, so it's
+    // done off the GUI thread (FileOperations.saveImageAsync); completion is
+    // reported later via the imageSaved signal, handled above.
     function saveToDisk(data, url) {
         if (!FileOperations.exists(Qt.resolvedUrl(capturesDir))) {
             FileOperations.mkpath(Qt.resolvedUrl(capturesDir))
         }
 
         var filepath = previewPathFromUrl(url)
-        var previewUrl = ""
-        if (data.saveToFile(filepath)) previewUrl = Qt.resolvedUrl(filepath)
-        else console.warn("Failed to save preview to disk for %1 (path is %2)".arg(url).arg(filepath))
-
-        previewSaved(url, previewUrl)
+        pendingSaves[filepath] = url
+        FileOperations.saveImageAsync(data.image, filepath)
     }
 
 

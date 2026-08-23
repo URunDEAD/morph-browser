@@ -21,6 +21,7 @@
 #include <QtCore/QObject>
 #include <QtCore/QString>
 #include <QtCore/QTemporaryDir>
+#include <QtGui/QImage>
 #include <QtQml/QQmlEngine>
 #include <QtQml/QtQml>
 #include <QtQuickTest/QtQuickTest>
@@ -118,6 +119,10 @@ public:
     Q_INVOKABLE bool removeDirectory(const QString& path) {
         QDir dir(path);
         return dir.removeRecursively();
+    }
+
+    Q_INVOKABLE QImage createImage(int width, int height) {
+        return QImage(width, height, QImage::Format_ARGB32);
     }
 
 private:

@@ -38,15 +38,13 @@ Item {
 
     QtObject {
         id: grabResultMock
-        function saveToFile(path) {
-            TestContext.createFile(path);
-            return true
-        }
+        property var image: TestContext.createImage(4, 4)
     }
 
     QtObject {
         id: grabResultFailMock
-        function saveToFile(path) { return false }
+        // 0x0 is a null QImage, which fails to save
+        property var image: TestContext.createImage(0, 0)
     }
 
     LomiriTestCase {
@@ -98,8 +96,9 @@ Item {
             var file = Qt.resolvedUrl(PreviewManager.previewPathFromUrl(baseUrl))
 
             PreviewManager.saveToDisk(grabResultMock, baseUrl)
+            // The encode + write now happens on a background thread.
+            tryCompare(previewSavedSpy, "count", 1)
             verify(FileOperations.exists(file))
-            compare(previewSavedSpy.count, 1)
             compare(previewSavedSpy.signalArguments[0][0], baseUrl)
             compare(previewSavedSpy.signalArguments[0][1], file)
         }
@@ -110,8 +109,8 @@ Item {
 
             ignoreWarning("Failed to save preview to disk for %1 (path is %2)".arg(baseUrl).arg(path))
             PreviewManager.saveToDisk(grabResultFailMock, baseUrl)
+            tryCompare(previewSavedSpy, "count", 1)
             verify(!FileOperations.exists(file))
-            compare(previewSavedSpy.count, 1)
             compare(previewSavedSpy.signalArguments[0][0], baseUrl)
             compare(previewSavedSpy.signalArguments[0][1], "")
         }

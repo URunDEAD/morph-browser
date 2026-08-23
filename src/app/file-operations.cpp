@@ -23,9 +23,25 @@
 #include <QtCore/QFileInfo>
 #include <QtCore/QUrl>
 
+void ImageSaverWorker::save(const QImage& image, const QString& path)
+{
+    Q_EMIT saved(path, image.save(path));
+}
+
 FileOperations::FileOperations(QObject* parent)
     : QObject(parent)
+    , m_worker(new ImageSaverWorker)
 {
+    m_worker->moveToThread(&m_workerThread);
+    connect(&m_workerThread, &QThread::finished, m_worker, &QObject::deleteLater);
+    connect(m_worker, &ImageSaverWorker::saved, this, &FileOperations::imageSaved);
+    m_workerThread.start();
+}
+
+FileOperations::~FileOperations()
+{
+    m_workerThread.quit();
+    m_workerThread.wait();
 }
 
 QString FileOperations::baseName(const QString& path) const
@@ -64,4 +80,11 @@ QStringList FileOperations::filesInDirectory(const QUrl& directory,
 {
     return QDir(directory.toLocalFile()).entryList(filters,
                                                    QDir::Files, QDir::Unsorted);
+}
+
+void FileOperations::saveImageAsync(const QImage& image, const QString& path)
+{
+    QMetaObject::invokeMethod(m_worker, [worker = m_worker, image, path]() {
+        worker->save(image, path);
+    }, Qt::QueuedConnection);
 }

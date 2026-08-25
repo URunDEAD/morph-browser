@@ -42,10 +42,13 @@ FocusScope {
     property bool incognito
     readonly property bool empty: !url.toString() && !initialUrl.toString() && !request
     property bool loadingPreview: false
-    readonly property size previewSize: webview ? Qt.size(webview.width*Screen.devicePixelRatio,
-                                                webview.height*Screen.devicePixelRatio) : Qt.size(0,0)
-    readonly property size previewThumbnailSize: webview ? Qt.size(webview.width/1.5,
-                                                         webview.height/1.5) : Qt.size(0,0)
+    // Tab previews are only ever shown at small sizes (tab switcher tiles,
+    // new-tab-page thumbnails), so grabbing at full native/DPR resolution is
+    // wasted GPU readback work. A single, modestly-sized grab is plenty and
+    // is far cheaper on GPUs behind a translation layer (e.g. libhybris),
+    // where grabToImage()'s FBO render + readback is comparatively expensive.
+    readonly property size previewSize: webview ? Qt.size(webview.width/3,
+                                                webview.height/3) : Qt.size(0,0)
 
     visible: false
 
@@ -179,16 +182,14 @@ FocusScope {
             }
 
             internal.hiding = true
-            webview.grabToImage(function(result) {
-                visible = false
-                preview = result.url
-            },previewSize);
-
-            //save previews to disk for newtabpage and tab during grabbing
+            // Single grab: reuse the same capture for the in-memory preview
+            // and the on-disk thumbnail instead of grabbing the webview twice.
             webview.grabToImage(function(result) {
                 internal.hiding = false
+                visible = false
+                preview = result.url
                 PreviewManager.saveToDisk(result, url)
-            },previewThumbnailSize);
+            },previewSize);
         }
     }
 
@@ -200,11 +201,8 @@ FocusScope {
                 loadingPreview = true
                 webview.grabToImage(function(result) {
                     preview = result.url
-                },previewSize);
-
-                webview.grabToImage(function(result) {
                     PreviewManager.saveToDisk(result, url)
-                },previewThumbnailSize);
+                },previewSize);
             }
         }
     }

@@ -21,8 +21,23 @@
 
 #include <QtCore/QObject>
 #include <QtCore/QStringList>
+#include <QtCore/QThread>
+#include <QtGui/QImage>
 
 class QUrl;
+
+class ImageSaverWorker : public QObject
+{
+    Q_OBJECT
+
+public:
+    using QObject::QObject;
+
+    void save(const QImage& image, const QString& path);
+
+Q_SIGNALS:
+    void saved(const QString& path, bool success);
+};
 
 class FileOperations : public QObject
 {
@@ -30,6 +45,7 @@ class FileOperations : public QObject
 
 public:
     explicit FileOperations(QObject* parent=0);
+    ~FileOperations();
 
     Q_INVOKABLE QString baseName(const QString& path) const;
     Q_INVOKABLE QString extension(const QString& path) const;
@@ -39,6 +55,18 @@ public:
     Q_INVOKABLE bool mkpath(const QUrl& path) const;
     Q_INVOKABLE QStringList filesInDirectory(const QUrl& directory,
                                              const QStringList& filters) const;
+
+    // Encodes and writes the image on a background thread, so callers on the
+    // GUI thread (e.g. a tab-switch preview capture) are not blocked by
+    // PNG encoding + disk I/O. Emits imageSaved() once done.
+    Q_INVOKABLE void saveImageAsync(const QImage& image, const QString& path);
+
+Q_SIGNALS:
+    void imageSaved(const QString& path, bool success);
+
+private:
+    QThread m_workerThread;
+    ImageSaverWorker* m_worker;
 };
 
 #endif // __FILE_OPERATIONS_H__

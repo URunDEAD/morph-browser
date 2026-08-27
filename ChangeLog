@@ -1,6 +1,62 @@
+2026-08-27 Mike Gabriel
+
+        * Release 1.99.6 (HEAD -> main, tag: 1.99.6)
+        * Merge branch 'personal/klhio/send-accept-language' into 'main'
+          (09e8d9fa4)
+
+2026-08-17 Maciej Sopyło
+
+        * qml-qt6/MorphWebContext: set HTTP Accept-Langauge (96f58a840)
+
+2026-08-25 Marius Gripsgard
+
+        * Merge branch 'personal/mariogrip/tab-switch-preview-perf' into
+          'main' (955b83e91)
+
+2026-08-24 Marius Gripsgard
+
+        * Fix tab-switch jank: stop double-grabbing full-res previews on
+          every switch (2c5415f67)
+
+2026-08-24 Walter Garcia-Fontes
+
+        * Translated using Weblate (Catalan) (c8dc8c0de)
+
+2026-08-22 Alagirisamy Rengaraj
+
+        * Translated using Weblate (Tamil) (2e244e647)
+
+2026-08-21 Roker2 (Dmitry Minko)
+
+        * Translated using Weblate (Russian) (b0c8bd5de)
+
+2026-08-22 Heimen Stoffels
+
+        * Translated using Weblate (Dutch) (4b96b68b2)
+
+2026-08-21 Priit Jõerüüt
+
+        * Translated using Weblate (Estonian) (a78c9bf33)
+
+2026-08-20 Ida Brenna
+
+        * Translated using Weblate (Norwegian Bokmål) (6b616b6ea)
+
+2026-08-19 libermax
+
+        * Translated using Weblate (French) (3b538c786)
+
+2026-08-17 Priit Jõerüüt
+
+        * Translated using Weblate (Estonian) (a5dfdbafb)
+
+2026-08-19 Milan Korecky
+
+        * Translated using Weblate (Czech) (09782c8c7)
+
 2026-08-17 Mike Gabriel
 
-        * Release 1.99.5 (HEAD -> main, tag: 1.99.5)
+        * Release 1.99.5 (7c7cee966) (tag: 1.99.5)
 
 2026-08-13 Hosted Weblate
 

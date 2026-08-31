@@ -1,0 +1,9 @@
+Document: qml-module-morph-web-doc
+Title: QML Morph Web API
+Author: UBports.com
+Abstract: This document describes the QML Morph Web API
+Section: Programming/C++
+
+Format: HTML
+Index: /usr/share/doc/qml-module-morph-web/html/morph-web-qmlmodule.html
+Files: /usr/share/doc/qml-module-morph-web/html/*

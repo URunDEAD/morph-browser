@@ -1,0 +1,7 @@
+# W-I-P upstream
+morph-browser-qt6: no-manual-page [usr/bin/morph-browser]
+
+# Empty directories are intended at these locations.
+morph-browser-qt6: package-contains-empty-directory [usr/share/apparmor/hardware/audio.d/]
+morph-browser-qt6: package-contains-empty-directory [usr/share/apparmor/hardware/graphics.d/]
+morph-browser-qt6: package-contains-empty-directory [usr/share/apparmor/hardware/video.d/]

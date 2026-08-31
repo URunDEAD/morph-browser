@@ -1,0 +1,3 @@
+# W-I-P upstream
+morph-webapp-container-qt6: no-manual-page [usr/bin/morph-webapp-container-hook]
+morph-webapp-container-qt6: no-manual-page [usr/bin/morph-webapp-container]

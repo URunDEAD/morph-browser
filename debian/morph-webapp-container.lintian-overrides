@@ -1,1 +1,3 @@
-morph-webapp-container: binary-without-manpage usr/bin/webapp-container
+# W-I-P upstream
+morph-webapp-container: no-manual-page [usr/bin/morph-webapp-container-hook]
+morph-webapp-container: no-manual-page [usr/bin/morph-webapp-container]

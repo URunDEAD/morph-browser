@@ -1,142 +1,133 @@
 Source: morph-browser
-Section: x11
-Priority: optional
+Standards-Version: 4.7.4
 Maintainer: UBports Developers <developers@ubports.com>
-Build-Depends: apparmor:native,
-               apparmor-easyprof,
-               cmake,
-               debhelper-compat (= 12),
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           Marius Gripsgard <marius@debian.org>,
+Section: x11
+Build-Depends: debhelper-compat (= 13),
                dh-apparmor,
-               dh-migrations | hello,
-               libapparmor-dev,
-               libqt5sql5-sqlite,
+               dh-sequence-user-session-migration,
+               apparmor-easyprof,
                apparmor-easyprof-ubuntu,
+               cmake,
+               libapparmor-dev,
+               libpsl-dev,
+               libqt5sql5-sqlite,
+               libqt5svg5-dev,
                lsb-release,
-               pkg-config,
+               pkgconf,
                python3-all:any,
-               python3-flake8 (>= 2.2.2-1ubuntu4) | python3-flake8:native,
-               qml-module-qt-labs-folderlistmodel,
-               qml-module-qt-labs-settings,
-               qml-module-qtquick2 (>= 5.4),
-               qml-module-qtquick-controls2,
-               qml-module-qtquick-layouts,
-               qml-module-qtsysteminfo,
-               qml-module-qttest,
-               qml-module-qtwebengine,
-               qml-module-lomiri-components,
-               qml-module-lomiri-test,
-               qml-module-lomiri-components-extras,
-               qtbase5-dev (>= 5.4),
+               python3-flake8:native,
+               qml-module-lomiri-components <!nocheck>,
+               qml-module-lomiri-components-extras <!nocheck>,
+               qml-module-lomiri-test <!nocheck>,
+               qml-module-qt-labs-folderlistmodel <!nocheck>,
+               qml-module-qt-labs-settings <!nocheck>,
+               qml-module-qtquick-controls2 <!nocheck>,
+               qml-module-qtquick-layouts <!nocheck>,
+               qml-module-qtquick2 <!nocheck>,
+               qml-module-qtsysteminfo <!nocheck>,
+               qml-module-qttest <!nocheck>,
+               qml-module-qtwebengine <!nocheck>,
+               qml6-module-lomiri-components <!nocheck>,
+               qml6-module-lomiri-components-extras <!nocheck>,
+               qml6-module-lomiri-connectivity <!nocheck>,
+               qml6-module-lomiri-downloadmanager <!nocheck>,
+               qml6-module-lomiri-systeminfo <!nocheck>,
+               qml6-module-lomiri-test <!nocheck>,
+               qml6-module-qt-labs-folderlistmodel <!nocheck>,
+               qml6-module-qt-labs-settings <!nocheck>,
+               qml6-module-qtquick <!nocheck>,
+               qml6-module-qtquick-controls <!nocheck>,
+               qml6-module-qtquick-layouts <!nocheck>,
+               qml6-module-qttest <!nocheck>,
+               qml6-module-qtwebengine <!nocheck>,
+               qt6-5compat-dev,
+               qt6-base-dev,
+               qt6-declarative-dev,
+               qt6-documentation-tools | qdoc-qt6,
+               qt6-svg-dev,
+               qt6-tools-dev,
+               qt6-webengine-dev,
+               qtbase5-dev,
                qtbase5-dev-tools,
                qtdeclarative5-dev,
                qttools5-dev-tools,
                qtwebengine5-dev,
-               libqt5svg5-dev,
-               libpsl-dev,
-               qml6-module-qt-labs-folderlistmodel,
-               qml6-module-qt-labs-settings,
-               qml6-module-qtquick,
-               qml6-module-qtquick-controls,
-               qml6-module-qtquick-layouts,
-               qml6-module-lomiri-systeminfo,
-               qml6-module-qttest,
-               qml6-module-qtwebengine,
-               qml6-module-lomiri-components,
-               qml6-module-lomiri-components-extras,
-               qml6-module-lomiri-downloadmanager,
-               qml6-module-lomiri-test,
-               qml6-module-lomiri-connectivity,
-               qt6-base-dev,
-               qt6-svg-dev,
-               qt6-5compat-dev,
-               qt6-declarative-dev,
-               qt6-tools-dev,
-               qt6-webengine-dev,
-               qt6-documentation-tools | qdoc-qt6,
-               xauth,
-               xvfb,
-Standards-Version: 3.9.7
-Homepage: https://gitlab.com/ubports/development/core/morph-browser
+               xauth <!nocheck>,
+               xvfb <!nocheck>,
 Vcs-Browser: https://gitlab.com/ubports/development/core/morph-browser
 Vcs-Git: https://gitlab.com/ubports/development/core/morph-browser.git
-XS-Testsuite: autopkgtest
+Homepage: https://gitlab.com/ubports/development/core/morph-browser
 
 Package: morph-browser
 Architecture: any
 Multi-Arch: foreign
-Depends: ${misc:Depends},
-         ${shlibs:Depends},
-         fonts-liberation,
+Depends: fonts-liberation,
          libqt5sql5-sqlite,
          libqt5webengine5,
+         qml-module-lomiri-action,
+         qml-module-lomiri-components,
+         qml-module-lomiri-components-extras,
+         qml-module-lomiri-content,
+         qml-module-morph-web (= ${binary:Version}),
          qml-module-qt-labs-folderlistmodel,
          qml-module-qt-labs-settings,
-         qml-module-qtquick2 (>= 5.5),
-         qml-module-qtquick-layouts,
-         qml-module-qtquick-window2 (>= 5.3),
-         qml-module-qtsysteminfo,
-         qml-module-morph-web (= ${binary:Version}),
-         qml-module-lomiri-content,
-         qml-module-lomiri-components-extras,
-         qml-module-lomiri-components,
-         qml-module-lomiri-action,
+         qml-module-qtquick-controls2,
          qml-module-qtquick-controls2-suru,
-Replaces: morph-browser-assets,
-          qtdeclarative5-ubuntu-ui-extras-browser-plugin (<< 0.22),
-Conflicts: morph-browser-assets, webbrowser-app, morph-browser-qt6
-Provides: morph-browser-assets, webbrowser-app
-Breaks: qtdeclarative5-ubuntu-ui-extras-browser-plugin (<< 0.22)
-Description: Web Browser for Ubuntu Touch
- Lightweight web browser tailored for Ubuntu Touch, based on the Qt WebEngine
+         qml-module-qtquick-layouts,
+         qml-module-qtquick-window2,
+         qml-module-qtquick2,
+         qml-module-qtsysteminfo,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Conflicts: morph-browser-qt6,
+Provides: www-browser,
+Description: Web Browser for Lomiri
+ Lightweight web browser tailored for Lomiri, based on the Qt WebEngine
  and using the Lomiri UI components.
 
 Package: morph-webapp-container
 Architecture: any
 Multi-Arch: foreign
-Depends: ${misc:Depends},
-         ${shlibs:Depends},
-         fonts-liberation,
+Depends: fonts-liberation,
          libqt5sql5-sqlite,
          libqt5webengine5,
-         qml-module-qtquick2 (>= 5.5),
-         qml-module-qtquick-window2 (>= 5.3),
-         qml-module-sso-onlineaccounts,
-         qml-module-morph-web (= ${binary:Version}),
-         qml-module-lomiri-content,
-         qml-module-lomiri-components,
-         qml-module-lomiri-action,
-         qml-module-lomiri-onlineaccounts-client,
          morph-browser (= ${binary:Version}),
-Conflicts: ubuntu-html5-container, webapp-container, morph-webapp-container-qt6
-Replaces: ubuntu-html5-container, webapp-container
+         qml-module-lomiri-action,
+         qml-module-lomiri-components,
+         qml-module-lomiri-content,
+         qml-module-lomiri-onlineaccounts-client,
+         qml-module-morph-web (= ${binary:Version}),
+         qml-module-qtquick-window2,
+         qml-module-qtquick2,
+         qml-module-sso-onlineaccounts,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Conflicts: morph-webapp-container-qt6,
 Description: Morph web applications container
- A lightweight webapp container tailored for Ubuntu Touch, based on the Qt WebEngine
- and using the Lomiri UI components.
+ Lightweight webapp container tailored for Lomiri, based on the
+ Qt WebEngine and using the Lomiri UI components.
 
 Package: qml-module-morph-web
 Architecture: any
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends},
-         ${shlibs:Depends},
+Depends: qml-module-lomiri-components,
+         qml-module-qtquick-window2,
+         qml-module-qtquick2,
          qml-module-qtwebengine,
-         qml-module-qtquick2 (>= 5.4),
-         qml-module-qtquick-window2 (>= 5.3),
-         qml-module-lomiri-components,
-Breaks: qtdeclarative5-ubuntu-web-plugin (<< ${source:Version})
-Replaces: qtdeclarative5-ubuntu-web-plugin (<< ${source:Version})
-Description: Morph web QML module
- A standalone QML module that contains the WebView component,
- in the Morph.Web namespace.
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Morph web QML module (Qt 5 Version)
+ Standalone QML module that contains the WebView component,
+ in the Morph.Web namespace (Qt 5 variant).
 
 Package: qml-module-morph-web-doc
-Section: doc
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends}
-Breaks: qtdeclarative5-ubuntu-web-plugin-doc (<< ${source:Version})
-Replaces: qtdeclarative5-ubuntu-web-plugin-doc (<< ${source:Version})
-Description: Morph web QML module HTML documentation
+Section: doc
+Depends: ${misc:Depends},
+Description: Morph web QML module (HTML documentation)
  A standalone QML module that contains the WebView component,
  in the Morph.Web namespace. This package contains the public
  HTML documentation.
@@ -144,73 +135,75 @@ Description: Morph web QML module HTML documentation
 Package: morph-browser-qt6
 Architecture: any
 Multi-Arch: foreign
-Depends: ${misc:Depends},
-         ${shlibs:Depends},
-         binutils,
-         squashfs-tools,
+Depends: binutils,
          fonts-liberation,
+         qml6-module-lomiri-action,
+         qml6-module-lomiri-components,
+         qml6-module-lomiri-components-extras (>= 0.8.0),
+         qml6-module-lomiri-connectivity,
+         qml6-module-lomiri-content,
+         qml6-module-lomiri-downloadmanager,
+         qml6-module-lomiri-systeminfo,
+         qml6-module-lomiri-thumbnailer,
+         qml6-module-morph-web (= ${binary:Version}),
          qml6-module-qt-labs-folderlistmodel,
          qml6-module-qt-labs-settings,
          qml6-module-qtcore,
          qml6-module-qtqml-workerscript,
          qml6-module-qtquick,
          qml6-module-qtquick-controls,
-         qml6-module-qtquick-layouts,
-         qml6-module-lomiri-systeminfo,
-         qml6-module-morph-web (= ${binary:Version}),
-         qml6-module-lomiri-content,
-         qml6-module-lomiri-components,
-         qml6-module-lomiri-components-extras,
-         qml6-module-lomiri-action,
-         qml6-module-lomiri-downloadmanager,
-         qml6-module-lomiri-thumbnailer,
-         qml6-module-qtquick-templates,
          qml6-module-qtquick-controls2-suru,
-         qml6-module-lomiri-connectivity,
-Conflicts: webbrowser-app, morph-browser
-Provides: webbrowser-app
+         qml6-module-qtquick-layouts,
+         qml6-module-qtquick-templates,
+         squashfs-tools,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Conflicts: morph-browser,
+Provides: webbrowser-app,
 Description: Web Browser for Ubuntu Touch (Qt 6 Version)
- Lightweight web browser tailored for Ubuntu Touch, based on the Qt WebEngine
+ Lightweight web browser tailored for Lomiri, based on the Qt WebEngine
  and using the Lomiri UI components.
+ .
+ This package contains the Qt 6 variant of the browser.
 
 Package: morph-webapp-container-qt6
 Architecture: any
 Multi-Arch: foreign
-Depends: ${misc:Depends},
-         ${shlibs:Depends},
-         fonts-liberation,
+Depends: fonts-liberation,
          libqt6sql6-sqlite,
-         libqt6webenginecore6,
          libqt6webengine6-data,
+         libqt6webenginecore6,
+         morph-browser-qt6 (= ${binary:Version}),
+         qml6-module-lomiri-action,
+         qml6-module-lomiri-components,
+         qml6-module-lomiri-content,
+         qml6-module-lomiri-onlineaccounts-client,
+         qml6-module-morph-web (= ${binary:Version}),
          qml6-module-qtquick,
          qml6-module-qtquick-controls,
          qml6-module-sso-onlineaccounts,
-         qml6-module-morph-web (= ${binary:Version}),
-         qml6-module-lomiri-content,
-         qml6-module-lomiri-components,
-         qml6-module-lomiri-action,
-         qml6-module-lomiri-onlineaccounts-client,
-         morph-browser-qt6 (= ${binary:Version}),
-Conflicts: ubuntu-html5-container, webapp-container, morph-webapp-container
-Replaces: ubuntu-html5-container, webapp-container
+         ${misc:Depends},
+         ${shlibs:Depends},
+Conflicts: morph-webapp-container,
 Description: Morph web applications container (Qt 6 Version)
- A lightweight webapp container tailored for Ubuntu Touch, based on the Qt WebEngine
- and using the Lomiri UI components.
+ Lightweight webapp container tailored for Lomiri, based on the
+ Qt WebEngine and using the Lomiri UI components.
+ .
+ This package contains the Qt 6 variant of the webapp container.
 
 Package: qml6-module-morph-web
 Architecture: any
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends},
-         ${shlibs:Depends},
-         qml6-module-qtwebengine,
-         qml6-module-qtwebengine-controlsdelegates,
+Depends: qml6-module-lomiri-components,
          qml6-module-qtquick,
          qml6-module-qtquick-controls,
-         qml6-module-lomiri-components,
-Description: Morph web QML module
+         qml6-module-qtwebengine,
+         qml6-module-qtwebengine-controlsdelegates,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Morph web QML module (Qt 6 Version)
  A standalone QML module that contains the WebView component,
- in the Morph.Web namespace.
+ in the Morph.Web namespace (Qt 6 variant).
 
 # Package: morph-browser-autopilot
 # Architecture: all

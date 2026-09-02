@@ -1,10 +1,7 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
-# Uncomment this to turn on verbose mode.
-#export DH_VERBOSE=1
-
-export DPKG_GENSYMBOLS_CHECK_LEVEL=4
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 # Workaround https://gitlab.com/ubports/development/core/packaging/libhybris/-/issues/21
 # Basically, libhybris' libEGL implementation crash inside libhybris itself if
@@ -15,11 +12,8 @@ export __EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/50_mesa.json
 
 BUILDHOME=/tmp/home
 
-# Add migrations add-on when build on Ubuntu & original name is available.
-DH_MIGRATIONS = $(shell type dh_migrations >/dev/null 2>&1 && echo "--with migrations")
-
 %:
-	dh $@ $(DH_MIGRATIONS)
+	dh $@
 
 apparmor:
 	aa-easyprof -m ./debian/morph-browser-apparmor.manifest --no-verify | \
@@ -56,12 +50,12 @@ override_dh_auto_configure:
 	dh_auto_configure --builddirectory=build-qt5 -- -DENABLE_WERROR=OFF
 
 override_dh_auto_build:
-	dh_auto_build --builddirectory=build-qt6 ..
-	dh_auto_build --builddirectory=build-qt5 ..
+	dh_auto_build --builddirectory=build-qt6
+	dh_auto_build --builddirectory=build-qt5
 
 override_dh_auto_install:
-	dh_auto_install --builddirectory=build-qt6 --destdir=debian/tmp-qt6 ..
-	dh_auto_install --builddirectory=build-qt5 --destdir=debian/tmp-qt5 ..
+	dh_auto_install --builddirectory=build-qt6 --destdir=debian/tmp-qt6
+	dh_auto_install --builddirectory=build-qt5 --destdir=debian/tmp-qt5
 
 override_dh_install: apparmor
 	install -D -m644 ./debian/usr.bin.morph-browser ./debian/tmp-qt5/etc/apparmor.d/usr.bin.morph-browser
@@ -69,23 +63,21 @@ override_dh_install: apparmor
 	dh_install -Nmorph-browser-qt6 -Nmorph-webapp-container-qt6 -Nqml6-module-morph-web --sourcedir=debian/tmp-qt5
 	dh_install -pmorph-browser-qt6 -pmorph-webapp-container-qt6 -pqml6-module-morph-web --sourcedir=debian/tmp-qt6
 
-override_dh_missing:
-	dh_missing --fail-missing
-
-override_dh_installdeb:
+execute_before_dh_installdeb:
 	dh_apparmor --profile-name=usr.bin.morph-browser -pmorph-browser
 	dh_apparmor --profile-name=usr.bin.morph-browser -pmorph-browser-qt6
-	dh_installdeb
 
 override_dh_auto_clean:
 	dh_auto_clean --builddirectory=build-qt6
 	dh_auto_clean --builddirectory=build-qt5
 
-override_dh_clean:
-	dh_clean
+execute_after_dh_clean:
 	rm -rf $(BUILDHOME)
 
 override_dh_auto_test:
 	mkdir -p $(BUILDHOME)
-	HOME=$(BUILDHOME) dh_auto_test --no-parallel --builddirectory=build-qt6 -- ARGS+=-VV
-	HOME=$(BUILDHOME) dh_auto_test --no-parallel --builddirectory=build-qt5 -- ARGS+=-VV
+	DH_COMPAT=12 HOME=$(BUILDHOME) dh_auto_test --builddirectory=build-qt6 -- ARGS+=-VV
+	DH_COMPAT=12 HOME=$(BUILDHOME) dh_auto_test --builddirectory=build-qt5 -- ARGS+=-VV
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

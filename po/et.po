@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-13 17:30+0200\n"
-"PO-Revision-Date: 2026-08-22 15:23+0000\n"
+"PO-Revision-Date: 2026-09-06 12:18+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/et/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.9.1.dev0\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:3
@@ -426,6 +426,9 @@ msgid ""
 "Would you like to continue to block the domain, allow loading data from the "
 "domain, or just ignore this request ?"
 msgstr ""
+"%1 proovib avada %2 saiti, kuid see pole sinu lubatud domeenide loendis. Kas "
+"soovid jätkata domeeni blokeerimist, lubada sellest domeenist andmete "
+"laadimist või lihtsalt eirad seda päringut?"
 
 #: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:47
 #: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:47
@@ -488,6 +491,8 @@ msgid ""
 "You are trying to securely reach %1, but the security certificate of this "
 "website is not trusted. Reason: %2"
 msgstr ""
+"Sa proovid turvaliselt avada %1 saiti, kuid selle turvasertifikaat pole "
+"usaldusväärne. Põhjus: %2"
 
 #: src/app/qml-qt5/CertificateVerificationDialog.qml:39
 #: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:160
@@ -802,7 +807,7 @@ msgstr "Viga: %1"
 #: src/app/qml-qt6/ErrorSheet.qml:62
 #: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:173
 msgid "Back to safety"
-msgstr ""
+msgstr "Ära ühenda"
 
 #: src/app/qml-qt5/ErrorSheet.qml:70 src/app/qml-qt6/ErrorSheet.qml:70
 msgid "Please check your network settings and try refreshing the page."
@@ -816,7 +821,7 @@ msgstr "Laadi leht uuesti"
 #: src/app/qml-qt5/GeolocationPermissionRequest.qml:29
 #: src/app/qml-qt6/GeolocationPermissionRequest.qml:29
 msgid "Permission Request"
-msgstr ""
+msgstr "Loa küsimine"
 
 #: src/app/qml-qt5/GeolocationPermissionRequest.qml:30
 #: src/app/qml-qt6/GeolocationPermissionRequest.qml:30
@@ -833,7 +838,7 @@ msgstr "Keela"
 #: src/app/qml-qt6/HttpAuthenticationDialog.qml:27
 #, qt-format
 msgid "The website at %1 requires authentication. The website says \"%2\""
-msgstr ""
+msgstr "Veebisait aadressil %1 eeldab autentimist. Veebisaidi teade on: %2"
 
 #: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:55
 #: src/app/qml-qt6/InvalidCertificateErrorSheet.qml:55
@@ -864,6 +869,8 @@ msgid ""
 "Subject:\n"
 "%1"
 msgstr ""
+"Üldnimi:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's subject's address
 #: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:102
@@ -873,6 +880,8 @@ msgid ""
 "Subject address:\n"
 "%1"
 msgstr ""
+"Üldnime aadress:\n"
+"%1"
 
 #. TRANSLATORS: %1 refers to the SSL certificate's issuer display name
 #: src/app/qml-qt5/InvalidCertificateErrorSheet.qml:113

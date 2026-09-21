@@ -16,8 +16,6 @@ Build-Depends: debhelper-compat (= 13),
                libqt5svg5-dev,
                lsb-release,
                pkgconf,
-               python3-all:any,
-               python3-flake8:native,
                qml-module-lomiri-components <!nocheck>,
                qml-module-lomiri-components-extras <!nocheck>,
                qml-module-lomiri-test <!nocheck>,
@@ -204,33 +202,3 @@ Depends: qml6-module-lomiri-components,
 Description: Morph web QML module (Qt 6 Version)
  A standalone QML module that contains the WebView component,
  in the Morph.Web namespace (Qt 6 variant).
-
-# Package: morph-browser-autopilot
-# Architecture: all
-# Multi-Arch: foreign
-# Depends: ${misc:Depends},
-#          autopilot-qt5,
-#          content-hub-testability,
-#          python3-autopilot,
-#          python3-fixtures,
-#          python3-psutil,
-#          ubuntu-ui-toolkit-autopilot,
-#          morph-browser (>= ${binary:Version}),
-# Description: morph web browser autopilot tests
-#  A lightweight web browser tailored for morph, based on the Oxide browser
-#  engine and using the suru UI components. This package contains autopilot
-#  tests for it.
-# 
-# Package: morph-webapp-container-autopilot
-# Architecture: all
-# Multi-Arch: foreign
-# Depends: ${misc:Depends},
-#          autopilot-qt5,
-#          python3-autopilot,
-#          python3-fixtures,
-#          ubuntu-ui-toolkit-autopilot,
-#          morph-webapp-container (>= ${binary:Version}),
-# Description: morph web applications container autopilot tests
-#  A lightweight webapp container tailored for morph, based on the Oxide browser
-#  engine and using the Suru UI components. This package contains autopilot
-#  tests for it.

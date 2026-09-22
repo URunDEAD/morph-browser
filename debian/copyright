@@ -443,7 +443,6 @@ Files: .gitignore
  AUTHORS
  CMakeLists.txt
  ChangeLog
- Dockerfile
  README.md
  click-hooks/CMakeLists.txt
  click-hooks/webapp-container.hook.in
@@ -502,7 +501,6 @@ Files: .gitignore
  src/app/webbrowser/searchengines/yahoo.xml
  src/app/webcontainer/CMakeLists.txt
  tests/CMakeLists.txt
- tests/autopilot/CMakeLists.txt
  tests/unittests/CMakeLists.txt
  tests/unittests/bookmarks-folder-model/CMakeLists.txt
  tests/unittests/bookmarks-folderlist-model/CMakeLists.txt
@@ -521,7 +519,6 @@ Files: .gitignore
  tests/unittests/meminfo/CMakeLists.txt
  tests/unittests/oxide-cookie-helper/CMakeLists.txt
  tests/unittests/qml/CMakeLists.txt
- tests/unittests/sanity/CMakeLists.txt
  tests/unittests/search-engine/CMakeLists.txt
  tests/unittests/session-storage/CMakeLists.txt
  tests/unittests/session-utils/CMakeLists.txt
@@ -536,56 +533,6 @@ License: GPL-3
 Comment:
  Files listed above lack license headers. Assuming same copyright
  holder and license as used for the majority of other code files.
-
-Files: tests/autopilot/webapp_container/__init__.py
- tests/autopilot/webapp_container/tests/__init__.py
- tests/autopilot/webapp_container/tests/fake_servers.py
- tests/autopilot/webapp_container/tests/test_app_launch.py
- tests/autopilot/webapp_container/tests/test_chrome.py
- tests/autopilot/webapp_container/tests/test_context_menu.py
- tests/autopilot/webapp_container/tests/test_js_dialogs.py
- tests/autopilot/webapp_container/tests/test_media_permission.py
- tests/autopilot/webapp_container/tests/test_overlay_recovery.py
- tests/autopilot/webapp_container/tests/test_page_meta_collector.py
- tests/autopilot/webapp_container/tests/test_popup_webview_overlay.py
- tests/autopilot/webapp_container/tests/test_sad_tab.py
- tests/autopilot/webapp_container/tests/test_saml_url_patterns.py
- tests/autopilot/webapp_container/tests/test_scheme_filter.py
- tests/autopilot/webapp_container/tests/test_url_patterns.py
- tests/autopilot/webapp_container/tests/test_user_agent.py
- tests/autopilot/webapp_container/tests/test_webapp_name_precedence.py
- tests/autopilot/webbrowser_app/__init__.py
- tests/autopilot/webbrowser_app/emulators/__init__.py
- tests/autopilot/webbrowser_app/emulators/browser.py
- tests/autopilot/webbrowser_app/tests/__init__.py
- tests/autopilot/webbrowser_app/tests/http_server.py
- tests/autopilot/webbrowser_app/tests/test_addressbar_bookmark.py
- tests/autopilot/webbrowser_app/tests/test_addressbar_states.py
- tests/autopilot/webbrowser_app/tests/test_backforward.py
- tests/autopilot/webbrowser_app/tests/test_basic_authentication.py
- tests/autopilot/webbrowser_app/tests/test_bookmark_options.py
- tests/autopilot/webbrowser_app/tests/test_content_pick.py
- tests/autopilot/webbrowser_app/tests/test_contextmenu.py
- tests/autopilot/webbrowser_app/tests/test_downloads.py
- tests/autopilot/webbrowser_app/tests/test_errorsheet.py
- tests/autopilot/webbrowser_app/tests/test_findinpage.py
- tests/autopilot/webbrowser_app/tests/test_fullscreen.py
- tests/autopilot/webbrowser_app/tests/test_geolocation.py
- tests/autopilot/webbrowser_app/tests/test_history.py
- tests/autopilot/webbrowser_app/tests/test_js_dialogs.py
- tests/autopilot/webbrowser_app/tests/test_keyboard.py
- tests/autopilot/webbrowser_app/tests/test_media_access_permission.py
- tests/autopilot/webbrowser_app/tests/test_multiple_windows.py
- tests/autopilot/webbrowser_app/tests/test_new_tab_view.py
- tests/autopilot/webbrowser_app/tests/test_sad_tab.py
- tests/autopilot/webbrowser_app/tests/test_settings.py
- tests/autopilot/webbrowser_app/tests/test_site_previews.py
- tests/autopilot/webbrowser_app/tests/test_suggestions.py
- tests/autopilot/webbrowser_app/tests/test_tabs.py
- tests/autopilot/webbrowser_app/tests/test_title.py
- tests/autopilot/webbrowser_app/tests/test_touchselection.py
-Copyright: 2013-2017 Canonical
-License: GPL-3
 
 Files: src/Morph/Web/assets/handle@27.png
  src/app/assets/stock_link.svg

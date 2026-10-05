@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-13 17:30+0200\n"
-"PO-Revision-Date: 2026-09-06 12:18+0000\n"
+"PO-Revision-Date: 2026-10-05 09:57+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/et/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9.1.dev0\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:3
@@ -1515,12 +1515,12 @@ msgstr "Kaamera ja mikrofon"
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:407
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:429
 msgid "Clear browsing history"
-msgstr "Kustuta veebisrirvimise ajalugu"
+msgstr "Kustuta veebisirvimise ajalugu"
 
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:411
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:433
 msgid "Clear browsing history?"
-msgstr "Kas kustutad veebisrirvimise ajaloo?"
+msgstr "Kas kustutad veebisirvimise ajaloo?"
 
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:419
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:441

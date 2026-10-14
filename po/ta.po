@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: morph-browser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-13 17:30+0200\n"
-"PO-Revision-Date: 2026-09-30 15:51+0000\n"
-"Last-Translator: Alagirisamy Rengaraj <radhaalagirisamy@gmail.com>\n"
+"PO-Revision-Date: 2026-10-19 21:25+0000\n"
+"Last-Translator: Alagirisamy Rengaraj "
+"<ahalyachinnasamy1967@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/lomiri/morph-"
 "browser/ta/>\n"
 "Language: ta\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.10.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:15+0000\n"
 
 #: morph-browser.desktop.in:3
@@ -33,11 +34,11 @@ msgstr "மார்ப் வலை உலாவி"
 
 #: morph-browser.desktop.in:5
 msgid "Browse the World Wide Web using QtWebEngine"
-msgstr "Qtவலைஇயக்கி ஐப் பயன்படுத்தி உலகளாவிய வலையை உலாவுக"
+msgstr "Qtவலைபொறியைப் பயன்படுத்தி உலகளாவிய வலையை உலாவுக"
 
 #: morph-browser.desktop.in:6
 msgid "Internet;WWW;Browser;Web;Explorer"
-msgstr "இணையம்; www; உலாவி; வலை; ஆய்வாளர்"
+msgstr "இணையம்; உ.அ.வ(www); உலாவி; வலை; ஆய்வாளர்"
 
 #: morph-browser.desktop.in:22
 msgid "New Window"
@@ -45,7 +46,7 @@ msgstr "புதிய சாளரம்"
 
 #: morph-browser.desktop.in:26
 msgid "New Private Window"
-msgstr "புதிய தனியார் சாளரம்"
+msgstr "புதிய தனிப்பட்ட சாளரம்"
 
 #: src/app/widevine-plugin-helper.cpp:157
 msgid "Failed to get license. Please check the application logs for details"
@@ -64,8 +65,8 @@ msgstr "கோப்புக்களை நீக்கத் தோல்வ�
 msgid ""
 "Failed to extract widevine. Please check the application logs for details"
 msgstr ""
-"ஒய்டுவைன் ஐ பிரித்தெடுத்தல் தோல்வியுற்றது.விவரங்களுக்கு தயவு செய்து செயலிகள் பதிவுகளை "
-"சரிபார்க்கவும்"
+"ஒய்டுவைன்(widevine)ஐ பிரித்தெடுத்தல் தோல்வியுற்றது.விவரங்களுக்கு தயவு செய்து செயலிகள் "
+"பதிவுகளை சரிபார்க்கவும்"
 
 #: src/app/widevine-plugin-helper.cpp:191
 msgid ""
@@ -78,8 +79,8 @@ msgstr ""
 msgid ""
 "Failed to uninstall widevine. Please check the application logs for details"
 msgstr ""
-"ஒய்டுவைன் நிறுவுவியது நீக்கம் தோல்வியுற்றது.விவரங்களுக்கு தயவு செய்து செயலிகள் "
-"பதிவுகளைச் சரிபார்க்கவும்"
+"ஒய்டுவைன் நிறுவல் நீக்கம் தோல்வியுற்றது.விவரங்களுக்கு தயவு செய்து செயலிகள் பதிவுகளைச் "
+"சரிபார்க்கவும்"
 
 #: src/app/qml-qt5/actions/Back.qml:23 src/app/qml-qt6/actions/Back.qml:23
 msgid "Back"
@@ -94,12 +95,12 @@ msgstr "பழைய பக்கம்"
 #: src/app/qml-qt5/actions/BookmarkLink.qml:22
 #: src/app/qml-qt6/actions/BookmarkLink.qml:22
 msgid "Bookmark link"
-msgstr "தொடுப்பை புத்தகக்குறியிடு"
+msgstr "புத்தகக்குறி இணைப்பு"
 
 #: src/app/qml-qt5/actions/Bookmark.qml:23
 #: src/app/qml-qt6/actions/Bookmark.qml:23
 msgid "Bookmark"
-msgstr "புத்தகக்குறிகள்"
+msgstr "புத்தகக்குறி"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Bookmark' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
@@ -118,7 +119,7 @@ msgstr "வரலாற்றை நீக்கு"
 #: src/app/qml-qt5/actions/ClearHistory.qml:26
 #: src/app/qml-qt6/actions/ClearHistory.qml:26
 msgid "Clear Navigation History"
-msgstr "தேடுதல் பயணவரலாற்றை நீக்கு"
+msgstr "வழிகண்டுபிடித்தல் வரலாற்றை நீக்கு"
 
 #: src/app/qml-qt5/actions/CopyImageLink.qml:22
 #: src/app/qml-qt6/actions/CopyImageLink.qml:22
@@ -133,7 +134,7 @@ msgstr "படத்தை நகலெடு"
 #: src/app/qml-qt5/actions/CopyLink.qml:22
 #: src/app/qml-qt6/actions/CopyLink.qml:22
 msgid "Copy link"
-msgstr "தொடுப்பை நகலெடு"
+msgstr "இணைப்பை நகலெடு"
 
 #: src/app/qml-qt5/actions/Copy.qml:22 src/app/qml-qt6/actions/Copy.qml:22
 #: src/app/webbrowser/qml-qt5/AddressBar.qml:418
@@ -179,7 +180,7 @@ msgstr "புதிய பக்கம்"
 
 #: src/app/qml-qt5/actions/GoTo.qml:23 src/app/qml-qt6/actions/GoTo.qml:23
 msgid "Goto"
-msgstr "க்கு செல்"
+msgstr "அங்குபோ"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'Goto' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
@@ -193,18 +194,18 @@ msgstr "முகவரி;உ.வ.இ(URL);www"
 #: src/app/webbrowser/qml-qt6/Browser.qml:722
 #: src/app/webbrowser/qml-qt6/TabsBar.qml:87
 msgid "New Tab"
-msgstr "புதிய கீற்று"
+msgstr "புதிய தாவல்"
 
 #. TRANSLATORS: This is a free-form list of keywords associated to the 'New Tab' action.
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/qml-qt5/actions/NewTab.qml:26 src/app/qml-qt6/actions/NewTab.qml:26
 msgid "Open a New Tab"
-msgstr "புதிய கீற்றை திற"
+msgstr "புதிய தாவலைத் திற"
 
 #: src/app/qml-qt5/actions/OpenImageInNewTab.qml:22
 #: src/app/qml-qt6/actions/OpenImageInNewTab.qml:22
 msgid "Open image in new tab"
-msgstr "படத்தை புதிய கீற்றில் திற"
+msgstr "படத்தை புதிய தாவலில் திற"
 
 #: src/app/qml-qt5/actions/OpenLinkInBrowser.qml:22
 #: src/app/qml-qt6/actions/OpenLinkInBrowser.qml:22
@@ -219,22 +220,22 @@ msgstr "புதிய பின்னணி தாவலில் இணைப
 #: src/app/qml-qt5/actions/OpenLinkInNewPrivateWindow.qml:22
 #: src/app/qml-qt6/actions/OpenLinkInNewPrivateWindow.qml:22
 msgid "Open link in new private window"
-msgstr "புதிய தனியார் சாளரத்தில் இணைப்பைத் திறக்கவும்"
+msgstr "புதிய தனிப்பட்ட சாளரத்தில் இணைப்பைத் திறக்கவும்"
 
 #: src/app/qml-qt5/actions/OpenLinkInNewTab.qml:22
 #: src/app/qml-qt6/actions/OpenLinkInNewTab.qml:22
 msgid "Open link in new tab"
-msgstr "தொடுப்பை புதிய கீற்றில் திற"
+msgstr "இணைப்பை புதிய தாவலில் திற"
 
 #: src/app/qml-qt5/actions/OpenLinkInNewWindow.qml:22
 #: src/app/qml-qt6/actions/OpenLinkInNewWindow.qml:22
 msgid "Open link in new window"
-msgstr "புதிய சாளரத்தில் தொடுப்பைத் திறக்கவும்"
+msgstr "புதிய சாளரத்தில் இணைப்பைத் திறக்கவும்"
 
 #: src/app/qml-qt5/actions/OpenVideoInNewTab.qml:22
 #: src/app/qml-qt6/actions/OpenVideoInNewTab.qml:22
 msgid "Open video in new tab"
-msgstr "புதிய தாவலில் வீடியோவைத் திறக்கவும்"
+msgstr "புதிய தாவலில் காணொலியை திறக்கவும்"
 
 #: src/app/qml-qt5/actions/Paste.qml:22 src/app/qml-qt6/actions/Paste.qml:22
 #: src/app/webbrowser/qml-qt5/AddressBar.qml:429
@@ -260,7 +261,7 @@ msgstr "மீளேற்று"
 #. Keywords may actually be sentences, and must be separated by semi-colons.
 #: src/app/qml-qt5/actions/Reload.qml:26 src/app/qml-qt6/actions/Reload.qml:26
 msgid "Leave Page"
-msgstr "பக்கத்திலிருந்து விலகு"
+msgstr "பக்கத்திலிருந்து வெளியேறு"
 
 #: src/app/qml-qt5/actions/SaveImage.qml:22
 #: src/app/qml-qt6/actions/SaveImage.qml:22
@@ -294,7 +295,7 @@ msgstr "அனைத்தையும் தேர்ந்தெடு"
 #: src/app/webbrowser/qml-qt5/Browser.qml:823
 #: src/app/webbrowser/qml-qt6/Browser.qml:842
 msgid "Share"
-msgstr "பங்கு"
+msgstr "பகிர்"
 
 #: src/app/qml-qt5/actions/Undo.qml:22 src/app/qml-qt6/actions/Undo.qml:22
 msgid "Undo"
@@ -302,7 +303,7 @@ msgstr "செயல்தவிர்"
 
 #: src/app/qml-qt5/AlertDialog.qml:24 src/app/qml-qt6/AlertDialog.qml:24
 msgid "JavaScript Alert"
-msgstr "Javascript விழிப்பூட்டல்"
+msgstr "சாவாசுகிரிப்ட்(Javascript) விழிப்பூட்டல்"
 
 #: src/app/qml-qt5/AlertDialog.qml:31
 #: src/app/qml-qt5/AuthenticationDialog.qml:47
@@ -395,7 +396,7 @@ msgstr "அனுமதி"
 #: src/app/webcontainer/qml-qt6/ContextMenuMobile.qml:143
 #: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:286
 msgid "Cancel"
-msgstr "நீக்கு"
+msgstr "நீக்குக"
 
 #: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:25
 #: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:41
@@ -412,9 +413,8 @@ msgid ""
 "Would you like to continue to block the domain, allow browsing to the "
 "domain, or go back?"
 msgstr ""
-"நீங்கள் %1 ஐ அணுக முயற்சிக்கிறீர்கள், ஆனால் அது உங்கள் ஒப்புதல் அளிக்கப்ப்பட்ட "
-"களவெள்ளைப்பட்டியலில் இல்லை. தொடர்ந்து முடக்க, களத்திற்கு உலாவ அனுமதிக்க அல்லது பின்செல்ல "
-"விரும்புகிறீர்களா?"
+"நீங்கள் %1 ஐ அணுக முயற்சிக்கிறீர்கள், ஆனால் அது உங்கள் ஒப்புதல் அளிக்கப்பட்ட களவெள்ளைப்பட்டியலில் "
+"இல்லை. தொடர்ந்து முடக்க, களத்திற்கு உலாவ அனுமதிக்க அல்லது பின்செல்ல விரும்புகிறீர்களா?"
 
 #: src/app/qml-qt5/AllowOrBlockDomainDialog.qml:31
 #: src/app/qml-qt6/AllowOrBlockDomainDialog.qml:31
@@ -469,7 +469,7 @@ msgstr "வழிப்பயணம் உறுதிப்படுத்த�
 #: src/app/qml-qt5/BeforeUnloadDialog.qml:33
 #: src/app/qml-qt6/BeforeUnloadDialog.qml:33
 msgid "Leave"
-msgstr "விடுப்பு"
+msgstr "வெளியேறு"
 
 #: src/app/qml-qt5/BeforeUnloadDialog.qml:41
 #: src/app/qml-qt6/BeforeUnloadDialog.qml:41
@@ -531,7 +531,7 @@ msgstr "மூடு"
 #: src/app/qml-qt5/ContentExportDialog.qml:100
 #: src/app/qml-qt6/ContentExportDialog.qml:100
 msgid "Open link in browser"
-msgstr "உலாவியில் தொடுப்பைத் திற"
+msgstr "உலாவியில் இணைப்பைத் திற"
 
 #: src/app/qml-qt5/ContentExportDialog.qml:109
 #: src/app/qml-qt6/ContentExportDialog.qml:109
@@ -628,7 +628,7 @@ msgstr "களத்தின் பெயரை உள்ளிடவும்,
 #: src/app/qml-qt5/DomainSettingsPage.qml:207
 #: src/app/qml-qt6/DomainSettingsPage.qml:207
 msgid "allowed to launch other apps"
-msgstr "பிற செயலிகளைத் தொடங்க அனுமதிக்கப்படுகிறது"
+msgstr "பிற செயலிகளைத் துவக்க அனுமதிக்கப்படுகிறது"
 
 #: src/app/qml-qt5/DomainSettingsPage.qml:226
 #: src/app/qml-qt6/DomainSettingsPage.qml:226
@@ -660,7 +660,7 @@ msgstr "தனிப்பயன் பயனர் முகவர்"
 #: src/app/qml-qt6/DomainSettingsPage.qml:320
 #: src/app/qml-qt6/DomainSettingsPage.qml:325
 msgid "Zoom: "
-msgstr "உருப்பெருக்கு: "
+msgstr "உருமாற்று: "
 
 #: src/app/qml-qt5/DomainSettingsPage.qml:325
 #: src/app/qml-qt6/DomainSettingsPage.qml:325
@@ -715,7 +715,7 @@ msgstr "வரலாற்றிலிருந்து அகற்று"
 #: src/app/qml-qt6/DownloadDelegate.qml:289
 #: src/app/qml-qt6/SimpleDownloadDelegate.qml:157
 msgid "Copy Download Link"
-msgstr "பதிவிறக்க தொடுப்பை நகலெடுக்கவும்"
+msgstr "பதிவிறக்க இணைப்பை நகலெடுக்கவும்"
 
 #: src/app/qml-qt5/DownloadsDialog.qml:68
 #: src/app/qml-qt6/DownloadsDialog.qml:68
@@ -744,7 +744,7 @@ msgstr "முழுமையடைந்தது"
 #: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:293
 #: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:293
 msgid "Clear"
-msgstr "அழி"
+msgstr "அகற்று"
 
 #: src/app/qml-qt5/DownloadsDialog.qml:179
 #: src/app/qml-qt6/DownloadsDialog.qml:179
@@ -1024,11 +1024,11 @@ msgstr "பட்டியலிலிருந்து அகற்று"
 #: src/app/webbrowser/qml-qt5/Browser.qml:897
 #: src/app/webbrowser/qml-qt6/Browser.qml:923
 msgid "Zoom"
-msgstr "பெரிதாக்கு"
+msgstr "உருமாற்று"
 
 #: src/app/qml-qt5/ZoomControls.qml:61 src/app/qml-qt6/ZoomControls.qml:59
 msgid "Zoom Out"
-msgstr "சிறிதாக்கு"
+msgstr "சிறிதாக உருமாற்று"
 
 #: src/app/qml-qt5/ZoomControls.qml:68 src/app/qml-qt6/ZoomControls.qml:66
 msgid "Reset"
@@ -1040,7 +1040,7 @@ msgstr "பொருத்தம்"
 
 #: src/app/qml-qt5/ZoomControls.qml:75 src/app/qml-qt6/ZoomControls.qml:73
 msgid "Zoom In"
-msgstr "பெரிதாக்கு"
+msgstr "பெரிதாக உருமாற்று"
 
 #: src/app/qml-qt5/ZoomControls.qml:82 src/app/qml-qt6/ZoomControls.qml:80
 #: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:164
@@ -1052,7 +1052,7 @@ msgstr "சேமி"
 
 #: src/app/qml-qt5/ZoomControls.qml:100 src/app/qml-qt6/ZoomControls.qml:98
 msgid "Current Zoom"
-msgstr "தற்போதைய உருப்பெருக்கம்"
+msgstr "தற்போதைய உருமாற்றம்"
 
 #: src/app/qml-qt5/ZoomControls.qml:101 src/app/qml-qt6/ZoomControls.qml:99
 msgid "domain"
@@ -1068,11 +1068,11 @@ msgstr "தானே பொருத்து"
 
 #: src/app/qml-qt5/ZoomControls.qml:190 src/app/qml-qt6/ZoomControls.qml:188
 msgid "Save Zoom"
-msgstr "உருபெருக்கம் சேமிக்கவும்"
+msgstr "உருமாற்றம் சேமிக்கவும்"
 
 #: src/app/qml-qt5/ZoomControls.qml:192 src/app/qml-qt6/ZoomControls.qml:190
 msgid "the current web app"
-msgstr "தற்போதைய வலைச் செயலி"
+msgstr "நடப்பு வலைச் செயலி"
 
 #: src/app/qml-qt5/ZoomControls.qml:195 src/app/qml-qt6/ZoomControls.qml:193
 #, qt-format
@@ -1080,21 +1080,19 @@ msgid ""
 "The current zoom level (%1%) can be saved in %2 either for the current "
 "domain or as the default zoom level."
 msgstr ""
-"தற்போதைய உருபெருக்கஅளவு (%1%) நடப்பு களத்திற்கு அல்லது இயல்பு உருபெருக்க அளவு%2 இல் "
-"சேமிக்கப்படலாம்."
+"நடப்பு உருமாற்ற அளவு (%1%) நடப்பு களத்திற்கு அல்லது இயல்பு உருமாற்ற அளவாக %2 இல் "
+"சேமிக்கலாம்."
 
 #: src/app/qml-qt5/ZoomControls.qml:197 src/app/qml-qt6/ZoomControls.qml:195
 #, qt-format
 msgid "The current zoom level (%1%) can be saved in %2 for the current domain."
-msgstr ""
-"தற்போதைய உருபெருக்க அளவு (%1%) நடப்பு களத்திற்கு%2 இல் சேமிக்க முடியும்."
+msgstr "நடப்பு உருமாற்ற அளவு (%1%) நடப்பு களத்திற்கு%2 இல் சேமிக்கலாம்."
 
 #: src/app/qml-qt5/ZoomControls.qml:199 src/app/qml-qt6/ZoomControls.qml:197
 #, qt-format
 msgid ""
 "The current zoom level (%1%) can be saved in %2 as the default zoom level."
-msgstr ""
-"தற்போதைய உருபெருக்க அளவு (%1%) இயல்பு உருபெருக்க அளவு%2 இல் சேமிக்க முடியும்."
+msgstr "நடப்பு உருமாற்ற அளவு (%1%)ஐ இயல்பு உருமாற்ற அளவாக %2 இல் சேமிக்கலாம்."
 
 #: src/app/qml-qt5/ZoomControls.qml:206 src/app/qml-qt6/ZoomControls.qml:204
 msgid "Save for domain"
@@ -1117,7 +1115,7 @@ msgstr "முகவரியைத் தேடவும் அல்லது 
 #: src/app/webbrowser/qml-qt5/AddressBar.qml:440
 #: src/app/webbrowser/qml-qt6/AddressBar.qml:441
 msgid "Paste and Go"
-msgstr "ஒட்டு மற்றும் செல்லவும்"
+msgstr "ஒட்டிவிட்டுப் போ"
 
 #: src/app/webbrowser/qml-qt5/BookmarkOptions.qml:66
 #: src/app/webbrowser/qml-qt6/BookmarkOptions.qml:66
@@ -1318,7 +1316,7 @@ msgstr "நேற்று"
 #: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:161
 #: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:160
 msgid "search history"
-msgstr "வரலாற்றைத் தேடவும்"
+msgstr "தேடல் வரலாறு"
 
 #: src/app/webbrowser/qml-qt5/HistoryViewWide.qml:242
 #: src/app/webbrowser/qml-qt6/HistoryViewWide.qml:241
@@ -1450,7 +1448,7 @@ msgstr "தனிப்பட்ட முறை துவக்கத்தி�
 #: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:58
 #: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:58
 msgid "Automatic fit to width"
-msgstr "அகலத்திற்கு தானியங்கி பொருத்தம்"
+msgstr "அகலத்திற்கு தானியங்கி பொருத்து"
 
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:160
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:160
@@ -1464,7 +1462,7 @@ msgstr "வலைத்தளத்தின் அகலத்தை சாள�
 #: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:78
 #: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:78
 msgid "Default Zoom"
-msgstr "இயல்பு உருபெருக்கம்"
+msgstr "இயல்பு உருமாற்றம்"
 
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:218
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:218
@@ -1518,7 +1516,7 @@ msgstr "ஒளிப்படக்கருவி & ஒலிவாங்கி
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:407
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:429
 msgid "Clear browsing history"
-msgstr "உலாவல் வரலாற்றை அழி"
+msgstr "உலாவல் வரலாற்றை அழிக்கவும்"
 
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:411
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:433
@@ -1530,7 +1528,7 @@ msgstr "உலாவல் வரலாற்றை அழிக்கவா?"
 #: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:247
 #: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:247
 msgid "Clear cache"
-msgstr "பிடிசேமிப்பை அழி"
+msgstr "பிடிசேமிப்பை அழிக்கவும்"
 
 #: src/app/webbrowser/qml-qt5/SettingsPage.qml:422
 #: src/app/webbrowser/qml-qt6/SettingsPage.qml:444
@@ -1614,7 +1612,7 @@ msgstr "சொருகு நிரல்"
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:79
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:453
 msgid "Widevine"
-msgstr "அகலக்கொடி(Widevine)"
+msgstr "ஒய்டுவொய்ன்(Widevine)"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:81
 msgid "DRM content"
@@ -1622,7 +1620,7 @@ msgstr "இ.உ.மே (இலக்கமுறை உரிமைகள் ம
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:82
 msgid "Widevine package is not available for this architecture"
-msgstr "இந்த கட்டமைப்பிற்கு அகலக்கொடி தொகுப்பு கையிருப்பு இல்லை"
+msgstr "இந்த கட்டமைப்பிற்கு ஒய்டுவொய்ன்(Widevine) தொகுப்பு கையிருப்பு இல்லை"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:142
 msgid "Need to reload the app for changes to take effect."
@@ -1639,7 +1637,7 @@ msgstr "பின்னர்"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:166
 msgid "Uninstall Widevine"
-msgstr "அகலக்கொடி நிறுவலை நீக்கு"
+msgstr "ஒய்டுவொய்ன்(Widevine)நிறுவலை நீக்கு"
 
 #: src/app/webbrowser/qml-qt6/SettingsPluginsPage.qml:167
 msgid "Are you sure you want to uninstall the plugin?"
@@ -1655,7 +1653,7 @@ msgstr "நிறுவல் நீக்கம் தோல்வியுற�
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:35
 msgid "Widevine install wizard"
-msgstr "அகலக்கொடி நிறுவல் வழிகாட்டி"
+msgstr "ஒய்டுவொய்ன் நிறுவல் வழிகாட்டி"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:49
 msgid "Continue"
@@ -1667,14 +1665,14 @@ msgstr "ஏற்றுக்கொள்"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:156
 msgid "Install Widevine"
-msgstr "அகலக்கொடி நிறுவு"
+msgstr "ஒய்டுவொய்ன் நிறுவு"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:163
 msgid ""
 "Widevine is a plugin that lets you play DRM-protected content, such as music "
 "and movies from streaming services."
 msgstr ""
-"அகலக்கொடி என்ற சொருகு நிரல், இஉமே( DRM) ஆல் பாதுகாக்கப்பட்ட உள்ளடக்கத்தை -இசை மற்றும் "
+"ஒய்டுவொய்ன் என்ற சொருகு நிரல், இஉமே( DRM) ஆல் பாதுகாக்கப்பட்ட உள்ளடக்கத்தை -இசை மற்றும் "
 "இணையவழி சேவையிலிருந்து திரைப்படங்கள் ஆகியவற்றை இயக்க அனுமதிக்கிறது."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:170
@@ -1682,7 +1680,7 @@ msgid ""
 "Widevine is not licensed for use with Morph Browser. The plugin will be "
 "extracted from a proprietary package. Proceed only if you accept this risk."
 msgstr ""
-"மார்ப் உலாவியுடன் இயக்க அகலக்கொடிக்கு உரிமம் வழங்கப்படவில்லை.தனிஉரிமை பொதியிலிருந்து "
+"மார்ப் உலாவியுடன் இயக்க ஒய்டுவொய்ன்க்கு உரிமம் வழங்கப்படவில்லை.தனிஉரிமை பொதியிலிருந்து "
 "சொருகு நிரல் பிரித்தெடுக்கப்படும்.இந்த ஆபத்தை ஏற்றுக்கொண்டால் மட்டும் தொடரவும்."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:176
@@ -1695,13 +1693,14 @@ msgid ""
 "Installing Widevine requires downloading about 150 MB of data. A stable "
 "Internet connection is required and the download may take some time."
 msgstr ""
-"அகலக்கொடி நிறுவ 150 மெகா பைட் அளவுக்கு தரவு பதிவிறக்க வேண்டும்.நிலையான இணைய இணைப்பு "
+"ஒய்டுவொய்ன் நிறுவ 150 மெகா பைட் அளவுக்கு தரவு பதிவிறக்க வேண்டும்.நிலையான இணைய இணைப்பு "
 "தேவை மற்றும் பதிவிறக்க சிறிது நேரமாகலாம்."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:193
 #, qt-format
 msgid "The file containing the Widevine plugin will be downloaded from %1."
-msgstr "அகலக்கொடி சொருகுநிரல் கொண்டுள்ள கோப்பு%1 இல் இருந்து பதிவிறக்கப்படும்."
+msgstr ""
+"ஒய்டுவொய்ன் சொருகுநிரல் கொண்டுள்ள கோப்பு%1 இல் இருந்து பதிவிறக்கப்படும்."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:212
 msgid ""
@@ -1718,12 +1717,12 @@ msgid ""
 "The download is complete. Please read the following license agreement "
 "carefully before installing Widevine."
 msgstr ""
-"பதிவிறக்கம் முழுமையுற்றது.அகலக்கொடி நிறுவுமுன் தயவு செய்து பின்வரும் உரிமை ஒப்பந்தத்தை "
+"பதிவிறக்கம் முழுமையுற்றது. ஒய்டுவொய்ன் நிறுவுமுன் தயவு செய்து பின்வரும் உரிமை ஒப்பந்தத்தை "
 "கவனமுடன் படிக்கவும்."
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:258
 msgid "Widevine license"
-msgstr "அகலக்கொடி உரிமை"
+msgstr "ஒய்டுவொய்ன் உரிமை"
 
 #: src/app/webbrowser/qml-qt6/widevine/WidevineInstallerWizard.qml:286
 msgid "Downloading"
@@ -1828,7 +1827,7 @@ msgstr "அய்யோ, ஏதோ தவறு நடந்ததுவிட�
 #: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:38
 #: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:38
 msgid "WebappContainer Settings"
-msgstr "வலைச்செயலிகாப்புபெட்டி(WebAppContainer) அமைப்புகள்"
+msgstr "வலைச்செயலிகொள்கலன்(WebAppContainer) அமைப்புகள்"
 
 #: src/app/webcontainer/qml-qt5/WebappSettingsPage.qml:163
 #: src/app/webcontainer/qml-qt6/WebappSettingsPage.qml:163

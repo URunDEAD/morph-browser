@@ -100,7 +100,7 @@ ChromeBase {
                 chrome.webview.goBack()
             }
 
-            onShowContextMenu: showNavHistory(chrome.webview.navigationHistory.backItems, backButton)
+            onShowContextMenu: showNavHistory(chrome.webview.history.backItems, backButton)
         }
 
         ChromeButton {
@@ -130,7 +130,7 @@ ChromeBase {
                 chrome.webview.goForward()
             }
 
-            onShowContextMenu: showNavHistory(chrome.webview.navigationHistory.forwardItems, forwardButton)
+            onShowContextMenu: showNavHistory(chrome.webview.history.forwardItems, forwardButton)
         }
 
         Item {

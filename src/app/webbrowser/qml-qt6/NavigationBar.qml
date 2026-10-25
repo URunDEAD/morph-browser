@@ -111,7 +111,7 @@ FocusScope {
                 }
             }
 
-            onShowContextMenu: showNavHistory(internal.webview.navigationHistory.backItems, backButton)
+            onShowContextMenu: showNavHistory(internal.webview.history.backItems, backButton)
         }
 
         Connections {
@@ -157,7 +157,7 @@ FocusScope {
                 internal.webview.goForward()
             }
 
-            onShowContextMenu: showNavHistory(internal.webview.navigationHistory.forwardItems, forwardButton)
+            onShowContextMenu: showNavHistory(internal.webview.history.forwardItems, forwardButton)
         }
 
         AddressBar {

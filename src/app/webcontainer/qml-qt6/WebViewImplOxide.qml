@@ -346,14 +346,18 @@ WebappWebview {
           // change of the custom user agent
           if (newUserAgentId !== webview.context.userAgentId)
           {
-            webview.context.userAgentId = newUserAgentId;
-            webview.context.userAgent = (newUserAgentId > 0) ? UserAgentsModel.getUserAgentString(newUserAgentId)
-                                                             : localUserAgentOverride ? localUserAgentOverride : webview.context.defaultUserAgent;
-
-            // for some reason when letting through the request, another navigation request will take us back to the
-            // to the previous page. Therefore we block it first and navigate to the new url with the correct user agent.
+            // Changing the profile user agent inside the navigation request handler
+            // aborts QtWebEngine 6.11 (Chromium "Check failed: !in_sync_check_"),
+            // so block the request and apply the user agent + navigate afterwards.
             request.action = WebEngineNavigationRequest.IgnoreRequest;
-            webview.url = url;
+            var webContext = webview.context;
+            var newUserAgent = (newUserAgentId > 0) ? UserAgentsModel.getUserAgentString(newUserAgentId)
+                                                    : localUserAgentOverride ? localUserAgentOverride : webContext.defaultUserAgent;
+            Qt.callLater(function() {
+                webContext.userAgentId = newUserAgentId;
+                webContext.userAgent = newUserAgent;
+                webview.url = url;
+            });
             return;
           }
           else
